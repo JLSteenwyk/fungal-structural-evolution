@@ -1,0 +1,642 @@
+{
+  "status": "passed_full_reference_sampler_qualification_software_contracts",
+  "checked_utc": "2026-10-03T06:11:06.120235+00:00",
+  "full_chain_configurations_checked": 1620,
+  "stress_roles": 1620,
+  "stress_reservation_audit": {
+    "roles_reserved": 1620,
+    "ledger_events": 3240,
+    "peak_reserved_bytes": 206158430208,
+    "maximum_simultaneous_roles": 16,
+    "reservation_capacity_bytes": 206158430208,
+    "scope": "Declared address-space reservations held through native execution and output audit; not measured native peak RSS."
+  },
+  "fifo_large_role_not_bypassed": true,
+  "admission_abort_blocks_waiters": true,
+  "exception_releases_reservation": true,
+  "native_fixture_priors": [
+    "broad",
+    "centered",
+    "package"
+  ],
+  "native_saved_alignments_checked": 9,
+  "native_candidate_frames_checked": 36,
+  "failed_header_only_trace_retained": true,
+  "failed_malformed_trace_retained": true,
+  "simulated_failed_roles_retained": 2,
+  "simulated_unresolved_quartets": 2,
+  "altered_resource_ledgers_and_grid_accounting_rejected": [
+    "missing_release",
+    "duplicate_acquire",
+    "changed_reservation",
+    "oversubscribed_total",
+    "new_admission_after_abort",
+    "missing_role",
+    "duplicate_role",
+    "changed_chain_role"
+  ],
+  "native_rows": [
+    {
+      "chain_id": "software-broad",
+      "effective_input_group": "00b9b6eba0393f9cb0a750d2c36c6e3668218771fa9e056864fac67cc8d73259",
+      "model_input_identity": "00b9b6eba0393f9cb0a750d2c36c6e3668218771fa9e056864fac67cc8d73259-broad",
+      "prior_label": "broad",
+      "chain_role": 1,
+      "family": "software",
+      "original_configuration_ids": [
+        "software-whole-broad"
+      ],
+      "seed": 426,
+      "source_seed": 425,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/receipt.json",
+      "native_receipt_sha256": "aa082e8da95ac2136a01277d61255c78e701aa6a133745dd64ceabda567fed45",
+      "native_status": "exited_zero_pending_scientific_validation",
+      "exit_code": 0,
+      "elapsed_worker_seconds": 8.850340066011995,
+      "memory_reservation_bytes": 12884901888,
+      "plan_sha256": "software-only",
+      "scientific_eligibility": false,
+      "posterior_qualified": false,
+      "allocation_warning_lines": 0,
+      "bad_alloc": false,
+      "partial_scalar_trace": {
+        "rows": 21,
+        "first": {
+          "iteration": 0,
+          "values": {
+            "RS07:rate": "2.8149894121345966E-2",
+            "RS07:meanLength": "4.388734450062921E1",
+            "ASRV.Gamma:alpha": "7.682030952334959E-2",
+            "|A|": "8",
+            "|indels|": "10"
+          }
+        },
+        "last": {
+          "iteration": 20,
+          "values": {
+            "RS07:rate": "1.4041124779951455E0",
+            "RS07:meanLength": "1.2219068239071933E0",
+            "ASRV.Gamma:alpha": "2.2729091218258874E0",
+            "|A|": "8",
+            "|indels|": "7"
+          }
+        },
+        "parameters": {
+          "RS07:rate": {
+            "finite_min": 0.028149894121345966,
+            "finite_max": 1.4041124779951455,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "RS07:meanLength": {
+            "finite_min": 1.1084990560268977,
+            "finite_max": 43.88734450062921,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "ASRV.Gamma:alpha": {
+            "finite_min": 0.0008574295034654022,
+            "finite_max": 12.262823399019458,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "|A|": {
+            "finite_min": 7.0,
+            "finite_max": 10.0,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "|indels|": {
+            "finite_min": 5.0,
+            "finite_max": 13.0,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          }
+        },
+        "maximum_alignment_to_initial_ratio": 1.25,
+        "numerical_parameter_review": false,
+        "complete_horizon_logged": true
+      },
+      "partial_scalar_trace_issue": null,
+      "status": "full_short_sampler_output_integrity_checked_not_posterior",
+      "saved_alignments": 3,
+      "candidate_frames": 12,
+      "sample_audit": {
+        "status": "all_saved_alignments_and_candidate_nodes_checked",
+        "attempt_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/receipt.json",
+        "attempt_receipt_sha256": "aa082e8da95ac2136a01277d61255c78e701aa6a133745dd64ceabda567fed45",
+        "scalar_log": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/independent-chain-1/C1.log",
+        "scalar_log_sha256": "bb805d8fc6dea6822e180ac870e72e64f823d1a35635563797b5ccf52df66579",
+        "candidate_samples": [
+          {
+            "iteration": 0,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 0,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 0,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 0,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 10,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 10,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 10,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 10,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 20,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 20,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          }
+        ],
+        "iterations": 20,
+        "mapping_sha256": "af1b8fa217fe87b63e6d3b4f6dcc5b92d35afaf87f58736e9f6620b6854508b1",
+        "scope": "Integrity and node identities only. No stationary posterior or convergence qualification."
+      }
+    },
+    {
+      "chain_id": "software-centered",
+      "effective_input_group": "00b9b6eba0393f9cb0a750d2c36c6e3668218771fa9e056864fac67cc8d73259",
+      "model_input_identity": "00b9b6eba0393f9cb0a750d2c36c6e3668218771fa9e056864fac67cc8d73259-centered",
+      "prior_label": "centered",
+      "chain_role": 1,
+      "family": "software",
+      "original_configuration_ids": [
+        "software-whole-centered"
+      ],
+      "seed": 426,
+      "source_seed": 425,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/receipt.json",
+      "native_receipt_sha256": "4c615a739017fa072d762db4cda3e72b2344f8f68b2d09ac8e3a3028d52184e1",
+      "native_status": "exited_zero_pending_scientific_validation",
+      "exit_code": 0,
+      "elapsed_worker_seconds": 8.995870365994051,
+      "memory_reservation_bytes": 12884901888,
+      "plan_sha256": "software-only",
+      "scientific_eligibility": false,
+      "posterior_qualified": false,
+      "allocation_warning_lines": 0,
+      "bad_alloc": false,
+      "partial_scalar_trace": {
+        "rows": 21,
+        "first": {
+          "iteration": 0,
+          "values": {
+            "RS07:rate": "2.8149894121345966E-2",
+            "RS07:meanLength": "4.388734450062921E1",
+            "ASRV.Gamma:alpha": "2.771647696287347E-1",
+            "|A|": "8",
+            "|indels|": "10"
+          }
+        },
+        "last": {
+          "iteration": 20,
+          "values": {
+            "RS07:rate": "1.5400994669571105E-1",
+            "RS07:meanLength": "1.1220362438385625E0",
+            "ASRV.Gamma:alpha": "6.853108915792714E-1",
+            "|A|": "8",
+            "|indels|": "5"
+          }
+        },
+        "parameters": {
+          "RS07:rate": {
+            "finite_min": 0.028149894121345966,
+            "finite_max": 0.4055608078282809,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "RS07:meanLength": {
+            "finite_min": 1.0029457914979378,
+            "finite_max": 43.88734450062921,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "ASRV.Gamma:alpha": {
+            "finite_min": 0.06392458672424745,
+            "finite_max": 15.011402349242552,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "|A|": {
+            "finite_min": 7.0,
+            "finite_max": 9.0,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "|indels|": {
+            "finite_min": 3.0,
+            "finite_max": 12.0,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          }
+        },
+        "maximum_alignment_to_initial_ratio": 1.125,
+        "numerical_parameter_review": false,
+        "complete_horizon_logged": true
+      },
+      "partial_scalar_trace_issue": null,
+      "status": "full_short_sampler_output_integrity_checked_not_posterior",
+      "saved_alignments": 3,
+      "candidate_frames": 12,
+      "sample_audit": {
+        "status": "all_saved_alignments_and_candidate_nodes_checked",
+        "attempt_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/receipt.json",
+        "attempt_receipt_sha256": "4c615a739017fa072d762db4cda3e72b2344f8f68b2d09ac8e3a3028d52184e1",
+        "scalar_log": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/independent-chain-1/C1.log",
+        "scalar_log_sha256": "2b4d5571bf3eaf1306e5b0147cebfdf8ff090c3fe5374e265fc58e25e888cd44",
+        "candidate_samples": [
+          {
+            "iteration": 0,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 0,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 0,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 0,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 10,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 10,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 10,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 10,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          }
+        ],
+        "iterations": 20,
+        "mapping_sha256": "af1b8fa217fe87b63e6d3b4f6dcc5b92d35afaf87f58736e9f6620b6854508b1",
+        "scope": "Integrity and node identities only. No stationary posterior or convergence qualification."
+      }
+    },
+    {
+      "chain_id": "software-package",
+      "effective_input_group": "00b9b6eba0393f9cb0a750d2c36c6e3668218771fa9e056864fac67cc8d73259",
+      "model_input_identity": "00b9b6eba0393f9cb0a750d2c36c6e3668218771fa9e056864fac67cc8d73259-package",
+      "prior_label": "package",
+      "chain_role": 1,
+      "family": "software",
+      "original_configuration_ids": [
+        "software-whole-package"
+      ],
+      "seed": 426,
+      "source_seed": 425,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/receipt.json",
+      "native_receipt_sha256": "21d92c080a3a8c777b9087aacba08d93797ee2f183abafd3a7c841a322d23a60",
+      "native_status": "exited_zero_pending_scientific_validation",
+      "exit_code": 0,
+      "elapsed_worker_seconds": 8.544645791058429,
+      "memory_reservation_bytes": 12884901888,
+      "plan_sha256": "software-only",
+      "scientific_eligibility": false,
+      "posterior_qualified": false,
+      "allocation_warning_lines": 0,
+      "bad_alloc": false,
+      "partial_scalar_trace": {
+        "rows": 21,
+        "first": {
+          "iteration": 0,
+          "values": {
+            "RS07:rate": "2.8149894121345966E-2",
+            "RS07:meanLength": "4.388734450062921E1",
+            "ASRV.Gamma:alpha": "3.0991524786743398E1",
+            "|A|": "8",
+            "|indels|": "10"
+          }
+        },
+        "last": {
+          "iteration": 20,
+          "values": {
+            "RS07:rate": "6.160445120550622E-1",
+            "RS07:meanLength": "1.527277827716068E0",
+            "ASRV.Gamma:alpha": "7.287572314320472E1",
+            "|A|": "9",
+            "|indels|": "8"
+          }
+        },
+        "parameters": {
+          "RS07:rate": {
+            "finite_min": 0.028149894121345966,
+            "finite_max": 1.0420089120614648,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "RS07:meanLength": {
+            "finite_min": 1.1527909811865178,
+            "finite_max": 43.88734450062921,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "ASRV.Gamma:alpha": {
+            "finite_min": 10.266744246410035,
+            "finite_max": 6639.322208987763,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "|A|": {
+            "finite_min": 8.0,
+            "finite_max": 10.0,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          },
+          "|indels|": {
+            "finite_min": 7.0,
+            "finite_max": 13.0,
+            "nonfinite": [],
+            "nonpositive_iterations": []
+          }
+        },
+        "maximum_alignment_to_initial_ratio": 1.25,
+        "numerical_parameter_review": false,
+        "complete_horizon_logged": true
+      },
+      "partial_scalar_trace_issue": null,
+      "status": "full_short_sampler_output_integrity_checked_not_posterior",
+      "saved_alignments": 3,
+      "candidate_frames": 12,
+      "sample_audit": {
+        "status": "all_saved_alignments_and_candidate_nodes_checked",
+        "attempt_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/receipt.json",
+        "attempt_receipt_sha256": "21d92c080a3a8c777b9087aacba08d93797ee2f183abafd3a7c841a322d23a60",
+        "scalar_log": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/independent-chain-1/C1.log",
+        "scalar_log_sha256": "4740f6f2997f8ead0ad1b581fcddc0ec4f5bf6f0665817730a821a57d4d9cab9",
+        "candidate_samples": [
+          {
+            "iteration": 0,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 7
+          },
+          {
+            "iteration": 0,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 0,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 0,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 10,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 10,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 10,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 10,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "0",
+            "source_node": "software0",
+            "runtime_node": "A6",
+            "ungapped_length": 6
+          },
+          {
+            "iteration": 20,
+            "level": "1",
+            "source_node": "software1",
+            "runtime_node": "A4",
+            "ungapped_length": 8
+          },
+          {
+            "iteration": 20,
+            "level": "2",
+            "source_node": "software2",
+            "runtime_node": "A2",
+            "ungapped_length": 5
+          },
+          {
+            "iteration": 20,
+            "level": "3",
+            "source_node": "software3",
+            "runtime_node": "A0",
+            "ungapped_length": 6
+          }
+        ],
+        "iterations": 20,
+        "mapping_sha256": "af1b8fa217fe87b63e6d3b4f6dcc5b92d35afaf87f58736e9f6620b6854508b1",
+        "scope": "Integrity and node identities only. No stationary posterior or convergence qualification."
+      }
+    }
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/receipt.json": "aa082e8da95ac2136a01277d61255c78e701aa6a133745dd64ceabda567fed45",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/configuration.json": "556559ab2c1313be738520906240406ab824779affa097966f6f042598aee6d4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/command.json": "a25d418948fc86944f4e00bb087d6036d5e43b0f62aa23a7eb71ee050cd7695d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/stderr.log": "c68a12cf752f75c47e1fb6430320709a4ad3cc926a25caca24f6c7f670e698b3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/stdout.log": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/process.json": "9779b51846e74c0874be8d4c9744b7aff7e412a6bd7ad600f649800248129a90",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/independent-chain-1/C1.log": "bb805d8fc6dea6822e180ac870e72e64f823d1a35635563797b5ccf52df66579",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/independent-chain-1/C1.log.column-map.json": "7a757bbe430f9415582f6f51c7ae16e7b64be6e269836533779696fa9519c657",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/independent-chain-1/C1.log.json": "95a076c7fc6003587e62dcccbc5d4d3f742a7c18baf40fe61c530786d17f14dc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/independent-chain-1/runtime-tree.nwk": "d8d64e94d5dbdfad8759511298a71240fb5f2ea3c94c2996148b0676ab41f7e4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/independent-chain-1/C1.P1.fastas": "b2e57225e917f29b2f281c67a4ce710f5a3f2a9a917b33952b5877b7d3d96ddf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-broad/attempt-0001/independent-chain-1/C1.P1.site-property-samples.jsonl": "898f6186934fc34e8de26fbba352034cbd1d4890a210be2162f510496783be95",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/receipt.json": "4c615a739017fa072d762db4cda3e72b2344f8f68b2d09ac8e3a3028d52184e1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/configuration.json": "34fb5df3094f3f9c902c35500b41da02bcacf84a0287eeb6d3fd3fa5133e678e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/command.json": "18598999db08d14db5b1d20c364c360b667d2e006272e6d2f83ef84011d3b07c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/stderr.log": "c68a12cf752f75c47e1fb6430320709a4ad3cc926a25caca24f6c7f670e698b3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/stdout.log": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/process.json": "8b3f83222e38db072444d20677b2db98f0f34f6eb8c83fb9f6152ebc3750450a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/independent-chain-1/C1.log": "2b4d5571bf3eaf1306e5b0147cebfdf8ff090c3fe5374e265fc58e25e888cd44",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/independent-chain-1/C1.log.column-map.json": "7a757bbe430f9415582f6f51c7ae16e7b64be6e269836533779696fa9519c657",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/independent-chain-1/C1.log.json": "52f6927bd03298f4c57a8ae8069b26d7b4b9f4bda0ef85c2c793d35e18049400",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/independent-chain-1/runtime-tree.nwk": "d8d64e94d5dbdfad8759511298a71240fb5f2ea3c94c2996148b0676ab41f7e4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/independent-chain-1/C1.P1.fastas": "f80302fbc78ca6d2a639bb899703b94146704e0e670dd8df11317f479b0e959e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-centered/attempt-0001/independent-chain-1/C1.P1.site-property-samples.jsonl": "63288710b2c29211245cc8b4bb0b480fd7c29fe0a7531c2671eec410566e9c71",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/receipt.json": "21d92c080a3a8c777b9087aacba08d93797ee2f183abafd3a7c841a322d23a60",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/configuration.json": "b8e5e53ca85eb905bb24505ba0dbcb97b11a0bd4d9bc4f4525b60ce166e1af23",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/command.json": "2ed222eb1f1acbbee40d7f06c601e0aa36a776167ea8368223bccf3bd1863e06",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/stderr.log": "c68a12cf752f75c47e1fb6430320709a4ad3cc926a25caca24f6c7f670e698b3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/stdout.log": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/process.json": "f48e881fd70b9a63ef6a2a79dc46e8533097d2ae401a234b46c1b7fe67adb17d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/independent-chain-1/C1.log": "4740f6f2997f8ead0ad1b581fcddc0ec4f5bf6f0665817730a821a57d4d9cab9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/independent-chain-1/C1.log.column-map.json": "7a757bbe430f9415582f6f51c7ae16e7b64be6e269836533779696fa9519c657",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/independent-chain-1/C1.log.json": "bea3930ca0c840dd3190c55f692ecdc03629bdee067515143d35a7abb3fa862a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/independent-chain-1/runtime-tree.nwk": "d8d64e94d5dbdfad8759511298a71240fb5f2ea3c94c2996148b0676ab41f7e4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/independent-chain-1/C1.P1.fastas": "64bf2cdd94314b0decd49f3961fdfa510d9abe9946be81101412e5de1acce930",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/native/attempts/software-package/attempt-0001/independent-chain-1/C1.P1.site-property-samples.jsonl": "b5fbe8f858242a58b8fa010c7f3f2c61e844507d0700711ca15863732d7fc428",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_reference_sampler_qualification.py": "2a38449525ecd78e212472dc18f5e27cd0251e7eccafe569793fe302c1158a42",
+    "scripts/reference_sampler_memory_budget.py": "5a3c7583316839350343db5d54a8fe8c420ee32706f2e02c32fef36f2e1dc729",
+    "scripts/baliphy_reference_sampler_qualification.py": "e05eddfc2656522eb99d328b3997f28408023f41a3de915711416943ffeda3c6",
+    "scripts/run_baliphy_reference_sampler_qualification.py": "ae0f5bfb97ad975bf83084d2ad395c184cbb21a963e22430ed7bc724e2ba78d3",
+    "scripts/prepare_baliphy_reference_sampler_qualification.py": "14099cb6448b6c693f9c31ed20bda97601753f9437f88a2e8499e6b48eaa4394",
+    "scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/alignment.faa": "7a5db54adc4dd5ad53b59ed10d89ddd552fdc1b534319f461a0e065b6c351887",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/tree.nwk": "08731ec90d158d2a2cd5d0875b9d2fa265bbd76b0f5909edc6d1de39ee9b2ca8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-reference-sampler-qualification-20261003-v1/mapping.tsv": "af1b8fa217fe87b63e6d3b4f6dcc5b92d35afaf87f58736e9f6620b6854508b1",
+    "metadata/baliphy_reference_preflight_plan_20261003.json": "056a5f4161aaaa3134215d4e2904a735e009e71222227f0dcb9e2a10b7f7e9d6",
+    "metadata/baliphy_horizon_resources_completed_20261003.json": "d9bdc9f09e31022bfc3a21ed003536e52c1a05a85349236560ed0c34906e01e7",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/completion_archive.json": "e2bc39f4142d8aa0d8e85eb47a0657df25a56057747fbc8f9c097ade0d9e2aa2",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/chains.jsonl": "c3743d66731b8ed5b60f0ba09c3dced1e158e08e3f345fcaa7af2ea2d1e46beb",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/attempts.jsonl": "069146d285f43d2b47a5e3b6364ffdb8a09d756391fe7d4ae445fb398700f79c",
+    "data/software_audits/baliphy-4.3-reference-initialization-20261003/source_manifest.json": "84f94f4a2ef491bbf22e7c2c6264d6774c605c87b2d852cf3fe7b9e1a8f7bb4c"
+  },
+  "scientific_eligibility": false,
+  "scope": "Complete1620real production configurations/resource scheduler stress, FIFO/no-oversubscription/abort contracts. Three capped native synthetic five-tip20iteration fixtures test exact attempt controller and scalar/tree/tip/saved-alignment/four ancestral-candidate readback. Failed partial traces deliberately mocked; full metadata failure accounting synthetic. No fungal pilot, allocation repair, longer-chain or posterior qualification."
+}

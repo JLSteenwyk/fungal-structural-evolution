@@ -1,0 +1,12 @@
+name: fungal-baliphy-reference-sampler-qualification-20261003
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - biopython=1.86
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - psutil=7.2.2
+# Native BAli-Phy 4.3, prlimit, model programs and API modules are separately
+# hash-pinned in metadata/baliphy_reference_sampler_qualification_plan_20261003.json.
+# This full computational qualification uses CPU resources; GPU inference stays paused.

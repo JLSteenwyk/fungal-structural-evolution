@@ -11926,3 +11926,60 @@ and figure review remain next.
   pins; native worker limits and all original handles were checked. The
   1,620-role startup is still running, full closure pending.
   [Latest actual replay](../metadata/baliphy_reference_startup_footer_execution_checkpoint_20261003_v3.json).
+
+- October 3, 06:00 UTC (02:00 EDT): the requested error recheck confirmed
+  54 exact original handles without observation errors and no new matching
+  service failures since 00:52 EDT. Seven monitor contracts and 250 binary
+  fixtures passed; the numerical discrepancy remains explicit unresolved
+  review. All 756 available native startups passed the corrected decoder.
+  Both earlier native allocation failures remain unresolved. An initial
+  ad hoc observer assumed newer launch fields; a preserved second observation
+  correctly handled legacy schemas and the retrieval job without a launch
+  file. No scientific jobs were restarted.
+  [Complete recheck summary](../metadata/project_error_recheck_20261003_0200_summary.json).
+
+- October 3, 06:17 UTC (02:17 EDT): the preceding turn was a verified wait
+  with original validation processes confirmed live. Continued the full
+  fungal project by implementing and qualifying the full ancestral sampler
+  and memory workflow for all 1,620 roles/405 quartets/135 inputs/324 aliases.
+  No biological pilot or smaller input subset was introduced.
+
+  The complete scheduler stress passed 3,240 admission/release events, with
+  maximum 192 GiB reservations and 16 simultaneous roles. FIFO and abort
+  contracts passed; reservations remain held through native execution and
+  output audit. Three actual synthetic five-tip native fixtures, one per
+  prior, checked nine saved alignments and 36 ancestral candidate frames.
+  Header-only and malformed failure traces are retained. The full serialized
+  reader and startup-admission implementation passed 14 altered-export,
+  completed-restart and incomplete-prerequisite rejections with explicitly
+  artificial full-grid rows. Both original software services have verified
+  invocation-linked terminal resource records; artificial tests are not
+  production native or scientific proofs.
+
+  The frozen 991-pin qualification plan is queued after corrected startup
+  closure and requires all 1,620 startups valid, zero unsuccessful and all
+  405 quartets complete. Original controllers 2826442/2826446/2826450 and
+  actual 16-CPU/200-GiB producer and 2-CPU/32-GiB reader/closure limits were
+  verified. No native qualification attempt had started at the checkpoint.
+  Twenty iterations per role exercise early sampler/resource behavior;
+  they do not establish posterior mixing. Family-wide 48 GiB caps apply to
+  all 108 roles in OG0000972/OG0001082, with 12 GiB for all other 1,512 roles.
+  Every failure remains in accounting; no automatic retries or orphan adoption.
+
+  Historical successful worker-time scaling is 32.24 worker hours, excluding
+  the two failed selected chains and uncalibrated new initialization/startup
+  overhead. Planned output allowance is 64 GiB, with 128 GiB minimum free disk,
+  2 GiB file caps and zero swap. These figures are not a finish/convergence
+  ETA or measured memory requirement. The original startup had 1,024 unclosed
+  records and the categorical reader remained active with all 405 producer
+  checkpoints. Both original allocation failures and the numerical ESS review
+  remain unresolved. Future independent longer chains need seeds disjoint
+  from these first short MCMC runs; no concatenation. GPU prediction stays
+  paused. Accepted phylogeny/reconciliation/dating, model/predictor controls,
+  calibration and all eight biological aims remain incomplete.
+  [Full workflow, controls, limits and runtime](baliphy-reference-sampler-qualification-20261003.md).
+
+  At 06:19 UTC, a fresh snapshot rechecked all 1,028 available native startups:
+  all passed the corrected decoder, including 48 timing-footer cases. Complete
+  startup closure and the new native sampler qualification remain pending.
+  [Actual available-output replay](../metadata/baliphy_reference_startup_footer_execution_checkpoint_20261003_v5.json).

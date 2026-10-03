@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-10-03T06:00:53.828894+00:00",
+  "original_handles_checked": 54,
+  "observation_errors": [],
+  "recent_matching_service_failure_messages": [],
+  "journal_window_start_local": "2026-10-03 00:52:00 America/New_York",
+  "monitor_regression_checks_passed": 7,
+  "binary_fixtures_passed": 250,
+  "ess_numerical_discrepancy_unresolved": true,
+  "unresolved_original_memory_allocation_failures": 2,
+  "available_startups_checked": 756,
+  "invalid_available_startups_after_corrected_decoder": 0,
+  "categorical_reader_active": true,
+  "full_corrected_startup_closure_pending": true,
+  "source_hashes": {
+    "metadata/project_error_recheck_20261003_0200_v2.json": "4048f1ce5b64302a238e862137989eb85c4884238080e9095634cd9160a0d2ad",
+    "metadata/runtime_checkpoint_child_race_validation_20261003_error_recheck.json": "6aa20ef22f89dabd7b9cca7591dda93a44999ade9c93c0e45a3164e5052d3571",
+    "metadata/binary_ess_boundary_validation_20261003_error_recheck.json": "b1c60df27dfbc09ca2f979989b6517dbd0bc795421c0bac573611c2a2a2b5b8a",
+    "metadata/baliphy_reference_startup_footer_execution_checkpoint_20261003_error_recheck.json": "96cb72d4cc5a0490932bec7084e5a8fa400c797e8c3c402fb57cea183b4ec587",
+    "metadata/independent_baliphy_category_v2_execution_checkpoint_20261003_error_recheck.json": "c9b014e3acd14dc7d4a13232aedf9d19383c27c3382eb51f9a3f32d83d9480e4"
+  },
+  "jobs_restarted": false,
+  "scientific_eligibility": false,
+  "scope": "Fresh read-only process/output checks and regression validation. Monitor and startup parsing corrections pass; earlier memory failures and numerical diagnostic disagreement remain unresolved."
+}

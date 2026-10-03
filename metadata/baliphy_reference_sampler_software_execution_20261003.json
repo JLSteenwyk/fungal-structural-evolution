@@ -1,0 +1,1382 @@
+{
+  "checked_utc": "2026-10-03T06:15:41.478454+00:00",
+  "status": "verified_two_original_sampler_software_validation_completions",
+  "services": [
+    {
+      "unit": "fungal-reference-sampler-software-validation-20261003-v1.service",
+      "actual_process_records": [
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        },
+        {
+          "pid": "2822258",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_qualification.py --output data/software_audits/baliphy-reference-sampler-qualification-20261003-v1 --receipt metadata/baliphy_reference_sampler_software_validation_20261003.json",
+          "invocation": "e4f9606ff198414faf7020647ad3bd25"
+        }
+      ],
+      "actual_completion_resources": [
+        {
+          "__REALTIME_TIMESTAMP": "1791007866226448",
+          "CPU_USAGE_NSEC": "70730380000",
+          "MEMORY_PEAK": "908115968",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "journal_sha256": "7eb2274868c55ed904d1e9c2cadfdc5ca22eeeb67d5bf362b97f36b3f368e7f9",
+      "failure_records": []
+    },
+    {
+      "unit": "fungal-reference-sampler-serialization-validation-20261003-v1.service",
+      "actual_process_records": [
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        },
+        {
+          "pid": "2824952",
+          "command": "/home/bizon/anaconda3/bin/python scripts/check_baliphy_reference_sampler_serialization.py --native-validation metadata/baliphy_reference_sampler_software_validation_20261003.json --output data/software_audits/baliphy-reference-sampler-serialization-20261003-v1 --receipt metadata/baliphy_reference_sampler_combined_validation_20261003.json",
+          "invocation": "5c2ee69c0b134ab8ba09033951e56359"
+        }
+      ],
+      "actual_completion_resources": [
+        {
+          "__REALTIME_TIMESTAMP": "1791008088539296",
+          "CPU_USAGE_NSEC": "9579566000",
+          "MEMORY_PEAK": null,
+          "MEMORY_SWAP_PEAK": null
+        }
+      ],
+      "journal_sha256": "6be1215a3c3ddf6a90857b35a32449102184799baa86e34b3b4ae9305e5844f6",
+      "failure_records": []
+    }
+  ],
+  "scope": "Actual software validation process commands/invocations and terminal resource records; no native production or posterior acceptance."
+}

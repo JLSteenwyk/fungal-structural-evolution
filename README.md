@@ -31,6 +31,16 @@ closure, adequate mixing and both earlier allocation failures remain open.
 The 10,000-iteration posterior proposal remains unlaunched; GPU prediction
 stays paused. [Current startup and resource evidence](metadata/baliphy_reference_preflight_execution_checkpoint_20261003_v3.json).
 
+The [full sampler/resource qualification](docs/baliphy-reference-sampler-qualification-20261003.md)
+is now queued behind complete corrected startup closure for all 1,620 roles.
+It will exercise 20 sampling iterations per role under a 16-CPU/200-GiB cap,
+with a shared 192-GiB reservation budget held through each native run and
+output check. Full scheduler, native software fixtures, serialized-reader and
+startup-admission contracts passed. No role is excluded or automatically
+retried; this computational checkpoint does not establish posterior mixing.
+The original memory failures and numerical diagnostic review remain open.
+[Verified original queue](metadata/baliphy_reference_sampler_execution_checkpoint_20261003.json).
+
 The [earlier full project runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v20.json)
 checks 16 pipeline handles and six original scientific/retrieval jobs, with
 70 terminal successes and 2,301,852 verified source/artifact bindings. A

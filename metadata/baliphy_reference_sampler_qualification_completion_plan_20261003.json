@@ -1,0 +1,41 @@
+{
+  "source_plan": "metadata/baliphy_reference_sampler_qualification_plan_20261003.json",
+  "producer_receipt": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/readback.json",
+  "producer_status": "complete_full_reference_short_sampler_dispositions_pending_readback",
+  "reader_status": "passed_full_reference_short_sampler_serialized_readback",
+  "completed_status": "complete_verified_full_reference_short_sampler_qualification",
+  "summary_fields": [
+    "full_chains",
+    "full_quartets",
+    "effective_inputs",
+    "original_configuration_aliases",
+    "checked_sampler_attempts",
+    "unsuccessful_sampler_attempts",
+    "complete_quartets",
+    "unresolved_quartets",
+    "saved_alignments",
+    "candidate_frames",
+    "status_counts",
+    "allocation_warning_attempts",
+    "bad_alloc_attempts",
+    "gamma_equal_rate_limit_events",
+    "other_nonfinite_events",
+    "nonpositive_parameter_review_events",
+    "posterior_qualified",
+    "reservation_audit"
+  ],
+  "launches": [
+    "metadata/baliphy_reference_sampler_qualification_launch_20261003.json",
+    "metadata/baliphy_reference_sampler_qualification_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_reference_sampler_qualification_plan_20261003.json": "234d5c0f4a3b551d27e2744d4eacbf37a43f5a2d3b7f5b11bfd05eb4b7eb871e",
+    "metadata/baliphy_reference_sampler_qualification_launch_20261003.json": "43e07f1b5ecdfb75aefbdf0537288164f42c1318bb10f0777617efd9b2a3a81b",
+    "metadata/baliphy_reference_sampler_qualification_readback_launch_20261003.json": "2be845248e168914aea3109dc4049800b8f8423cb9908f606801b19441d4febe",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_reference_sampler_qualification_completed_20261003.json",
+  "scope": "Full135effectiveinputs x3originalpriors x4freshseedroles, all324aliases: 20 native sampler iterations per role after all1620correctedstartup records and their full provenance closure pass. No biological subset or pilot. Starting-state geometry changes only; original probability distribution, kernels, priors, observed unaligned tips and fixed-tip/free-ancestor representation retained. Family-wide48GiBaddress-space caps for historical allocation-risk families and12GiBotherwise;192GiBFIFOreservations held through native run and output audit under16CPU/200GiBcgroup/no swap. Every failed outcome retained without automatic retry; no posterior mixing, model/tree/root acceptance or full site-property replay implied. Full saved alignments/tips/candidate-node mapping, scalar logs, receipt/configuration/process/artifact/source hashes, reservation accounting and two original completion journals required for computational qualification closure. Original startup seeds now used for first MCMC: future independent longer sampling needs a new seed namespace disjoint from both original chains and this qualification. No GPU or new charges. All eight aims remain incomplete."
+}

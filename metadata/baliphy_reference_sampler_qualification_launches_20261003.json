@@ -1,0 +1,15 @@
+{
+  "status": "queued_full_reference_short_sampler_qualification",
+  "source_plan": "metadata/baliphy_reference_sampler_qualification_plan_20261003.json",
+  "source_plan_sha256": "234d5c0f4a3b551d27e2744d4eacbf37a43f5a2d3b7f5b11bfd05eb4b7eb871e",
+  "launches": [
+    "metadata/baliphy_reference_sampler_qualification_launch_20261003.json",
+    "metadata/baliphy_reference_sampler_qualification_readback_launch_20261003.json",
+    "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json"
+  ],
+  "expected_native_roles": 1620,
+  "iterations_per_role": 20,
+  "posterior_qualified": false,
+  "gpu": false,
+  "new_cost_usd": 0
+}

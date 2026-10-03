@@ -2854,3 +2854,34 @@ original completion journals; all three original terminal handles were
 separately observed. Both failures remained unresolved. These output-integrity
 results do not establish joint posterior mixing or biological model adequacy.
 [Full completion evidence](independent-native-alignment-replay-20261002.md).
+
+### Full ancestral sampler and resource qualification
+
+Following complete corrected reference-startup closure, the full short sampler
+grid is queued for 135 effective inputs, three unchanged priors and four fresh
+seed roles per model, retaining all 324 configuration aliases. Twenty native
+iterations per role exercise early proposals and saved outputs; they cannot
+qualify an ancestral posterior. Every native exit failure and invalid partial
+trace remains in accounting. No role is selected for apparent stability and
+no failed attempt is automatically retried.
+
+Family-wide allocation-risk membership uses every initial and selected-recovery
+warning or failure. The 108 roles in two risk families receive 48 GiB address-space
+caps; the other 1,512 receive 12 GiB. FIFO reservations retain each entire cap
+through native execution and output audit under a shared 192 GiB budget and
+16-worker/16-CPU/200-GiB/no-swap producer limits. Unexpected controller failures
+halt new admissions before releasing memory, preventing an exceptional live
+process from causing oversubscription. Incomplete attempts require review.
+
+Successful output checks require all 21 scalar rows, all three saved alignment
+frames, observed tip residues, rooted clade and nonroot branch correspondence,
+node/state/dimension integrity and all four ancestral candidate identities.
+Nonfinite tokens and nonpositive parameter reviews remain explicit, with the
+supported positive infinite gamma equal-rate limit distinguished from other
+tokens. This is not a complete prior-support or joint site-property replay.
+The complete serialized reader reconstructs dispositions and reservation
+accounting; provenance closure additionally binds every source/artifact and
+both original journals. Synthetic native, full scheduler and artificial full
+serialization/gate fixtures are separately identified. Future longer chains
+require independent seeds and full posterior/model/structure qualification.
+[Execution, estimates, controls and limitations](baliphy-reference-sampler-qualification-20261003.md).

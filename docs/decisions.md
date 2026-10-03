@@ -1105,3 +1105,31 @@ reject unrelated output, and retain original and corrected dispositions.
 No native rerun follows this reader repair. Full startup closure and memory/
 mixing/model/root qualification are still required before a new posterior
 horizon. [Implementation, proof and limitations](baliphy-reference-initialization-20261003.md).
+
+## October 3: qualify proposals and memory on the complete ancestral grid
+
+After every corrected startup passes complete source/artifact/journal closure,
+exercise 20 native sampling iterations on all 1,620 roles, all original priors,
+135 inputs and 324 aliases. This is full-scope computational qualification,
+not a biological pilot, posterior adequacy check or smaller analysis design.
+Keep the original probability target and diagnostic acceptance criteria.
+
+Reserve the complete declared address-space cap through native execution and
+output audit, using FIFO admission under a shared 192 GiB budget, 16 workers,
+16 CPUs and 200 GiB whole-group memory with no swap. Use 48 GiB for every role
+in any family with a historical allocation warning or failure, not selected
+failed chains alone; use 12 GiB for other families. Retain failed native
+attempts and malformed partial traces without retrying. Abort new admissions
+on unexpected controller/integrity errors so an orphaned native process cannot
+cause oversubscription. Review incomplete attempts and reservation journals
+manually; preserve originals and never adopt live output as a fresh run.
+
+Require full saved-alignment/tip/candidate-node/scalar/configuration/artifact
+readback, reservation-ledger reconstruction and both original journals for
+computational closure. Retained site-property files are hashed, not independently
+replayed by this step. Neither short success nor caps establish convergence,
+safe longer-chain memory, root/model acceptance or biological validation.
+The seeds from startup-only checks now have first short MCMC use; regenerate
+future independent posterior seeds in a disjoint namespace rather than reuse
+or concatenate these attempts. GPU inference remains paused.
+[Resources, software gates and complete queue](baliphy-reference-sampler-qualification-20261003.md).

@@ -1250,3 +1250,22 @@ biological model/root is accepted. The new startup preflight has 234 available
 records checked by the revised decoder; all pass, including 24 footer cases.
 Full startup closure and all eight scientific aims remain incomplete.
 [Complete native replay](independent-native-alignment-replay-20261002.md).
+
+### October 3: complete-grid proposal/resource qualification queued
+
+Implemented and software-qualified the full 1,620-role short ancestral sampler
+and its resource controller. All production configurations and 3,240 reservation
+events passed accounting, FIFO and abort checks. Three actual five-tip native
+fixtures checked nine alignments and 36 ancestral candidate frames; artificial
+full-grid serialized-reader/startup-gate tests retained two failures and rejected
+14 altered outcomes/prerequisites. Both original software invocations completed.
+
+The native qualification is queued only after all 1,620 corrected startups pass
+full closure. Its original producer/reader/closer identities and actual caps
+were observed; native sampling had not started at 06:17 UTC. The full 20-iteration
+grid tests early sampler/resource behavior and retains all outcomes. It does
+not establish posterior mixing, repair either historical allocation failure,
+resolve the numerical diagnostic review or accept an ancestral structure.
+Longer posterior sampling, accepted framework/reconciliation/dating, biological
+controls, calibration and all eight aims remain incomplete. GPU inference
+stays paused. [Full evidence and scope](baliphy-reference-sampler-qualification-20261003.md).
