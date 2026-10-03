@@ -1,0 +1,105 @@
+{
+  "status": "passed_full_exact_retained_covariance_qualification_software_contracts",
+  "checked_utc": "2026-10-03T17:21:58.019137+00:00",
+  "dense_and_review_scenarios": [
+    {
+      "pair_exception": false,
+      "mode": "signed",
+      "retained": 4
+    },
+    {
+      "pair_exception": false,
+      "mode": "unsigned",
+      "retained": 4
+    },
+    {
+      "pair_exception": true,
+      "mode": "signed",
+      "retained": 5
+    },
+    {
+      "pair_exception": true,
+      "mode": "unsigned",
+      "retained": 5
+    },
+    {
+      "numerical_review": "unresolved_kernel_norm_requires_review"
+    },
+    {
+      "numerical_review": "dependent_covariance_bases_require_review"
+    },
+    {
+      "numerical_review": "rank_boundary_requires_review"
+    }
+  ],
+  "dense_nonnegative_cone_roundtrips": 80,
+  "malformed_cases_rejected": [
+    "changed_principal_gram",
+    "narrowed_inherited_error",
+    "lost_fifth_kernel",
+    "changed_source_audit_identity",
+    "changed_fixed_design",
+    "promoted_scientific_eligibility",
+    "promoted_component_attribution",
+    "changed_original_status",
+    "false_numerical_rank",
+    "negative_variance_map",
+    "nonuniform_residual",
+    "foreign_cohort",
+    "promoted_empty_design",
+    "promoted_rank_deficient_design",
+    "promoted_numerical_covariance_qualification_requires_review",
+    "unclosed_original_source"
+  ],
+  "synthetic_pipeline_audits": 600,
+  "synthetic_pipeline_setting_links": 1200,
+  "all_five_trees_and_both_modes": true,
+  "inherited_numerical_envelopes_unchanged": true,
+  "nonready_setting_states_retained": true,
+  "completed_restart_refused": true,
+  "source_and_journal_fixtures_synthetic": true,
+  "full_real_certificates_checked": 8680,
+  "full_real_cohorts": 4340,
+  "full_real_logical_cases": 75188,
+  "retained_real_certificate_counts": {
+    "4": 7232,
+    "5": 1448
+  },
+  "source_hashes": {
+    "metadata/full_exact_covariance_folds_plan_20261003_v2.json": "956be671d5b9ee86c0d907be9fb2b9f056ce75f07924fcd237e139d4cc262303",
+    "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v2/cohort_certificates.jsonl": "f56c707e30bdcb7530997d687269ad619f436f7fb3cb3bdb17563f14544eaacb",
+    "metadata/full_exact_covariance_folds_completed_20261003_v2.json": "0b63c0b7da49d2b34dc4b5a8db51fe2cdf6a1200b55afe0b99085f166aa388e5",
+    "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v2/completion_archive.json": "9a188f3e30be184531928f48af7122c5ce1b7ee22a6512a2caa74a3d70674569",
+    "scripts/check_full_reduced_covariance_qualification.py": "8a500a6471a4cee07c354a8704983f7231e7ed2e369c44a4d0c0293e4f10d867",
+    "scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "scripts/full_reduced_covariance_sources.py": "946028dcaf7a5e4f695925fb1608f74167a4e92e8e2ae14b92736bc6709cf687",
+    "scripts/run_full_reduced_covariance_qualification.py": "639a69f67e7138d07a42be56633bbf42d5dc061973c797debc5ee7a7028c3cbf",
+    "scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "scripts/full_exact_covariance_sources.py": "acdf71eb00dab593bcd1b6e5fd7ca6f511842d680466582bb319354f5836aa50",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608"
+  },
+  "artifacts": {
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original-plan.json": "d97478bb80097adae073d03db49d518c13405a04cc8e1a13ad1ade5c10257657",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/exact-archive.json": "6010f5584521994a0b4b4c8325ca3f00119a85ecdf4b249f1ae4fa528f8a5ad7",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original-completed.json": "ff2e5d0781cbb6ac847c84b7e71fa77933146d1955d57457ea642987b86c2d96",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/exact-completed.json": "13061ffde5e9457e000e23a6ed91bdf0f9a7648a19c2b5da09917e5ed4a93e25",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/new-plan.json": "60915abbd886353221daca9c0a37e4275be748eaf9974f50673ae3c7e79e73e6",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original-archive.json": "897957dcac3caec4a70096dd2b39874aed0f004f129f0c1632d2ce7d22443b4f",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/exact-plan.json": "8a4ae55945e38e64bc91ec02a415a25da801ff2b8d9306789d575ece6bb4b4ef",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original/design_covariance_audits.jsonl.gz": "622d9f0a201a3ff46283e69167bc4474ef4dec32fcd0c22344c19f09fb6876ec",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original/stage_plan.json": "b1b342f13b89ab6b36cc4803c1841f5cedd59a3e648f179988de641724fc69df",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original/receipt.json": "b1b342f13b89ab6b36cc4803c1841f5cedd59a3e648f179988de641724fc69df",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original/readback.json": "b1b342f13b89ab6b36cc4803c1841f5cedd59a3e648f179988de641724fc69df",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/original/setting_audit_links.tsv.gz": "8d38f6e325e1ea3c08caf38728f0765710be3aedb7367be14bd6c66c5a3ef2d0",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/new/design_covariance_audits.jsonl.gz": "ad03dcb39d01861ac2e16c2760e2044f4a7fc690c0235d1a6e60ec6abc657c06",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/new/stage_plan.json": "7f8cd90c5bb5a561bebbeeea20fa135ba5c24fe12ed67f733159d275bca432c6",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/new/receipt.json": "7d578a21fd297b899159b28ae3033904f6d5dab2369ddb40c19dbc5e6b609b02",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/new/readback.json": "a4ab02e7ec6f1c2abde3f8b4857381c31212dd83787427364b0335b039df1835",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/new/setting_audit_links.tsv.gz": "0cb7161f0148cb366be2cbfe26f95c643429e1e82d10ed332f5af6bad2129d90",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/exact/cohort_certificates.jsonl": "91bd44b35f99b69a9198e05bab55ddb3574cc968b0f4bc48f4c9ac499ea2e56e",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/exact/receipt.json": "b1b342f13b89ab6b36cc4803c1841f5cedd59a3e648f179988de641724fc69df",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1/exact/readback.json": "b1b342f13b89ab6b36cc4803c1841f5cedd59a3e648f179988de641724fc69df"
+  },
+  "scientific_eligibility": false,
+  "scope": "Software and full closed certificate checks. Direct dense raw/REML products, covariance-cone equality, unchanged envelopes, independent gesvd, every synthetic audit/link and explicit malformed cases; no biological pilot or fit. Full production qualification remains gated on closed original full-grid arithmetic."
+}

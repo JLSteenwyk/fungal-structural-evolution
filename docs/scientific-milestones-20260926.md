@@ -1381,3 +1381,28 @@ All 1,302,000 uniform covariance producer audits require review. Additional
  All eight biological aims and the full requested atlas/framework/deliverables
  remain incomplete; the project goal stays active.
  [Covariance next steps](full-covariance-dependency-review-20261003.md).
+
+### October 3: complete exact covariance proof and full numerical queue
+
+All 4,340 cohorts, 75,188 logical cases and both loading modes have independent
+integer covariance/cone certificates and full scoped source/artifact/two-journal
+closure: 8,680 certificates covering 68,220,240 cohort-row occurrences. The
+general proof retains four terms in 3,616 cohorts and five in 724 per mode.
+No counterexample cohort is filtered. This establishes an equivalent uniform
+working covariance parameterization, not a fitted or accepted biological model.
+[Proof and limitations](full-covariance-dependency-review-20261003.md).
+
+Software qualification passed direct dense algebra, inherited-envelope checks,
+80 covariance-cone roundtrips, 600 synthetic audits/1,200 original-style links,
+sixteen malformed cases and all 8,680 closed real certificates. The full
+1,302,000-audit/6,220,800-link requalification is queued behind the original
+independent arithmetic closure. It retains exact principal matrix/envelope
+entries and every original setting/review state; full native qualification,
+timing, fitting and calibration remain pending.
+[Full numerical method and actual queue](full-reduced-covariance-qualification-20261003.md).
+
+Paired predictor uncertainty and ancestral short-run qualification continue.
+Full uncertainty closure, adequate ancestral ensembles, accepted framework,
+reconciliation/dating, domain/duplication/ecology/selection/site analyses and
+all eight biological aims remain incomplete. The full approximately 500
+fungi plus 25 outgroups scope and active goal remain unchanged.

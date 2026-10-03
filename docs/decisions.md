@@ -1343,3 +1343,25 @@ The full uniform covariance producer reports every seven-term basis requires
  variance estimates for aliased components. No relaxation of original
  numerical tolerances, source edits or early production-fit launch.
  [Dependency review](full-covariance-dependency-review-20261003.md).
+
+## October 3: preserve cohort-specific covariance cones and original error bounds
+
+Use the complete independently closed V2 exact integer operator certificates.
+Combine gene covariance into half residual/background and model covariance
+into half pair covariance. Fold pair into residual/background only where its
+exact identity passes. Retain the pair kernel in all 724 exception cohorts
+per loading mode and retain every original case. Preserve nonnegative forward
+and right-inverse maps; aliased components do not acquire separate variance
+attribution. The difference between pair and residual/background kernels is
+not an additional PSD variance kernel. V1/V2 sources and runs stay immutable.
+
+Queue full numerical requalification behind the original complete seven-kernel
+independent arithmetic closure. Reuse exact principal raw/REML Gram submatrices
+and unchanged error envelopes, preserving all 1,302,000 audits and 6,220,800
+setting links. Independent gesvd and entry/link readback must close before
+revised full-scope timing and fitting. Keep all unresolved norms, boundaries,
+remaining dependencies and original non-ready/failure states. Nonuniform
+weighting, adequacy, accepted phylogenies/reconciliation, calibration and all
+eight biological aims remain separate requirements.
+[Exact evidence](full-covariance-dependency-review-20261003.md) and
+[full numerical workflow](full-reduced-covariance-qualification-20261003.md).

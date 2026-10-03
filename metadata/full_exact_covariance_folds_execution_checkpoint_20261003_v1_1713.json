@@ -1,0 +1,128 @@
+{
+  "status": "verified_original_full_exact_covariance_proof_runtime",
+  "checked_utc": "2026-10-03T17:12:18.372317+00:00",
+  "plan_sha256": "547db073706ca87efaabcf1b829902edc45448a7a95779b116578a9b07c19584",
+  "frozen_pins_checked": 4386,
+  "original_handles": [
+    {
+      "launch": "metadata/full_exact_covariance_folds_launch_20261003.json",
+      "pid": 3219804,
+      "created": 1791045039.96,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_exact_covariance_folds_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "b3c686d612aa2f01b2ef44dc42d81dd6058e05339dcff2afd750bb5a9724433f",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "23fdf85bb1cfccabe223be293e67f0b2dae398ccc36f6927313be4b93e8c64cf",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791045213080416",
+          "CPU_USAGE_NSEC": "172383426000",
+          "MEMORY_PEAK": "3608576",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_exact_covariance_folds_readback_launch_20261003.json",
+      "pid": 3219808,
+      "created": 1791045040.01,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_exact_covariance_folds_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "e17907e47dc809821eee4de5db5a8766c72c542a564ee3e3b2f33325f6269fe1",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "eff32579e441c80829c3e851d9990d841a3ee4d009506bc28fb2a1987fd0bbff",
+      "captured_process_messages": 7,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791046242006038",
+          "CPU_USAGE_NSEC": "1020970167000",
+          "MEMORY_PEAK": "3530752",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_exact_covariance_folds_closure_launch_20261003.json",
+      "pid": 3219814,
+      "created": 1791045040.07,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_exact_covariance_folds_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "3d85115dcf29ab1845d20560f18d89356a0203f48ca4797885d321b3cd4aae3c",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "1666d38564495fb81327a3342d0fe3030515575374e52486279c40e81172e57b",
+      "captured_process_messages": 41,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791046245969665",
+          "CPU_USAGE_NSEC": "4057260000",
+          "MEMORY_PEAK": "3289088",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "completed_proof": {
+    "status": "complete_verified_full_exact_uniform_covariance_folds",
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "loading_modes": [
+      "signed",
+      "unsigned"
+    ],
+    "certificates": 8680,
+    "case_row_occurrences": 68220240,
+    "retained_basis_counts": {
+      "4": 7232,
+      "7": 1448
+    },
+    "exact_relation_counts": {
+      "signed:pair_equals_target_plus_background": 3616,
+      "signed:gene_equals_half_pair": 3616,
+      "signed:model_equals_gene": 3616,
+      "unsigned:pair_equals_target_plus_background": 3616,
+      "unsigned:gene_equals_half_pair": 3616,
+      "unsigned:model_equals_gene": 3616
+    },
+    "failed_relation_counts": {
+      "signed:pair_equals_target_plus_background": 724,
+      "signed:gene_equals_half_pair": 724,
+      "signed:model_equals_gene": 724,
+      "unsigned:pair_equals_target_plus_background": 724,
+      "unsigned:gene_equals_half_pair": 724,
+      "unsigned:model_equals_gene": 724
+    },
+    "full_hash_archive": "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v1/completion_archive.json",
+    "full_hash_archive_sha256": "13eedb0e29a820eeca3a5dd28b54dc7f2905849987f73c7afdeb256ff37bfd3b",
+    "bound_source_hashes": 4394,
+    "exact_process_journals_checked": 2,
+    "producer_receipt": "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v1/receipt.json",
+    "producer_receipt_sha256": "6e6ac1a8939fd155ff22b42c8af99965a755457b170aefbddfc9ed036b5a1308",
+    "independent_readback": "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v1/readback.json",
+    "independent_readback_sha256": "f6f24a07cf2e6ecaa5c344d3c98bcc52a36420b40699d941dd8c8e9b30bc3ece",
+    "completion_plan_sha256": "9398e8d10414929b1a4a125f2562bf6bef185e16cd0b1d3bde825555819e5e8d",
+    "scientific_eligibility": false,
+    "scope": "Full exact named covariance-dependency certification for all4340cohorts,75188logical cases and both loading modes;8680certificates cover68,220,240cohort-row occurrences. Exact scaled-integer sparse Grams test pair=target+background,gene=pair/2,model=gene. A failed identity retains its original kernel and integer counterexample. Named folds are conditional on exact equality,not rank or tolerance. Full nonnegative forward/right-inverse maps preserve the uniform covariance cone; target/residual and signed-zero/unsigned-four-times-family-intercept identities are proved for every cohort. CSR multiplication and independent CSC column outer sums must agree for every case. All13operators/all4340membership files are rehashed against already closed operator/design archives; broader inherited source files are not freshly rehashed here. Producer/independent reader/source/artifact/two-original-journal closure required. No case filtering, variance attribution,nonuniform-weight acceptance,raw/REML model qualification,optimization, biological acceptance,GPU,new costs or source/attempt changes to original jobs."
+  },
+  "full_closure_bindings_rehashed": 4394,
+  "raw_reml_basis_qualification_complete": false,
+  "production_fitting_launched": false,
+  "gpu": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Original PID/create/command and invocation journals, live caps, immutable pins; every completed proof archive binding rehashed. No restart, source changes, fit, posterior or biological acceptance."
+}

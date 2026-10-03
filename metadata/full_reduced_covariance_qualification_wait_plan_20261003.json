@@ -1,0 +1,23 @@
+{
+  "dependencies": [
+    "metadata/full_uniform_covariance_qualification_closure_launch_20261002.json",
+    "metadata/full_exact_covariance_general_folds_closure_launch_20261003.json"
+  ],
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=21600",
+    "--fsize=1073741824",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_full_reduced_covariance_qualification.py",
+    "--plan",
+    "metadata/full_reduced_covariance_qualification_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/full_reduced_covariance_qualification_plan_20261003_v1.json": "1b004c897acefe5d43508ac1d92103f4360f2cf26e8ecddcde75eb40996da31b",
+    "metadata/full_uniform_covariance_qualification_closure_launch_20261002.json": "32dbf99c1c8b107ca93d9628186f1428aa4a0b86a3ffed3e317448e4dec72c20",
+    "metadata/full_exact_covariance_general_folds_closure_launch_20261003.json": "f38ccfe91c1a1881664fe5fd71f8b1f4e1e715c876a8d696e932412ea0261261",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

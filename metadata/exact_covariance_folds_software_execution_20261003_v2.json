@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_covariance_exact_folds_v2.py",
+    "--output",
+    "data/software_audits/exact-covariance-folds-20261003-v2",
+    "--receipt",
+    "metadata/exact_covariance_folds_software_validation_20261003_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_exact_covariance_software_stage_v1.py": "5db980f86d423f9814c8a45e218b80a963ee58ead76be59cf3b1a1cd4a8a9915",
+    "metadata/exact_covariance_folds_software_resources_20261003_v2.json": "9f60352538dd8a31a3c48666b447037825f28acd166ec4e01b9ce0ff2259af42",
+    "scripts/check_covariance_exact_folds_v2.py": "5b738edef10667596bbecc8888493558540f791d75c1eb3f2f346ad27f47246c",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "2963b8f6c1654b2ebf89f08d92132249",
+  "wrapper": {
+    "pid": 3235402,
+    "created": 1791046076.04,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_exact_covariance_software_stage_v1.py",
+      "--resources",
+      "metadata/exact_covariance_folds_software_resources_20261003_v2.json",
+      "--execution",
+      "metadata/exact_covariance_folds_software_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/exact_covariance_folds_software_validation_20261003_v2.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_covariance_exact_folds_v2.py",
+      "--output",
+      "data/software_audits/exact-covariance-folds-20261003-v2",
+      "--receipt",
+      "metadata/exact_covariance_folds_software_validation_20261003_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 2400,
+  "started_utc": "2026-10-03T16:47:56.847041+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T16:49:10.391283+00:00",
+  "child": {
+    "pid": 3235403,
+    "created": 1791046076.15,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_covariance_exact_folds_v2.py",
+      "--output",
+      "data/software_audits/exact-covariance-folds-20261003-v2",
+      "--receipt",
+      "metadata/exact_covariance_folds_software_validation_20261003_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 73.54405507305637,
+  "child_cpu_seconds": 73.461338,
+  "child_peak_rss_bytes": 1566162944,
+  "receipt": "metadata/exact_covariance_folds_software_validation_20261003_v2.json",
+  "receipt_sha256": "0843eb241ea8810d32ba141b3b2f2e0f775dc9031022259d2afb68da861d0c65",
+  "artifacts": {
+    "metadata/exact_covariance_folds_software_execution_20261003_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/exact_covariance_folds_software_execution_20261003_v2/configuration.json": "2241005fdf4efdd97f389b3725ed13345263ba6e66776b3d82a1aa4ebab535e6",
+    "metadata/exact_covariance_folds_software_execution_20261003_v2/stdout.log": "a9fe95d2e9670b55d350e7f224b53a8d89e2873ebc4c1f9d10b4034fd729c774",
+    "metadata/exact_covariance_folds_software_execution_20261003_v2/process.json": "da713d41886a81315abc96d9361f3841ad6dcf1137ed6d04c9ecdab62b906324"
+  },
+  "scope": "One original new CPU-only matched-predictor software stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. Ten synthetic exact covariance matrix scenarios and complete real input membership checks, no old-source changes/restart/GPU/charges, sample concatenation or scientific acceptance."
+}

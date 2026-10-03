@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_exact_covariance_folds_launch_20261003.json",
+    "metadata/full_exact_covariance_folds_readback_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/full_exact_covariance_folds_completion_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/full_exact_covariance_folds_completion_plan_20261003_v1.json": "9398e8d10414929b1a4a125f2562bf6bef185e16cd0b1d3bde825555819e5e8d",
+    "metadata/full_exact_covariance_folds_launch_20261003.json": "b3c686d612aa2f01b2ef44dc42d81dd6058e05339dcff2afd750bb5a9724433f",
+    "metadata/full_exact_covariance_folds_readback_launch_20261003.json": "e17907e47dc809821eee4de5db5a8766c72c542a564ee3e3b2f33325f6269fe1",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

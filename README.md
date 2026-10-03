@@ -33,6 +33,9 @@ production readback passed 42 native roles across both modes. Eight CPU
 workers/24 GiB/no swap run separately from the paused GPU predictions.
 Full resampling readback, provenance closure and calibrated uncertainty
 remain pending.
+At October 3, 17:27 UTC, the original controller reported 5,099/53,200
+completed draws; full independent native archive closure remains pending.
+[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_1728.json).
 
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch
@@ -63,17 +66,20 @@ remain explicit; historical ancestral categories are unavailable.
 
 The full corrected V5 startup grid has closed all 1,620 checks with zero
 unsuccessful roles; its 14,402 source/artifact bindings were rehashed at the
-October 3, 15:20 UTC error recheck. The V3 full 20-iteration joint sampler is
+October 3, 17:03 UTC error recheck. The V3 full 20-iteration joint sampler is
 running after all four prerequisite closures. Its software gate passed the entire
 1,620-role workflow with explicit mock failures and export-tampering checks.
 It uses sixteen CPUs/200 GiB/no swap and a 192-GiB reservation ledger.
 A new read-only resource observer tracks this new invocation separately.
-All 20 completed roles available at the error-check snapshot passed fresh
-native-output replay, covering 60 joint frames and 3,883,978 ancestral
+All 872 completed roles available at the error-check snapshot passed fresh
+native-output replay, covering 2,616 joint frames and 33,657,014 ancestral
 residue/category pairs. The installed original formatter still fails a fresh
 probe; the corrected logger passes these checks. Full sampler completion and
 longer adequate posterior ensembles remain pending.
-[Current error recheck](metadata/baliphy_current_joint_logger_error_recheck_20261003_1520.json).
+[Current error recheck](metadata/baliphy_current_joint_logger_error_recheck_summary_20261003_1703.json).
+At 17:27 UTC the sampler had 976 successful unclosed short-run checkpoints;
+these computational checks do not establish adequate ancestral posteriors.
+[Original sampler runtime](metadata/baliphy_joint_sampler_qualification_v3_execution_checkpoint_20261003_1728.json).
 [Full correction, evidence, resources and pending gates](docs/baliphy-native-number-encoder-correction-20261003.md).
 
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
@@ -229,13 +235,22 @@ passed 48 dense/latent comparisons, and full contracts rejected 17 altered
 exports with complete interruption replay. Production qualification, weighting,
 variance optimization and calibrated inference remain pending.
 
-The full producer has generated all 1,302,000 audits and 6,220,800 setting
-links, reporting every basis as requiring review. Full independent readback
-and closure remain pending. A bounded diagnostic of all 300 audits in the
-first cohort confirms three covariance dependencies within recorded numerical
-bounds. A reduced basis needs complete operator, variance-cone and design
-qualification before production fitting; original audits and jobs remain
-unchanged. [Dependency evidence and proposed next steps](docs/full-covariance-dependency-review-20261003.md).
+The original producer generated all 1,302,000 audits and 6,220,800 setting
+links, reporting every seven-term basis as requiring review. Its full
+independent arithmetic readback/closure remains pending. A separate exact
+operator proof has now closed across all 4,340 cohorts and both modes:
+four composite kernels suffice in 3,616 cohorts, while 724 retain a fifth
+pair kernel. Nonnegative forward/right-inverse maps preserve every original
+covariance and all original cases. All 8,680 certificates have independent
+integer-algebra, source/artifact and original-journal closure.
+[Complete identities and variance-cone evidence](docs/full-covariance-dependency-review-20261003.md).
+
+The [full retained-kernel numerical qualification](docs/full-reduced-covariance-qualification-20261003.md)
+is software-qualified and queued behind original arithmetic closure. It
+retains all 1,302,000 audits and 6,220,800 links, copies the exact principal
+Gram/error submatrices and independently checks every entry and rank.
+Numerical review states, original failed/non-ready settings, nonuniform
+controls, full timing/fitting and biological interpretation remain pending.
 
 The [shared-entity likelihood/optimizer backend](docs/shared-entity-likelihood-20261002.md)
 now has analytic ML/REML gradients and explicit nonnegative-boundary checks.

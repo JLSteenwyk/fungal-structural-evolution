@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_reduced_covariance_qualification.py",
+    "--output",
+    "data/software_audits/full-reduced-covariance-qualification-20261003-v1",
+    "--receipt",
+    "metadata/reduced_covariance_qualification_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_reduced_covariance_software_stage_v1.py": "2aad670f55a499cae363e590f45572f2d0cb6ef932d9a8ff6356a028529497f7",
+    "metadata/reduced_covariance_qualification_software_resources_20261003_v1.json": "120a0a0616e933f8bdc465ffb5d6375ed0d2a77454e3cbad57d15573783642d7",
+    "scripts/check_full_reduced_covariance_qualification.py": "8a500a6471a4cee07c354a8704983f7231e7ed2e369c44a4d0c0293e4f10d867",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "812f6fe094114d2ea2c690cce6c9675a",
+  "wrapper": {
+    "pid": 3267793,
+    "created": 1791048113.82,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_reduced_covariance_software_stage_v1.py",
+      "--resources",
+      "metadata/reduced_covariance_qualification_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/reduced_covariance_qualification_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/reduced_covariance_qualification_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_reduced_covariance_qualification.py",
+      "--output",
+      "data/software_audits/full-reduced-covariance-qualification-20261003-v1",
+      "--receipt",
+      "metadata/reduced_covariance_qualification_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 2400,
+  "started_utc": "2026-10-03T17:21:54.621707+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T17:21:58.213976+00:00",
+  "child": {
+    "pid": 3267794,
+    "created": 1791048113.92,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_reduced_covariance_qualification.py",
+      "--output",
+      "data/software_audits/full-reduced-covariance-qualification-20261003-v1",
+      "--receipt",
+      "metadata/reduced_covariance_qualification_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 3.5921067179879174,
+  "child_cpu_seconds": 3.521633,
+  "child_peak_rss_bytes": 214388736,
+  "receipt": "metadata/reduced_covariance_qualification_software_validation_20261003_v1.json",
+  "receipt_sha256": "dba2f1fea2f057275b7fd67cc444ce2c5e69c232dfe1e48557df04053652ca3e",
+  "artifacts": {
+    "metadata/reduced_covariance_qualification_software_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/reduced_covariance_qualification_software_execution_20261003_v1/configuration.json": "075fe281b81cff46fb5502744a3f83741e207444c3147a29e5055102a7bd33ae",
+    "metadata/reduced_covariance_qualification_software_execution_20261003_v1/stdout.log": "5cdda3a5a45494254c475f5993e80dee4497d611b0c2841b37e9bb4652854948",
+    "metadata/reduced_covariance_qualification_software_execution_20261003_v1/process.json": "dd67fd2ccd9d113fd6e2f993aba7edc9ee69be80bb33ab100a323e65a8fdabf6"
+  },
+  "scope": "One original new CPU-only retained-covariance software stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. Direct dense raw/REML products, unchanged inherited envelopes,600 synthetic audits/1200 setting links and all8680 closed real certificates, no old-source changes/restart/GPU/charges, sample concatenation or scientific acceptance."
+}

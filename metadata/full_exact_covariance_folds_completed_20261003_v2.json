@@ -1,0 +1,38 @@
+{
+  "status": "complete_verified_full_exact_uniform_covariance_folds_v2",
+  "logical_cases": 75188,
+  "cohorts": 4340,
+  "loading_modes": [
+    "signed",
+    "unsigned"
+  ],
+  "certificates": 8680,
+  "case_row_occurrences": 68220240,
+  "retained_basis_counts": {
+    "4": 7232,
+    "5": 1448
+  },
+  "exact_relation_counts": {
+    "signed:pair_equals_target_plus_background": 3616,
+    "signed:gene_equals_half_target_plus_background": 4340,
+    "signed:model_equals_half_pair": 4340,
+    "unsigned:pair_equals_target_plus_background": 3616,
+    "unsigned:gene_equals_half_target_plus_background": 4340,
+    "unsigned:model_equals_half_pair": 4340
+  },
+  "failed_relation_counts": {
+    "signed:pair_equals_target_plus_background": 724,
+    "unsigned:pair_equals_target_plus_background": 724
+  },
+  "full_hash_archive": "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v2/completion_archive.json",
+  "full_hash_archive_sha256": "9a188f3e30be184531928f48af7122c5ce1b7ee22a6512a2caa74a3d70674569",
+  "bound_source_hashes": 4403,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v2/receipt.json",
+  "producer_receipt_sha256": "f8dd8c11d57cfa93519c660ab0ba44c94dccc46c8720219f5b04b140717c9fee",
+  "independent_readback": "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v2/readback.json",
+  "independent_readback_sha256": "cac4e33ff213f6200e26d573e7cb71d5bda2760f61f7a4651a85cd2190a421ea",
+  "completion_plan_sha256": "720fb67094503c7fd14b9a4b4384133a2aa4308e7ef464d984e3e27157e7bc8e",
+  "scientific_eligibility": false,
+  "scope": "Full exact named covariance-dependency certification for all4340cohorts,75188logical cases and both loading modes;8680certificates cover68,220,240cohort-row occurrences. Exact integer Grams test pair=target+background,gene=half(target+background),model=half(pair). A failed identity retains its original kernel and integer counterexample. Named folds are conditional on exact equality,not rank or tolerance. Full nonnegative forward/right-inverse maps preserve the uniform covariance cone; target/residual and signed-zero/unsigned-four-times-family-intercept identities are proved for every cohort. CSR multiplication and independent CSC column outer sums must agree for every case. All13operators/all4340membership files are rehashed against already closed operator/design archives; broader inherited source files are not freshly rehashed here. Producer/independent reader/source/artifact/two-original-journal closure required. No case filtering, variance attribution,nonuniform-weight acceptance,raw/REML model qualification,optimization, biological acceptance,GPU,new costs or source/attempt changes to original jobs."
+}

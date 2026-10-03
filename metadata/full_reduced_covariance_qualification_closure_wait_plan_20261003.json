@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_reduced_covariance_qualification_launch_20261003.json",
+    "metadata/full_reduced_covariance_qualification_readback_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/full_reduced_covariance_qualification_completion_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/full_reduced_covariance_qualification_completion_plan_20261003_v1.json": "bba4fa19c42181bff2783ebe91cdaa696fce23304150e0aef80a8cb1579a6c51",
+    "metadata/full_reduced_covariance_qualification_launch_20261003.json": "f52706872f3597cff5a8cebb18ece7b6f9faf13016a9cbf3907f24a1d30bedeb",
+    "metadata/full_reduced_covariance_qualification_readback_launch_20261003.json": "df44ff84c71178d5523f111311fd83b8f926bdb5a2702abce0e486ab1d37e7c7",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

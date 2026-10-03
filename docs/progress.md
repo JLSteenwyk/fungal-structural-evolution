@@ -12543,3 +12543,43 @@ and figure review remain next.
   hash is published in the [compact replay summary](../metadata/baliphy_current_joint_logger_error_recheck_summary_20261003_1703.json);
   [execution evidence](../metadata/baliphy_current_error_recheck_execution_20261003_1703.json)
   records the actual terminal tool results and original invocation journals.
+
+- October 3, 17:33 UTC: completed and freshly verified the complete exact
+  covariance proofs. The first V1 proof preserves all 724 counterexample
+  cohorts with seven terms; separately versioned V2 proves gene=half(target+
+  background) and model=half(pair) in every cohort. Pair=target+background
+  holds in 3,616 cohorts and fails in 724 per mode. All 8,680 certificates
+  across 4,340 cohorts/75,188 logical cases preserve the nonnegative variance
+  cone, with 7,232 four-term and 1,448 five-term certificates. Independent
+  CSR/CSC integer algebra, artifact/source and two-original-journal closure
+  passed. Fresh full archive verification rehashed 4,394 V1 and 4,403 V2
+  bindings; relevant operator/cohort sources are bound to inherited closed
+  archives, whose broader multi-million-binding files are not freshly rehashed.
+  [Full proof and formulas](full-covariance-dependency-review-20261003.md).
+
+  Implemented, software-qualified and queued the complete retained-kernel raw/
+  REML qualification: 1,302,000 audits and 6,220,800 setting links, retaining
+  all original 622,080 settings, outcomes, fit-inputs and review states. It
+  waits for the original seven-kernel independent arithmetic closure, then
+  copies exact principal Gram/error submatrices and independently checks
+  every entry/rank/link. Direct dense checks, 80 nonnegative covariance
+  roundtrips, three numerical review scenarios, 600 synthetic audits/1,200
+  links and sixteen malformed contracts passed. All 8,680 real certificates
+  passed the new software gate. The original software wait exited zero.
+  Three new controllers and both original dependencies were observed; new
+  native qualification is queued, not running or complete. Two CPUs/16 GiB/
+  no swap, 12-GiB AS/21,600 CPU-second/1-GiB file caps, 8-GiB output planning
+  and 64-GiB free-disk gate were recorded before launch. Runtime is uncalibrated.
+  [Full method, resources, actual evidence and remaining gates](full-reduced-covariance-qualification-20261003.md).
+
+  At 17:27 UTC the exact original paired resampling controller reported
+  5,099/53,200 draws, and the original ancestral sampler had 976 successful
+  unclosed 20-iteration role checkpoints. The earlier read-only replay passed
+  all 872 roles available then. Full uncertainty closure, posterior adequacy,
+  historical allocation failures, accepted framework/reconciliation/dating,
+  production fitting/controls/calibration and all eight aims remain open.
+  The previous goal turn and intervening error check were progress through
+  new complete-scope proof/output evidence and publication; this turn advances
+  full model qualification. The approximately 500-fungus/25-outgroup goal
+  stays active. Original jobs and frozen sources remain intact; GPU prediction
+  remains paused and no charges were incurred.
