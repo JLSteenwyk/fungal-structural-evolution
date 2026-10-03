@@ -1,0 +1,116 @@
+{
+  "status": "existing_full_node_logger_error_reproduced_from_unchanged_native_outputs",
+  "checked_utc": "2026-10-03T08:16:09.354553+00:00",
+  "software_unit": "fungal-full-node-logger-software-validation-20261003-v1.service",
+  "original_controller_pid": 2893222,
+  "unit_result": "exit-code",
+  "controller_exit_code": 1,
+  "native_runs_completed": 2,
+  "native_runs_planned": 6,
+  "native_runs_exit_codes": [
+    0,
+    0
+  ],
+  "completed_prior": "broad",
+  "unexecuted_priors": [
+    "centered",
+    "package"
+  ],
+  "rejected_iterations": [
+    0,
+    10,
+    20
+  ],
+  "state_sequence_mismatches": [
+    {
+      "iteration": 0,
+      "label": "A2",
+      "tip": false,
+      "saved_sequence": "ATCDEYFG",
+      "decoded_states": "ATCDEFFG"
+    },
+    {
+      "iteration": 10,
+      "label": "A4",
+      "tip": false,
+      "saved_sequence": "ACDEYFG",
+      "decoded_states": "ACDEFFG"
+    },
+    {
+      "iteration": 10,
+      "label": "A6",
+      "tip": false,
+      "saved_sequence": "ACDEYFG",
+      "decoded_states": "ACDEFFG"
+    },
+    {
+      "iteration": 20,
+      "label": "e",
+      "tip": true,
+      "saved_sequence": "AVDEFG",
+      "decoded_states": "ACDEFG"
+    },
+    {
+      "iteration": 20,
+      "label": "A0",
+      "tip": false,
+      "saved_sequence": "AVDEFG",
+      "decoded_states": "ACDEFG"
+    }
+  ],
+  "same_seed_native_byte_comparisons": {
+    "C1.log": true,
+    "C1.log.column-map.json": true,
+    "C1.log.json": true,
+    "runtime-tree.nwk": true,
+    "C1.P1.fastas": true
+  },
+  "root_cause": "not_established",
+  "new_native_inference_runs": 0,
+  "failed_sources_preserved": "data/software_audits/baliphy-full-node-logger-failure-preservation-20261003-v1",
+  "passed_qualification_receipt_exists": false,
+  "original_sampler_unclosed_checkpoints": 344,
+  "source_hashes": {
+    "scripts/baliphy_full_node_logger.py": "ffc48764afa427d0482412ff7be7e94e2d9844e063c64445d7954843620fe54f",
+    "data/software_audits/baliphy-full-node-logger-failure-preservation-20261003-v1/baliphy_full_node_logger.py": "ffc48764afa427d0482412ff7be7e94e2d9844e063c64445d7954843620fe54f",
+    "scripts/check_baliphy_full_node_logger.py": "01092d56b08ae07a529ecd383ba123129c34d2870d9b205f2519a76ff5a22186",
+    "data/software_audits/baliphy-full-node-logger-failure-preservation-20261003-v1/check_baliphy_full_node_logger.py": "01092d56b08ae07a529ecd383ba123129c34d2870d9b205f2519a76ff5a22186",
+    "scripts/prepare_baliphy_full_node_logger_models.py": "e41c1a5e8d565350a0b66bef118003830e6c21621a00abd5f69a5149d66061ef",
+    "data/software_audits/baliphy-full-node-logger-failure-preservation-20261003-v1/prepare_baliphy_full_node_logger_models.py": "e41c1a5e8d565350a0b66bef118003830e6c21621a00abd5f69a5149d66061ef",
+    "data/software_audits/baliphy-full-node-logger-failure-preservation-20261003-v1/original-unit-journal.txt": "98a42b2645853458b43f9c57dbeb527d81e5ed0b5fcecf26078b8d3393ca307d",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/broad-original_tip_logger.hs": "3448dce9fa25471d374c16abd4f2b7468c37061c4246b80d596501e9f2550861",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/broad-full_node_logger.hs": "9b7fa40806052137b7411abfc076e749b5e815a2d8633184b3c22d85ccbe816d",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/alignment.faa": "bc802001a1324b49d594db1887af998c7c61756e0df97798ba8b326821cb5ff4",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/tree.nwk": "6682fb88cfb4aea834c523804c048fd520b74510f33fba4b914cb2f91502d360",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/configuration.json": "db8a822f7b7ea6846b2007ebbad24fdd3d8b947197a0e8a5b201a63cfb988472",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/receipt.json": "84f9774c4402f5c20508d5e965022a98a051f10baadd133b84618d1981b58b01",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/command.json": "70c7dde117ef90922b59a7a1c36268d64c6342568fb63520cb5f0168b30c4235",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/stderr.log": "c68a12cf752f75c47e1fb6430320709a4ad3cc926a25caca24f6c7f670e698b3",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/stdout.log": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/process.json": "f0fab15c3012363d0de363d3370e6ed4e635603e251b797b63d15fb0ce8eba02",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/independent-chain-1/C1.log": "4848a0e29c41f93fdc2c4d55c7a16bb37fbb1e12056866f78e436849127d86fe",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/independent-chain-1/C1.log.column-map.json": "7a757bbe430f9415582f6f51c7ae16e7b64be6e269836533779696fa9519c657",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/independent-chain-1/C1.log.json": "5cb019f05d001e39a551cb5de0e20cbd78539c9ceccbbe7d26b74b8b50102c9b",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/independent-chain-1/runtime-tree.nwk": "d8d64e94d5dbdfad8759511298a71240fb5f2ea3c94c2996148b0676ab41f7e4",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/independent-chain-1/C1.P1.fastas": "91efe08b5b68877a148b66cb259b42ad530e2a51255b5c0ed70c5ff3b11eb1a9",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/full_node_logger/attempt-0001/independent-chain-1/C1.P1.site-property-samples.jsonl": "ece900fcfb0250a183b1ecff8f292c4693f5731b1d7cf7a6662fbaaf43305c39",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/configuration.json": "df29ce806c9ae5573c7071860eca15d269130dd3e0b88a2e8deaa9ae4fc22257",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/receipt.json": "9dbe6fd8220e816bd7e79716b32f45f2c091e99cf28a90ed8b04a562c2ba10d3",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/command.json": "4c898cb5948c1d04c39aedd2de13344c7dd7522013271e47ddc8fd5fe6083d4d",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/stderr.log": "c68a12cf752f75c47e1fb6430320709a4ad3cc926a25caca24f6c7f670e698b3",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/stdout.log": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/process.json": "b1757daa8c7ecf649046dca6747f89075562856556c6b380a8010e0447cc9651",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/independent-chain-1/C1.log": "4848a0e29c41f93fdc2c4d55c7a16bb37fbb1e12056866f78e436849127d86fe",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/independent-chain-1/C1.log.column-map.json": "7a757bbe430f9415582f6f51c7ae16e7b64be6e269836533779696fa9519c657",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/independent-chain-1/C1.log.json": "5cb019f05d001e39a551cb5de0e20cbd78539c9ceccbbe7d26b74b8b50102c9b",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/independent-chain-1/runtime-tree.nwk": "d8d64e94d5dbdfad8759511298a71240fb5f2ea3c94c2996148b0676ab41f7e4",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/independent-chain-1/C1.P1.fastas": "91efe08b5b68877a148b66cb259b42ad530e2a51255b5c0ed70c5ff3b11eb1a9",
+    "data/software_audits/baliphy-full-node-logger-20261003-v1/native/broad/original_tip_logger/attempt-0001/independent-chain-1/C1.P1.site-property-samples.jsonl": "aeb3429675b7da73c97062ed5a9c68ce12ddd6c3974390bfd20ad1b52c87c1ee",
+    "metadata/independent_short_sampler_replay_execution_checkpoint_20261003_v4.json": "1a346626e373bdf7892c3d0d17cc25b643526913a06e7a5ab10a8723c3218f21"
+  },
+  "posterior_qualified": false,
+  "scientific_eligibility": false,
+  "scope": "Read-only replay of all three existing broad-prior full-node logger frames reproduces the strict state/sequence mismatch. Four ancestral records and one ambiguous observed-tip record differ. Both native attempts exited zero, and all compared scalar/runtime-tree/FASTA files match the corresponding same-seed original logger byte-for-byte. This does not establish why two logger representations disagree or prove independence or consistency of other outputs. No original or test sources, native attempts, limits, schedules or job states modified; failed-source copies and original failure journal retained. Remaining paired software tests and any future full-node model preparation remain unqualified."
+}
