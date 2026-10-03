@@ -1,5 +1,13 @@
 # Full independent short-sampler output replay
 
+The [observation-aware version-2 reader](independent-short-sampler-replay-v2-20261003.md)
+has now passed full-grid software qualification and is separately queued for
+all 1,620 original roles. It retains distinct unknown-residue draws and checks
+both logs against concrete observations without asserting joint identity.
+Version 1 remains frozen and its original jobs are unchanged; the historical
+protocol below records its original strict cross-log contract. Full production
+replay/readback/closure for both versions remain pending.
+
 The complete 1,620-role independent output replay is queued behind the
 original short sampler's full source/artifact/journal closure. It will decode
 every successful role's three saved alignments and available site-property

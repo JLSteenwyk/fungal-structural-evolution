@@ -16,9 +16,11 @@ tests across all priors and all 405 sources have been transformed for future
 roles; no posterior horizon is launched. All intermediate failures and
 current frozen jobs remain untouched.
 
-The original queued reader's cross-log comparison at input `X` needs a new
-qualified version: check concrete observations, retain separate conditional
-draws at unknown residues and preserve all 24 affected roles. Do not invent
+The original queued reader's cross-log comparison at input `X` is addressed
+by a [separately qualified and queued version 2](independent-short-sampler-replay-v2-20261003.md):
+check concrete observations, retain separate conditional draws at unknown
+residues and preserve all 24 affected roles. Full production closure remains
+pending. Do not invent
 unlogged ancestral category labels, silently relax the frozen reader, fuse
 separate logger draws or treat this software qualification as posterior
 mixing. [Protocol, evidence and full scope](baliphy-joint-node-logger-20261003.md).

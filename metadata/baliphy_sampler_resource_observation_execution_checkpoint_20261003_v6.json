@@ -1,0 +1,491 @@
+{
+  "checked_utc": "2026-10-03T08:46:35.071245+00:00",
+  "status": "verified_original_sampler_resource_observer_runtime",
+  "plan_sha256": "69b2ce89f33f67c94c170a2f6f625917203577e25daf1d592abaafaf5678008c",
+  "frozen_pins_checked": 1000,
+  "original_handles": [
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-20261003-v1.service",
+      "pid": 2846844,
+      "created": 1791010303.2,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json",
+      "plan_sha256": "356244b465489bc8aa66cae0a72f32041c9a7e2d65d3b144c4cbba96b75cb76c",
+      "checked_utc": "2026-10-03T06:51:43.932201+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "2147483648",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=100%",
+        "--property=MemoryMax=2G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [
+        {
+          "pid": 2846852,
+          "created": 1791010303.27,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_baliphy_sampler_resource_observation.py",
+            "--plan",
+            "metadata/baliphy_sampler_resource_observation_plan_20261003.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 172.75
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "350dd0d57d4fc862659b53fd63e96d2bc7420caa53aad5ddcdaad9940e0183f6",
+      "current_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "2147483648",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-readback-20261003-v1.service",
+      "pid": 2846848,
+      "created": 1791010303.25,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json",
+      "plan_sha256": "f59cdbd5910cdc0245a606c7d3e110572a42ad96faf4be388523498f07885296",
+      "checked_utc": "2026-10-03T06:51:43.962763+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=4G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.27,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "e8256064e4699eb6a9e4aefcb87e0465715b84ba484b458f7211812afefc54f7",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-closure-20261003-v1.service",
+      "pid": 2846853,
+      "created": 1791010303.28,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json",
+      "plan_sha256": "e5fa704c3381215b86ec6038d87374178af5916898a0d593622eb99335536669",
+      "checked_utc": "2026-10-03T06:51:43.992694+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=4G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.41000000000000003,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "02804dc80e11b5c67ac37b5cb963ffc65fdb4cc17746df235be4a5db031ac837",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+      "pid": 2826442,
+      "created": 1791008208.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json",
+      "plan_sha256": "ee2b31dd7a4e2bb9af52b44bc1b48c62b2c38e8e994461bff0fa0543b1f3e189",
+      "checked_utc": "2026-10-03T06:16:49.275037+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=1600%",
+        "--property=MemoryMax=200G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_reference_sampler_qualification_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.15000000000000002,
+      "children": [
+        {
+          "pid": 2852477,
+          "created": 1791010881.41,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_baliphy_reference_sampler_qualification.py",
+            "--plan",
+            "metadata/baliphy_reference_sampler_qualification_plan_20261003.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 225.3
+        },
+        {
+          "pid": 2913579,
+          "created": 1791016896.57,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "530975121",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-centered.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 297.77
+        },
+        {
+          "pid": 2915830,
+          "created": 1791017108.97,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "689683296",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 85.37
+        },
+        {
+          "pid": 2916078,
+          "created": 1791017123.11,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "49336324",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 71.24
+        },
+        {
+          "pid": 2916517,
+          "created": 1791017166.06,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1064881629",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 28.3
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "43e07f1b5ecdfb75aefbdf0537288164f42c1318bb10f0777617efd9b2a3a81b",
+      "current_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      }
+    }
+  ],
+  "journal_bytes": 85174973,
+  "latest_complete_snapshot": {
+    "sequence": 6711,
+    "checked_utc": "2026-10-03T08:46:34.172893+00:00",
+    "sampler_controller_pid": 2826442,
+    "sampler_controller_created": 1791008208.54,
+    "elapsed_since_previous_snapshot_seconds": 1.0494422200135887,
+    "cgroup": {
+      "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+      "limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "memory_bytes": {
+        "memory.current": 6133129216,
+        "memory.peak": 14773534720,
+        "memory.swap.current": 0
+      },
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "scope": "Cgroup counters include descendants and kernel/cache charges; not the sum of native worker RSS. No counter resets or configuration writes."
+    },
+    "new_attempts": [],
+    "native_observations": [
+      {
+        "chain_id": "8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-centered-chain4",
+        "pid": 2913579,
+        "created": 1791016896.57,
+        "identity_sha256": "ff94885e113a0c2a0fdbc206ddef0d8b66d0d668b7813aabe6c1d71dc99b4065",
+        "checked_utc": "2026-10-03T08:46:34.166740+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "530975121",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-centered.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 51539607552,
+          "Max cpu time": 1462,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 1582329856,
+          "VmSize": 1518837760,
+          "VmHWM": 1503674368,
+          "VmRSS": 1437958144,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 296.87,
+        "raw_proc_status_sha256": "4922a58882e7b20495f189f5a1138e5f12eb166caefc4d8d90c5875ff7782c17",
+        "raw_proc_limits_sha256": "2634887ec4c9daa3a0cc92327e29016575210c639b86271bc1d4928bd0f0875f",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package-chain1",
+        "pid": 2915830,
+        "created": 1791017108.97,
+        "identity_sha256": "9dbebbe9f3b4fe9efa37ee162557ce89c7212ff5c68f88c9352c062d5e2dca92",
+        "checked_utc": "2026-10-03T08:46:34.168475+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "689683296",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 51539607552,
+          "Max cpu time": 1465,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 1468989440,
+          "VmSize": 1188409344,
+          "VmHWM": 1396948992,
+          "VmRSS": 1115967488,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 84.47000000000001,
+        "raw_proc_status_sha256": "0b4688be3b8bcfa429beca5a8c8e6bc4840b94bd8a692c0a9d27aa2c09fc6564",
+        "raw_proc_limits_sha256": "3f3d43c75848a9d458d0b60fc55102306f7bb4a5f07af7206b98baa524f94e7b",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package-chain2",
+        "pid": 2916078,
+        "created": 1791017123.11,
+        "identity_sha256": "7c3be3cead16b438aa63af74745167fcaaba977fd4a3ade0e1c157bcfba7866d",
+        "checked_utc": "2026-10-03T08:46:34.169932+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "49336324",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 51539607552,
+          "Max cpu time": 7200,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 1497694208,
+          "VmSize": 1497694208,
+          "VmHWM": 1420668928,
+          "VmRSS": 1420668928,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 70.33999999999999,
+        "raw_proc_status_sha256": "3eff5a16cd3bec3d47f54febaa348b489ac99ed357fa0b9428c845b614c638cb",
+        "raw_proc_limits_sha256": "8fe34398ff6e11e6075821d4103973aabad895a6ce800d089f97f27e399efefb",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package-chain3",
+        "pid": 2916517,
+        "created": 1791017166.06,
+        "identity_sha256": "740248bfc5325ee77cb550fd4fdee51c8e57955d5b4a23adfbc1a9a506ca2a51",
+        "checked_utc": "2026-10-03T08:46:34.171345+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1064881629",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 51539607552,
+          "Max cpu time": 1966,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 1466585088,
+          "VmSize": 1172635648,
+          "VmHWM": 1394655232,
+          "VmRSS": 1101508608,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 27.400000000000002,
+        "raw_proc_status_sha256": "011bf927d7e241728dd0ea48c1406496bfd97f4fe27f168c8e5732247034d452",
+        "raw_proc_limits_sha256": "4cac6335f867eceaf232196a1364cc88490cf0d80567690fa0d1dbd45d6fb917",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      }
+    ]
+  },
+  "posterior_qualified": false,
+  "new_native_jobs": 0,
+  "gpu": false,
+  "scope": "Exact original handles, live caps and latest complete observation only; no full event/native replay, source closure or precision/final-peak claim."
+}

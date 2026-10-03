@@ -1,5 +1,11 @@
 # Joint ancestral sequence and category logging
 
+The historical reader issue described below is now addressed by a
+[software-qualified version-2 replay](independent-short-sampler-replay-v2-20261003.md),
+queued for all 1,620 original roles. Full production closure remains pending;
+this new reader cannot recover unlogged ancestral categories or joint identity
+between historical separate logs.
+
 The corrected logger has passed capped native software checks across all
 three priors. The complete future source grid is prepared: **405 model
 programs and 1,620 fresh seed roles**, covering all 135 effective inputs and

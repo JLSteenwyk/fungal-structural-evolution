@@ -1,0 +1,39 @@
+{
+  "status": "verified_original_short_sampler_replay_v2_software_completion",
+  "checked_utc": "2026-10-03T08:43:21.122129+00:00",
+  "terminal": {
+    "unit": "fungal-short-replay-v2-software-validation-20261003-v1.service",
+    "pid": 2913742,
+    "command": "/home/bizon/anaconda3/bin/python scripts/check_independent_short_sampler_replay_v2.py --output data/software_audits/independent-short-sampler-replay-v2-20261003-v1 --receipt metadata/independent_short_sampler_replay_v2_software_validation_20261003_v1.json",
+    "invocation": "546f24bb7e0245c095fd27c10c8c2eeb",
+    "receipt": "metadata/independent_short_sampler_replay_v2_software_validation_20261003_v1.json",
+    "receipt_sha256": "38d4794d88532c5db2308b3ad721d1bf5907ce129e8af1987380750685e7e9bd",
+    "checked_source_bindings": 98,
+    "checked_export_bindings": 0,
+    "journal_sha256": "0b3161174ec22e55aa25121e168da4e4aa8e218284da583e73b25c10e87c6468",
+    "actual_completion_resources": [
+      {
+        "__REALTIME_TIMESTAMP": "1791016928714539",
+        "CPU_USAGE_NSEC": "11971485000",
+        "MEMORY_PEAK": null,
+        "MEMORY_SWAP_PEAK": null
+      }
+    ],
+    "status": "verified_original_software_completion"
+  },
+  "resource_plan": "metadata/independent_short_sampler_replay_v2_software_resource_plan_20261003.json",
+  "resource_plan_sha256": "631e40f5de4824389a3c605f1fd365a67d34fed132eee49433bc57b530fd1f20",
+  "configured_group_limits": {
+    "cpus": 2,
+    "memory_gib": 16,
+    "swap_gib": 0
+  },
+  "live_cgroup_capture_available": false,
+  "observation_note": "A subsequent live launch capture encountered PID0 after collection. Original invocation-linked process/resource journal and passed receipt prove completion; no collected default fields, live cgroup-limit capture, native rerun, or missing memory-peak estimate are substituted.",
+  "source_hashes": {
+    "metadata/independent_short_sampler_replay_v2_software_validation_20261003_v1.json": "38d4794d88532c5db2308b3ad721d1bf5907ce129e8af1987380750685e7e9bd",
+    "scripts/check_independent_short_sampler_replay_v2.py": "ab70778ee2706f7ed9e9424910454277cece9dee9720679e7838fec58dccea12"
+  },
+  "scientific_eligibility": false,
+  "posterior_qualified": false
+}

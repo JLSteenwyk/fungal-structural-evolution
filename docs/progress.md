@@ -1,5 +1,40 @@
 # Progress and evidence
 
+## October 3: observation-aware full replay qualified and queued
+
+The [corrected historical reader v2](independent-short-sampler-replay-v2-20261003.md)
+is queued for all 1,620 original roles, 405 quartets, 135 inputs and 324
+configuration aliases after verified sampler closure. Concrete observations
+must match both native logs; differences at unknown source residues are
+retained with tip coordinates and both letters. Joint identity between
+separate log draws remains explicitly unavailable. Every failed/invalid role
+and every ambiguity-affected role remains in the scope; no inference restarts
+or successful arrays for unresolved roles are introduced.
+
+Software checks passed complete producer/reader serialization with all real
+role metadata and explicitly mocked native/source results. All 24 affected
+roles, 216 artificial unknown positions and 72 artificial differences were
+serialized. Three actual available native roles matched the separate anchor
+oracle across all nine alignments. Nine retained native software ambiguity
+frames exposed five disagreements rejected by v1 and correctly retained by
+v2. All 400 unknown-state pair combinations, fifteen malformed property/JSON
+cases, three extra observed-constraint cases and fourteen serialization/
+claim alterations were checked. These are software/read-only QC results;
+production proof remains pending. Original software completion and 98
+bindings were verified from the actual invocation journal. Its subsequent
+live cgroup capture missed the fast terminal process; no rerun or fabricated
+memory/limit observation replaced that missing evidence.
+
+New original controllers 2915414/2915420/2915424 and their live two-CPU,
+16-GiB/no-swap caps were checked. At 08:45 UTC the sampler had 869 successful
+unclosed role checks and both original replay versions remained queued with
+zero role checkpoints. Version 2 has 1,008 frozen source pins; v1's 1,006 pins
+and handles were separately verified unchanged. The resource observer and
+broader covariance/timing queue remain live/verified. Full sampler, observer
+and replay closure, longer adequate ensembles, model/root/predictor controls,
+calibration and all eight aims remain incomplete. GPU prediction remains
+paused. [Protocol, budget and complete evidence](independent-short-sampler-replay-v2-20261003.md).
+
 ## October 3: joint ancestral logger qualified; complete future grid prepared
 
 The [joint logger correction](baliphy-joint-node-logger-20261003.md) passed

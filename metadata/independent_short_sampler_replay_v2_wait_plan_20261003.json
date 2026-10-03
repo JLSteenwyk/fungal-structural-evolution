@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_independent_short_sampler_replay_v2.py",
+    "--plan",
+    "metadata/independent_short_sampler_replay_v2_plan_20261003.json"
+  ],
+  "pins": {
+    "metadata/independent_short_sampler_replay_v2_plan_20261003.json": "ef63ed811d22522a9ab49b771928787f0e69b10bfb4ef408d76e150749abea80",
+    "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json": "84f13d5c49b95e5eaf43842bbc6b5f0c29782a19baed655a4fa576adac3dcbe8",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

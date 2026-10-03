@@ -17,12 +17,14 @@ has passed native software checks across all three priors. Encoding sequences
 and full-node categories in one record gives exact residue/state agreement;
 separate legacy logs can represent different conditional draws. All 405
 future model programs and 1,620 disjoint seed roles are prepared but unlaunched.
-At 08:30 UTC, the original sampler had 747 successful unclosed checks.
+At 08:45 UTC, the original sampler had 869 successful unclosed checks.
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
-identified a remaining validation issue affecting 24 original roles; the
-frozen queued reader requires a separately qualified correction for unknown
-residues. Current jobs and sources remain unchanged. Posterior qualification
-and all eight biological aims remain open.
+identified a validation issue affecting 24 original roles. The
+[observation-aware reader v2](docs/independent-short-sampler-replay-v2-20261003.md)
+has passed full-grid software serialization and is queued for every original
+role. It retains unknown-residue disagreements without combining separate
+draws. Original jobs and sources remain unchanged. Full production replay,
+posterior qualification and all eight biological aims remain open.
 
 
 The [full independent native-alignment replay](docs/independent-native-alignment-replay-20261002.md#october-3-complete-serialized-and-provenance-closure)
@@ -62,15 +64,16 @@ records every role, missed observations and actual enforced limits. Full
 sampler/observer closure, original memory failures and posterior qualification
 remain open. [Verified original execution](metadata/baliphy_reference_sampler_execution_checkpoint_20261003_v3.json).
 
-The [full independent short-sampler replay](docs/independent-short-sampler-replay-20261003.md)
+The [full independent short-sampler replay v2](docs/independent-short-sampler-replay-v2-20261003.md)
 is now queued after complete sampler closure for all 1,620 roles. It will
 independently decode all saved alignments, candidate-node mappings, residue
 projections and available tip category/state arrays, retaining every failure.
 Internal category labels are absent from this native logger and remain
 explicitly unavailable. Complete-grid software serialization and read-only
-native checks passed; the original jobs were not restarted. At 07:48 UTC,
-the sampler had 188 successful unclosed roles and all six original replay/
-sampler handles were verified. [Queue evidence](metadata/independent_short_sampler_replay_execution_checkpoint_20261003.json).
+native checks passed; the original jobs were not restarted. At 08:45 UTC,
+the sampler had 869 successful unclosed roles and all six original version-2
+replay/sampler handles and 1,008 pins were verified.
+[Queue evidence](metadata/independent_short_sampler_replay_v2_execution_checkpoint_20261003_v1.json).
 
 The [earlier full project runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v20.json)
 checks 16 pipeline handles and six original scientific/retrieval jobs, with

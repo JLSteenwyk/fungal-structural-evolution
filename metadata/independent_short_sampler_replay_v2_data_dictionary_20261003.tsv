@@ -1,0 +1,13 @@
+field	type	interpretation
+unknown_observed_tip_positions	integer	Number of inputX positions checked in each frame; repeated frames/roles are dependent observations.
+concrete_observed_tip_positions	integer	Positions where both separately logged letters exactly match a known source residue.
+tip_log_draw_disagreements	list[object]	Every unequal pair at sourceX retained; no alignment/category draw is overwritten or selected as a joint draw.
+tip_log_draw_disagreements.tip	string	Original runtime/source tip label.
+tip_log_draw_disagreements.ungapped_tip_offset	integer	Zero-based coordinate in the ungapped observed tip sequence; not an ancestral or alignment-column coordinate.
+tip_log_draw_disagreements.alignment_logger_letter	string	Residue from the separately logged native FASTA; this file alone supplies residue projections.
+tip_log_draw_disagreements.category_logger_letter	string	Residue decoded from the separately logged category/state record in native ARNDCQEGHILKMFPSTWYV order.
+tip_log_draw_disagreement_positions	integer	Exact length of the retained difference list, summed across frames in the full summary.
+tip_logs_joint_trajectory_available	boolean	Always false even if the separately logged draws happen to agree.
+ancestral_categories_available	boolean	Always false in this historical horizon; internal category labels are absent and never reconstructed from tip data.
+projection.states	uint8[3,4,anchors]	Decoded legacy FASTA projections in ACDEFGHIKLMNPQRSTVWYX- order; no category draw is joined to these arrays.
+status	string	Version2 integrity disposition; all original failures/invalid roles retain unresolved status and no successful projection array.
