@@ -11795,3 +11795,56 @@ and figure review remain next.
   pending. Original qualification/timing jobs retain six live/eight successful
   terminal handles; fitting remains unlaunched. No job was restarted during
   the recheck, GPU prediction stays paused, and all eight aims remain open.
+
+
+- October 3, 04:35 UTC (00:35 EDT): the previous turn verified the monitor
+  regression and actual former categorical failure, then closed/published the
+  full conditional node-mapping stage. It was concrete progress; no original
+  production job was restarted.
+
+  Implemented and completed the full ancestral resource/numerical census:
+  1,620 identities, 405 quartets, 135 effective inputs and all 324 aliases,
+  covering 1,620 initial plus three selected recovery attempts. The complete
+  producer/readback software grid passed, refused completed restarts and
+  rejected ten altered serialized exports plus two malformed iteration traces.
+  An ineffective warning-erasure fixture was corrected to target an actual
+  warning; final stable version2 validation passed. The first validation is
+  intermediate evidence and is not the production gate.
+
+  The immutable 25-pin plan launched after actual prerequisite journals and
+  full resource estimates. Original controllers 2757537/2757541/2757546
+  installed two-CPU/eight-GiB/no-swap/BLAS-one caps. Producer, full serialized
+  reconstruction and provenance closure completed 8,690 source/artifact
+  bindings and both original producer/reader journals. A final observer
+  verified all three successful original terminal journals and archive hash.
+
+  Across the selected intact chains, 134 log nonfinite gamma shape during
+  initialization and four record allocation warnings. All 336 selected
+  nonfinite observations occur at iterations 1–14, before both burn-in
+  cutoffs. Two selected failures retain rapid alignment expansion and
+  unresolved memory requirements despite a 48-GiB address-space cap. These
+  are numerical/sampler review facts, not an isolated causal diagnosis or
+  evidence that retained samples are adequate or corrupted.
+
+  Measured successful worker wall durations sum to 1,612.11 hours; native
+  saved files occupy 42.40 GiB. Complete fresh-seed proposals preserve all
+  1,620 roles and aliases at 10,000 iterations, with 750/500 retained saved
+  samples at the two cutoffs. Their linear successful-subset time/size
+  scenarios are uncalibrated, exclude unresolved failed outcomes and are
+  not an ETA or memory/convergence guarantee. The old two-GiB file cap is
+  insufficient for the largest projected file. Proposals remain unlaunched.
+  Complete 405-row tables and four-panel PNG/SVG/PDF figure were generated
+  and inspected visually; all hashes and figure code are recorded.
+  [Methods, results, resources and evidence](baliphy-horizon-resources-20261003.md).
+
+  The original native residue producer completed at 00:14 EDT: all 1,618
+  intact/two failed chain identities, 163,418 saved alignments,
+  9,732,673,504 states and 4,239,976,576 cutoff-count cells. Its actual
+  successful terminal journal is verified; the original serialized reader
+  was live at 872/1,620 chains at 00:35 EDT and closure remains queued.
+  Categorical production had 399/405 groups (397 complete, both failures
+  retained), 1,706,103 pattern rows and 37,534,266 state indicators. The
+  original qualification/timing observer retained six live and eight
+  successful terminal handles; fitting remains unlaunched. No native
+  sampling/GPU/new-cost launch or existing-source edit; all eight aims,
+  accepted framework, model/predictor controls and calibration remain open.

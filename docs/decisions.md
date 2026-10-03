@@ -1057,3 +1057,25 @@ No live production source, plan or invocation was changed.
 The error recheck passed the seven monitor contracts and the exact ESS review
 regression. The numerical discrepancy remains review and both native allocation
 failures remain unresolved; passing serialization does not qualify sampling.
+
+
+## October 3: budget longer sampling from the full observed grid
+
+Use the full initial-plus-selected-recovery census rather than successful
+small cases or the original 20-iteration timing extrapolation. Preserve all
+1,620 identities, 405 quartets, 135 inputs and 324 aliases, including both
+failed selected chains and all six intact members of unresolved quartets.
+Keep allocation warnings, all failed partial traces and nonfinite tokens
+visible. The 134 completed chains with infinite initial gamma shape have
+all such events before burn-in; this is review evidence, not proof of
+retained-posterior corruption or adequacy.
+
+Prepare a complete 10,000-iteration fresh-seed scenario with unchanged
+diagnostic thresholds and both burn-in fractions. No concatenation or
+selection of stable-looking chains. Keep launch disabled until sampler/
+initialization behavior, memory requirements and per-file/output budgets
+are addressed. Neither elapsed worker time nor linear output scaling
+proves a convergence ETA or a safe memory cap. The complete census
+producer/readback/provenance stage is closed; all scientific controls
+and eight aims remain open.
+[Measured data and full proposal](baliphy-horizon-resources-20261003.md).

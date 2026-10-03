@@ -1,0 +1,46 @@
+{
+  "source_plan": "metadata/baliphy_horizon_resources_plan_20261003.json",
+  "producer_receipt": "results/ancestral/full-baliphy-horizon-resources-20261003-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-horizon-resources-20261003-v1/readback.json",
+  "producer_status": "complete_full_baliphy_horizon_resource_inventory_pending_readback",
+  "reader_status": "passed_full_baliphy_horizon_resource_inventory_serialized_readback",
+  "completed_status": "complete_verified_full_baliphy_horizon_resource_inventory",
+  "summary_fields": [
+    "full_chains",
+    "effective_input_groups",
+    "full_quartets",
+    "selected_checked_chains",
+    "selected_failed_chains",
+    "original_and_selected_recovery_attempts",
+    "complete_quartets",
+    "unresolved_quartets",
+    "proposed_fresh_chain_seeds",
+    "proposed_iterations",
+    "observed_successful_elapsed_worker_seconds",
+    "observed_successful_native_alignment_bytes_size_only",
+    "linear_successful_worker_seconds",
+    "linear_successful_native_alignment_bytes_size_only",
+    "memory_requirements_for_two_failed_chains_unresolved",
+    "runtime_projection_uncalibrated",
+    "finish_eta",
+    "convergence_eta",
+    "sampler_review_quartets",
+    "selected_successful_allocation_warning_chains",
+    "selected_successful_parameter_review_chains",
+    "attempt_diagnostics",
+    "production_launch_allowed"
+  ],
+  "launches": [
+    "metadata/baliphy_horizon_resources_launch_20261003.json",
+    "metadata/baliphy_horizon_resources_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_horizon_resources_plan_20261003.json": "9ba8a97c790a6837b47cb91e0e740f0f7381e2192f8e132e35821785cdb85c2e",
+    "metadata/baliphy_horizon_resources_launch_20261003.json": "a6a5eca3edfb87ac402f9446787d89d71bbd4f3694ccd7c91845c70185f75e87",
+    "metadata/baliphy_horizon_resources_readback_launch_20261003.json": "62ed974e35a8215093a8fc03b1e1742da4a39f864cab350de57162b847278388",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_horizon_resources_completed_20261003.json",
+  "scope": "Complete resource and five-parameter numerical census; finite ranges and every nonfinite/nonpositive token preserved. All1620/405 identities and initial+selected recoveries, including failures. Fresh1.16GBscalar/stderr hashes plus used receipt/config/model/input hashes; large saved-alignment content not freshly hashed by this census, only file sizes. Proposed10000iteration fresh chains remain unlaunched; twofailedchain memoryneeds and adequate model/sampler remain unresolved. Workspace/output/runtime are planning allowances, not guarantees. Full serialization/source/artifact/two actual original journals required for census closure. No sampling or structure ensemble qualification; accepted framework/controls/calibration and all eight aims incomplete."
+}

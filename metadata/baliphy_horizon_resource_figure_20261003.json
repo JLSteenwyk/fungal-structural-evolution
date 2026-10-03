@@ -1,0 +1,36 @@
+{
+  "status": "complete_descriptive_full_horizon_resource_figure",
+  "checked_utc": "2026-10-03T04:29:14.191023+00:00",
+  "source_hashes": {
+    "metadata/baliphy_horizon_resources_completed_20261003.json": "d9bdc9f09e31022bfc3a21ed003536e52c1a05a85349236560ed0c34906e01e7",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/completion_archive.json": "e2bc39f4142d8aa0d8e85eb47a0657df25a56057747fbc8f9c097ade0d9e2aa2",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/receipt.json": "69d0c7ae4023507f88500924ab95209eeb83ce97af574816c4e1ca4b40874b0a",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/readback.json": "112785983dcadb80b4e29f40396eef44508d05bde809a7d9be720bc6740c873a",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/quartets.jsonl": "36cb83fae90b895aaf613002f2250ad4e7960ab2be4e2a546b385616b6fc5ae1",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/proposed.jsonl": "6c18034e16ab04410b376568069e9580bf995ff6e5b56dc7bdd9572b6f6f258f",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/attempts.jsonl": "069146d285f43d2b47a5e3b6364ffdb8a09d756391fe7d4ae445fb398700f79c",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/chains.jsonl": "c3743d66731b8ed5b60f0ba09c3dced1e158e08e3f345fcaa7af2ea2d1e46beb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-memory-recovery-20261002-v1/8f253aff94d6ce28f3fca0a5be84699ed27fe7acaa56f718dce2fd6348558452-package-chain2/attempt-0001/independent-chain-1/C1.log": "f24c235cf56b060fd285ac840449408d794b3051838f63e40d0720f91005852b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-independent-memory-recovery-20261002-v1/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-chain4/attempt-0001/independent-chain-1/C1.log": "6545402469f0fb188939029140ce07380d6a02ed522c1bae25334f898bb030c2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/plot_baliphy_horizon_resources.py": "5b5af7ebc5b7ff12df99691843457cc0059356f501787cd70160b1b212c17c8a"
+  },
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "families": 13,
+  "successful_nonfinite_parameter_chains": 134,
+  "successful_allocation_warning_chains": 4,
+  "nonfinite_alpha_observations": 336,
+  "nonfinite_iteration_range": [
+    1,
+    14
+  ],
+  "nonfinite_observations_after_first_burn_in_cutoff": 0,
+  "artifacts": {
+    "docs/tables/baliphy_horizon_resources_20261003.tsv": "f220341037a7889a9f7c71c7143c52197d99597ef6e8a90b5a0de8cd85ce4fa1",
+    "docs/figures/baliphy_horizon_resources_20261003.png": "034b8a6ea534b3bf8e264b258760cbe6f84c0ecc05470da96d85e3dd32c726a1",
+    "docs/figures/baliphy_horizon_resources_20261003.svg": "db3bc7444d744ffeba54e7408bd34eab6c6edb531ed4f594bbcf938db01ea8b0",
+    "docs/figures/baliphy_horizon_resources_20261003.pdf": "224bf6a80887e57f5789ff75736769968a9a08688ca38c6e62f2d4cb5299b390"
+  },
+  "scientific_eligibility": false,
+  "scope": "All405dependent model quartets retained; time is worker wall duration, not CPU hours or a finish forecast. Warnings and nonfinite initial tokens are retained, not proof of a particular cause or stationary-posterior corruption. Both selected failures plotted from complete partial raw logs; no extrapolated memory bound or accepted posterior/root/model."
+}

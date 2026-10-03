@@ -1200,3 +1200,25 @@ review, although it no longer stops the revised run; both native allocation
 failures remain unresolved. GPU inference stays paused. Accepted framework,
 controls/calibration and all eight biological aims remain incomplete.
 [Evidence and limits](independent-native-clade-mapping-20261002.md).
+
+
+### October 3: full measured sampling census and unchanged biological gates
+
+The full 1,620-chain/1,623-attempt/405-quartet resource/numerical survey
+completed serialized/source/artifact/two-journal closure with 8,690 bindings.
+All aliases and both failures remain included. Complete descriptive tables
+and a visually inspected four-panel figure retain all 13 case families.
+Nonfinite gamma shape occurs in 134 completed chains at iterations 1–14;
+none occurs after either current burn-in cutoff. Four completed chains
+retain allocation warnings. These facts require sampler review but do not
+alone establish a causal failure mechanism or retained-posterior corruption.
+
+A full 10,000-iteration fresh-chain scenario retains all roles and unchanged
+screens; it remains unlaunched pending sampler/memory/output-budget review.
+Raw native residue production is complete, with original serialized
+readback still live and final closure pending. Categorical production has
+399/405 checkpoints; full readback/closure remain pending. No native
+sampling/GPU/new-cost restart occurred. Accepted framework, model/predictor
+controls/calibration, adequate ancestral ensembles and all eight aims
+remain incomplete.
+[Full census, complete table and figure](baliphy-horizon-resources-20261003.md).

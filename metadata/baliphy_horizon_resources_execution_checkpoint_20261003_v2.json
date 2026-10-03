@@ -1,0 +1,126 @@
+{
+  "status": "verified_original_full_horizon_resource_census_completion",
+  "checked_utc": "2026-10-03T04:29:47.436532+00:00",
+  "source_plan": "metadata/baliphy_horizon_resources_plan_20261003.json",
+  "source_plan_sha256": "9ba8a97c790a6837b47cb91e0e740f0f7381e2192f8e132e35821785cdb85c2e",
+  "unchanged_small_pins": 25,
+  "original_terminal_handles": [
+    {
+      "launch": "metadata/baliphy_horizon_resources_launch_20261003.json",
+      "pid": 2757537,
+      "created": 1791001372.53,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_horizon_resources_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "a6a5eca3edfb87ac402f9446787d89d71bbd4f3694ccd7c91845c70185f75e87",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "9eb3b32646226926e10433673e431bcc38aefef61786fb3adcc8ce2b2624672e",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791001417104222",
+          "CPU_USAGE_NSEC": "43831041000",
+          "MEMORY_PEAK": "3522560",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_horizon_resources_readback_launch_20261003.json",
+      "pid": 2757541,
+      "created": 1791001372.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_horizon_resources_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "62ed974e35a8215093a8fc03b1e1742da4a39f864cab350de57162b847278388",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "51849430db9aca1ab0265e85c3ba0eb2a87ab30b2aae80372e011c7d949307e6",
+      "captured_process_messages": 3,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791001477159252",
+          "CPU_USAGE_NSEC": "43803628000",
+          "MEMORY_PEAK": "2875392",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_horizon_resources_closure_launch_20261003.json",
+      "pid": 2757546,
+      "created": 1791001372.62,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_horizon_resources_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "7af0640aecec74453f8d7750031d171a17795b20de7c350c9e75030aa544560b",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "5464c41bcf21bdee442c226819a28902b93fe85ce9a636404343bc5635d5ef83",
+      "captured_process_messages": 5,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791001498466874",
+          "CPU_USAGE_NSEC": "5006691000",
+          "MEMORY_PEAK": "2760704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "accounting_closure": {
+    "status": "complete_verified_full_baliphy_horizon_resource_inventory",
+    "full_chains": 1620,
+    "effective_input_groups": 135,
+    "full_quartets": 405,
+    "selected_checked_chains": 1618,
+    "selected_failed_chains": 2,
+    "original_and_selected_recovery_attempts": 1623,
+    "complete_quartets": 403,
+    "unresolved_quartets": 2,
+    "proposed_fresh_chain_seeds": 1620,
+    "proposed_iterations": 10000,
+    "observed_successful_elapsed_worker_seconds": 5803610.1065904545,
+    "observed_successful_native_alignment_bytes_size_only": 45530706578,
+    "linear_successful_worker_seconds": 58036101.06590454,
+    "linear_successful_native_alignment_bytes_size_only": 451249874105,
+    "memory_requirements_for_two_failed_chains_unresolved": true,
+    "runtime_projection_uncalibrated": true,
+    "finish_eta": null,
+    "convergence_eta": null,
+    "sampler_review_quartets": 91,
+    "selected_successful_allocation_warning_chains": 4,
+    "selected_successful_parameter_review_chains": 134,
+    "attempt_diagnostics": {
+      "allocation_warning_attempts": 7,
+      "bad_alloc_attempts": 5,
+      "numerical_parameter_review_attempts": 135,
+      "nonfinite_parameter_observations": 336
+    },
+    "production_launch_allowed": false,
+    "full_hash_archive": "results/ancestral/full-baliphy-horizon-resources-20261003-v1/completion_archive.json",
+    "full_hash_archive_sha256": "e2bc39f4142d8aa0d8e85eb47a0657df25a56057747fbc8f9c097ade0d9e2aa2",
+    "bound_source_hashes": 8690,
+    "exact_process_journals_checked": 2,
+    "producer_receipt": "results/ancestral/full-baliphy-horizon-resources-20261003-v1/receipt.json",
+    "producer_receipt_sha256": "69d0c7ae4023507f88500924ab95209eeb83ce97af574816c4e1ca4b40874b0a",
+    "independent_readback": "results/ancestral/full-baliphy-horizon-resources-20261003-v1/readback.json",
+    "independent_readback_sha256": "112785983dcadb80b4e29f40396eef44508d05bde809a7d9be720bc6740c873a",
+    "completion_plan_sha256": "3c7c76f4b95959e3771e7f9bba13ea66f41047e3a70a60892024cc409df989c2",
+    "scientific_eligibility": false,
+    "scope": "Complete resource and five-parameter numerical census; finite ranges and every nonfinite/nonpositive token preserved. All1620/405 identities and initial+selected recoveries, including failures. Fresh1.16GBscalar/stderr hashes plus used receipt/config/model/input hashes; large saved-alignment content not freshly hashed by this census, only file sizes. Proposed10000iteration fresh chains remain unlaunched; twofailedchain memoryneeds and adequate model/sampler remain unresolved. Workspace/output/runtime are planning allowances, not guarantees. Full serialization/source/artifact/two actual original journals required for census closure. No sampling or structure ensemble qualification; accepted framework/controls/calibration and all eight aims incomplete."
+  },
+  "native_sampling_launched": false,
+  "gpu_inference_paused": true,
+  "scope": "All three exact original successful terminal journals plus compact completion archive hash; complete census/readback/provenance passed. Does not repeat all8690 large/small source hashes or qualify scientific posterior."
+}

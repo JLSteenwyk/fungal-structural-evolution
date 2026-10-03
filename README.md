@@ -191,13 +191,19 @@ and the [full 1,620-chain source inventory](metadata/independent_native_alignmen
 and the [complete native sample replay](docs/independent-native-alignment-replay-20261002.md)
 is now running. It covers all 163,418 saved alignments, 9,732,673,504 projected
 states and 4,239,976,576 cutoff-count cells, with both failed chains retained.
-Full raw-sample reconstruction/readback/provenance closure remains pending.
+The producer has checked the complete raw-sample scope; separate serialized
+readback and final provenance closure remain pending.
 A [separate source-to-runtime node check](docs/independent-native-clade-mapping-20261002.md)
 has completed over all 1,618 intact chains, including full serialized readback
 and provenance closure. It independently reconstructs
 every rooted clade, compares 159,538 nonroot branch parameters and verifies
 all 653,672 candidate-frame mappings. All biological root assumptions remain
 explicit; node correspondence does not qualify an ancestral posterior.
+The [full sampling resource survey](docs/baliphy-horizon-resources-20261003.md)
+has also closed all 1,620 identities and 1,623 initial/selected-recovery attempts.
+It retains early nonfinite parameters and allocation warnings, with all
+405 quartets in the published table and figure. A complete 10,000-iteration
+fresh-chain scenario remains unlaunched pending sampler and resource review.
 
 The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
 is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It

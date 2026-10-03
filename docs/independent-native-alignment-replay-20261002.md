@@ -150,3 +150,17 @@ confirmed 20 complete producer chain checkpoints, 2,020 native alignments,
 unanchored observations. Full source checks passed before these decodes.
 These are unclosed producer progress; complete serialized and provenance
 verification remains pending.
+
+
+## October 3 producer completion
+
+The original producer terminated successfully at 00:14 EDT after the full
+1,620-identity scope and final source checks: 1,618 intact chains, both
+failures, 163,418 alignments, 9,732,673,504 states and 4,239,976,576
+cutoff-count cells. The [latest original-handle observation](../metadata/independent_native_alignment_replay_execution_checkpoint_20261003_v4.json)
+verified its actual successful terminal journal; the separate original
+serialized reader remained live, reaching 872/1,620 chains by 00:35 EDT.
+Final serialized/source/artifact/journal closure remains pending. No
+ancestral ensemble was qualified. The separate node-correspondence stage
+has closed; a [full sampling resource/numerical census](baliphy-horizon-resources-20261003.md)
+now informs the longer-horizon design without launching new native work.

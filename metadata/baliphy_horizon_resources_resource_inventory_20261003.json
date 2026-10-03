@@ -1,0 +1,31 @@
+{
+  "status": "full_scope_prelaunch_baliphy_horizon_resource_inventory",
+  "checked_utc": "2026-10-03T04:22:53.053600+00:00",
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "effective_input_groups": 135,
+  "initial_and_selected_recovery_attempts": 1623,
+  "scalar_and_stderr_files": 3246,
+  "scalar_and_stderr_bytes": 1160679008,
+  "largest_scalar_or_stderr_file_bytes": 740649,
+  "cpu_per_stage": 2,
+  "memory_gib": 8,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "estimated_workspace_gib": 4,
+  "workspace_is_hard_bound": false,
+  "output_allowance_gib": 0.5,
+  "minimum_free_disk_gib": 64,
+  "planning_active_hours_per_stage": [
+    0.02,
+    2
+  ],
+  "runtime_uncalibrated": true,
+  "finish_eta": null,
+  "available_memory_gib": 308.50736236572266,
+  "free_disk_gib": 10384.60871887207,
+  "native_sampling_launched": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete resource and five-parameter numerical census; finite ranges and every nonfinite/nonpositive token preserved. All1620/405 identities and initial+selected recoveries, including failures. Fresh1.16GBscalar/stderr hashes plus used receipt/config/model/input hashes; large saved-alignment content not freshly hashed by this census, only file sizes. Proposed10000iteration fresh chains remain unlaunched; twofailedchain memoryneeds and adequate model/sampler remain unresolved. Workspace/output/runtime are planning allowances, not guarantees."
+}

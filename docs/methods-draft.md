@@ -2787,3 +2787,28 @@ root/tree/model and do not establish adequate posterior mixing, root acceptance
 or model adequacy. Raw saved-alignment/state/count reconstruction and
 categorical diagnostic readback proceed as separate full-scope workflows.
 [Implementation, controls and evidence](independent-native-clade-mapping-20261002.md).
+
+
+### Full measured ancestral horizon census
+
+All 1,620 initial native attempts and three selected recovery attempts
+underwent a separate source-bound resource/numerical survey. Every original
+chain/model/prior/seed/input/alias identity and both unresolved failures
+were retained. Scalar logs, stderr, configurations, attempt receipts and
+used model/input files were freshly hashed; native saved-alignment files
+were sized without rehashing their contents. Every scalar iteration was
+read for indel rate, mean indel length, gamma shape, alignment width and
+total indel length; ranges, invalid tokens and first/last values remained
+serialized. These positivity/finite-value checks are not a full prior-
+support or model-adequacy assessment.
+
+Full source reconstruction of all serialized records and two actual
+original journals gated closure (8,690 bindings). The reader shares the
+census implementation, not a third independent algorithm. Worker elapsed
+duration is distinct from CPU time; address-space limits do not estimate
+native memory peaks. Complete fresh-seed longer-horizon records and
+uncalibrated successful-subset time/storage scenarios retain unknown
+failed outcomes explicitly and remain unlaunched. Descriptive figures
+and complete quartet tables do not treat shared configurations, ancestors
+or chain samples as independent biological replicates.
+[Full implementation and evidence](baliphy-horizon-resources-20261003.md).
