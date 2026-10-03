@@ -11476,6 +11476,7 @@ and figure review remain next.
   [Full fitting contracts, draft and current resources](shared-entity-likelihood-20261002.md).
 
 
+
 - October 3, 00:08 UTC (October 2 evening EDT): the previous error-check turn
   made progress by verifying current original process identities, fresh journals
   and seven process-monitor regression checks. It confirmed two terminal BAli-Phy
@@ -11505,3 +11506,42 @@ and figure review remain next.
   uniform qualification still waits on original design closure. GPU prediction
   remains paused; accepted phylogenetic/reconciliation/dating framework,
   nonuniform/control/calibration work and all eight aims remain unfinished.
+
+
+- October 3, 00:48 UTC (October 2 evening EDT): the previous error-check turn
+  was a verified wait: fresh original process identities/journals were checked,
+  all seven monitoring contracts passed and no new project-service error
+  signature appeared in the preceding 30 minutes. Two native BAli-Phy allocation
+  failures remain explicit; neither is treated as repaired by the observer.
+
+  Full recovered diagnostics closed 50,019 bindings and both original journals.
+  Published a separate complete 810-row table and eight-panel PNG/SVG/PDF for
+  all 405 groups at both cutoffs: 403 complete quartets/two unresolved. Every
+  partition and serialized value reconciled with the closed reports; actual PNG
+  and rendered PDF were inspected and all visible PDF totals/percentages matched
+  SVG metadata. Publication provenance closed 50,032 bindings/three original
+  journals. Earlier table/figure hashes remain unchanged. No quartet passes
+  every scalar or length screen, so no ancestral posterior is newly qualified.
+
+  Implemented and queued the full qualified-input runtime preflight behind
+  original covariance-qualification closure: all 4,340 cohorts and up to
+  5,208,000 candidate identities are retained. Every eligible cohort/loading/
+  tree/method/response group receives deterministic representative probes with
+  both backends at scaled variances zero and one. Complete 7,200-candidate
+  source/checkpoint contracts and genuine six-variance ML/REML probes passed;
+  six census and six numeric alterations were rejected. Separate eligible
+  selection tests passed the full 1,200-candidate/40-group grid, order invariance,
+  all ranking tie breakers, mixed reviews and entirely excluded inputs.
+  Conditional budget-weighted planning preserves original evaluation ceilings
+  and leaves unmeasured reviews explicit; it is not a finish ETA or fit acceptance.
+
+  The current queue observer verified 126 small pinned sources and 14 exact
+  original handles: seven live/seven terminal, with current cgroup limits checked
+  for every live pipeline. Original design readback is complete over all 4,340
+  cohorts; original provenance closure remains live. Qualification and timing
+  remain original queued, with no restart or pinned source change. Production
+  variance fitting is unlaunched. GPU prediction remains paused; accepted
+  phylogenetic/reconciliation/dating framework, nonuniform/control/calibration
+  requirements and all eight biological aims remain incomplete.
+  [Recovered figures/counts](baliphy-full-first-horizon-diagnostics-20261002.md#recovered-overlay-publication),
+  [timing contracts and limitations](shared-entity-likelihood-20261002.md#full-scope-runtime-preflight).

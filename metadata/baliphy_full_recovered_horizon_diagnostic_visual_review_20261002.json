@@ -1,0 +1,55 @@
+{
+  "status": "visually_inspected_full_recovered_horizon_ancestral_diagnostics",
+  "checked_utc": "2026-10-03T00:43:41.925161+00:00",
+  "publication": "metadata/baliphy_full_recovered_horizon_diagnostic_publication_20261002.json",
+  "publication_sha256": "f51408ed9a865f474afacb3179e64a5c37cb0bff244694071ebdd1027d65cd91",
+  "original_publication_launch": "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json",
+  "original_publication_launch_sha256": "c7c87a4cb893593838c4624fcd06d2999f20a22e3351c97e065531275316267b",
+  "original_publication_completion": {
+    "launch": "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json",
+    "pid": 2622949,
+    "created": 1790987955.15,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/baliphy_recovered_diagnostics_publication_wait_plan_20261002.json"
+    ],
+    "launch_sha256": "c7c87a4cb893593838c4624fcd06d2999f20a22e3351c97e065531275316267b",
+    "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+    "journal_sha256_at_observation": "d28416651d5ce64d2a76678ebb8992f36eda442110a09d67b6d960630a2236e4",
+    "captured_process_messages": 1,
+    "original_failure_records": [],
+    "completion_resource_records": [
+      {
+        "__REALTIME_TIMESTAMP": "1790988059856009",
+        "CPU_USAGE_NSEC": "92739472000",
+        "MEMORY_PEAK": "3260416",
+        "MEMORY_SWAP_PEAK": "0"
+      }
+    ]
+  },
+  "panels": 8,
+  "pdf_total_and_percentage_labels_checked": true,
+  "png_inspected": true,
+  "rendered_pdf_inspected": true,
+  "complete_table_810_unique_rows_and_failed_blanks_checked": true,
+  "original_publication_artifacts_unchanged": true,
+  "findings": "All eight panels andthreeprior rows are legible in nativePNG andrenderedPDF. Titles, axes, numerical labels, legend andfootnote fit within bounds. Updated counts condition on403completequartets, with2failedquartets retained as4blank diagnostic rows in fulltable. Passing marginal screens, mixingreview andnoobservedvariation remain distinct. No convergence orposterior acceptance.",
+  "source_hashes": {
+    "metadata/baliphy_full_recovered_horizon_diagnostic_publication_20261002.json": "f51408ed9a865f474afacb3179e64a5c37cb0bff244694071ebdd1027d65cd91",
+    "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json": "c7c87a4cb893593838c4624fcd06d2999f20a22e3351c97e065531275316267b"
+  },
+  "artifacts": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/docs/tables/baliphy_full_recovered_horizon_diagnostics_20261002.tsv": "af98fdca109b066d78eb78af32127686b869d60830c0eb7f7257fa558dbf0f0e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/docs/figures/baliphy_full_recovered_horizon_diagnostics_20261002.png": "f8f1e33f367d40304403c5184ab3d5dbf7360fb5db4cbb6c25dc1100618d16fa",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/docs/figures/baliphy_full_recovered_horizon_diagnostics_20261002.svg": "db6d87ddee3c080fe0e53db2832e99c18ba1886088d666e9d906ae6689b0d1cb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/docs/figures/baliphy_full_recovered_horizon_diagnostics_20261002.pdf": "b625de748f57fcbf5fa6f8a753dc82374aa48df780ff266d3254f32739f7fd7c"
+  },
+  "rendered_pdf_observation": {
+    "path": "/tmp/baliphy-recovered-diagnostics-pdf-20261002.png",
+    "sha256": "e5585b37730993d8ed802b9a63cad2afd6a097ee11ad2ed3a491e9bdacecd796",
+    "tool": "pdftoppm -singlefile -scale-to 1500 -png"
+  },
+  "scientific_eligibility": false
+}

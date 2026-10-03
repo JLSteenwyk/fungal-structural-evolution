@@ -2447,6 +2447,20 @@ recovery still failed, so resource allowance is not treated as sufficient
 remediation. Priors, taxa, sequences and scientific thresholds are unchanged.
 [Full sources, figures, counts and interpretation](baliphy-full-first-horizon-diagnostics-20261002.md).
 
+The separately closed same-seed whole-attempt recovery overlay retains all
+1,620 original chain identities and selects 1,618 integrity-checked chains,
+403 complete quartets and two unresolved native allocation failures. No samples
+were concatenated; models, priors, original input/alias identities, horizons and
+thresholds remain fixed. The updated scalar/length/category reports reuse the
+402 unchanged quartets and compute the newly complete quartet from its full four
+selected traces. Full count/input-array readback and provenance closure checked
+50,019 bindings and both original diagnostic completion journals. This is not
+independent metric reimplementation. No quartet passes every scalar or length
+screen at either cutoff. Separate 810-row table and eight-panel PNG/SVG/PDF
+exports preserve the two failed quartets, reconcile every partition to the
+closed reports and pass actual PNG/rendered-PDF inspection. Their descriptive
+counts retain the dependence and nonqualification limits of the original reports.
+
 
 ## October 2: full expanded model-input handoff
 

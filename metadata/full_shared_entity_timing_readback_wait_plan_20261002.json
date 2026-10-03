@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_shared_entity_timing_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_shared_entity_timing.py",
+    "--plan",
+    "metadata/full_shared_entity_timing_plan_20261002.json",
+    "--output",
+    "results/phylogeny/full-shared-entity-input-timing-20261002-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/full_shared_entity_timing_plan_20261002.json": "78493d1a97f4d8de76747dc16bc6643970ad1c173610216fdb80828f7c0c2ec4",
+    "metadata/full_shared_entity_timing_launch_20261002.json": "3e5d1ace8d71b02dd02b3eb87d1e96cfa2cd7750937c4053bf6a78a173dc0905",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

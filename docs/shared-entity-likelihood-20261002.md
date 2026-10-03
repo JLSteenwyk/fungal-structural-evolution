@@ -199,3 +199,59 @@ includes the independent kernel cache, whose conservative per-cohort array
 ceiling is about 317 MiB; this is not a measured process peak. Full qualification,
 actual timing, nonuniform/control variants and inferential calibration remain
 required. No production fitting has been launched or queued.
+
+## Full-scope runtime preflight
+
+The [timing plan](../metadata/full_shared_entity_timing_plan_20261002.json)
+binds the unchanged 80-pin fitting draft and waits for the original full uniform
+covariance qualification to close. Three original producer/readback/closure
+invocations are [queued](../metadata/full_shared_entity_timing_launches_20261002.json)
+with two CPU equivalents, 32 GiB, no swap and one BLAS thread each. This queues
+technical timing, not production variance optimization.
+
+The producer retains the complete potential census: 5,208,000 candidate
+identities across 4,340 cohorts, 30 designs per cohort, two responses, ML/REML,
+both loading modes and five working trees. Every original source exclusion and
+review remains explicit. Within each eligible cohort/loading/tree/method/response
+group it chooses a deterministic representative by greatest active dimension,
+then original normalized design condition, then candidate ID. This gives at most
+173,600 groups. It measures both constructors, the unchanged production covariance
+guard and both likelihood/gradient evaluations at scaled variances zero and one:
+at most 694,400 initial evaluations. The reader repeats any claimed construction
+or numerical-review group and rechecks the entire census and selection mapping.
+This covers the full study's qualified inputs without reducing taxon/family scope.
+
+The [complete workflow contracts](../metadata/full_shared_entity_timing_validation_20261002.json)
+passed 7,200 synthetic candidate rows across six cohorts, immutable interrupted
+checkpoint reuse and completed-producer restart refusal. Six rehashed census
+alterations and six malformed numerical exports were rejected. That full-source
+fixture retains covariance reviews and therefore has no eligible timing groups;
+separate genuine six-variance ML/REML probes verified constructors, original
+qualification-guard replay and objective/score/coefficient/scale agreement at both
+declared points. Additional [eligible-selection contracts](../metadata/full_shared_entity_timing_selection_validation_20261002.json)
+exercise all 1,200 candidates/40 groups in a declared-qualified synthetic cohort,
+all three ranking tie breakers, order invariance, mixed source reviews and a fully
+excluded cohort. Its declared qualifications test bookkeeping, not covariance
+acceptance. Neither fixture is a biological pilot or production timing result.
+
+Conditional planning multiplies each group's eligible count by maximum observed
+point times and the unchanged search ceilings: 1,503 producer evaluations and
+up to 1,534 independent-reader evaluations for six variance ratios. It retains
+both failed-start reproduction and full independent optimization paths.
+Unmeasured review groups retain their counts instead of receiving zero estimated
+cost. Constructor and guard costs are explicit. Loading, export, SQL, closure,
+other weighting/control variants and behavior away from the two points remain
+outside this extrapolation. The resulting numbers are neither mathematical
+runtime bounds nor a production finish ETA; that field remains null. No fitted
+effect, global optimum, posterior convergence or calibrated uncertainty is accepted
+by timing agreement.
+
+The [producer](../scripts/prepare_full_shared_entity_timing.py) writes immutable
+atomic cohort census/probe checkpoints; the [reader](../scripts/readback_full_shared_entity_timing.py)
+rebuilds every source identity, group/representative and budget-weighted planning
+sum before full source revalidation and original two-journal provenance closure.
+Its accounting uses the same selection helper and is not an independent hardware
+timing or numerical-likelihood implementation. Independent numerical comparison
+is provided by the separately validated spectral backend. Run each with `--plan`
+and a new output identity for reproduction. Production fitting, nonuniform/control
+variants, calibrated inference and all eight biological aims remain unfinished.

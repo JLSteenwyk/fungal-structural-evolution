@@ -139,8 +139,8 @@ explicit `plan` field; the corrected version checks the captured `--plan`
 command and any explicit field. Both failed first-version invocations and the
 original code/plan/output identities remain immutable.
 
-The [full diagnostic update](../metadata/baliphy_recovery_full_diagnostics_plan_20261002.json)
-is running under two-CPU/32 GiB/no-swap limits, with readback and closure queued.
+The [full diagnostic update](../metadata/baliphy_recovery_full_diagnostics_completed_20261002.json)
+completed producer, readback and provenance closure under two-CPU/32 GiB/no-swap limits.
 It reuses the 402 unchanged closed quartets and 1,617 original state traces,
 calculates the new chain's anchored states and the complete recovered quartet's
 scalar/length/category diagnostics, and retains both failed quartets. Both
@@ -154,12 +154,68 @@ raw chain state array is 46.7 MiB and raw four-chain state assembly 187 MiB;
 same-input categorical reports took about 58–60 seconds, but the full hashing,
 new projections and diagnostics are not a convergence or project ETA.
 
-Corrected report acceptance still needs all queued stages, full hashes and both
-actual original production/readback journals. The previously published table
-and figure describe the original 402 complete quartets and are unchanged.
+Closure checked 50,019 full source/artifact bindings and both actual original
+production/readback completion journals. All 403 complete quartets still require
+mixing review: none passes every scalar or length screen at either cutoff.
+The selected 1,618 chain traces contain 9,732,673,504 state observations. Each
+cutoff retains 22,871,876 dependent node/residue coordinates, with 1,061,252
+distinct temporal patterns after cutoff 250 and 971,274 after cutoff 500.
+This is full accounting/input-array replay with the existing diagnostic tools;
+it is not independent ArviZ metric reimplementation or posterior qualification.
+The previously published table and figure describe the original 402 complete
+quartets and are unchanged. A separate recovered-overlay publication reconciles
+the complete 810-row census and all eight panels against these corrected totals.
 Adequate new sampling horizons, warning review, joint posterior convergence and
 accepted ancestral structures remain open. All eight project aims remain
 unfinished, and GPU structure inference remains paused.
+
+## Recovered-overlay publication
+
+The [new 810-row table](tables/baliphy_full_recovered_horizon_diagnostics_20261002.tsv)
+retains all 405 original groups at both cutoffs. The centered prior now has
+135 complete quartets; package and broad each have 134 complete and one
+unresolved quartet. Four unresolved group/cutoff rows retain blank diagnostics,
+never zeros. Selected whole attempts preserve all original inputs, seeds and
+aliases. Five selected chains carry allocation fallback notices, including
+warnings from new attempts. The [updated field dictionary](../metadata/baliphy_full_recovered_horizon_diagnostic_data_dictionary_20261002.tsv)
+defines these selected-attempt meanings separately from the original table.
+
+![Recovered first-horizon diagnostic counts](figures/baliphy_full_recovered_horizon_diagnostics_20261002.png)
+
+[SVG](figures/baliphy_full_recovered_horizon_diagnostics_20261002.svg) and
+[PDF](figures/baliphy_full_recovered_horizon_diagnostics_20261002.pdf) retain all
+eight panels. Both the native PNG and rendered PDF passed [visual review](../metadata/baliphy_full_recovered_horizon_diagnostic_visual_review_20261002.json);
+every displayed total/percentage was checked against the embedded SVG counts.
+The original table/PNG/SVG/PDF still match their original published hashes.
+
+| Diagnostic | Discard through 250 | Discard through 500 |
+| --- | ---: | ---: |
+| Scalar variable reports | 14,911 | 14,911 |
+| Scalar marginal screen passes | 3,195 | 2,901 |
+| Scalar mixing review | 11,716 | 12,010 |
+| Candidate-length variable reports | 1,612 | 1,612 |
+| Candidate-length mixing review | 347 | 309 |
+| Candidate-length constant-chain review | 1,265 | 1,303 |
+| Distinct categorical patterns | 1,061,252 | 971,274 |
+| Pattern mixing review | 1,053,132 | 963,143 |
+| Pattern no-observed-variation review | 8,120 | 8,131 |
+| Node/residue anchor coordinates | 22,871,876 | 22,871,876 |
+| Coordinate mixing review | 11,629,014 | 11,035,761 |
+| Coordinate no-observed-variation review | 11,242,862 | 11,836,115 |
+
+No length, pattern or coordinate marginal screen passes at either cutoff.
+The newly completed quartet's 37 scalar variables all require mixing review;
+its four candidate-node lengths are constant within chains at both cutoffs.
+Completing output integrity therefore adds diagnostic coverage without adding
+a scientifically qualified ancestral posterior.
+
+The [publication receipt](../metadata/baliphy_full_recovered_horizon_diagnostic_publication_20261002.json)
+reconciled every table cell and plotted partition against the closed recovered
+reports and reverified 50,025 closed/pinned source bindings. Publication used
+two CPU equivalents, 32 GiB, no swap and one BLAS thread; no new sampling or
+GPU prediction ran. The [separate publication provenance closure](../metadata/baliphy_full_recovered_horizon_diagnostic_publication_completed_20261002.json)
+checked 50,032 bindings, visual inspection and all three actual diagnostic-producer,
+diagnostic-reader and publication completion/resource journals.
 
 ## Reproduction
 
@@ -167,6 +223,10 @@ Run `publish_baliphy_full_diagnostics_20261002.py --plan` with the
 [publication plan](../metadata/baliphy_full_first_horizon_diagnostic_publication_plan_20261002.json).
 Use new output identities for a new run; the original launch, pinned scripts,
 source plans and completed tables/figures remain immutable. Run
+`publish_baliphy_recovered_diagnostics_20261002.py --plan` with the
+[recovered publication plan](../metadata/baliphy_full_recovered_horizon_diagnostic_publication_plan_20261002.json)
+to reproduce the separate selected-attempt overlay; provide new output
+identities and preserve both prior published artifact sets. Run
 `inventory_baliphy_native_scalar_ranges_20261002.py` with the original completion,
 producer plan, and new `--table`/`--output` paths to reproduce the full scalar
 census. The nonfinite-location audit links the complete census to every flagged

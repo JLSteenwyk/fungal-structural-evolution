@@ -1,0 +1,78 @@
+{
+  "pins": {
+    "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+    "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/completion_archive.json": "b2d5a44d97697283d02ae26e2cd122f6e0693c61e4bbeee9eb412aa9c82d0b96",
+    "metadata/baliphy_full_recovered_horizon_diagnostic_publication_20261002.json": "f51408ed9a865f474afacb3179e64a5c37cb0bff244694071ebdd1027d65cd91",
+    "metadata/baliphy_full_recovered_horizon_diagnostic_bound_evidence_20261002.json": "bd547371debffe390f4998da83ff9352ffa449fab21b5ef73902300fd4b5dcf0",
+    "metadata/baliphy_full_recovered_horizon_diagnostic_visual_review_20261002.json": "50afb196f7219e477b48e81322d37a456b7cf96c0068fcd8212a44bf676bc2d7",
+    "metadata/baliphy_recovery_full_diagnostics_launch_20261002.json": "9c6c9e01daf49a32b6b233acd318fe34c4f0413e04effde3879a1f8ff8bf77c5",
+    "metadata/baliphy_recovery_full_diagnostics_readback_launch_20261002.json": "d0d318ec8e5178032fe2690e1783fa403411b108220dd20e877a43c411eeaccb",
+    "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json": "c7c87a4cb893593838c4624fcd06d2999f20a22e3351c97e065531275316267b",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba"
+  },
+  "evidence": {
+    "diagnostic_closure": {
+      "path": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/completion_archive.json",
+      "expected": {
+        "status": "complete_verified_full_baliphy_recovery_diagnostics_archive",
+        "scientific_eligibility": false
+      }
+    },
+    "publication": {
+      "path": "metadata/baliphy_full_recovered_horizon_diagnostic_bound_evidence_20261002.json",
+      "expected": {
+        "status": "bound_full_recovered_horizon_publication_evidence",
+        "cutoff_rows": 810,
+        "complete_quartets": 403,
+        "unresolved_quartets": 2,
+        "scientific_eligibility": false
+      }
+    },
+    "visual": {
+      "path": "metadata/baliphy_full_recovered_horizon_diagnostic_visual_review_20261002.json",
+      "expected": {
+        "status": "visually_inspected_full_recovered_horizon_ancestral_diagnostics",
+        "panels": 8,
+        "png_inspected": true,
+        "rendered_pdf_inspected": true,
+        "pdf_total_and_percentage_labels_checked": true,
+        "original_publication_artifacts_unchanged": true,
+        "scientific_eligibility": false
+      }
+    }
+  },
+  "links": [
+    {
+      "from": "publication",
+      "field": "publication_sha256",
+      "to": "metadata/baliphy_full_recovered_horizon_diagnostic_publication_20261002.json"
+    },
+    {
+      "from": "publication",
+      "field": "diagnostic_archive_sha256",
+      "to": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/completion_archive.json"
+    },
+    {
+      "from": "visual",
+      "field": "publication_sha256",
+      "to": "metadata/baliphy_full_recovered_horizon_diagnostic_publication_20261002.json"
+    }
+  ],
+  "launches": [
+    "metadata/baliphy_recovery_full_diagnostics_launch_20261002.json",
+    "metadata/baliphy_recovery_full_diagnostics_readback_launch_20261002.json",
+    "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json"
+  ],
+  "output": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/publication_completion_archive.json",
+  "completed_status": "complete_verified_full_recovered_horizon_diagnostic_publication_archive",
+  "summary": {
+    "original_quartets": 405,
+    "complete_quartets": 403,
+    "unresolved_quartets": 2,
+    "cutoff_rows": 810,
+    "plotted_panels": 8,
+    "scientific_eligibility": false
+  },
+  "scope": "Full closed recovered diagnostic source/artifact binding, complete publication rows/counts, actualPNG/renderedPDFinspection andeveryPDFvisiblecount/percentage checked. Original2diagnosticprocesses plusnewpublicationprocess require exactoriginal invocation-linked completion/resourcejournals. No jointposterior acceptance ornewnative sampling/GPU/charges; earlier402quartet publication remains unchanged."
+}

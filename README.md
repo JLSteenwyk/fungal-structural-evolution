@@ -74,8 +74,10 @@ Software checks rejected 18 altered exports; full expanded model fitting
 remains pending. No GPU prediction was resumed.
 The [complete design and recipe inventory](docs/full-expanded-model-designs-20261002.md)
 automatically started after that closure for all 622,080 fixed model-setting
-records. It will check exact cohort sharing and independently verify numerical
-ranks while retaining all empty and review states. Software contracts rejected
+records. Its original reader has now checked all 4,340 cohorts, 130,200 designs
+and 260,400 response inputs; full source/artifact closure is still running.
+Both producer and reader report full rank throughout, with original exclusions
+and review rules retained. Software contracts rejected
 23 altered exports, including a corrected rank-boundary diagnostic check in
 version 2. The original design queue was preserved before production began.
 Expanded covariance fits remain pending.
@@ -123,6 +125,15 @@ preserves every original setting and tolerance; it remains unlaunched pending
 closed qualification and measured runtime. Its software benchmark is not a
 project ETA.
 
+The [full-scope runtime preflight](metadata/full_shared_entity_timing_plan_20261002.json)
+is now queued behind original covariance-qualification closure. It retains all
+4,340 cohorts and up to 5,208,000 candidate identities, benchmarking every
+eligible cohort/loading/tree/ML-or-REML/response group with both numerical
+backends. Full-grid checkpoint/count contracts and separate eligible-selection
+checks passed; these are software tests. Conditional budget-weighted timing
+will remain separate from fit acceptance and a production finish ETA.
+Production fitting is still unlaunched; [scope and reproduction](docs/shared-entity-likelihood-20261002.md#full-scope-runtime-preflight).
+
 The [full ancestral first-horizon accounting](metadata/baliphy_initial_horizon_completed_20261002.json)
 is closed: 1,617 of 1,620 chains passed output integrity, with three preserved
 memory failures and 402 of 405 scalar-diagnostic quartets complete. No quartet
@@ -132,11 +143,15 @@ finished: one passed saved-output integrity and two again failed with allocation
 errors. [Full recovery accounting](metadata/baliphy_memory_recovery_completed_20261002_v2.json)
 verified 22,486 source/artifact bindings and both original completion journals.
 The selected whole-attempt overlay retains 1,618 intact chains and 403 complete
-quartets, with two failures explicit. [Corrected full-grid diagnostics](metadata/baliphy_recovery_full_diagnostics_plan_20261002.json)
-are running, reusing the 402 unchanged quartets and calculating the recovered
-quartet's scalar, length and categorical reports. Posterior qualification remains
-open; original receipts, failed attempts and published first-horizon results stay
-intact.
+quartets, with two failures explicit. [Corrected full-grid diagnostics](metadata/baliphy_recovery_full_diagnostics_completed_20261002.json)
+have completed readback and provenance closure across 50,019 bindings and both
+original journals. They reuse the 402 unchanged quartets and add the recovered
+quartet's scalar, length and categorical reports. None of the 403 complete
+quartets passes every scalar or candidate-length screen at either cutoff.
+Posterior qualification remains open; original receipts, failed attempts and
+published first-horizon results stay intact. The separate [updated 810-row table
+and visually inspected figure](docs/baliphy-full-first-horizon-diagnostics-20261002.md#recovered-overlay-publication)
+include the recovered group without replacing the original publication.
 The [complete ancestral diagnostic table and inspected eight-panel figure](docs/baliphy-full-first-horizon-diagnostics-20261002.md)
 now cover all 405 groups at both cutoffs, with failed groups explicit. Full
 state/length/category accounting closed 49,902 hashes and three original

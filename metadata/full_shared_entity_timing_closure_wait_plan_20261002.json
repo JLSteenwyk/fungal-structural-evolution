@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_shared_entity_timing_launch_20261002.json",
+    "metadata/full_shared_entity_timing_readback_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/full_shared_entity_timing_completion_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/full_shared_entity_timing_completion_plan_20261002.json": "050954f66828e525342af6dcb946dd248b7167f19149ca26c48a8c9ef7a9d17d",
+    "metadata/full_shared_entity_timing_launch_20261002.json": "3e5d1ace8d71b02dd02b3eb87d1e96cfa2cd7750937c4053bf6a78a173dc0905",
+    "metadata/full_shared_entity_timing_readback_launch_20261002.json": "f2a22ca23243fb2ef4c43d97b1fafd6fa261d11409020d97830247df8b1e4f4b",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

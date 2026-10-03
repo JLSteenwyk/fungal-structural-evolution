@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_completed_process_handoffs_v2.py",
+    "--plan",
+    "metadata/baliphy_full_recovered_horizon_diagnostic_publication_proof_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/baliphy_full_recovered_horizon_diagnostic_publication_proof_plan_20261002.json": "78e41680f2f3ada51b2c2d0445eea4dc7eb6f5eb89107759453fee1820286e5b",
+    "metadata/baliphy_recovered_diagnostics_publication_launch_20261002.json": "c7c87a4cb893593838c4624fcd06d2999f20a22e3351c97e065531275316267b",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

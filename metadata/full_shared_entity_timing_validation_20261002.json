@@ -1,0 +1,40 @@
+{
+  "status": "passed_full_shared_entity_timing_grid_checkpoint_and_numerical_probe_contracts",
+  "synthetic_cases": 7200,
+  "synthetic_cohorts": 6,
+  "synthetic_original_model_settings": 720,
+  "ml_reml_two_point_six_variance_probes_passed": true,
+  "full_fitting_budgets_preserved": true,
+  "unmeasured_review_groups_retained": true,
+  "completed_restart_refused": true,
+  "interrupted_checkpoints_reused_without_rewrite": true,
+  "rehashed_census_alterations_rejected": [
+    "omit_case",
+    "duplicate_case",
+    "change_candidate",
+    "promote_source_status",
+    "invent_timing_group",
+    "false_scientific_acceptance"
+  ],
+  "malformed_numeric_probe_exports_rejected": [
+    "representative",
+    "eligible_count",
+    "missing_point",
+    "nonfinite_time",
+    "false_numeric_agreement",
+    "changed_condition"
+  ],
+  "source_and_journal_fixtures_synthetic": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_shared_entity_timing.py": "d325e30193dd2739f28550e69efb0b061dacc4a182599b5dca07b33f455ef5e4",
+    "scripts/full_shared_entity_timing.py": "68a8f1658a8c36892773afcbaab63319ce265f3c5543963a2113ef5a58f80019",
+    "scripts/prepare_full_shared_entity_timing.py": "7fd03ee2f8bb462a8be434f8560b6467ef0568dee1b9a16b83ef1cc26404aa4f",
+    "scripts/readback_full_shared_entity_timing.py": "9dca28bb806a52aed47611d079603cdd5e4e14fc9646ca6663b9e318fbe45b31",
+    "scripts/full_shared_entity_fit_sources.py": "e4110acadef870b9c7b095e263c6bb3ed3a4f0ebaa98e306c03036ba73d5b215",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/independent_shared_entity_likelihood.py": "594b9c8aa0ea194843a2591b260463eb3642d20e8977ef6f8859b29a179a3120",
+    "scripts/independent_shared_entity_likelihood_fast.py": "af30887cf38d0a4a0941e77ed12c65b6d65f00aec3f883fc644d5417262158b3",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8"
+  },
+  "scope": "Software full-grid/source/provenance/checkpoint contracts and six-variance ML/REML probes only; no biological pilot, production timing result, runtime bound or inferential acceptance."
+}

@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-baliphy-recovered-diagnostics-publication-20261002-v1.service",
+  "pid": 2622949,
+  "created": 1790987955.15,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_recovered_diagnostics_publication_wait_plan_20261002.json"
+  ],
+  "plan": "metadata/baliphy_recovered_diagnostics_publication_wait_plan_20261002.json",
+  "plan_sha256": "a6d0dfb66d57adeade4ec0d5f492262836dd1b6c6b80a1cd6aa3293fc411485c",
+  "checked_utc": "2026-10-03T00:39:15.885801+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-baliphy-recovered-diagnostics-publication-20261002-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_recovered_diagnostics_publication_wait_plan_20261002.json"
+  ]
+}

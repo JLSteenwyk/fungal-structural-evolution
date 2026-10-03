@@ -1,0 +1,71 @@
+{
+  "status": "complete_verified_full_baliphy_recovery_diagnostics",
+  "full_native_chains": 1620,
+  "full_quartets": 405,
+  "original_checked_chains": 1617,
+  "original_failed_chains": 3,
+  "recovery_attempts": 3,
+  "recovered_integrity_checked_chains": 1,
+  "unresolved_failed_chains": 2,
+  "selected_checked_chains": 1618,
+  "complete_quartets": 403,
+  "unresolved_quartets": 2,
+  "state_chains": 1618,
+  "state_observations": 9732673504,
+  "per_chain_anchor_occurrences": 96363104,
+  "unanchored_residue_observations": 708466,
+  "scalar_quartets": 403,
+  "length_quartets": 403,
+  "categorical_quartets": 403,
+  "scalar_status_counts": {
+    "250:scalar_mixing_requires_review": 11716,
+    "250:passes_scalar_screen_only": 3195,
+    "500:scalar_mixing_requires_review": 12010,
+    "500:passes_scalar_screen_only": 2901
+  },
+  "length_status_counts": {
+    "250:constant_chain_requires_review": 1265,
+    "250:scalar_mixing_requires_review": 347,
+    "500:constant_chain_requires_review": 1303,
+    "500:scalar_mixing_requires_review": 309
+  },
+  "categorical_coordinate_counts": {
+    "250": 22871876,
+    "500": 22871876
+  },
+  "categorical_pattern_counts": {
+    "250": 1061252,
+    "500": 971274
+  },
+  "coordinate_status_counts": {
+    "250:no_observed_state_variation_requires_review": 11242862,
+    "250:categorical_mixing_requires_review": 11629014,
+    "500:no_observed_state_variation_requires_review": 11836115,
+    "500:categorical_mixing_requires_review": 11035761
+  },
+  "pattern_status_counts": {
+    "250:no_observed_state_variation_requires_review": 8120,
+    "250:categorical_mixing_requires_review": 1053132,
+    "500:no_observed_state_variation_requires_review": 8131,
+    "500:categorical_mixing_requires_review": 963143
+  },
+  "quartets_passing_every_scalar": {
+    "250": 0,
+    "500": 0
+  },
+  "quartets_passing_every_length_scalar": {
+    "250": 0,
+    "500": 0
+  },
+  "full_hash_archive": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "b2d5a44d97697283d02ae26e2cd122f6e0693c61e4bbeee9eb412aa9c82d0b96",
+  "bound_source_hashes": 50019,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "dd46518635ed9e1cfd4ce6334f6f0318a747fb82ae518e5ceefb30b8faf603db",
+  "independent_readback": "results/ancestral/baliphy-recovery-full-diagnostics-20261002-v1/readback.json",
+  "independent_readback_sha256": "a06a46de2f8d026e39096b5cb93a4ba3b3039380b3cc59488a16a6e2a409c899",
+  "completion_plan_sha256": "da26977d3250e356fe1ba26cd49340d9aacb75009446a64d1fb9b44cdedf53d0",
+  "scientific_eligibility": false,
+  "scope": "Full original1620-chain/405-quartet overlay postprocessing at unchanged1000-iterationhorizon and250/500burn-in cutoffs. Reuse closed identical402 quartets and1617original state traces; calculate full scalar/length/category reports for the single newly complete quartet and anchored states for its recovered chain. Preserve both unresolved native failures, all original failed attempts, seeds, priors, inputs and aliases. Check all original closed artifact hashes, full status/count partitions, every recovered manifest/length trace and complete quartet state/free-array assembly before actual two-journal provenance closure. This is accounting/input readback plus existing diagnostic tools, not independent ArviZ metric reimplementation or posterior/ancestral qualification. Correlated extant anchors are not independent sites. No native sampling, GPU/new cost, threshold change or biological pilot; acceptedASR/aim8 and all eight biological aims remain open."
+}

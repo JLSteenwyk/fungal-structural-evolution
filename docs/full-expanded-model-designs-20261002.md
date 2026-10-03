@@ -129,6 +129,17 @@ defines all exported fields.
 
 ## Remaining scientific work
 
+The original producer and independent reader have both completed the full
+622,080-setting inventory: 4,340 cohorts, 130,200 designs and 260,400 response
+inputs, with every reported design full rank and every fit input source-ready.
+The reader's original completion journal records 20:30 EDT on October 2.
+The original closure handle is still live and checking the complete source/
+artifact graph; these counts do not yet establish a closed production handoff.
+The [queue checkpoint](../metadata/full_shared_entity_timing_queue_checkpoint_20261002.json)
+verifies both exact terminal journals and the original live closure, with
+qualification and full-scope timing still waiting on their original dependencies.
+No production fit or calibrated inference follows from these rank results.
+
 Once full readback closes, actual unique input counts and rank dispositions
 will inform the complete covariance-fit resource estimate. A fit-input ID
 identifies data and fixed-effect design; final model identities must also bind

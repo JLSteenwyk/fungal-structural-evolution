@@ -917,3 +917,28 @@ Dense/80-digit and complete fitting-grid contracts passed. The 80-pin draft
 supersedes an unlaunched 71-pin draft; neither is production fitting. Software
 speedup is not a project ETA. Close full qualification and measure actual
 qualified-input runtime before installing fitting resources and launching.
+
+## October 2 evening: publish the recovered diagnostic overlay separately
+
+The corrected full diagnostic closure checked 50,019 bindings and both original
+producer/readback journals. Publish all 405 quartets at both unchanged cutoffs,
+including 403 complete and two failed quartets. Preserve the earlier 402-quartet
+publication, every failed attempt and all original input/alias/seed identities.
+Derive allocation notices from each selected whole attempt rather than carrying
+old failed-attempt warnings into replacement chains. Inspect native PNG and
+rendered PDF and check every plotted total/percentage against serialized counts.
+No complete quartet passes every scalar or length screen; increased integrity
+coverage is not posterior convergence or accepted ancestral structures.
+
+## October 2 evening: measure every eligible full-scope fitting group
+
+Queue timing behind the original full qualification closure, without launching
+variance fitting. Retain all potential 5,208,000 candidate identities/4,340 cohorts
+and every original source review. Choose representatives within every eligible
+cohort/loading/tree/method/response group by greatest active design dimension,
+then condition, then candidate ID. Original covariance guards and both numerical
+backends are measured at scaled variances zero and one; reviews stay unmeasured.
+Preserve all search budgets and numerical thresholds in conditional extrapolation.
+Tests cover the complete synthetic grid, genuine six-variance probes and separate
+full eligible selection. Timing agreement does not qualify fits, prove runtime
+bounds or supply a project ETA. Original pinned sources and queues remain fixed.

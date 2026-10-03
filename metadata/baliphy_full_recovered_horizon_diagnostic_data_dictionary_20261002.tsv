@@ -1,0 +1,35 @@
+table	field	missing_semantics	description
+recovered_quartet_cutoff_diagnostics	model_input_identity	Always present; explicit zero is a true count or false indicator	Original effective input/prior identity; primary quartet key.
+recovered_quartet_cutoff_diagnostics	effective_input_group	Always present; explicit zero is a true count or false indicator	Original input identity before prior labels; configuration aliases are retained.
+recovered_quartet_cutoff_diagnostics	prior	Always present; explicit zero is a true count or false indicator	Original package/centered/broad prior label; no new prior fit.
+recovered_quartet_cutoff_diagnostics	family	Always present; explicit zero is a true count or false indicator	Original protein-family ID.
+recovered_quartet_cutoff_diagnostics	proteins	Always present; explicit zero is a true count or false indicator	Protein sequences in the original input; not a count of unique species.
+recovered_quartet_cutoff_diagnostics	original_configuration_ids	Always present; explicit zero is a true count or false indicator	JSON list of original configurations represented by the effective input.
+recovered_quartet_cutoff_diagnostics	chain_ids	Always present; explicit zero is a true count or false indicator	JSON list of the four original chain IDs.
+recovered_quartet_cutoff_diagnostics	seeds	Always present; explicit zero is a true count or false indicator	JSON list of four distinct original seeds.
+recovered_quartet_cutoff_diagnostics	checked_chains	Always present; explicit zero is a true count or false indicator	Selected whole-attempt chains passing saved-output integrity, from the full same-seed recovery overlay; not convergence.
+recovered_quartet_cutoff_diagnostics	failed_chains	Always present; explicit zero is a true count or false indicator	Selected unresolved native failures, retaining both original and new failed attempts; failed partial samples are never joined.
+recovered_quartet_cutoff_diagnostics	allocation_notice_chains	Always present; explicit zero is a true count or false indicator	Selected whole-attempt chains with allocation fallback notices: original notices for unchanged attempts, new notices for all retried attempts. Notice presence is not equivalent to terminal failure.
+recovered_quartet_cutoff_diagnostics	cutoff	Always present; explicit zero is a true count or false indicator	Original iteration cutoff; retain strictly greater iterations.
+recovered_quartet_cutoff_diagnostics	disposition	Always present; explicit zero is a true count or false indicator	Complete diagnostics requiring review, or unresolved native failure.
+recovered_quartet_cutoff_diagnostics	scalar_draws_per_chain	Blank for unresolved quartet; never imputed as zero	Post-cutoff native scalar iterations per chain: 750/500.
+recovered_quartet_cutoff_diagnostics	saved_state_draws_per_chain	Blank for unresolved quartet; never imputed as zero	Post-cutoff saved state iterations per chain: 75/50.
+recovered_quartet_cutoff_diagnostics	scalar_variables	Blank for unresolved quartet; never imputed as zero	Number of scalar variable reports: 37 per complete group/cutoff.
+recovered_quartet_cutoff_diagnostics	scalar_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+recovered_quartet_cutoff_diagnostics	scalar_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+recovered_quartet_cutoff_diagnostics	scalar_constant_review	Blank for unresolved quartet; never imputed as zero	Count with constant per-chain trajectories requiring review.
+recovered_quartet_cutoff_diagnostics	every_scalar_screen_pass	Blank for unresolved quartet; never imputed as zero	All 37 marginal scalar screens pass; never sufficient for joint posterior qualification.
+recovered_quartet_cutoff_diagnostics	length_variables	Blank for unresolved quartet; never imputed as zero	Four candidate-node length reports per complete group/cutoff.
+recovered_quartet_cutoff_diagnostics	length_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+recovered_quartet_cutoff_diagnostics	length_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+recovered_quartet_cutoff_diagnostics	length_constant_review	Blank for unresolved quartet; never imputed as zero	Count with constant per-chain trajectories requiring review.
+recovered_quartet_cutoff_diagnostics	every_length_screen_pass	Blank for unresolved quartet; never imputed as zero	All four candidate-length marginal screens pass; not sufficient for joint posterior qualification.
+recovered_quartet_cutoff_diagnostics	categorical_coordinates	Blank for unresolved quartet; never imputed as zero	Node/residue anchors retaining correlated and duplicated representations.
+recovered_quartet_cutoff_diagnostics	categorical_patterns	Blank for unresolved quartet; never imputed as zero	Distinct full temporal traces within this group/cutoff; not distinct homologous sites.
+recovered_quartet_cutoff_diagnostics	coordinate_indicator_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+recovered_quartet_cutoff_diagnostics	coordinate_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+recovered_quartet_cutoff_diagnostics	coordinate_no_variation_review	Blank for unresolved quartet; never imputed as zero	Count with no observed state variation; requires review and does not establish state certainty.
+recovered_quartet_cutoff_diagnostics	pattern_indicator_pass_only	Blank for unresolved quartet; never imputed as zero	Count passing the applicable marginal screen only; not joint posterior acceptance.
+recovered_quartet_cutoff_diagnostics	pattern_mixing_review	Blank for unresolved quartet; never imputed as zero	Count requiring the applicable marginal mixing review.
+recovered_quartet_cutoff_diagnostics	pattern_no_variation_review	Blank for unresolved quartet; never imputed as zero	Count with no observed state variation; requires review and does not establish state certainty.
+recovered_quartet_cutoff_diagnostics	scientific_eligibility	Always present; explicit zero is a true count or false indicator	Always zero; no accepted ancestral posterior implied.
