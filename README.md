@@ -108,6 +108,17 @@ closure. It keeps residual weighting distinct from target-protein covariance
 and preserves every pair exception. Actual weighting policies, weighted
 numerical qualification and fitted effects remain unqualified.
 
+The [full original-cohort reuse controls](docs/inverse-reuse-weight-controls-20261003.md)
+are software qualified and launched across all 4,340 cohorts and 34,110,120
+cohort-row occurrences. Uniform and three mean-one inverse-reuse controls
+use original background nodes, versioned physical pairs and connected family
+components. The reader reconstructs every count and weight with SQL and exact
+fractions. All cohort exports are written and the producer exited successfully;
+independent full readback is running and closure remains pending. These are
+sensitivity assumptions, with no calibrated confidence-to-variance or effective
+sample-size claim. Weighted numerical qualification and fitted effects remain
+separate gates; GPU prediction remains paused.
+
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The
 [observation-aware reader v2](docs/independent-short-sampler-replay-v2-20261003.md)

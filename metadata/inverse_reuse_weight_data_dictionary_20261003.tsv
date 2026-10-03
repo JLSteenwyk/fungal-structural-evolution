@@ -1,0 +1,40 @@
+artifact	field	type_or_shape	definition
+arrays/*.npz	case_rows	int64[n]	Original global case-row indices in sorted local logical-case-ID order
+arrays/*.npz	reuse_counts	int64[3,n]	Cohort-local group size in background_node/background_pair/family_component order
+arrays/*.npz	weights	float64[4,n]	Uniform/background_node/background_pair/family_component; exact recipe n/(G*c_i)
+arrays/*.npz	reciprocal_diagonals	float64[4,n]	Same policy order; exact recipe (G*c_i)/n; working residual-variance sensitivity assumption
+cohorts/*.json	schema	string	full-original-cohort-inverse-reuse-controls-v1
+cohorts/*.json	source_contract	SHA256	Digest binding immutable consumed sources and group interpretation
+cohorts/*.json	cohort_id	SHA256	Unchanged original guide/mask/ordered-case-ID cohort identity
+cohorts/*.json	guide	string	Original sequence guide; no cross-guide observation expansion
+cohorts/*.json	mask	string	Original structural observation mask
+cohorts/*.json	records	integer n	Original number of unique logical cases within this cohort
+cohorts/*.json	membership_occurrences	integer	Original setting-membership links; not additional observations
+cohorts/*.json	cohort_rows_sha256	SHA256	Original little-endian int64 row-vector digest
+cohorts/*.json	ordered_case_ids_sha256	SHA256	Original S64 logical-case-ID order digest
+cohorts/*.json	original_cohort_npz_sha256	SHA256	Unchanged source cohort-membership NPZ digest
+cohorts/*.json	array_file_sha256	SHA256	Exported NPZ byte digest
+cohorts/*.json	array_sha256	mapping	Each exported array digest with documented canonical dtype
+cohorts/*.json	policy_records	4 records	One independently reconstructed metadata record per control
+policy_records	policy	string	uniform/background_node/background_pair/family_component
+policy_records	represented_groups	integer G	Number of distinct cohort-local keys; uniform baseline uses one group per logical case
+policy_records	minimum_reuse,maximum_reuse	integers	Minimum and maximum cohort-local group size
+policy_records	weight_min,weight_max	float64	Extrema of sensitivity weights; not calibrated precision
+policy_records	diagonal_min,diagonal_max	float64	Extrema of working reciprocal diagonal; not confidence-derived error
+policy_records	weight_sum_float64	float64	Rounded saved weight sum, checked against exact n with explicit roundoff bound
+policy_records	exact_weight_sum	integer n	Exact rational sum of weights; not an effective sample size
+policy_records	exact_group_total_numerator,exact_group_total_denominator	integers n,G	Exact equal group-total weight n/G
+policy_records	diagonal_is_exact_uniform_one	boolean	Integer identity G*c_i==n holds for every row
+policy_records	future_basis_disposition	string	Uniform named fold or distinct positive-diagonal cone; both require fresh numerical qualification
+cohorts/*.json	recipe	mapping	Exact equations, counting/group scope, physical-pair and connected-family definitions
+cohorts/*.json	residual_diagonal_prepared	boolean true	Working diagonal exported; no numerical basis or biological acceptance
+cohorts/*.json	calibrated_measurement_precision	boolean false	Prediction confidence has not been converted to measured error variance
+cohorts/*.json	inverse_probability_weighting	boolean false	No inverse inclusion-probability interpretation
+cohorts/*.json	effective_sample_size_estimated	boolean false	No independent biological N or posterior ESS claim
+cohorts/*.json	raw_reml_basis_qualification_complete	boolean false	Weighted numerical qualification remains separate
+cohorts/*.json	nonuniform_weighting_accepted	boolean false	Exported sensitivity controls do not establish accepted inference
+cohorts/*.json	scientific_eligibility	boolean false	No biological result follows from data preparation
+control_manifest.json	record_path,record_sha256,array_path,array_sha256	strings	Relative cohort artifact paths and exact byte hashes
+receipt.json,readback.json	case_row_occurrences	integer	Sum of original logical-case memberships across distinct cohorts; repeated settings are not expanded
+receipt.json,readback.json	case_control_occurrences	integer	Four times cohort-row occurrences; not independent observations
+receipt.json,readback.json	policy_census	mapping	Complete uniform/nonuniform cohort counts and group/reuse/weight extrema

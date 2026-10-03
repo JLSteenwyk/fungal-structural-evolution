@@ -1,5 +1,36 @@
 # Progress and evidence
 
+## October 3, 22:56 UTC: complete original-cohort reuse controls exported; readback running
+
+The exporter/independent SQL-Fraction reader passed 40 grouping cases and the
+complete declared synthetic 24-case/five-cohort handoff. Seventeen rehashed
+output alterations, six rehashed source alterations and three invalid inputs
+were rejected. Completed roots were refused; positive bytes and bindings
+were restored and freshly checked. Actual original software wait and exact
+PID/create/command/invocation journals exited zero. Synthetic source/journal
+fixtures remain distinct from real-data evidence.
+
+After prelaunch resource estimates, all 4,340 original cohorts and 34,110,120
+row occurrences are launched for uniform/background-node/background-pair/
+connected-family inverse-reuse controls. Four policies produce 136,440,480
+case/control occurrences. Exact mean-one normalization, original memberships
+and uniform/nonuniform classes remain explicit. Fresh scoped source hashes,
+every exported row and both actual original journals gate real completion.
+The producer has written all 4,340 cohorts, binding 4,384 consumed sources
+and 8,681 exported artifacts, and has actual original terminal success.
+Independent SQL/Fraction readback is running; full closure remains pending.
+The preliminary export reports maximum background reuse 71 and connected
+component reuse 771; all three controls are nonuniform in every cohort.
+A complete byte audit rehashed all source/artifact bindings and found exported
+node/pair weights and diagonals exactly equal in every cohort, preserving
+separate policies/provenance. Its actual original wait/journals exited zero;
+independent raw count reconstruction remains pending.
+These are sensitivity assumptions, not calibrated
+precision, inverse-probability weighting, independent observations or ESS.
+Weighted raw/REML qualification, timing, fits and all eight aims remain open.
+The full original project goal remains active; GPU prediction stays paused.
+[Methods, resources, scope and execution evidence](inverse-reuse-weight-controls-20261003.md).
+
 ## October 3, 22:10 UTC: complete positive-diagonal covariance proof closed
 
 All 4,340 cohorts/8,680 signed and unsigned certificates now have a separate

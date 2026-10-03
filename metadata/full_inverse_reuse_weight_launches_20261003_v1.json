@@ -1,0 +1,22 @@
+{
+  "status": "queued_complete_original_cohort_reuse_control_export_and_independent_readback",
+  "source_plan": "metadata/full_inverse_reuse_weight_plan_20261003_v1.json",
+  "source_plan_sha256": "eb1ae6fd81f67eb552d5511f98b47b2127d7682af4cff4def1ce0d37372ac8d7",
+  "launches": [
+    "metadata/full_inverse_reuse_weights_v1_launch_20261003.json",
+    "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json",
+    "metadata/full_inverse_reuse_weights_v1_closure_launch_20261003.json"
+  ],
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "case_row_occurrences": 34110120
+  },
+  "expected_case_control_occurrences": 136440480,
+  "residual_diagonal_prepared": false,
+  "raw_reml_basis_qualification_complete": false,
+  "weighted_fitting_launched": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "all_eight_aims_incomplete": true
+}

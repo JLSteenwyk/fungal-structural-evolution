@@ -1,0 +1,24 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds": 900,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "runtime_planning_seconds": [
+    5,
+    900
+  ],
+  "runtime_calibrated": false,
+  "source_bindings": 4384,
+  "export_artifacts": 8681,
+  "cohorts": 4340,
+  "raw_array_bytes_scanned": 3274571520,
+  "output_allowance_mib": 8,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete fresh exported bytes and numerical control redundancy scan. Does not independently reconstruct raw reuse counts or qualify weighted fits; no original job restart."
+}

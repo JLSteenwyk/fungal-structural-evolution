@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-10-03T22:48:46.113263+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 21600,
+  "per_file_limit_mib": 256,
+  "minimum_free_disk_gib": 128,
+  "output_allowance_gib": 8,
+  "original_logical_cases": 75188,
+  "original_cohorts": 4340,
+  "original_case_row_occurrences": 34110120,
+  "control_policies": 4,
+  "case_control_occurrences": 136440480,
+  "raw_array_budget_bytes": 3274571520,
+  "largest_raw_cohort_array_bytes": 2201664,
+  "cohort_metadata_budget_bytes": 142213120,
+  "runtime_planning_seconds_per_stage": [
+    60,
+    14400
+  ],
+  "runtime_calibrated": false,
+  "available_ram_gib": 293.5663299560547,
+  "free_disk_gib": 10314.672897338867,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "Full-data catalog generation and independent SQL/Fraction readback. Uncompressed array budget includes one row vector, three reuse-count vectors, four weights and four diagonals. Output allowance is a planning estimate, not a directory quota. CPU/AS/per-file/cgroup caps enforced; planning runtime is uncalibrated. No new structure inference or weighted fits."
+}

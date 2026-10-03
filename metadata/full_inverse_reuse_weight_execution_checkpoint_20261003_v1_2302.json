@@ -1,0 +1,213 @@
+{
+  "status": "verified_original_full_inverse_reuse_control_runtime",
+  "checked_utc": "2026-10-03T23:01:58.439338+00:00",
+  "plan_sha256": "eb1ae6fd81f67eb552d5511f98b47b2127d7682af4cff4def1ce0d37372ac8d7",
+  "original_handles": [
+    {
+      "launch": "metadata/full_inverse_reuse_weights_v1_launch_20261003.json",
+      "pid": 1237659,
+      "created": 1791067729.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "0dbb52259942ca76b05244befc945ee95af9d1d2f933756b2a4b36bf46afe006",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "5666c43e15792d7410ea2c11adc4c19916aed20182bc93a926047f46f48f9a70",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791068131694848",
+          "CPU_USAGE_NSEC": "401812942000",
+          "MEMORY_PEAK": "3932160",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-inverse-reuse-weights-v1-readback-20261003-v1.service",
+      "pid": 1237663,
+      "created": 1791067729.18,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_inverse_reuse_weights_v1_readback_wait_plan_20261003.json",
+      "plan_sha256": "624db7cefd30f7045a1270faa20da788115085525822d986bcc1ee5bbd286c6f",
+      "checked_utc": "2026-10-03T22:48:49.920031+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-inverse-reuse-weights-v1-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.09,
+      "children": [
+        {
+          "pid": 1243870,
+          "created": 1791068149.77,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_full_inverse_reuse_weights.py",
+            "--plan",
+            "metadata/full_inverse_reuse_weight_plan_20261003_v1.json",
+            "--reader"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 367.64000000000004
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "96f35f5c4022c8d781fdbf0e0ed53eb48b6e7bbed613615c10b0ee668b733762",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 246571008,
+        "memory.peak": 1527640064,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 1243870,
+          "created": 1791068149.77,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_full_inverse_reuse_weights.py",
+            "--plan",
+            "metadata/full_inverse_reuse_weight_plan_20261003_v1.json",
+            "--reader"
+          ],
+          "rss_bytes": 287682560,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              21600                21600                seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-inverse-reuse-weights-v1-closure-20261003-v1.service",
+      "pid": 1237668,
+      "created": 1791067729.24,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_inverse_reuse_weights_v1_closure_wait_plan_20261003.json",
+      "plan_sha256": "1798e8b6dea0c3c7deae8231c9df31091f05c1485937af678fbd7e599936dcc8",
+      "checked_utc": "2026-10-03T22:48:49.957686+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-inverse-reuse-weights-v1-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_inverse_reuse_weights_v1_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.12,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "97ed338b034062b64485f0a07f1d0dc978a22d1da6a8c47158b84e125c52c528",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8921088,
+        "memory.peak": 11165696,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    }
+  ],
+  "frozen_pins_checked": 37,
+  "cohort_checkpoint_files": 4340,
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "case_row_occurrences": 34110120
+  },
+  "completion_gates": {
+    "producer": {
+      "path": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/receipt.json",
+      "present": true,
+      "status": "complete_full_original_cohort_inverse_reuse_controls_pending_readback_v1",
+      "sha256": "21b708f215b02ed12691188baf6b55da173b4e8ac2e70d5ce837eb6c172a78c6",
+      "cohorts": 4340,
+      "case_row_occurrences": 34110120,
+      "case_control_occurrences": 136440480
+    },
+    "reader": {
+      "path": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/readback.json",
+      "present": false
+    },
+    "completion": {
+      "path": "metadata/full_inverse_reuse_weights_completed_20261003_v1.json",
+      "present": false
+    }
+  },
+  "weighted_fitting_launched": false,
+  "gpu": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Original PID/create/command or invocation journals, actual live cgroup caps and available checkpoint counts. Full stage closure archive digest if present; no replay of full saved controls or broader upstream artifacts. No calibrated precision, accepted fits, posterior adequacy, restart or final peak claim."
+}

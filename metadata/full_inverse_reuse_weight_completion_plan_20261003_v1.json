@@ -1,0 +1,32 @@
+{
+  "source_plan": "metadata/full_inverse_reuse_weight_plan_20261003_v1.json",
+  "producer_receipt": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/readback.json",
+  "producer_status": "complete_full_original_cohort_inverse_reuse_controls_pending_readback_v1",
+  "reader_status": "passed_full_original_cohort_inverse_reuse_controls_sql_fraction_readback_v1",
+  "completed_status": "complete_verified_full_original_cohort_inverse_reuse_controls_v1",
+  "summary_fields": [
+    "logical_cases",
+    "cohorts",
+    "case_row_occurrences",
+    "case_control_occurrences",
+    "policies",
+    "policy_census",
+    "residual_diagonal_prepared",
+    "raw_reml_basis_qualification_complete",
+    "nonuniform_weighting_accepted"
+  ],
+  "launches": [
+    "metadata/full_inverse_reuse_weights_v1_launch_20261003.json",
+    "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/full_inverse_reuse_weight_plan_20261003_v1.json": "eb1ae6fd81f67eb552d5511f98b47b2127d7682af4cff4def1ce0d37372ac8d7",
+    "metadata/full_inverse_reuse_weights_v1_launch_20261003.json": "0dbb52259942ca76b05244befc945ee95af9d1d2f933756b2a4b36bf46afe006",
+    "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json": "96f35f5c4022c8d781fdbf0e0ed53eb48b6e7bbed613615c10b0ee668b733762",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_inverse_reuse_weights_completed_20261003_v1.json",
+  "scope": "All original4340cohorts/75188logical cases/34110120cohort-row occurrences, uniform and three mean-one inverse-reuse sensitivity controls;136440480case/control occurrences. Cohort-local counts use original background nodes, versioned physical background pairs and connected family components. Preserve original QC membership, logical-case order and multiplicity links; do not expand selection records into observations. Reciprocal diagonal is a working residual-variance sensitivity assumption, not calibrated confidence-to-variance, literal power weighting, inverse-probability weighting, independent observation count or posterior ESS. Exact uniform-one classes retain a separate future qualification disposition. Fresh scoped parent archive/completion proofs and every consumed case table, caseID order, cohort membership and cone membership record are checked; unrelated archived X/y/operators/native artifacts are not freshly replayed. Every exported row/control checked using independent SQL partition counts and Fraction division. Two new actual original journals plus full stage source/artifact hashes gate closure. Actual weighted raw/REML numerical qualification, timing, fits and biological acceptance remain incomplete; all8aims remain open. No GPU/restart/new cost."
+}

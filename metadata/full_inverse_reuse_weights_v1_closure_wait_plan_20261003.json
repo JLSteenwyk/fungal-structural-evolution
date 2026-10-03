@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_inverse_reuse_weights_v1_launch_20261003.json",
+    "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/full_inverse_reuse_weight_completion_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/full_inverse_reuse_weight_completion_plan_20261003_v1.json": "18bd34dcabdf0c31fecadfff99e2b30f0cb747da4d4b9d44210e40bbc3bb1331",
+    "metadata/full_inverse_reuse_weights_v1_launch_20261003.json": "0dbb52259942ca76b05244befc945ee95af9d1d2f933756b2a4b36bf46afe006",
+    "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json": "96f35f5c4022c8d781fdbf0e0ed53eb48b6e7bbed613615c10b0ee668b733762",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

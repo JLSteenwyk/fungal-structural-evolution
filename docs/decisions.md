@@ -1520,3 +1520,26 @@ software failure and use a fresh corrected checker, without altering qualified
 mathematical or production scripts. Actual full weighted source/timing/fits
 and inferential calibration remain required.
 [Completed full proof and remaining requirements](nonuniform-covariance-cones-20261003.md).
+
+## October 3: reconstruct full original-cohort inverse-reuse controls
+
+Use cohort-local logical-case memberships for background-node, original
+versioned physical background-pair and connected-family-component reuse.
+Normalize exact inverse counts to mean-one weights, keeping integer counts
+and rational normalization available. Selection/settings multiplicity does
+not expand observations. Group totals and weight sums do not estimate ESS.
+Treat reciprocal diagonals as working residual-variance sensitivity assumptions;
+do not equate them with literal weighted-loss semantics or calibrate predictor
+confidence into variance without independent evidence.
+
+Distinguish exact uniform-one diagonals by integer identities. Require the
+named uniform fold for those controls and the separate positive-diagonal cone
+for nonconstant controls, with fresh raw/REML qualification for both.
+Independently reconstruct all counts via SQL and weights via Fraction division,
+including every original cohort and numerical cell. Declare provenance scope:
+freshly hash every consumed source and full parent closure/archive identities,
+while retaining broader upstream source closures without claiming unrelated
+artifacts were freshly replayed. Real stage closure requires every artifact
+and two actual original journals. Source export does not authorize weighted
+fits before numerical qualification, timing and installed resources.
+[Complete control definitions and evidence](inverse-reuse-weight-controls-20261003.md).

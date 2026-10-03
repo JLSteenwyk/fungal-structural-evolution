@@ -1,0 +1,28 @@
+{
+  "status": "verified_original_complete_export_audit_actual_tool_wait_zero",
+  "checked_utc": "2026-10-03T23:01:11.492762+00:00",
+  "actual_tool_session_id": 80752,
+  "actual_tool_terminal_exit_code": 0,
+  "unit": "fungal-inverse-reuse-weight-export-audit-20261003-v1.service",
+  "invocation_id": "6097ae9c6baf440d94f25618f99c07fb",
+  "process": {
+    "pid": 1246767,
+    "created": 1791068350.72,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/verify_full_inverse_reuse_weight_export.py",
+      "--output",
+      "metadata/full_inverse_reuse_weight_export_verification_20261003_v1.json"
+    ]
+  },
+  "exact_original_pid_journal_entries": 2,
+  "original_start_records": 1,
+  "original_completion_records": 1,
+  "source_hashes": {
+    "metadata/full_inverse_reuse_weight_export_verification_20261003_v1.json": "e4a2d72ba5b2fcc70794d91808ee3a9eec95de16242f7990e6ce71616ffb2add",
+    "metadata/full_inverse_reuse_weight_export_audit_journal_20261003_v1.jsonl": "9b884df5d8d3dd6c08f80b6228eb6cc4236666c09e91cd853484c25bd3656df6",
+    "metadata/full_inverse_reuse_weight_export_audit_resources_20261003_v1.json": "980780d6185bbc2db38b39cae65dd0b519bdbbafb702d6ff470e898a76c50554",
+    "scripts/verify_full_inverse_reuse_weight_export.py": "164d2e1d4c4831b1e7ba30b271bff13518edc622eeddbc06285468617b57b9b2"
+  },
+  "scope": "Actual original tool session80752 terminal zero and exact original audit PID/create/command journal identity; complete byte/redundancy audit scope only. Independent raw source-group count readback and weighted inference remain pending."
+}

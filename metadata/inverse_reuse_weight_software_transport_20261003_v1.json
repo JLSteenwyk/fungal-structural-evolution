@@ -1,0 +1,39 @@
+{
+  "status": "verified_original_inverse_reuse_controls_software_actual_wait_zero",
+  "checked_utc": "2026-10-03T22:46:32.435079+00:00",
+  "actual_tool_session_id": 90378,
+  "actual_tool_terminal_exit_code": 0,
+  "unit": "fungal-inverse-reuse-weight-software-20261003-v1.service",
+  "invocation_id": "b3b7856aac6e4bacbe55242278ace5f6",
+  "wrapper": {
+    "pid": 1234978,
+    "created": 1791067526.15,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_inverse_reuse_weight_software_stage.py",
+      "--resources",
+      "metadata/inverse_reuse_weight_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/inverse_reuse_weight_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/inverse_reuse_weight_software_validation_20261003_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_inverse_reuse_weights.py",
+      "--output",
+      "data/software_audits/full-inverse-reuse-weights-20261003-v1",
+      "--receipt",
+      "metadata/inverse_reuse_weight_software_validation_20261003_v1.json"
+    ]
+  },
+  "exact_wrapper_pid_journal_entries": 2,
+  "original_start_records": 1,
+  "original_completion_records": 1,
+  "fresh_hashes_checked": 58,
+  "source_hashes": {
+    "metadata/inverse_reuse_weight_software_execution_20261003_v1.json": "2e220962f19a89cd68791da0db060237193ce0811fbdb9004074b0494b9354f1",
+    "metadata/inverse_reuse_weight_software_validation_20261003_v1.json": "26b7c95cc7e9fd0e5fb229f3041e6a500219fcffccda7cecfbf2330c15735eec",
+    "metadata/inverse_reuse_weight_software_execution_20261003_v1/original-invocation-journal.jsonl": "2b0ec9ef5118db4a7fd2bc1488e306691fee7fb4dec16cb59c122ae2e4e35969"
+  },
+  "scope": "Actual original exec session90378 wait exited0; exact original wrapper journal start/completion and native execution/receipt/source hashes. Synthetic fixture scope only; no real weighted fitting or biological qualification."
+}

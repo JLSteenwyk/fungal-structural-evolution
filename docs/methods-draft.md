@@ -3027,3 +3027,35 @@ Grams or fit weighted evolutionary effects. Actual diagonal provenance,
 fresh conditioning/envelope/precision qualification, timing and independent
 fits remain necessary. Uniform numerical qualification is not transferred.
 [Full proof, qualification and remaining controls](nonuniform-covariance-cones-20261003.md).
+
+## Original-cohort reuse controls
+
+The full 4,340 original cohorts define three reuse sensitivity controls by
+background node, versioned physical background pair and connected family
+component, plus a uniform baseline. Cohort-local logical cases are counted
+once after existing gates. For cohort size `n`, represented groups `G` and
+group count `c_i`, use weight `n/(G*c_i)` and reciprocal diagonal `(G*c_i)/n`.
+The exact weight mean is one; group total weights are `n/G`, and diagonal
+means need not be one. Integer counts and rational normalization remain
+exported. Setting and selection-record multiplicities are retained as links
+without expanding the observation set. No predictor-confidence transformation
+or effective-sample-size estimate is made.
+
+The residual diagonal is a working covariance sensitivity assumption, not
+calibrated measurement precision, inverse-probability weighting or an
+equivalence to literal weighted losses. Exactly uniform-one controls are
+identified by `G*c_i == n` for all members. They require the named uniform
+fold; nonconstant controls require the separate positive-diagonal cone.
+Both need fresh weighted raw/REML numerical qualification, conditioning and
+precision assessment before fitting.
+
+Software-qualified exports retain all 34,110,120 original cohort-row
+occurrences and 136,440,480 case/control occurrences. An independent reader
+uses SQL partition counts and Fraction division to check every saved array
+and metadata field. Fresh source verification is explicitly scoped to all
+consumed original case/covariance tables, global order, cohort memberships
+and cone membership records, with closed parent archive identities checked.
+Unrelated archived numerical inputs and native artifacts are not freshly
+replayed by this export. Full real readback and two original execution journals
+remain pending, as do weighted numerical qualification, timing and fits.
+[Definitions, qualification, dictionary and resource estimates](inverse-reuse-weight-controls-20261003.md).

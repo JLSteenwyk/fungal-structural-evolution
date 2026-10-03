@@ -1,0 +1,17 @@
+{
+  "pid": 1234981,
+  "created": 1791067526.58,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_inverse_reuse_weights.py",
+    "--output",
+    "data/software_audits/full-inverse-reuse-weights-20261003-v1",
+    "--receipt",
+    "metadata/inverse_reuse_weight_software_validation_20261003_v1.json"
+  ]
+}

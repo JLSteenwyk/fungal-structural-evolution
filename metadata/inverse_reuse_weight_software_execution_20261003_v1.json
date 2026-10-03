@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_inverse_reuse_weights.py",
+    "--output",
+    "data/software_audits/full-inverse-reuse-weights-20261003-v1",
+    "--receipt",
+    "metadata/inverse_reuse_weight_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_inverse_reuse_weight_software_stage.py": "c85a0c6645977facb133250376771545a6ac1c3514eec4e319b9d75d6fde40c6",
+    "metadata/inverse_reuse_weight_software_resources_20261003_v1.json": "e82f800d8ea976128262b837e512e5b968dc8ffb4d0ca7b8ddec6a1d302432c9",
+    "scripts/check_full_inverse_reuse_weights.py": "9e63ded260623273e3f99a7826b28b063ae4206d216ac62c9b12eb8231fcf2fc",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "b3b7856aac6e4bacbe55242278ace5f6",
+  "wrapper": {
+    "pid": 1234978,
+    "created": 1791067526.15,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_inverse_reuse_weight_software_stage.py",
+      "--resources",
+      "metadata/inverse_reuse_weight_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/inverse_reuse_weight_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/inverse_reuse_weight_software_validation_20261003_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_inverse_reuse_weights.py",
+      "--output",
+      "data/software_audits/full-inverse-reuse-weights-20261003-v1",
+      "--receipt",
+      "metadata/inverse_reuse_weight_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-03T22:45:27.273883+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T22:45:28.445050+00:00",
+  "child": {
+    "pid": 1234981,
+    "created": 1791067526.58,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=900",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_inverse_reuse_weights.py",
+      "--output",
+      "data/software_audits/full-inverse-reuse-weights-20261003-v1",
+      "--receipt",
+      "metadata/inverse_reuse_weight_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 1.1707152120070532,
+  "child_cpu_seconds": 1.090087,
+  "child_peak_rss_bytes": 103809024,
+  "receipt": "metadata/inverse_reuse_weight_software_validation_20261003_v1.json",
+  "receipt_sha256": "26b7c95cc7e9fd0e5fb229f3041e6a500219fcffccda7cecfbf2330c15735eec",
+  "artifacts": {
+    "metadata/inverse_reuse_weight_software_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/inverse_reuse_weight_software_execution_20261003_v1/configuration.json": "deb5b674203fb2f558561c2be012105ddca08ca5a8b5163e684618538576a13b",
+    "metadata/inverse_reuse_weight_software_execution_20261003_v1/stdout.log": "292a237a23bd0118c06c269a861ec07123b169ed435717c73c0eaeac4f7bb30c",
+    "metadata/inverse_reuse_weight_software_execution_20261003_v1/process.json": "064124644cce84fc86769195713137cbcbd446a88d8e61c1fe24985313f883fd"
+  },
+  "scope": "Original bounded complete declared synthetic control-catalog checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source qualification, fitting, restart, posterior acceptance or GPU use."
+}
