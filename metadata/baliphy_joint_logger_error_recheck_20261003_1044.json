@@ -1,0 +1,63 @@
+{
+  "status": "read_only_logger_error_recheck",
+  "checked_utc": "2026-10-03T10:43:51.497012+00:00",
+  "original_failed_output_mismatches_reproduced": [
+    {
+      "iteration": 0,
+      "label": "A2",
+      "saved_sequence": "ATCDEYFG",
+      "decoded_states": "ATCDEFFG"
+    },
+    {
+      "iteration": 10,
+      "label": "A4",
+      "saved_sequence": "ACDEYFG",
+      "decoded_states": "ACDEFFG"
+    },
+    {
+      "iteration": 10,
+      "label": "A6",
+      "saved_sequence": "ACDEYFG",
+      "decoded_states": "ACDEFFG"
+    },
+    {
+      "iteration": 20,
+      "label": "A0",
+      "saved_sequence": "AVDEFG",
+      "decoded_states": "ACDEFG"
+    },
+    {
+      "iteration": 20,
+      "label": "e",
+      "saved_sequence": "AVDEFG",
+      "decoded_states": "ACDEFG"
+    }
+  ],
+  "corrected_joint_frames_checked": 9,
+  "corrected_ancestral_records_checked": 36,
+  "corrected_ancestral_residue_category_pairs": 233,
+  "corrected_same_record_checks_passed": true,
+  "corrected_fixture_source_bindings_verified": 507,
+  "corrected_software_receipt": "metadata/baliphy_joint_node_logger_software_validation_20261003_v4.json",
+  "corrected_software_receipt_sha256": "36338e6204a7319a633f73e787835bdc25b95d2e292c8d0f93859d1187e031ff",
+  "startup_roles_checked": 1256,
+  "startup_status_counts": {
+    "reference_startup_homology_density_and_representation_checked": 1256
+  },
+  "original_short_sampler_roles_checked": 1356,
+  "original_short_sampler_status_counts": {
+    "full_short_sampler_output_integrity_checked_not_posterior": 1356
+  },
+  "new_joint_sampler_roles_checked": 0,
+  "full_native_joint_sampling_output_validated": false,
+  "new_native_inference_runs": 0,
+  "jobs_restarted": false,
+  "earlier_memory_allocation_failures_unresolved": 2,
+  "posterior_qualified": false,
+  "checkpoint_bindings": {
+    "metadata/baliphy_joint_logger_preflight_execution_checkpoint_20261003_error_recheck_1044.json": "13314e143275d58d8a448d5f78824591ea6528dd80bb9c5998d5c1bba4d5a051",
+    "metadata/independent_short_sampler_replay_v2_execution_checkpoint_20261003_error_recheck_1044.json": "107466f2e631b1d0109b73dada55d5157222bc4be9d767d108ecd3022be7786d",
+    "metadata/baliphy_joint_sampler_qualification_v2_execution_checkpoint_20261003_error_recheck_1044.json": "936dde5a10293c4cd57b06fef78c8e345b67b08adc9bb635c1e9189cd6febbcf"
+  },
+  "scope": "Fresh read-only revalidation of all corrected saved fixture frames and source bindings; original failed fixture mismatches reproduced; exact live handle/cap checks recorded separately. Full native joint-grid sampling remains queued. No native reruns or source edits."
+}

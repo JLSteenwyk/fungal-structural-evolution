@@ -1,5 +1,14 @@
 # Taxon identity and hybrid sensitivity inputs
 
+The [October 3 full identity audit](selected-taxon-identity-audit-20261003.md)
+checks every selected entry against raw catalogues and frozen taxonomy records.
+It identifies the historical amphioxus label as inconsistent with its deposited
+*B. belcheri* principal haplotype. This hybrid-derived outgroup provenance is
+separate from the two fungal hybrids below and does not prove a mixed-parental
+assembly. A versioned overlay and all 125 marker provenance slots are available,
+with every original input and all 25 outgroups retained. No unique fungal
+species count is accepted.
+
 The working dataset contains 501 fungal entries and 25 outgroups. Distinct labels
 or taxonomy IDs do not establish distinct biological species. The original
 name-only screen flagged 21 incompletely identified labels and one explicit

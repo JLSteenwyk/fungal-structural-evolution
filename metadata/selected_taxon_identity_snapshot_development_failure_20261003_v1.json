@@ -1,0 +1,17 @@
+{
+  "status": "snapshot_audit_candidate_inventory_assumption_rejected",
+  "checked_utc": "2026-10-03T10:50:39.760434+00:00",
+  "source": "scripts/audit_selected_taxon_identity_snapshot.py",
+  "source_sha256": "65cdead8d7b7bf3e963e7c6c6553c52ffb47ee4ad0f566a37ebc070901366721",
+  "original_exec_session": 64486,
+  "observed_exit_code": 1,
+  "failed_assertion": "assert cat and accession in selected",
+  "cause": "Two full-cohort Sanchytriomycota assemblies match the raw catalogue but were added with external annotations after the original species candidate inventory. All 501 fungal assemblies are in the raw catalogue and assembly_candidates_taxonomy.tsv. Requiring all entries in the earlier candidate inventory was incorrect.",
+  "affected_entries": {
+    "F2109901": "GCA_018985225.1",
+    "F2020955": "GCA_018985235.1"
+  },
+  "output_directory_created": false,
+  "native_attempts_changed": false,
+  "scope": "Failed source retained unchanged; new version will compare all catalogue-backed taxa to the complete assembly taxonomy inventory and report early candidate inventory membership separately."
+}

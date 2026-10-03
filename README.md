@@ -297,6 +297,12 @@ entries). The candidate manifest has 527 entries; *Saccharomyces jurei* is
 excluded from analysis because no usable annotated proteome was acquired. Twenty-one uncertain fungal labels and two curated hybrids remain
 explicit; these entries are not yet established as 501 unique fungal species.
 See the [taxon identity review](docs/taxon-identity-sensitivities.md).
+The [full assembly/taxonomy identity audit](docs/selected-taxon-identity-audit-20261003.md)
+checks all 526 entries against frozen primary records. It identifies a mislabeled
+amphioxus outgroup: the selected assembly is the deposited *B. belcheri*
+principal haplotype from an interspecific specimen. A separate evidence overlay
+preserves the stable ID and all 25 outgroups; biological species delimitation
+and independent parental purity remain unverified.
 
 | Component | Verified scope | Remaining work |
 |---|---|---|

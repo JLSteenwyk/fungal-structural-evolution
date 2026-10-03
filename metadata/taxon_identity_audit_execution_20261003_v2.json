@@ -1,0 +1,48 @@
+{
+  "status": "verified_direct_identity_audit_executions",
+  "checked_utc": "2026-10-03T11:01:49.794921+00:00",
+  "executions": [
+    {
+      "stage": "selected-taxon-identity-snapshot",
+      "original_exec_session": 49067,
+      "observed_exec_completion_exit_code": 0,
+      "receipt": "metadata/selected_taxon_identity_snapshot_completed_20261003_v2.json",
+      "receipt_sha256": "afe589d75b6ce98814b586b60fed767d5cccbf0ef7a3ceda61dfb1a115675a3b",
+      "resource_log": "data/software_audits/selected-taxon-identity-snapshot-20261003-v2-resource.log",
+      "resource_log_sha256": "aefe8d69ee1bcc2bd4ef4693cc84bf554fdbc6fec1d1b063667f50b40853d873",
+      "wall_seconds": 34.84,
+      "user_cpu_seconds": 33.35,
+      "system_cpu_seconds": 1.48,
+      "gnu_time_max_rss_bytes": 1277435904,
+      "configured_address_space_bytes": 4294967296,
+      "cgroup_peak_observed": false,
+      "cgroup_cpu_quota_observed": false,
+      "scientific_eligibility": false,
+      "scope": "Actual direct execution completed exit-zero; GNU time records single-process CPU/wall/RSS, not charged cgroup memory. CPU/address-space/file/wall bounds appear in the exact recorded command; no group cap observation claim."
+    },
+    {
+      "stage": "branchiostoma-assembly-identity",
+      "original_exec_session": 77286,
+      "observed_exec_completion_exit_code": 0,
+      "receipt": "metadata/branchiostoma_assembly_identity_review_20261003_v2.json",
+      "receipt_sha256": "56bf534bde16e6498888c474cd9943aeb7f720ea9d212a03641ba68acb5ed916",
+      "resource_log": "data/software_audits/branchiostoma-assembly-identity-20261003-v2-resource.log",
+      "resource_log_sha256": "63198cbff08aa41a1348448753d2825f9c23996ccceb3d05fa253f2387671287",
+      "wall_seconds": 9.34,
+      "user_cpu_seconds": 8.76,
+      "system_cpu_seconds": 0.56,
+      "gnu_time_max_rss_bytes": 548929536,
+      "configured_address_space_bytes": 4294967296,
+      "cgroup_peak_observed": false,
+      "cgroup_cpu_quota_observed": false,
+      "scientific_eligibility": false,
+      "scope": "Actual direct execution completed exit-zero; GNU time records single-process CPU/wall/RSS, not charged cgroup memory. CPU/address-space/file/wall bounds appear in the exact recorded command; no group cap observation claim."
+    }
+  ],
+  "overlay": "config/assembly_identity_reviews_20261003_v2.json",
+  "overlay_sha256": "625ee614cc0e4732b5b13219f47c863127b649c7622d3a29748f1e8c50a422cf",
+  "python_version": "3.10.13",
+  "new_native_inference_runs": 0,
+  "gpu": false,
+  "charges": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "identity_review_source_syntax_error_retained",
+  "checked_utc": "2026-10-03T10:59:18.052090+00:00",
+  "source": "scripts/review_branchiostoma_assembly_identity.py",
+  "source_sha256": "78fb208d9893eac8821e8852bcc38966fe44668090ae5106e37b2c6ba0d1a7e3",
+  "observed_exit_code": 1,
+  "error": "SyntaxError: extra closing parenthesis in overlay constructor at line 212",
+  "execution_resource_log": "data/software_audits/branchiostoma-assembly-identity-20261003-v1-resource.log",
+  "output_created": false,
+  "receipt_created": false,
+  "native_attempts_changed": false,
+  "corrected_source": "scripts/review_branchiostoma_assembly_identity_v2.py"
+}

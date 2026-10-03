@@ -1,5 +1,39 @@
 # Progress and evidence
 
+## October 3: full taxon identity audit and amphioxus provenance finding
+
+Completed identity evidence for all 526 working entries: 521 exact raw-catalogue
+joins, five preserved Figshare depositions and all 526 complete node paths
+independently checked against names/ranked lineage. Species-rank IDs are distinct;
+biological species boundaries remain unverified. Two later Sanchytriomycota
+additions remain included despite absence from the earlier candidate inventory.
+
+O2700040's GCF_019207075.1 assembly is the deposited B. belcheri principal
+haplotype from a B. floridae × B. belcheri specimen, inconsistent with its old
+B. floridae label. Primary XML/reports, original statistics, all 79 assembly
+sequences, full GFF coordinates and all 100 selected marker hashes/CDS mappings
+passed. All 125 marker slots and 25 outgroups remain explicit. A new hash-bound
+overlay supplies evidence/display identity. Hybrid specimen origin does not
+prove mixed-parental assembly; independent purity remains open. Frozen inputs,
+query IDs and live jobs remain unchanged.
+[Protocol, reproduction and remaining work](selected-taxon-identity-audit-20261003.md).
+
+The preceding error-recheck turn produced fresh validation evidence: it reproduced
+five old logger mismatches and revalidated all nine corrected fixture frames and
+507 bindings. At 11:01 UTC, original handles/caps were freshly verified: startup
+had 1,516/1,620 successful unclosed checks and the historical short sampler had
+1,596/1,620. The independent reader and new joint sampler awaited full prerequisite
+closures. The joint-stage resource observer remains live with all 1,437 pins
+checked. These are runtime counts, not scientific acceptance. All eight aims
+remain incomplete, GPU prediction stays paused and no paid resources were added.
+
+At 11:06 UTC the same original handles were verified again: startup reached
+1,602 successful unclosed checks and the historical sampler remained at 1,596.
+No failures appear in those available checkpoints; remaining roles and complete
+readback/accounting are pending. Evidence:
+[startup](../metadata/baliphy_joint_logger_preflight_execution_checkpoint_20261003_v11.json)
+and [original sampler/replay](../metadata/independent_short_sampler_replay_v2_execution_checkpoint_20261003_v13.json).
+
 ## October 3: full joint-grid resource observation started
 
 Started a separate read-only observer for the exact original queued

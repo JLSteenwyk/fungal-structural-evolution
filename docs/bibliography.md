@@ -1,5 +1,7 @@
 # Annotated bibliography
 
+- Huang et al. 2023. [Three amphioxus reference genomes reveal gene and chromosome evolution of chordates](https://doi.org/10.1073/pnas.2201504120). Primary study describes parental read partitioning and haploid assembly from interspecific specimens. The exact submitter deposition identifies selected GCF/GCA_019207075.1 as the B. belcheri principal haplotype, exposing a historical B. floridae label mismatch. Study and deposition evidence do not independently establish every sampled locus's parental purity. XML/reports are pinned in the [identity review](selected-taxon-identity-audit-20261003.md).
+
 - Wu et al. 2026. Structural genomics across insects. https://doi.org/10.1038/s41422-026-01220-0 — Atlas plus phylogenetic context and functional validation; pairwise remote-homology counts are not unique proteins.
 - Lemke et al. 2025. The role of metabolism in shaping enzyme structures over 400 million years. https://doi.org/10.1038/s41586-025-09205-6 — Yeast enzyme precedent linking structural context with metabolic properties; informs local analyses.
 - Derbyshire & Raffaele 2023. https://doi.org/10.1038/s41467-023-40949-9 — Fungal orphan effectors, ancestral reconstruction and surface frustration; relevant to case-study design.

@@ -1,0 +1,82 @@
+{
+  "status": "complete_selected_taxon_frozen_snapshot_identity_audit",
+  "checked_utc": "2026-10-03T10:51:39.170345+00:00",
+  "entries": 526,
+  "role_counts": {
+    "ingroup": 501,
+    "outgroup": 25
+  },
+  "raw_catalogue_matches": 521,
+  "ingroup_outside_early_candidate_inventory": [
+    "F2109901",
+    "F2020955"
+  ],
+  "figshare_depositions": 5,
+  "identifier_overrides_used": [
+    "OFS5426494"
+  ],
+  "rank_counts": {
+    "species": 526
+  },
+  "resolved_paths": 526,
+  "independent_rankedlineage_name_agreements": 526,
+  "raw_catalogue_species_ancestor_disagreements": [],
+  "frozen_scientific_name_differences": [
+    "O2700040",
+    "OFS5426494"
+  ],
+  "entry_review_flags": {
+    "uncertain_species_label": 21,
+    "curated_hybrid": 2,
+    "strain_linked_taxonomic_caution": 4,
+    "neocallimastix_species_complex": 3
+  },
+  "species_rank_collisions": [],
+  "distinct_species_rank_identifiers_by_role": {
+    "ingroup": 501,
+    "outgroup": 25
+  },
+  "biological_unique_species_count_verified": false,
+  "curated_hybrid_screen_comprehensive": false,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_selected_taxon_identity_snapshot_v2.py": "e2c4d7bb4676a4b78a3e0260961265d53e360c1bffb083fb4328e24a425fbcb3",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/source_receipts.json": "21f9c6e83c326d82cf9f17f6c38840fbc6ef084083016b6737698312f2d68e55",
+    "metadata/taxon_label_review.tsv": "cfb0ec10270a4ad0a8c4ea856a57a627765534b4695eafd2833ec9d5ed0a36b2",
+    "config/curated_hybrid_evidence.json": "f7f4779e1100d0d42ec16b9d074879011031e8c240fa8308fac7da59ce4cd304",
+    "config/taxonomy_overrides.json": "296b51a7df0e36b54c0d67c8159645b19af34e2ef90e34f83df0643c4872e47e",
+    "metadata/species_assembly_candidates.tsv": "11b03013197060a77002e0ee6cd525eefe891fef04522d5c7b5af4bf09db5fe6",
+    "metadata/assembly_candidates_taxonomy.tsv": "3dc02968796560867d666e391e4896ce0d9a8005e4c7f1d073e8e56ff5d1f668",
+    "metadata/neocallimastix_identity_inputs_completed_20260927.json": "74b26ed7455bd0fc6a74745e290ccaed6e6634b563056e36264c95f220061c74",
+    "metadata/serendipita_oliveonia_taxonomic_review_20260927.json": "972a40add33f2c0428f2c4ba1f640ab4730af04caad44a77a933cd9c07c7b66e",
+    "data/raw/new_taxdump.tar.gz": "a6ada3129845e683df6b2a7c1ce8b712d1e8d26c116ec001625d51bba3fef458",
+    "metadata/chromosphaera_taxonomy_resolution.json": "ede89666217e3180890d5f805435eddfd7c8c84cdc89cf46447be6fd607cb1e7",
+    "data/raw/refseq_fungi_assembly_summary.txt": "65c6bd62cb08468758422bd5484f2c5d097246b3050e639be1b0b4af58209564",
+    "data/raw/genbank_fungi_assembly_summary.txt": "7c0cf4bbd9404e5ef9730bb3652a21c9f44398e1e264edda3c96fe68fa511198",
+    "data/raw/genbank_protozoa_assembly_summary.txt": "8fff5949b1660db41b38067c14014f5140b1948f7671af473d0852954efd1c99",
+    "data/raw/refseq_protozoa_assembly_summary.txt": "7628bad310004602a33eb10fe3794da5dcd77ceb4457858b60b92577ef384441",
+    "data/raw/refseq_invertebrate_assembly_summary.txt": "8dd995891b0f40d2dddc7230c6ec29544be54405a0f7a4847fdb1fda8df8c957",
+    "data/raw/genbank_invertebrate_assembly_summary.txt": "de8ae53a9a2c862feac7f67c47a786fbc3b0afdde0043f5dcc1334599a54250d"
+  },
+  "artifacts": {
+    "results/taxonomy/selected-identity-snapshot-20261003-v2/source_crosschecks.tsv": "0bcac4890ac36c3377900a4677ff2e2a10cd1cb55594cd630111da33f605e51e",
+    "results/taxonomy/selected-identity-snapshot-20261003-v2/species_rank_collisions.json": "86dafcd9a1728cdea87300aca2a851f32f9e3e05901f3cc2d24612da7be14b1e",
+    "results/taxonomy/selected-identity-snapshot-20261003-v2/taxon_identity.tsv": "cd698c83af80a2bdf797275b0db07303d0800fe29b37c15931a398324049f863"
+  },
+  "resource_plan": {
+    "cpus": 1,
+    "address_space_gib": 4,
+    "cpu_seconds": 300,
+    "wall_seconds": 600,
+    "output_allowance_mib": 16,
+    "planning_runtime_seconds": [
+      10,
+      180
+    ],
+    "gpu": false,
+    "charges": false
+  },
+  "sampling_inputs_changed": false,
+  "scientific_eligibility": false,
+  "scope": "All526entries joined by exact accession to frozen raw catalogues or retained as five distinct Figshare depositions. Full nodes/merged/deleted traversal independently compared with names/rankedlineage. Prior verified identifier overlay retained separately. Species-rank identifiers are database records, not accepted species boundaries; uncertain names, curated hybrids and prior species-complex cautions remain explicit. No current-taxonomy claim, relabeling, pruning, new inference or live job mutation."
+}

@@ -1,5 +1,23 @@
 # Decisions and unresolved questions
 
+## October 3: audit all selected identities and preserve haplotype provenance
+
+Join every taxon to frozen raw assembly records and independently traverse
+taxonomy nodes before equating distinct IDs with distinct species. Keep the
+21 uncertain fungal labels, two curated fungal hybrids, known species complex
+and strain-linked cautions explicit. The two later Sanchytriomycota additions
+must be checked against the complete source, not omitted for absence from the
+earlier candidate inventory.
+
+O2700040's old B. floridae label disagrees with the deposited B. belcheri
+principal haplotype, GCF/GCA_019207075.1. Maintain a separate hash-bound identity
+overlay and all 25 outgroups. Retain the hybrid-specimen TaxID/provenance; do
+not infer mixed assembly ancestry merely from specimen ancestry. All selected
+marker sequences/CDS coordinates are traced, while independent purity remains
+open. Frozen inputs and live jobs remain unchanged. New consumers must explicitly
+adopt the overlay before species-level interpretation.
+[Complete evidence and reproduction](selected-taxon-identity-audit-20261003.md).
+
 ## October 3: queue full joint-output qualification after four closures
 
 The new joint logger must pass complete native output and exact serialized
