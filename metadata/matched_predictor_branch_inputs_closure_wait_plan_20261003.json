@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/matched_predictor_branch_inputs_launch_20261003.json",
+    "metadata/matched_predictor_branch_inputs_readback_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/matched_predictor_branch_inputs_completion_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/matched_predictor_branch_inputs_completion_plan_20261003_v1.json": "e276835e7f52ad42eb11482413adf6b0ebee9c7ef078ed491776882e59b7b015",
+    "metadata/matched_predictor_branch_inputs_launch_20261003.json": "dbd05ac1254cb95d7f4ff51c00cfa3f2bd2a3bd1910e6391efaaf1e53b889dd6",
+    "metadata/matched_predictor_branch_inputs_readback_launch_20261003.json": "bfaf7cecff2a54c1b9b60a140e8a15caf4f5bc15b8f7a7e07fd31a55b818f81e",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

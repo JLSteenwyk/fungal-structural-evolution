@@ -1,0 +1,37 @@
+{
+  "source_plan": "metadata/matched_predictor_branch_inputs_plan_20261003_v1.json",
+  "producer_receipt": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/receipt.json",
+  "independent_readback": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/readback.json",
+  "producer_status": "complete_full_matched_predictor_branch_inputs_pending_independent_readback",
+  "reader_status": "passed_full_matched_predictor_branch_inputs_independent_readback",
+  "completed_status": "complete_verified_full_matched_predictor_branch_inputs",
+  "summary_fields": [
+    "tree_views",
+    "marker_slots",
+    "taxon_entries",
+    "comparison_cases",
+    "case_status_counts",
+    "unique_ready_inputs",
+    "future_native_roles",
+    "matched_input_taxa",
+    "matched_input_markers",
+    "original_internal_branch_cells",
+    "branch_status_counts",
+    "unique_ready_internal_splits",
+    "maximum_taxa",
+    "maximum_columns"
+  ],
+  "launches": [
+    "metadata/matched_predictor_branch_inputs_launch_20261003.json",
+    "metadata/matched_predictor_branch_inputs_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/matched_predictor_branch_inputs_plan_20261003_v1.json": "8e2dcf8d212f4f03d9338a8c1e1154933026b31f1cc5f36a087873a76b91ace5",
+    "metadata/matched_predictor_branch_inputs_launch_20261003.json": "dbd05ac1254cb95d7f4ff51c00cfa3f2bd2a3bd1910e6391efaaf1e53b889dd6",
+    "metadata/matched_predictor_branch_inputs_readback_launch_20261003.json": "bfaf7cecff2a54c1b9b60a140e8a15caf4f5bc15b8f7a7e07fd31a55b818f81e",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/matched_predictor_branch_inputs_completed_20261003_v1.json",
+  "scope": "All125marker slots and70closed candidate species-tree views across526taxon entries retained; 673complete-identical-protein predictor overlap cells freshly checked. Common original alignment coordinates and joint confidence/PAE-qualified observation mask, per-taxon min50/30%original-column eligibility, identical AA data/unknown masks/taxa/topology for both predictors. All8750comparison dispositions and4,523,750original internal-branch slots accounted, including no-overlap and merged paths. Exact input reuse preserves each marker/view mapping. DendroPy split construction independently checked against Bio.Phylo pruning of every raw candidate tree represented in ready cases; full serialized FASTA/config/positions/mapping readback. Future seven native roles per unique ready input are unlaunched: LG+F+G4 AA andAF+G4,AF+F+G4,LLM+G4 for each predictor on fixed unrooted topology. This selected predictor control is not coverage of the full fungal lineage, accepted species/gene-copy orthology/root/model, physical displacement, calibrated error/evolutionary effect, ancestral posterior or aim completion. No native inference/GPU/new costs or changes/restarts to original scientific jobs."
+}

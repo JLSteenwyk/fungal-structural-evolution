@@ -12,6 +12,19 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
+A [matched predictor branch control](docs/matched-predictor-branch-controls-20261003.md)
+has completed all 931 fixed-topology native fits and independent full readback.
+It holds complete protein identity, sequence positions, observation masks and
+topology constant between AlphaFold and ESMFold. All 125 marker slots and
+70 views remain accounted: 4,970 comparisons are ready, 3,780 insufficient.
+Exact input reuse leaves 133 inputs spanning 71 markers and 21 fungal taxa;
+this selected control does not replace broad lineage sampling. All 15,365
+branch values have full source/artifact/original-journal closure. Predictor
+differences remain substantial in descriptive comparisons, including after
+small-branch sensitivity checks. Figures and all-view/all-marker tables are
+published; uncertainty, model adequacy and accepted evolutionary effects
+remain unqualified.
+
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch
 projection entries across all 70 closed tree views. All 125 marker slots, both
@@ -39,8 +52,8 @@ frames fail the strict mean check, and mean-passing frames do not gain rate
 eligibility. Unknown-residue disagreements between separate conditional draws
 remain explicit; historical ancestral categories are unavailable.
 
-The full corrected V5 startup grid is running, with 216 successful unclosed
-checks at 13:28 UTC and zero unsuccessful checkpoints. The V3 full
+The full corrected V5 startup grid is running, with 1,156 successful unclosed
+checks at 14:26 UTC and zero unsuccessful checkpoints. The V3 full
 20-iteration joint sampler is queued behind complete corrected startup and
 three closed historical prerequisites. Its software gate passed the entire
 1,620-role workflow with explicit mock failures and export-tampering checks.

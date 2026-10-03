@@ -1,0 +1,37 @@
+{
+  "status": "complete_verified_full_matched_predictor_branch_inputs",
+  "tree_views": 70,
+  "marker_slots": 125,
+  "taxon_entries": 526,
+  "comparison_cases": 8750,
+  "case_status_counts": {
+    "ready_for_matched_predictor_branch_fits": 4970,
+    "insufficient_joint_observation_taxa": 3780
+  },
+  "unique_ready_inputs": 133,
+  "future_native_roles": 931,
+  "matched_input_taxa": 21,
+  "matched_input_markers": 71,
+  "original_internal_branch_cells": 4523750,
+  "branch_status_counts": {
+    "insufficient_matched_taxa": 1954260,
+    "no_observations_on_one_side": 2346889,
+    "shared_internal_projection": 158822,
+    "terminal_projection": 50544,
+    "unique_internal_projection": 13235
+  },
+  "unique_ready_internal_splits": 898,
+  "maximum_taxa": 16,
+  "maximum_columns": 394,
+  "full_hash_archive": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "db4d61506b9329f4b54d7ab855082d3d8c629e4f05f6fafc3f2fc684b201c3fd",
+  "bound_source_hashes": 5834,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "a5e7a3f4253d49ff39ae91103c573d8a5a5e21744f6a4df10113e86aea2af4fb",
+  "independent_readback": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/readback.json",
+  "independent_readback_sha256": "e43fa2fa031bc5a284af0f8ea86f5ab8acb004067e2915e5d1be6e45830b46a7",
+  "completion_plan_sha256": "e276835e7f52ad42eb11482413adf6b0ebee9c7ef078ed491776882e59b7b015",
+  "scientific_eligibility": false,
+  "scope": "All125marker slots and70closed candidate species-tree views across526taxon entries retained; 673complete-identical-protein predictor overlap cells freshly checked. Common original alignment coordinates and joint confidence/PAE-qualified observation mask, per-taxon min50/30%original-column eligibility, identical AA data/unknown masks/taxa/topology for both predictors. All8750comparison dispositions and4,523,750original internal-branch slots accounted, including no-overlap and merged paths. Exact input reuse preserves each marker/view mapping. DendroPy split construction independently checked against Bio.Phylo pruning of every raw candidate tree represented in ready cases; full serialized FASTA/config/positions/mapping readback. Future seven native roles per unique ready input are unlaunched: LG+F+G4 AA andAF+G4,AF+F+G4,LLM+G4 for each predictor on fixed unrooted topology. This selected predictor control is not coverage of the full fungal lineage, accepted species/gene-copy orthology/root/model, physical displacement, calibrated error/evolutionary effect, ancestral posterior or aim completion. No native inference/GPU/new costs or changes/restarts to original scientific jobs."
+}

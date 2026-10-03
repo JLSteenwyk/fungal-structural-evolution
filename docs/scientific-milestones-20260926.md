@@ -1344,3 +1344,22 @@ resolve the numerical diagnostic review or accept an ancestral structure.
 Longer posterior sampling, accepted framework/reconciliation/dating, biological
 controls, calibration and all eight aims remain incomplete. GPU inference
 stays paused. [Full evidence and scope](baliphy-reference-sampler-qualification-20261003.md).
+
+### October 3: matched predictor branch control completed numerically
+
+All 8,750 marker/view input dispositions, 4,523,750 original branch slots,
+133 unique ready inputs and 931 native fixed-topology fits have complete
+source/artifact/independent-readback/original-journal closure. All 15,365
+native branch values were independently decoded. The fitted control uses
+identical proteins, observed AA positions and topology across predictors;
+all 125 marker slots and 70 views remain visible, while the usable predictor
+overlap is explicitly limited to 21 fungal taxa and 71 markers.
+
+Figures and complete view/marker tables now accompany 6,585 paired branch/model
+points, including 2,694 internal pairs. Predictor sensitivity persists in
+descriptive summaries after small-branch review restrictions. This adds
+evidence for the source controls needed by aims 1/2; it does not complete
+those aims, accept a phylogenetic/orthology model, infer physical displacement
+or establish calibrated acceleration/coupling/selection. All eight aims and
+ancestral posterior adequacy remain incomplete.
+[Complete methods, figures and prerequisites](matched-predictor-branch-controls-20261003.md).

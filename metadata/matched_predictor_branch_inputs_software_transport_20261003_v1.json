@@ -1,0 +1,52 @@
+{
+  "status": "verified_original_bounded_matched_predictor_software_transport",
+  "original_exec_wait_session": 29605,
+  "original_wait_exit_code": 0,
+  "unit": "fungal-matched-predictor-input-software-20261003-v1.service",
+  "invocation_id": "5bb69f7e69c44f13a027b8919ef51034",
+  "execution": "metadata/matched_predictor_branch_inputs_software_execution_20261003_v1.json",
+  "execution_sha256": "5e57484403278792e0cefc8bf1c9a347c30078a8ad90b156811217889353f0f5",
+  "journal": "metadata/matched_predictor_branch_inputs_software_original_journal_20261003_v1.jsonl",
+  "journal_sha256": "4692357dac4c8d97a421a38bb21ece0d12ad071c424dc6add219a90c72113a3f",
+  "wrapper": {
+    "pid": 3103522,
+    "created": 1791035804.94,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_structural_projection_stage_v2.py",
+      "--resources",
+      "metadata/matched_predictor_branch_inputs_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/matched_predictor_branch_inputs_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/matched_predictor_branch_inputs_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_matched_predictor_branch_inputs.py",
+      "--output",
+      "data/software_audits/matched-predictor-branch-inputs-20261003-v1",
+      "--receipt",
+      "metadata/matched_predictor_branch_inputs_software_validation_20261003_v1.json"
+    ]
+  },
+  "child": {
+    "pid": 3103523,
+    "created": 1791035805.04,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=6442450944",
+      "--cpu=3000",
+      "--fsize=67108864",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_matched_predictor_branch_inputs.py",
+      "--output",
+      "data/software_audits/matched-predictor-branch-inputs-20261003-v1",
+      "--receipt",
+      "metadata/matched_predictor_branch_inputs_software_validation_20261003_v1.json"
+    ]
+  },
+  "scope": "Exact original wait success plus wrapper/child identities and invocation-linked journal. Current collected service defaults are not completion evidence."
+}

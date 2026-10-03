@@ -1,0 +1,88 @@
+{
+  "stage": "summary",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3000",
+    "--fsize=67108864",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_matched_predictor_branch_fits_v2.py",
+    "--output",
+    "results/phylogeny/matched-predictor-branch-summary-20261003-v2",
+    "--receipt",
+    "metadata/matched_predictor_branch_summary_20261003_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_matched_predictor_stage_v1.py": "874dbaa62a978a68c89b127b1875870ec85c5a5ab9249270c7bcce456ae5a476",
+    "metadata/matched_predictor_branch_fits_software_resources_20261003_v1.json": "d98896d456cfb8d81f916c0002e29727fec0a56f850c117afb7458aa3f7c8e6c",
+    "scripts/summarize_matched_predictor_branch_fits_v2.py": "4e42a2404fe5a2b7ad0c8d1c0c3a86a9446e5796aa16afdfce86e5e1ef2b8a94",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "2dc26567f3704f09b6e8695e2d6a3266",
+  "wrapper": {
+    "pid": 3122570,
+    "created": 1791037537.12,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_matched_predictor_stage_v1.py",
+      "--resources",
+      "metadata/matched_predictor_branch_fits_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/matched_predictor_branch_summary_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/matched_predictor_branch_summary_20261003_v2.json",
+      "--stage",
+      "summary",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_matched_predictor_branch_fits_v2.py",
+      "--output",
+      "results/phylogeny/matched-predictor-branch-summary-20261003-v2",
+      "--receipt",
+      "metadata/matched_predictor_branch_summary_20261003_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-03T14:25:37.922240+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T14:25:47.133551+00:00",
+  "child": {
+    "pid": 3122572,
+    "created": 1791037537.22,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3000",
+      "--fsize=67108864",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_matched_predictor_branch_fits_v2.py",
+      "--output",
+      "results/phylogeny/matched-predictor-branch-summary-20261003-v2",
+      "--receipt",
+      "metadata/matched_predictor_branch_summary_20261003_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 9.211153564043343,
+  "child_cpu_seconds": 9.120504,
+  "child_peak_rss_bytes": 363352064,
+  "receipt": "metadata/matched_predictor_branch_summary_20261003_v2.json",
+  "receipt_sha256": "b12b84ca3317bace5b3cb6ec95054dbffe9c5b575dec9fb98d660e41a68dedef",
+  "artifacts": {
+    "metadata/matched_predictor_branch_summary_execution_20261003_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/matched_predictor_branch_summary_execution_20261003_v2/configuration.json": "c67db47ec2b2754a256a49eafce779775d68b5689d44cec9af971c19cf119f5e",
+    "metadata/matched_predictor_branch_summary_execution_20261003_v2/stdout.log": "2496f79154f40a2e06a5a67ddfac0b82b44a6040ec8b5a813308905c618766d2",
+    "metadata/matched_predictor_branch_summary_execution_20261003_v2/process.json": "4ea3b0b6e66e0683069c10e60b675dbe15ee0fdda7f73f54d147be30cb06b603"
+  },
+  "scope": "One original new CPU-only matched-predictor software stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. Seven synthetic native IQTree software fixtures only, no old-source changes/restart/GPU/charges, sample concatenation or scientific acceptance."
+}

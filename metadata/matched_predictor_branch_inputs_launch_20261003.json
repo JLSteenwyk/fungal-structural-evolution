@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-matched-predictor-branch-inputs-20261003-v1.service",
+  "pid": 3105013,
+  "created": 1791035965.56,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/matched_predictor_branch_inputs_wait_plan_20261003.json"
+  ],
+  "plan": "metadata/matched_predictor_branch_inputs_wait_plan_20261003.json",
+  "plan_sha256": "cf04f3b5a29a45e1cddc7bd8bf1b784ad5ff2cd69dd6707231a0ded32f9d6d0c",
+  "checked_utc": "2026-10-03T13:59:26.298787+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-matched-predictor-branch-inputs-20261003-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=8G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/matched_predictor_branch_inputs_wait_plan_20261003.json"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "status": "verified_original_matched_predictor_fit_and_summary_transports",
+  "entries": [
+    {
+      "execution": "metadata/matched_predictor_branch_fits_software_execution_20261003_v1.json",
+      "execution_sha256": "666661fb77cda760db4d42497212e665a6c1007842fbd8a849ac10bb8d4625d7",
+      "unit": "fungal-matched-predictor-fit-software-20261003-v1.service",
+      "invocation_id": "d61c607c2b234cb1b962ca460bf008ba",
+      "original_wait_handle": "exec_chunk_82e084",
+      "original_wait_exit_code": 1,
+      "journal": "metadata/matched_predictor_branch_fits_software_execution_20261003_v1_original_journal.jsonl",
+      "journal_sha256": "cd867d8a5c245580ca5d80adc716d559106ad9dbbdf8ec9cc9d525c0276f802b",
+      "wrapper": {
+        "pid": 3113389,
+        "created": 1791036684.98,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_matched_predictor_stage_v1.py",
+          "--resources",
+          "metadata/matched_predictor_branch_fits_software_resources_20261003_v1.json",
+          "--execution",
+          "metadata/matched_predictor_branch_fits_software_execution_20261003_v1.json",
+          "--receipt",
+          "metadata/matched_predictor_branch_fits_software_validation_20261003_v1.json",
+          "--stage",
+          "software",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/check_matched_predictor_branch_fits.py",
+          "--output",
+          "data/software_audits/matched-predictor-branch-fits-20261003-v1",
+          "--receipt",
+          "metadata/matched_predictor_branch_fits_software_validation_20261003_v1.json"
+        ]
+      },
+      "child": {
+        "pid": 3113390,
+        "created": 1791036685.08,
+        "command": [
+          "/usr/bin/prlimit",
+          "--as=12884901888",
+          "--cpu=3000",
+          "--fsize=67108864",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/check_matched_predictor_branch_fits.py",
+          "--output",
+          "data/software_audits/matched-predictor-branch-fits-20261003-v1",
+          "--receipt",
+          "metadata/matched_predictor_branch_fits_software_validation_20261003_v1.json"
+        ]
+      }
+    },
+    {
+      "execution": "metadata/matched_predictor_branch_fits_software_execution_20261003_v2.json",
+      "execution_sha256": "7fb7c9d0d6bb2ae899037c5fc9ed7ee41f46c67c161128d9f4e6fb680155d664",
+      "unit": "fungal-matched-predictor-fit-software-20261003-v2.service",
+      "invocation_id": "92a543d7aeaa4ab180910f21189d0e61",
+      "original_wait_handle": 15684,
+      "original_wait_exit_code": 0,
+      "journal": "metadata/matched_predictor_branch_fits_software_execution_20261003_v2_original_journal.jsonl",
+      "journal_sha256": "15461163d585e7ecf72c72fa2fa9d596214696e13333c548e46528be74bb7224",
+      "wrapper": {
+        "pid": 3113792,
+        "created": 1791036728.1,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_matched_predictor_stage_v1.py",
+          "--resources",
+          "metadata/matched_predictor_branch_fits_software_resources_20261003_v1.json",
+          "--execution",
+          "metadata/matched_predictor_branch_fits_software_execution_20261003_v2.json",
+          "--receipt",
+          "metadata/matched_predictor_branch_fits_software_validation_20261003_v2.json",
+          "--stage",
+          "software",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/check_matched_predictor_branch_fits.py",
+          "--output",
+          "data/software_audits/matched-predictor-branch-fits-20261003-v2",
+          "--receipt",
+          "metadata/matched_predictor_branch_fits_software_validation_20261003_v2.json"
+        ]
+      },
+      "child": {
+        "pid": 3113793,
+        "created": 1791036728.2,
+        "command": [
+          "/usr/bin/prlimit",
+          "--as=12884901888",
+          "--cpu=3000",
+          "--fsize=67108864",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/check_matched_predictor_branch_fits.py",
+          "--output",
+          "data/software_audits/matched-predictor-branch-fits-20261003-v2",
+          "--receipt",
+          "metadata/matched_predictor_branch_fits_software_validation_20261003_v2.json"
+        ]
+      }
+    },
+    {
+      "execution": "metadata/matched_predictor_branch_summary_execution_20261003_v1.json",
+      "execution_sha256": "a1e0030c819d7b32ab6312dc9d479130d8b544f70921bd4db6eb2b614023a61b",
+      "unit": "fungal-matched-predictor-summary-20261003-v1.service",
+      "invocation_id": "20f10acc7d284398a9fb84f9c0dfdca2",
+      "original_wait_handle": 84127,
+      "original_wait_exit_code": 0,
+      "journal": "metadata/matched_predictor_branch_summary_execution_20261003_v1_original_journal.jsonl",
+      "journal_sha256": "1fc7e29309d1bdef78eeb846aacc0e7f59d7422eb5aa47d6d3e9a8aab90ed6f2",
+      "wrapper": {
+        "pid": 3120578,
+        "created": 1791037342.71,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_matched_predictor_stage_v1.py",
+          "--resources",
+          "metadata/matched_predictor_branch_fits_software_resources_20261003_v1.json",
+          "--execution",
+          "metadata/matched_predictor_branch_summary_execution_20261003_v1.json",
+          "--receipt",
+          "metadata/matched_predictor_branch_summary_20261003_v1.json",
+          "--stage",
+          "summary",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/summarize_matched_predictor_branch_fits.py",
+          "--output",
+          "results/phylogeny/matched-predictor-branch-summary-20261003-v1",
+          "--receipt",
+          "metadata/matched_predictor_branch_summary_20261003_v1.json"
+        ]
+      },
+      "child": {
+        "pid": 3120579,
+        "created": 1791037342.81,
+        "command": [
+          "/usr/bin/prlimit",
+          "--as=12884901888",
+          "--cpu=3000",
+          "--fsize=67108864",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/summarize_matched_predictor_branch_fits.py",
+          "--output",
+          "results/phylogeny/matched-predictor-branch-summary-20261003-v1",
+          "--receipt",
+          "metadata/matched_predictor_branch_summary_20261003_v1.json"
+        ]
+      }
+    },
+    {
+      "execution": "metadata/matched_predictor_branch_summary_execution_20261003_v2.json",
+      "execution_sha256": "35b48ee68c8b2f7fc101bdc1711632f43c39fd68dc5d9a28851525070dbb6c89",
+      "unit": "fungal-matched-predictor-summary-20261003-v2.service",
+      "invocation_id": "2dc26567f3704f09b6e8695e2d6a3266",
+      "original_wait_handle": 51638,
+      "original_wait_exit_code": 0,
+      "journal": "metadata/matched_predictor_branch_summary_execution_20261003_v2_original_journal.jsonl",
+      "journal_sha256": "d69acb9099677f0817b1d7e864fe941f28a380e4c5d751180381563a10c5a99f",
+      "wrapper": {
+        "pid": 3122570,
+        "created": 1791037537.12,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_matched_predictor_stage_v1.py",
+          "--resources",
+          "metadata/matched_predictor_branch_fits_software_resources_20261003_v1.json",
+          "--execution",
+          "metadata/matched_predictor_branch_summary_execution_20261003_v2.json",
+          "--receipt",
+          "metadata/matched_predictor_branch_summary_20261003_v2.json",
+          "--stage",
+          "summary",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/summarize_matched_predictor_branch_fits_v2.py",
+          "--output",
+          "results/phylogeny/matched-predictor-branch-summary-20261003-v2",
+          "--receipt",
+          "metadata/matched_predictor_branch_summary_20261003_v2.json"
+        ]
+      },
+      "child": {
+        "pid": 3122572,
+        "created": 1791037537.22,
+        "command": [
+          "/usr/bin/prlimit",
+          "--as=12884901888",
+          "--cpu=3000",
+          "--fsize=67108864",
+          "--",
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/summarize_matched_predictor_branch_fits_v2.py",
+          "--output",
+          "results/phylogeny/matched-predictor-branch-summary-20261003-v2",
+          "--receipt",
+          "metadata/matched_predictor_branch_summary_20261003_v2.json"
+        ]
+      }
+    }
+  ],
+  "initial_failure": "Systemd user PATH did not contain iqtree3; failure occurred before any native invocation. Sources unchanged; fresh v2 software namespace received explicit PATH. Failed output preserved.",
+  "scope": "Exact original wait success/failure, wrapper/child identity and invocation journal; collected service defaults not used."
+}

@@ -1303,3 +1303,24 @@ Use a new original resource observer without resetting the failed target's
 counters. Short computational checks do not establish adequate posteriors or
 repair the two old allocation failures.
 [Correction and full evidence](baliphy-native-number-encoder-correction-20261003.md).
+
+## October 3: match predictor branch controls before interpreting acceleration
+
+Use the complete 125-marker/70-view grid for predictor sensitivity, retaining
+every insufficient marker/view disposition. Require identical complete encoded
+protein sequences, original alignment positions, observed taxa/unknown masks
+and fixed unrooted topology for AlphaFold and ESMFold. Computational reuse
+preserves all original view and branch/path identities; collapsed internal
+paths never become unique original-branch acceleration claims.
+
+The full input and 931 native point-fit workflows have closed, including
+independent raw-tree pruning and all native tree/report values. The selected
+overlap is 21 fungal taxa and 71 markers and does not replace broad sampling.
+Preserve all small native branch values. Show exploratory 1e-6/1e-5/1e-4
+threshold sensitivity separately from calibrated uncertainty or hypothesis
+testing; alternative trees/inputs share observations and are not independent
+replicates. Joint resampling, boundary/model controls and direct/experimental
+benchmarks remain prerequisites for accepted evolutionary interpretation.
+GPU prediction, original ancestral/covariance jobs and their frozen sources
+remain unchanged; no paid infrastructure or automatic native retry.
+[Methods, complete scope, results and limits](matched-predictor-branch-controls-20261003.md).

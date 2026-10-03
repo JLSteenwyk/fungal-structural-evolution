@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/matched_predictor_branch_fits_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_matched_predictor_branch_fits.py",
+    "--plan",
+    "metadata/matched_predictor_branch_fits_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/matched_predictor_branch_fits_plan_20261003_v1.json": "1fc7d61fb82d23696679a9593f42c160d9209ad53dafc46c1cec9cbabd5938c9",
+    "metadata/matched_predictor_branch_fits_launch_20261003.json": "8caa935b16c90db49f5d53e89917faee9a5685d6152186eb5bd3fd5ac88322ca",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

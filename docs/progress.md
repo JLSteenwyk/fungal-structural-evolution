@@ -1,5 +1,40 @@
 # Progress and evidence
 
+## October 3, 14:31 UTC: matched predictor branch fits fully closed
+
+Completed the full 125-marker/70-view matched-predictor input grid: all 8,750
+cases and 4,523,750 original branch slots remain explicit. All 673 complete
+protein overlap identities were freshly checked. Joint observation masks
+leave 4,970 ready and 3,780 insufficient cases, with 133 exactly reusable
+inputs spanning 71 markers and 21 selected fungal taxa. Independent raw-tree
+pruning and full alignment/mapping readback closed all inputs with 5,834 hashes
+and both original journals.
+
+All 931 native fixed-topology fits passed output integrity, with zero failures
+or unresolved inputs. Independent DendroPy tree/report traversal checked all
+15,365 branch values. Full source/artifact/two-journal closure binds 17,029
+hashes. Public figures and all-70-view/all-125-slot tables accompany the full
+6,585-row paired branch table outside Git. The 2,694 internal branch/model
+comparisons show descriptive predictor sensitivity; medians remain 0.202–0.223
+for absolute symmetric source difference when both structural estimates exceed
+the analyst review threshold 1e-5. Near-zero estimates strongly affect tails.
+All raw values remain; these selected, correlated points are not calibrated
+evolutionary effects or independent replicated transitions.
+
+The full input/native software workflows passed synthetic native fixtures and
+explicit failure/tampering tests. A systemd PATH failure before any native
+fixture is preserved; a separate namespace with explicit PATH passed unchanged
+code. Input stages used two CPUs/8 GiB/no swap; native fits used four CPUs/
+12 GiB/no swap with four single-thread, per-process bounded workers. No GPU
+prediction, new cost or existing-job restart occurred.
+
+Fresh original-handle checks show 1,156 corrected ancestral startup successes
+at 14:26 UTC, zero unsuccessful, and full joint sampling still gated. Covariance
+qualification reached 4,110/4,340 cohorts at 14:26 UTC; closure/timing/full fits
+remain pending. Model/framework/reconciliation/calibration, adequate ancestral
+posteriors and all eight biological aims remain incomplete.
+[Method, figures, resources and complete evidence](matched-predictor-branch-controls-20261003.md).
+
 ## October 3, 13:25 UTC: corrected encoder qualified; full historical replay closed
 
 The V5 logger bypasses the installed exponent formatter for numeric properties.

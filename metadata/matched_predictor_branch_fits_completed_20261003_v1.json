@@ -1,0 +1,24 @@
+{
+  "status": "complete_verified_full_matched_predictor_native_point_fits",
+  "input_comparison_cases": 8750,
+  "unique_ready_inputs": 133,
+  "native_roles": 931,
+  "native_status_counts": {
+    "native_point_output_integrity_checked_not_model_qualified": 931
+  },
+  "intact_inputs": 133,
+  "unresolved_inputs": 0,
+  "point_branch_values": 15365,
+  "native_seconds_sum": 408.1496620000107,
+  "full_hash_archive": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "fd36ea5a5c257a19cbe5c39c05c97269c8263f112e4bbe3ed69e1d9fed594b40",
+  "bound_source_hashes": 17029,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "70421885f0539b596ec22eeaf66ad33ff09dfcfa9bd40df05e4f1ce13c44f6b8",
+  "independent_readback": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/readback.json",
+  "independent_readback_sha256": "79d5ff069e76c12907255f575c10421730acb501c6e52076ee383429b1561d99",
+  "completion_plan_sha256": "d8fba7b955034e8e6c7ff304450b99bbd8d4c72dc932731b76db3bbc1d1cd03a",
+  "scientific_eligibility": false,
+  "scope": "Full matched-predictor control: all931native roles from133exact shared-observation inputs, covering4970ready marker/tree comparisons among the full8750case/125marker/70view grid. All3780insufficient cases remain in the separately closed input grid; overlap is21taxa/71markers, at most16taxa per fit. Exactly oneAA LG+F+G4 andtwo predictors timesAF+G4/AF+F+G4/LLM+G4, fixed compatible unrooted topology andidentical original position/taxon/unknown masks; allnative branches initialized at0.1. Predictor counterparts share a deterministic model-specific seed. Every native attempt has explicit binary/model/input hashes,PID/create/command identity,wall/CPU/AS/file bounds; one attempt only,failed/invalid outcomes retained,no automaticretry ororphan adoption. Independent DendroPy tree/report readback plus full source/artifact/two-original-journal closure required. Point rates are expected state substitutions/site,not physical displacement/year or calibrated evolutionary acceleration. Native numerical integrity is not accepted model/framework,orthology, uncertainty,experimental predictor error or aim completion. NoGPU inference/new costs or changes toexistingancestral/speciestree/covariance jobs. Broader fungal analyses remain required."
+}

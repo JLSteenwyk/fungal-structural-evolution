@@ -1,0 +1,31 @@
+{
+  "source_plan": "metadata/matched_predictor_branch_fits_plan_20261003_v1.json",
+  "producer_receipt": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/receipt.json",
+  "independent_readback": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/readback.json",
+  "producer_status": "complete_full_matched_predictor_native_point_fits_pending_independent_readback",
+  "reader_status": "passed_full_matched_predictor_native_point_fit_independent_readback",
+  "completed_status": "complete_verified_full_matched_predictor_native_point_fits",
+  "summary_fields": [
+    "input_comparison_cases",
+    "unique_ready_inputs",
+    "native_roles",
+    "native_status_counts",
+    "intact_inputs",
+    "unresolved_inputs",
+    "point_branch_values",
+    "native_seconds_sum"
+  ],
+  "launches": [
+    "metadata/matched_predictor_branch_fits_launch_20261003.json",
+    "metadata/matched_predictor_branch_fits_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/matched_predictor_branch_fits_plan_20261003_v1.json": "1fc7d61fb82d23696679a9593f42c160d9209ad53dafc46c1cec9cbabd5938c9",
+    "metadata/matched_predictor_branch_fits_launch_20261003.json": "8caa935b16c90db49f5d53e89917faee9a5685d6152186eb5bd3fd5ac88322ca",
+    "metadata/matched_predictor_branch_fits_readback_launch_20261003.json": "25673a72df8bc2622f18e6bf05d7ac320b1d492b553f95ac2e7b2729cc95479a",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/matched_predictor_branch_fits_completed_20261003_v1.json",
+  "scope": "Full matched-predictor control: all931native roles from133exact shared-observation inputs, covering4970ready marker/tree comparisons among the full8750case/125marker/70view grid. All3780insufficient cases remain in the separately closed input grid; overlap is21taxa/71markers, at most16taxa per fit. Exactly oneAA LG+F+G4 andtwo predictors timesAF+G4/AF+F+G4/LLM+G4, fixed compatible unrooted topology andidentical original position/taxon/unknown masks; allnative branches initialized at0.1. Predictor counterparts share a deterministic model-specific seed. Every native attempt has explicit binary/model/input hashes,PID/create/command identity,wall/CPU/AS/file bounds; one attempt only,failed/invalid outcomes retained,no automaticretry ororphan adoption. Independent DendroPy tree/report readback plus full source/artifact/two-original-journal closure required. Point rates are expected state substitutions/site,not physical displacement/year or calibrated evolutionary acceleration. Native numerical integrity is not accepted model/framework,orthology, uncertainty,experimental predictor error or aim completion. NoGPU inference/new costs or changes toexistingancestral/speciestree/covariance jobs. Broader fungal analyses remain required."
+}

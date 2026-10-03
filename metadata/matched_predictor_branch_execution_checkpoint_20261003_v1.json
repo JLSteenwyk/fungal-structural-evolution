@@ -1,0 +1,239 @@
+{
+  "status": "verified_original_matched_predictor_branch_execution_checkpoint",
+  "checked_utc": "2026-10-03T14:26:59.577373+00:00",
+  "source_plans": [
+    {
+      "plan": "metadata/matched_predictor_branch_inputs_plan_20261003_v1.json",
+      "sha256": "8e2dcf8d212f4f03d9338a8c1e1154933026b31f1cc5f36a087873a76b91ace5",
+      "pins_checked": 5158
+    },
+    {
+      "plan": "metadata/matched_predictor_branch_fits_plan_20261003_v1.json",
+      "sha256": "1fc7d61fb82d23696679a9593f42c160d9209ad53dafc46c1cec9cbabd5938c9",
+      "pins_checked": 5850
+    }
+  ],
+  "original_handles": [
+    {
+      "launch": "metadata/matched_predictor_branch_inputs_launch_20261003.json",
+      "pid": 3105013,
+      "created": 1791035965.56,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_branch_inputs_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "dbd05ac1254cb95d7f4ff51c00cfa3f2bd2a3bd1910e6391efaaf1e53b889dd6",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "931015df70ccd190db2bd7743e1e9832aa375af886a98e57f74be784444ceb30",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791035997309723",
+          "CPU_USAGE_NSEC": "31025254000",
+          "MEMORY_PEAK": "3387392",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/matched_predictor_branch_inputs_readback_launch_20261003.json",
+      "pid": 3105017,
+      "created": 1791035965.61,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_branch_inputs_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "bfaf7cecff2a54c1b9b60a140e8a15caf4f5bc15b8f7a7e07fd31a55b818f81e",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "11783a62e922d1d835430f432e557e11431b3076f6c4e553597069612a9b18aa",
+      "captured_process_messages": 3,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791036105063901",
+          "CPU_USAGE_NSEC": "78653378000",
+          "MEMORY_PEAK": "2748416",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/matched_predictor_branch_inputs_closure_launch_20261003.json",
+      "pid": 3105022,
+      "created": 1791035965.64,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_branch_inputs_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "fa92d0ec40618d68b66aef9af9126cc0df2b26b908bfa6af7d82cda58c280e2d",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ad76c08cbfd4315207cb963fc084f645114c7e48e4baa4028be1cb021ab5ba30",
+      "captured_process_messages": 6,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791036122319075",
+          "CPU_USAGE_NSEC": "5745957000",
+          "MEMORY_PEAK": "3031040",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/matched_predictor_branch_fits_launch_20261003.json",
+      "pid": 3115401,
+      "created": 1791036900.77,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_branch_fits_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "8caa935b16c90db49f5d53e89917faee9a5685d6152186eb5bd3fd5ac88322ca",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "5f6eb7e0bcd3fc72b0f9cafcd7d3da51777bd8ac1ad6af9b0f8040600a91f479",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791037015752026",
+          "CPU_USAGE_NSEC": "271989408000",
+          "MEMORY_PEAK": "3579904",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/matched_predictor_branch_fits_readback_launch_20261003.json",
+      "pid": 3115405,
+      "created": 1791036900.81,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_branch_fits_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "25673a72df8bc2622f18e6bf05d7ac320b1d492b553f95ac2e7b2729cc95479a",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "8ad0a0b155aee2e0f053332b2d55b5627a456f9494fc22a0e9b791882e5a39e9",
+      "captured_process_messages": 5,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791037044179824",
+          "CPU_USAGE_NSEC": "22526783000",
+          "MEMORY_PEAK": "3620864",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/matched_predictor_branch_fits_closure_launch_20261003.json",
+      "pid": 3115410,
+      "created": 1791036900.86,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/matched_predictor_branch_fits_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "ca3b8f3ab35f7721a8e76ef539b86fabc0fe54fa4c82f0119540b94333061b95",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "3deaac8e03aa056a351a0c1fbd09c82d14920ccac1a04e93fb637395753aa77a",
+      "captured_process_messages": 6,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791037058922245",
+          "CPU_USAGE_NSEC": "7209932000",
+          "MEMORY_PEAK": "3256320",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "completed_closures": [
+    {
+      "phase": "inputs",
+      "completion": "metadata/matched_predictor_branch_inputs_completed_20261003_v1.json",
+      "completion_sha256": "86b6bf2a0b95ef4feb12b0482ca33bd0baa3c116a45b2000fccacaabb8366083",
+      "summary": {
+        "status": "complete_verified_full_matched_predictor_branch_inputs",
+        "tree_views": 70,
+        "marker_slots": 125,
+        "taxon_entries": 526,
+        "comparison_cases": 8750,
+        "case_status_counts": {
+          "ready_for_matched_predictor_branch_fits": 4970,
+          "insufficient_joint_observation_taxa": 3780
+        },
+        "unique_ready_inputs": 133,
+        "future_native_roles": 931,
+        "matched_input_taxa": 21,
+        "matched_input_markers": 71,
+        "original_internal_branch_cells": 4523750,
+        "branch_status_counts": {
+          "insufficient_matched_taxa": 1954260,
+          "no_observations_on_one_side": 2346889,
+          "shared_internal_projection": 158822,
+          "terminal_projection": 50544,
+          "unique_internal_projection": 13235
+        },
+        "unique_ready_internal_splits": 898,
+        "maximum_taxa": 16,
+        "maximum_columns": 394,
+        "full_hash_archive": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/completion_archive.json",
+        "full_hash_archive_sha256": "db4d61506b9329f4b54d7ab855082d3d8c629e4f05f6fafc3f2fc684b201c3fd",
+        "bound_source_hashes": 5834,
+        "exact_process_journals_checked": 2,
+        "producer_receipt": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/receipt.json",
+        "producer_receipt_sha256": "a5e7a3f4253d49ff39ae91103c573d8a5a5e21744f6a4df10113e86aea2af4fb",
+        "independent_readback": "results/phylogeny/matched-predictor-branch-inputs-20261003-v1/readback.json",
+        "independent_readback_sha256": "e43fa2fa031bc5a284af0f8ea86f5ab8acb004067e2915e5d1be6e45830b46a7",
+        "completion_plan_sha256": "e276835e7f52ad42eb11482413adf6b0ebee9c7ef078ed491776882e59b7b015",
+        "scientific_eligibility": false,
+        "scope": "All125marker slots and70closed candidate species-tree views across526taxon entries retained; 673complete-identical-protein predictor overlap cells freshly checked. Common original alignment coordinates and joint confidence/PAE-qualified observation mask, per-taxon min50/30%original-column eligibility, identical AA data/unknown masks/taxa/topology for both predictors. All8750comparison dispositions and4,523,750original internal-branch slots accounted, including no-overlap and merged paths. Exact input reuse preserves each marker/view mapping. DendroPy split construction independently checked against Bio.Phylo pruning of every raw candidate tree represented in ready cases; full serialized FASTA/config/positions/mapping readback. Future seven native roles per unique ready input are unlaunched: LG+F+G4 AA andAF+G4,AF+F+G4,LLM+G4 for each predictor on fixed unrooted topology. This selected predictor control is not coverage of the full fungal lineage, accepted species/gene-copy orthology/root/model, physical displacement, calibrated error/evolutionary effect, ancestral posterior or aim completion. No native inference/GPU/new costs or changes/restarts to original scientific jobs."
+      }
+    },
+    {
+      "phase": "fits",
+      "completion": "metadata/matched_predictor_branch_fits_completed_20261003_v1.json",
+      "completion_sha256": "531c7db7f34eeb6c312b94af9b3e7c9dd8679c546b7391d02a75185c260bee10",
+      "summary": {
+        "status": "complete_verified_full_matched_predictor_native_point_fits",
+        "input_comparison_cases": 8750,
+        "unique_ready_inputs": 133,
+        "native_roles": 931,
+        "native_status_counts": {
+          "native_point_output_integrity_checked_not_model_qualified": 931
+        },
+        "intact_inputs": 133,
+        "unresolved_inputs": 0,
+        "point_branch_values": 15365,
+        "native_seconds_sum": 408.1496620000107,
+        "full_hash_archive": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/completion_archive.json",
+        "full_hash_archive_sha256": "fd36ea5a5c257a19cbe5c39c05c97269c8263f112e4bbe3ed69e1d9fed594b40",
+        "bound_source_hashes": 17029,
+        "exact_process_journals_checked": 2,
+        "producer_receipt": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/receipt.json",
+        "producer_receipt_sha256": "70421885f0539b596ec22eeaf66ad33ff09dfcfa9bd40df05e4f1ce13c44f6b8",
+        "independent_readback": "results/phylogeny/matched-predictor-branch-fits-20261003-v1/readback.json",
+        "independent_readback_sha256": "79d5ff069e76c12907255f575c10421730acb501c6e52076ee383429b1561d99",
+        "completion_plan_sha256": "d8fba7b955034e8e6c7ff304450b99bbd8d4c72dc932731b76db3bbc1d1cd03a",
+        "scientific_eligibility": false,
+        "scope": "Full matched-predictor control: all931native roles from133exact shared-observation inputs, covering4970ready marker/tree comparisons among the full8750case/125marker/70view grid. All3780insufficient cases remain in the separately closed input grid; overlap is21taxa/71markers, at most16taxa per fit. Exactly oneAA LG+F+G4 andtwo predictors timesAF+G4/AF+F+G4/LLM+G4, fixed compatible unrooted topology andidentical original position/taxon/unknown masks; allnative branches initialized at0.1. Predictor counterparts share a deterministic model-specific seed. Every native attempt has explicit binary/model/input hashes,PID/create/command identity,wall/CPU/AS/file bounds; one attempt only,failed/invalid outcomes retained,no automaticretry ororphan adoption. Independent DendroPy tree/report readback plus full source/artifact/two-original-journal closure required. Point rates are expected state substitutions/site,not physical displacement/year or calibrated evolutionary acceleration. Native numerical integrity is not accepted model/framework,orthology, uncertainty,experimental predictor error or aim completion. NoGPU inference/new costs or changes toexistingancestral/speciestree/covariance jobs. Broader fungal analyses remain required."
+      }
+    }
+  ],
+  "native_restarts": 0,
+  "gpu": false,
+  "scientific_eligibility": false,
+  "scope": "Exact original six controller identities/journals, frozen pins and live limits if present; compact full archive hashes checked for completed phases. No new native execution or full native replay/optimization, model/framework acceptance or project completion."
+}
