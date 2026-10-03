@@ -7,11 +7,18 @@ support the aims but do not replace their statistical or biological requirements
 A [complete structural-marker projection producer](structural-marker-tree-coverage-20261003.md)
 now supplies all 17,500 view/source/marker cases and 9,047,500 original-branch
 coverage entries across the full 70-view design. Its independent raw-tree
-readback is running. This supports missingness and topology controls for aims 1
+readback, full computational closure and complete aggregate/figure readback passed. This supports missingness and topology controls for aims 1
 and 2; distinct branch projection is not a calibrated rate or proof of statistical
 estimability. All 125 slots, separate predictor memberships and 25 primary
-outgroups remain explicit. Full descriptive summary/figures and computational
-closure still depend on readback completion.
+outgroups remain explicit. Complete descriptive tables and standalone figures are published; they do not
+complete the branch-rate or sequence–structure models.
+
+The historical 20-iteration sampler and resource observation have now closed
+for all 1,620 roles with zero new native allocation failures. Subsequent replay
+exposed an installed scientific-exponent formatting bug, and the joint sampler
+stopped before native execution. A pure native CJSON alternative passes fixed
+numeric roundtrip checks; full future logger/model qualification and historical
+rate assessment remain open. [Evidence and recovery requirements](baliphy-native-number-formatting-20261003.md).
 
 An [independent joint-frame coordinate reader](independent-joint-ancestral-frames-20261003.md)
 now passes retained native fixture and full future-role input checks. It keeps

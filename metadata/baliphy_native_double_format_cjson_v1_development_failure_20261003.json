@@ -1,0 +1,19 @@
+{
+  "status": "preserved_cjson_v1_literal_oracle_failure",
+  "checked_utc": "2026-10-03T12:33:04.382058+00:00",
+  "native_program_exit_code": 0,
+  "checker_exit_code": 1,
+  "differences": [
+    {
+      "index": 5,
+      "expected": 2.34e-101,
+      "encoded": 2.3399999999999998e-101
+    }
+  ],
+  "source_hashes": {
+    "data/software_audits/baliphy-native-double-format-cjson-20261003-v1/native/attempt-0001/stdout.log": "0d5ba2425d5c84f6b8decc4804c6d946770b592ade84f44dff52d1839556ef80",
+    "scripts/check_baliphy_native_double_format_cjson.py": "247b70adcbe1890157997c3023dfe084a2d61ae3d04d1f55161d6da9773f3cb5",
+    "data/software_audits/baliphy-native-double-format-cjson-20261003-v1/format.hs": "64de5e741f0808c134ea1c64026c50ce78e67d67c1c3d0e26481db2d26fc0c3a"
+  },
+  "scope": "CJSON scientific exponent preserved; Python and native literal parsing differ by one binary64 ULP in one fixed value. Exact native encode/read roundtrip is required as a separate oracle; frozen failed source/output unchanged."
+}

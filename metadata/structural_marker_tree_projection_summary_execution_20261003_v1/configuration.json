@@ -1,0 +1,63 @@
+{
+  "stage": "summary",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592",
+    "--cpu=120",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_structural_marker_tree_projection.py",
+    "--producer",
+    "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+    "--readback",
+    "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+    "--output",
+    "results/figures/structural-marker-tree-coverage-20261003-v1",
+    "--receipt",
+    "metadata/structural_marker_tree_projection_summary_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_structural_projection_stage_v2.py": "c8ad72dda1657052fd6f35f850711bc2727ffe57cf6f86533b17b5223fbd3cab",
+    "metadata/structural_marker_tree_projection_summary_resources_20261003_v1.json": "3c5ec4a06bf7f7a5b6851f3708c2e74d6f6ed1937557dde6f9edf299ecca0608",
+    "scripts/summarize_structural_marker_tree_projection.py": "87c2e4aed9c1ff910dcd0625072e759f28eadb45e9fc960d75619b86ae37c134",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "7a4c69815a154ea683380613b2984b1c",
+  "wrapper": {
+    "pid": 3039810,
+    "created": 1791029392.69,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_structural_projection_stage_v2.py",
+      "--resources",
+      "metadata/structural_marker_tree_projection_summary_resources_20261003_v1.json",
+      "--execution",
+      "metadata/structural_marker_tree_projection_summary_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/structural_marker_tree_projection_summary_20261003_v1.json",
+      "--stage",
+      "summary",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_structural_marker_tree_projection.py",
+      "--producer",
+      "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+      "--readback",
+      "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+      "--output",
+      "results/figures/structural-marker-tree-coverage-20261003-v1",
+      "--receipt",
+      "metadata/structural_marker_tree_projection_summary_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 240,
+  "started_utc": "2026-10-03T12:09:53.489546+00:00"
+}

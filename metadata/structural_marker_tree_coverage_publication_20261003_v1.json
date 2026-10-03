@@ -1,0 +1,42 @@
+{
+  "status": "verified_full_coverage_summary_tables_and_figure_publication",
+  "checked_utc": "2026-10-03T12:37:11.445960+00:00",
+  "publication": [
+    {
+      "source": "results/figures/structural-marker-tree-coverage-20261003-v1/all_tree_view_coverage.png",
+      "published": "docs/figures/structural-marker-tree-coverage-20261003.png",
+      "sha256": "88824b40a7c87c8fa9f4ade67dd9e204a20970156ab560f6828d65d731bb199d"
+    },
+    {
+      "source": "results/figures/structural-marker-tree-coverage-20261003-v1/all_tree_view_coverage.pdf",
+      "published": "docs/figures/structural-marker-tree-coverage-20261003.pdf",
+      "sha256": "b176c4d7d3b357b456a43ce8fc03d4fb6fdda6586711b42f70daac7b36f77f09"
+    },
+    {
+      "source": "results/figures/structural-marker-tree-coverage-20261003-v1/all_view_source_branch_coverage.tsv",
+      "published": "metadata/structural_marker_tree_coverage_all_view_summaries_20261003_v1.tsv",
+      "sha256": "6aaf4b246c233cec8dfef898fd3c5772e64b8c52f7fee43aad3a8b544d5aaa9b"
+    },
+    {
+      "source": "results/figures/structural-marker-tree-coverage-20261003-v1/all_manifest_lineage_source_coverage.tsv",
+      "published": "metadata/structural_marker_tree_coverage_lineage_summaries_20261003_v1.tsv",
+      "sha256": "9c770879f20e10ecdb6ec0e9192c20c988d2c6e4cc9b5e8684d22ac1e0997ba2"
+    }
+  ],
+  "source_hashes": {
+    "metadata/structural_marker_tree_projection_completed_20261003_v1.json": "1588304dfccf178700a42119ca9f36d0ce48b7eb3c99b28606d13eeb92b43845",
+    "metadata/structural_marker_tree_projection_summary_20261003_v1.json": "ae9a3f050b5cca0e1e711a636fd0b366489c613103137516aea596235f519006",
+    "metadata/structural_marker_tree_coverage_summary_readback_20261003_v1.json": "4560812ad118d474645e046afc24b278ad3dab38a631876e223c54c6fde394d9",
+    "metadata/structural_marker_tree_projection_summary_execution_20261003_v1.json": "502211e23c52fda2b6b6481f02f9b699fbbe8a4fafc12dd9b608eba5b542a3c7",
+    "metadata/structural_marker_tree_coverage_summary_readback_execution_20261003_v1.json": "33cc2a8f85a946ef2e8c62b5d0463d2ef48223730a69f4a8eb36a98afcd35223"
+  },
+  "summary_original_wait_session_id": 70004,
+  "summary_readback_original_wait_session_id": 20873,
+  "original_wait_tool_exit_codes": [
+    0,
+    0
+  ],
+  "figure_visual_review": "All5cohorts/bothsources/70views and25primaryoutgroups inspected; full labels and legends readable.",
+  "scientific_eligibility": false,
+  "scope": "Checksum-identical repository copies of small complete aggregate tables and standalone figures after full raw-tree and serialized-summary readback. Large underlying arrays remain outside Git history."
+}

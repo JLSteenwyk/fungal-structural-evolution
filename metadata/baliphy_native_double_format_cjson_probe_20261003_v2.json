@@ -1,0 +1,35 @@
+{
+  "status": "passed_installed_native_cjson_fixed_double_roundtrip",
+  "checked_utc": "2026-10-03T12:33:05.534645+00:00",
+  "fixed_numeric_constants": 12,
+  "native_exact_roundtrips": 12,
+  "literal_parser_comparison_differences": [
+    {
+      "index": 5,
+      "expected": 2.34e-101,
+      "encoded": 2.3399999999999998e-101,
+      "ratio": 0.9999999999999999
+    }
+  ],
+  "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/native/attempt-0001/receipt.json",
+  "native_exit_code": 0,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy": "f9ddfb4c2bc5d4eb7b5828b0514f2dbba330a58e2d436c93dfdbd4a59c53a9fe",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/format.hs": "5ff10a04436c7ab3b678f7dd16b86db3e978367ee8db3e4b7dbef338cdd42554",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/JSON.hs": "39ba6a7a4986cf972ec271a5d74ba5fccafbea183cf4facd1251c6a8cd7dec6c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/JSON/Encoding.hs": "b7c554186dd300ff3812864c5b2a0685b60558e1aaf8f04a432e758e5b69861f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/JSON/Types/ToJSON.hs": "bd7ca379adcb750c882d31a15f94b9abd611e6703c1aa4abd6cbe9d8a7148a82",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/Text/Display.hs": "7c91d3fc395a0e7d45038725107e21266432fb7d8d89824a48c864cd131f6f7c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/Text.hs": "d3e4891ed56624f4729658ff61da034198b4957829b066ae391595ef226e82c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_native_double_format_cjson_v2.py": "b919f658aa5f5d44447abe72a6d8e09d2316d4ac3820412a603fd94760f01193",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/native/attempt-0001/receipt.json": "6e147bc751a624f0fdc78d26f0cc79f0148de5d3ad6d6b80e239afda3a4811a1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/native/attempt-0001/command.json": "2fd6fc6de5a7ae10f2fa0cd8d3fc7b9b5d0c45777f2e8e488f1da3a6bff42fdd",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/native/attempt-0001/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/native/attempt-0001/stdout.log": "5fcf7f0e0de18db3092d3cd19c7933b0abb0b7a91b2778579cf2b43b8916d4c5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/native/attempt-0001/process.json": "435539154f0efd01755c97bcff609a94e5178e97c1f735e42244a6941ba6c07f"
+  },
+  "scientific_eligibility": false,
+  "new_mcmc_runs": 0,
+  "scope": "Actual pure installed native CJSON encoding exactly roundtrips all12native fixed double values through native encode/read; cross-language literal differences remain explicit, including scientific exponents ending in zero. No installed source/binary mutation, native sampler restart or assertion relaxation. Full future model/logger transformation, all-role admission, native saved-frame validation and historical assessment remain required."
+}

@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-10-03T12:09:52.245784+00:00",
+  "stages": {
+    "software": {
+      "original_wait_session_id": 51672,
+      "original_wait_tool_exit_code": 0,
+      "unit": "fungal-structural-marker-projection-software-20261003-v1.service",
+      "invocation_id": "d93a609093c54ec5a388ff4ddc8417db",
+      "execution": "metadata/structural_marker_tree_projection_software_execution_20261003_v1.json",
+      "execution_sha256": "b02aa530999ce537243330c3a13a0aaced4a87ac69167e55988717651a5c4c0b",
+      "observed_original_wait_terminal_message": "Finished with result: success; Main processes terminated with: code=exited/status=0"
+    },
+    "producer": {
+      "original_wait_session_id": 69209,
+      "original_wait_tool_exit_code": 0,
+      "unit": "fungal-structural-marker-projection-producer-20261003-v1.service",
+      "invocation_id": "36529121424e49499a18508946cf5e2f",
+      "execution": "metadata/structural_marker_tree_projection_producer_execution_20261003_v1.json",
+      "execution_sha256": "dc66c8061ec89713562118f5730a953f159fd5d4b72857965a829b3951e86e76",
+      "observed_original_wait_terminal_message": "Finished with result: success; Main processes terminated with: code=exited/status=0"
+    },
+    "readback": {
+      "original_wait_session_id": 67327,
+      "original_wait_tool_exit_code": 0,
+      "unit": "fungal-structural-marker-projection-readback-20261003-v1.service",
+      "invocation_id": "37cf075277e54eeda46d86de620819f5",
+      "execution": "metadata/structural_marker_tree_projection_readback_execution_20261003_v1.json",
+      "execution_sha256": "d5be14acbae18039bdcd11e325ac99505fd462b62169bea29be276e21f6f047a",
+      "observed_original_wait_terminal_message": "Finished with result: success; Main processes terminated with: code=exited/status=0"
+    }
+  },
+  "scope": "Actual original unified exec wait sessions terminal exit0 and systemd-run --wait --pipe terminal messages observed; no collected default-unit status used."
+}

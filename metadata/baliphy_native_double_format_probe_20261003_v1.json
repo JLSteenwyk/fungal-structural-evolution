@@ -1,0 +1,58 @@
+{
+  "status": "reproduced_installed_native_double_scientific_exponent_truncation",
+  "checked_utc": "2026-10-03T12:28:03.587952+00:00",
+  "fixed_numeric_constants": 12,
+  "incorrect_numeric_encodings": [
+    {
+      "index": 0,
+      "expected": 2.34e-10,
+      "encoded": 0.234,
+      "ratio": 1000000000.0
+    },
+    {
+      "index": 2,
+      "expected": 2.34e-20,
+      "encoded": 0.0234,
+      "ratio": 1e+18
+    },
+    {
+      "index": 3,
+      "expected": 2.34e-50,
+      "encoded": 2.34e-05,
+      "ratio": 1.0000000000000001e+45
+    },
+    {
+      "index": 4,
+      "expected": 2.34e-100,
+      "encoded": 0.234,
+      "ratio": 1.0000000000000001e+99
+    },
+    {
+      "index": 7,
+      "expected": 2.34e+20,
+      "encoded": 234.0,
+      "ratio": 1e-18
+    }
+  ],
+  "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/native/attempt-0001/receipt.json",
+  "native_exit_code": 0,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy": "f9ddfb4c2bc5d4eb7b5828b0514f2dbba330a58e2d436c93dfdbd4a59c53a9fe",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/format.hs": "605fb900323a219c301edbba1780123ebfb8a591db0b8a5443bc9ed808e2e9ed",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/JSON.hs": "39ba6a7a4986cf972ec271a5d74ba5fccafbea183cf4facd1251c6a8cd7dec6c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/JSON/Encoding.hs": "b7c554186dd300ff3812864c5b2a0685b60558e1aaf8f04a432e758e5b69861f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/JSON/Types/ToJSON.hs": "bd7ca379adcb750c882d31a15f94b9abd611e6703c1aa4abd6cbe9d8a7148a82",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/Text/Display.hs": "7c91d3fc395a0e7d45038725107e21266432fb7d8d89824a48c864cd131f6f7c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/haskell/Data/Text.hs": "d3e4891ed56624f4729658ff61da034198b4957829b066ae391595ef226e82c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_native_double_format.py": "a042a542147223e97dac5fae1f6fdaa8553b7af2aae73484a62a7944b3cb900b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/native/attempt-0001/receipt.json": "b67569d08f5caff58203196ca543827750180f94d74568e5866783169c53b269",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/native/attempt-0001/command.json": "bb96cbb8a738d7bc39bdd32739e0a758ac000be3a1833712f36690cf0b9cb05e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/native/attempt-0001/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/native/attempt-0001/stdout.log": "a4dd7ba095a655e0fc84defcc27692de60a7f421f5e5cce6090dade3c01fb1d3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/native/attempt-0001/process.json": "273de602524bbeaefa70a70ec1e91f90fd4d4bff07ff9ab80e513166f702f064"
+  },
+  "scientific_eligibility": false,
+  "new_mcmc_runs": 0,
+  "scope": "Actual pure installed native JSON encoding changes scientific exponents ending in zero. Fixed nonzero-exponent/control numbers remain correct. No installed source/binary mutation, native sampler restart or assertion relaxation. Future encoding correction and full historical assessment remain required."
+}

@@ -1,0 +1,13 @@
+{
+  "pid": 3050232,
+  "created": 1791030481.99,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592",
+    "--cpu=60",
+    "--fsize=16777216",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_native_double_format.py"
+  ]
+}

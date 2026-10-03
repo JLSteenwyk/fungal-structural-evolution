@@ -1,0 +1,29 @@
+{
+  "status": "complete_verified_full_joint_sampler_resource_observation",
+  "expected_roles": 1620,
+  "roles_with_native_attempt": 0,
+  "roles_with_live_observation": 0,
+  "roles_without_live_observation": 1620,
+  "roles_without_native_attempt": 1620,
+  "native_outcome_status_counts": {
+    "no_native_attempt_before_controller_termination": 1620
+  },
+  "native_observations": 0,
+  "unavailable_observations": 0,
+  "sampler_controller_terminal_status": "verified_original_failure_preserved",
+  "maximum_observed_cgroup_memory_bytes": 16064512,
+  "maximum_observed_cgroup_reported_peak_bytes": 17829888,
+  "maximum_observed_poll_gap_seconds": 1.2742365800077096,
+  "posterior_qualified": false,
+  "full_hash_archive": "results/ancestral/full-baliphy-joint-sampler-resource-observation-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "967bf5ed41680829672dde2244958cc915b874ce8f22a1aad49d22860d15176f",
+  "bound_source_hashes": 1449,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-baliphy-joint-sampler-resource-observation-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "4975fff54a3f9168d8f7daf123e1d4a36ae9064cc04928d0d3f383b04ded1d07",
+  "independent_readback": "results/ancestral/full-baliphy-joint-sampler-resource-observation-20261003-v1/readback.json",
+  "independent_readback_sha256": "f1aa448dac53f090c31fc263d8f29904b0dc8e1a5165cac81c19a13d5788d8eb",
+  "completion_plan_sha256": "c6423a4300099c52d05071d0bf447ab0c6ae163a3a8e9f1f99c74a8566ac30a0",
+  "scientific_eligibility": false,
+  "scope": "Read-only full1620jointrole resource observation for the exact original joint sampler controller and native attempts. PID/create/command/configuration/cgroup/limits bound; empty/transitioning argv, wrapper phases, process races and missed fast attempts remain unavailable observations, not accepted native readings or terminal proofs. Every role and failed/unstarted attempt retained. Linux-reported virtual/resident/CPU and cgroup memory/pressure snapshots are approximate and can miss later native peaks; no precise final per-attempt peak or long-chain memory guarantee. Observer never writes GPU/native cgroup limits or restarts/signals inference. Full streaming serialized replay/artifact/source/two original observer completion journals required for observational closure, not sampler/model/tree/root/posterior or biological acceptance. All eight aims incomplete."
+}

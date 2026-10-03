@@ -17,8 +17,21 @@ has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branc
 projection entries across all 70 closed tree views. All 125 marker slots, both
 complete predictor sources and all five declared cohorts remain included.
 The primary panel retains 25 outgroups. Independent actual raw-tree/pruning
-readback is running; at 11:56 UTC, 29 views and 3,765,000 entries had passed.
-These are coverage states and arithmetic path sums, not fitted evolutionary rates.
+readback and full execution/source closure passed for every entry. Complete
+140-group source/view tables and an all-70-view figure also passed readback.
+Across primary views, distinct internal branches account for 37.4–38.9% of
+AlphaFold entries and 27.2–28.7% of ESMFold entries. These are coverage states
+and arithmetic path sums, not fitted evolutionary rates.
+
+All 1,620 historical short-sampler roles have now completed output/readback
+closure with no native allocation failures, and their resource observation is
+closed. The subsequent historical replay failed a strict rate-mean check, stopping
+the dependent joint sampler before any native role started. An installed numeric
+formatter bug is confirmed: scientific exponents ending in zero are truncated.
+All failed jobs and original outputs remain preserved. A separate native CJSON
+encoder passes exact fixed-value roundtrip checks, but full future logger/model
+qualification and historical assessment are pending.
+[Failure evidence and tested alternative](docs/baliphy-native-number-formatting-20261003.md).
 
 A [corrected joint ancestral logger](docs/baliphy-joint-node-logger-20261003.md)
 has passed native software checks across all three priors. Encoding sequences
@@ -35,8 +48,8 @@ now passes retained native fixture and full future-role input checks, keeping
 ancestral states, rate categories and residue coordinates paired. Full-grid
 joint native sampling output remains unverified.
 The [full 20-iteration joint-output qualification](docs/baliphy-joint-sampler-qualification-20261003.md)
-is now queued behind complete startup, historical sampler, resource-observer
-and corrected-reader closures. It retains every failed role and requires
+was queued behind complete startup, historical sampler, resource-observer
+and corrected-reader closures; it has stopped on the replay failure above. It retains every failed role and requires
 complete native, array, memory-ledger and provenance checks. At 10:07 UTC
 its native role count was zero; the historical sampler had 1,075 successful
 unclosed checks. Longer adequate posterior ensembles remain unlaunched.

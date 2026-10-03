@@ -1,0 +1,19 @@
+{
+  "status": "passed_installed_native_cjson_fixed_double_roundtrip",
+  "checked_utc": "2026-10-03T12:33:05.534645+00:00",
+  "fixed_numeric_constants": 12,
+  "native_exact_roundtrips": 12,
+  "literal_parser_comparison_differences": [
+    {
+      "index": 5,
+      "expected": 2.34e-101,
+      "encoded": 2.3399999999999998e-101,
+      "ratio": 0.9999999999999999
+    }
+  ],
+  "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-cjson-20261003-v2/native/attempt-0001/receipt.json",
+  "native_exit_code": 0,
+  "scientific_eligibility": false,
+  "new_mcmc_runs": 0,
+  "scope": "Actual pure installed native CJSON encoding exactly roundtrips all12native fixed double values through native encode/read; cross-language literal differences remain explicit, including scientific exponents ending in zero. No installed source/binary mutation, native sampler restart or assertion relaxation. Full future model/logger transformation, all-role admission, native saved-frame validation and historical assessment remain required."
+}

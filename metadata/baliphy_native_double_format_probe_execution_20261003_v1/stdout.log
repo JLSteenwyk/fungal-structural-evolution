@@ -1,0 +1,42 @@
+{
+  "status": "reproduced_installed_native_double_scientific_exponent_truncation",
+  "checked_utc": "2026-10-03T12:28:03.587952+00:00",
+  "fixed_numeric_constants": 12,
+  "incorrect_numeric_encodings": [
+    {
+      "index": 0,
+      "expected": 2.34e-10,
+      "encoded": 0.234,
+      "ratio": 1000000000.0
+    },
+    {
+      "index": 2,
+      "expected": 2.34e-20,
+      "encoded": 0.0234,
+      "ratio": 1e+18
+    },
+    {
+      "index": 3,
+      "expected": 2.34e-50,
+      "encoded": 2.34e-05,
+      "ratio": 1.0000000000000001e+45
+    },
+    {
+      "index": 4,
+      "expected": 2.34e-100,
+      "encoded": 0.234,
+      "ratio": 1.0000000000000001e+99
+    },
+    {
+      "index": 7,
+      "expected": 2.34e+20,
+      "encoded": 234.0,
+      "ratio": 1e-18
+    }
+  ],
+  "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-double-format-20261003-v1/native/attempt-0001/receipt.json",
+  "native_exit_code": 0,
+  "scientific_eligibility": false,
+  "new_mcmc_runs": 0,
+  "scope": "Actual pure installed native JSON encoding changes scientific exponents ending in zero. Fixed nonzero-exponent/control numbers remain correct. No installed source/binary mutation, native sampler restart or assertion relaxation. Future encoding correction and full historical assessment remain required."
+}

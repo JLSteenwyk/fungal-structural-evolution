@@ -1,0 +1,76 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592",
+    "--cpu=60",
+    "--fsize=16777216",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_native_double_format.py"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_structural_projection_stage_v2.py": "c8ad72dda1657052fd6f35f850711bc2727ffe57cf6f86533b17b5223fbd3cab",
+    "metadata/baliphy_native_double_format_probe_resources_20261003_v1.json": "c0edc0da43218f15cf142dc4d603d5140a9103b6fbfd471fcfa740a6144cb655",
+    "scripts/check_baliphy_native_double_format.py": "a042a542147223e97dac5fae1f6fdaa8553b7af2aae73484a62a7944b3cb900b",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "1e1d002cc79e44c6bf4d85e1e79e39a3",
+  "wrapper": {
+    "pid": 3050231,
+    "created": 1791030481.9,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_structural_projection_stage_v2.py",
+      "--resources",
+      "metadata/baliphy_native_double_format_probe_resources_20261003_v1.json",
+      "--execution",
+      "metadata/baliphy_native_double_format_probe_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/baliphy_native_double_format_probe_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_native_double_format.py"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 120,
+  "started_utc": "2026-10-03T12:28:02.689418+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T12:28:03.624510+00:00",
+  "child": {
+    "pid": 3050232,
+    "created": 1791030481.99,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=8589934592",
+      "--cpu=60",
+      "--fsize=16777216",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_native_double_format.py"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.9349218949209899,
+  "child_cpu_seconds": 0.9002669999999999,
+  "child_peak_rss_bytes": 102486016,
+  "receipt": "metadata/baliphy_native_double_format_probe_20261003_v1.json",
+  "receipt_sha256": "543e5f86606d3124c6cfccd94556ecee5981c25e4845ec75cffdef1175f73366",
+  "artifacts": {
+    "metadata/baliphy_native_double_format_probe_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_native_double_format_probe_execution_20261003_v1/configuration.json": "edcef439de1f64a0b4fcf21cd0ed9146500e6d429c3f33f92a96e8ed5016249d",
+    "metadata/baliphy_native_double_format_probe_execution_20261003_v1/stdout.log": "85ff3eb6c28efb41b3cde2f734467aeee42b6295074412d6e6c29a1885ad7789",
+    "metadata/baliphy_native_double_format_probe_execution_20261003_v1/process.json": "6a6a180534820acfeecbbaea89eda018a19efddb610f22016bb344f22da14fb1"
+  },
+  "scope": "One original new CPU-only coverage stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. No native/GPU inference, restart, sample concatenation or scientific acceptance."
+}

@@ -1,0 +1,88 @@
+{
+  "status": "confirmed_native_exponent_formatter_bug_and_preserved_dependent_failures",
+  "checked_utc": "2026-10-03T12:34:13.720328+00:00",
+  "primary_source_commit": "80b0402eed0157f31ecb57e0efc34c03ed83050c",
+  "primary_sources": [
+    {
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/src/builtins/Distribution.cc",
+      "url": "https://raw.githubusercontent.com/bredelings/BAli-Phy/80b0402eed0157f31ecb57e0efc34c03ed83050c/src/builtins/Distribution.cc",
+      "git_blob_sha1": "ae7a50a889a99b2d0f22fcb899343a6d1fc99de8",
+      "sha256": "a5b778e5c9385687b888e3bcb6cde9895e0ff8f79af38f9694bd12bbcc745e2a"
+    },
+    {
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/src/builtins/Prelude.cc",
+      "url": "https://raw.githubusercontent.com/bredelings/BAli-Phy/80b0402eed0157f31ecb57e0efc34c03ed83050c/src/builtins/Prelude.cc",
+      "git_blob_sha1": "22d495fcc5b0734b0bf5b83f06e7541e9bd3ce83",
+      "sha256": "6bc4d2e1792a6f93426e621700d3761ddaebb742d1b7e113bfc717634e5d36ba"
+    },
+    {
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/haskell/SModel/ASRV.hs",
+      "url": "https://raw.githubusercontent.com/bredelings/BAli-Phy/80b0402eed0157f31ecb57e0efc34c03ed83050c/haskell/SModel/ASRV.hs",
+      "git_blob_sha1": "14eede7fc8ef0063947bdff2efcc78742bd43758",
+      "sha256": "cd695cac601e76e3a5a40805b7fee93d31cdb2a42af343c982b09db65a6aaa54"
+    },
+    {
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/haskell/SModel/MixtureModel.hs",
+      "url": "https://raw.githubusercontent.com/bredelings/BAli-Phy/80b0402eed0157f31ecb57e0efc34c03ed83050c/haskell/SModel/MixtureModel.hs",
+      "git_blob_sha1": "9319a46ca7e8d00244789f723f53093a05e2802e",
+      "sha256": "6447529fe0eaf3b437dd6493d77d382cd4f26b86a599a014d6b92b96ab95a636"
+    }
+  ],
+  "actual_installed_formatter_probe": "metadata/baliphy_native_double_format_probe_20261003_v1.json",
+  "actual_installed_formatter_probe_sha256": "543e5f86606d3124c6cfccd94556ecee5981c25e4845ec75cffdef1175f73366",
+  "full_rate_mean_census": "metadata/short_sampler_native_rate_mean_census_20261003_v1.json",
+  "full_rate_mean_census_sha256": "abb033d2ed3552786dfe3ece1482b041cc308980106ac837324692c6128596e2",
+  "original_failed_services": [
+    {
+      "unit": "fungal-independent-short-sampler-replay-v2-20261003-v1.service",
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/fungal-independent-short-sampler-replay-v2-20261003-v1.service.journal.jsonl",
+      "sha256": "d79217ea09dfedef78ac60b348b0df69b0dfc7aaea87def3e762b33e9ab9a89f",
+      "terminal_failure_observed": true
+    },
+    {
+      "unit": "fungal-independent-short-sampler-replay-v2-readback-20261003-v1.service",
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/fungal-independent-short-sampler-replay-v2-readback-20261003-v1.service.journal.jsonl",
+      "sha256": "0bba8dd5e0af072d435e1eb709eae8d405ca95415c5a2ec85f42212e6bcf6a51",
+      "terminal_failure_observed": true
+    },
+    {
+      "unit": "fungal-independent-short-sampler-replay-v2-closure-20261003-v1.service",
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/fungal-independent-short-sampler-replay-v2-closure-20261003-v1.service.journal.jsonl",
+      "sha256": "85b74bbb3140d9e398fe2c89faee6835303f048432e96e51c321228742898b2a",
+      "terminal_failure_observed": true
+    },
+    {
+      "unit": "fungal-baliphy-joint-sampler-qualification-v2-20261003-v1.service",
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/fungal-baliphy-joint-sampler-qualification-v2-20261003-v1.service.journal.jsonl",
+      "sha256": "0585cb90e844ff0ea552fe3d6cddd536d9822c08f55095136a8a3d7fc493b752",
+      "terminal_failure_observed": true
+    },
+    {
+      "unit": "fungal-baliphy-joint-sampler-qualification-v2-readback-20261003-v1.service",
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/fungal-baliphy-joint-sampler-qualification-v2-readback-20261003-v1.service.journal.jsonl",
+      "sha256": "83571891a1c993f9ce5bd131b6082be894808480142bc93df404a124e193cfa6",
+      "terminal_failure_observed": true
+    },
+    {
+      "unit": "fungal-baliphy-joint-sampler-qualification-v2-closure-20261003-v1.service",
+      "path": "data/software_audits/baliphy-native-gamma-source-20261003-v1/fungal-baliphy-joint-sampler-qualification-v2-closure-20261003-v1.service.journal.jsonl",
+      "sha256": "237c4a7a9ef07cb4f2c2611814b799d9eba0af77f0d16e8dd497e7fc5d6cb323",
+      "terminal_failure_observed": true
+    }
+  ],
+  "historical_native_sampler_runs_completed": 1620,
+  "historical_sampler_native_allocation_failures": 0,
+  "historical_site_property_frames": 4860,
+  "strict_mean_one_failed_frames": 12,
+  "affected_families": [
+    "OG0000294",
+    "OG0000230",
+    "OG0000972"
+  ],
+  "broader_historical_float_assessment_complete": false,
+  "new_joint_native_runs_started": 0,
+  "assertion_tolerance_relaxed": false,
+  "installed_binary_or_libraries_modified": false,
+  "scope": "Actual installed pure formatter probe and git-blob-verified primary source establish scientific exponent truncation. Full4860frame census reproduces12strict normalization failures. This is not evidence of a changed likelihood or native memory failure. Historical affected values remain unchanged; arbitrary exponent damage is not invertible from encoded JSON alone. Future model/logger encoding and full historical readback require separate qualification. Failed dependent services remain preserved; no native retry.",
+  "primary_git_tree_sha": "80b0402eed0157f31ecb57e0efc34c03ed83050c"
+}

@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-03T12:28:02.529153+00:00",
+  "cpu_quota": 2,
+  "cgroup_memory_gib": 8,
+  "cgroup_swap_bytes": 0,
+  "address_space_gib": 8,
+  "cpu_seconds_per_stage": 60,
+  "wall_seconds_per_stage": 120,
+  "per_file_limit_mib": 16,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 64,
+  "output_allowance_mib": 16,
+  "estimated_stage_wall_seconds_uncalibrated": [
+    1,
+    60
+  ],
+  "native_probe_cpu_seconds": 20,
+  "native_probe_wall_seconds": 30,
+  "scope": "One pure native JSON formatting computation,12fixed numeric constants, no MCMC/inference/biological pilot/GPU/new charges. Existing installed binary and libraries remain unchanged."
+}

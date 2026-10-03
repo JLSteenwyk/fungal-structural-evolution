@@ -1,5 +1,34 @@
 # Progress and evidence
 
+## October 3, 12:33 UTC: full coverage audit closed; native formatter bug confirmed
+
+All 17,500 structural-marker/tree/source cases and 9,047,500 original-branch
+entries passed complete independent actual raw-tree pruning and path-length
+readback. Full closure binds 2,676 hashes and all three original stage executions.
+The 140 view/source summaries and 54 lineage/source rows passed separate full
+serialized histogram/taxon readback. Complete tables and standalone all-70-view
+PNG/PDF figures were visually reviewed and published as checksum-identical
+copies. Across primary views, distinct internal projections cover 37.4–38.9% of
+AlphaFold entries and 27.2–28.7% of ESMFold entries. These are descriptive coverage
+ranges, not confidence intervals, fitted rates or accepted evolutionary effects.
+[Completed workflow, tables and figure](structural-marker-tree-coverage-20261003.md).
+
+The original historical short sampler and resource observer separately completed
+all 1,620 roles, with zero new native allocation failures. The subsequent replay
+failed on native rate normalization, stopping six dependent services before any
+new joint native role began. A full 4,860-frame census found twelve strict
+normalization failures; broader float corruption assessment remains pending.
+Primary source plus a pure installed-binary probe confirm a formatter that
+truncates scientific exponents ending in zero. A separate native CJSON path passed
+all twelve exact native encode/read roundtrips. Its first checker failure from a
+one-ULP cross-language literal difference remains preserved. Original native
+outputs, sources and failed jobs were not changed or restarted; no assertions
+were weakened. Full future logger/model qualification and complete historical
+assessment remain required. All eight aims remain incomplete, GPU prediction
+remains paused and no new charges were incurred.
+[Failure, actual probes and next steps](baliphy-native-number-formatting-20261003.md).
+
+
 ## October 3: full structural-marker tree projection produced; readback running
 
 Produced all 17,500 view/source/marker cases and 9,047,500 original internal-branch

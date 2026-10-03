@@ -1,0 +1,100 @@
+{
+  "stage": "summary",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592",
+    "--cpu=120",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_structural_marker_tree_projection.py",
+    "--producer",
+    "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+    "--readback",
+    "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+    "--output",
+    "results/figures/structural-marker-tree-coverage-20261003-v1",
+    "--receipt",
+    "metadata/structural_marker_tree_projection_summary_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_structural_projection_stage_v2.py": "c8ad72dda1657052fd6f35f850711bc2727ffe57cf6f86533b17b5223fbd3cab",
+    "metadata/structural_marker_tree_projection_summary_resources_20261003_v1.json": "3c5ec4a06bf7f7a5b6851f3708c2e74d6f6ed1937557dde6f9edf299ecca0608",
+    "scripts/summarize_structural_marker_tree_projection.py": "87c2e4aed9c1ff910dcd0625072e759f28eadb45e9fc960d75619b86ae37c134",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "7a4c69815a154ea683380613b2984b1c",
+  "wrapper": {
+    "pid": 3039810,
+    "created": 1791029392.69,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_structural_projection_stage_v2.py",
+      "--resources",
+      "metadata/structural_marker_tree_projection_summary_resources_20261003_v1.json",
+      "--execution",
+      "metadata/structural_marker_tree_projection_summary_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/structural_marker_tree_projection_summary_20261003_v1.json",
+      "--stage",
+      "summary",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_structural_marker_tree_projection.py",
+      "--producer",
+      "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+      "--readback",
+      "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+      "--output",
+      "results/figures/structural-marker-tree-coverage-20261003-v1",
+      "--receipt",
+      "metadata/structural_marker_tree_projection_summary_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 240,
+  "started_utc": "2026-10-03T12:09:53.489546+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T12:10:00.893910+00:00",
+  "child": {
+    "pid": 3039811,
+    "created": 1791029392.79,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=8589934592",
+      "--cpu=120",
+      "--fsize=536870912",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/summarize_structural_marker_tree_projection.py",
+      "--producer",
+      "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+      "--readback",
+      "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+      "--output",
+      "results/figures/structural-marker-tree-coverage-20261003-v1",
+      "--receipt",
+      "metadata/structural_marker_tree_projection_summary_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 7.404180534998886,
+  "child_cpu_seconds": 7.366337,
+  "child_peak_rss_bytes": 178388992,
+  "receipt": "metadata/structural_marker_tree_projection_summary_20261003_v1.json",
+  "receipt_sha256": "ae9a3f050b5cca0e1e711a636fd0b366489c613103137516aea596235f519006",
+  "artifacts": {
+    "metadata/structural_marker_tree_projection_summary_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/structural_marker_tree_projection_summary_execution_20261003_v1/configuration.json": "0cb3ed7788f5dccd3d033cbf452632ea3946cdba52e9ba981e7eafd4b5e70096",
+    "metadata/structural_marker_tree_projection_summary_execution_20261003_v1/stdout.log": "482ef5529b9d98288bfa75f8197b9b55e5acec60e841a575fde5cb55955e2153",
+    "metadata/structural_marker_tree_projection_summary_execution_20261003_v1/process.json": "9b64adcc3e78652f705676516d4aa01d95576f75b9770c1d1d108b3ac2cd85c7"
+  },
+  "scope": "One original new CPU-only coverage stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. No native/GPU inference, restart, sample concatenation or scientific acceptance."
+}

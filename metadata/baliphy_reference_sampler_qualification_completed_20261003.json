@@ -1,0 +1,41 @@
+{
+  "status": "complete_verified_full_reference_short_sampler_qualification",
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "effective_inputs": 135,
+  "original_configuration_aliases": 324,
+  "checked_sampler_attempts": 1620,
+  "unsuccessful_sampler_attempts": 0,
+  "complete_quartets": 405,
+  "unresolved_quartets": 0,
+  "saved_alignments": 4860,
+  "candidate_frames": 19440,
+  "status_counts": {
+    "full_short_sampler_output_integrity_checked_not_posterior": 1620
+  },
+  "allocation_warning_attempts": 0,
+  "bad_alloc_attempts": 0,
+  "gamma_equal_rate_limit_events": 19,
+  "other_nonfinite_events": 0,
+  "nonpositive_parameter_review_events": 0,
+  "posterior_qualified": false,
+  "reservation_audit": {
+    "roles_reserved": 1620,
+    "ledger_events": 3240,
+    "peak_reserved_bytes": 206158430208,
+    "maximum_simultaneous_roles": 16,
+    "reservation_capacity_bytes": 206158430208,
+    "scope": "Declared address-space reservations held through native execution and output audit; not measured native peak RSS."
+  },
+  "full_hash_archive": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "dfb33995aa2407e190eaf7f1216ba587c263627ddca61523b1b44103b5c8c2a8",
+  "bound_source_hashes": 35047,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "2cce32888d1253ad5dec8f0d633606bd09283346b8becec9b6477b0bbd79a3ea",
+  "independent_readback": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/readback.json",
+  "independent_readback_sha256": "8efb804d59acc274379c84d6314985ce31f080d009755061bd0db5623782b085",
+  "completion_plan_sha256": "289a52c88336d9f9fbb5995b4f9be4d9ebf915b088f512ddaa3a7b1bf5307b8e",
+  "scientific_eligibility": false,
+  "scope": "Full135effectiveinputs x3originalpriors x4freshseedroles, all324aliases: 20 native sampler iterations per role after all1620correctedstartup records and their full provenance closure pass. No biological subset or pilot. Starting-state geometry changes only; original probability distribution, kernels, priors, observed unaligned tips and fixed-tip/free-ancestor representation retained. Family-wide48GiBaddress-space caps for historical allocation-risk families and12GiBotherwise;192GiBFIFOreservations held through native run and output audit under16CPU/200GiBcgroup/no swap. Every failed outcome retained without automatic retry; no posterior mixing, model/tree/root acceptance or full site-property replay implied. Full saved alignments/tips/candidate-node mapping, scalar logs, receipt/configuration/process/artifact/source hashes, reservation accounting and two original completion journals required for computational qualification closure. Original startup seeds now used for first MCMC: future independent longer sampling needs a new seed namespace disjoint from both original chains and this qualification. No GPU or new charges. All eight aims remain incomplete."
+}

@@ -8,7 +8,7 @@ distinct when the tree is pruned. It does not estimate evolutionary rates.
 
 The primary panel contains 526 working taxon entries: 501 fungal entries and
 25 outgroups. Species boundaries remain under review. Sensitivity cohorts retain
-their declared membership; two have 23 outgroups. These exclusions do not change
+their declared membership; the coverage-based cohort has 23 outgroups. These exclusions do not change
 the primary panel. Each cohort has six coalescent and eight concatenated views.
 Projected concatenated sensitivity views are prunings of existing fits, not
 newly inferred subset phylogenies. Native subset refits remain separate work.
@@ -84,12 +84,34 @@ nine-tip unrooted tree against actual graph pruning. All five classes occurred;
 checked. This is software qualification, not a fungal pilot.
 
 The full producer finished with exit zero and reopened every serialized array.
-**Independent readback is running; full computational closure is pending.**
-[Original readback checkpoint](../metadata/structural_marker_tree_projection_execution_checkpoint_20261003_v1.json).
-The separate descriptive summary and figure script is prepared but must wait
-for the complete readback receipt. It includes all 70 views, both sources and
-every declared cohort; repeated views and marker entries are not independent
-statistical observations. A distinct projected branch is not proof of statistical
+**Full independent readback and computational closure passed.** All 17,500
+cases and 9,047,500 branch entries were checked against actual graph pruning.
+Closure binds 2,676 source/artifact hashes and all three original stage executions.
+[Completed audit](../metadata/structural_marker_tree_projection_completed_20261003_v1.json).
+
+The descriptive summaries include all 140 view/source groups and all 54 manifest
+lineage/source bins. Independent histogram readback checked every group against
+all serialized branch-status arrays, and all lineage counts against the complete
+526-row taxon table. The standalone figure was visually reviewed. Repeated views
+and marker entries are not independent statistical observations.
+
+| Primary-panel branch × marker coverage state | AlphaFold | ESMFold |
+|---|---:|---:|
+| Fewer than four observed taxa | 0% | 2.4% |
+| One side unobserved | 18.4–19.3% | 28.7–29.7% |
+| Becomes terminal | 21.6–23.0% | 20.8–21.8% |
+| Distinct internal branch | 37.4–38.9% | 27.2–28.7% |
+| Shared internal path | 19.0–21.9% | 17.7–20.7% |
+
+Ranges span the fourteen alternative primary views; they are not confidence
+intervals, independent replicates or predictor-performance comparisons.
+[Complete view/source table](../metadata/structural_marker_tree_coverage_all_view_summaries_20261003_v1.tsv),
+[complete lineage/source table](../metadata/structural_marker_tree_coverage_lineage_summaries_20261003_v1.tsv)
+and [vector figure](figures/structural-marker-tree-coverage-20261003.pdf).
+
+![Coverage on all 70 candidate views](figures/structural-marker-tree-coverage-20261003.png)
+
+A distinct projected branch is not proof of statistical
 estimability, sufficient information or an accepted sequence/structure model.
 
 The prelaunch resource plan allows two CPUs, 8 GiB memory, no cgroup swap and
@@ -98,7 +120,9 @@ one BLAS thread. Each stage has an 8 GiB address-space cap, 1,800 CPU seconds,
 and requires 64 GiB free disk and 16 GiB available RAM. These are bounds and an
 uncalibrated planning range, not an ETA. Original software and producer stages
 used 17.31 and 44.90 child CPU seconds, with measured child peak RSS about
-264 and 254 MiB. Raw manager memory counters are preserved separately and are
+264 and 254 MiB. Full raw-tree readback used 1,278.83 child CPU seconds and
+289 MiB child peak RSS; summary and histogram/taxon readback used 7.37 and
+3.87 child CPU seconds. Raw manager memory counters are preserved separately and are
 not used as a native/group memory requirement. No GPU prediction, native sampler,
 paid infrastructure or existing-job restart was launched by this audit.
 

@@ -1,0 +1,21 @@
+{
+  "pid": 3039811,
+  "created": 1791029392.79,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592",
+    "--cpu=120",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/summarize_structural_marker_tree_projection.py",
+    "--producer",
+    "metadata/structural_marker_tree_projection_producer_20261003_v1.json",
+    "--readback",
+    "metadata/structural_marker_tree_projection_readback_20261003_v1.json",
+    "--output",
+    "results/figures/structural-marker-tree-coverage-20261003-v1",
+    "--receipt",
+    "metadata/structural_marker_tree_projection_summary_20261003_v1.json"
+  ]
+}
