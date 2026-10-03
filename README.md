@@ -177,7 +177,10 @@ passed 84 locked-oracle cases over the full 22-state alphabet, including unknown
 residues and gaps, label permutations and lossless temporal pattern grouping.
 The complete source inventory retains all 405 groups, 2,032,526 pattern/cutoff
 rows and 44,715,572 declared state-indicator rows. Full production categorical
-numeric replay and independent native-parser validation remain pending.
+numeric replay is now running with two CPU equivalents/32 GiB/no swap; its
+full serialized reader and provenance closure are queued. Complete 405-group
+software workflow contracts passed, including 12 altered-export rejections.
+Production completion and independent native-parser validation remain pending.
 
 The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
 is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It

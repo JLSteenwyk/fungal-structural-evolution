@@ -2659,3 +2659,36 @@ data hash/numerical passes. Complete categorical production replay, independent
 native parsing, adequate horizons and joint posterior/model/root qualification
 remain necessary before accepted ancestral predictions.
 [Categorical contracts, resource inventory and limits](independent-ancestral-categories-20261002.md).
+
+
+### Complete categorical numerical replay (October 2 evening)
+
+The complete 405-group recovered-attempt ledger now drives separate categorical
+production and serialized readback. Before replay, compare each quartet state
+array with all four selected whole-chain arrays, exact iteration grid, original
+seed/input/node/coordinate identities and unanchored counts. Raw chain arrays
+use `states`, quartet arrays `values`; native parser and auxiliary count-array
+qualification remain inherited from prior closed projection checks.
+
+Independently rebuild all 2,032,526 retained temporal patterns and coordinate
+maps, then compare all 44,715,572 declared indicators, including unknown X,
+gaps and unseen states. Counts, frequencies, dispositions and six descriptive
+chain distances match exactly; defined numerical metrics use the unchanged
+1e-8 absolute-plus-relative tolerance. Singular split trajectories retain
+review. All 3,224 unanchored-count screens are separately recalculated.
+
+Every pattern's complete separate diagnostic, original diagnostic digest, errors
+and unresolved flags are written to deterministic gzip JSONL. Cutoff artifacts
+and whole-group checkpoints publish atomically after flush/fsync. On resume,
+all saved rows are rebuilt without rewriting accepted files. The serialized
+reader replays every row with the same new estimator; it is not a third
+independent numerical implementation. Full source/artifact hashes and both
+actual original completion journals gate accounting closure.
+
+Complete synthetic workflow tests retained all 405 groups and 70,928 state
+indicator rows, including 806 singular reviews, plus 3,224 unanchored rows.
+Interruption/checkpoint/restart contracts passed and 12 rehashed false exports
+were rejected. Full production is running under two-CPU/32 GiB/no-swap limits;
+these software contracts and partial producer progress are not final production
+verification, joint posterior qualification or accepted ancestral predictions.
+[Production source requirements, records and resources](independent-ancestral-categories-20261002.md).

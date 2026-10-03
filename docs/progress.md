@@ -11588,3 +11588,47 @@ and figure review remain next.
   work and all eight aims remain incomplete.
   [Scalar proof](independent-ancestral-scalar-readback-20261002.md),
   [categorical method, full inventory and next requirements](independent-ancestral-categories-20261002.md).
+
+
+- October 3, 02:04 UTC (October 2 evening EDT): the preceding goal turn was
+  progress: complete scalar numerical/readback/provenance verification closed
+  and was published, categorical software contracts passed, and the entire
+  source/resource inventory was prepared. All original launched outputs and
+  failed invocations remain immutable.
+
+  Implemented full categorical numerical production and serialized replay for
+  all 405 original groups, both cutoffs and all 22 declared states. Each quartet
+  array is compared with all four selected whole-chain state arrays and original
+  seed/input/node/coordinate/sample-audit identities. Independent lexicographic
+  grouping rebuilds every temporal trace/map/multiplicity; every indicator and
+  descriptive distance is compared with the original report. Unanchored-count
+  screens add 3,224 rows. Deterministic gzip cutoff files and immutable group
+  checkpoints resume through complete row recalculation; completed producer and
+  alternate-reader restarts are refused. Full source/artifact hashes and actual
+  original journals are required for the eventual closure.
+
+  The full 405-group synthetic workflow passed 3,224 pattern rows, 70,928 state
+  indicators and 3,224 unanchored rows using genuine locked-oracle constant,
+  nonconstant, unknown/gap and singular metrics. All 806 singular indicator
+  reviews remain explicit. Interrupted checkpoints/reports stayed byte-identical;
+  12 rehashed false exports were rejected, including an omitted failed group.
+  These are software contracts, not the production 2,032,526-pattern result.
+
+  Launched a 35-pin production plan at 21:59 EDT with original controller
+  2670368/native producer 2670391, reader controller 2670372 and closure
+  controller 2670376. Scope remains all 2,032,526 pattern/cutoff rows and
+  44,715,572 declared state indicators. Actual per-stage cgroups enforce two
+  CPU equivalents, 32 GiB, no swap and one BLAS thread; the 128 GiB output
+  allowance and 4–96 hour planning range are uncalibrated, not a project ETA.
+  The original producer is live: five unclosed group checkpoints/43,694 patterns/
+  961,268 indicators at 22:04 EDT, with no observed comparison error. Reader
+  and closure remain original queued. A complete 403-group manifest/report/array
+  link census found no mismatches.
+
+  Original covariance qualification reached 280 of 4,340 cohorts at 22:04 EDT;
+  its original downstream reader/closure and full-scope timing remain queued.
+  No variance fitting, new native sampling or GPU prediction was launched.
+  Production categorical completion, independent native parsing, adequate
+  sampling, accepted phylogenetic/reconciliation/dating framework, predictor/
+  control/calibration work and all eight biological aims remain incomplete.
+  [Full categorical workflow, contracts, resources and limitations](independent-ancestral-categories-20261002.md).

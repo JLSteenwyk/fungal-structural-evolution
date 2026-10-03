@@ -159,7 +159,7 @@ the plan also pins the array and its raw-source locator JSON.
 
 Full production scalar numerical agreement/readback/provenance closure passed.
 [Separate categorical software checks and a full source inventory](independent-ancestral-categories-20261002.md)
-are now available; production categorical numerical replay, native alignment-parser checks, adequate
+are now available, and full production categorical replay is running. Native alignment-parser checks, adequate
 sampling horizons and joint posterior/model/root qualification remain open.
 The two unresolved native allocation failures remain failures. Ancestral
 structure prediction remains subject to GPU authorization; GPU inference is

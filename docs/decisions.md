@@ -973,3 +973,23 @@ equivalents, 32 GiB, no swap and a 128 GiB output allowance. These are uncalibra
 planning, not an inference launch or finish ETA.
 Inventory small-source hashes and archive provenance are distinct from the
 required complete large-data numeric replay and native parser qualification.
+
+
+## October 2 evening: run the complete categorical numerical replay
+
+Proceed from the entire source inventory and tested workflow, retaining all
+405 original groups, two failures, both cutoffs and all 22 states. Compare each
+quartet with all four selected whole-chain arrays before independent temporal
+pattern grouping and every state-indicator comparison. Recalculate all 3,224
+unanchored-count screens as well. Stream complete separately calculated reports
+as deterministic gzip, retain exact source diagnostic digests, and atomically
+publish cutoff artifacts/whole-group checkpoints. Recalculate every saved row
+on interruption recovery; preserve completed and failed original invocations.
+
+Full synthetic workflow contracts passed 70,928 state indicators over all
+405 groups with nonconstant, unknown/gap and singular oracle metrics, plus
+12 altered-export rejections. The 35-pin production plan is now launched with
+two CPU equivalents/32 GiB/no swap/one BLAS thread per stage. No new native
+sampling, GPU use or paid resources follow. Full serialized replay and actual
+journal/hash closure remain mandatory; numerical agreement does not establish
+adequate horizons, independent native parsing or a qualified joint posterior.

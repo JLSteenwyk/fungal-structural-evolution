@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/independent_baliphy_category_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_independent_baliphy_category_readback.py",
+    "--plan",
+    "metadata/independent_baliphy_category_plan_20261002.json",
+    "--output",
+    "results/ancestral/full-independent-categorical-readback-20261002-v1/readback.json"
+  ],
+  "pins": {
+    "metadata/independent_baliphy_category_plan_20261002.json": "845de9233405d5a9853fe9daa533eda768deef87dd37dbc85f87b16d696078a0",
+    "metadata/independent_baliphy_category_launch_20261002.json": "80aba08b42db8ca453cbc83d49d991700128087d2c3e01d8b7a27a284f2229e1",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}
