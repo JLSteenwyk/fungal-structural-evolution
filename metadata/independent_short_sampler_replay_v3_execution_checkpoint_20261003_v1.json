@@ -1,0 +1,252 @@
+{
+  "status": "verified_original_full_independent_short_sampler_replay_v3_runtime",
+  "checked_utc": "2026-10-03T13:14:49.965095+00:00",
+  "plan_sha256": "efb01d92e2d541fd825be8f7695b80c8f83f8ec0f701daf88385314d76f7837c",
+  "frozen_pins_checked": 1008,
+  "original_handles": [
+    {
+      "unit": "fungal-independent-short-sampler-replay-v3-20261003-v1.service",
+      "pid": 3077865,
+      "created": 1791033224.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/independent_short_sampler_replay_v3_wait_plan_20261003.json",
+      "plan_sha256": "f7693ab2f77234c079dea07765ec25bcd92c4a0bc61d4ffe428ddd2f8c49aca5",
+      "checked_utc": "2026-10-03T13:13:45.522369+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-independent-short-sampler-replay-v3-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/independent_short_sampler_replay_v3_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.09,
+      "children": [
+        {
+          "pid": 3077882,
+          "created": 1791033225.1,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_independent_short_sampler_replay_v3.py",
+            "--plan",
+            "metadata/independent_short_sampler_replay_v3_plan_20261003.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 63.19
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "c492efdc5d023eb6e65839314100851f948be27d5d9726efd2f683797b262730",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-independent-short-sampler-replay-v3-readback-20261003-v1.service",
+      "pid": 3077869,
+      "created": 1791033224.84,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/independent_short_sampler_replay_v3_readback_wait_plan_20261003.json",
+      "plan_sha256": "64f9fecee3fca9406fa58d29e3ca8b78c2e9b43afd8569d8e1f7146796e63c72",
+      "checked_utc": "2026-10-03T13:13:45.553386+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-independent-short-sampler-replay-v3-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/independent_short_sampler_replay_v3_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.05,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "2cf0ccfa6c4898ffe6d9d7d0ba673d6df303fd4e8f7634e40156153117f3f8bf",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-independent-short-sampler-replay-v3-closure-20261003-v1.service",
+      "pid": 3077874,
+      "created": 1791033224.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/independent_short_sampler_replay_v3_closure_wait_plan_20261003.json",
+      "plan_sha256": "96afef05939337c5c960e63be2db1685938504381605241ff88ff58d339ca04d",
+      "checked_utc": "2026-10-03T13:13:45.583328+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-independent-short-sampler-replay-v3-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/independent_short_sampler_replay_v3_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.05,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "b68c4abbfca3d4cb646b7200a095c626ee59a2c3ad911a05a89d02fd35b97a48",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_launch_20261003.json",
+      "pid": 2826442,
+      "created": 1791008208.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "43e07f1b5ecdfb75aefbdf0537288164f42c1318bb10f0777617efd9b2a3a81b",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "9b3f226625789da38e6cad1d08d31794c1dd21d128544b13740164633ebb43df",
+      "captured_process_messages": 90,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029515642875",
+          "CPU_USAGE_NSEC": "119418592527000",
+          "MEMORY_PEAK": "3522560",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_readback_launch_20261003.json",
+      "pid": 2826446,
+      "created": 1791008208.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "2be845248e168914aea3109dc4049800b8f8423cb9908f606801b19441d4febe",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "e8a09c93cca62c0f2e069e98976d7ca4e86dcc3f59d184f89dc0129df98e33ee",
+      "captured_process_messages": 711,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029586546661",
+          "CPU_USAGE_NSEC": "56913321000",
+          "MEMORY_PEAK": "2740224",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+      "pid": 2826450,
+      "created": 1791008208.62,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "84f13d5c49b95e5eaf43842bbc6b5f0c29782a19baed655a4fa576adac3dcbe8",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "5e007a1ceccf31d93542ea8faa1aba8cae38e49f161950383bd43913f475a140",
+      "captured_process_messages": 713,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029599778101",
+          "CPU_USAGE_NSEC": "10462073000",
+          "MEMORY_PEAK": "2883584",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "unclosed_replay_checkpoints": 938,
+  "replay_status_counts": {
+    "all_short_native_sequence_category_coordinates_replayed_v3_rates_unqualified_not_posterior": 938
+  },
+  "original_sampler_checkpoints": 1620,
+  "original_sampler_status_counts": {
+    "full_short_sampler_output_integrity_checked_not_posterior": 1620
+  },
+  "accounting_closure": null,
+  "ancestral_categories_available": false,
+  "posterior_qualified": false,
+  "tip_logs_joint_trajectory_available": false,
+  "gpu": false,
+  "retained_unknown_draw_disagreements": 0,
+  "scope": "Immutable pins, exact original six handles/journals and live caps checked. Checkpoint counts are unclosed progress; compact completion archive hash checked if present. No full artifact/native replay, sampler restart, inferred internal categories or scientific acceptance."
+}

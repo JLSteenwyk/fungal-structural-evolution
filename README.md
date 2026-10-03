@@ -23,46 +23,40 @@ Across primary views, distinct internal branches account for 37.4–38.9% of
 AlphaFold entries and 27.2–28.7% of ESMFold entries. These are coverage states
 and arithmetic path sums, not fitted evolutionary rates.
 
-All 1,620 historical short-sampler roles have now completed output/readback
-closure with no native allocation failures, and their resource observation is
-closed. The subsequent historical replay failed a strict rate-mean check, stopping
-the dependent joint sampler before any native role started. An installed numeric
-formatter bug is confirmed: scientific exponents ending in zero are truncated.
-All failed jobs and original outputs remain preserved. A separate native CJSON
-encoder passes exact fixed-value roundtrip checks, but full future logger/model
-qualification and historical assessment are pending.
-[Failure evidence and tested alternative](docs/baliphy-native-number-formatting-20261003.md).
+The installed numeric formatter failure is now bypassed by a separately
+qualified [V5 native CJSON logger](docs/baliphy-native-number-encoder-correction-20261003.md).
+All 405 programs and 1,620 roles passed static checks; nine native software
+runs across all priors, including small-alpha cases, passed 720 exact native
+numeric roundtrips and eighteen independently decoded saved frames.
+The model, priors, initializer and strict rate-mean assertion remain unchanged.
+All old failed jobs and outputs stay preserved.
 
-A [corrected joint ancestral logger](docs/baliphy-joint-node-logger-20261003.md)
-has passed native software checks across all three priors. Encoding sequences
-and full-node categories in one record gives exact residue/state agreement;
-separate legacy logs can represent different conditional draws. All 405
-future model programs and 1,620 disjoint seed roles are prepared; their
-[full startup validation](docs/baliphy-joint-logger-preflight-20261003.md) is
-complete: all 1,620 roles and 405 quartets passed full readback and
-source/artifact closure, with zero unsuccessful startups.
-[Verified startup completion](metadata/baliphy_joint_logger_preflight_completed_20261003.json).
-Startup used `--test`; the future posterior horizon remains unlaunched.
-At 11:52 UTC, 1,604 historical short-sampler roles had successful unclosed checks. An [independent joint-frame reader](docs/independent-joint-ancestral-frames-20261003.md)
-now passes retained native fixture and full future-role input checks, keeping
-ancestral states, rate categories and residue coordinates paired. Full-grid
-joint native sampling output remains unverified.
-The [full 20-iteration joint-output qualification](docs/baliphy-joint-sampler-qualification-20261003.md)
-was queued behind complete startup, historical sampler, resource-observer
-and corrected-reader closures; it has stopped on the replay failure above. It retains every failed role and requires
-complete native, array, memory-ledger and provenance checks. At 10:07 UTC
-its native role count was zero; the historical sampler had 1,075 successful
-unclosed checks. Longer adequate posterior ensembles remain unlaunched.
-A [read-only joint-stage resource monitor](docs/baliphy-joint-sampler-resource-observation-20261003.md)
-is now active to capture actual native limits, memory/CPU and missed readings
-when the queued stage starts. At 10:26 UTC, 1,028 startup roles and 1,105
-historical short-sampler roles had successful unclosed checks.
+The [V3 historical replay](metadata/independent_short_sampler_replay_v3_completed_20261003.json)
+has closed all 1,620 roles, 4,860 saved alignments and 19,440 candidate frames,
+with 38,314 bound sources/artifacts and two original completion journals.
+All 388,800 original rate cells remain unchanged and unqualified: twelve
+frames fail the strict mean check, and mean-passing frames do not gain rate
+eligibility. Unknown-residue disagreements between separate conditional draws
+remain explicit; historical ancestral categories are unavailable.
+
+The full corrected V5 startup grid is running, with 216 successful unclosed
+checks at 13:28 UTC and zero unsuccessful checkpoints. The V3 full
+20-iteration joint sampler is queued behind complete corrected startup and
+three closed historical prerequisites. Its software gate passed the entire
+1,620-role workflow with explicit mock failures and export-tampering checks.
+It will use sixteen CPUs/200 GiB/no swap and a 192-GiB reservation ledger.
+A new read-only resource observer tracks this new invocation separately.
+No corrected full-grid native sampler roles have started at this checkpoint;
+longer adequate posterior ensembles remain unlaunched.
+[Full correction, evidence, resources and pending gates](docs/baliphy-native-number-encoder-correction-20261003.md).
+
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The
 [observation-aware reader v2](docs/independent-short-sampler-replay-v2-20261003.md)
-has passed full-grid software serialization and is queued for every original
-role. It retains unknown-residue disagreements without combining separate
-draws. Original jobs and sources remain unchanged. Full production replay,
+is preserved as a failed historical stage after the numeric-formatter error.
+The completed V3 replay above retains those unknown-residue disagreements
+without combining separate draws. Original jobs and sources remain unchanged.
+Full corrected joint sampling,
 posterior qualification and all eight biological aims remain open.
 
 

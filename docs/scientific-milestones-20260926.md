@@ -1,5 +1,16 @@
 # Open scientific milestones — updated October 3, 2026
 
+
+October 3, 13:25 UTC: new native CJSON logging software qualification covers all
+405 sources/1,620 roles and includes exact small-alpha rate encoding. Historical
+V3 sequence/coordinate replay and full readback are closed for all original
+1,620 roles, while all historical rate cells remain unqualified. Corrected
+full-grid startup is running; new full short sampling is queued behind its
+complete closure with separate resource observation. These steps support
+ancestral uncertainty accounting and do not complete aim 8, establish adequate
+posteriors, or complete any other biological aim.
+[Evidence and remaining work](baliphy-native-number-encoder-correction-20261003.md).
+
 This tracker preserves the eight aims in the [original objective](objective.txt).
 **None of the eight aims is complete.** Completed computational stages below
 support the aims but do not replace their statistical or biological requirements.

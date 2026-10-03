@@ -1,0 +1,211 @@
+{
+  "status": "verified_original_full_independent_short_sampler_replay_v3_runtime",
+  "checked_utc": "2026-10-03T13:27:59.195303+00:00",
+  "plan_sha256": "efb01d92e2d541fd825be8f7695b80c8f83f8ec0f701daf88385314d76f7837c",
+  "frozen_pins_checked": 1008,
+  "original_handles": [
+    {
+      "launch": "metadata/independent_short_sampler_replay_v3_launch_20261003.json",
+      "pid": 3077865,
+      "created": 1791033224.79,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "c492efdc5d023eb6e65839314100851f948be27d5d9726efd2f683797b262730",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "bcad3cc011bae4e0f5b8f1ba162465b334beeda631dc6d747408bf981ec49343",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791033388163098",
+          "CPU_USAGE_NSEC": "162641264000",
+          "MEMORY_PEAK": "3620864",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_short_sampler_replay_v3_readback_launch_20261003.json",
+      "pid": 3077869,
+      "created": 1791033224.84,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "2cf0ccfa6c4898ffe6d9d7d0ba673d6df303fd4e8f7634e40156153117f3f8bf",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "3af3b745e5b010bd4273907c9bbcc85a06456ca6c9e85afd15f689e5744b0f27",
+      "captured_process_messages": 7,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791033565466004",
+          "CPU_USAGE_NSEC": "159732807000",
+          "MEMORY_PEAK": "3014656",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_short_sampler_replay_v3_closure_launch_20261003.json",
+      "pid": 3077874,
+      "created": 1791033224.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "b68c4abbfca3d4cb646b7200a095c626ee59a2c3ad911a05a89d02fd35b97a48",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "92bed3ad17ba4f8af744b2b0b7ca876949933b8034aa48767266c0bcbb03927c",
+      "captured_process_messages": 13,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791033596840641",
+          "CPU_USAGE_NSEC": "10891148000",
+          "MEMORY_PEAK": "2809856",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_launch_20261003.json",
+      "pid": 2826442,
+      "created": 1791008208.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "43e07f1b5ecdfb75aefbdf0537288164f42c1318bb10f0777617efd9b2a3a81b",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "3406ea20959f362fe09f840f59fd691d443b9abf2bded00444d7787f843c1bf0",
+      "captured_process_messages": 90,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029515642875",
+          "CPU_USAGE_NSEC": "119418592527000",
+          "MEMORY_PEAK": "3522560",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_readback_launch_20261003.json",
+      "pid": 2826446,
+      "created": 1791008208.59,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "2be845248e168914aea3109dc4049800b8f8423cb9908f606801b19441d4febe",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "6dd723689385806be7cd319e6fe033c56601db79bcbabec34896000800521cb4",
+      "captured_process_messages": 711,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029586546661",
+          "CPU_USAGE_NSEC": "56913321000",
+          "MEMORY_PEAK": "2740224",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+      "pid": 2826450,
+      "created": 1791008208.62,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "84f13d5c49b95e5eaf43842bbc6b5f0c29782a19baed655a4fa576adac3dcbe8",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "b8262bafd74e4b2ab4f31898f367816f68bcd0e0bf61fcf3f5b088f4ee10bd4b",
+      "captured_process_messages": 713,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029599778101",
+          "CPU_USAGE_NSEC": "10462073000",
+          "MEMORY_PEAK": "2883584",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "unclosed_replay_checkpoints": 1620,
+  "replay_status_counts": {
+    "all_short_native_sequence_category_coordinates_replayed_v3_rates_unqualified_not_posterior": 1620
+  },
+  "original_sampler_checkpoints": 1620,
+  "original_sampler_status_counts": {
+    "full_short_sampler_output_integrity_checked_not_posterior": 1620
+  },
+  "accounting_closure": {
+    "status": "complete_verified_full_independent_short_sampler_native_replay_v3",
+    "full_chains": 1620,
+    "full_groups": 405,
+    "effective_inputs": 135,
+    "original_configuration_aliases": 324,
+    "checked_chains": 1620,
+    "unresolved_chains": 0,
+    "complete_groups": 405,
+    "unresolved_groups": 0,
+    "intact_chains_in_unresolved_groups": 0,
+    "saved_alignments": 4860,
+    "candidate_frames": 19440,
+    "projected_state_observations": 293964912,
+    "tip_category_state_pairs": 73491228,
+    "rate_property_cells": 388800,
+    "unanchored_candidate_residue_observations": 3453,
+    "node_pairs": 163524,
+    "nonroot_branch_pairs": 161904,
+    "negative_branch_pairs_require_review": 0,
+    "status_counts": {
+      "all_short_native_sequence_category_coordinates_replayed_v3_rates_unqualified_not_posterior": 1620
+    },
+    "ancestral_categories_available": false,
+    "posterior_qualified": false,
+    "unknown_observed_tip_positions": 216,
+    "concrete_observed_tip_positions": 73491012,
+    "tip_log_draw_disagreement_positions": 127,
+    "tip_logs_joint_trajectory_available": false,
+    "rate_mean_pass_frames": 4848,
+    "rate_mean_failed_frames": 12,
+    "unqualified_historical_rate_frames": 4860,
+    "unqualified_historical_rate_cells": 388800,
+    "full_hash_archive": "results/ancestral/full-independent-short-sampler-replay-rates-20261003-v3/completion_archive.json",
+    "full_hash_archive_sha256": "648076ac70b00412ab24231a319dc7b4aea2357f749452eff8dffd40f75a615b",
+    "bound_source_hashes": 38314,
+    "exact_process_journals_checked": 2,
+    "producer_receipt": "results/ancestral/full-independent-short-sampler-replay-rates-20261003-v3/receipt.json",
+    "producer_receipt_sha256": "58707af68ad0aac8eb0d3390c54f10f12fa7c05d3cf7e99758159eb462691e2f",
+    "independent_readback": "results/ancestral/full-independent-short-sampler-replay-rates-20261003-v3/readback.json",
+    "independent_readback_sha256": "2165e9816578bcb3fb8dc88b9e77fa642759d2ae5109ba72458a6c989b744d5d",
+    "completion_plan_sha256": "d770ec0f189a5491e47f2fdfdf70aefde36e8841d4dc5aad910a6dfe9bd99e05",
+    "scientific_eligibility": false,
+    "scope": "All1620originalshortsamplerroles,405quartets,135effectiveinputs,324aliases and every failed/invalid original disposition retained after complete original sampler source/artifact/two-journal closure. Independent manual source/runtime clades, candidate mappings, saved FASTA decoding and tip-residue anchored projections for all0/10/20frames; exact full serialized/NPZ replay. Every available native tip category/state array,4x20rate property matrix dimensions/finite support and empty condition schema checked; all original floating rate values remain unqualified and unchanged, strict mean failures retained explicitly without repair/adoption. Both separate tipdraws must obey concrete source observations; disagreements at unknown inputX are retained with tip/non-gap-offset/bothletters and counted. Full1620roles includeall24ambiguityaffectedroles. Separate logdraws are never treated as a joint category/alignment trajectory. Internal category labels are not logged, are explicitly unavailable and never imputed from tips. No complete ancestral category trajectory, gamma-discretization likelihood proof, convergence, allocation repair, biological root/model/predictor acceptance, new inference/GPU/costs or scientific aim completion. Reader shares independent decoder; complete source/artifact/two original journals required for output accounting closure."
+  },
+  "ancestral_categories_available": false,
+  "posterior_qualified": false,
+  "tip_logs_joint_trajectory_available": false,
+  "gpu": false,
+  "retained_unknown_draw_disagreements": 127,
+  "scope": "Immutable pins, exact original six handles/journals and live caps checked. Checkpoint counts are unclosed progress; compact completion archive hash checked if present. No full artifact/native replay, sampler restart, inferred internal categories or scientific acceptance."
+}

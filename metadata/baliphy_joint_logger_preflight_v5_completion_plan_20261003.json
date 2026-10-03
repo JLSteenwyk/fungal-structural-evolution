@@ -1,0 +1,33 @@
+{
+  "source_plan": "metadata/baliphy_joint_logger_preflight_v5_plan_20261003.json",
+  "producer_receipt": "results/ancestral/full-baliphy-joint-logger-preflight-20261003-v5/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-joint-logger-preflight-20261003-v5/readback.json",
+  "producer_status": "complete_full_joint_logger_startup_dispositions_pending_readback_v5",
+  "reader_status": "passed_full_joint_logger_startup_serialized_readback_v5",
+  "completed_status": "complete_verified_full_joint_logger_startup_v5",
+  "summary_fields": [
+    "full_chains",
+    "full_quartets",
+    "effective_inputs",
+    "original_configuration_aliases",
+    "validated_startups",
+    "unsuccessful_startups",
+    "complete_startup_quartets",
+    "unresolved_startup_quartets",
+    "status_counts",
+    "posterior_sampling_launched"
+  ],
+  "launches": [
+    "metadata/baliphy_joint_logger_preflight_v5_launch_20261003.json",
+    "metadata/baliphy_joint_logger_preflight_readback_v5_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_joint_logger_preflight_v5_plan_20261003.json": "03db46e363bd2c0b679fcd930ef4d585fd1ec56485aea7750bd3a81d43149aa8",
+    "metadata/baliphy_joint_logger_preflight_v5_launch_20261003.json": "cde96d50332836962df6dcbdb387bb1e65e03d9018b7fdabd82bc54ae2315587",
+    "metadata/baliphy_joint_logger_preflight_readback_v5_launch_20261003.json": "2383f4691f70d580b8d7e9e79bf9d47d9c3f9f0178a19a2fafb2a037d825d511",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_joint_logger_preflight_v5_completed_20261003.json",
+  "scope": "All1620futurejointloggerseedroles,405quartets,135inputs,324aliases. Native--test only; source inverse, reference alignment/homology, fixed-tip/free-ancestor representation, degree-aware prior and runtime rooted tree checked. No MCMC, saved joint logger frames, memory repair, mixing, independent likelihood/root/model/predictor acceptance, GPU or charges. Every native failure/invalid role retained; full readback/source/artifact/two-journal closure required. Existing sources/attempts untouched."
+}

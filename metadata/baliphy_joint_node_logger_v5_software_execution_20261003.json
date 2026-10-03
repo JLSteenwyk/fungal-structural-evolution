@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=17179869184",
+    "--cpu=3000",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_joint_node_logger_v5.py",
+    "--output",
+    "data/software_audits/baliphy-joint-node-logger-20261003-v5",
+    "--receipt",
+    "metadata/baliphy_joint_node_logger_software_validation_20261003_v5.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_baliphy_logger_stage_v1.py": "8568ef70237063bf0c47e36f8068f1f637faca7e5aed4e1e1b973fff2aa23784",
+    "metadata/baliphy_joint_node_logger_v5_software_resource_plan_20261003.json": "ccc134683a208821e014f271dab8a05b2378b77108e9e4473c8cd32fc3743f15",
+    "scripts/check_baliphy_joint_node_logger_v5.py": "39fdad9a95503bfa278be3bf53fe701a7aa9e4bfe3f4756c2f46dbc204c8f4b5",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "1be8474d2801480eb6277557496a8855",
+  "wrapper": {
+    "pid": 3072885,
+    "created": 1791032722.73,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_logger_stage_v1.py",
+      "--resources",
+      "metadata/baliphy_joint_node_logger_v5_software_resource_plan_20261003.json",
+      "--execution",
+      "metadata/baliphy_joint_node_logger_v5_software_execution_20261003.json",
+      "--receipt",
+      "metadata/baliphy_joint_node_logger_software_validation_20261003_v5.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_joint_node_logger_v5.py",
+      "--output",
+      "data/software_audits/baliphy-joint-node-logger-20261003-v5",
+      "--receipt",
+      "metadata/baliphy_joint_node_logger_software_validation_20261003_v5.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-03T13:05:23.531645+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T13:06:32.008762+00:00",
+  "child": {
+    "pid": 3072886,
+    "created": 1791032722.83,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=17179869184",
+      "--cpu=3000",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_joint_node_logger_v5.py",
+      "--output",
+      "data/software_audits/baliphy-joint-node-logger-20261003-v5",
+      "--receipt",
+      "metadata/baliphy_joint_node_logger_software_validation_20261003_v5.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 68.47694040997885,
+  "child_cpu_seconds": 68.323475,
+  "child_peak_rss_bytes": 831438848,
+  "receipt": "metadata/baliphy_joint_node_logger_software_validation_20261003_v5.json",
+  "receipt_sha256": "02eb7afd972debfe03427c6fcf2bd549be6edc223751c81edd2183c278ddacba",
+  "artifacts": {
+    "metadata/baliphy_joint_node_logger_v5_software_execution_20261003/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_joint_node_logger_v5_software_execution_20261003/configuration.json": "19106158da923f46d3142c5201fa01db042b340e2187185145f357f0f829fb25",
+    "metadata/baliphy_joint_node_logger_v5_software_execution_20261003/stdout.log": "c4ca64affbf8fcf9c6dfab2c3d08a726304c74287facf198afc26d9c8bd2f522",
+    "metadata/baliphy_joint_node_logger_v5_software_execution_20261003/process.json": "db5ba0417ae4de45be976d89fbdfa6790540717c3a345cf8d489b1830e803ed6"
+  },
+  "scope": "One original new CPU-only BAli-Phy logger software stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. Native software fixtures only, no old-source changes/restart/GPU/charges, sample concatenation or scientific acceptance."
+}

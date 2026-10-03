@@ -1284,3 +1284,22 @@ a biological pilot. Two failed synthetic/mock fixtures remain preserved,
 with the corrected original invocation verified. Each new replay stage has
 two CPUs, 16 GiB RAM and zero swap, and starts no inference/GPU/paid work.
 [Full scope, protocol, resources and evidence](independent-short-sampler-replay-20261003.md).
+
+## October 3: native CJSON properties and preserved historical rate evidence
+
+Use the installed native CJSON encoder for the new logger's property field.
+Require full source-grid reversal, paired retained-prior native output checks,
+small-alpha exact numeric roundtrips, both independent frame readers and
+serialized array checks before preparing the full new seed namespace. Preserve
+all failed versions and never weaken the future rate-normalization assertion.
+
+Treat every historical logged rate cell as unqualified. Retain its exact
+value and strict mean-check outcome; sequence/category/coordinate replay can
+close separately without inventing exponents or renormalizing those rates.
+The full V3 replay retains all 1,620 roles and every frame. New corrected native
+sampling is a separate full-grid version gated on complete corrected startup,
+historical sampler/resource accounting and this historical sequence replay.
+Use a new original resource observer without resetting the failed target's
+counters. Short computational checks do not establish adequate posteriors or
+repair the two old allocation failures.
+[Correction and full evidence](baliphy-native-number-encoder-correction-20261003.md).

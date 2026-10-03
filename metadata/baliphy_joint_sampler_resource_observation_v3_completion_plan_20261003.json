@@ -1,0 +1,36 @@
+{
+  "source_plan": "metadata/baliphy_joint_sampler_resource_observation_v3_plan_20261003.json",
+  "producer_receipt": "results/ancestral/full-baliphy-joint-sampler-resource-observation-20261003-v3/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-joint-sampler-resource-observation-20261003-v3/readback.json",
+  "producer_status": "complete_full_joint_sampler_resource_observation_pending_readback_v3",
+  "reader_status": "passed_full_joint_sampler_resource_observation_serialized_readback_v3",
+  "completed_status": "complete_verified_full_joint_sampler_resource_observation_v3",
+  "summary_fields": [
+    "expected_roles",
+    "roles_with_native_attempt",
+    "roles_with_live_observation",
+    "roles_without_live_observation",
+    "roles_without_native_attempt",
+    "native_outcome_status_counts",
+    "native_observations",
+    "unavailable_observations",
+    "sampler_controller_terminal_status",
+    "maximum_observed_cgroup_memory_bytes",
+    "maximum_observed_cgroup_reported_peak_bytes",
+    "maximum_observed_poll_gap_seconds",
+    "posterior_qualified"
+  ],
+  "launches": [
+    "metadata/baliphy_joint_sampler_resource_observation_v3_launch_20261003.json",
+    "metadata/baliphy_joint_sampler_resource_observation_v3_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_joint_sampler_resource_observation_v3_plan_20261003.json": "b7ea850ac472f0530923d1e875fd5e1655c9205bfa9b7f3a4af9fc8bd380246a",
+    "metadata/baliphy_joint_sampler_resource_observation_v3_launch_20261003.json": "856b4fe53ae1edb3ae99e764095c6318c3668a477819e0a87c7ac9df940f1c67",
+    "metadata/baliphy_joint_sampler_resource_observation_v3_readback_launch_20261003.json": "8f9a13526213eb5c714547a0406d3bfe06ccba980029beacd07633192259c343",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_joint_sampler_resource_observation_v3_completed_20261003.json",
+  "scope": "Read-only full1620jointrole resource observation for the exact original joint sampler controller and native attempts. PID/create/command/configuration/cgroup/limits bound; empty/transitioning argv, wrapper phases, process races and missed fast attempts remain unavailable observations, not accepted native readings or terminal proofs. Every role and failed/unstarted attempt retained. Linux-reported virtual/resident/CPU and cgroup memory/pressure snapshots are approximate and can miss later native peaks; no precise final per-attempt peak or long-chain memory guarantee. Observer never writes GPU/native cgroup limits or restarts/signals inference. Full streaming serialized replay/artifact/source/two original observer completion journals required for observational closure, not sampler/model/tree/root/posterior or biological acceptance. All eight aims incomplete."
+}

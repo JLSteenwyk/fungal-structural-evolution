@@ -1,0 +1,76 @@
+{
+  "status": "verified_original_cjson_workflow_software_transports",
+  "checked_utc": "2026-10-03T13:28:50.870662+00:00",
+  "stages": [
+    {
+      "stage": "logger",
+      "actual_tool_session_id": 64924,
+      "actual_tool_terminal_exit_code": 0,
+      "invocation_id": "1be8474d2801480eb6277557496a8855",
+      "execution": "metadata/baliphy_joint_node_logger_v5_software_execution_20261003.json",
+      "journal": "data/software_audits/baliphy-joint-node-logger-20261003-v5/transport.journal.jsonl",
+      "scope": "Actual original wait/exec exit, wrapper child identity/command/exit and invocation-scoped manager journal. Collected unit default state is not terminal evidence."
+    },
+    {
+      "stage": "startup",
+      "actual_tool_session_id": 95883,
+      "actual_tool_terminal_exit_code": 0,
+      "invocation_id": "589fb00804ad42ebb78fbc37949b51f1",
+      "execution": "metadata/baliphy_joint_logger_preflight_v5_software_execution_20261003.json",
+      "journal": "data/software_audits/baliphy-joint-logger-preflight-20261003-v5/transport.journal.jsonl",
+      "scope": "Actual original wait/exec exit, wrapper child identity/command/exit and invocation-scoped manager journal. Collected unit default state is not terminal evidence."
+    },
+    {
+      "stage": "historical_failed_existing_directory",
+      "actual_tool_session_id": null,
+      "actual_tool_terminal_exit_code": 1,
+      "invocation_id": "0fe8b9ce9ca04dc1ac863fded336f6bd",
+      "execution": "metadata/independent_short_sampler_replay_v3_software_execution_20261003.json",
+      "journal": "metadata/independent_short_sampler_replay_v3_software_execution_20261003/transport.journal.jsonl",
+      "scope": "Actual original wait/exec exit, wrapper child identity/command/exit and invocation-scoped manager journal. Collected unit default state is not terminal evidence."
+    },
+    {
+      "stage": "historical",
+      "actual_tool_session_id": 12327,
+      "actual_tool_terminal_exit_code": 0,
+      "invocation_id": "187ebdedf3bc46879849c6c18d93323a",
+      "execution": "metadata/independent_short_sampler_replay_v3_rates_software_execution_20261003.json",
+      "journal": "data/software_audits/independent-short-sampler-replay-rates-20261003-v3/transport.journal.jsonl",
+      "scope": "Actual original wait/exec exit, wrapper child identity/command/exit and invocation-scoped manager journal. Collected unit default state is not terminal evidence."
+    },
+    {
+      "stage": "joint",
+      "actual_tool_session_id": 33249,
+      "actual_tool_terminal_exit_code": 0,
+      "invocation_id": "87e6b4e42b18496f88dff3559eb0926a",
+      "execution": "metadata/baliphy_joint_sampler_v3_software_execution_20261003.json",
+      "journal": "data/software_audits/baliphy-joint-sampler-qualification-20261003-v3/transport.journal.jsonl",
+      "scope": "Actual original wait/exec exit, wrapper child identity/command/exit and invocation-scoped manager journal. Collected unit default state is not terminal evidence."
+    },
+    {
+      "stage": "observer",
+      "actual_tool_session_id": 77300,
+      "actual_tool_terminal_exit_code": 0,
+      "invocation_id": "ce4ee229e19f485fade8faa4fc547e13",
+      "execution": "metadata/baliphy_joint_sampler_resource_v3_software_execution_20261003.json",
+      "journal": "data/software_audits/baliphy-joint-sampler-resource-observation-20261003-v3/transport.journal.jsonl",
+      "scope": "Actual original wait/exec exit, wrapper child identity/command/exit and invocation-scoped manager journal. Collected unit default state is not terminal evidence."
+    }
+  ],
+  "source_hashes": {
+    "metadata/baliphy_joint_node_logger_v5_software_execution_20261003.json": "8e929dcbf46997d841142034b8eb9ba998a852c5d0e88bc70a79cfa03a3b6314",
+    "data/software_audits/baliphy-joint-node-logger-20261003-v5/transport.journal.jsonl": "548901b681987fbb7e37a5f75cce48d7a017b3e47d4f42428a59e98acc6226d3",
+    "metadata/baliphy_joint_logger_preflight_v5_software_execution_20261003.json": "8a22e10d9412767ea037801c7aac301faf264803292d3eb289d3e6b1207f0341",
+    "data/software_audits/baliphy-joint-logger-preflight-20261003-v5/transport.journal.jsonl": "329ec0cb7ea7156de596d3e4813e4774c5946c4cd9659512481639f550a14a4e",
+    "metadata/independent_short_sampler_replay_v3_software_execution_20261003.json": "eb9bbea6d4ee5bf59d52ed790c88c54ecfc094afe849a5c8074a74881d2f2e74",
+    "metadata/independent_short_sampler_replay_v3_software_execution_20261003/transport.journal.jsonl": "cb528311041b981ee5c333e1896c7245c0910358a372e1be24ea0ac065fe6597",
+    "metadata/independent_short_sampler_replay_v3_rates_software_execution_20261003.json": "f356928366a10100e0afcb938aaaf9c3a0f13dd96ce7ade98747a0160d5290f9",
+    "data/software_audits/independent-short-sampler-replay-rates-20261003-v3/transport.journal.jsonl": "e6d0dcefb78dccb60c5ee4bd7cb0b98e4d435c09a3f5c1084e5d0471f81b36d1",
+    "metadata/baliphy_joint_sampler_v3_software_execution_20261003.json": "14b9c3ec97171bee8b98baea097d432c9c0886309ff73f43f88f1e5308f566fc",
+    "data/software_audits/baliphy-joint-sampler-qualification-20261003-v3/transport.journal.jsonl": "8cf60e2ad9d7630cec40db8a7edd454fb40f9f0597073b36f997fb8d5e37ebc5",
+    "metadata/baliphy_joint_sampler_resource_v3_software_execution_20261003.json": "ce9e77d4cdb3ef2d60b2b6dfeb99a138321c2cdd34cb98a86f4bb1bcef480233",
+    "data/software_audits/baliphy-joint-sampler-resource-observation-20261003-v3/transport.journal.jsonl": "695e653ca88a3f3ffa28ea232a13e780047a3d6cc67a5993e7fadf7805b9bb00"
+  },
+  "journal_collection_note": "Retained originals are untouched; fresh transport snapshots use separate files because journalctl JSON key order need not reproduce prior byte order.",
+  "scope": "Five completed capped software invocations and one preserved preexisting-directory collision before native execution. Historical/shared native procfs probe evidence is distinguished from zero current joint-native readings. No original job restart or installed/source mutation."
+}

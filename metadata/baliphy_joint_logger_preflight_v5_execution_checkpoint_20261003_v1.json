@@ -1,0 +1,208 @@
+{
+  "status": "verified_original_full_joint_logger_v5_startup_runtime",
+  "checked_utc": "2026-10-03T13:14:48.553516+00:00",
+  "plan_sha256": "03db46e363bd2c0b679fcd930ef4d585fd1ec56485aea7750bd3a81d43149aa8",
+  "frozen_pins_checked": 1433,
+  "original_handles": [
+    {
+      "unit": "fungal-baliphy-joint-logger-preflight-20261003-v5.service",
+      "pid": 3077342,
+      "created": 1791033190.72,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_v5_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_joint_logger_preflight_v5_wait_plan_20261003.json",
+      "plan_sha256": "d555c5026641726d39528e8a2fba6f49aa47e50769c69fe9b4b2a2768d62fe46",
+      "checked_utc": "2026-10-03T13:13:11.461425+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-joint-logger-preflight-20261003-v5.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_v5_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_joint_logger_preflight_v5_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.060000000000000005,
+      "children": [
+        {
+          "pid": 3077350,
+          "created": 1791033190.8,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_baliphy_joint_logger_preflight_v5.py",
+            "--plan",
+            "metadata/baliphy_joint_logger_preflight_v5_plan_20261003.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 5.8100000000000005
+        },
+        {
+          "pid": 3078351,
+          "created": 1791033285.18,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "766088224",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-joint-node-logger-20261003-v5/models/00dd3ee668f2513cae7e61de1e8c360e66cf58bb6dd3a66751d8e1cd82dcca3b-centered.hs",
+            "--test",
+            "--log-format",
+            "json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 2.56
+        },
+        {
+          "pid": 3078420,
+          "created": 1791033285.66,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "394792688",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-joint-node-logger-20261003-v5/models/00dd3ee668f2513cae7e61de1e8c360e66cf58bb6dd3a66751d8e1cd82dcca3b-centered.hs",
+            "--test",
+            "--log-format",
+            "json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 2.08
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "cde96d50332836962df6dcbdb387bb1e65e03d9018b7fdabd82bc54ae2315587",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-joint-logger-preflight-readback-20261003-v5.service",
+      "pid": 3077346,
+      "created": 1791033190.77,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_readback_v5_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_joint_logger_preflight_readback_v5_wait_plan_20261003.json",
+      "plan_sha256": "f99490184ce0c340dc15b308f063828288ed6eefa1276a6b0ad2250ddc0c92e9",
+      "checked_utc": "2026-10-03T13:13:11.510867+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-joint-logger-preflight-readback-20261003-v5.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_readback_v5_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_joint_logger_preflight_readback_v5_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "2383f4691f70d580b8d7e9e79bf9d47d9c3f9f0178a19a2fafb2a037d825d511",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-joint-logger-preflight-closure-20261003-v5.service",
+      "pid": 3077353,
+      "created": 1791033190.82,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_closure_v5_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_joint_logger_preflight_closure_v5_wait_plan_20261003.json",
+      "plan_sha256": "03e08ba4bad5658063f3497774b2dda8fd791f0990d4a8c3703e3f5550e81634",
+      "checked_utc": "2026-10-03T13:13:11.543951+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-joint-logger-preflight-closure-20261003-v5.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_closure_v5_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_joint_logger_preflight_closure_v5_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "c3a33e6f6d17f9f4751592224fabd4207b265035a79cce5919e3d66fdbbeb9fd",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      }
+    }
+  ],
+  "unclosed_replay_checkpoints": 18,
+  "replay_status_counts": {
+    "reference_startup_homology_density_and_representation_checked": 18
+  },
+  "expected_startup_roles": 1620,
+  "posterior_sampling_launched": false,
+  "accounting_closure": null,
+  "ancestral_categories_available": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "scope": "Immutable pins, exact original three handles/journals and live caps checked. Checkpoint counts are unclosed progress; compact completion archive hash checked if present. No full artifact/native replay, sampler restart, inferred internal categories or scientific acceptance."
+}

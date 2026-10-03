@@ -1,5 +1,42 @@
 # Progress and evidence
 
+## October 3, 13:25 UTC: corrected encoder qualified; full historical replay closed
+
+The V5 logger bypasses the installed exponent formatter for numeric properties.
+All 405 source programs and 1,620 roles are retained, with exact reversible
+model-source edits. Nine bounded native software runs across all priors include
+small-alpha cases; 720 exact native rate roundtrips, eighteen independently
+decoded joint frames, full candidate-array readback and 108 malformed cases
+passed. Model/priors/initializer and future normalization checks are unchanged.
+All 405 corrected models and 1,620 new seed roles are prepared.
+
+The new historical V3 replay has fully closed all 1,620 original roles, 4,860
+alignments and 19,440 candidate frames, binding 38,314 sources/artifacts and
+two original producer/readback journals. Twelve rate means fail; all 388,800
+historical rate cells remain unqualified and unchanged, including mean passes.
+All 216 unknown-observation positions and 127 separate-log draw differences
+are retained. No original rates were repaired or adopted. An initial new
+software call collided with a preexisting directory before native execution;
+its actual failed command is retained, and a separate fresh namespace passed.
+
+Corrected full-grid startup remains live: 148 successful unclosed checks at
+13:23 UTC, zero unsuccessful. Full V3 20-iteration sampling is queued behind
+complete corrected startup plus the three closed historical prerequisites.
+Its full workflow software gate passed, retaining artificial failures and
+rejecting missing exports and altered historical-rate accounting. A separate
+observer for the new original controller is qualified without claiming current
+native readings; the immutable shared procfs gate's actual earlier native
+probe is reused by hash. The old failed sampler/observer remain preserved.
+GPU prediction remains paused; no paid infrastructure or longer posterior
+was launched. All eight biological aims remain incomplete.
+At 13:28 UTC, 216 corrected startup checkpoints pass with zero unsuccessful.
+All original new sampler/observer handles and cgroup caps were verified again;
+the joint sampler still has zero native roles. The new observer is live under
+one CPU/2 GiB/no swap, with full serialized readback/closure queued separately.
+The five original software waits exited zero; the preexisting-directory
+collision exited one before native execution and remains preserved.
+[Full method, evidence and resources](baliphy-native-number-encoder-correction-20261003.md).
+
 ## October 3, 12:58 UTC: fresh check distinguishes two logging errors
 
 All 507 corrected-logger fixture bindings and nine saved frames passed again:

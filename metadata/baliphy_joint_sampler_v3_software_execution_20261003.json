@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=17179869184",
+    "--cpu=1200",
+    "--fsize=134217728",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_joint_sampler_qualification_v3.py",
+    "--output",
+    "data/software_audits/baliphy-joint-sampler-qualification-20261003-v3",
+    "--receipt",
+    "metadata/baliphy_joint_sampler_software_validation_20261003_v3.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_baliphy_logger_stage_v1.py": "8568ef70237063bf0c47e36f8068f1f637faca7e5aed4e1e1b973fff2aa23784",
+    "metadata/baliphy_joint_sampler_v3_software_resource_plan_20261003.json": "e60f22e8d3c641542dca6825bb95ad2eb7c34be03efcc610d3e51c5022162081",
+    "scripts/check_baliphy_joint_sampler_qualification_v3.py": "baeb8047ae6f2ce1163ef054065e12e336c7a3bbc1b4cd60227c4a90fdd7a4b4",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "87e6b4e42b18496f88dff3559eb0926a",
+  "wrapper": {
+    "pid": 3079839,
+    "created": 1791033432.23,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_logger_stage_v1.py",
+      "--resources",
+      "metadata/baliphy_joint_sampler_v3_software_resource_plan_20261003.json",
+      "--execution",
+      "metadata/baliphy_joint_sampler_v3_software_execution_20261003.json",
+      "--receipt",
+      "metadata/baliphy_joint_sampler_software_validation_20261003_v3.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_joint_sampler_qualification_v3.py",
+      "--output",
+      "data/software_audits/baliphy-joint-sampler-qualification-20261003-v3",
+      "--receipt",
+      "metadata/baliphy_joint_sampler_software_validation_20261003_v3.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1500,
+  "started_utc": "2026-10-03T13:17:13.021953+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T13:18:32.348414+00:00",
+  "child": {
+    "pid": 3079840,
+    "created": 1791033432.32,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=17179869184",
+      "--cpu=1200",
+      "--fsize=134217728",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_joint_sampler_qualification_v3.py",
+      "--output",
+      "data/software_audits/baliphy-joint-sampler-qualification-20261003-v3",
+      "--receipt",
+      "metadata/baliphy_joint_sampler_software_validation_20261003_v3.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 79.32626422401518,
+  "child_cpu_seconds": 89.75234900000001,
+  "child_peak_rss_bytes": 311742464,
+  "receipt": "metadata/baliphy_joint_sampler_software_validation_20261003_v3.json",
+  "receipt_sha256": "6a441bf06f5ee16cd175a107c95ad57d5b1061917353cd76e4d7e5f3b1a5e4b2",
+  "artifacts": {
+    "metadata/baliphy_joint_sampler_v3_software_execution_20261003/stderr.log": "070f3c7a0e793f98509edef13c038b718e3cdd9cdd177b5d8f5d472762b88b24",
+    "metadata/baliphy_joint_sampler_v3_software_execution_20261003/configuration.json": "8580e54e90fc4a3189a165b2ec97aa8bcaf66f5426858da97db696ade9cdeac9",
+    "metadata/baliphy_joint_sampler_v3_software_execution_20261003/stdout.log": "2e274a7e2a22b5ed37a2d282a1e71d369430eeca92bd7d7ce6652cc28d7ff7b1",
+    "metadata/baliphy_joint_sampler_v3_software_execution_20261003/process.json": "2dc3b2287b059ba7ad343ce6ae51dc821e91005d6082a8f95716ec99f6675168"
+  },
+  "scope": "One original new CPU-only BAli-Phy logger software stage with actual cgroup caps, prlimit command, PID/create time, exit status and retained logs. Child peak RSS is not cgroup peak. Native software fixtures only, no old-source changes/restart/GPU/charges, sample concatenation or scientific acceptance."
+}
