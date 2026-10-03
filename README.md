@@ -277,10 +277,12 @@ All 324 BAli-Phy short sampling runs passed saved-alignment and node-identity
 checks, covering 3,888 candidate-node samples. Input-equivalence checks identify
 135 distinct effective inputs; all 405 initializations across three explicit
 priors also passed. The full **1,620 independent-chain grid** (135 inputs ×
-three priors × four seeds) is now running with 16 CPU workers and an initial
-1,000-iteration horizon. Provenance-checked scalar diagnostics are queued for
-all 405 quartets at both 25% and 50% burn-in cutoffs. These are computational
-checkpoints: posterior convergence, alignment/ancestral-state mixing and
+three priors × four seeds) completed its initial 1,000-iteration horizon.
+Separately verified same-seed whole-attempt recovery yields 1,618 intact chains
+and 403 complete quartets, with two failed quartets retained. Full scalar,
+length and categorical accounting covers all 405 groups at both original
+burn-in cutoffs; the separate scalar numerical replay also completed.
+These are computational checkpoints: posterior convergence, alignment/ancestral-state mixing and
 root/model sensitivity remain unresolved. Final ancestral sequences and
 structures have not been qualified. See the
 [BAli-Phy assessment](docs/baliphy-method-assessment-20260927.md) for resource
