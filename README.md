@@ -31,6 +31,10 @@ and corrected-reader closures. It retains every failed role and requires
 complete native, array, memory-ledger and provenance checks. At 10:07 UTC
 its native role count was zero; the historical sampler had 1,075 successful
 unclosed checks. Longer adequate posterior ensembles remain unlaunched.
+A [read-only joint-stage resource monitor](docs/baliphy-joint-sampler-resource-observation-20261003.md)
+is now active to capture actual native limits, memory/CPU and missed readings
+when the queued stage starts. At 10:26 UTC, 1,028 startup roles and 1,105
+historical short-sampler roles had successful unclosed checks.
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The
 [observation-aware reader v2](docs/independent-short-sampler-replay-v2-20261003.md)

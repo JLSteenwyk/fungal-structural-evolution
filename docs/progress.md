@@ -1,5 +1,36 @@
 # Progress and evidence
 
+## October 3: full joint-grid resource observation started
+
+Started a separate read-only observer for the exact original queued
+joint-sampler controller and every one of its 1,620 roles. Complete joint
+configuration checks, shared procfs decoder qualification, four passive
+current historical native probes and full producer/reader software
+serialization passed. Artificial capture/attempt/journal fixtures retained
+two failures and two missing live observations; eight serialized alterations
+were rejected. No new native inference was started by these tests.
+
+Direct software completion and 52 bindings were checked: 55.01 self CPU
+seconds and 141,770,752 bytes self peak RSS, distinct from group/native
+memory. The monitor plan binds 1,437 sources. At 10:26 UTC original
+controllers 2978138/2978142/2978147 and joint controller 2967091 were
+verified; the monitor had begun queued-controller snapshots with zero native
+attempts/observations. Observer limits are one CPU/2 GiB/no swap, with two
+CPU/4-GiB readback and closure. It records actual limits, memory/CPU,
+missing readings and polling gaps without resets or configuration writes.
+Full native/event/readback/source/artifact/two-journal closure remains pending.
+[Protocol, evidence, resources and limitations](baliphy-joint-sampler-resource-observation-20261003.md).
+
+At 10:26 UTC, 1,028 startup and 1,105 historical short-sampler checks were
+successful and unclosed; the corrected reader remained queued. The separate
+covariance qualification reached 2,833 of 4,340 cohorts in its exact original
+native-child journal at 10:28 UTC. All fourteen original broader queue
+handles were verified: six live and eight actual terminal successes; timing
+and production fitting remain gated. These are runtime counts, not accepted
+effects or complete scientific output. All eight aims remain incomplete,
+longer posterior ensembles remain unlaunched and GPU prediction stays paused.
+[Covariance progress evidence](../metadata/full_covariance_native_progress_20261003_1028.json).
+
 ## October 3: full joint ancestral sampling qualification queued
 
 A separate 1,620-role/405-quartet joint-output qualification is queued

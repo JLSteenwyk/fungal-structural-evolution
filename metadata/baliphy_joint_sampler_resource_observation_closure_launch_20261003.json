@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-baliphy-joint-sampler-resource-observation-closure-20261003-v1.service",
+  "pid": 2978147,
+  "created": 1791023152.0,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_joint_sampler_resource_observation_closure_wait_plan_20261003.json"
+  ],
+  "plan": "metadata/baliphy_joint_sampler_resource_observation_closure_wait_plan_20261003.json",
+  "plan_sha256": "99161b445aba7a7ae3331dc7c0978b1d00b68c2149f18a83f6ef93c914da6034",
+  "checked_utc": "2026-10-03T10:25:52.721059+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "4294967296",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-baliphy-joint-sampler-resource-observation-closure-20261003-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=4G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_joint_sampler_resource_observation_closure_wait_plan_20261003.json"
+  ]
+}

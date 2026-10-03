@@ -1,0 +1,21 @@
+{
+  "status": "verified_completed_direct_joint_sampler_resource_software_check",
+  "checked_utc": "2026-10-03T10:25:52.160757+00:00",
+  "receipt": "metadata/baliphy_joint_sampler_resource_observation_software_validation_20261003_v1.json",
+  "receipt_sha256": "57c2a10c1be91a6b2de60591a41f90d8b3440a0414f05101a099c6dda51c336e",
+  "verified_source_bindings": 52,
+  "observed_exec_session_id": 59398,
+  "observed_exec_exit_code": 0,
+  "stdout_stderr_log": "data/software_audits/joint-sampler-resource-observer-software-20261003-v1.log",
+  "stdout_stderr_log_sha256": "4345d94e63efbb40498772e92ab26edfd58919b3ef05992b0a270d799a5aefdc",
+  "configured_address_space_bytes": 6442450944,
+  "configured_cpu_seconds": 150,
+  "configured_wall_timeout_seconds": 180,
+  "configured_file_size_bytes": 268435456,
+  "blas_threads": 1,
+  "self_cpu_seconds": 55.011691,
+  "self_peak_rss_bytes": 141770752,
+  "charged_group_memory_peak": null,
+  "new_native_inference_runs": 0,
+  "scope": "Direct exec completion and all receipt bindings/log hash verified. Current historical native workers passively checked; full joint-stage native capture and completion journals mocked in software tests. Self memory, not a group/native final peak or long-chain guarantee."
+}

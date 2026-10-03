@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    "metadata/baliphy_joint_sampler_resource_observation_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_joint_sampler_resource_observation.py",
+    "--plan",
+    "metadata/baliphy_joint_sampler_resource_observation_plan_20261003.json",
+    "--reader"
+  ],
+  "pins": {
+    "metadata/baliphy_joint_sampler_resource_observation_plan_20261003.json": "dd413e2e07d664ee73853fd8e2ca072157cdb578e7f26c2e6c844518cff74d39",
+    "metadata/baliphy_joint_sampler_resource_observation_launch_20261003.json": "dd9d99b58a2653b2229f1b47118bb5991d2eca6e47256a244a577ce4fd48a9ac",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

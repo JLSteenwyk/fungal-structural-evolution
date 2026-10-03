@@ -15,6 +15,11 @@ native fixture checks pass, including refusal to recreate missing exports.
 The queued stage has no native role checkpoints at its first observation;
 full new resource observation and adequate longer posterior ensembles remain
 required.
+The [separate joint-stage resource observer](baliphy-joint-sampler-resource-observation-20261003.md)
+is now active while the native controller waits. Software and passive
+historical-worker checks passed; new native resource measurements and full
+observational closure remain pending and cannot establish longer-chain
+resources or posterior adequacy by themselves.
 
 The [joint ancestral logger software checks](baliphy-joint-node-logger-20261003.md)
 now pass across all three priors, and all 405 future programs/1,620 disjoint
