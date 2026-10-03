@@ -1,5 +1,26 @@
 # Decisions and unresolved questions
 
+## October 3: correct diagnosed stack limits while preserving the full design
+
+After complete original sampler/resource closure, run fresh 20-iteration
+follow-ups for all 24 SIGSEGV roles from both diagnosed `OG0000972` inputs,
+all three priors and four chain roles. Same-seed causal diagnostics identify
+8-MiB stack exhaustion and successful initial logging at 64 MiB. Set 64 MiB
+only in new attempts' native resource commands; preserve models, priors,
+reference initialization, inputs/trees and all other native caps. No installed
+binary or global stack/GPU/SLURM default changes.
+
+Use disjoint fresh seeds. Retain every original success/failure by hash in
+complete 1,620-role accounting, alongside separate new outcomes. Never
+continue, concatenate, overwrite, automatically retry or replace originals.
+New failures stay unresolved. Require all three joint frames, native/array/
+resource/reservation readback and both new original completion journals for
+computational closure. Initial logging is not full sampling success, and
+20 iterations cannot establish adequate posteriors or longer resources.
+Keep the two historical allocation failures separately unresolved. All
+405 quartets/135 inputs/324 aliases and broad fungal sampling remain included.
+[Evidence, resources and workflow](baliphy-native-stack-correction-20261003.md).
+
 ## October 3: preserve every structural-marker branch projection
 
 Use both complete qualified predictor-specific grids on all 70 closed candidate

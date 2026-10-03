@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/baliphy_joint_sampler_qualification_v3_closure_launch_20261003.json",
+    "metadata/baliphy_joint_sampler_resource_observation_v3_closure_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_stack_followup.py",
+    "--plan",
+    "metadata/baliphy_stack_followup_plan_20261003_v1.json"
+  ],
+  "pins": {
+    "metadata/baliphy_stack_followup_plan_20261003_v1.json": "e983ecad073e8c9c706ae89f7edbf7a0594ce5ce8ec45e54ae6fda60016907ee",
+    "metadata/baliphy_joint_sampler_qualification_v3_closure_launch_20261003.json": "ce2fb1530efe9fc0a0ac594615a6e6dbeea0a3e91a940304fb20529f641d6c6b",
+    "metadata/baliphy_joint_sampler_resource_observation_v3_closure_launch_20261003.json": "07c0fe8fa63d36f9ba203d0ac6ef4b9ad0f95c5767d5929a1620f9e8fafad6fb",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

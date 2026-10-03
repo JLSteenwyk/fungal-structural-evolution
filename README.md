@@ -66,7 +66,7 @@ remain explicit; historical ancestral categories are unavailable.
 
 The full corrected V5 startup grid has closed all 1,620 checks with zero
 unsuccessful roles; its 14,402 source/artifact bindings were rehashed at the
-October 3, 17:03 UTC error recheck. The V3 full 20-iteration joint sampler is
+October 3, 17:03 UTC error recheck. The V3 full 20-iteration joint sampler was
 running after all four prerequisite closures. Its software gate passed the entire
 1,620-role workflow with explicit mock failures and export-tampering checks.
 It uses sixteen CPUs/200 GiB/no swap and a 192-GiB reservation ledger.
@@ -81,6 +81,18 @@ At 17:27 UTC the sampler had 976 successful unclosed short-run checkpoints;
 these computational checks do not establish adequate ancestral posteriors.
 [Original sampler runtime](metadata/baliphy_joint_sampler_qualification_v3_execution_checkpoint_20261003_1728.json).
 [Full correction, evidence, resources and pending gates](docs/baliphy-native-number-encoder-correction-20261003.md).
+
+The complete short sampler has now closed all 1,620 outcomes: **1,596 pass
+output checks and 24 SIGSEGV failures remain**, with 84,071 bound hashes and
+both original journals. All failures belong to two 622-protein `OG0000972`
+inputs. Controlled diagnostics reproduced 8-MiB native stack exhaustion on
+both; a scoped 64-MiB limit allowed initial logging to finish. The
+[fresh follow-up](docs/baliphy-native-stack-correction-20261003.md) now runs
+all 24 failed roles with new seeds, preserved models/priors and full
+1,620-role provenance. Four live workers had verified stack limits at 18:28
+UTC; full sampling/readback/closure remains pending. Originals and global
+defaults stay unchanged. These short checks do not qualify ancestral
+posteriors or repair the two older allocation failures.
 
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The

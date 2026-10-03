@@ -1,0 +1,140 @@
+{
+  "checked_utc": "2026-10-03T18:37:48.128215+00:00",
+  "status": "verified_original_joint_sampler_resource_observer_runtime_v3",
+  "plan_sha256": "b7ea850ac472f0530923d1e875fd5e1655c9205bfa9b7f3a4af9fc8bd380246a",
+  "frozen_pins_checked": 1440,
+  "original_handles": [
+    {
+      "launch": "metadata/baliphy_joint_sampler_resource_observation_v3_launch_20261003.json",
+      "pid": 3085745,
+      "created": 1791034015.26,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_sampler_resource_observation_v3_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "856b4fe53ae1edb3ae99e764095c6318c3668a477819e0a87c7ac9df940f1c67",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "a53900ccd17d9d2d82acf23398fb9be96cdc9bc2e49e6c7b62d5bb0959635ee2",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791050930279669",
+          "CPU_USAGE_NSEC": "502675486000",
+          "MEMORY_PEAK": "3526656",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_sampler_resource_observation_v3_readback_launch_20261003.json",
+      "pid": 3085749,
+      "created": 1791034015.31,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_sampler_resource_observation_v3_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "8f9a13526213eb5c714547a0406d3bfe06ccba980029beacd07633192259c343",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "c4f429de8f7129451cbc5a6783bd85d610fd6f336085234972bf05e45a57a3da",
+      "captured_process_messages": 565,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791050959037549",
+          "CPU_USAGE_NSEC": "7063367000",
+          "MEMORY_PEAK": "3268608",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_sampler_resource_observation_v3_closure_launch_20261003.json",
+      "pid": 3085754,
+      "created": 1791034015.35,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_sampler_resource_observation_v3_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "07c0fe8fa63d36f9ba203d0ac6ef4b9ad0f95c5767d5929a1620f9e8fafad6fb",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "7eaaf29fa66b68b41a5b41b2daf0b5d6c0001b78e494297704e87c28762b5172",
+      "captured_process_messages": 566,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791050985251203",
+          "CPU_USAGE_NSEC": "3362519000",
+          "MEMORY_PEAK": "2760704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_sampler_qualification_v3_launch_20261003.json",
+      "pid": 3082603,
+      "created": 1791033698.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_sampler_qualification_v3_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "9a2ca689a9ec759457eea57ab38c34b1b7f742f9a95d6a576bc47a20584ea9f3",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "d751df02d2be0067c1e4a5628426ff18385c30a7067915f1c7f1fcc393367ce6",
+      "captured_process_messages": 193,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791050923194904",
+          "CPU_USAGE_NSEC": "94211628068000",
+          "MEMORY_PEAK": "3555328",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "journal_bytes": 158905381,
+  "latest_complete_snapshot": {
+    "sequence": 16395,
+    "checked_utc": "2026-10-03T18:08:42.514431+00:00",
+    "sampler_controller_pid": 3082603,
+    "sampler_controller_created": 1791033698.04,
+    "elapsed_since_previous_snapshot_seconds": 1.0776463210349903,
+    "cgroup": {
+      "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-joint-sampler-qualification-v3-20261003-v1.service",
+      "limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "memory_bytes": {
+        "memory.current": 6351093760,
+        "memory.peak": 129469779968,
+        "memory.swap.current": 0
+      },
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "scope": "Cgroup counters include descendants and kernel/cache charges; not the sum of native worker RSS. No counter resets or configuration writes."
+    },
+    "new_attempts": [],
+    "native_observations": []
+  },
+  "posterior_qualified": false,
+  "new_native_jobs": 0,
+  "gpu": false,
+  "scope": "Exact original handles, live caps and latest complete observation only; no full event/native replay, source closure or precision/final-peak claim."
+}

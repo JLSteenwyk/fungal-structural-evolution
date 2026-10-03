@@ -1,5 +1,42 @@
 # Progress and evidence
 
+## October 3, 18:28 UTC: short sampler closed; scoped stack follow-up running
+
+All 1,620 original joint short-sampler roles have independent native-output
+readback and source/artifact/two-journal closure: 1,596 successful checks,
+24 SIGSEGV failures retained, 399 complete and six unresolved quartets.
+The 84,071-hash closure covers 4,788 joint frames and 54,527,895 ancestral
+residue/category pairs. The original resource observer also closed all
+attempt identities, binding 7,933 hashes and both original journals. The
+complete resource journal passed unchanged-limit, no-swap and no-observed
+OOM/limit-event checks. Samples are not exact final native peaks or longer
+resource guarantees.
+
+Both failed 622-protein `OG0000972` inputs have representative causal debugger
+diagnostics. An 8-MiB stack reproduced SIGSEGV below its mapped boundary;
+changing only the limit to 64 MiB allowed initial logging to exit normally.
+Native nodes, strict rates, observations, candidates and residue coordinates
+passed independent decoding. The first wrapper-limit failure stays preserved;
+diagnostic samples never enter posterior ensembles.
+
+Fresh runs cover all 24 failures with disjoint seeds and preserved model,
+prior, alignment, tree and other native caps. Every original role/failure
+remains in the full 1,620-role ledger. Four workers share 192-GiB reservations
+under four CPUs/200 GiB/no swap; independent readback/closure is queued.
+Actual software completion and full mocked serialization passed; nine altered
+designs and ten serialization/resource/restart cases were rejected. At 18:28
+UTC all five original handles/dependencies and caps were checked; four live
+native workers had the intended stack limit. No fresh role had completed yet.
+
+This turn advances from diagnosing initialization to full corrected short
+sampling. The preceding user-requested error check was progress: it replayed
+all 20 then-available native failures and retained a new read-only receipt.
+Full follow-up closure, longer resources, adequate posteriors, accepted
+framework/reconciliation/calibration and all eight biological aims remain
+incomplete. GPU prediction stays paused; no paid resources or global defaults
+changed.
+[Methods, resources and complete evidence](baliphy-native-stack-correction-20261003.md).
+
 ## October 3, 14:31 UTC: matched predictor branch fits fully closed
 
 Completed the full 125-marker/70-view matched-predictor input grid: all 8,750

@@ -1,0 +1,37 @@
+{
+  "status": "verified_original_stack_followup_software_tool_wait_exited_zero",
+  "session_id": 3980,
+  "actual_tool_terminal_exit_code": 0,
+  "invocation_id": "8adf514103724f3db55187d689149f2d",
+  "original_controller": {
+    "pid": 3325684,
+    "created": 1791051755.4,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_stack_followup.py",
+      "--output",
+      "data/software_audits/baliphy-stack-followup-software-20261003-v1",
+      "--receipt",
+      "metadata/baliphy_stack_followup_software_validation_20261003_v1.json"
+    ]
+  },
+  "original_process_messages": 72,
+  "original_completion_resource_records": 1,
+  "software_receipt": "metadata/baliphy_stack_followup_software_validation_20261003_v1.json",
+  "software_receipt_sha256": "cd48664cdd190cdb14f0bb887c87ba8aded80c948dddbf3f810fb8914ada2015",
+  "source_hashes": {
+    "metadata/baliphy_stack_followup_software_validation_20261003_v1.json": "cd48664cdd190cdb14f0bb887c87ba8aded80c948dddbf3f810fb8914ada2015",
+    "data/software_audits/baliphy-stack-followup-software-20261003-v1/original-invocation-journal.jsonl": "5885f34e0f0a9da973453e2fd1da8666604b8f3f547dfd14cf2a3e9cb5b28344"
+  },
+  "configured_resources": {
+    "cpus": 2,
+    "memory_gib": 8,
+    "swap_gib": 0,
+    "address_space_gib": 6,
+    "cpu_seconds": 480,
+    "service_wall_seconds": 600,
+    "per_file_limit_gib": 1,
+    "blas_threads": 1
+  },
+  "scope": "Actual original software tool wait/journal success. The pipeline cgroup/telemetry/native data were explicitly mocked; the recorded software launch caps are configuration, not retrospective live procfs measurements. Manager completion peak is not treated as native peak."
+}

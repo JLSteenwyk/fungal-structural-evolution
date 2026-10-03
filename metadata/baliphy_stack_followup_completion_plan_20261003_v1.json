@@ -1,0 +1,42 @@
+{
+  "source_plan": "metadata/baliphy_stack_followup_plan_20261003_v1.json",
+  "producer_receipt": "results/ancestral/full-baliphy-stack-followup-20261003-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-stack-followup-20261003-v1/readback.json",
+  "producer_status": "complete_full_role_stack_followup_dispositions_pending_readback_v1",
+  "reader_status": "passed_full_role_stack_followup_serialized_readback_v1",
+  "completed_status": "complete_verified_full_role_stack_followup_v1",
+  "summary_fields": [
+    "full_chains",
+    "full_quartets",
+    "effective_inputs",
+    "original_configuration_aliases",
+    "original_status_counts",
+    "original_failed_roles",
+    "followup_roles",
+    "followup_status_counts",
+    "selected_checked_sampler_attempts",
+    "selected_unsuccessful_sampler_attempts",
+    "selected_complete_quartets",
+    "selected_unresolved_quartets",
+    "selected_joint_saved_frames",
+    "selected_joint_ancestral_residue_category_pairs",
+    "all_original_failures_retained",
+    "all_fresh_seeds_disjoint",
+    "posterior_qualified",
+    "resource_audit",
+    "reservation_audit"
+  ],
+  "launches": [
+    "metadata/baliphy_stack_followup_v1_launch_20261003.json",
+    "metadata/baliphy_stack_followup_v1_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_stack_followup_plan_20261003_v1.json": "e983ecad073e8c9c706ae89f7edbf7a0594ce5ce8ec45e54ae6fda60016907ee",
+    "metadata/baliphy_stack_followup_v1_launch_20261003.json": "084d2610b36598bcd29e0e624c7c6a0bb96751241ff6e3583c56f59b8bd474c5",
+    "metadata/baliphy_stack_followup_v1_readback_launch_20261003.json": "9fa0a9f7269e2ed0695a084f460ffba3cb4a4f64136952c13a0513ee20d22768",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_stack_followup_completed_20261003_v1.json",
+  "scope": "Complete1620original roles/405quartets/135inputs/324aliases retained with explicit original and follow-up provenance. Twenty-four new20iteration attempts cover all two-input/three-prior/four-chain diagnosedSIGSEGV roles;64MiB stack is scoped to their native prlimit commands. Fresh seed namespace disjoint all original/current/historical/known diagnostic seeds; no continuation,concatenation,restart,replacement of originals or automatic repeated attempts. Original models, priors,alignments,trees,AS48GiB,file2GiB and CPU/wall caps preserved. Complete source sampler/resource/artifact/two-journal closures and two causal strict initial-frame diagnostics required. All1596original successes reused by immutable reference; all24original failures retained even if follow-ups succeed. All follow-up native/config/identity/scalar/joint-frame/array checks, sampled stack/memory/cgroup limits, FIFO reservations and independent serialized full-role readback required. Failed fresh attempts and unresolved quartets remain explicit. No adequate posterior, precise final native resource peaks, long-run qualification, historical bad_alloc repair, accepted tree/root/model or completed biological aims implied. GPU prediction remains paused; no paid resources or global defaults changed."
+}

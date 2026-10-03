@@ -1,0 +1,153 @@
+{
+  "status": "recorded_observed_first_input_debugger_tool_returns_and_preserved_journal_limits",
+  "diagnostics": [
+    {
+      "version": 1,
+      "actual_observed_tool_terminal_exit_code": 0,
+      "tool_session_id": null,
+      "service_invocation_id": "716c6b13bae04b5682090cc3b4543d2a",
+      "native_attempt_process": {
+        "pid": 3288675,
+        "pgid": 3288675,
+        "created": 1791049471.37,
+        "command": [
+          "/usr/bin/gdb",
+          "--batch",
+          "-x",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-segfault-diagnostic-20261003-v1/commands.gdb",
+          "--args",
+          "/usr/bin/prlimit",
+          "--as=51539607552",
+          "--cpu=5674",
+          "--fsize=2147483648",
+          "--core=0",
+          "--",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "144747202",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-joint-node-logger-20261003-v5/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+          "--iterations",
+          "0",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ]
+      },
+      "debugger_or_wrapper_exit_code": 1,
+      "native_outcome": "native_not_executed_wrapper_limit_failure",
+      "original_outer_controller_process_messages_available": 0,
+      "invocation_linked_manager_resource_records": [],
+      "note": "Tool terminal return was observed in session; no original outer-controller PID/command journal proof is invented when process messages were not captured. Gdb/wrapper return is distinct from inferior outcome; manager memory is not native peak."
+    },
+    {
+      "version": 2,
+      "actual_observed_tool_terminal_exit_code": 0,
+      "tool_session_id": 61790,
+      "service_invocation_id": "20d7506f15f54c68a0ca42a51ca240d7",
+      "native_attempt_process": {
+        "pid": 3290289,
+        "pgid": 3290289,
+        "created": 1791049575.11,
+        "command": [
+          "/usr/bin/gdb",
+          "--batch",
+          "-x",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-segfault-diagnostic-20261003-v2/commands.gdb",
+          "--args",
+          "/usr/bin/prlimit",
+          "--as=51539607552",
+          "--cpu=5674",
+          "--fsize=2147483648",
+          "--core=0",
+          "--",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "144747202",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-joint-node-logger-20261003-v5/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+          "--iterations",
+          "0",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ]
+      },
+      "debugger_or_wrapper_exit_code": 0,
+      "native_outcome": "inferior_SIGSEGV",
+      "original_outer_controller_process_messages_available": 0,
+      "invocation_linked_manager_resource_records": [
+        {
+          "CPU_USAGE_NSEC": "113642527000",
+          "MEMORY_PEAK": "262144",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "note": "Tool terminal return was observed in session; no original outer-controller PID/command journal proof is invented when process messages were not captured. Gdb/wrapper return is distinct from inferior outcome; manager memory is not native peak."
+    },
+    {
+      "version": 3,
+      "actual_observed_tool_terminal_exit_code": 0,
+      "tool_session_id": 22845,
+      "service_invocation_id": "15b200564a8d4cb7b5ef0d9e64432d1a",
+      "native_attempt_process": {
+        "pid": 3295076,
+        "pgid": 3295076,
+        "created": 1791049898.55,
+        "command": [
+          "/usr/bin/gdb",
+          "--batch",
+          "-x",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-native-segfault-diagnostic-20261003-v3/commands.gdb",
+          "--args",
+          "/usr/bin/prlimit",
+          "--as=51539607552",
+          "--cpu=5674",
+          "--fsize=2147483648",
+          "--stack=67108864",
+          "--core=0",
+          "--",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "144747202",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-joint-node-logger-20261003-v5/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+          "--iterations",
+          "0",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ]
+      },
+      "debugger_or_wrapper_exit_code": 0,
+      "native_outcome": "inferior_normal_initial_exit",
+      "original_outer_controller_process_messages_available": 0,
+      "invocation_linked_manager_resource_records": [
+        {
+          "CPU_USAGE_NSEC": "141176340000",
+          "MEMORY_PEAK": "262144",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ],
+      "note": "Tool terminal return was observed in session; no original outer-controller PID/command journal proof is invented when process messages were not captured. Gdb/wrapper return is distinct from inferior outcome; manager memory is not native peak."
+    }
+  ],
+  "source_hashes": {
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v1/attempt/attempt-0001/receipt.json": "c4d2255b285b4bfc70107e4faa5f3bfd6a3c5839ad6ac5eb8e247fd204c19180",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v1/attempt/attempt-0001/process.json": "1bd462832f77dc8e4bc8e5c7151294ea4f9acfc60655f30135e9d963ec89f1af",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v1/configuration.json": "8b292cb9227caa6c94244a1b778110ddcaab394f35525583f11ea046668a6fab",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v1/transport-original-journal.jsonl": "a76d9fcfa56935be9f4708c4fefeb234945cb9ca6cfa88267b6503e624b9c4ee",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v2/attempt/attempt-0001/receipt.json": "cfa2df989860964cf08829ae94f3e247147a8ba11f659b8c70bdbffbc3e2f74b",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v2/attempt/attempt-0001/process.json": "ef481d3c13bbeaaca53d94b3773adb0cc286b3157469b3be31689e2747f1b7de",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v2/configuration.json": "8dbbe43f6427985ab246503d796c21c07be57999a4b164810f93c953fa81500d",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v2/transport-original-journal.jsonl": "67214a4e026a5b8c076c4a4995d8c7482d6744320ead365aa0a6a43cbd623687",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v3/attempt/attempt-0001/receipt.json": "abe72ed870ea698ffa24fb82c026b80cbec1b5f5c6a3ef0cbe78f3273946bf8f",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v3/attempt/attempt-0001/process.json": "4d8b2fc4620673cd3181d44787812800efba5b9a751c2e8c8b9e5e1c806e446c",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v3/configuration.json": "ed8df6907e2e87c81e6e443ba1f01432ef65ce33d334f01fb98f4613277348c8",
+    "data/software_audits/baliphy-native-segfault-diagnostic-20261003-v3/transport-original-journal.jsonl": "02711d70afad9d1cd9a22a7ffc5044b2651737dc7bd6a55d8b5a62139d540aab"
+  },
+  "posterior_qualified": false
+}

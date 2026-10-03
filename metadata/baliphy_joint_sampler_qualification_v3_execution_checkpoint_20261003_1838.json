@@ -1,0 +1,187 @@
+{
+  "status": "verified_original_full_joint_sampler_v3_runtime",
+  "checked_utc": "2026-10-03T18:37:49.421982+00:00",
+  "plan_sha256": "f659e0bed5167adcbca949a46b0901156d540714e2e75e038d1599bbfcbeb0a8",
+  "frozen_pins_checked": 1431,
+  "original_handles": [
+    {
+      "launch": "metadata/baliphy_joint_sampler_qualification_v3_launch_20261003.json",
+      "pid": 3082603,
+      "created": 1791033698.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_sampler_qualification_v3_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "9a2ca689a9ec759457eea57ab38c34b1b7f742f9a95d6a576bc47a20584ea9f3",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "deaf6455c018a9794315a2e4ea4d2d181b749b8cfc8bd649e81b01b43ccda79c",
+      "captured_process_messages": 193,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791050923194904",
+          "CPU_USAGE_NSEC": "94211628068000",
+          "MEMORY_PEAK": "3555328",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_sampler_qualification_v3_readback_launch_20261003.json",
+      "pid": 3082607,
+      "created": 1791033698.08,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_sampler_qualification_v3_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "533c9110c50ef7650bac1f8ebb289fd644c66c7da592e8cd8f57be6dd311836a",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "29217a718722e8c5accb4e2c2220b265af92eeb04f5b2bf26156e25df8dfc3ff",
+      "captured_process_messages": 575,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791051161676730",
+          "CPU_USAGE_NSEC": "226530813000",
+          "MEMORY_PEAK": "3854336",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_sampler_qualification_v3_closure_launch_20261003.json",
+      "pid": 3082614,
+      "created": 1791033698.14,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_sampler_qualification_v3_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "ce2fb1530efe9fc0a0ac594615a6e6dbeea0a3e91a940304fb20529f641d6c6b",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "deebea832f3c0b949c477a6568abb54f378fa910b9858786b0ed0fea0ef00efd",
+      "captured_process_messages": 583,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791051201627800",
+          "CPU_USAGE_NSEC": "25773150000",
+          "MEMORY_PEAK": "3522560",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_joint_logger_preflight_closure_v5_launch_20261003.json",
+      "pid": 3077353,
+      "created": 1791033190.82,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_joint_logger_preflight_closure_v5_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "c3a33e6f6d17f9f4751592224fabd4207b265035a79cce5919e3d66fdbbeb9fd",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "b20eb190e4d9634c47cd6983d1d32cc4a988e314dd038798e6ee784c717c5201",
+      "captured_process_messages": 209,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791039440653790",
+          "CPU_USAGE_NSEC": "3311258000",
+          "MEMORY_PEAK": "3072000",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+      "pid": 2826450,
+      "created": 1791008208.62,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "84f13d5c49b95e5eaf43842bbc6b5f0c29782a19baed655a4fa576adac3dcbe8",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "5b875cde2ff1503f1b6ab5d93ba6a18edd51e711a38a21b41890f1016662a894",
+      "captured_process_messages": 713,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029599778101",
+          "CPU_USAGE_NSEC": "10462073000",
+          "MEMORY_PEAK": "2883584",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+      "pid": 2846853,
+      "created": 1791010303.28,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "02804dc80e11b5c67ac37b5cb963ffc65fdb4cc17746df235be4a5db031ac837",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "e3a7197e273ad6285606bec3e254a208ad9fd6ba5ef6c42c88470add3e47e3fe",
+      "captured_process_messages": 643,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791029585404012",
+          "CPU_USAGE_NSEC": "3431986000",
+          "MEMORY_PEAK": "2772992",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/independent_short_sampler_replay_v3_closure_launch_20261003.json",
+      "pid": 3077874,
+      "created": 1791033224.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/independent_short_sampler_replay_v3_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "b68c4abbfca3d4cb646b7200a095c626ee59a2c3ad911a05a89d02fd35b97a48",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "c25d5e556c267624256c80e1d77ba2b03760ce86dbb8eacd6d0a528e090043c8",
+      "captured_process_messages": 13,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791033596840641",
+          "CPU_USAGE_NSEC": "10891148000",
+          "MEMORY_PEAK": "2809856",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "unclosed_joint_role_checkpoints": 1620,
+  "joint_status_counts": {
+    "full_joint_short_sampler_output_integrity_checked_not_posterior": 1596,
+    "unsuccessful_sampler_qualification_attempt_retained": 24
+  },
+  "expected_native_roles": 1620,
+  "iterations_per_role": 20,
+  "longer_posterior_horizon_launched": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "scope": "Exact seven original handles/journals and live limits, all immutable pins and unclosed row counts; not native output replay, full closure, longer resource or posterior qualification."
+}
