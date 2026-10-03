@@ -1,0 +1,29 @@
+{
+  "status": "complete_verified_full_positive_diagonal_covariance_cones_v1",
+  "logical_cases": 75188,
+  "cohorts": 4340,
+  "certificates": 8680,
+  "case_row_occurrences": 68220240,
+  "retained_basis_counts": {
+    "5": 7232,
+    "6": 1448
+  },
+  "loading_modes": [
+    "signed",
+    "unsigned"
+  ],
+  "residual_diagonal_prepared": false,
+  "raw_reml_basis_qualification_complete": false,
+  "nonuniform_weighting_accepted": false,
+  "full_hash_archive": "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "b291d17f2fe2b5c1024a83e49f591534c80a62e3b02ba5cbd93e6277405957a4",
+  "bound_source_hashes": 4429,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "90539973635a740fd63ff3ffbb5adbe722ae297d95bf4354bbdb2afc11ccb565",
+  "independent_readback": "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/readback.json",
+  "independent_readback_sha256": "9e3f8b76a04b48f41f238d5513cf042b16ce537b1fc7eeb66e466fd06434e663",
+  "completion_plan_sha256": "6f64e26fad9ebc7cc001b5125893064cc516aec2c51ec3d376592d58dcf5fd5c",
+  "scientific_eligibility": false,
+  "scope": "Complete closed4340cohorts/8680mode certificates/75188logical cases/68220240row occurrences positive-diagonal covariance-cone proof. Keep residual D distinct from target I for any finite strictly positive diagonal; exact gene/model/family folds and genuine pair exceptions retained. Full original parent source hashes checked; no original operator/Gram/certificate edits. Independent Fraction column-image reconstruction and exact nonnegative right-inverse identities check every serialized record. Full source/artifact/two new original journals gate closure. No actual diagonal chosen, confidence-to-variance policy calibrated, uniform numerical envelope inherited, raw/REML weighted basis qualified, weighted fit, native restart, GPU, new charge or biological aim completed. Actual weighted inputs/identifiability/timing/controls remain separate."
+}

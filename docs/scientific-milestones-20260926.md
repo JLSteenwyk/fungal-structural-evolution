@@ -1426,3 +1426,23 @@ At 21:43 UTC all timing controllers and the exact original dependency were
 verified live, but real timing had not started. Full fits, nonuniform controls,
 calibration and all eight biological aims remain open.
 [Full method and next gates](full-retained-fitting-and-timing-20261003.md).
+
+### October 3: full algebraic prerequisite for nonuniform residual controls
+
+All 4,340 cohorts/8,680 signed and unsigned exact operator certificates now
+have a complete positive-diagonal covariance-cone proof, independent Fraction
+readback and full source/artifact/two-original-journal closure. Residual `D`
+and target `I` remain distinct; all gene/model/family identities and pair
+exceptions remain explicit. Five-term and six-term bases have 7,232 and
+1,448 certificates respectively. Full closure freshly binds 4,429 hashes.
+Numerical software checks and complete declared source/export/tampering
+qualification passed; the initial fixture-directory failure is preserved.
+
+This completes an algebraic prerequisite for weighting sensitivity, not
+actual residual policies or fitted effects. Actual weighted inputs require
+fresh raw/REML identifiability/envelopes/precision, complete timing and
+independent fits; constant or near-uniform residual diagonals may remain
+dependent. Uniform validation, whole-grid fitting, uncertainty calibration,
+accepted framework/reconciliation, ancestral posterior adequacy and all
+eight biological aims remain open. GPU inference stays paused.
+[Completed proof and remaining scope](nonuniform-covariance-cones-20261003.md).

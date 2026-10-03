@@ -1,0 +1,32 @@
+{
+  "status": "passed_positive_diagonal_covariance_cone_dense_likelihood_contracts_v1",
+  "checked_utc": "2026-10-03T21:57:45.937714+00:00",
+  "synthetic_diagonal_cases": 20,
+  "covariance_cone_roundtrips": 610,
+  "ml_reml_dense_spectral_permutation_cases": 120,
+  "finite_difference_score_cells": 360,
+  "malformed_certificate_cases_rejected": 56,
+  "invalid_diagonal_cases_rejected": 20,
+  "maximum_covariance_error": 1.4210854715202004e-14,
+  "maximum_dense_objective_error": 5.684341886080802e-14,
+  "maximum_dense_gradient_error": 8.526512829121202e-14,
+  "maximum_finite_difference_error": 6.556517661238104e-06,
+  "source_hashes": {
+    "scripts/check_nonuniform_covariance_cone.py": "e3c329f4c5cfaf0823be859d80f21eb740f67336e448e8fb52959d33f99461ab",
+    "scripts/nonuniform_covariance_cone.py": "16e2e5d35a3dff7d9252d9488b7bbde213c8a592db1423e2ae34065b860d6c94",
+    "scripts/independent_nonuniform_covariance_cone.py": "140a551f07e51a71e5a4a8817cdbb1c56c59bef6a6a601e130a049768ee2b766",
+    "scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "scripts/check_retained_shared_entity_candidates.py": "ba170584e0b2806c10b0a59d27d78f43d8adf1237dbe61009bfbc7f4795bd47f",
+    "scripts/check_shared_entity_likelihood.py": "77493f80701191e5b500a1be7a718d24deffa7da98b37bd2147aa60b41ac0e5d",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "scripts/independent_shared_entity_likelihood_fast.py": "af30887cf38d0a4a0941e77ed12c65b6d65f00aec3f883fc644d5417262158b3",
+    "scripts/independent_shared_entity_likelihood.py": "594b9c8aa0ea194843a2591b260463eb3642d20e8977ef6f8859b29a179a3120"
+  },
+  "artifacts": {
+    "data/software_audits/nonuniform-covariance-cone-20261003-v1/nonuniform_cone_cases.json": "d9692b821b295a4ba7aa75185b55587300563851d088b1f3039c6273d2804498"
+  },
+  "scientific_eligibility": false,
+  "scope": "Synthetic exact cone and likelihood/score checks for both modes and both pair identities, five diagonal patterns including constant, heterogeneous and near-uniform values. Target I stays distinct from residual D, including intentionally dependent constant cases. No weighted source preparation, raw/REML identifiability qualification, optimizer fit, confidence-to-variance calibration or biological acceptance. Full real certificate proof and actual weighted design/provenance/qualification/timing remain separate stages."
+}

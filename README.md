@@ -33,9 +33,9 @@ production readback passed 42 native roles across both modes. Eight CPU
 workers/24 GiB/no swap run separately from the paused GPU predictions.
 Full resampling readback, provenance closure and calibrated uncertainty
 remain pending.
-At October 3, 21:42 UTC, the original controller reported 16,269/53,200
-completed draws (30.6%); full independent native archive closure remains pending.
-[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_2151.json).
+At October 3, 22:11 UTC, the original controller reported 17,478/53,200
+completed draws (32.9%); full independent native archive closure remains pending.
+[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_goal_followup_2211.json).
 
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch
@@ -77,9 +77,8 @@ inputs. Controlled diagnostics reproduced 8-MiB native stack exhaustion on
 both; a scoped 64-MiB limit allowed initial logging to finish. The
 [fresh follow-up](docs/baliphy-native-stack-correction-20261003.md) now runs
 all 24 failed roles with new seeds, preserved models/priors and full
-1,620-role provenance. At 20:54 UTC, four follow-ups had timed out and four
-workers were active, with no recurrence of the earlier crash in the checked
-follow-up logs. Full sampling/readback/closure remains pending. Originals and global
+1,620-role provenance. At 22:10 UTC, eight follow-ups had timed out and four
+workers were active. Full sampling/readback/closure remains pending. Originals and global
 defaults stay unchanged. These short checks do not qualify ancestral
 posteriors or repair the two older allocation failures.
 
@@ -98,9 +97,16 @@ is now software qualified. It preserves all 5,208,000 potential candidates and
 12,441,600 setting links. The full-data timing census is queued behind complete
 process/retained covariance closure; no production fitting has been launched
 or queued. Independent fitting readback and numerical reviews remain explicit.
-At 21:41 UTC the process reader had checked 500/4,340 cohorts; validation and
+At 22:10 UTC the process reader had checked 1,147/4,340 cohorts; validation and
 the cause of the original mismatch remain unresolved. Runtime remains
 uncalibrated, and all eight biological aims remain incomplete.
+
+The [full positive-diagonal covariance-cone proof](docs/nonuniform-covariance-cones-20261003.md)
+has completed for all 4,340 cohorts and 8,680 certificates, with independent
+rational-arithmetic readback and complete source/artifact/original-journal
+closure. It keeps residual weighting distinct from target-protein covariance
+and preserves every pair exception. Actual weighting policies, weighted
+numerical qualification and fitted effects remain unqualified.
 
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The

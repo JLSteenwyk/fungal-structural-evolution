@@ -1,5 +1,36 @@
 # Progress and evidence
 
+## October 3, 22:10 UTC: complete positive-diagonal covariance proof closed
+
+All 4,340 cohorts/8,680 signed and unsigned certificates now have a separate
+exact covariance-cone map keeping residual `D` distinct from target `I`.
+Independent Fraction column-image/right-inverse readback covers every
+serialized field and preserves all pair exceptions. Full source/artifact/
+two-original-journal closure binds 4,429 hashes, freshly rehashed with all
+three terminal handles checked. Uniform operators, proofs, numerical jobs
+and queued plans remain unchanged. The added term yields 7,232 five-term
+and 1,448 six-term certificates; these are algebraic counts, not qualified
+weighted designs.
+
+Numerical software passed 20 diagonal cases, 610 covariance roundtrips,
+120 dense/spectral/row-permutation ML/REML checks and 360 derivative cells.
+It rejected 56 altered maps and 20 invalid diagonals. Full declared source
+qualification passed all five synthetic cohorts/ten certificates, twelve
+rehashed outputs and six rehashed sources. The initial missing-fixture-
+directory failure remains preserved; a fresh checker version fixes only
+that directory creation. Both actual software waits and exact original
+PID/command/invocation journals passed. Resource estimates preceded full
+execution, with two CPUs/16 GiB/no swap and native CPU/AS/file limits.
+
+At 22:10 UTC, the existing process covariance reader had 1,147/4,340 cohort
+reports and no full closure. Eight ancestral follow-ups had completed
+unsuccessfully while four native workers remained active. Full sampling
+and posterior adequacy remain unresolved. Actual residual diagonals and
+calibration, weighted raw/REML qualification, full timing/fits, accepted
+framework/reconciliation, the atlas and all eight aims remain required.
+The project goal stays active; GPU inference remains paused.
+[Full methods, qualification, resources and evidence](nonuniform-covariance-cones-20261003.md).
+
 ## October 3, 21:43 UTC: complete retained fitting qualified; full timing queued
 
 Implemented the complete retained-covariance source adapter, fitting producer

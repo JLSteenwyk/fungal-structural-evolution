@@ -1,0 +1,71 @@
+{
+  "parent_plan": "metadata/full_exact_covariance_folds_plan_20261003_v2.json",
+  "parent_completion": "metadata/full_exact_covariance_folds_completed_20261003_v2.json",
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "certificates": 8680
+  },
+  "output": "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1",
+  "resources": {
+    "checked_utc": "2026-10-03T22:07:01.900776+00:00",
+    "cpus": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "address_space_gib": 12,
+    "cpu_seconds_per_stage": 3600,
+    "per_file_limit_mib": 256,
+    "output_allowance_gib": 1,
+    "minimum_free_disk_gib": 64,
+    "original_certificates": 8680,
+    "original_cohorts": 4340,
+    "forward_dimensions": [
+      5,
+      6
+    ],
+    "original_variance_components": 9,
+    "maximum_fraction_identity_products": 2812320,
+    "per_certificate_record_budget_bytes": 16384,
+    "output_record_budget_bytes": 142213120,
+    "runtime_planning_seconds_per_stage": [
+      1,
+      600
+    ],
+    "runtime_calibrated": false,
+    "available_ram_gib": 198.3222999572754,
+    "free_disk_gib": 10318.129981994629,
+    "new_cost_usd": 0,
+    "gpu": false,
+    "scope": "Full exact operator-cone metadata proof, not weighted data generation or fitting. Planning range is uncalibrated; one worker/one BLAS thread, CPU/AS/per-file and cgroup caps enforced. Record allowance is not a total directory quota or measured native peak. Full closed parent hashes and every original certificate are checked independently."
+  },
+  "pins": {
+    "scripts/nonuniform_covariance_cone.py": "16e2e5d35a3dff7d9252d9488b7bbde213c8a592db1423e2ae34065b860d6c94",
+    "scripts/independent_nonuniform_covariance_cone.py": "140a551f07e51a71e5a4a8817cdbb1c56c59bef6a6a601e130a049768ee2b766",
+    "scripts/full_nonuniform_covariance_cone_sources.py": "76fd14cf972c128a80dec56586bbfedaf7db295338c7ab7cfa5d3808d49e89ca",
+    "scripts/run_full_nonuniform_covariance_cones.py": "35ded5cb2ea0496c1680a8bbe8bdb77baea06d0be743e2a019c19e55104c837f",
+    "scripts/check_nonuniform_covariance_cone.py": "e3c329f4c5cfaf0823be859d80f21eb740f67336e448e8fb52959d33f99461ab",
+    "scripts/check_full_nonuniform_covariance_cones_v2.py": "dec44a3e2600022a5116d56bd1a2b1b2f7a0bead9a0fcec900cc49f7b19bcbec",
+    "scripts/prepare_and_launch_full_nonuniform_covariance_cones.py": "250480c1d69a5d6a73e702d18e494c127f1de78b6aa3ecade3358bed5e8149e1",
+    "scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "scripts/launch_baliphy_reference_sampler_qualification.py": "6432c16a1adda4a8af4a4d64eb6f155d889ec67298079daa02456e215a2d44e6",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "metadata/full_nonuniform_covariance_cone_resources_20261003_v1.json": "2e1c47f823761e9521b524ed3ad4a8f5520b48ecf93b8707fa609123b70cf18a",
+    "metadata/full_exact_covariance_folds_plan_20261003_v2.json": "956be671d5b9ee86c0d907be9fb2b9f056ce75f07924fcd237e139d4cc262303",
+    "metadata/full_exact_covariance_folds_completed_20261003_v2.json": "0b63c0b7da49d2b34dc4b5a8db51fe2cdf6a1200b55afe0b99085f166aa388e5",
+    "results/phylogeny/full-exact-uniform-covariance-folds-20261003-v2/completion_archive.json": "9a188f3e30be184531928f48af7122c5ce1b7ee22a6512a2caa74a3d70674569",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "metadata/nonuniform_covariance_cone_software_validation_20261003_v1.json": "8ea3aacb384f1c397a8df6e1b9d60a23a870b485fa432cb235f2db3996cd2124",
+    "metadata/nonuniform_covariance_cone_software_execution_20261003_v1.json": "c3d9844f04a10a339cb0b790e33f7e8e375d4dfd9901c33ded4b3f99e9d6f3e0",
+    "metadata/nonuniform_covariance_cone_software_transport_20261003_v1.json": "50c5ad4e4811fe8ac9a7fb16b09de3890db3f5a1167c2f9082aae733fe0d5b75",
+    "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v2.json": "053256ede27a99ead7248a9da0c900c290818267c7d103af7ddd36abc83c494f",
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v2.json": "cd10a4301ead04b63c751b7fcf0c86cf857e9b0dda52c1aa90e9423206c9b4e2",
+    "metadata/full_nonuniform_covariance_cone_software_transport_20261003_v2.json": "b0d0aa38951def6225050f44ca95074fb6e3a4fc109146b796de997a5193da0c"
+  },
+  "completion": "metadata/full_nonuniform_covariance_cones_completed_20261003_v1.json",
+  "scope": "Complete closed4340cohorts/8680mode certificates/75188logical cases/68220240row occurrences positive-diagonal covariance-cone proof. Keep residual D distinct from target I for any finite strictly positive diagonal; exact gene/model/family folds and genuine pair exceptions retained. Full original parent source hashes checked; no original operator/Gram/certificate edits. Independent Fraction column-image reconstruction and exact nonnegative right-inverse identities check every serialized record. Full source/artifact/two new original journals gate closure. No actual diagonal chosen, confidence-to-variance policy calibrated, uniform numerical envelope inherited, raw/REML weighted basis qualified, weighted fit, native restart, GPU, new charge or biological aim completed. Actual weighted inputs/identifiability/timing/controls remain separate."
+}

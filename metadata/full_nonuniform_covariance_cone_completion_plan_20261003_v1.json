@@ -1,0 +1,32 @@
+{
+  "source_plan": "metadata/full_nonuniform_covariance_cone_plan_20261003_v1.json",
+  "producer_receipt": "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/readback.json",
+  "producer_status": "complete_full_positive_diagonal_covariance_cones_pending_independent_readback_v1",
+  "reader_status": "passed_full_positive_diagonal_covariance_cones_fraction_readback_v1",
+  "completed_status": "complete_verified_full_positive_diagonal_covariance_cones_v1",
+  "summary_fields": [
+    "logical_cases",
+    "cohorts",
+    "certificates",
+    "case_row_occurrences",
+    "retained_basis_counts",
+    "loading_modes",
+    "residual_diagonal_prepared",
+    "raw_reml_basis_qualification_complete",
+    "nonuniform_weighting_accepted"
+  ],
+  "launches": [
+    "metadata/full_nonuniform_covariance_cones_v1_launch_20261003.json",
+    "metadata/full_nonuniform_covariance_cones_v1_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/full_nonuniform_covariance_cone_plan_20261003_v1.json": "94a53ee007c9c972b50c5eadf002886e26654d77589195d1df4570b9135aae59",
+    "metadata/full_nonuniform_covariance_cones_v1_launch_20261003.json": "dee5e161b536bff824770b4a456892d39f222f60292e84683298bbf277901880",
+    "metadata/full_nonuniform_covariance_cones_v1_readback_launch_20261003.json": "6f197fcf26cb7d5c9d3d3dbdc45e2b039be29071f2394c04e7057e89d7d4af37",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/full_nonuniform_covariance_cones_completed_20261003_v1.json",
+  "scope": "Complete closed4340cohorts/8680mode certificates/75188logical cases/68220240row occurrences positive-diagonal covariance-cone proof. Keep residual D distinct from target I for any finite strictly positive diagonal; exact gene/model/family folds and genuine pair exceptions retained. Full original parent source hashes checked; no original operator/Gram/certificate edits. Independent Fraction column-image reconstruction and exact nonnegative right-inverse identities check every serialized record. Full source/artifact/two new original journals gate closure. No actual diagonal chosen, confidence-to-variance policy calibrated, uniform numerical envelope inherited, raw/REML weighted basis qualified, weighted fit, native restart, GPU, new charge or biological aim completed. Actual weighted inputs/identifiability/timing/controls remain separate."
+}

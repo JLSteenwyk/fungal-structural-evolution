@@ -1,0 +1,88 @@
+{
+  "stage": "software",
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_nonuniform_covariance_cones_v2.py",
+    "--output",
+    "data/software_audits/full-nonuniform-covariance-cone-20261003-v2",
+    "--receipt",
+    "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_nonuniform_covariance_cone_software_stage.py": "e4c828d8130cf2f383cb7aa244169f92933705360bdcbbbfdb64f2a3c28187cd",
+    "metadata/full_nonuniform_covariance_cone_software_resources_20261003_v2.json": "8230a35b478eb75fa2e07b845396f75272fe661bf79a0225b5fac95ceaef1044",
+    "scripts/check_full_nonuniform_covariance_cones_v2.py": "dec44a3e2600022a5116d56bd1a2b1b2f7a0bead9a0fcec900cc49f7b19bcbec",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "eb35e36e793a474fb4d7324bdeeb89ef",
+  "wrapper": {
+    "pid": 1200424,
+    "created": 1791065037.18,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_full_nonuniform_covariance_cone_software_stage.py",
+      "--resources",
+      "metadata/full_nonuniform_covariance_cone_software_resources_20261003_v2.json",
+      "--execution",
+      "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v2.json",
+      "--receipt",
+      "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v2.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_nonuniform_covariance_cones_v2.py",
+      "--output",
+      "data/software_audits/full-nonuniform-covariance-cone-20261003-v2",
+      "--receipt",
+      "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-03T22:03:57.995948+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T22:04:07.019129+00:00",
+  "child": {
+    "pid": 1200425,
+    "created": 1791065037.3,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=900",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_nonuniform_covariance_cones_v2.py",
+      "--output",
+      "data/software_audits/full-nonuniform-covariance-cone-20261003-v2",
+      "--receipt",
+      "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 9.02298058301676,
+  "child_cpu_seconds": 8.952274,
+  "child_peak_rss_bytes": 169869312,
+  "receipt": "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v2.json",
+  "receipt_sha256": "053256ede27a99ead7248a9da0c900c290818267c7d103af7ddd36abc83c494f",
+  "artifacts": {
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v2/configuration.json": "7fccd2ab9b877bbe6324299b68ebf321e6f45316fac44cb66c9ec4116b7bc2ad",
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v2/stdout.log": "01068359ef7eece48490ff60c52029c0d8cbdbfa33c50574881a4613b22261e0",
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v2/process.json": "1ddb59c3c8cf351ed01cd412264b6520897475007aca5fa46763aa3dc6dbefbf"
+  },
+  "scope": "One original bounded CPU-only complete declared positive-diagonal source/export software checker, with actual caps, prlimit, PID/create/command/exit and retained logs. The checker receipt establishes synthetic complete source/export/readback scope. Child peak RSS is not a cgroup peak. No full real weighted source, weighted identifiability qualification, fitting, biological acceptance, GPU work, restart or new charges."
+}

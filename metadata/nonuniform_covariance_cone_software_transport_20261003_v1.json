@@ -1,0 +1,41 @@
+{
+  "status": "verified_original_nonuniform_cone_software_actual_wait_zero",
+  "checked_utc": "2026-10-03T22:05:31.348482+00:00",
+  "actual_tool_session_id": 85863,
+  "actual_tool_terminal_exit_code": 0,
+  "unit": "fungal-nonuniform-covariance-cone-software-20261003-v1.service",
+  "invocation_id": "fa1f0475bf7d4ada80a62b5e720e8330",
+  "wrapper": {
+    "pid": 1193569,
+    "created": 1791064654.84,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_nonuniform_covariance_cone_software_stage.py",
+      "--resources",
+      "metadata/nonuniform_covariance_cone_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/nonuniform_covariance_cone_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/nonuniform_covariance_cone_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_nonuniform_covariance_cone.py",
+      "--output",
+      "data/software_audits/nonuniform-covariance-cone-20261003-v1",
+      "--receipt",
+      "metadata/nonuniform_covariance_cone_software_validation_20261003_v1.json"
+    ]
+  },
+  "exact_wrapper_pid_journal_entries": 1,
+  "original_start_records": 1,
+  "original_completion_records": 1,
+  "fresh_hashes_checked": 21,
+  "source_hashes": {
+    "metadata/nonuniform_covariance_cone_software_execution_20261003_v1.json": "c3d9844f04a10a339cb0b790e33f7e8e375d4dfd9901c33ded4b3f99e9d6f3e0",
+    "metadata/nonuniform_covariance_cone_software_validation_20261003_v1.json": "8ea3aacb384f1c397a8df6e1b9d60a23a870b485fa432cb235f2db3996cd2124",
+    "metadata/nonuniform_covariance_cone_software_execution_20261003_v1/original-invocation-journal.jsonl": "27ef97af0a39a2d8ad669f33e2ced1e53f048e2ff4280b14c52aeba27f5dfb3f"
+  },
+  "scope": "Actual original tool wait exit0, native execution PID/create/command/invocation, matching exact wrapper journal payload and receipt SHA, and original manager start/completion. No fabricated PID records or transfer of manager memory to native RSS. Synthetic qualification scope only; real cone proof and weighted numerical qualification remain separate."
+}

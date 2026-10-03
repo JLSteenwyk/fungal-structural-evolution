@@ -1,0 +1,189 @@
+{
+  "status": "verified_original_full_nonuniform_cone_runtime",
+  "checked_utc": "2026-10-03T22:07:45.054466+00:00",
+  "source_plan_sha256": "94a53ee007c9c972b50c5eadf002886e26654d77589195d1df4570b9135aae59",
+  "original_handles": [
+    {
+      "launch": "metadata/full_nonuniform_covariance_cones_v1_launch_20261003.json",
+      "pid": 1203201,
+      "created": 1791065221.25,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "dee5e161b536bff824770b4a456892d39f222f60292e84683298bbf277901880",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "1c6f599a27e8d8c4e8e1b99428f45ea31e83607b2ff3bfb41ef592df7e8f6ff7",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791065229648949",
+          "CPU_USAGE_NSEC": "7677786000",
+          "MEMORY_PEAK": "2859008",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-nonuniform-covariance-cones-v1-readback-20261003-v1.service",
+      "pid": 1203205,
+      "created": 1791065221.28,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_nonuniform_covariance_cones_v1_readback_wait_plan_20261003.json",
+      "plan_sha256": "8967bd91aae7f33d0e1b0cecaf5768b84d47f8b368b7f6ab8226fb0de14abf92",
+      "checked_utc": "2026-10-03T22:07:02.020536+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-nonuniform-covariance-cones-v1-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_nonuniform_covariance_cones_v1_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.08,
+      "children": [
+        {
+          "pid": 1203627,
+          "created": 1791065251.48,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_full_nonuniform_covariance_cones.py",
+            "--plan",
+            "metadata/full_nonuniform_covariance_cone_plan_20261003_v1.json",
+            "--reader"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 12.69
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "6f197fcf26cb7d5c9d3d3dbdc45e2b039be29071f2394c04e7057e89d7d4af37",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 186175488,
+        "memory.peak": 189960192,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 1203627,
+          "created": 1791065251.48,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_full_nonuniform_covariance_cones.py",
+            "--plan",
+            "metadata/full_nonuniform_covariance_cone_plan_20261003_v1.json",
+            "--reader"
+          ],
+          "rss_bytes": 222941184,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              3600                 3600                 seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-nonuniform-covariance-cones-v1-closure-20261003-v1.service",
+      "pid": 1203211,
+      "created": 1791065221.34,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_nonuniform_covariance_cones_v1_closure_wait_plan_20261003.json",
+      "plan_sha256": "07d01fbee5d23a239676d1f3e2ff1b3e2a41b4082c2030a30ed7a9a692465ea4",
+      "checked_utc": "2026-10-03T22:07:02.060932+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-nonuniform-covariance-cones-v1-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=16G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_nonuniform_covariance_cones_v1_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.07,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "2115b1004560259a765592b7f9b42233068aa16ce550c5d65b32e25975ce76f8",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8503296,
+        "memory.peak": 10973184,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    }
+  ],
+  "producer_receipt_present": true,
+  "independent_readback_present": false,
+  "completion_present": false,
+  "expected_certificates": 8680,
+  "weighted_qualification_complete": false,
+  "scientific_eligibility": false
+}

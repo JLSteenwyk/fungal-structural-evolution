@@ -1,0 +1,96 @@
+{
+  "status": "passed_fresh_full_positive_diagonal_cone_closure_hash_and_original_handle_verification",
+  "checked_utc": "2026-10-03T22:10:19.339027+00:00",
+  "full_source_bindings_rehashed": 4429,
+  "exact_original_journals": 2,
+  "cohorts": 4340,
+  "certificates": 8680,
+  "retained_basis_counts": {
+    "5": 7232,
+    "6": 1448
+  },
+  "original_handles": [
+    {
+      "launch": "metadata/full_nonuniform_covariance_cones_v1_launch_20261003.json",
+      "pid": 1203201,
+      "created": 1791065221.25,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "dee5e161b536bff824770b4a456892d39f222f60292e84683298bbf277901880",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ce764074a51a775878931ce6cca6ee1afb752525d5fa4ee8e607cb0ce6ab31a3",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791065229648949",
+          "CPU_USAGE_NSEC": "7677786000",
+          "MEMORY_PEAK": "2859008",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_nonuniform_covariance_cones_v1_readback_launch_20261003.json",
+      "pid": 1203205,
+      "created": 1791065221.28,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "6f197fcf26cb7d5c9d3d3dbdc45e2b039be29071f2394c04e7057e89d7d4af37",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "392887d9908574e736642713189b4f974e0be332fddb2d590fa0883eefe6cfa6",
+      "captured_process_messages": 2,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791065267981821",
+          "CPU_USAGE_NSEC": "15937816000",
+          "MEMORY_PEAK": "3260416",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_nonuniform_covariance_cones_v1_closure_launch_20261003.json",
+      "pid": 1203211,
+      "created": 1791065221.34,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_nonuniform_covariance_cones_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "2115b1004560259a765592b7f9b42233068aa16ce550c5d65b32e25975ce76f8",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "efe4948d522d2bda3334183cf96deccb3d2e8d87a08e2232a5b6a1ee9dd8eb82",
+      "captured_process_messages": 3,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791065287159248",
+          "CPU_USAGE_NSEC": "5018593000",
+          "MEMORY_PEAK": "3264512",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "residual_diagonal_prepared": false,
+  "weighted_numerical_qualification_complete": false,
+  "scientific_eligibility": false,
+  "source_hashes": {
+    "metadata/full_nonuniform_covariance_cones_completed_20261003_v1.json": "f34ad118c1177017fad48610e9c07520f65269052b9075a7cb9e7cb87b0f00aa",
+    "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/completion_archive.json": "b291d17f2fe2b5c1024a83e49f591534c80a62e3b02ba5cbd93e6277405957a4",
+    "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/receipt.json": "90539973635a740fd63ff3ffbb5adbe722ae297d95bf4354bbdb2afc11ccb565",
+    "results/phylogeny/full-positive-diagonal-covariance-cones-20261003-v1/readback.json": "9e3f8b76a04b48f41f238d5513cf042b16ce537b1fc7eeb66e466fd06434e663"
+  },
+  "scope": "Fresh complete closure/archive/source/artifact hash verification and original three terminal handles; independent full8680row Fraction readback is the separate original reader, not rerun here. This proves completed operator-cone accounting, not an actual weighting policy, numerical identifiability, calibrated fit or biological result."
+}

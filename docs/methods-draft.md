@@ -3007,3 +3007,23 @@ times; conditional cost extrapolation is not a finish ETA or optimizer bound.
 Production fitting is neither launched nor queued. Nonuniform/control variants,
 uncertainty calibration and accepted evolutionary analyses remain required.
 [Implementation, qualification, resources and limitations](full-retained-fitting-and-timing-20261003.md).
+
+## Residual diagonal and target covariance in sensitivity models
+
+A separate complete exact proof retains a positive residual diagonal `D`
+and target identity kernel `I` separately. Nonnegative dyadic maps preserve
+the covariance cone using the already closed gene/model/family identities
+and supported pair folds. Independent Fraction column-image and right-inverse
+readback covers all 4,340 cohorts and 8,680 loading-mode certificates, with
+complete source/artifact/two-original-journal closure. Pair exceptions remain.
+The general basis has five terms and the exception basis six, including both
+`D` and `I`. Constant or near-uniform diagonals can still be dependent.
+
+Dense covariance roundtrips and ML/REML likelihood/score software checks passed
+five diagonal patterns in both modes and both pair cases. These checks and
+the full algebraic proof do not select actual residual weights, calibrate
+prediction confidence into variance, qualify weighted raw/REML numerical
+Grams or fit weighted evolutionary effects. Actual diagonal provenance,
+fresh conditioning/envelope/precision qualification, timing and independent
+fits remain necessary. Uniform numerical qualification is not transferred.
+[Full proof, qualification and remaining controls](nonuniform-covariance-cones-20261003.md).

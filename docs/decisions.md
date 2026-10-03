@@ -1498,3 +1498,25 @@ not independently reproduce hardware times or successful timing probes.
 Separate full fitting readback still validates every attempted candidate.
 Full source/timing closure and installed resources precede fitting launch.
 [Scope, methods, resource estimates and qualification evidence](full-retained-fitting-and-timing-20261003.md).
+
+## October 3: separate residual weighting from target identity covariance
+
+Do not transfer the uniform target/residual fold to nonuniform residuals.
+Retain `D` and `I` as separate kernels, including constant-diagonal software
+controls that intentionally remain dependent. Reuse only the already closed
+exact operator identities: gene half-target/background, model half-pair,
+family fold and supported pair identity. Preserve all exceptions. Prove
+complete nonnegative forward/right-inverse covariance-cone equality with
+independent Fraction column images across all 8,680 original certificates.
+Full source/export/readback and actual two-journal closure must precede
+any statement that this algebraic stage is complete.
+
+No actual diagonal or confidence-to-variance policy is accepted by that proof.
+Weighted raw/REML Grams, envelopes, identifiability, conditioning and precision
+require separate qualification against actual weighted inputs. Constant or
+near-uniform `D` may remain dependent or numerically unresolved. Numerical
+rank never authorizes deleting a term. Preserve the missing-fixture-directory
+software failure and use a fresh corrected checker, without altering qualified
+mathematical or production scripts. Actual full weighted source/timing/fits
+and inferential calibration remain required.
+[Completed full proof and remaining requirements](nonuniform-covariance-cones-20261003.md).

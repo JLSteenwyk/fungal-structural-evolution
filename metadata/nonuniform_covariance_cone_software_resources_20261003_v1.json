@@ -1,0 +1,25 @@
+{
+  "status": "recorded_before_nonuniform_cone_software_qualification",
+  "checked_utc": "2026-10-03T21:57:35.465533+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "numerical_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 900,
+  "wall_seconds_per_stage": 1800,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 4,
+  "output_allowance_gib": 1,
+  "expected_synthetic_diagonal_cases": 20,
+  "expected_covariance_roundtrips": 610,
+  "expected_likelihood_cases": 120,
+  "expected_finite_difference_cells": 360,
+  "runtime_planning_seconds": [
+    1,
+    600
+  ],
+  "runtime_calibrated": false,
+  "scope": "Numerical software qualification, n40 synthetic inputs. Planning interval is uncalibrated, native CPU/wall limits enforced, no biological pilot or real weighted-source timing. Existing local CPU only, GPU false, new cost zero."
+}

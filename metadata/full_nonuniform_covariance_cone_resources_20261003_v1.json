@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-10-03T22:07:01.900776+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 3600,
+  "per_file_limit_mib": 256,
+  "output_allowance_gib": 1,
+  "minimum_free_disk_gib": 64,
+  "original_certificates": 8680,
+  "original_cohorts": 4340,
+  "forward_dimensions": [
+    5,
+    6
+  ],
+  "original_variance_components": 9,
+  "maximum_fraction_identity_products": 2812320,
+  "per_certificate_record_budget_bytes": 16384,
+  "output_record_budget_bytes": 142213120,
+  "runtime_planning_seconds_per_stage": [
+    1,
+    600
+  ],
+  "runtime_calibrated": false,
+  "available_ram_gib": 198.3222999572754,
+  "free_disk_gib": 10318.129981994629,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "Full exact operator-cone metadata proof, not weighted data generation or fitting. Planning range is uncalibrated; one worker/one BLAS thread, CPU/AS/per-file and cgroup caps enforced. Record allowance is not a total directory quota or measured native peak. Full closed parent hashes and every original certificate are checked independently."
+}

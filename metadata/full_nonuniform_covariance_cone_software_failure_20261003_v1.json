@@ -1,0 +1,38 @@
+{
+  "status": "original_whole_cone_software_fixture_directory_failure_retained",
+  "checked_utc": "2026-10-03T22:03:57.808070+00:00",
+  "actual_tool_result_chunk_id": "a9d4da",
+  "actual_tool_terminal_exit_code": 1,
+  "invocation_id": "236e6d11e4da477bbfefe1abfcb97782",
+  "wrapper": {
+    "pid": 1198685,
+    "created": 1791064985.92,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_full_nonuniform_covariance_cone_software_stage.py",
+      "--resources",
+      "metadata/full_nonuniform_covariance_cone_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v1.json",
+      "--stage",
+      "software",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_nonuniform_covariance_cones.py",
+      "--output",
+      "data/software_audits/full-nonuniform-covariance-cone-20261003-v1",
+      "--receipt",
+      "metadata/full_nonuniform_covariance_cone_software_validation_20261003_v1.json"
+    ]
+  },
+  "error_type": "FileNotFoundError",
+  "scope": "Required fixture parent directory was not created before the already qualified setup helper. Failure before full source/export testing; no real parent sources or jobs changed. Fresh checker V2 only creates that synthetic directory; mathematical and production proof scripts unchanged.",
+  "source_hashes": {
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v1.json": "2b1128f086bbf50adb3b71e6751b573a017ffbfaac8e23d2999b27b357d6dd94",
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v1/original-invocation-journal.jsonl": "84a5def78cd39b6486766e4019ba850a6cab34b981ccc3c03a5e78c10dc7a1b1",
+    "scripts/check_full_nonuniform_covariance_cones.py": "cb1644e58d96fc12f28e60987e061d359eb093648d20cd37e33d4d8783c49b7d",
+    "metadata/full_nonuniform_covariance_cone_software_execution_20261003_v1/stderr.log": "4c58e2af38b67d64935b0f62547f0f6e1cb0f7e2612bfdb231db71540dd92a2d"
+  }
+}
