@@ -52,15 +52,19 @@ frames fail the strict mean check, and mean-passing frames do not gain rate
 eligibility. Unknown-residue disagreements between separate conditional draws
 remain explicit; historical ancestral categories are unavailable.
 
-The full corrected V5 startup grid is running, with 1,518 successful unclosed
-checks at 14:48 UTC and zero unsuccessful checkpoints. The V3 full
-20-iteration joint sampler is queued behind complete corrected startup and
-three closed historical prerequisites. Its software gate passed the entire
+The full corrected V5 startup grid has closed all 1,620 checks with zero
+unsuccessful roles; its 14,402 source/artifact bindings were rehashed at the
+October 3, 15:20 UTC error recheck. The V3 full 20-iteration joint sampler is
+running after all four prerequisite closures. Its software gate passed the entire
 1,620-role workflow with explicit mock failures and export-tampering checks.
-It will use sixteen CPUs/200 GiB/no swap and a 192-GiB reservation ledger.
+It uses sixteen CPUs/200 GiB/no swap and a 192-GiB reservation ledger.
 A new read-only resource observer tracks this new invocation separately.
-No corrected full-grid native sampler roles have started at this checkpoint;
-longer adequate posterior ensembles remain unlaunched.
+All 20 completed roles available at the error-check snapshot passed fresh
+native-output replay, covering 60 joint frames and 3,883,978 ancestral
+residue/category pairs. The installed original formatter still fails a fresh
+probe; the corrected logger passes these checks. Full sampler completion and
+longer adequate posterior ensembles remain pending.
+[Current error recheck](metadata/baliphy_current_joint_logger_error_recheck_20261003_1520.json).
 [Full correction, evidence, resources and pending gates](docs/baliphy-native-number-encoder-correction-20261003.md).
 
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)

@@ -12472,3 +12472,17 @@ and figure review remain next.
   all passed the corrected decoder, including 48 timing-footer cases. Complete
   startup closure and the new native sampler qualification remain pending.
   [Actual available-output replay](../metadata/baliphy_reference_startup_footer_execution_checkpoint_20261003_v5.json).
+
+- October 3, 15:20 UTC: requested error recheck freshly reproduced the installed
+  original numeric formatter failure (five of twelve constants). Native CJSON
+  preserved all twelve. All 1,620 corrected startup roles have closed with zero
+  unsuccessful outcomes; all 14,402 closure bindings were rehashed. The original
+  V3 joint sampler is running. Every one of the 20 completed roles available at
+  the snapshot passed native-output and serialized-array replay: 60 joint frames
+  and 3,883,978 ancestral residue/category pairs, including strict mean-one rates.
+  Both bounded audit commands exited zero; exact invocation journals and actual
+  wait results are retained. A Biopython FASTA deprecation warning did not fail
+  the audit. No scientific jobs were restarted. Full sampler completion, both
+  historical allocation failures, posterior adequacy and all eight aims remain
+  unresolved. [Current replay](../metadata/baliphy_current_joint_logger_error_recheck_20261003_1520.json)
+  and [execution evidence](../metadata/baliphy_current_error_recheck_execution_20261003_1520.json).

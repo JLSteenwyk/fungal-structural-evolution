@@ -1,0 +1,39 @@
+{
+  "status": "verified_actual_current_error_recheck_commands_exited_zero",
+  "checked_utc": "2026-10-03T15:21:58.132224+00:00",
+  "executions": [
+    {
+      "kind": "numeric",
+      "unit": "fungal-logging-error-recheck-20261003-1520.service",
+      "invocation_id": "649f676eedfd4a9bae2bb11d560c1aa3",
+      "actual_tool_session_id": 7313,
+      "actual_tool_terminal_exit_code": 0,
+      "cpu_quota": 2,
+      "memory_gib": 8,
+      "cgroup_swap_bytes": 0,
+      "stage_wall_limit_seconds": 120
+    },
+    {
+      "kind": "saved_frames",
+      "unit": "fungal-current-joint-logger-error-recheck-20261003-1520.service",
+      "invocation_id": "d7d4369a61244c0e867f35451104ad52",
+      "actual_tool_session_id": 92871,
+      "actual_tool_terminal_exit_code": 0,
+      "cpu_quota": 2,
+      "memory_gib": 16,
+      "cgroup_swap_bytes": 0,
+      "stage_wall_limit_seconds": 180
+    }
+  ],
+  "source_hashes": {
+    "data/software_audits/baliphy-current-error-recheck-20261003-1520/numeric.journal.jsonl": "8237ef2619873e260dd3a2be25ff0d9d3ea4d15417cc022581423db643a561a4",
+    "data/software_audits/baliphy-current-error-recheck-20261003-1520/saved_frames.journal.jsonl": "d0543a65dade0507e035168f7c94bde4e8c943109039d0e6c63a5626a0843531",
+    "metadata/baliphy_logging_error_recheck_20261003_1520.json": "3e52ba30ad1dacb77d33ab091cfd9f066b7b02f360580e4787d5629f3fbc118d",
+    "metadata/baliphy_current_joint_logger_error_recheck_20261003_1520.json": "5852b083c306395c9c25f57e24abf018374bfd2e93801c0288826216d8f9fcb6",
+    "metadata/baliphy_joint_logger_preflight_v5_execution_checkpoint_20261003_error_recheck_1520.json": "57b24138cd5c3cb149ce0c3ffe0969a723b96ad7dedffb2827dca828df283ee7",
+    "metadata/baliphy_joint_sampler_qualification_v3_execution_checkpoint_20261003_error_recheck_1520.json": "8efd3b0c3b74b96eaf37fd6cb25c64894966b9ddb0dc4331a907df1c2d98cc5b",
+    "scripts/recheck_current_baliphy_joint_logger.py": "06b31978fc17d7cc5270c9aa45a214d8618c673bc5d0fce2cad1e55bc75cda53"
+  },
+  "existing_jobs_restarted": false,
+  "scope": "Actual original wait return codes and invocation-specific manager journals retained. Resource-summary peaks are not native process RSS measurements. Installed original formatter still fails; twelve native CJSON probe values pass. Full corrected startup closure and all twenty currently completed joint roles/sixty frames passed read-only replay; full sampler completion and posterior adequacy remain pending. Biopython emitted a FASTA deprecation warning during the successful saved-frame audit."
+}

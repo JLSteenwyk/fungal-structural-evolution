@@ -73,6 +73,20 @@ completed successfully with unchanged sources and no old output edits.
 
 ## Full corrected execution and resources
 
+October 3, 15:20 UTC error recheck: all 1,620 corrected startup roles have
+closed with zero unsuccessful roles. All 14,402 closure bindings were freshly
+rehashed. The original V3 sampler is running under its declared limits; every
+one of the 20 completed roles present at the audit snapshot passed read-only
+native-output and serialized-array replay. This covers 60 joint frames and
+3,883,978 ancestral residue/category pairs, including the unchanged strict
+mean-one rate check. The installed original formatter still corrupts five of
+twelve probe constants; native CJSON preserves all twelve. Full sampling and
+posterior adequacy remain pending. The earlier startup/queued snapshots below
+are retained as historical observations.
+[Current native probe](../metadata/baliphy_logging_error_recheck_20261003_1520.json),
+[saved-frame replay](../metadata/baliphy_current_joint_logger_error_recheck_20261003_1520.json),
+[actual execution evidence](../metadata/baliphy_current_error_recheck_execution_20261003_1520.json).
+
 The V5 startup grid is running native `--test` for every role under two CPUs,
 32 GiB RAM, zero cgroup swap and two concurrent workers. Its producer, readback
 and closure have new original handles. At 13:28 UTC, 216 startup checks had

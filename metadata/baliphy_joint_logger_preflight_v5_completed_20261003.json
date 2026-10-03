@@ -1,0 +1,26 @@
+{
+  "status": "complete_verified_full_joint_logger_startup_v5",
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "effective_inputs": 135,
+  "original_configuration_aliases": 324,
+  "validated_startups": 1620,
+  "unsuccessful_startups": 0,
+  "complete_startup_quartets": 405,
+  "unresolved_startup_quartets": 0,
+  "status_counts": {
+    "reference_startup_homology_density_and_representation_checked": 1620
+  },
+  "posterior_sampling_launched": false,
+  "full_hash_archive": "results/ancestral/full-baliphy-joint-logger-preflight-20261003-v5/completion_archive.json",
+  "full_hash_archive_sha256": "a25f4f5bebd279fa010c1c10e4e5a384bdd5ee2c3172ea1a372f72843198b5b5",
+  "bound_source_hashes": 14402,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-baliphy-joint-logger-preflight-20261003-v5/receipt.json",
+  "producer_receipt_sha256": "69b62ad6adab1af61a8c031fa9473b19d61cdc0f27943a4ed2e51cbc7892755b",
+  "independent_readback": "results/ancestral/full-baliphy-joint-logger-preflight-20261003-v5/readback.json",
+  "independent_readback_sha256": "5b97fc9850b914585ef8b0402abf477f3c80db589accc381fd445c64081ccfd1",
+  "completion_plan_sha256": "47977d8b4759130cfd788ee31bd7411785c25d6b8a77e0ce2b913dc3b9971bd8",
+  "scientific_eligibility": false,
+  "scope": "All1620futurejointloggerseedroles,405quartets,135inputs,324aliases. Native--test only; source inverse, reference alignment/homology, fixed-tip/free-ancestor representation, degree-aware prior and runtime rooted tree checked. No MCMC, saved joint logger frames, memory repair, mixing, independent likelihood/root/model/predictor acceptance, GPU or charges. Every native failure/invalid role retained; full readback/source/artifact/two-journal closure required. Existing sources/attempts untouched."
+}
