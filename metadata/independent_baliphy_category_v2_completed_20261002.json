@@ -1,0 +1,49 @@
+{
+  "status": "complete_verified_full_independent_baliphy_categorical_comparison",
+  "full_quartets": 405,
+  "complete_quartets": 403,
+  "unresolved_quartets": 2,
+  "pattern_cutoff_rows": 2032526,
+  "declared_indicator_rows": 44715572,
+  "coordinate_counts": {
+    "250": 22871876,
+    "500": 22871876
+  },
+  "pattern_status_counts": {
+    "250:no_observed_state_variation_requires_review": 8120,
+    "250:categorical_mixing_requires_review": 1053132,
+    "500:no_observed_state_variation_requires_review": 8131,
+    "500:categorical_mixing_requires_review": 963143
+  },
+  "coordinate_status_counts": {
+    "250:no_observed_state_variation_requires_review": 11242862,
+    "250:categorical_mixing_requires_review": 11629014,
+    "500:no_observed_state_variation_requires_review": 11836115,
+    "500:categorical_mixing_requires_review": 11035761
+  },
+  "numeric_comparison_status_counts": {
+    "original_disposition_only_no_defined_metrics": 40344879,
+    "all_defined_metrics_compared": 4370678,
+    "binary_zero_pair_metric_requires_review": 15
+  },
+  "maximum_absolute_errors": {
+    "rhat": 8.881784197001252e-16,
+    "bulk_ess": 6.536993168992922e-12,
+    "tail_ess": 6.16751094639767e-12,
+    "mean_mcse": 7.105427357601002e-15
+  },
+  "singular_indicator_rows": 0,
+  "binary_zero_pair_indicator_rows": 15,
+  "unanchored_count_rows": 3224,
+  "full_hash_archive": "results/ancestral/full-independent-categorical-readback-20261002-v2/completion_archive.json",
+  "full_hash_archive_sha256": "1c2b2eae44f95a1a15ba3ba04b52ae6fdd832fc10d7fb154d2f159841d7f7228",
+  "bound_source_hashes": 51281,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-independent-categorical-readback-20261002-v2/receipt.json",
+  "producer_receipt_sha256": "4382b5cfca9f6b958762221b44a4b8ac5756a3f95b627225b277377684a7969c",
+  "independent_readback": "results/ancestral/full-independent-categorical-readback-20261002-v2/readback.json",
+  "independent_readback_sha256": "a5210849e7d3c1cc60d49f7c6e04cbb6913230710a67af57590f50314af10605",
+  "completion_plan_sha256": "2478421f7723f79df20c8a68801ff3a4af5535e1e1cfd2f39bdf4c8186de2351",
+  "scientific_eligibility": false,
+  "scope": "Full405originalquartets,403complete/twoexplicitnativefailures,original1620chainIDs/inputs/seeds/whole selected attempts, both250/500cutoffs andall22AA/unknownX/gaplabels. Reconcile each quartet withfour closed selected chain states; independently rebuild exact fulltemporal patterns/coordinate maps/multiplicities and compare every2,032,526pattern report and44,715,572stateindicator row with a direct-lag separate scalar backend at unchanged1e-8absolute+relative tolerance. Retain all absent/constant/singular reviews and six descriptive chain distances; separately replay3224unanchored count screens. Deterministic streamed wholecutoff artifacts/immutable wholequartet checkpoints, full serialized replay, fullsource/artifact hashes and both original actual-invocation journals gate accounting closure. The reader shares the new estimator and is not a third independent numerical implementation; native alignment parser, adequate sampling, joint posterior/model/root/predictor qualification remain open. No native inference restart, GPU prediction, paid resources, biological pilot or completion of aim8/anyother aim. Version2 preserves the original failed version1 code/plan/journals/37group checkpoints. Only reachable exactlyzero binary Geyer autocorrelation pair boundaries certified by integer/Fraction arithmetic may retain differing ESS/MCSE values as explicit unresolved numerical reviews, never passed agreement. Both values must match exact admissible roundoff branch outcomes at the original tolerance; all other differences still fail. Fullgroup/state/sample scope and posterior thresholds unchanged."
+}

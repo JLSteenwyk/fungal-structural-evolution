@@ -1,5 +1,21 @@
 # Categorical ancestral-state diagnostic
 
+## October 3: complete independent comparison and published review tables
+
+The recovered-horizon [full independent comparison](independent-ancestral-categorical-completion-20261003.md)
+has closed production, serialized readback and provenance for all 405
+quartets, including both retained native failures. It checked 2,032,526
+pattern records and 44,715,572 state indicators across both cutoffs. All
+ordinary defined comparisons use unchanged numerical tolerances. Fifteen
+exact zero-pair boundary indicators retain seventeen metric review flags;
+these are unresolved comparisons, not passed agreement. The published tables
+retain every group/cutoff and every flag. None of the patterns passes the
+observed-state mixing screen, and no ancestral posterior is qualified.
+The earlier first-horizon definitions and dated execution records below
+retain their original scopes.
+
+## Diagnostic definition and earlier execution
+
 `scripts/ancestral_categorical_diagnostics.py` screens one source-node/extant-
 residue anchor across four independently seeded chains. It receives categorical
 state codes and constructs a binary indicator for each declared amino-acid,

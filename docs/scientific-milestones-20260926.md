@@ -1,8 +1,18 @@
-# Open scientific milestones — updated October 2, 2026
+# Open scientific milestones — updated October 3, 2026
 
 This tracker preserves the eight aims in the [original objective](objective.txt).
 **None of the eight aims is complete.** Completed computational stages below
 support the aims but do not replace their statistical or biological requirements.
+
+The [full independent categorical comparison](independent-ancestral-categorical-completion-20261003.md)
+is now closed for all 405 quartets, with two native failures and fifteen
+numerical-review indicators retained. Both cutoffs and all seventeen metric
+flags have published tables. No pattern passes the observed-state mixing
+screen. All 1,620 corrected reference startups have separately passed complete
+provenance closure; the full short sampler is running and has a
+[read-only resource observer](baliphy-sampler-resource-observation-20261003.md).
+Sampler/observer closure, independent joint site-property replay and longer
+adequate ensembles remain pending. GPU inference remains paused.
 Chronological receipts and process records remain in [progress](progress.md).
 
 | Aim | Current evidence | Next required result and completion evidence |
@@ -14,7 +24,7 @@ Chronological receipts and process records remain in [progress](progress.md).
 | 5. Ecological/morphological transitions | Evidence-curated traits and independently verified ESMFold/expanded AlphaFold shared-site coverage | Establish independently replicated usable transitions, preserve ambiguous assignments, and test controlled associations with structural change. A trait's number of labeled tips is not its number of independent origins. See [ecology](ecology-evidence-workflow.md). |
 | 6. Functional locations | Audited residue accessibility and functional correspondences | Join changes to supported core/surface and catalytic/binding annotations; evaluate matched backgrounds and supported interfaces/pockets where evidence permits. Annotation correspondence does not establish activity. See [functional workflow](functional-site-workflow.md). |
 | 7. Selection | Codon fits and optimization/eligibility diagnostics | Resolve copy, alignment, saturation and optimization concerns; define justified test sets and multiple-testing scope; map supported residues. Structural acceleration is not evidence of positive selection. See [codon workflow](codon-model-environment.md). |
-| 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline, bound and alternate-start comparisons completed; 26,126,280 alternate probabilities checked. Full 1,000-iteration recovered overlay: 1,618 intact chains/403 complete quartets/two failures, with verified diagnostic table/figures. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. No complete quartet passes every scalar/length screen. Separate [full scalar numerical readback](independent-ancestral-scalar-readback-20261002.md) completed; [full categorical replay](independent-ancestral-categories-20261002.md) is running. Conditional marginals and integrity-passing traces are not qualified ancestral ensembles. |
+| 8. Ancestral/mechanistic cases | Thirteen exploratory families; all 8,708,760 refined whole-protein and 3,365,640 refined domain amino-acid probabilities numerically checked. Refined/baseline, bound and alternate-start comparisons completed; 26,126,280 alternate probabilities checked. Full 1,000-iteration recovered overlay: 1,618 intact chains/403 complete quartets/two failures, with verified diagnostic table/figures. Full categorical comparison and all 1,620 corrected reference startups have closed; full short sampler/resource observation is running. | Resolve joint insertion/deletion and alignment uncertainty, posterior convergence, model adequacy and root/topology sensitivity; qualify cases using preceding biological analyses, predict authorized ancestral alternatives and formulate testable hypotheses. No complete quartet passes every scalar/length screen. Separate [full scalar numerical readback](independent-ancestral-scalar-readback-20261002.md) and [full categorical replay](independent-ancestral-categorical-completion-20261003.md) completed, with every failure/numerical review retained. Conditional marginals and integrity-passing traces are not qualified ancestral ensembles. |
 
 ## Current execution dependencies (updated September 29)
 

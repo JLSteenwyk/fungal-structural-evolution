@@ -1,0 +1,11 @@
+name: fungal-baliphy-sampler-resource-observation-20261003
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - biopython=1.86
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - psutil=7.2.2
+# Native binary/API/model/configuration hashes are inherited from the full
+# sampler plan. This observer starts no inference or GPU work.

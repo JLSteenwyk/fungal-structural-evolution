@@ -1,5 +1,47 @@
 # Progress and evidence
 
+## October 3: categorical closure, startup qualification and live resource observation
+
+The [full independent categorical comparison](independent-ancestral-categorical-completion-20261003.md)
+has completed production, serialized readback and source/artifact/two-journal
+closure: 405 quartets, 403 complete and two retained failures, 2,032,526 pattern
+records and 44,715,572 state indicators. Ordinary defined comparisons pass
+unchanged tolerances; fifteen certified zero-pair indicators retain seventeen
+explicit metric reviews. No pattern passes the observed-state mixing screen.
+The published tables include all 810 group/cutoff rows and every review flag.
+The exporter's earlier indicator-versus-metric counting failure remains
+preserved; the corrected original v2 export completed successfully.
+
+Full reference startup and corrected footer replay have also closed. All
+1,620 corrected startups pass across 405 quartets, 135 inputs and 324 aliases.
+Seventy-two native timing footers were reclassified by the new reader; no
+native attempt was rerun and the original parser dispositions remain intact.
+Corrected closure binds 13,960 artifacts/sources and both original journals.
+[Startup completion](../metadata/baliphy_reference_startup_footer_completed_20261003.json).
+
+The original full short sampler started only after that admission gate passed.
+At 07:15 UTC, 19 roles had successful unclosed output checks; four exact native
+workers were live with 48-GiB address-space caps. Their reservations consume
+the full 192-GiB budget under the original 16-CPU/200-GiB/no-swap group limits.
+Full 1,620-role output/readback/provenance closure remains pending. The
+[new read-only observer](baliphy-sampler-resource-observation-20261003.md)
+captures all roles, native identities, enforced limits, Linux memory/CPU
+readings, group events and explicit missed observations. Full-grid software
+contracts and one actual native fixture passed; its earlier observer fixture
+failure remains preserved with its exact triggering command state unproven.
+
+A [fresh compact completion checkpoint](../metadata/ancestral_qualification_completion_execution_checkpoint_20261003.json)
+verified every immutable pin for the three closed stages, archive summaries
+and receipt bindings, all nine original terminal handles and three actual
+software/export invocations. It reverified both published table hashes; it
+does not rerun the large completed readers or all native artifact hashes.
+
+Neither old allocation failure is repaired by these observations. Long-chain
+resource planning, independent joint site-property replay, disjoint-seed
+posterior sampling, adequate mixing, accepted phylogeny/reconciliation/dating,
+biological/model/predictor controls and calibration remain required. GPU
+prediction stays paused; all eight scientific aims remain incomplete.
+
 ## October 2 full ancestral diagnostics published and initialization reviewed
 
 The original state-extraction, candidate-length and categorical controllers

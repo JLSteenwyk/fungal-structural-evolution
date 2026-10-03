@@ -1,0 +1,27 @@
+{
+  "status": "complete_verified_full_reference_alignment_startup",
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "effective_inputs": 135,
+  "original_configuration_aliases": 324,
+  "validated_startups": 1548,
+  "unsuccessful_startups": 72,
+  "complete_startup_quartets": 387,
+  "unresolved_startup_quartets": 18,
+  "status_counts": {
+    "reference_startup_homology_density_and_representation_checked": 1548,
+    "invalid_native_startup_retained": 72
+  },
+  "posterior_sampling_launched": false,
+  "full_hash_archive": "results/ancestral/full-baliphy-reference-preflight-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "638e9c49c010b02341ec4a517df0e67cbb107f359c50441b5d1e0f37b6a85cfa",
+  "bound_source_hashes": 13943,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-baliphy-reference-preflight-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "3ecb11a386a4a18826a0b7234e7f0ecd9823decdf9296df74fcfd0d04d8b39dd",
+  "independent_readback": "results/ancestral/full-baliphy-reference-preflight-20261003-v1/readback.json",
+  "independent_readback_sha256": "83623ed331fdcf938f78c5f900a4dd13ff5058318d38268a2a6951e667827a13",
+  "completion_plan_sha256": "f4ca2455aa4c3c6278d33c515c1a5e4cb0dc2f9e6a831fa8754f3af095019c5d",
+  "scientific_eligibility": false,
+  "scope": "Full135 effective inputs x3 original priors x4 fresh seed roles, all324 aliases. Native --test startup only: supplied alignment is a starting state, not observed aligned data. Original distribution, density, kernels, fixed-tip/free-ancestor representation and priors retained. All native failures and invalid startups retained; no posterior sampling, memory repair, mixing qualification, GPU, new costs or scientific acceptance. Complete serialized/source/journal closure required."
+}

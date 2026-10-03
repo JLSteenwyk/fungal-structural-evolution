@@ -21,25 +21,34 @@ These are output-integrity results; adequate posterior mixing and biological
 model/root acceptance remain open.
 
 A [model-preserving reference-alignment initializer](docs/baliphy-reference-initialization-20261003.md)
-has passed native software checks and complete 1,620-role generator checks.
-Full startup-only execution now covers every original input/prior/seed role
-under two-CPU/24-GiB/no-swap limits. It retains the original probability
-density and alignment moves. A separate full reread is queued to recognize
-native timing footers without rerunning any attempts; every currently
-available startup passed the corrected snapshot decoder. Complete startup
-closure, adequate mixing and both earlier allocation failures remain open.
-The 10,000-iteration posterior proposal remains unlaunched; GPU prediction
-stays paused. [Current startup and resource evidence](metadata/baliphy_reference_preflight_execution_checkpoint_20261003_v3.json).
+has completed startup execution and corrected full readback: all 1,620 roles,
+405 quartets, 135 inputs and 324 original aliases passed. The separate reader
+recognized 72 native timing footers without rerunning any native attempt;
+the original parser dispositions remain preserved. Full corrected closure
+binds 13,960 source/artifact hashes and both original journals. Startup fidelity
+does not establish adequate mixing or repair either historical allocation
+failure. The 10,000-iteration posterior proposal remains unlaunched.
+[Verified startup completion](metadata/baliphy_reference_startup_footer_completed_20261003.json).
+
+The [full independent categorical comparison](docs/independent-ancestral-categorical-completion-20261003.md)
+has completed serialized/source/artifact/journal closure for all 405 quartets,
+2,032,526 pattern records and 44,715,572 state indicators. Both failed quartets
+and 15 numerical review indicators remain explicit. Published tables include
+all 810 group/cutoff rows and all 17 affected metric flags. No quartet is
+qualified as an adequate ancestral posterior by these integrity checks.
 
 The [full sampler/resource qualification](docs/baliphy-reference-sampler-qualification-20261003.md)
-is now queued behind complete corrected startup closure for all 1,620 roles.
-It will exercise 20 sampling iterations per role under a 16-CPU/200-GiB cap,
+has started after complete corrected startup closure for all 1,620 roles.
+It exercises 20 sampling iterations per role under a 16-CPU/200-GiB cap,
 with a shared 192-GiB reservation budget held through each native run and
 output check. Full scheduler, native software fixtures, serialized-reader and
 startup-admission contracts passed. No role is excluded or automatically
 retried; this computational checkpoint does not establish posterior mixing.
-The original memory failures and numerical diagnostic review remain open.
-[Verified original queue](metadata/baliphy_reference_sampler_execution_checkpoint_20261003.json).
+At 07:15 UTC, 19 roles had successful unclosed output checks and four native
+48-GiB workers were live. A separate [read-only resource observer](docs/baliphy-sampler-resource-observation-20261003.md)
+records every role, missed observations and actual enforced limits. Full
+sampler/observer closure, original memory failures and posterior qualification
+remain open. [Verified original execution](metadata/baliphy_reference_sampler_execution_checkpoint_20261003_v3.json).
 
 The [earlier full project runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v20.json)
 checks 16 pipeline handles and six original scientific/retrieval jobs, with

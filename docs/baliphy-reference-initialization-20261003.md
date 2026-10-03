@@ -9,6 +9,27 @@ sampling, rather than the entire structural atlas. Native execution uses
 chains, inadequate posterior mixing, root/model uncertainty and all eight
 biological aims remain unresolved.
 
+## October 3: complete native startup and corrected reader closure
+
+All 1,620 original startup-only attempts and their first serialized reader
+have completed [full provenance closure](../metadata/baliphy_reference_preflight_completed_20261003.json).
+The first parser accepted 1,548 and retained 72 invalid-output dispositions.
+The [separate full footer-aware replay](../metadata/baliphy_reference_startup_footer_completed_20261003.json)
+has completed with all 1,620 startups valid, 405 complete quartets and zero
+failed startup dispositions. All 72 differences are recognized native timing
+footers; no native attempt or prior source/output was changed or rerun.
+Corrected closure binds 13,960 sources/artifacts and both original journals.
+
+The [fresh compact completion observation](../metadata/ancestral_qualification_completion_execution_checkpoint_20261003.json)
+checks all 982 footer-stage pins, archived summaries/receipt bindings and all
+three original terminal handles. Earlier dated partial observations below
+retain their original scope. The full short sampler has now started after
+this gate; its [workflow](baliphy-reference-sampler-qualification-20261003.md)
+and [resource observation](baliphy-sampler-resource-observation-20261003.md)
+are separate stages. Startup fidelity does not qualify their outputs, prove
+long-run memory safety, resolve historical allocation failures or establish
+posterior mixing. The longer posterior proposal remains unlaunched.
+
 ## What changes and what is preserved
 
 The installed [PhyloAlignment module at the pinned upstream commit](https://github.com/bredelings/BAli-Phy/blob/80b0402eed0157f31ecb57e0efc34c03ed83050c/haskell/Probability/Distribution/PhyloAlignment.hs)

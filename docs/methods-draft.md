@@ -2885,3 +2885,45 @@ both original journals. Synthetic native, full scheduler and artificial full
 serialization/gate fixtures are separately identified. Future longer chains
 require independent seeds and full posterior/model/structure qualification.
 [Execution, estimates, controls and limitations](baliphy-reference-sampler-qualification-20261003.md).
+
+## Full categorical numerical comparison and sampler resource observation
+
+The recovered ancestral horizon's complete categorical comparison retained
+all 405 requested model quartets, both burn-in cutoffs, failed chains and
+declared categorical states. The independent direct-lag estimator compared
+2,032,526 temporal-pattern records and 44,715,572 state indicators at unchanged
+1e-8 absolute/relative tolerance. Ordinary defined indicators agreed;
+undefined/constant-state dispositions remained explicit. Fifteen indicators
+at exactly reachable zero autocorrelation-pair boundaries retained seventeen
+metric discrepancies with exact integer/Fraction certificates for admissible
+roundoff outcomes. Those discrepancies were not accepted as numerical
+agreement. No pattern passed the observed-state mixing screen. Full serialized
+readback and provenance closure checked 51,281 bindings and both original
+journals; complete group/cutoff and discrepancy tables are published.
+[Full scope, results and reproduction](independent-ancestral-categorical-completion-20261003.md).
+
+All 1,620 reference-startup attempts passed a separate corrected full reader
+and provenance closure, recognizing 72 actual timing footers without rerunning
+native attempts. This admitted the complete short sampler, whose independent
+longer posterior horizon remains unlaunched. Short output-integrity checks
+do not establish sufficient posterior sample size or allocation repair.
+
+A separate read-only observer follows the exact original sampler controller
+and all native attempt descriptors, accepting OS measurements only while
+PID/create/command/configuration/cgroup and enforced limits match before and
+after the reads. It retains Linux-reported virtual/resident memory, CPU time,
+raw status/limit hashes, group memory/pressure counters, actual poll gaps and
+unavailable/missed observations. Per-process memory readings are approximate
+and can miss later peaks; group counters include more than native RSS.
+[Linux proc](https://docs.kernel.org/filesystems/proc.html) and
+[cgroup v2](https://docs.kernel.org/admin-guide/cgroup-v2.html) document these
+accounting distinctions. Complete role accounting, streaming reader replay
+and two original observer journals are required for observational closure,
+separately from native output closure and biological qualification.
+[Resources, identities, software evidence and caveats](baliphy-sampler-resource-observation-20261003.md).
+
+At this checkpoint full sampler/observer closure, independent joint
+site-property replay, adequate disjoint-seed sampling, alignment/homology
+mixing and root/model/predictor controls remain open. Every failed role and
+numerical review remains in scope; no ancestral structure or biological
+mechanism is accepted on this basis.

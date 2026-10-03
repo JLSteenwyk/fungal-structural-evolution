@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-10-03T06:46:38.815447+00:00",
+  "status": "preserved_failed_resource_observer_software_fixture",
+  "unit": "fungal-sampler-resource-software-validation-20261003-v1.service",
+  "native_receipt": "data/software_audits/baliphy-sampler-resource-observation-20261003-v1/native/attempt-0001/receipt.json",
+  "native_receipt_sha256": "9edced162cfab4d6bc69264b8ac3fff9ff43c675e9766cbaeaf4389e4020e86d",
+  "native_exit_code": 0,
+  "failure": "Native command identity changed assertion in live observer; native fixture itself completed successfully. Original assertion did not retain unexpected argv, so exact triggering state is not proven. Observer needs explicit handling/testing for empty argv and exec/exit races without accepting a stable unrelated command.",
+  "source_hashes": {
+    "data/software_audits/baliphy-sampler-resource-observation-development-20261003-v1/baliphy_sampler_resource_observation.py": "6590ba6f40505c7a98227012c7dedd87b672612bdd3e14a1d37bdb6dbbce9bf5",
+    "data/software_audits/baliphy-sampler-resource-observation-development-20261003-v1/run_baliphy_sampler_resource_observation.py": "0a1c8cd11f90dc5ce5e5e74363a3540c53a92db8b996eb42111dbae02b18cb7f",
+    "data/software_audits/baliphy-sampler-resource-observation-development-20261003-v1/check_baliphy_sampler_resource_observation.py": "37ebec09e5b0a5e1acc5a07a8c3c570cf5854d5870eedf533f1a5befc68cd9c4",
+    "data/software_audits/baliphy-sampler-resource-observation-development-20261003-v1/journal.jsonl": "d2e52bdd8dc03960d0cae2431638ec96988804439b2a9a0ae16447dabe982956"
+  },
+  "scientific_eligibility": false,
+  "production_jobs_restarted": false
+}

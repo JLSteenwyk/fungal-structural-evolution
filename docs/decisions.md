@@ -1133,3 +1133,36 @@ The seeds from startup-only checks now have first short MCMC use; regenerate
 future independent posterior seeds in a disjoint namespace rather than reuse
 or concatenate these attempts. GPU inference remains paused.
 [Resources, software gates and complete queue](baliphy-reference-sampler-qualification-20261003.md).
+
+## October 3: publish full numerical closure and observe actual sampler resources
+
+Publish complete categorical accounting across all 405 quartets and both
+cutoffs, retaining two native failures, constant/absent-state reviews and all
+fifteen certified zero-pair indicators. Distinguish fifteen indicator reviews
+from their seventeen metric flags; numerical branch certification does not
+make differing values agreed or relax a posterior threshold. The initial
+report-export count error remains preserved, and corrected exports reconcile
+every full group summary and retain all flags.
+[Completed comparison and tables](independent-ancestral-categorical-completion-20261003.md).
+
+Treat the corrected all-1,620 startup closure as the sampler admission gate,
+while preserving the first parser's 72 footer-invalid outcomes. The corrected
+reader recognizes all 72 timing footers without native reruns. Startup or
+early short-sampler successes do not establish causal repair of either old
+allocation failure or safe long-chain memory.
+
+Record actual resource readings for the original sampler with a separately
+bounded read-only process. Bind native identities/caps, retain missed and
+unavailable observations, distinguish kernel-reported memory from enforced
+limits and whole-group counters, and require complete streaming readback plus
+two original observer journals. Never infer final per-role peaks from the
+last poll or treat sequential readings as simultaneous concurrency proof.
+The observer's failed first software fixture remains preserved; the exact
+unexpected command state was not captured and is unproven. Revised software
+checks passed before the production source was frozen. Original jobs, limits,
+source pins and GPU pause remain unchanged.
+[Observer implementation, software evidence and limits](baliphy-sampler-resource-observation-20261003.md).
+
+All eight biological aims, adequate independent ancestral sampling, accepted
+phylogenetic framework/reconciliation/dating and model/predictor/calibration
+controls remain required. Full computational closure is not project completion.

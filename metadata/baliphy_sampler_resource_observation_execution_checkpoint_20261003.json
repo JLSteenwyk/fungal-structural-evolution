@@ -1,0 +1,249 @@
+{
+  "checked_utc": "2026-10-03T06:51:44.673296+00:00",
+  "status": "verified_original_sampler_resource_observer_runtime",
+  "plan_sha256": "69b2ce89f33f67c94c170a2f6f625917203577e25daf1d592abaafaf5678008c",
+  "frozen_pins_checked": 1000,
+  "original_handles": [
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-20261003-v1.service",
+      "pid": 2846844,
+      "created": 1791010303.2,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json",
+      "plan_sha256": "356244b465489bc8aa66cae0a72f32041c9a7e2d65d3b144c4cbba96b75cb76c",
+      "checked_utc": "2026-10-03T06:51:43.932201+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "2147483648",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=100%",
+        "--property=MemoryMax=2G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [
+        {
+          "pid": 2846852,
+          "created": 1791010303.27,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_baliphy_sampler_resource_observation.py",
+            "--plan",
+            "metadata/baliphy_sampler_resource_observation_plan_20261003.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 0.5
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "350dd0d57d4fc862659b53fd63e96d2bc7420caa53aad5ddcdaad9940e0183f6",
+      "current_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "2147483648",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-readback-20261003-v1.service",
+      "pid": 2846848,
+      "created": 1791010303.25,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json",
+      "plan_sha256": "f59cdbd5910cdc0245a606c7d3e110572a42ad96faf4be388523498f07885296",
+      "checked_utc": "2026-10-03T06:51:43.962763+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=4G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "e8256064e4699eb6a9e4aefcb87e0465715b84ba484b458f7211812afefc54f7",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-closure-20261003-v1.service",
+      "pid": 2846853,
+      "created": 1791010303.28,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json",
+      "plan_sha256": "e5fa704c3381215b86ec6038d87374178af5916898a0d593622eb99335536669",
+      "checked_utc": "2026-10-03T06:51:43.992694+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=4G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "02804dc80e11b5c67ac37b5cb963ffc65fdb4cc17746df235be4a5db031ac837",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+      "pid": 2826442,
+      "created": 1791008208.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json",
+      "plan_sha256": "ee2b31dd7a4e2bb9af52b44bc1b48c62b2c38e8e994461bff0fa0543b1f3e189",
+      "checked_utc": "2026-10-03T06:16:49.275037+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=1600%",
+        "--property=MemoryMax=200G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_reference_sampler_qualification_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.12,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "43e07f1b5ecdfb75aefbdf0537288164f42c1318bb10f0777617efd9b2a3a81b",
+      "current_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      }
+    }
+  ],
+  "journal_bytes": 843,
+  "latest_complete_snapshot": {
+    "sequence": 0,
+    "checked_utc": "2026-10-03T06:51:44.476371+00:00",
+    "sampler_controller_pid": 2826442,
+    "sampler_controller_created": 1791008208.54,
+    "elapsed_since_previous_snapshot_seconds": 0.0014406050322577357,
+    "cgroup": {
+      "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+      "limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "memory_bytes": {
+        "memory.current": 8667136,
+        "memory.peak": 9121792,
+        "memory.swap.current": 0
+      },
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "scope": "Cgroup counters include descendants and kernel/cache charges; not the sum of native worker RSS. No counter resets or configuration writes."
+    },
+    "new_attempts": [],
+    "native_observations": []
+  },
+  "posterior_qualified": false,
+  "new_native_jobs": 0,
+  "gpu": false,
+  "scope": "Exact original handles, live caps and latest complete observation only; no full event/native replay, source closure or precision/final-peak claim."
+}

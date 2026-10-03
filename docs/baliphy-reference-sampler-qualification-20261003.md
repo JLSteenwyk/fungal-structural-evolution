@@ -1,13 +1,24 @@
 # Full ancestral sampler and resource qualification
 
-The full 1,620-role short sampler qualification is queued behind the corrected
-reference-startup provenance closure. It will exercise proposals on all 135
+The full 1,620-role short sampler qualification is running after the corrected
+reference-startup provenance closure passed. It exercises proposals on all 135
 effective inputs, three original priors and four fresh seed roles, retaining
 all 324 original configuration aliases. This is a computational checkpoint
 within the full project, not a biological pilot or a reduced sampling design.
 Twenty iterations cannot establish posterior convergence or qualify ancestral
 sequences for structure prediction. The longer posterior proposal remains
 unlaunched; all eight biological aims remain incomplete.
+
+At 07:15 UTC on October 3, 19 roles had successful unclosed output checks and
+four exact native workers were live with 48-GiB address-space limits. All
+1,620 startups passed the corrected reader and full closure, including 72
+native timing-footers reclassified without rerunning inference. The
+[current sampler checkpoint](../metadata/baliphy_reference_sampler_execution_checkpoint_20261003_v3.json)
+checks 991 pins and original handles/caps. The
+[separate resource observer](baliphy-sampler-resource-observation-20261003.md)
+captures actual memory/CPU readings, missed observations and all requested
+roles. Full sampler and observer readback/provenance closure remain pending.
+Earlier dated queue observations below retain their historical scope.
 
 ## Why this step is needed
 

@@ -1,0 +1,119 @@
+{
+  "status": "verified_original_full_reference_startup_runtime_checkpoint",
+  "checked_utc": "2026-10-03T07:05:27.054928+00:00",
+  "plan": "metadata/baliphy_reference_preflight_plan_20261003.json",
+  "source_plan_sha256": "056a5f4161aaaa3134215d4e2904a735e009e71222227f0dcb9e2a10b7f7e9d6",
+  "frozen_source_pins_checked": 974,
+  "observer_sha256": "ed6e981c63e9a04981389a4d766393d63413bbb8498e71974f5fc4408014f37b",
+  "launch_inventory_sha256": "589aba4747a76a4f821716f9447a4603b5f8e15a2ba3690ea3e34a0050bd4e3f",
+  "original_handles": [
+    {
+      "launch": "metadata/baliphy_reference_preflight_launch_20261003.json",
+      "pid": 2786767,
+      "created": 1791004258.32,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_preflight_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "efed4875abd8296cf2ef7e115075d88a12109745a12797e1905042ad7c744807",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "2c6a6f0a9f06ae262ad2f3ec46fe95dbf8474ba3d14d6c0de4ae17771c98bf0d",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791010572641601",
+          "CPU_USAGE_NSEC": "12579591997000",
+          "MEMORY_PEAK": "3584000",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_preflight_readback_launch_20261003.json",
+      "pid": 2786771,
+      "created": 1791004258.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_preflight_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "6ef60b2b7253fe4437bda65959929deda85b90e546af085e1e715794ba1685b6",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "991870b3483c0b2bfba8c6cd38b4d567de4830dca9224e1b63321a24b40a84e3",
+      "captured_process_messages": 212,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791010621857910",
+          "CPU_USAGE_NSEC": "26684229000",
+          "MEMORY_PEAK": "2760704",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_reference_preflight_closure_launch_20261003.json",
+      "pid": 2786776,
+      "created": 1791004258.4,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_preflight_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "b69d503539b20ad98b1036e451d46cc11fa6d7b62e1ce3458c5db52cb5d5822f",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "1456c10b5009e78c218a1beff6e13d8c64eea5bcedd47c65ba1e110a442ec20d",
+      "captured_process_messages": 213,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791010628070656",
+          "CPU_USAGE_NSEC": "3041676000",
+          "MEMORY_PEAK": "2846720",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "unclosed_startup_checkpoints": 1620,
+  "startup_status_counts": {
+    "reference_startup_homology_density_and_representation_checked": 1548,
+    "invalid_native_startup_retained": 72
+  },
+  "accounting_closure": {
+    "status": "complete_verified_full_reference_alignment_startup",
+    "full_chains": 1620,
+    "full_quartets": 405,
+    "effective_inputs": 135,
+    "original_configuration_aliases": 324,
+    "validated_startups": 1548,
+    "unsuccessful_startups": 72,
+    "complete_startup_quartets": 387,
+    "unresolved_startup_quartets": 18,
+    "status_counts": {
+      "reference_startup_homology_density_and_representation_checked": 1548,
+      "invalid_native_startup_retained": 72
+    },
+    "posterior_sampling_launched": false,
+    "full_hash_archive": "results/ancestral/full-baliphy-reference-preflight-20261003-v1/completion_archive.json",
+    "full_hash_archive_sha256": "638e9c49c010b02341ec4a517df0e67cbb107f359c50441b5d1e0f37b6a85cfa",
+    "bound_source_hashes": 13943,
+    "exact_process_journals_checked": 2,
+    "producer_receipt": "results/ancestral/full-baliphy-reference-preflight-20261003-v1/receipt.json",
+    "producer_receipt_sha256": "3ecb11a386a4a18826a0b7234e7f0ecd9823decdf9296df74fcfd0d04d8b39dd",
+    "independent_readback": "results/ancestral/full-baliphy-reference-preflight-20261003-v1/readback.json",
+    "independent_readback_sha256": "83623ed331fdcf938f78c5f900a4dd13ff5058318d38268a2a6951e667827a13",
+    "completion_plan_sha256": "f4ca2455aa4c3c6278d33c515c1a5e4cb0dc2f9e6a831fa8754f3af095019c5d",
+    "scientific_eligibility": false,
+    "scope": "Full135 effective inputs x3 original priors x4 fresh seed roles, all324 aliases. Native --test startup only: supplied alignment is a starting state, not observed aligned data. Original distribution, density, kernels, fixed-tip/free-ancestor representation and priors retained. All native failures and invalid startups retained; no posterior sampling, memory repair, mixing qualification, GPU, new costs or scientific acceptance. Complete serialized/source/journal closure required."
+  },
+  "posterior_sampling_launched": false,
+  "gpu_inference_paused": true,
+  "all_eight_aims_incomplete": true,
+  "scope": "All frozen startup pins, exact original handles or invocation-linked terminal journals, live cgroups and native worker limits observed. Checkpoints are unclosed progress. Compact completion archive hash checked when present; no full native-output replay by this observer. No prior inference restart or scientific/memory/mixing acceptance."
+}
