@@ -993,3 +993,25 @@ two CPU equivalents/32 GiB/no swap/one BLAS thread per stage. No new native
 sampling, GPU use or paid resources follow. Full serialized replay and actual
 journal/hash closure remain mandatory; numerical agreement does not establish
 adequate horizons, independent native parsing or a qualified joint posterior.
+
+
+## October 2 evening: preserve ESS boundary differences as explicit review
+
+The first full categorical replay failed on bulk ESS 188.67018722995684 versus
+199.59370238699853 after 37 complete groups. Rehashed original pattern/report
+artifacts reproduce the error. Exact binary autocorrelations contain a reachable
+zero pair; finite arithmetic changes the strict-positive truncation branch.
+A new certificate enumerates possible rounding decisions only at exact zero
+pairs. Both differing values must match admissible exact outcomes at unchanged
+1e-8 absolute-plus-relative tolerance. Those metrics remain explicitly unresolved
+and are excluded from ordinary-agreement maxima. Other mismatches fail; original
+status/definedness/source/sample scope and scientific thresholds stay unchanged.
+
+Preserve all failed original invocations, frozen v1 code/plan and outputs.
+Launch the separately pinned v2 full scope only after exact actual-source
+regression, 250 binary fixtures, four altered-metric rejections and the complete
+405-group/checkpoint/serialized software workflow pass. Full raw saved-alignment
+verification is separate: manual native decoding and the full 1,620-chain source
+inventory are complete, but saved-block projections/count arrays and independent
+clade identity are not newly qualified. No native sampling/GPU restart follows.
+[Evidence and full replacement](independent-ancestral-categories-20261002.md#exact-ess-boundary-and-full-replacement-october-2-evening).

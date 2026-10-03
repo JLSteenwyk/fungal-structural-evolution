@@ -3,9 +3,11 @@
 This extends the [completed scalar numerical check](independent-ancestral-scalar-readback-20261002.md)
 toward the amino-acid state diagnostics needed for uncertainty-aware ancestors.
 Software contracts and a complete source/resource inventory are available.
-The full production replay started October 2 at 21:59 EDT; its serialized
-reader and provenance closure are queued. No ancestral posterior or new
-ancestral structure is qualified.
+The original full production replay stopped October 2 at 22:20 EDT on an
+ESS rounding boundary after 37 complete groups. A separately versioned full
+replacement launched at 22:49 EDT after software and actual-source regression
+checks. Its serialized reader and provenance closure are queued. No ancestral
+posterior or new ancestral structure is qualified.
 
 ## Scope and method
 
@@ -75,7 +77,7 @@ hidden cutoffs, false failure dispositions and an omitted original failed group.
 Its repeated fixture patterns and source journals are synthetic; this is not
 the production 2,032,526-pattern result.
 
-## Full production replay and provenance
+## Original production replay and provenance
 
 The [35-pin full plan](../metadata/independent_baliphy_category_plan_20261002.json)
 fixes every original group, cutoff, state and expected source count. The
@@ -159,3 +161,109 @@ Reproduction requires new explicit plan/output/invocation identities; do not
 edit or relaunch the frozen production plan. The reproduction environment remains
 [Python 3.10.13/NumPy 2.2.6/SciPy 1.15.3](../environments/independent-ancestral-verification-20261002.yml),
 with the separate locked ArviZ environment used only for oracle fixtures.
+
+
+## Exact ESS boundary and full replacement, October 2 evening
+
+The [three original failure journals](../metadata/independent_baliphy_category_v1_failure_20261002.json)
+remain preserved with the original 35-pin plan, code, 37 complete group
+checkpoints and partial next group. Producer controller 2670368 failed at
+22:20:19 EDT; reader 2670372 and closure 2670376 failed on that dependency.
+This differs from the earlier scalar tied-percentile problem and does not
+indicate a new native allocation failure.
+
+The [actual-source regression check](../metadata/independent_baliphy_category_actual_regression_check_20261002.json)
+freshly hashed the original categorical pattern bank and diagnostic gzip,
+extracted pattern 932 at cutoff 500, and reproduced the old assertion:
+K-state bulk ESS 188.67018722995684 versus 199.59370238699853. The R-hat,
+tail ESS, mean MCSE and original mixing disposition agree. A small exact trace
+is [versioned for reproducible software checks](../metadata/binary_ess_boundary_regression_20261002.json).
+
+For this binary indicator, exact integer/Fraction arithmetic gives lag-2 and
+lag-3 autocorrelations 38/655 and −38/655. Their paired sum is exactly zero.
+The FFT path rounds the pair to zero while direct arithmetic rounds it to a
+tiny positive value. Strict positive-pair truncation then stops at different
+lags. The [certificate implementation](../scripts/binary_ess_boundary_certificate.py)
+enumerates stopping/storage alternatives only at reachable exactly zero
+pairs, terminating at a genuinely negative pair. Both observed ESS values
+must match an admissible exact outcome at the unchanged 1e-8 absolute-plus-
+relative tolerance. Other mismatches still fail. Differing certified metrics
+remain `exact_binary_zero_pair_truncation_requires_review`, are excluded from
+ordinary-agreement error maxima, and are counted separately from singular
+R-hat reviews. This is unresolved numerical review, not numerical agreement
+or posterior acceptance.
+
+The [certificate tests](../metadata/binary_ess_boundary_validation_20261002_v2.json)
+passed the real failing trace and 250 random binary fixtures; +1 alterations
+to R-hat, bulk ESS, tail ESS and MCSE were rejected. The [replacement full-grid
+workflow test](../metadata/independent_baliphy_category_v2_grid_validation_20261002.json)
+passed all 405 synthetic groups, retaining two failures, 4,030 pattern rows,
+88,660 declared indicators and 3,224 unanchored screens. Five shared patterns
+include the exact real regression: 403 ESS-boundary indicator reviews and 806
+singular reviews remain explicit. All serialized reconstruction, byte-identical
+interrupted-checkpoint reuse, completed-restart refusal and 12 rehashed
+false-export rejection checks passed. These repeated software fixtures are
+not the complete production result.
+
+The [54-pin replacement plan](../metadata/independent_baliphy_category_v2_plan_20261002.json)
+retains all 405 original groups, both cutoffs, all 22 states, all 2,032,526
+pattern rows and all 44,715,572 declared indicators. Separate output root
+`results/ancestral/full-independent-categorical-readback-20261002-v2` preserves
+the failed v1 output. Its [launch inventory](../metadata/independent_baliphy_category_v2_launches_20261002.json)
+records producer controller 2701791, reader 2701795 and closure 2701799.
+[First execution observation](../metadata/independent_baliphy_category_v2_execution_checkpoint_20261002.json)
+verified the original live handles, native producer and installed two-CPU/
+32-GiB/no-swap limits. No group checkpoint was yet complete at that observation;
+full production replay, serialized reconstruction and provenance closure remain
+pending. At 22:53 EDT the [next observation](../metadata/independent_baliphy_category_v2_execution_checkpoint_20261002_v2.json)
+confirmed four complete producer checkpoints, 28,021 pattern rows and 616,462
+indicators; these are unclosed progress and do not certify complete production.
+The 128-GiB output allowance and uncalibrated 4–96-hour range per stage
+are planning assumptions, not a finish ETA.
+
+Reproduce the replacement checks and inspect its frozen plan with:
+
+```bash
+SOFTWARE/ancestral-diagnostics-20260927/bin/python \
+  scripts/check_binary_ess_boundary_certificate.py --output NEW_BOUNDARY_CHECK.json
+SOFTWARE/ancestral-diagnostics-20260927/bin/python \
+  scripts/check_independent_baliphy_category_readback_v2.py --output NEW_GRID_CHECK.json
+python scripts/record_independent_baliphy_category_checkpoint.py \
+  --plan metadata/independent_baliphy_category_v2_plan_20261002.json \
+  --output NEW_EXECUTION_OBSERVATION.json
+```
+
+The existing three production invocations must not be relaunched. Verification
+is CPU-only; native sampling and GPU prediction were not restarted.
+
+## Independent native decoding inventory
+
+A [separate manual FASTA/Newick/alignment projection implementation](../scripts/independent_native_ancestral_alignment.py)
+imports neither Biopython nor the original native-block parser/anchor builder.
+Its [software checks](../metadata/independent_native_ancestral_alignment_validation_20261002.json)
+passed 80 randomized projections, explicit unknown/unanchored fixtures, five
+Newick grammar cases, a 2,399-node iterative tree and native iteration fixtures.
+Twenty-three malformed inputs were rejected. Expected input X residues retain
+wildcard semantics; gaps, duplicated tip anchors and unanchored candidate
+residues remain explicit.
+
+The [full source inventory](../metadata/independent_native_alignment_inventory_20261002.json)
+completed under original controller 2685636/native process 2685644 with
+[actual completion-journal evidence](../metadata/independent_native_alignment_inventory_completed_20261002.json).
+It retained all 1,620 identities, checked 1,618 intact chains including the six
+intact chains belonging to unresolved quartets, and preserved the two failures.
+Every original input FASTA and all runtime tree labels/tips were independently
+decoded; all 50,066 source bindings were freshly hashed. Detailed source records
+and the hash archive remain outside Git with paths and digests in the compact
+inventory.
+
+This census covers 45,530,706,578 bytes of native alignment files and identifies
+163,418 saved alignments, 653,672 candidate frames, 9,732,673,504 state observations
+and both cutoff count arrays for future independent raw-sample replay. It did
+not independently decode those saved blocks or recompute their projected states,
+unanchored counts or count arrays. Source-to-runtime clade mappings inherit the
+closed audit; this is not independent topology or posterior qualification.
+The proposed complete replay uses two CPUs/32 GiB/no swap, a 4-GiB output
+allowance and 104-GiB minimum free disk; its 1–48-hour range per stage is
+uncalibrated and no replay has launched. Adequate sampling, accepted phylogenetic/
+model/root/predictor controls and all eight biological aims remain incomplete.

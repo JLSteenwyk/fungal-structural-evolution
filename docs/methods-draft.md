@@ -2692,3 +2692,39 @@ were rejected. Full production is running under two-CPU/32 GiB/no-swap limits;
 these software contracts and partial producer progress are not final production
 verification, joint posterior qualification or accepted ancestral predictions.
 [Production source requirements, records and resources](independent-ancestral-categories-20261002.md).
+
+
+### Exact binary ESS truncation boundaries and native-source independence
+
+The first full categorical marginal replay stopped after 37 complete groups
+on a differing bulk ESS. We rehashed the original pattern bank and diagnostic
+gzip and reproduced the exact failing K-state trace. Its lag-2/lag-3
+autocorrelations are 38/655 and −38/655, yielding an exactly zero pair.
+FFT and direct finite arithmetic select different strict-positive truncation
+branches. Separate integer/Fraction arithmetic enumerates reachable exact-zero
+stop/storage choices and stops at genuine negative pairs. Both observed values
+must satisfy an admissible exact outcome at the original 1e-8 absolute-plus-
+relative comparison tolerance. Certified differing metrics remain unresolved
+review and are omitted from ordinary-agreement error maxima; all other source,
+status, definedness and metric checks remain unchanged and strict.
+
+The new full-grid synthetic workflow includes the actual trace alongside
+nonconstant, unknown/gap, constant and singular trajectories. Complete producer/
+serialized-reader/checkpoint checks retain 403 ESS-boundary reviews and 806
+singular reviews across all 405 software groups, with 12 false-export rejections.
+The separately pinned full replacement preserves all original sample/group/
+cutoff/state identities and writes to a new output root. Original failed
+invocations and code remain immutable. Production closure and posterior
+qualification remain pending; certified branch differences are not agreement.
+
+A manual FASTA/Newick/projection implementation imports neither the original
+native parser/anchor builder nor Biopython. It passed 80 randomized projection
+cases and explicit grammar/unknown/unanchored/invalid-input contracts. Full
+source inventory independently decoded every input FASTA and all runtime-tree
+label sets for the 1,618 intact chains, retaining all 1,620 identities and two
+failures. All 50,066 source hashes were freshly checked, with original
+completion-journal evidence. Saved-block decoding, per-draw residue projection,
+unanchored counts and both cutoff count arrays are still pending; clade mapping
+inherits the existing audit. No qualified joint posterior or ancestral structure
+is established.
+[Records, methods and limits](independent-ancestral-categories-20261002.md#independent-native-decoding-inventory).

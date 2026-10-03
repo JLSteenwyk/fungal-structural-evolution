@@ -1,0 +1,54 @@
+{
+  "status": "complete_full_independent_native_alignment_inventory_sample_replay_pending",
+  "checked_utc": "2026-10-03T02:26:20.750784+00:00",
+  "plan_sha256": "a94a979c19f8a4b2635e334603cb997d5b4d6d4065682106140abfa84f110e4d",
+  "full_chains": 1620,
+  "checked_chains": 1618,
+  "failed_chains": 2,
+  "full_groups": 405,
+  "complete_groups": 403,
+  "original_cutoffs": [
+    250,
+    500
+  ],
+  "alphabet": "ACDEFGHIKLMNPQRSTVWYX-",
+  "totals": {
+    "checked_chains": 1618,
+    "saved_alignments_to_decode": 163418,
+    "candidate_frames_to_decode": 653672,
+    "state_observations": 9732673504,
+    "candidate_anchor_coordinates": 96363104,
+    "inherited_unanchored_residue_observations": 708466,
+    "native_alignment_bytes": 45530706578,
+    "failed_chains": 2
+  },
+  "largest": {
+    "native_alignment_bytes": 1392681456,
+    "state_array_uncompressed_bytes": 115136768,
+    "candidate_anchor_coordinates": 1139968,
+    "runtime_nodes": 1243
+  },
+  "full_chain_details": "results/ancestral/independent-native-alignment-inventory-20261002-v1/full_chain_sources.json",
+  "full_chain_details_sha256": "b6e7b16d1af47aef933388d0d64e1eb62b9772da7e3c7b5566e92e54fca97231",
+  "source_hashes_rechecked": 50066,
+  "full_source_hash_archive": "results/ancestral/independent-native-alignment-inventory-20261002-v1/source_hash_archive.json",
+  "proposed_replay_resources": {
+    "cpu_equivalents": 2,
+    "memory_gib": 32,
+    "swap_bytes": 0,
+    "blas_threads": 1,
+    "output_allowance_gib": 4,
+    "minimum_free_disk_gib": 104,
+    "uncalibrated_wall_hours_per_stage": [
+      1,
+      48
+    ],
+    "finish_eta": null,
+    "production_native_sample_replay_launched": false,
+    "gpu": false,
+    "new_cost_usd": 0
+  },
+  "scientific_eligibility": false,
+  "scope": "Full1620selected-chain ledger/1618intact/twofailures, including six intact chains in unresolved quartets. All closed source hashes freshly rechecked, input FASTA and every runtime tree independently decoded; node/tip/seed/candidate metadata reconciled. Native saved alignment blocks, per-draw residue projections, unanchored counts and both cutoff count arrays are not replayed by this inventory. Source-to-runtime clade mapping inherits prior closed audit; no independent topology, posterior or model qualification.",
+  "full_source_hash_archive_sha256": "e3ca680e20e6d2be5b77bf55b4fe85e39ceba7808e018f617808125c34a0b56f"
+}

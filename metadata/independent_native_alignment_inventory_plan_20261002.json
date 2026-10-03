@@ -1,0 +1,43 @@
+{
+  "diagnostic_completion": "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json",
+  "recovery_completion": "metadata/baliphy_memory_recovery_completed_20261002_v2.json",
+  "output": "metadata/independent_native_alignment_inventory_20261002.json",
+  "details": "results/ancestral/independent-native-alignment-inventory-20261002-v1/full_chain_sources.json",
+  "hash_archive": "results/ancestral/independent-native-alignment-inventory-20261002-v1/source_hash_archive.json",
+  "pins": {
+    "metadata/independent_native_ancestral_alignment_validation_20261002.json": "1ab8eebc0fccbd7e0c94df2bd51b9e9489c4d91c8ce1082717c50231fbd0b957",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_independent_native_ancestral_alignment.py": "b5edcfc37a9e6757270a34a79d642bb91a46a3add9fce6704a704fadda62f9e3",
+    "scripts/independent_native_ancestral_alignment.py": "300752d2b1868fef116fa7811782667d7de64feee247662bea4fa181ccb190c1",
+    "scripts/prepare_ancestral_state_traces.py": "084cf24b384c3066ee292c87e763142239fb27dcbdb53986a2d1e861b52ec34a",
+    "scripts/ancestral_residue_anchors.py": "cc8c41b12fe946563c0e07b0ef78db65b8978ffbf0919e7afe05011ea615faee",
+    "scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "scripts/inventory_independent_native_ancestral_alignments.py": "755698dfb53c6a60d722dce6b65332e504e2a0a8bd33e855d9142badd15a7323",
+    "scripts/independent_baliphy_scalar_sources.py": "ddd5078f53aa956efd9f22a7905d2288e644967e4263c8a762da4c3cd11e57c9",
+    "scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "metadata/baliphy_recovery_full_diagnostics_completed_20261002.json": "d531fced7e90d8de64b2756e5ed2667956b89e1f1f792847a82f69b0dc54471d",
+    "metadata/baliphy_memory_recovery_completed_20261002_v2.json": "0aacf414cadc55ebeeee44b5aab7e906b93cdcd2b6b22c5c0aac018755856a01",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  },
+  "resources": {
+    "checked_utc": "2026-10-03T02:24:00.366851+00:00",
+    "cpu_equivalents": 2,
+    "memory_gib": 32,
+    "swap_bytes": 0,
+    "blas_threads": 1,
+    "minimum_free_disk_gib": 104,
+    "estimated_output_allowance_gib": 1,
+    "source_bytes_per_hash_pass": 65123768767,
+    "source_hash_passes": 2,
+    "uncalibrated_active_hours": [
+      0.1,
+      4
+    ],
+    "available_memory_gib": 309.7230110168457,
+    "free_disk_gib": 10390.547569274902,
+    "gpu": false,
+    "new_cost_usd": 0
+  },
+  "scope": "Full1620chain native-source inventory including1618intact/twofailures and six intact chains in unresolved quartets. Complete closed source hash passes, independent inputFASTA/runtimeNewick parsing and allseed/attempt/candidate/coordinate links; native savedsample decoding and joint/model/topology qualification remain pending."
+}

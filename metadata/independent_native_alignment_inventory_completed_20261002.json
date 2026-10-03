@@ -1,0 +1,38 @@
+{
+  "status": "verified_original_native_alignment_inventory_completion",
+  "original_terminal_handle": {
+    "launch": "metadata/independent_native_alignment_inventory_launch_20261002.json",
+    "pid": 2685636,
+    "created": 1790994239.68,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/independent_native_alignment_inventory_wait_plan_20261002.json"
+    ],
+    "launch_sha256": "098b1a36a72e3d88b2e6f3617b42034a117b267ae906a6c297d0e18f627ad585",
+    "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+    "journal_sha256_at_observation": "a897985bf15f103265afc0338cbfcab9a7ae9e6968743a63d757fc6b645b10fa",
+    "captured_process_messages": 1,
+    "original_failure_records": [],
+    "completion_resource_records": [
+      {
+        "__REALTIME_TIMESTAMP": "1790994380927330",
+        "CPU_USAGE_NSEC": "140504888000",
+        "MEMORY_PEAK": "3518464",
+        "MEMORY_SWAP_PEAK": "0"
+      }
+    ]
+  },
+  "inventory": "metadata/independent_native_alignment_inventory_20261002.json",
+  "inventory_sha256": "4ccc8f306260d917730030414bf5e51673ca068e27c3d899a34fe30e810bbd09",
+  "details_sha256": "b6e7b16d1af47aef933388d0d64e1eb62b9772da7e3c7b5566e92e54fca97231",
+  "source_hash_archive_sha256": "e3ca680e20e6d2be5b77bf55b4fe85e39ceba7808e018f617808125c34a0b56f",
+  "bound_sources": 50066,
+  "full_chains": 1620,
+  "checked_chains": 1618,
+  "failed_chains": 2,
+  "native_alignment_samples_replayed": false,
+  "scientific_eligibility": false,
+  "scope": "Actual original inventory completion journal plus compact/full-ledger/archive hashes/count rechecked. Inventory independently decodes inputs/runtime trees; native saved alignment blocks remain unreplayed. The observer does not repeat large-data hash passes."
+}

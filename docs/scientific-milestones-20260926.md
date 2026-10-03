@@ -1149,3 +1149,23 @@ queued. These are numerical checks of marginal reports, not qualified joint
 posterior samples. Independent native parsing, adequate horizons and all
 eight biological aims remain open.
 [Complete categorical workflow](independent-ancestral-categories-20261002.md).
+
+
+The first categorical replay subsequently failed after 37 complete groups at
+22:20 EDT. An exact-zero binary autocorrelation pair explains the differing
+ESS truncation branch; all original failures/outputs remain preserved.
+Actual-source regression, 250 binary fixtures, altered-metric rejections and
+the complete 405-group serialized/checkpoint workflow passed. A new 54-pin
+full replacement launched at 22:49 EDT, retaining the same 2,032,526 patterns/
+44,715,572 indicators. Differing certified values remain numerical review,
+not passed agreement; ordinary tolerances stay strict. Full production
+readback/provenance closure remains pending.
+
+Independent manual FASTA/Newick/projection software and the full 1,620-chain
+native-source inventory are complete: 1,618 intact/two failures, all input
+FASTA/runtime labels decoded and 50,066 sources freshly hashed with actual
+completion-journal evidence. Independently decoding all 163,418 saved alignments
+and their projected state/count arrays remains pending; clade identity inherits
+the earlier audit. Adequate mixing, model/root/predictor controls and all eight
+biological aims remain incomplete.
+[Latest evidence](independent-ancestral-categories-20261002.md#exact-ess-boundary-and-full-replacement-october-2-evening).

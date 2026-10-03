@@ -11632,3 +11632,61 @@ and figure review remain next.
   sampling, accepted phylogenetic/reconciliation/dating framework, predictor/
   control/calibration work and all eight biological aims remain incomplete.
   [Full categorical workflow, contracts, resources and limitations](independent-ancestral-categories-20261002.md).
+
+
+- October 3, 02:50 UTC (October 2 evening EDT): the previous categorical
+  production failed after 37 complete group checkpoints, with a K-state bulk
+  ESS discrepancy at cutoff 500. All three actual failed invocations, frozen
+  sources and partial outputs remain preserved. Fresh original-source hashing
+  and exact row extraction reproduce the original failure.
+
+  Exact binary integer/Fraction arithmetic identifies an autocorrelation pair
+  whose sum is exactly zero: 38/655 plus −38/655. FFT/direct rounding selects
+  different strict-positive truncation branches, yielding ESS 188.67018722995684
+  and 199.59370238699853. Both values satisfy the exact branch certificate; they
+  remain explicit unresolved numerical reviews, excluded from ordinary-agreement
+  error maxima. Ordinary 1e-8 tolerances, source/mixing dispositions and all
+  unrelated metric checks remain strict. The exact regression plus 250 random
+  binary fixtures passed, while four altered metrics were rejected.
+
+  The new complete 405-group software workflow passed 4,030 patterns, 88,660
+  declared indicators and 3,224 unanchored-count rows. It retains 403 ESS-boundary
+  indicator reviews, 806 singular reviews and both failed-group dispositions.
+  Complete serialized reconstruction, immutable interrupted-checkpoint reuse,
+  completed-restart refusal and 12 rehashed false-export rejections passed.
+  The tiny real trace is versioned for reproducibility; fixtures are not a
+  biological pilot or complete production verification.
+
+  A separate 54-pin full replacement launched at 22:49 EDT, preserving all
+  405 original groups, both cutoffs, 2,032,526 pattern rows and 44,715,572
+  indicators. Original controllers 2701791/2701795/2701799 and the native
+  producer were observed live with installed two-CPU/32-GiB/no-swap/BLAS-one
+  caps. First observation had no complete group checkpoint; full serialized
+  replay and provenance closure remain pending. No GPU/native sampling restart.
+
+  Independent manual FASTA/Newick/projection code passed 80 random projection
+  cases, explicit unknown/unanchored fixtures, five tree grammars, a 2,399-node
+  iterative tree and 23 invalid-input rejections. Full native-source inventory
+  completed under original controller 2685636/native process 2685644 and its
+  actual successful journal. All 1,620 identities/1,618 intact chains/two
+  failures were retained, including six intact chains in unresolved quartets.
+  Every input FASTA/runtime-tree label set was independently decoded and all
+  50,066 source bindings freshly hashed. The 45.53-GB native-alignment census
+  contains 163,418 saved blocks/653,672 candidate frames/9,732,673,504 state
+  observations. Full saved-block projection/count-array replay remains pending;
+  source-to-runtime clade identity inherits the earlier closed audit.
+
+  Original covariance qualification remains live, reaching 517/4,340 cohorts
+  at 22:49 EDT. Its original readback/closure and full timing remain queued;
+  variance fitting remains unlaunched. Neither remaining BAli-Phy allocation
+  failure nor posterior mixing is repaired by these checks. GPU prediction
+  stays paused; accepted phylogeny/reconciliation/dating, controls/calibration
+  and all eight biological aims remain incomplete.
+  [Exact boundary, full replacement and native inventory](independent-ancestral-categories-20261002.md#exact-ess-boundary-and-full-replacement-october-2-evening).
+
+  At 22:53 EDT, a second actual v2 handle/cgroup/pin observation confirmed
+  four complete producer checkpoints/28,021 pattern rows/616,462 indicators.
+  This is unclosed progress; the original failing group has not yet been
+  reached in the new full run. All 35/54/53/27/80/14 respective original
+  categorical/replacement/qualification/timing/fitting/native-inventory plan
+  pins and current validation source hashes remain unchanged.

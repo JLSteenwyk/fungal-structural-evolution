@@ -176,11 +176,18 @@ ancestral posterior or resolve the native allocation failures.
 passed 84 locked-oracle cases over the full 22-state alphabet, including unknown
 residues and gaps, label permutations and lossless temporal pattern grouping.
 The complete source inventory retains all 405 groups, 2,032,526 pattern/cutoff
-rows and 44,715,572 declared state-indicator rows. Full production categorical
-numeric replay is now running with two CPU equivalents/32 GiB/no swap; its
-full serialized reader and provenance closure are queued. Complete 405-group
-software workflow contracts passed, including 12 altered-export rejections.
-Production completion and independent native-parser validation remain pending.
+rows and 44,715,572 declared state-indicator rows. The first production replay
+stopped after 37 complete groups on an ESS discrepancy at an exactly zero
+autocorrelation pair; its failed invocations and outputs remain preserved.
+The [replacement full replay](metadata/independent_baliphy_category_v2_plan_20261002.json)
+is running with two CPU equivalents/32 GiB/no swap. Exact binary arithmetic
+certifies the two rounding outcomes and retains differing values as explicit
+numerical review; ordinary comparison tolerances remain unchanged. All 405
+software workflow cases passed, including the real failing trace and 12
+altered-export rejections. Full serialized replay and provenance closure remain
+pending. A separate native FASTA/Newick decoder passed its software contracts
+and the [full 1,620-chain source inventory](metadata/independent_native_alignment_inventory_20261002.json),
+but independently decoding all saved native alignments remains pending.
 
 The [complete whole-protein model-comparison workflow](docs/full-whole-protein-comparisons-20261002.md)
 is implemented and queued for all 375,350 fits and 4,147,200 comparisons. It

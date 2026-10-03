@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/inventory_independent_native_ancestral_alignments.py",
+    "--plan",
+    "metadata/independent_native_alignment_inventory_plan_20261002.json"
+  ],
+  "pins": {
+    "metadata/independent_native_alignment_inventory_plan_20261002.json": "a94a979c19f8a4b2635e334603cb997d5b4d6d4065682106140abfa84f110e4d",
+    "metadata/baliphy_recovery_full_diagnostics_closure_launch_20261002.json": "59a854b7bacf459a07f66a631a8d82c8b1377e9666fdab00b9051a528e6dc591",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

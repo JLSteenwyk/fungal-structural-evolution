@@ -1,0 +1,36 @@
+{
+  "source_plan": "metadata/independent_baliphy_category_v2_plan_20261002.json",
+  "producer_receipt": "results/ancestral/full-independent-categorical-readback-20261002-v2/receipt.json",
+  "independent_readback": "results/ancestral/full-independent-categorical-readback-20261002-v2/readback.json",
+  "producer_status": "complete_full_independent_baliphy_categorical_comparison_pending_readback",
+  "reader_status": "passed_full_independent_baliphy_categorical_serialized_comparison_readback",
+  "completed_status": "complete_verified_full_independent_baliphy_categorical_comparison",
+  "summary_fields": [
+    "full_quartets",
+    "complete_quartets",
+    "unresolved_quartets",
+    "pattern_cutoff_rows",
+    "declared_indicator_rows",
+    "coordinate_counts",
+    "pattern_status_counts",
+    "coordinate_status_counts",
+    "numeric_comparison_status_counts",
+    "maximum_absolute_errors",
+    "singular_indicator_rows",
+    "binary_zero_pair_indicator_rows",
+    "unanchored_count_rows"
+  ],
+  "launches": [
+    "metadata/independent_baliphy_category_v2_launch_20261002.json",
+    "metadata/independent_baliphy_category_v2_readback_launch_20261002.json"
+  ],
+  "pins": {
+    "metadata/independent_baliphy_category_v2_plan_20261002.json": "954a93fa5cb4ab69b98d96f06be22e779a479e7a1a69703ee2c8371d9561d2c0",
+    "metadata/independent_baliphy_category_v2_launch_20261002.json": "03e6d0e1b1dce1e39c8a802d710136480a62bd31152a4da48f58ff4da47bd3e4",
+    "metadata/independent_baliphy_category_v2_readback_launch_20261002.json": "35d5b30a980fe69ebd1e51acfd2386fc63b890ee770497fa898447a634251981",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/independent_baliphy_category_v2_completed_20261002.json",
+  "scope": "Full405originalquartets,403complete/twoexplicitnativefailures,original1620chainIDs/inputs/seeds/whole selected attempts, both250/500cutoffs andall22AA/unknownX/gaplabels. Reconcile each quartet withfour closed selected chain states; independently rebuild exact fulltemporal patterns/coordinate maps/multiplicities and compare every2,032,526pattern report and44,715,572stateindicator row with a direct-lag separate scalar backend at unchanged1e-8absolute+relative tolerance. Retain all absent/constant/singular reviews and six descriptive chain distances; separately replay3224unanchored count screens. Deterministic streamed wholecutoff artifacts/immutable wholequartet checkpoints, full serialized replay, fullsource/artifact hashes and both original actual-invocation journals gate accounting closure. The reader shares the new estimator and is not a third independent numerical implementation; native alignment parser, adequate sampling, joint posterior/model/root/predictor qualification remain open. No native inference restart, GPU prediction, paid resources, biological pilot or completion of aim8/anyother aim. Version2 preserves the original failed version1 code/plan/journals/37group checkpoints. Only reachable exactlyzero binary Geyer autocorrelation pair boundaries certified by integer/Fraction arithmetic may retain differing ESS/MCSE values as explicit unresolved numerical reviews, never passed agreement. Both values must match exact admissible roundoff branch outcomes at the original tolerance; all other differences still fail. Fullgroup/state/sample scope and posterior thresholds unchanged."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "certified_binary_ess_zero_pair_boundary",
+  "shape": [
+    8,
+    25
+  ],
+  "counts": [
+    23,
+    25,
+    20,
+    24,
+    20,
+    24,
+    22,
+    25
+  ],
+  "exact_within_variance": "3/40",
+  "exact_pooled_variance": "393/5000",
+  "exact_rho_2": "38/655",
+  "exact_rho_3": "-38/655",
+  "exact_pair_sum": "0",
+  "fft_pair_sum_observed": 0.0,
+  "direct_pair_sum_observed": 1.1102230246251565e-16,
+  "admissible_roundoff_truncation_outcomes": [
+    {
+      "last_pair": 1,
+      "tau": "2083/1965",
+      "ess": 188.67018722995678
+    },
+    {
+      "last_pair": 2,
+      "tau": "1969/1965",
+      "ess": 199.59370238699847
+    }
+  ],
+  "scope": "Integer/Fraction binary autocovariances certify zero Geyer pair; rank-normalized binary values are an affine transform. FFT and direct double calculations differ at the strict positive-prefix decision. Original Rhat/status/tailESS/MCSE agree; this is an unresolved numerical truncation boundary, not a posterior or scientific repair."
+}

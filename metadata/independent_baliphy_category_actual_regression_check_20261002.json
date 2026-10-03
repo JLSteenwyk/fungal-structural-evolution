@@ -1,0 +1,551 @@
+{
+  "status": "verified_actual_categorical_failure_and_v2_review_handling",
+  "checked_utc": "2026-10-03T02:48:20.491248+00:00",
+  "source_files_rehashed": {
+    "patterns.npz": {
+      "path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-categorical-diagnostics-20260928-v1/1215fce145aa6a564b4858e2bf8d86023d6e5ddc500c5b358ed6016a4777df0c-centered/processing/attempt-0001/report/reports/discard-500/patterns.npz",
+      "sha256": "8062f118c52b5340aa3978d967223edadb67bc8141ec94b1ea33f7ae163a05b1",
+      "bytes_at_observation": 136124
+    },
+    "diagnostics.jsonl.gz": {
+      "path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-categorical-diagnostics-20260928-v1/1215fce145aa6a564b4858e2bf8d86023d6e5ddc500c5b358ed6016a4777df0c-centered/processing/attempt-0001/report/reports/discard-500/diagnostics.jsonl.gz",
+      "sha256": "6d1a56fd0f40d4ac4b7751125d078d862e06a41b42e7349744fb86d3cac182a1",
+      "bytes_at_observation": 618261
+    }
+  },
+  "group": "1215fce145aa6a564b4858e2bf8d86023d6e5ddc500c5b358ed6016a4777df0c-centered",
+  "cutoff": "500",
+  "pattern_id": 932,
+  "original_v1_failure_reproduced": "('bulk_ess', 188.67018722995684, 199.59370238699853)",
+  "new_row": {
+    "pattern_id": 932,
+    "coordinate_multiplicity": 28,
+    "source_diagnostic_sha256": "c2a323cff91a171756a28865315917cc2c543839c0de9c1870aba8b597cfb3cd",
+    "independent": {
+      "status": "categorical_mixing_requires_review",
+      "draws_per_chain": 50,
+      "observed_states": 4,
+      "unobserved_states": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "L",
+        "M",
+        "N",
+        "P",
+        "T",
+        "V",
+        "W",
+        "Y",
+        "X",
+        "-"
+      ],
+      "indicators": {
+        "A": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "C": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "D": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "E": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "F": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "G": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "H": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "I": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "K": {
+          "counts_per_chain": [
+            43,
+            49,
+            42,
+            49
+          ],
+          "frequency_per_chain": [
+            0.86,
+            0.98,
+            0.84,
+            0.98
+          ],
+          "screen": {
+            "status": "scalar_mixing_requires_review",
+            "draws_per_chain": 50,
+            "rhat": 1.0237187113655781,
+            "bulk_ess": 199.59370238699853,
+            "tail_ess": 188.67018722995684,
+            "mean_mcse": 0.020354330841280865
+          }
+        },
+        "L": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "M": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "N": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "P": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "Q": {
+          "counts_per_chain": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.02,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "constant_chain_requires_review",
+            "draws_per_chain": 50
+          }
+        },
+        "R": {
+          "counts_per_chain": [
+            6,
+            0,
+            8,
+            1
+          ],
+          "frequency_per_chain": [
+            0.12,
+            0.0,
+            0.16,
+            0.02
+          ],
+          "screen": {
+            "status": "constant_chain_requires_review",
+            "draws_per_chain": 50
+          }
+        },
+        "S": {
+          "counts_per_chain": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.02,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "constant_chain_requires_review",
+            "draws_per_chain": 50
+          }
+        },
+        "T": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "V": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "W": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "Y": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "X": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        },
+        "-": {
+          "counts_per_chain": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequency_per_chain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "screen": {
+            "status": "state_not_observed_probability_unresolved",
+            "draws_per_chain": 50
+          }
+        }
+      },
+      "pairwise_empirical_total_variation": [
+        {
+          "chains": [
+            0,
+            1
+          ],
+          "total_variation": 0.13999999999999999
+        },
+        {
+          "chains": [
+            0,
+            2
+          ],
+          "total_variation": 0.040000000000000015
+        },
+        {
+          "chains": [
+            0,
+            3
+          ],
+          "total_variation": 0.12
+        },
+        {
+          "chains": [
+            1,
+            2
+          ],
+          "total_variation": 0.16
+        },
+        {
+          "chains": [
+            1,
+            3
+          ],
+          "total_variation": 0.02
+        },
+        {
+          "chains": [
+            2,
+            3
+          ],
+          "total_variation": 0.14
+        }
+      ],
+      "scope": "Separate unordered-label counts and direct-lag indicator screens; unseen probabilities, joint mixing and model qualification remain unresolved."
+    },
+    "maximum_absolute_errors": {
+      "rhat": 0.0,
+      "tail_ess": 0.0,
+      "mean_mcse": 0.0
+    },
+    "unresolved_numeric_metrics": [
+      {
+        "state": "K",
+        "metric": "bulk_ess",
+        "reason": "exact_binary_zero_pair_truncation_requires_review",
+        "original": 188.67018722995684,
+        "independent": 199.59370238699853,
+        "admissible_roundoff_outcomes": [
+          188.6701872299568,
+          199.59370238699847
+        ],
+        "certificates": [
+          {
+            "ess": [
+              188.6701872299568,
+              199.59370238699847
+            ],
+            "exact_zero_pair_indices": [
+              1
+            ],
+            "split_chains": 8,
+            "split_draws": 25,
+            "counts": [
+              23,
+              25,
+              20,
+              24,
+              20,
+              24,
+              22,
+              25
+            ],
+            "scope": "Only exact reachable zero pairs permit alternate stop/storage decisions; genuine negative pairs stop enumeration."
+          }
+        ]
+      }
+    ],
+    "scientific_eligibility": false
+  },
+  "source_hashes": {
+    "metadata/independent_baliphy_category_bulk_ess_diagnosis_20261002.json": "8a0bcd9d51c8a428c569049a634a16398910ae3950eaac42a4753f69e73acdb6",
+    "metadata/binary_ess_boundary_regression_20261002.json": "0ed57e302b200cb1a152c5e7250504f68e7f6b99503ebabc5ff50b9db0b29a69",
+    "scripts/binary_ess_boundary_certificate.py": "db1c2553ea53517d4b59befe191bdb8fba77cdc011a48c7a22cd60f9ae489665",
+    "scripts/independent_ancestral_categorical_diagnostics_v2.py": "c14cccbd71bfe85994edd97e54f6228b3885f08acd204751c85d5828a486f20a",
+    "scripts/independent_baliphy_category_replay_v2.py": "e6893d2fe234f0d570e9ea63661975c844814cc3da4e0429ec324d6af75f20ce",
+    "results/ancestral/categorical-bulk-ess-regression-20261002-v1/pattern.npy": "007888279e5aec5c4b9a7dcf0d91cc8352066d78e8075e873a2d234e388d0057"
+  },
+  "production_full_v2_launched": false,
+  "scientific_eligibility": false,
+  "scope": "Rehashed original native categorical artifacts and exact failing row; confirms original assertion remains reproducible and v2 retains the discrepancy as numerical review. This is a regression check, not complete production verification."
+}
