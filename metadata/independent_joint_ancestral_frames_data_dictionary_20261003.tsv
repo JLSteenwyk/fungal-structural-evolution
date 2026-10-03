@@ -1,0 +1,11 @@
+array	dtype	axes	meaning
+states	uint8	candidate_source_node,observed_tip_residue_anchor	Same-record native amino-acid state 0..19 in ARNDCQEGHILKMFPSTWYV order; 255 indicates candidate gap
+categories	uint8	candidate_source_node,observed_tip_residue_anchor	Same-record rate category 0..3; 255 indicates candidate gap
+anchor_columns	int32	observed_tip_residue_anchor	Zero-based native alignment column for this frame; columns may repeat between tips
+anchor_tip_indices	int32	observed_tip_residue_anchor	Index into summary anchor_tips sorted by tip identifier
+anchor_tip_offsets	int32	observed_tip_residue_anchor	Zero-based ungapped observed residue offset within the indexed tip
+unanchored_candidate_indices	int32	unanchored_candidate_residue	Index into summary candidate_source_nodes sorted by source identifier
+unanchored_columns	int32	unanchored_candidate_residue	Zero-based native alignment column occupied by candidate and no observed tip in this frame
+unanchored_states	uint8	unanchored_candidate_residue	Native amino-acid state 0..19 for retained candidate-only residue
+unanchored_categories	uint8	unanchored_candidate_residue	Rate category 0..3 for the same retained candidate-only residue
+category_rates	float64	rate_category	Four finite nonnegative rates from the same record; mean one; category indices alone do not imply biological comparability across models or frames

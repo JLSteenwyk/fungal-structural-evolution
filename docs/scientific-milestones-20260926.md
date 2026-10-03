@@ -4,6 +4,12 @@ This tracker preserves the eight aims in the [original objective](objective.txt)
 **None of the eight aims is complete.** Completed computational stages below
 support the aims but do not replace their statistical or biological requirements.
 
+An [independent joint-frame coordinate reader](independent-joint-ancestral-frames-20261003.md)
+now passes retained native fixture and full future-role input checks. It keeps
+ancestral state/category pairs attached to both observed residue anchors and
+candidate-only insertions. Full-grid native sampling output, stage provenance
+closure and posterior adequacy remain unverified.
+
 The [joint ancestral logger software checks](baliphy-joint-node-logger-20261003.md)
 now pass across all three priors, and all 405 future programs/1,620 disjoint
 seed roles are prepared. Their

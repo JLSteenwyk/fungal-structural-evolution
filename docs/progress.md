@@ -1,5 +1,38 @@
 # Progress and evidence
 
+## October 3: independent joint ancestral coordinate reader qualified
+
+Implemented a separate reader for ancestral states, rate categories and
+coordinates encoded in the same native record. It validates every node,
+projects the four candidates onto ordered observed-tip residue anchors and
+retains candidate-only insertions with states, categories and native columns.
+Read-only tests passed all nine retained native frames across three priors,
+36 ancestral records and 233 residue/category pairs. State and category
+coordinate oracles, exact NPZ readback, sixty malformed frames, fifteen
+altered exports, two JSON cases and eighty support combinations were checked.
+All 1,620 future role metadata records and 135 alignment/tree inputs were
+censused; candidate state/category arrays alone would use 587,929,824 bytes
+across three frames per role. Full native output and resource estimates remain
+separate requirements. No new native inference or GPU prediction started.
+[Reader, axes, evidence and limitations](independent-joint-ancestral-frames-20261003.md).
+
+At 09:41 UTC, 336 startup checks and 1,071 historical short-sampler checks
+were valid and unclosed; all original startup and sampler/replay
+handles/caps/pins remained verified. At 09:39 UTC the historical resource
+observer remained live. The latest cgroup observation had zero swap and no
+OOM events. The observed 15,043,915,776-byte group high-water counter is not a
+final native or long-chain memory bound. Full startup/sampler/resource/replay
+closure, joint-frame native sampling, longer adequate ensembles and all eight
+biological aims remain incomplete.
+
+The separate covariance/timing queue was reverified at 09:41 UTC: six
+original handles remain live and eight have actual terminal-success
+journals. Full covariance qualification and timing closure remain pending;
+production fitting remains unlaunched. Closed design and recovered diagnostic
+archives were checked by compact hashes without repeating millions of
+artifact reads.
+[Broader queue evidence](../metadata/full_shared_entity_timing_execution_checkpoint_20261003_0943.json).
+
 ## October 3, 09:31 UTC: logger error rechecked
 
 Read-only replay reproduced all five state/sequence mismatches in the

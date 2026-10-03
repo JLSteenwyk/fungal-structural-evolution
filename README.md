@@ -19,8 +19,12 @@ separate legacy logs can represent different conditional draws. All 405
 future model programs and 1,620 disjoint seed roles are prepared; their
 [full startup validation](docs/baliphy-joint-logger-preflight-20261003.md) is
 now running under two CPUs and 32 GiB RAM, with no swap. Startup uses
-`--test`; the future posterior horizon remains unlaunched. At 09:20 UTC,
-the original sampler had 1,068 successful unclosed checks.
+`--test`; the future posterior horizon remains unlaunched. At 09:41 UTC,
+336 startup roles and 1,071 original short-sampler roles had successful
+unclosed checks. An [independent joint-frame reader](docs/independent-joint-ancestral-frames-20261003.md)
+now passes retained native fixture and full future-role input checks, keeping
+ancestral states, rate categories and residue coordinates paired. Full-grid
+joint native sampling output remains unverified.
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The
 [observation-aware reader v2](docs/independent-short-sampler-replay-v2-20261003.md)
