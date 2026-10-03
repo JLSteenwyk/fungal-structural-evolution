@@ -1,0 +1,35 @@
+{
+  "status": "passed_full_reference_startup_grid_software_contracts",
+  "checked_utc": "2026-10-03T05:08:42.995060+00:00",
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "effective_inputs": 135,
+  "original_configuration_aliases": 324,
+  "complete_generator_and_all_programs_exercised": true,
+  "simulated_failed_chains_retained": 2,
+  "simulated_unresolved_quartets": 2,
+  "altered_designs_and_missing_dispositions_rejected": [
+    "missing_chain",
+    "duplicate_chain",
+    "duplicate_fresh_seed",
+    "source_seed_reused",
+    "invalid_seed",
+    "alias_changed",
+    "role_changed",
+    "prior_changed",
+    "matrix_changed_within_quartet",
+    "source_program_hash_changed",
+    "missing_serialized_disposition"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_reference_preflight_grid.py": "c1601c70efce94d21eee16a82e5441e86bfc28e97c6251a234b9fbe18c372cdc",
+    "scripts/baliphy_reference_initialization.py": "ca3968c2a6c88972af9d772527e8989d42a1969a16a64fb4078a12dc1bdb05fb",
+    "scripts/prepare_baliphy_reference_preflight.py": "3420a1e6eb95611e5cdb7ffdafb5629a5760e4cbb774d6ccebd7868b69787732",
+    "scripts/run_baliphy_reference_preflight.py": "24843280d4d9006eb8f3409da175b465f060571f7b64cb416d70a7308ca1b934",
+    "scripts/readback_baliphy_reference_preflight.py": "23400257bdd2bd94220bfe72c7dbfc066f3d7fad471a86c0d2a3186fa29b4620",
+    "results/ancestral/baliphy-independent-chain-inputs-20260927-v1/chain_inputs.json": "49de3f8ae01174f300c9ca2f136fbe23a0f6078fb384cc935a7c2ca37ea164d8",
+    "results/ancestral/full-baliphy-horizon-resources-20261003-v1/proposed.jsonl": "6c18034e16ab04410b376568069e9580bf995ff6e5b56dc7bdd9572b6f6f258f"
+  },
+  "scientific_eligibility": false,
+  "scope": "Complete real input generator, exact reversible transformations and full design mutations. Artificial status rows test failure accounting only; no native startup, density, readback or production journal proof claimed here. Native software fixtures and actual full startup/readback remain separate gates."
+}

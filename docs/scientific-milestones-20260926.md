@@ -1222,3 +1222,31 @@ sampling/GPU/new-cost restart occurred. Accepted framework, model/predictor
 controls/calibration, adequate ancestral ensembles and all eight aims
 remain incomplete.
 [Full census, complete table and figure](baliphy-horizon-resources-20261003.md).
+
+
+### October 3: full ancestral reference-startup qualification underway
+
+Native software checks and complete 405 program/1,620 configuration generation
+passed for a model-preserving reference-alignment initializer. Full startup-only
+execution retains all original inputs/priors/aliases with fresh seeds. The
+original density and sampling moves remain, with tip lengths fixed and
+ancestral lengths free. Real startup readback exposed native timing footers;
+a separate complete reread is queued without rerunning native attempts.
+All 136 available startup passed the corrected snapshot decoder, including
+24 timing-footer reclassifications. These are partial startup-fidelity results.
+Full native/readback/provenance closure is pending, and no new posterior
+horizon or ancestral structural ensemble is qualified. Both earlier allocation
+failures and inadequate mixing remain unresolved. All eight biological aims,
+accepted phylogeny/reconciliation/dating, model/predictor/circularity controls
+and calibration remain incomplete. GPU inference stays paused.
+[Resources, controls and execution](baliphy-reference-initialization-20261003.md).
+
+
+At 05:27 UTC, full native-alignment output integrity completed source/artifact/
+serialized/two-journal closure: 163,418 alignments, 9,732,673,504 state
+observations and 4,239,976,576 count cells, with 53,331 bound hashes.
+All original failures remain retained. No ancestral joint posterior or
+biological model/root is accepted. The new startup preflight has 234 available
+records checked by the revised decoder; all pass, including 24 footer cases.
+Full startup closure and all eight scientific aims remain incomplete.
+[Complete native replay](independent-native-alignment-replay-20261002.md).

@@ -1,0 +1,12 @@
+name: fungal-baliphy-reference-startup-20261003
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - biopython=1.86
+  - numpy=2.2.6
+  - scipy=1.15.3
+  - psutil=7.2.2
+# Native BAli-Phy 4.3 and prlimit are external, separately source/hash-pinned
+# in metadata/baliphy_reference_preflight_plan_20261003.json. The native
+# installation is preserved; no predictor or GPU runtime is needed here.

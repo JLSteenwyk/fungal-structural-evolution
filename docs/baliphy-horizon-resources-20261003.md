@@ -131,3 +131,15 @@ complete downstream diagnostics and the existing biological root/model/predictor
 controls. The 10,000-iteration design remains unlaunched. Original full
 native-residue and categorical readbacks continue unchanged; GPU inference
 stays paused. All eight biological aims remain incomplete.
+
+
+## Initialization follow-up and supported gamma limit
+
+The pinned native source explicitly handles positive infinite gamma shape as
+the equal-rate limit. The 336 initialization observations are retained as review
+evidence; their values alone do not show invalid retained samples. The frozen
+census and launch-disabled longer-horizon proposal are unchanged. A separate
+[full reference-startup preflight](baliphy-reference-initialization-20261003.md)
+now tests a supplied-alignment initial state using the original density and
+alignment moves. This is startup verification, not a new posterior horizon or
+a demonstrated repair of either earlier allocation failure.

@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "metadata/baliphy_reference_preflight_closure_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/baliphy_reference_startup_readback_v2.py",
+    "--plan",
+    "metadata/baliphy_reference_startup_footer_plan_20261003.json"
+  ],
+  "pins": {
+    "metadata/baliphy_reference_startup_footer_plan_20261003.json": "a38605011e35e5cad71eb81a031e4099c05547449b2a27343e568acb0df20fe1",
+    "metadata/baliphy_reference_preflight_closure_launch_20261003.json": "b69d503539b20ad98b1036e451d46cc11fa6d7b62e1ce3458c5db52cb5d5822f",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

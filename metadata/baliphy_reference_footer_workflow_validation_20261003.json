@@ -1,0 +1,29 @@
+{
+  "status": "passed_full_reference_footer_serialization_software_contracts",
+  "checked_utc": "2026-10-03T05:18:59.422283+00:00",
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "simulated_failed_chains_retained": 2,
+  "simulated_footer_rows": 12,
+  "full_producer_and_reader_serialization_exercised": true,
+  "altered_exports_and_completed_restarts_rejected": [
+    "completed_producer_restart",
+    "missing_row",
+    "duplicated_row",
+    "changed_seed",
+    "removed_failed_chain",
+    "changed_alias",
+    "removed_timing",
+    "changed_source_disposition",
+    "scientific_acceptance",
+    "completed_reader_restart"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_reference_footer_workflow.py": "f1adadf1af82754c5e7a857b557a118319afc2acc937a2e20506a23d48d51f52",
+    "scripts/baliphy_reference_startup_readback_v2.py": "26b2215b103784c5740a6671559658f7de91936e246dec4d84295ea599af546b",
+    "scripts/run_baliphy_reference_preflight.py": "24843280d4d9006eb8f3409da175b465f060571f7b64cb416d70a7308ca1b934",
+    "metadata/baliphy_reference_preflight_plan_20261003.json": "056a5f4161aaaa3134215d4e2904a735e009e71222227f0dcb9e2a10b7f7e9d6"
+  },
+  "scientific_eligibility": false,
+  "scope": "Full1620real metadata identities with artificial status/timing rows. Native reconstruction intentionally mocked to test complete serialization, false exports and completed restart refusal. Not a native-output, journal, likelihood or scientific proof. Actual native records and full production replay remain separate gates."
+}

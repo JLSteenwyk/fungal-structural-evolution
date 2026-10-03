@@ -11859,3 +11859,70 @@ and figure review remain next.
   unresolved. Both validation producers have written all planned checkpoints;
   full readback and provenance closure remain pending. No jobs were restarted.
   [Classified error recheck](../metadata/project_error_recheck_20261003_0052_classified.json).
+
+- October 3, 05:22 UTC (01:22 EDT): the preceding error-check turn was a
+  verified wait: exact original jobs were live and 54 runtime observations
+  plus seven monitor contracts passed. The active project goal remains full
+  fungal sampling, all eight aims and reproducible biological conclusions.
+
+  Implemented a separate reference-alignment initializer retaining the
+  original distribution, annotated density, sampling effects, priors and
+  fixed-tip/free-ancestor representation. Five installed modules match the
+  pinned upstream source. Twelve revised/original native startup pairs
+  preserve same-seed parameter draws; three software kernel fixtures move
+  alignments, and 23 malformed input/audit contracts pass. A degree-two root
+  exposed a difference in a legacy probability helper; the test uses the
+  degree-aware actual distribution formula. Two fixture report/header errors
+  were corrected before stable version 3 validation; old outputs are preserved.
+
+  Complete generation of all 405 programs/1,620 fresh-seed configurations
+  passed eleven altered-design/disposition rejections. The frozen 974-pin
+  native --test plan launched only after software gates and resource estimates
+  under two-CPU/24-GiB/no-swap/BLAS-one caps, with per-worker 12 GiB/600 CPU-second/
+  900 wall-second and 256 MiB-file limits. Original controllers 2786767/2786771/
+  2786776 and actual native worker limits were verified; 162 unclosed outcomes
+  were recorded at 05:22 UTC. No posterior horizon was launched.
+
+  Slower native startups append a Work timing footer. The first reader retains
+  those cases as invalid stdout dispositions; original jobs/code/plans stay
+  unchanged. A new footer-aware decoder passed 24 real startup records and seven
+  malformed-stdout rejections. The complete 1,620-row serialization software
+  workflow retained artificial failures and rejected eight false exports plus
+  two completed restarts. New original queued controllers 2792240/2792244/
+  2792248 will reread all native outcomes after full original startup closure,
+  without native reruns. All 136 available native outcomes was freshly checked
+  in the snapshot:136 passed, including 24 footer reclassifications. This remains
+  partial progress, not full closure, a memory repair or posterior adequacy.
+
+  The gamma-shape infinite limit is explicitly supported as equal rates in
+  the pinned native source; old census counts/review evidence stay unchanged.
+  Earlier native residue and categorical producers have all checkpoints, with
+  original readbacks still active and final closures pending. Covariance
+  qualification was 1205/4340 cohorts at 01:09 EDT; full timing remains queued,
+  fitting unlaunched. Both earlier allocation failures, root/framework/model/
+  predictor/calibration gates and all eight aims remain open. GPU prediction
+  stays paused; no paid resources or earlier native inference restarts.
+  [Complete method, controls, resources and runtime evidence](baliphy-reference-initialization-20261003.md).
+
+- October 3, 05:27 UTC (01:27 EDT): the original full native-alignment replay
+  completed serialized/source/artifact/provenance closure. All 163,418 saved
+  alignments, 653,672 candidate frames, 9,732,673,504 anchored states, 708,466
+  unanchored observations and 4,239,976,576 cutoff-count cells passed; both
+  failed chains and the six intact-unresolved chains remain included. Closure
+  binds 53,331 hashes and both original journals. A final observer checked the
+  compact archive SHA and all three successful original terminal controllers
+  2716502/2716506/2716513. This closes full output integrity, not posterior
+  mixing, root/model/predictor acceptance or any of the eight aims.
+  [Full replay completion and limits](independent-native-alignment-replay-20261002.md).
+
+  The new startup snapshot rechecked every 234 available outcomes: all passed
+  the revised decoder, with 24 timing-footer reclassifications and no native
+  reruns. Full 1,620-role startup/readback/closure remains pending.
+  [Actual startup snapshot](../metadata/baliphy_reference_startup_footer_execution_checkpoint_20261003_v2.json).
+
+  At 05:32 UTC, the same original native preflight had 312 unclosed outcomes.
+  All 312 available outcomes passed a fresh complete snapshot reread, including
+  24 timing footers. Both native/follow-up plans retained all 974/982 frozen
+  pins; native worker limits and all original handles were checked. The
+  1,620-role startup is still running, full closure pending.
+  [Latest actual replay](../metadata/baliphy_reference_startup_footer_execution_checkpoint_20261003_v3.json).

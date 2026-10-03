@@ -5,12 +5,31 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 2 October 2026
+## Current checkpoint — 3 October 2026
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
+
+
+The [full independent native-alignment replay](docs/independent-native-alignment-replay-20261002.md#october-3-complete-serialized-and-provenance-closure)
+has completed serialized/source/artifact closure: all 163,418 alignments,
+9.73 billion state observations and 4.24 billion count cells, with 53,331
+bound hashes and both original journals. Both failed chains remain retained.
+These are output-integrity results; adequate posterior mixing and biological
+model/root acceptance remain open.
+
+A [model-preserving reference-alignment initializer](docs/baliphy-reference-initialization-20261003.md)
+has passed native software checks and complete 1,620-role generator checks.
+Full startup-only execution now covers every original input/prior/seed role
+under two-CPU/24-GiB/no-swap limits. It retains the original probability
+density and alignment moves. A separate full reread is queued to recognize
+native timing footers without rerunning any attempts; every currently
+available startup passed the corrected snapshot decoder. Complete startup
+closure, adequate mixing and both earlier allocation failures remain open.
+The 10,000-iteration posterior proposal remains unlaunched; GPU prediction
+stays paused. [Current startup and resource evidence](metadata/baliphy_reference_preflight_execution_checkpoint_20261003_v3.json).
 
 The [earlier full project runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v20.json)
 checks 16 pipeline handles and six original scientific/retrieval jobs, with

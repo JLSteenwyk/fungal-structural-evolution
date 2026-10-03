@@ -1,0 +1,31 @@
+{
+  "status": "complete_verified_full_independent_native_alignment_replay",
+  "full_chains": 1620,
+  "checked_chains": 1618,
+  "failed_chains": 2,
+  "full_groups": 405,
+  "complete_groups": 403,
+  "unresolved_groups": 2,
+  "saved_alignments": 163418,
+  "candidate_frames": 653672,
+  "state_observations": 9732673504,
+  "candidate_anchor_coordinates": 96363104,
+  "unanchored_residue_observations": 708466,
+  "cutoff_count_cells": 4239976576,
+  "cutoff_counts": {
+    "250": 2119988288,
+    "500": 2119988288
+  },
+  "intact_chains_in_unresolved_groups": 6,
+  "full_hash_archive": "results/ancestral/full-independent-native-alignment-replay-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "6803f991b36b876de62dd52f3594ac44de4bbf50a4e19482aba5a3c7fc3d5a4a",
+  "bound_source_hashes": 53331,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-independent-native-alignment-replay-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "093a6252fb3076dcf96d55e126ada9010a7a64b7331de683704631734557dc10",
+  "independent_readback": "results/ancestral/full-independent-native-alignment-replay-20261002-v1/readback.json",
+  "independent_readback_sha256": "8aa20a0a377cffb4cd8c36bbc2443fa0c1da91d18a01ee317a2163267c851e78",
+  "completion_plan_sha256": "af2d667f3f17bc860dca5c82630d6c9d014151e21fdc42cc8366b3b2f8f513d2",
+  "scientific_eligibility": false,
+  "scope": "Full1620original selected chain identities and405groups,1618intact/twoexplicit native failures, including allsix intact chains in unresolved quartets. Independently decode every163418native saved alignment with manual FASTA/iteration/Newick/projection code, verify all653672candidate frames, all9732673504anchored state observations,708466unanchored observations and4239976576count-array cells across both250/500cutoffs/all22labels. Every input/seed/whole selected attempt/audit/candidate/node/tip/source identity stays fixed. Fullhash passes before/after, wholechain immutable checkpoints, all serialized logical frame reconstructions and two exact original completion journals gate accounting closure. The reader shares the new decoder and is not a third independent implementation. Source-to-runtime clade identity inherits the closed audit; adequate sampling/joint posterior/model/root/topology/predictor qualification remain open. CPU-only/no native sampling or GPU restart, no paid resources/pilot. All eight aims incomplete."
+}

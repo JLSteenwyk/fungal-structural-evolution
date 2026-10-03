@@ -164,3 +164,29 @@ Final serialized/source/artifact/journal closure remains pending. No
 ancestral ensemble was qualified. The separate node-correspondence stage
 has closed; a [full sampling resource/numerical census](baliphy-horizon-resources-20261003.md)
 now informs the longer-horizon design without launching new native work.
+
+
+## October 3 complete serialized and provenance closure
+
+The [full completion](../metadata/independent_native_alignment_replay_completed_20261002.json)
+now verifies all 163,418 saved alignments, 653,672 candidate frames,
+9,732,673,504 anchored state observations, 708,466 unanchored observations
+and 4,239,976,576 cutoff-count cells. All 1,618 intact chains and both
+failed identities remain included, including the six intact members of
+unresolved quartets. Complete serialized reconstruction and provenance
+closure bound 53,331 source/artifact hashes and both original journals.
+
+The [final actual-handle observation](../metadata/independent_native_alignment_replay_execution_checkpoint_20261003_final.json)
+at 05:27 UTC rechecked the compact archive hash and verified successful
+terminal journals for the original producer, reader and closure controllers
+2716502/2716506/2716513. This observer did not repeat the whole large-data
+hash/decode stage; that work is recorded in the completed archive.
+The reader shares the new decoder and is not a third independent algorithm.
+
+Native source/serialization integrity and the separately closed clade mapping
+are established for the complete selected scope. They do not qualify posterior
+mixing, the supplied biological root, model adequacy, predictors or any of
+the eight biological aims. The exact categorical ESS discrepancy remains
+numerical review, and both earlier allocation failures remain unresolved.
+The [new full reference-startup preflight](baliphy-reference-initialization-20261003.md)
+is separate and does not repeat or concatenate these native samples.

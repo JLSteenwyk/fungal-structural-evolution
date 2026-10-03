@@ -1079,3 +1079,29 @@ proves a convergence ETA or a safe memory cap. The complete census
 producer/readback/provenance stage is closed; all scientific controls
 and eight aims remain open.
 [Measured data and full proposal](baliphy-horizon-resources-20261003.md).
+
+
+## October 3: preserve the ancestral target while testing reference initialization
+
+Change only the starting branch alignments. Keep the original native
+distribution object, annotated density, modifiable representation and both
+alignment moves. Retain fixed lengths only for tips and derive free ancestral
+lengths from pairwise alignments. Do not observe the reference alignment,
+clip priors, drop failed roles or concatenate earlier samples. All 405 model
+programs undergo six exact reversible edits and all 1,620 fresh seed roles
+remain in the full startup preflight. Native software fixtures verify
+same-seed draws, actual homology, density and moving kernels before launch.
+
+Use the degree-aware annotated alignment density for rooted-tree checks.
+The older squared-length helper differs at a degree-two root; it is not the
+density used by this model. Interpret positive infinite gamma shape as the
+explicit native equal-rate limit, retaining its measured review history.
+Neither interpretation alone qualifies earlier posterior samples.
+
+Preserve the live first startup stage when native timing footers reveal an
+output protocol mismatch. Queue a separate full 1620 outcome replay after
+complete original closure; recognize only the actual five-line timing footer,
+reject unrelated output, and retain original and corrected dispositions.
+No native rerun follows this reader repair. Full startup closure and memory/
+mixing/model/root qualification are still required before a new posterior
+horizon. [Implementation, proof and limitations](baliphy-reference-initialization-20261003.md).

@@ -2812,3 +2812,45 @@ failed outcomes explicitly and remain unlaunched. Descriptive figures
 and complete quartet tables do not treat shared configurations, ancestors
 or chain samples as independent biological replicates.
 [Full implementation and evidence](baliphy-horizon-resources-20261003.md).
+
+
+### Model-preserving reference-alignment initialization
+
+A separate full startup workflow retained all 135 effective ancestral inputs,
+three original gamma-shape priors, four fresh seed roles and 324 configuration
+aliases. Its initializer reused the native default node count and fixed-tip
+length map, replacing only starting branch alignments with those constructed
+from the supplied matrix. Unaligned sequences remained the observations.
+The original distribution object, annotated density, modifiable structure and
+both alignment kernels were reused; ancestral lengths remained free. Six
+explicit source substitutions were reversible to the complete original model.
+Installed API modules matched the pinned upstream source and the native
+executable was separately hashed and exercised.
+
+Synthetic native fixtures checked exact same-seed stochastic parameter draws,
+residue-to-column homology, free ancestral lengths, degree-aware alignment
+density and moving kernels under all three priors. Rooted density correction
+uses each internal node's 1−degree coefficient, matching the actual annotated
+distribution. The legacy squared-length helper was not used for that check.
+Complete generation and failure-accounting software contracts preceded the
+full native --test execution; those contracts are not biological proof.
+
+Native timing footers revealed a protocol mismatch in the first reader. The
+frozen original stage retains its dispositions. A separately qualified full
+reread recognizes only a complete native Work footer after one JSON model,
+rejecting unknown suffixes or malformed summaries. It uses every original
+startup/seed/source/receipt and never launches a new native attempt. Full
+serialized reconstruction and source/artifact/two-journal closure are pending.
+Startup fidelity does not establish safe subsequent proposal memory, model
+adequacy, posterior convergence or accepted ancestral structures.
+[Implementation and evidence](baliphy-reference-initialization-20261003.md).
+
+
+The complete independent native-alignment replay subsequently closed every
+saved block/state/count comparison across the full selected chain grid:
+163,418 alignments, 9,732,673,504 anchored states and 4,239,976,576 cutoff
+count cells. Provenance closure bound 53,331 source/artifact hashes and both
+original completion journals; all three original terminal handles were
+separately observed. Both failures remained unresolved. These output-integrity
+results do not establish joint posterior mixing or biological model adequacy.
+[Full completion evidence](independent-native-alignment-replay-20261002.md).
