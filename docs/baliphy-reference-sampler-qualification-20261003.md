@@ -20,6 +20,15 @@ captures actual memory/CPU readings, missed observations and all requested
 roles. Full sampler and observer readback/provenance closure remain pending.
 Earlier dated queue observations below retain their historical scope.
 
+At 07:48 UTC, 188 roles had successful unclosed output checks. The
+[full independent short-output replay](independent-short-sampler-replay-20261003.md)
+is now queued after original sampler closure, covering every saved alignment,
+candidate mapping, fresh residue-projection array and available tip
+category/state record. Internal category labels are absent from the frozen
+logger and remain unavailable. Software serialization and native read-only
+checks passed, with original fixture failures preserved. No native sampler
+restart, complete production replay or posterior qualification is claimed.
+
 ## Why this step is needed
 
 The [full earlier resource census](baliphy-horizon-resources-20261003.md)

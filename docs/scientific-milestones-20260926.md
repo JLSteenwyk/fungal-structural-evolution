@@ -13,6 +13,12 @@ provenance closure; the full short sampler is running and has a
 [read-only resource observer](baliphy-sampler-resource-observation-20261003.md).
 Sampler/observer closure, independent joint site-property replay and longer
 adequate ensembles remain pending. GPU inference remains paused.
+The [full independent short-output replay](independent-short-sampler-replay-20261003.md)
+is now queued after sampler closure for every role and available site-property
+record, with all failures retained. The current native logger omits internal
+category labels; those remain unavailable. Independent output integrity,
+complete ancestral category logging in a future qualified horizon and adequate
+sampling remain separate requirements.
 Chronological receipts and process records remain in [progress](progress.md).
 
 | Aim | Current evidence | Next required result and completion evidence |

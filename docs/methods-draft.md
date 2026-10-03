@@ -2927,3 +2927,31 @@ site-property replay, adequate disjoint-seed sampling, alignment/homology
 mixing and root/model/predictor controls remain open. Every failed role and
 numerical review remains in scope; no ancestral structure or biological
 mechanism is accepted on this basis.
+
+## Independent native replay of the short ancestral horizon
+
+The full independent short-output stage retains all requested roles and
+original failures after sampler provenance closure. Its manual decoder
+reconstructs source/runtime rooted-clade correspondence, all four candidate
+identities and every saved alignment at iterations 0, 10 and 20. Fresh arrays
+preserve each candidate state at every sorted tip's observed-residue anchor,
+with unanchored candidate residues counted separately. Full readback verifies
+every saved value, dtype, shape, coordinate order, serialization row and source
+binding. These repeated anchors and three frames are not independent
+biological observations or an adequate posterior sample.
+
+The available site-property logger contains tip category/state arrays,
+four-by-twenty rate-property matrices and empty conditions. It omits internal
+category labels because its mapping uses the internally unlabeled model tree.
+Native integer states are checked against actual ungapped tip letters using
+an API-verified alphabet order, with category support, rate-cell support and
+normalization checked separately. The stage does not reconstruct unlogged
+internal categories, independently reproduce gamma discretization or prove
+the likelihood model. Source changes to a future all-node logger need separate
+native qualification before a disjoint-seed inference horizon.
+
+The complete serialized reader shares this independent decoder; full
+provenance closure additionally requires both original completion journals.
+Production remains queued, and software/native early QC is separately labeled.
+[Workflow and limitations](independent-short-sampler-replay-20261003.md) and
+[versioned field/array dictionary](../metadata/independent_short_sampler_replay_data_dictionary_20261003.tsv).

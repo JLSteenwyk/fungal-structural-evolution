@@ -1,0 +1,44 @@
+{
+  "source_plan": "metadata/independent_short_sampler_replay_plan_20261003.json",
+  "producer_receipt": "results/ancestral/full-independent-short-sampler-replay-20261003-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-independent-short-sampler-replay-20261003-v1/readback.json",
+  "producer_status": "complete_full_independent_short_sampler_native_replay_pending_readback",
+  "reader_status": "passed_full_independent_short_sampler_native_serialized_readback",
+  "completed_status": "complete_verified_full_independent_short_sampler_native_replay",
+  "summary_fields": [
+    "full_chains",
+    "full_groups",
+    "effective_inputs",
+    "original_configuration_aliases",
+    "checked_chains",
+    "unresolved_chains",
+    "complete_groups",
+    "unresolved_groups",
+    "intact_chains_in_unresolved_groups",
+    "saved_alignments",
+    "candidate_frames",
+    "projected_state_observations",
+    "tip_category_state_pairs",
+    "rate_property_cells",
+    "unanchored_candidate_residue_observations",
+    "node_pairs",
+    "nonroot_branch_pairs",
+    "negative_branch_pairs_require_review",
+    "status_counts",
+    "ancestral_categories_available",
+    "posterior_qualified"
+  ],
+  "launches": [
+    "metadata/independent_short_sampler_replay_launch_20261003.json",
+    "metadata/independent_short_sampler_replay_readback_launch_20261003.json"
+  ],
+  "pins": {
+    "metadata/independent_short_sampler_replay_plan_20261003.json": "44691fa864b64e4a2e5cd36b6075f7f02b8f101eebb426c8fc2d59519253210e",
+    "metadata/independent_short_sampler_replay_launch_20261003.json": "f01c68debba2d794781f9888b5a5756ebdc2fa64001890f6ce7944a64b61303e",
+    "metadata/independent_short_sampler_replay_readback_launch_20261003.json": "6b50c861c3a5fd0c982ddd088246a65d16075e27549ae40a8d9b457f9d3045b7",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/independent_short_sampler_replay_completed_20261003.json",
+  "scope": "All1620originalshortsamplerroles,405quartets,135effectiveinputs,324aliases and every failed/invalid original disposition retained after complete original sampler source/artifact/two-journal closure. Independent manual source/runtime clades, candidate mappings, saved FASTA decoding and tip-residue anchored projections for all0/10/20frames; exact full serialized/NPZ replay. Every available native tip category/state array,4x20rate property matrix and empty condition schema checked. Internal category labels are not logged, are explicitly unavailable and never imputed from tips. No complete ancestral category trajectory, gamma-discretization likelihood proof, convergence, allocation repair, biological root/model/predictor acceptance, new inference/GPU/costs or scientific aim completion. Reader shares independent decoder; complete source/artifact/two original journals required for output accounting closure."
+}

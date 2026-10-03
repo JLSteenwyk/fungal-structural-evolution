@@ -1,0 +1,23 @@
+artifact	field	type	meaning	limitations
+role JSON	chain_id	string	Original role ID reconciled to the frozen full job manifest	Does not identify a taxon or a new biological replicate
+role JSON	seed / source_seed	integers	Fresh short-sampling seed and earlier source seed	Longer independent sampling requires a disjoint namespace
+role JSON	model_input_identity	string	Effective input plus original prior label	All 405 quartets remain conditional on supplied trees and models
+role JSON	original_configuration_ids	string array	All original aliases represented by the effective input	Aliases are not independent fitted data
+role JSON	status	string	Independent replay success or explicitly retained unresolved original disposition	Output integrity is separate from posterior adequacy
+role JSON	native_receipt / native_receipt_sha256	path / SHA256	Exact original native attempt receipt and content binding	Native exit zero does not establish valid or adequate inference
+role JSON	candidate_mapping	object	Source-node labels mapped to runtime labels through rooted descendant sets	Biological rooting remains unaccepted
+role JSON	node_rows	object array	All source/runtime rooted-clade and nonroot-length correspondences	Supplied-tree correspondence is not species-tree qualification
+role JSON	frames	object array	Every successful saved frame at iterations 0, 10, 20	Only three saved frames; no adequate posterior sample size
+role JSON	projection_array / projection_array_sha256	relative path / SHA256	NPZ location relative to the replay output root and byte binding	No successful array is created for unresolved roles
+role JSON	scientific_eligibility / posterior_qualified	false	Explicit refusal of scientific or posterior acceptance	All eight biological aims remain incomplete
+role JSON	ancestral_categories_available	false	Internal node category labels are absent from this logger	Never inferred from tip categories
+frame JSON	projected_states_sha256	SHA256	C-order uint8 residue-projection digest	Digest preserves repeated extant-residue anchors
+frame JSON	complete_site_property_record_sha256	SHA256	Canonical digest of the complete available native site-property frame	The category/state map covers tips only
+frame JSON	category_rates	four numbers	Per-category rate rows constant across twenty native amino-acid states	Support and normalization are not an independent gamma or likelihood proof
+frame JSON	unanchored_residue_counts	four integers	Candidate nongap residues in columns with no observed tip residue	Residue identities remain in the native FASTA
+NPZ	states	uint8 array	Axes: saved frame, sorted source candidate node, concatenated tip-residue anchor	Alphabet ACDEFGHIKLMNPQRSTVWYX-; codes are categorical
+NPZ	iterations	int32 array	Exactly [0, 10, 20]	No burn-in or convergence qualification
+NPZ	unanchored_residue_counts	int32 array	Axes: saved frame, sorted source candidate node	Not added to anchored coordinates or independent biological counts
+coordinate rule	anchor order	derived order	Sorted tip labels; concatenate each tip's nongap input residues in within-tip order	Input FASTA path and SHA come from the original job manifest
+native tip JSON	states	integer array	Indices in ARNDCQEGHILKMFPSTWYV order, aligned to nongap tip residues	Different order from NPZ state codes
+native tip JSON	categories	integer array	Four mixture-category labels 0 through 3 at corresponding tip residues	Internal category draws are not present

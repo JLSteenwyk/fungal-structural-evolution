@@ -1,0 +1,13 @@
+{
+  "status": "preserved_short_sampler_replay_software_fixture_failure",
+  "checked_utc": "2026-10-03T07:41:29.772931+00:00",
+  "failure": "Synthetic projected-state fixture supplied unequal-width sequences, so the existing independent decoder rejected the invalid saved alignment. All three prior-specific existing native replays and malformed-property checks passed before this fixture. Correct only the fixture widths in a new software invocation.",
+  "source_hashes": {
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v1/check_independent_short_sampler_replay.py": "ef545b6de40c78341ad4cfedae44263734207dc011562966c720b27a0811b41c",
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v1/independent_short_sampler_outputs.py": "ca8d604d21961891c82095b196e15a714f27ce0ffdd78e6c8365273d58de67e0",
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v1/run_independent_short_sampler_replay.py": "69ab6c0abf350d51a2fb5598728463ac6a70d5bd9352b9530a44ce0115cd21be",
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v1/journal.jsonl": "86fafc0855f99921506b799f59bba846d2dbf2031869c9d2d8ab2fd6300c751f"
+  },
+  "production_jobs_restarted": false,
+  "scientific_eligibility": false
+}

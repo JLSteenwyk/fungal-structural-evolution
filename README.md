@@ -50,6 +50,16 @@ records every role, missed observations and actual enforced limits. Full
 sampler/observer closure, original memory failures and posterior qualification
 remain open. [Verified original execution](metadata/baliphy_reference_sampler_execution_checkpoint_20261003_v3.json).
 
+The [full independent short-sampler replay](docs/independent-short-sampler-replay-20261003.md)
+is now queued after complete sampler closure for all 1,620 roles. It will
+independently decode all saved alignments, candidate-node mappings, residue
+projections and available tip category/state arrays, retaining every failure.
+Internal category labels are absent from this native logger and remain
+explicitly unavailable. Complete-grid software serialization and read-only
+native checks passed; the original jobs were not restarted. At 07:48 UTC,
+the sampler had 188 successful unclosed roles and all six original replay/
+sampler handles were verified. [Queue evidence](metadata/independent_short_sampler_replay_execution_checkpoint_20261003.json).
+
 The [earlier full project runtime checkpoint](metadata/project_runtime_checkpoint_20261002_v20.json)
 checks 16 pipeline handles and six original scientific/retrieval jobs, with
 70 terminal successes and 2,301,852 verified source/artifact bindings. A

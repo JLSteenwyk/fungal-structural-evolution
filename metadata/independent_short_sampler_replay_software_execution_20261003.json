@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-03T07:47:35.429837+00:00",
+  "status": "verified_original_short_sampler_replay_software_completion",
+  "service": {
+    "unit": "fungal-independent-short-sampler-software-validation-20261003-v3.service",
+    "pid": 2878749,
+    "command": "/home/bizon/anaconda3/bin/python scripts/check_independent_short_sampler_replay.py --output data/software_audits/independent-short-sampler-replay-20261003-v3 --receipt metadata/independent_short_sampler_replay_software_validation_20261003_v3.json",
+    "invocation": "19ecb1c9db2c4b8b8dac5c9d4356fdf9",
+    "receipt": "metadata/independent_short_sampler_replay_software_validation_20261003_v3.json",
+    "receipt_sha256": "18695e27ad2ad5590ba89128c9a045a80577fc86bab07bac1d34836e3727388d",
+    "checked_source_bindings": 50,
+    "checked_export_bindings": 0,
+    "journal_sha256": "0598f5f99870a83555d020aea84ef59389a1decc8a4b0ed4a979cf476b3bdcae",
+    "actual_completion_resources": [
+      {
+        "__REALTIME_TIMESTAMP": "1791013462141442",
+        "CPU_USAGE_NSEC": "11440794000",
+        "MEMORY_PEAK": null,
+        "MEMORY_SWAP_PEAK": null
+      }
+    ],
+    "status": "verified_original_software_completion"
+  },
+  "scientific_eligibility": false,
+  "scope": "Deduplicated exact original PID/command/invocation, actual terminal resources, existing source/fixture hashes and completed software receipt checked. Original v1/v2 fixture failures remain preserved; no production closure or inference claim."
+}

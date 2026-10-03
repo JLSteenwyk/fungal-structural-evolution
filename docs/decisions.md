@@ -1166,3 +1166,28 @@ source pins and GPU pause remain unchanged.
 All eight biological aims, adequate independent ancestral sampling, accepted
 phylogenetic framework/reconciliation/dating and model/predictor/calibration
 controls remain required. Full computational closure is not project completion.
+
+## October 3: replay all short outputs and preserve logger limitations
+
+Queue independent native-output validation after the original full sampler
+closes, covering all 1,620 roles, 405 quartets, 135 inputs and 324 aliases.
+Retain failures/invalid dispositions and all intact members of unresolved
+quartets. Reconstruct rooted candidate correspondence, every saved alignment,
+all residue projections and available site properties; verify complete fresh
+NPZ and serialized outputs before provenance closure. No inference restart
+or narrower successful-only project scope follows this checkpoint.
+
+The native category logger names tips only after internal labels are dropped.
+Do not impute unlogged internal category labels or claim a full ancestral
+category trajectory. Preserve both native and projection alphabet orders;
+keep repeated tip anchors distinct from independent biological samples.
+Any future all-node logger belongs to a separately qualified new source and
+disjoint-seed horizon. Three-frame output integrity does not establish mixing,
+safe longer-chain memory or repair either old allocation failure.
+
+Full software serialization uses explicitly mocked source/native results;
+three real early native roles are read-only QC, not full production proof or
+a biological pilot. Two failed synthetic/mock fixtures remain preserved,
+with the corrected original invocation verified. Each new replay stage has
+two CPUs, 16 GiB RAM and zero swap, and starts no inference/GPU/paid work.
+[Full scope, protocol, resources and evidence](independent-short-sampler-replay-20261003.md).

@@ -1,0 +1,14 @@
+{
+  "status": "queued_full_independent_short_sampler_native_replay",
+  "source_plan": "metadata/independent_short_sampler_replay_plan_20261003.json",
+  "source_plan_sha256": "44691fa864b64e4a2e5cd36b6075f7f02b8f101eebb426c8fc2d59519253210e",
+  "launches": [
+    "metadata/independent_short_sampler_replay_launch_20261003.json",
+    "metadata/independent_short_sampler_replay_readback_launch_20261003.json",
+    "metadata/independent_short_sampler_replay_closure_launch_20261003.json"
+  ],
+  "dependency_original_sampler_closure": "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+  "new_native_inference_jobs": 0,
+  "gpu": false,
+  "new_cost_usd": 0
+}

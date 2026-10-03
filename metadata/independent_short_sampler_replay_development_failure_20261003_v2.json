@@ -1,0 +1,13 @@
+{
+  "status": "preserved_short_sampler_replay_artificial_source_fixture_failure",
+  "checked_utc": "2026-10-03T07:44:10.610911+00:00",
+  "failure": "Artificial loader supplied new independent replay statuses in place of original native sampler dispositions. The controller correctly did not authorize a new array for that status, then the mock replay returned success without writing an array. Correct the fixture to distinguish original and independent statuses; production input statuses and inference are unchanged.",
+  "source_hashes": {
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v2/check_independent_short_sampler_replay.py": "71837d34763f34f7bf7a3314131840b6c356a1638883806481a4fe5f07676a7e",
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v2/independent_short_sampler_outputs.py": "ca8d604d21961891c82095b196e15a714f27ce0ffdd78e6c8365273d58de67e0",
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v2/run_independent_short_sampler_replay.py": "69ab6c0abf350d51a2fb5598728463ac6a70d5bd9352b9530a44ce0115cd21be",
+    "data/software_audits/independent-short-sampler-replay-development-20261003-v2/journal.jsonl": "a04d397cd90d43d96405671b18594499862423ac57828c7d3717e369becaa44a"
+  },
+  "production_jobs_restarted": false,
+  "scientific_eligibility": false
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    "metadata/independent_short_sampler_replay_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_independent_short_sampler_replay.py",
+    "--plan",
+    "metadata/independent_short_sampler_replay_plan_20261003.json",
+    "--reader"
+  ],
+  "pins": {
+    "metadata/independent_short_sampler_replay_plan_20261003.json": "44691fa864b64e4a2e5cd36b6075f7f02b8f101eebb426c8fc2d59519253210e",
+    "metadata/independent_short_sampler_replay_launch_20261003.json": "f01c68debba2d794781f9888b5a5756ebdc2fa64001890f6ce7944a64b61303e",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

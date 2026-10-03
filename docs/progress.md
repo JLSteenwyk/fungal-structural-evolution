@@ -1,5 +1,41 @@
 # Progress and evidence
 
+## October 3: full independent short-sampler replay queued
+
+Implemented and queued [independent native replay](independent-short-sampler-replay-20261003.md)
+for all 1,620 roles, 405 quartets, 135 inputs and 324 aliases after the original
+sampler's complete provenance closure. It checks every successful saved
+alignment, source/runtime clade and candidate mapping, residue projection,
+available tip category/state array and rate-property cell. It preserves failed
+or invalid original dispositions without fabricating successful arrays. Fresh
+NPZ outputs have complete value/dtype/axis checks during serialized readback.
+The current native logger omits internal category labels; they remain
+explicitly unavailable, with no complete ancestral-category trajectory claim.
+
+Full producer/reader software serialization passed using real role metadata
+with explicitly mocked source/native results. Both artificial failures and
+all six intact roles in their unresolved quartets were retained. Three actual
+existing native roles across priors matched the original projection oracle;
+fifteen property alterations and ten restart/serialization/claim alterations
+were rejected. Two earlier synthetic/mock fixture failures remain preserved.
+One pure native alphabet API probe launched no MCMC. The successful original
+software invocation's actual terminal journal and source hashes were checked.
+
+At 07:48 UTC, [all six original replay/sampler handles and caps were verified](../metadata/independent_short_sampler_replay_execution_checkpoint_20261003.json)
+with 1,006 frozen pins. Replay controllers were queued; the sampler had 188
+successful unclosed role checks. Each new stage has two CPUs, 16 GiB RAM and
+zero swap, and starts no inference. Full production replay/readback/closure,
+sampler/resource-observer closure, long-chain resources and adequate posterior
+sampling remain open. GPU prediction stays paused; all eight aims remain
+incomplete.
+
+A [fresh broader CPU-queue observation](../metadata/full_shared_entity_timing_execution_checkpoint_20261003_0749.json)
+verified fourteen original handles: six live and eight terminal successes.
+Full covariance qualification remains running; timing and production fitting
+remain gated. Compact closed design and recovered-diagnostic archives were
+rechecked without repeating millions of artifact hashes. These are execution
+checks, not accepted phylogenetic effects or completed biological aims.
+
 ## October 3: categorical closure, startup qualification and live resource observation
 
 The [full independent categorical comparison](independent-ancestral-categorical-completion-20261003.md)
