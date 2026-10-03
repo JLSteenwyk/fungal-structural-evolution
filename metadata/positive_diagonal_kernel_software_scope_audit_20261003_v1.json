@@ -1,0 +1,21 @@
+{
+  "status": "verified_software_scope_with_preserved_planning_row_estimate_correction",
+  "checked_utc": "2026-10-03T23:15:14.619629+00:00",
+  "complete_declared_cases": 24,
+  "actual_case_row_counts": [
+    40
+  ],
+  "actual_maximum_case_rows": 40,
+  "preserved_prelaunch_estimated_maximum_case_rows": 12,
+  "row_estimate_was_not_an_enforced_input_limit": true,
+  "actual_memory_cpu_as_file_caps_unchanged": true,
+  "checks_or_tolerances_changed": false,
+  "source_hashes": {
+    "metadata/positive_diagonal_kernel_software_validation_20261003_v1.json": "a0d0e04e7e06c976f82f3b391d2234b39e6c35aa0e970c6c983a34e4c7d289ec",
+    "metadata/positive_diagonal_kernel_software_execution_20261003_v1.json": "ced763c28f1f8741607c54790351e1586c2c7b88d5e20cbaf3d63f518846955f",
+    "metadata/positive_diagonal_kernel_software_resources_20261003_v1.json": "bdab2a5114cbe5b8f423d8cea33af27e874556d2e2d6e400c81d5c6146319798",
+    "data/software_audits/positive-diagonal-kernel-products-20261003-v1/positive_diagonal_gram_cases.json": "6ee2c72baf06b86d64333c8556ba2594614b566d3a73fe5fdcad06a7c48393eb"
+  },
+  "scientific_eligibility": false,
+  "scope": "Actual artifact reports40rows for every declared case. Original planning field12was mistaken and remains preserved; no input case, scientific model, tolerance or enforced budget is changed. All24cases ran and all actual caps were retained. Complete software scope only, not real full-source qualification."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed_reused_fresh_positive_diagonal_raw_reml_gram_contracts_v1",
+  "checked_utc": "2026-10-03T23:31:50.570470+00:00",
+  "complete_separate_diagonal_audits": 24,
+  "reordered_diagonal_replays": 24,
+  "copied_source_and_detached_result_checks": 8,
+  "invalid_diagonal_or_design_cases_rejected": 40,
+  "maximum_dense_raw_error": 1.4551915228366852e-11,
+  "maximum_dense_projected_error": 2.9103830456733704e-11,
+  "unchanged_comparison_rtol": 3e-09,
+  "unchanged_comparison_atol": 2e-08,
+  "source_hashes": {
+    "scripts/positive_diagonal_basis_context.py": "364a99da2238de3f8a57c17ce72f50239b119e53a00b3c95e2186fd8b104ca47",
+    "scripts/check_positive_diagonal_basis_context.py": "7f7c47854ead20891959ab2b05c2aa7b9ffe0c3b48624a2156e85844f4e50246",
+    "scripts/independent_positive_diagonal_kernel_products.py": "0198f5bf692d72099408d111196f96c1550736e15a04006a525bc0dc87ce1a6f",
+    "scripts/check_positive_diagonal_kernel_products.py": "890d7b37b368c127fb4ea7f50df8a377def256d0c2a418a479f6d1abf08dd4cd",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/check_retained_shared_entity_candidates.py": "ba170584e0b2806c10b0a59d27d78f43d8adf1237dbe61009bfbc7f4795bd47f",
+    "scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f"
+  },
+  "artifacts": {
+    "data/software_audits/positive-diagonal-basis-context-20261003-v1/reused_positive_diagonal_gram_cases.json": "efe3bb3593aa548132a697d0ca3dbf4c02f7e3457e830c4addc4252c814e975d"
+  },
+  "raw_reml_basis_qualification_complete": false,
+  "scientific_eligibility": false,
+  "scope": "All24declared q5/q6 mode/diagonal cases compared against separate complete component, independent latent and dense audits, with retained constant-diagonal dependency reviews. Fresh constant-kernel reuse does not inherit saved uniform audits/envelopes or alter any model. Complete input/result isolation checked. No measured whole-data speedup, real weighted source qualification, variance fitting or scientific acceptance."
+}

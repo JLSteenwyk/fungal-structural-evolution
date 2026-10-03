@@ -1,0 +1,38 @@
+{
+  "status": "verified_original_reused_positive_diagonal_basis_software_actual_wait_zero",
+  "checked_utc": "2026-10-03T23:36:37.976356+00:00",
+  "actual_tool_session_id": 34539,
+  "actual_tool_terminal_exit_code": 0,
+  "unit": "fungal-positive-diagonal-basis-context-software-20261003-v1.service",
+  "invocation_id": "c8bfee9d17bf42cea6a271a21d405af0",
+  "wrapper": {
+    "pid": 1275932,
+    "created": 1791070308.38,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/positive_diagonal_basis_context_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/positive_diagonal_basis_context_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_positive_diagonal_basis_context.py",
+      "--output",
+      "data/software_audits/positive-diagonal-basis-context-20261003-v1",
+      "--receipt",
+      "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json"
+    ]
+  },
+  "exact_wrapper_pid_journal_entries": 2,
+  "original_start_records": 1,
+  "original_completion_records": 1,
+  "source_hashes": {
+    "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json": "ecfa3842cbebd7b62dd1b0295616a7a904af14eeca5247cc303a6474088ba570",
+    "metadata/positive_diagonal_basis_context_software_execution_20261003_v1.json": "28a0e429632cfa165bfb49d45dcaa1037084209b6967c5dcdf77fc1d29cd9017",
+    "metadata/positive_diagonal_basis_context_software_execution_20261003_v1/original-invocation-journal.jsonl": "e5ee391404ca4086b739a0b0f6e017360eeb9dfe0050eac86eae6c4ef461f6c4"
+  },
+  "scope": "Actual original wait34539exit0 and exact original wrapper/native PID/create/command/receipt evidence. Complete24separate-diagonal/24reordered/eight factor-or-returned-result isolation checks and40invalid-input checks. No whole-source weighted qualification, measured production speedup, original mismatch diagnosis or fit."
+}

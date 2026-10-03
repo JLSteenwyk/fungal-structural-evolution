@@ -1,0 +1,17 @@
+{
+  "pid": 1275935,
+  "created": 1791070308.76,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_positive_diagonal_basis_context.py",
+    "--output",
+    "data/software_audits/positive-diagonal-basis-context-20261003-v1",
+    "--receipt",
+    "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json"
+  ]
+}

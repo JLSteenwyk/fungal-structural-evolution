@@ -1,5 +1,34 @@
 # Progress and evidence
 
+## October 3: full controls closed; nonuniform Gram arithmetic qualified
+
+Independent SQL/Fraction readback completed all 4,340 cohorts, 34,110,120
+original row occurrences and 136,440,480 case/control occurrences. Full
+provenance closure passed 13,071 bindings and two actual original journals;
+fresh archive checks also verified all three original terminal handles.
+Uniform/background-node/background-pair/connected-component policies remain
+separate; the last three are nonuniform in every cohort. Node/pair diagonals
+are numerically identical and do not add independent evidence.
+
+A new independent positive-diagonal latent audit passed all 24 declared
+mode/diagonal q5/q6 cases against component and dense error-contrast
+calculations. Constant/near-uniform dependence and zero-norm reviews remain;
+60 invalid inputs were rejected. Fresh product reuse passed 24 comparisons,
+24 reordered calls, eight factor/result isolation checks and 40 invalid inputs.
+Both actual software waits and exact original PID/command/invocation journals
+exited zero. No saved uniform envelope is inherited. The original general-
+software planning-row estimate is preserved with a 12-to-40-row scope
+correction; executed cases and enforced budgets were unchanged.
+
+At 23:25 UTC the original covariance reader had 2,618/4,340 reports; full
+validation, retained qualification and timing remain pending. Eight ancestral
+follow-ups remain timeouts, with four original native workers active.
+Full weighted source/design qualification, timing/fits, inferential calibration,
+accepted framework/reconciliation, adequate posteriors, the atlas and all eight
+aims remain required. The goal stays active; GPU inference stays paused.
+[Completed controls](inverse-reuse-weight-controls-20261003.md) and
+[arithmetic, qualification and remaining gates](positive-diagonal-kernel-products-20261003.md).
+
 ## October 3, 22:56 UTC: complete original-cohort reuse controls exported; readback running
 
 The exporter/independent SQL-Fraction reader passed 40 grouping cases and the

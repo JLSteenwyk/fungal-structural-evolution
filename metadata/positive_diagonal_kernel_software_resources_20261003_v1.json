@@ -1,0 +1,29 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 900,
+  "wall_seconds_per_stage": 1800,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "declared_diagonal_cases": 24,
+  "declared_pair_cases": 2,
+  "declared_loading_modes": 2,
+  "declared_dense_kernel_dimensions": [
+    5,
+    6
+  ],
+  "maximum_synthetic_rows": 12,
+  "output_allowance_mib": 16,
+  "runtime_planning_seconds": [
+    1,
+    900
+  ],
+  "runtime_calibrated": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete declared general-positive-diagonal raw/REML Gram checker, including dense error contrasts, latent overlap algebra, row/design invariance and all dependency/invalid-input cases. Software qualification only; no real weighted raw/REML qualification or native scientific restart."
+}

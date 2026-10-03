@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_positive_diagonal_kernel_products.py",
+    "--output",
+    "data/software_audits/positive-diagonal-kernel-products-20261003-v1",
+    "--receipt",
+    "metadata/positive_diagonal_kernel_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/positive_diagonal_kernel_software_resources_20261003_v1.json": "bdab2a5114cbe5b8f423d8cea33af27e874556d2e2d6e400c81d5c6146319798",
+    "scripts/check_positive_diagonal_kernel_products.py": "890d7b37b368c127fb4ea7f50df8a377def256d0c2a418a479f6d1abf08dd4cd",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "16cad9766b844df89a95d365232666ca",
+  "wrapper": {
+    "pid": 1257516,
+    "created": 1791068993.64,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/positive_diagonal_kernel_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/positive_diagonal_kernel_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/positive_diagonal_kernel_software_validation_20261003_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_positive_diagonal_kernel_products.py",
+      "--output",
+      "data/software_audits/positive-diagonal-kernel-products-20261003-v1",
+      "--receipt",
+      "metadata/positive_diagonal_kernel_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-03T23:09:54.837294+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T23:09:56.492370+00:00",
+  "child": {
+    "pid": 1257526,
+    "created": 1791068994.14,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=900",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_positive_diagonal_kernel_products.py",
+      "--output",
+      "data/software_audits/positive-diagonal-kernel-products-20261003-v1",
+      "--receipt",
+      "metadata/positive_diagonal_kernel_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 1.654812564025633,
+  "child_cpu_seconds": 1.615233,
+  "child_peak_rss_bytes": 116391936,
+  "receipt": "metadata/positive_diagonal_kernel_software_validation_20261003_v1.json",
+  "receipt_sha256": "a0d0e04e7e06c976f82f3b391d2234b39e6c35aa0e970c6c983a34e4c7d289ec",
+  "artifacts": {
+    "metadata/positive_diagonal_kernel_software_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/positive_diagonal_kernel_software_execution_20261003_v1/configuration.json": "d6712c3fc1ff9930f834ad81c078ee11deba9575ddc9937f85741edc3d806584",
+    "metadata/positive_diagonal_kernel_software_execution_20261003_v1/stdout.log": "98cdcc73f291bd377e13006e55030e95d658906afb830e61220b7f6a65af379f",
+    "metadata/positive_diagonal_kernel_software_execution_20261003_v1/process.json": "8135da2588558282def67aee4ce3a5127e8ed33ee0996d3f765f50acecbf6133"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

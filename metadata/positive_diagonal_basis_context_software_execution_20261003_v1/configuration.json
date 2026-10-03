@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_positive_diagonal_basis_context.py",
+    "--output",
+    "data/software_audits/positive-diagonal-basis-context-20261003-v1",
+    "--receipt",
+    "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/positive_diagonal_basis_context_software_resources_20261003_v1.json": "0bb792d8850cfe5d586f8e285d71c8b6f958dfd0941d9b55dda93f79fd9a0670",
+    "scripts/check_positive_diagonal_basis_context.py": "7f7c47854ead20891959ab2b05c2aa7b9ffe0c3b48624a2156e85844f4e50246",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "c8bfee9d17bf42cea6a271a21d405af0",
+  "wrapper": {
+    "pid": 1275932,
+    "created": 1791070308.38,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/positive_diagonal_basis_context_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/positive_diagonal_basis_context_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_positive_diagonal_basis_context.py",
+      "--output",
+      "data/software_audits/positive-diagonal-basis-context-20261003-v1",
+      "--receipt",
+      "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-03T23:31:49.462020+00:00"
+}

@@ -3,10 +3,11 @@
 The full exporter and independent reader are software qualified and launched
 for all **4,340 original cohorts**, 75,188 logical cases and 34,110,120
 cohort-row occurrences. Four controls give 136,440,480 case/control
-occurrences. The real exporter has written every cohort and exited
-successfully; independent SQL/Fraction readback is running and complete
-two-journal closure remains pending. These are prepared working-model inputs,
-not fitted evolutionary results.
+occurrences. Full independent SQL/Fraction readback and source/artifact/
+two-original-journal closure are complete. Fresh whole-stage verification
+rehashed all 13,071 bindings and checked producer, reader and closer terminal
+evidence. These are prepared working-model inputs, not fitted evolutionary
+results; weighted numerical qualification remains separate.
 
 ## Definition and interpretation
 
@@ -87,19 +88,19 @@ The real producer census reports all three reuse controls as nonuniform in
 every cohort. Background-node and physical-pair maximum reuse is 71;
 connected-family-component maximum reuse is 771. The background controls
 have weights ranging from approximately 0.02085 to 1.5964, and the component
-control from 0.00795 to 7.4521 across all cohorts. These are preliminary
-export descriptions pending independent raw-count readback, not fitted
-effects or an estimate of independent biological observations.
+control from 0.00795 to 7.4521 across all cohorts. These input descriptions
+are now independently checked against raw cohort counts; they are not
+fitted effects or independent biological observation counts.
 
 A complete post-export audit freshly verified all 4,384 consumed source
 bindings and 8,681 artifacts with original producer terminal-success evidence.
 It compared background-node and physical-pair weights/diagonals over every
 exported row: the two controls are exactly equal in all 4,340 cohorts. Their
-distinct policies and provenance remain retained. Once independent raw-count
-readback passes, future numerical computation can consider exact input reuse
+distinct policies and provenance remain retained. Independent raw-count
+readback has passed, so future numerical computation can consider exact input reuse
 without treating duplicate controls as independent evidence. This byte and
-redundancy audit does not independently reconstruct raw source counts or
-close the full control stage. Its actual original audit wait and exact
+redundancy audit itself does not reconstruct raw source counts; the separate
+full reader/closure now supplies that evidence. Its actual original audit wait and exact
 PID/create/command/invocation journals exited zero.
 
 The actual original software wait exited zero, with matching exact wrapper
@@ -123,10 +124,12 @@ No GPU prediction, paid service or failed original job is restarted.
 - [Full immutable plan](../metadata/full_inverse_reuse_weight_plan_20261003_v1.json),
   [prelaunch resources](../metadata/full_inverse_reuse_weight_resources_20261003_v1.json)
   and [original launch inventory](../metadata/full_inverse_reuse_weight_launches_20261003_v1.json).
-- [Current original runtime](../metadata/full_inverse_reuse_weight_execution_checkpoint_20261003_v1_2256.json)
+- [Original terminal runtime](../metadata/full_inverse_reuse_weight_execution_checkpoint_20261003_completed_2317.json)
   and [field/array dictionary](../metadata/inverse_reuse_weight_data_dictionary_20261003.tsv).
 - [Complete export-byte and control-redundancy audit](../metadata/full_inverse_reuse_weight_export_verification_20261003_v1.json)
   and [actual original audit wait/journal proof](../metadata/full_inverse_reuse_weight_export_audit_transport_20261003_v1.json).
+- [Full completed controls](../metadata/full_inverse_reuse_weights_completed_20261003_v1.json)
+  and [fresh whole closure/terminal verification](../metadata/full_inverse_reuse_weight_completed_verification_20261003_v1.json).
 
 `check_full_inverse_reuse_weights.py` reproduces the complete declared
 software qualification under the saved software resource/wrapper configuration
@@ -138,7 +141,8 @@ checked before reuse, but failed original scientific attempts are preserved
 and are not restarted by this stage. The saved original commands record the
 enforced environment and resources.
 
-Full independent real readback/closure, weighted raw/REML numerical qualification,
+The [general positive-diagonal and reuse arithmetic](positive-diagonal-kernel-products-20261003.md)
+is software qualified; real weighted raw/REML numerical qualification,
 complete timing and independently checked fits remain required. Inferential
 calibration, accepted phylogeny/reconciliation, adequate ancestral posteriors,
 the complete atlas and all eight scientific aims remain open. GPU inference

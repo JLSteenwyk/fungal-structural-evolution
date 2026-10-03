@@ -1,0 +1,65 @@
+{
+  "status": "complete_verified_full_original_cohort_inverse_reuse_controls_v1",
+  "logical_cases": 75188,
+  "cohorts": 4340,
+  "case_row_occurrences": 34110120,
+  "case_control_occurrences": 136440480,
+  "policies": [
+    "uniform",
+    "background_node",
+    "background_pair",
+    "family_component"
+  ],
+  "policy_census": {
+    "background_node": {
+      "exact_uniform_one_cohorts": 0,
+      "maximum_reuse": 71,
+      "nonuniform_cohorts": 4340,
+      "represented_groups_max": 15490,
+      "represented_groups_min": 171,
+      "weight_max": 1.5963855421686748,
+      "weight_min": 0.02084794964638393
+    },
+    "background_pair": {
+      "exact_uniform_one_cohorts": 0,
+      "maximum_reuse": 71,
+      "nonuniform_cohorts": 4340,
+      "represented_groups_max": 15490,
+      "represented_groups_min": 171,
+      "weight_max": 1.5963855421686748,
+      "weight_min": 0.02084794964638393
+    },
+    "family_component": {
+      "exact_uniform_one_cohorts": 0,
+      "maximum_reuse": 771,
+      "nonuniform_cohorts": 4340,
+      "represented_groups_max": 3098,
+      "represented_groups_min": 50,
+      "weight_max": 7.452105851658591,
+      "weight_min": 0.00795182948743923
+    },
+    "uniform": {
+      "exact_uniform_one_cohorts": 4340,
+      "maximum_reuse": 1,
+      "nonuniform_cohorts": 0,
+      "represented_groups_max": 22934,
+      "represented_groups_min": 207,
+      "weight_max": 1.0,
+      "weight_min": 1.0
+    }
+  },
+  "residual_diagonal_prepared": true,
+  "raw_reml_basis_qualification_complete": false,
+  "nonuniform_weighting_accepted": false,
+  "full_hash_archive": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "9f8fd296d4f26f6e57f9f9ba3bd1fbbc55252bc15121de7b2edfa70235283f0e",
+  "bound_source_hashes": 13071,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "21b708f215b02ed12691188baf6b55da173b4e8ac2e70d5ce837eb6c172a78c6",
+  "independent_readback": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/readback.json",
+  "independent_readback_sha256": "4975d4af133fe9a55f2287cf1cfcd24c759a524c27fcd12ced4335a6922cbf88",
+  "completion_plan_sha256": "18bd34dcabdf0c31fecadfff99e2b30f0cb747da4d4b9d44210e40bbc3bb1331",
+  "scientific_eligibility": false,
+  "scope": "All original4340cohorts/75188logical cases/34110120cohort-row occurrences, uniform and three mean-one inverse-reuse sensitivity controls;136440480case/control occurrences. Cohort-local counts use original background nodes, versioned physical background pairs and connected family components. Preserve original QC membership, logical-case order and multiplicity links; do not expand selection records into observations. Reciprocal diagonal is a working residual-variance sensitivity assumption, not calibrated confidence-to-variance, literal power weighting, inverse-probability weighting, independent observation count or posterior ESS. Exact uniform-one classes retain a separate future qualification disposition. Fresh scoped parent archive/completion proofs and every consumed case table, caseID order, cohort membership and cone membership record are checked; unrelated archived X/y/operators/native artifacts are not freshly replayed. Every exported row/control checked using independent SQL partition counts and Fraction division. Two new actual original journals plus full stage source/artifact hashes gate closure. Actual weighted raw/REML numerical qualification, timing, fits and biological acceptance remain incomplete; all8aims remain open. No GPU/restart/new cost."
+}

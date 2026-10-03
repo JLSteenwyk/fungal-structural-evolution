@@ -1,0 +1,27 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 900,
+  "wall_seconds_per_stage": 1800,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "complete_declared_diagonal_cases": 24,
+  "maximum_synthetic_case_rows": 40,
+  "retained_kernel_dimensions": [
+    5,
+    6
+  ],
+  "output_allowance_mib": 16,
+  "runtime_planning_seconds": [
+    1,
+    900
+  ],
+  "runtime_calibrated": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete declared reused-versus-separate fresh positive-diagonal raw/REML products with actual40row fixtures, both modes/bases, all24diagonals, call-order/input/output isolation and invalid-input checks. No saved uniform qualification inherited; no real-source speedup claim, native inference or weighted fitting."
+}

@@ -112,12 +112,18 @@ The [full original-cohort reuse controls](docs/inverse-reuse-weight-controls-202
 are software qualified and launched across all 4,340 cohorts and 34,110,120
 cohort-row occurrences. Uniform and three mean-one inverse-reuse controls
 use original background nodes, versioned physical pairs and connected family
-components. The reader reconstructs every count and weight with SQL and exact
-fractions. All cohort exports are written and the producer exited successfully;
-independent full readback is running and closure remains pending. These are
+components. The reader reconstructed every count and weight with SQL and exact
+fractions. Full independent readback and source/artifact/two-original-journal
+closure passed, with all 13,071 bindings freshly checked. These are
 sensitivity assumptions, with no calibrated confidence-to-variance or effective
 sample-size claim. Weighted numerical qualification and fitted effects remain
 separate gates; GPU prediction remains paused.
+
+The [independent nonuniform raw/REML arithmetic and reuse layer](docs/positive-diagonal-kernel-products-20261003.md)
+passed 24 diagonal cases against complete component, latent and dense
+calculations at unchanged tolerances. Constant and near-uniform dependencies
+remain reviews. Fresh products can be shared across controls; full-data
+performance and weighted qualification remain unmeasured/pending.
 
 An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
 identified a validation issue affecting 24 original roles. The

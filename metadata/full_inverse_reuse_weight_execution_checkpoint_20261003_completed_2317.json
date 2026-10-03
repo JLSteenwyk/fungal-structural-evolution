@@ -1,0 +1,121 @@
+{
+  "status": "verified_original_full_inverse_reuse_control_runtime",
+  "checked_utc": "2026-10-03T23:19:38.751400+00:00",
+  "plan_sha256": "eb1ae6fd81f67eb552d5511f98b47b2127d7682af4cff4def1ce0d37372ac8d7",
+  "original_handles": [
+    {
+      "launch": "metadata/full_inverse_reuse_weights_v1_launch_20261003.json",
+      "pid": 1237659,
+      "created": 1791067729.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "0dbb52259942ca76b05244befc945ee95af9d1d2f933756b2a4b36bf46afe006",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "914218e40f30831b5d71978b8ed63e07849e9fc3c8c1b3eced6b3d7907347801",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791068131694848",
+          "CPU_USAGE_NSEC": "401812942000",
+          "MEMORY_PEAK": "3932160",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json",
+      "pid": 1237663,
+      "created": 1791067729.18,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "96f35f5c4022c8d781fdbf0e0ed53eb48b6e7bbed613615c10b0ee668b733762",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "eadfa714bf4eaac643da21601fb2b986acc56210d1805b100c8ce6fa4b8937aa",
+      "captured_process_messages": 15,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791069323899783",
+          "CPU_USAGE_NSEC": "1173151187000",
+          "MEMORY_PEAK": "4042752",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_inverse_reuse_weights_v1_closure_launch_20261003.json",
+      "pid": 1237668,
+      "created": 1791067729.24,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "97ed338b034062b64485f0a07f1d0dc978a22d1da6a8c47158b84e125c52c528",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "5b5f4254306f95df400470e48db5be40399988cbf98c39f4d96452795fb8a3cb",
+      "captured_process_messages": 55,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791069363290099",
+          "CPU_USAGE_NSEC": "11714083000",
+          "MEMORY_PEAK": "2932736",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "frozen_pins_checked": 37,
+  "cohort_checkpoint_files": 4340,
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "case_row_occurrences": 34110120
+  },
+  "completion_gates": {
+    "producer": {
+      "path": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/receipt.json",
+      "present": true,
+      "status": "complete_full_original_cohort_inverse_reuse_controls_pending_readback_v1",
+      "sha256": "21b708f215b02ed12691188baf6b55da173b4e8ac2e70d5ce837eb6c172a78c6",
+      "cohorts": 4340,
+      "case_row_occurrences": 34110120,
+      "case_control_occurrences": 136440480
+    },
+    "reader": {
+      "path": "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/readback.json",
+      "present": true,
+      "status": "passed_full_original_cohort_inverse_reuse_controls_sql_fraction_readback_v1",
+      "sha256": "4975d4af133fe9a55f2287cf1cfcd24c759a524c27fcd12ced4335a6922cbf88",
+      "cohorts": 4340,
+      "case_row_occurrences": 34110120,
+      "case_control_occurrences": 136440480
+    },
+    "completion": {
+      "path": "metadata/full_inverse_reuse_weights_completed_20261003_v1.json",
+      "present": true,
+      "status": "complete_verified_full_original_cohort_inverse_reuse_controls_v1",
+      "sha256": "5a8f167ce6acba26891fc66f70e07e8351362cd568fcaf3e77dae0f3aa3f3496",
+      "cohorts": 4340,
+      "case_row_occurrences": 34110120,
+      "case_control_occurrences": 136440480,
+      "bound_source_hashes": 13071,
+      "exact_process_journals_checked": 2
+    }
+  },
+  "weighted_fitting_launched": false,
+  "gpu": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Original PID/create/command or invocation journals, actual live cgroup caps and available checkpoint counts. Full stage closure archive digest if present; no replay of full saved controls or broader upstream artifacts. No calibrated precision, accepted fits, posterior adequacy, restart or final peak claim."
+}

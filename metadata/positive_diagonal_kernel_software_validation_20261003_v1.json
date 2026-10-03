@@ -1,0 +1,36 @@
+{
+  "status": "passed_positive_diagonal_latent_raw_reml_gram_contracts_v1",
+  "checked_utc": "2026-10-03T23:09:56.298764+00:00",
+  "synthetic_diagonal_cases": 24,
+  "independent_row_permutation_cases": 24,
+  "full_rank_design_transform_cases": 24,
+  "constant_diagonal_dependency_reviews": 8,
+  "explicit_zero_kernel_reviews": 4,
+  "invalid_input_cases_rejected": 60,
+  "diagnostic_status_counts": {
+    "dependent_covariance_bases_require_review": 24,
+    "numerically_independent_covariance_bases": 24
+  },
+  "maximum_dense_raw_gram_error": 1.4551915228366852e-11,
+  "maximum_dense_projected_gram_error": 2.9103830456733704e-11,
+  "maximum_raw_error_fraction_of_combined_roundoff_bound": 0.00024092753166077494,
+  "maximum_projected_error_fraction_of_combined_roundoff_bound": 0.00015900156413252938,
+  "unchanged_comparison_rtol": 3e-09,
+  "unchanged_comparison_atol": 2e-08,
+  "source_hashes": {
+    "scripts/check_positive_diagonal_kernel_products.py": "890d7b37b368c127fb4ea7f50df8a377def256d0c2a418a479f6d1abf08dd4cd",
+    "scripts/independent_positive_diagonal_kernel_products.py": "0198f5bf692d72099408d111196f96c1550736e15a04006a525bc0dc87ce1a6f",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "scripts/check_retained_shared_entity_candidates.py": "ba170584e0b2806c10b0a59d27d78f43d8adf1237dbe61009bfbc7f4795bd47f",
+    "scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f"
+  },
+  "artifacts": {
+    "data/software_audits/positive-diagonal-kernel-products-20261003-v1/positive_diagonal_gram_cases.json": "6ee2c72baf06b86d64333c8556ba2594614b566d3a73fe5fdcad06a7c48393eb"
+  },
+  "scientific_eligibility": false,
+  "raw_reml_basis_qualification_complete": false,
+  "scope": "Complete declared24positive diagonal q5/q6 signed/unsigned synthetic Gram checks against component arithmetic, independent latent overlaps and explicit dense QR error contrasts. Fresh bounds and rank reviews preserved; no uniform envelope inherited, basis deletion, real full-source weighted qualification, variance fit or biological acceptance."
+}

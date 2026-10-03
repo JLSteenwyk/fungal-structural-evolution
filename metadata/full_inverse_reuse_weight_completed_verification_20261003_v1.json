@@ -1,0 +1,94 @@
+{
+  "status": "verified_complete_inverse_reuse_controls_all_stage_hashes_and_original_terminal_handles",
+  "checked_utc": "2026-10-03T23:22:07.641434+00:00",
+  "logical_cases": 75188,
+  "cohorts": 4340,
+  "case_row_occurrences": 34110120,
+  "case_control_occurrences": 136440480,
+  "all_stage_source_artifact_bindings_rehashed": 13071,
+  "exact_stage_journals": 2,
+  "original_terminal_handles_checked": 3,
+  "original_handles": [
+    {
+      "launch": "metadata/full_inverse_reuse_weights_v1_launch_20261003.json",
+      "pid": 1237659,
+      "created": 1791067729.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "0dbb52259942ca76b05244befc945ee95af9d1d2f933756b2a4b36bf46afe006",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "e056b262abc7727c7e5c27d714858ad043eb3af0d9b21636bbbff0768049a5b4",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791068131694848",
+          "CPU_USAGE_NSEC": "401812942000",
+          "MEMORY_PEAK": "3932160",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_inverse_reuse_weights_v1_readback_launch_20261003.json",
+      "pid": 1237663,
+      "created": 1791067729.18,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "96f35f5c4022c8d781fdbf0e0ed53eb48b6e7bbed613615c10b0ee668b733762",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "8a816128e1271641c5bcb413bb68173c30567ad2081278c810fa564098c72919",
+      "captured_process_messages": 15,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791069323899783",
+          "CPU_USAGE_NSEC": "1173151187000",
+          "MEMORY_PEAK": "4042752",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_inverse_reuse_weights_v1_closure_launch_20261003.json",
+      "pid": 1237668,
+      "created": 1791067729.24,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_inverse_reuse_weights_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "97ed338b034062b64485f0a07f1d0dc978a22d1da6a8c47158b84e125c52c528",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "3d39a9d8c1571f826b6cd724b9083daefb9bc5dec99b5a9c59ca0b7359819cb7",
+      "captured_process_messages": 55,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791069363290099",
+          "CPU_USAGE_NSEC": "11714083000",
+          "MEMORY_PEAK": "2932736",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "metadata/full_inverse_reuse_weights_completed_20261003_v1.json": "5a8f167ce6acba26891fc66f70e07e8351362cd568fcaf3e77dae0f3aa3f3496",
+    "results/phylogeny/full-original-cohort-inverse-reuse-controls-20261003-v1/completion_archive.json": "9f8fd296d4f26f6e57f9f9ba3bd1fbbc55252bc15121de7b2edfa70235283f0e",
+    "metadata/full_inverse_reuse_weight_launches_20261003_v1.json": "dda5f82416d0d9379167ced2d45bda5ae18517d2b6f74caddd502528e17b35ca"
+  },
+  "weighted_raw_reml_basis_qualification_complete": false,
+  "weighted_fitting_launched": false,
+  "scientific_eligibility": false,
+  "scope": "Fresh complete13071stage hash archive; producer/SQL Fraction reader/closure source-contract, whole-grid summary and actual original terminal handles. Data-control preparation complete; no weighted numerical basis qualification, accepted weighting effect, calibrated confidence, posterior adequacy or biological aim completion."
+}

@@ -1543,3 +1543,21 @@ artifacts were freshly replayed. Real stage closure requires every artifact
 and two actual original journals. Source export does not authorize weighted
 fits before numerical qualification, timing and installed resources.
 [Complete control definitions and evidence](inverse-reuse-weight-controls-20261003.md).
+
+## October 3: retain full positive-diagonal error-contrast contractions
+
+Use `D Q`, `Q' D Q` and weighted latent products, rather than uniform `n`
+or `n-p` shortcuts. Check every declared mode/basis/diagonal case against
+dense error contrasts and full component calculations. Keep constant/
+near-uniform dependence, zero norms and boundaries as reviews; numerical
+rank does not authorize term deletion. Fresh reuse may share unchanged
+computed products/design images, rebuilding every diagonal row, projected
+Gram and envelope. Do not transfer saved uniform qualification or claim a
+real-data speedup from different software workloads.
+
+Preserve the mistaken synthetic-row estimate with actual scope evidence;
+do not edit a launched resource/source version. Distinguish software
+arithmetic from full weighted source/qualification. Complete control
+readback/closure has passed, but numerical qualification, timing, fitting
+and accepted evolutionary effects remain separate gates.
+[Methods, checks and limitations](positive-diagonal-kernel-products-20261003.md).

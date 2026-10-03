@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_positive_diagonal_basis_context.py",
+    "--output",
+    "data/software_audits/positive-diagonal-basis-context-20261003-v1",
+    "--receipt",
+    "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/positive_diagonal_basis_context_software_resources_20261003_v1.json": "0bb792d8850cfe5d586f8e285d71c8b6f958dfd0941d9b55dda93f79fd9a0670",
+    "scripts/check_positive_diagonal_basis_context.py": "7f7c47854ead20891959ab2b05c2aa7b9ffe0c3b48624a2156e85844f4e50246",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "c8bfee9d17bf42cea6a271a21d405af0",
+  "wrapper": {
+    "pid": 1275932,
+    "created": 1791070308.38,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/positive_diagonal_basis_context_software_resources_20261003_v1.json",
+      "--execution",
+      "metadata/positive_diagonal_basis_context_software_execution_20261003_v1.json",
+      "--receipt",
+      "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_positive_diagonal_basis_context.py",
+      "--output",
+      "data/software_audits/positive-diagonal-basis-context-20261003-v1",
+      "--receipt",
+      "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-03T23:31:49.462020+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-03T23:31:50.823014+00:00",
+  "child": {
+    "pid": 1275935,
+    "created": 1791070308.76,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=900",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_positive_diagonal_basis_context.py",
+      "--output",
+      "data/software_audits/positive-diagonal-basis-context-20261003-v1",
+      "--receipt",
+      "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 1.3607443049550056,
+  "child_cpu_seconds": 1.314308,
+  "child_peak_rss_bytes": 114819072,
+  "receipt": "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json",
+  "receipt_sha256": "ecfa3842cbebd7b62dd1b0295616a7a904af14eeca5247cc303a6474088ba570",
+  "artifacts": {
+    "metadata/positive_diagonal_basis_context_software_execution_20261003_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/positive_diagonal_basis_context_software_execution_20261003_v1/configuration.json": "e291e512f4cabce7bfd2e68ed2d4d4f5e50c9c3927acb864214310e357b0d9c9",
+    "metadata/positive_diagonal_basis_context_software_execution_20261003_v1/stdout.log": "590a048ef8cfa39403858eed0030b0afafab7e075ae4b269db533953d47a22ca",
+    "metadata/positive_diagonal_basis_context_software_execution_20261003_v1/process.json": "b9081f460a2d406d0e24e498d84a1db1e0c19ca98c6c62ac37748cde492aa211"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

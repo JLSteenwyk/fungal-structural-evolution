@@ -3056,6 +3056,31 @@ and metadata field. Fresh source verification is explicitly scoped to all
 consumed original case/covariance tables, global order, cohort memberships
 and cone membership records, with closed parent archive identities checked.
 Unrelated archived numerical inputs and native artifacts are not freshly
-replayed by this export. Full real readback and two original execution journals
-remain pending, as do weighted numerical qualification, timing and fits.
+replayed by this export. Full independent real readback and two original
+execution journals have passed; closure binds 13,071 sources/artifacts.
+Weighted numerical qualification, timing and fits remain pending.
 [Definitions, qualification, dictionary and resource estimates](inverse-reuse-weight-controls-20261003.md).
+
+## Positive-diagonal covariance products for numerical qualification
+
+For `H = I - QQ'`, raw kernel Gram products are `trace(K_a K_b)` and
+error-contrast products are raw products minus twice the kernel-image product
+plus the projected-core product. General residual diagonals retain `D Q`
+and `Q' D Q`; uniform shortcuts are inapplicable. A separate latent reader
+uses sparse entity overlaps, extended-precision scaling and pivoted QR.
+Explicit complete-QR contrasts supply software reference checks.
+
+Twenty-four declared diagonal/mode/five-or-six-kernel cases passed complete
+component/latent/dense comparisons, permutations and full-rank design
+transformations at `rtol=3e-9`, `atol=2e-8`. Constant/near-uniform dependence
+and zero norms remain reviews; 60 invalid inputs were rejected. Fresh reuse
+shares unchanged computed kernel products and design images/cores across
+diagonals, rebuilding residual rows and every envelope. It passed all 24
+separate-audit comparisons/reordered calls, eight factor/result isolation
+checks and 40 invalid inputs. No saved uniform audit/envelope is inherited.
+Actual original software waits and exact PID/command/invocation journals passed.
+
+These are software arithmetic checks, not full weighted source/design
+qualification, measured whole-data speedup, variance fits, adequate
+posterior uncertainty or accepted biological effects.
+[Derivation, qualification, resource correction and remaining gates](positive-diagonal-kernel-products-20261003.md).
