@@ -1,5 +1,20 @@
 # Progress and evidence
 
+## October 3, 12:58 UTC: fresh check distinguishes two logging errors
+
+All 507 corrected-logger fixture bindings and nine saved frames passed again:
+36 ancestral records, 233 residue/category pairs, zero same-record sequence/state
+mismatches. A fresh pure invocation of the installed original numeric encoder
+still corrupts five of twelve fixed constants; the alternative CJSON encoder
+passes twelve exact native roundtrips. This focused alternative is not yet a
+qualified full-workflow correction. A fresh full read-only census of all 1,620
+historical roles and 4,860 frames reproduces twelve strict rate-mean failures
+across three families. No old sources, outputs, assertions or jobs were changed
+or restarted. Earlier allocation failures and posterior adequacy remain
+unresolved. [Fresh logger and native tests](../metadata/baliphy_logging_error_recheck_20261003_1300.json),
+[full frame census](../metadata/short_sampler_native_rate_mean_census_20261003_error_recheck_1300.json)
+and [actual terminal evidence](../metadata/baliphy_logging_error_recheck_execution_20261003_1300.json).
+
 ## October 3, 12:33 UTC: full coverage audit closed; native formatter bug confirmed
 
 All 17,500 structural-marker/tree/source cases and 9,047,500 original-branch

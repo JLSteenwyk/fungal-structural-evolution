@@ -1,0 +1,42 @@
+{
+  "status": "verified_actual_error_recheck_commands_exited_zero",
+  "checked_utc": "2026-10-03T12:59:34.803016+00:00",
+  "original_unit": "fungal-logging-error-recheck-20261003-1300.service",
+  "invocation_id": "ad5af0a8dd544ce69eaea9db8cc0e092",
+  "actual_tool_transports": [
+    {
+      "session_id": 45670,
+      "terminal_exit_code": 0,
+      "scope": "Fresh native pure formatting probes and retained corrected frames"
+    },
+    {
+      "session_id": 41602,
+      "terminal_exit_code": 0,
+      "scope": "Read-only full saved-frame census"
+    }
+  ],
+  "native_probe_limits": {
+    "cpu_quota": 2,
+    "memory_gib": 8,
+    "cgroup_swap_bytes": 0,
+    "native_cpu_seconds": 20,
+    "native_wall_seconds": 30,
+    "stage_wall_seconds": 120
+  },
+  "census_limits": {
+    "address_space_gib": 8,
+    "cpu_seconds": 60,
+    "per_file_mib": 16,
+    "cgroup_limits_claimed": false
+  },
+  "source_hashes": {
+    "metadata/baliphy_logging_error_recheck_20261003_1300.json": "d285cc2b479e684902fadf082cd670049bdf44316dcbe665e93d38ac83449830",
+    "metadata/short_sampler_native_rate_mean_census_20261003_error_recheck_1300.json": "c88983cc60932bef0f7025085c94e2622c1297b7cb9e995be25d39fede38cea5",
+    "data/software_audits/baliphy-logging-error-recheck-20261003-1300/service.journal.jsonl": "7b4a15a06fd801b867d6dd275e054447b0abfffce1a8827f3c01b724669fdfea",
+    "scripts/recheck_baliphy_logging_errors.py": "bfec9eb3fcbae8da54d2e84c09c025c941eb53eeb8e493400b1598d8a35205e1"
+  },
+  "existing_jobs_restarted": false,
+  "new_mcmc_runs": 0,
+  "journal_collection_correction": "Initial _SYSTEMD_INVOCATION_ID filter returned no records; correct USER_INVOCATION_ID filter retrieves exact manager startup/resource records. No native outputs or validation changed.",
+  "scope": "Actual wait return codes and invocation-scoped journal retained. Collected service default status is not terminal evidence. Manager-reported 256 KiB peak is not a native process RSS measurement. Filename label1300 is an identifier; checked_utc is the actual time."
+}
