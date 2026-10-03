@@ -4,6 +4,17 @@ This tracker preserves the eight aims in the [original objective](objective.txt)
 **None of the eight aims is complete.** Completed computational stages below
 support the aims but do not replace their statistical or biological requirements.
 
+The [joint ancestral logger software checks](baliphy-joint-node-logger-20261003.md)
+now pass across all three priors, and all 405 future programs/1,620 disjoint
+seed roles are prepared. Future native-grid startup/logging qualification
+and adequately mixed posterior ensembles have not run. The existing short
+sampler continues, with 747 successful unclosed role checks at 08:30 UTC.
+Its frozen queued reader needs a versioned unknown-residue correction for
+24 roles identified by a full input census. None may be omitted. Joint
+software logging consistency does not complete aim 8 or resolve ancestral
+structure prediction, root/model/likelihood uncertainty or either historical
+native allocation failure.
+
 The [full independent categorical comparison](independent-ancestral-categorical-completion-20261003.md)
 is now closed for all 405 quartets, with two native failures and fifteen
 numerical-review indicators retained. Both cutoffs and all seventeen metric

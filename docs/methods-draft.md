@@ -1,5 +1,19 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+The October 3 [joint ancestral logger](baliphy-joint-node-logger-20261003.md)
+places full ancestral alignments and category/state records in the same
+native logger action. The complete future 405-program/1,620-role grid uses
+three reversible logging edits and fresh seeds; it remains unlaunched.
+Six native software runs across all priors demonstrated exact within-record
+sequence/state agreement at every node, while paired scalar/runtime-tree/
+legacy-alignment files remained identical. Separate logger representations
+can contain distinct conditional draws and are not combined into a joint
+trajectory. Changed tip category draws and all failed intermediate tests are
+retained. These checks establish an output contract for the tested software
+runs, not full-grid posterior adequacy, likelihood correctness or convergence.
+The current frozen reader's treatment of unknown observed residues remains
+an open versioned correction after a full census identified 24 affected roles.
+
 The October 2 [expanded covariance handoff](full-expanded-covariance-20261002.md)
 computes complete new species factors and endpoint/entity incidence for every
 expanded logical case. It preserves distinct genes sharing versioned models,

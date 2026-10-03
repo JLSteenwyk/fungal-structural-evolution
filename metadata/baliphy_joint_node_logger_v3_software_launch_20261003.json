@@ -1,0 +1,27 @@
+{
+  "unit": "fungal-joint-node-logger-software-validation-20261003-v3.service",
+  "pid": 2903146,
+  "created": 1791015878.43,
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_joint_node_logger_v3.py",
+    "--output",
+    "data/software_audits/baliphy-joint-node-logger-20261003-v3",
+    "--receipt",
+    "metadata/baliphy_joint_node_logger_software_validation_20261003_v3.json"
+  ],
+  "invocation": "d0dd7d0119b24f03af17429e14a971af",
+  "checked_utc": "2026-10-03T08:24:55.225505+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "100000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "source_hashes": {
+    "scripts/check_baliphy_joint_node_logger_v3.py": "cc2482853af0f5f6accfc80e38835cb3242dacaab337f96ebfc03d60b7e37a37",
+    "scripts/baliphy_joint_node_logger_v3.py": "8e5d8e257e941d20396b9fd352b21ff439f7b7cae13f50a02c16829feccc099b",
+    "scripts/baliphy_full_node_logger.py": "ffc48764afa427d0482412ff7be7e94e2d9844e063c64445d7954843620fe54f",
+    "metadata/baliphy_joint_node_logger_v3_software_resource_plan_20261003.json": "159ebd08282badd188ebefc78b80ff25d112bdb129615743e80b42d7109b8ec8"
+  },
+  "scientific_eligibility": false
+}

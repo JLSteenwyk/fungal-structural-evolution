@@ -1,5 +1,36 @@
 # Progress and evidence
 
+## October 3: joint ancestral logger qualified; complete future grid prepared
+
+The [joint logger correction](baliphy-joint-node-logger-20261003.md) passed
+six capped native software runs across all three priors. All nine saved
+records have exact sequence/state agreement for all nodes, including 36
+ancestral-node records and 233 ancestral residue/category pairs. Scores,
+runtime trees and legacy alignments match their original same-seed outputs
+byte-for-byte. Eighteen differences between separate legacy and joint
+sequence representations and four changed conditional tip category records
+remain explicit. Thirty-three malformed records were rejected. Actual
+original-invocation completion, 507 bindings and resource limits were checked.
+
+The complete future source grid has 405 programs, 1,620 disjoint seed roles,
+135 effective inputs, 324 original aliases and 1,404 verified source bindings.
+All changes reverse exactly to the original model programs. No execution
+commands or posterior horizon have been prepared or launched. Three failed
+intermediate versions remain preserved; neither current sources nor native
+attempts were edited. A full input census identified three ambiguous residues
+in one alignment affecting 24 original roles. The frozen queued reader's
+cross-log equality requirement at those residues needs a separately qualified
+correction; no affected role had checkpointed at the census time.
+
+At 08:30 UTC, all six original sampler/replay handles and 1,006 pins were
+reverified. The sampler had 747 successful unclosed role checks; independent
+replay remained queued with zero role checks. The live resource observer had
+no cgroup OOM events or swap in its latest observation; peak charged group
+memory was 14,768,316,416 bytes, not a final native RSS bound. Full sampler,
+observer and replay closure, longer adequate sampling, root/model/predictor
+controls, calibration and all eight aims remain open. GPU prediction remains
+paused. [Full evidence and next gates](baliphy-joint-node-logger-20261003.md).
+
 ## October 3: full independent short-sampler replay queued
 
 Implemented and queued [independent native replay](independent-short-sampler-replay-20261003.md)

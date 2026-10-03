@@ -1,5 +1,28 @@
 # Decisions and unresolved questions
 
+## October 3: co-evaluate ancestral sequences and categories
+
+Use sequences and category/state arrays from the same logger record for
+future joint analyses. Matching iteration numbers across separately evaluated
+loggers do not prove draw identity. Encode FASTA as newline-free line lists
+because the installed native JSON text encoder does not escape multiline
+strings. Check the full input-label inventory before using that encoder.
+Preserve strict within-record state/letter equality at every node, including
+uncertain observed residues. Retain changes in conditional category draws;
+do not require those extra draws to be identical across logging scopes.
+Keep exact paired scalar/runtime-tree/legacy-alignment checks and the full
+inverse source transformation. These have passed capped native software
+tests across all priors and all 405 sources have been transformed for future
+roles; no posterior horizon is launched. All intermediate failures and
+current frozen jobs remain untouched.
+
+The original queued reader's cross-log comparison at input `X` needs a new
+qualified version: check concrete observations, retain separate conditional
+draws at unknown residues and preserve all 24 affected roles. Do not invent
+unlogged ancestral category labels, silently relax the frozen reader, fuse
+separate logger draws or treat this software qualification as posterior
+mixing. [Protocol, evidence and full scope](baliphy-joint-node-logger-20261003.md).
+
 - User-directed scope: approximately 500 unique fungal species and 25 additional non-fungal outgroups, no separate pilot.
 - Repository name: fungal-structural-evolution. User confirmed public repository JLSteenwyk/fungal-structural-evolution; origin configured and remote verified empty before initial push.
 - NCBI RefSeq and GenBank fungal assembly catalogs are initial discovery sources, not sufficient coverage by themselves. Augment sparse lineages with published datasets and repositories.

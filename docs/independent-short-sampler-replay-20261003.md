@@ -172,3 +172,23 @@ frozen producer/reader/closer. The [CPU environment](../environments/independent
 records dependencies. Run software checks only into a new audit directory and
 receipt using scripts/check_independent_short_sampler_replay.py; this pure
 native probe and read-only early QC remain distinct from production closure.
+
+## October 3: ambiguity and joint logger correction
+
+The [full input census](../metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
+found three `X` residues in one of 39 distinct alignment files, affecting 24
+roles. A capped native software test shows separate FASTA/property loggers
+can produce different valid conditional residue draws at an unknown observed
+position. The frozen v1 decoder's exact cross-log tip equality can therefore
+reject a distinct conditional draw. None of those roles had checkpointed at
+the census time; this is not a demonstrated failure of their native jobs.
+The full production replay still needs a separately qualified correction
+that checks concrete observations, retains unknown-residue differences and
+does not combine independent log representations. All roles remain required.
+
+For future sources, the [joint logger correction](baliphy-joint-node-logger-20261003.md)
+has passed all-prior native software checks with strict full-node state/letter
+equality inside one record. All 405 future programs/1,620 disjoint seed roles
+are prepared, but unlaunched. This cannot recover omitted internal category
+labels or force joint identity between historical separate logs. The current
+sampler, reader sources, limits and schedules remain unchanged.

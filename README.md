@@ -12,6 +12,18 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
+A [corrected joint ancestral logger](docs/baliphy-joint-node-logger-20261003.md)
+has passed native software checks across all three priors. Encoding sequences
+and full-node categories in one record gives exact residue/state agreement;
+separate legacy logs can represent different conditional draws. All 405
+future model programs and 1,620 disjoint seed roles are prepared but unlaunched.
+At 08:30 UTC, the original sampler had 747 successful unclosed checks.
+An [input ambiguity census](metadata/independent_short_sampler_full_input_ambiguity_census_20261003.json)
+identified a remaining validation issue affecting 24 original roles; the
+frozen queued reader requires a separately qualified correction for unknown
+residues. Current jobs and sources remain unchanged. Posterior qualification
+and all eight biological aims remain open.
+
 
 The [full independent native-alignment replay](docs/independent-native-alignment-replay-20261002.md#october-3-complete-serialized-and-provenance-closure)
 has completed serialized/source/artifact closure: all 163,418 alignments,

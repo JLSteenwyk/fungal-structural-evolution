@@ -1,0 +1,10 @@
+field	type	interpretation
+iter	integer	Exact native saved iteration; software checks0/10/20 only.
+alignmentLines	list[string]	Full native ancestral FASTA split into newline-free lines in the same logger action as catStates; canonical pairing for this record.
+catStates	map[node,{categories,states}]	Every labeled runtime node, including ancestors. Arrays retain matching nongap residue order within this record.
+catStates.categories	list[integer]	Native mixture allocation0..3 for each nongap residue; assignments may differ from separately evaluated legacy logger draws.
+catStates.states	list[integer]	Native amino-acid indices0..19 in ARNDCQEGHILKMFPSTWYV order; exact equality to this record alignmentLines letters required.
+properties.rate	4x20 numbers	Finite nonnegative category rate matrix; rows are constant across states and mean category rate is1. Not an independent likelihood/gamma quadrature proof.
+conditions	object	Exact empty condition schema for these programs.
+legacy_C1.P1.fastas	separate native file	Preserved separate logger draw; same iteration and gap pattern do not establish residue/category draw identity with the joint record.
+future_roles.seed	integer	1620 unique future seeds disjoint from3240 earlier real seeds and three software seeds; no execution or production horizon prepared.

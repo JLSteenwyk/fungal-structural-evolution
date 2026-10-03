@@ -1,0 +1,1205 @@
+{
+  "checked_utc": "2026-10-03T08:31:03.186903+00:00",
+  "status": "verified_original_sampler_resource_observer_runtime",
+  "plan_sha256": "69b2ce89f33f67c94c170a2f6f625917203577e25daf1d592abaafaf5678008c",
+  "frozen_pins_checked": 1000,
+  "original_handles": [
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-20261003-v1.service",
+      "pid": 2846844,
+      "created": 1791010303.2,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json",
+      "plan_sha256": "356244b465489bc8aa66cae0a72f32041c9a7e2d65d3b144c4cbba96b75cb76c",
+      "checked_utc": "2026-10-03T06:51:43.932201+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "2147483648",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=100%",
+        "--property=MemoryMax=2G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [
+        {
+          "pid": 2846852,
+          "created": 1791010303.27,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_baliphy_sampler_resource_observation.py",
+            "--plan",
+            "metadata/baliphy_sampler_resource_observation_plan_20261003.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 125.68
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "350dd0d57d4fc862659b53fd63e96d2bc7420caa53aad5ddcdaad9940e0183f6",
+      "current_cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "2147483648",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-readback-20261003-v1.service",
+      "pid": 2846848,
+      "created": 1791010303.25,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json",
+      "plan_sha256": "f59cdbd5910cdc0245a606c7d3e110572a42ad96faf4be388523498f07885296",
+      "checked_utc": "2026-10-03T06:51:43.962763+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=4G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.25,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "e8256064e4699eb6a9e4aefcb87e0465715b84ba484b458f7211812afefc54f7",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-sampler-resource-observation-closure-20261003-v1.service",
+      "pid": 2846853,
+      "created": 1791010303.28,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json",
+      "plan_sha256": "e5fa704c3381215b86ec6038d87374178af5916898a0d593622eb99335536669",
+      "checked_utc": "2026-10-03T06:51:43.992694+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-sampler-resource-observation-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=4G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_sampler_resource_observation_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.35,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "02804dc80e11b5c67ac37b5cb963ffc65fdb4cc17746df235be4a5db031ac837",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "4294967296",
+        "memory.swap.max": "0"
+      }
+    },
+    {
+      "unit": "fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+      "pid": 2826442,
+      "created": 1791008208.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json",
+      "plan_sha256": "ee2b31dd7a4e2bb9af52b44bc1b48c62b2c38e8e994461bff0fa0543b1f3e189",
+      "checked_utc": "2026-10-03T06:16:49.275037+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=1600%",
+        "--property=MemoryMax=200G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_reference_sampler_qualification_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/baliphy_reference_sampler_qualification_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.15000000000000002,
+      "children": [
+        {
+          "pid": 2852477,
+          "created": 1791010881.41,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/run_baliphy_reference_sampler_qualification.py",
+            "--plan",
+            "metadata/baliphy_reference_sampler_qualification_plan_20261003.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 196.01
+        },
+        {
+          "pid": 2906240,
+          "created": 1791016156.46,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1558590786",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-centered.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 105.88999999999999
+        },
+        {
+          "pid": 2906326,
+          "created": 1791016161.23,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1873920659",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-centered.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 101.02
+        },
+        {
+          "pid": 2906395,
+          "created": 1791016163.35,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1951751687",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 99.0
+        },
+        {
+          "pid": 2906398,
+          "created": 1791016163.96,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "41109094",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.41
+        },
+        {
+          "pid": 2906399,
+          "created": 1791016164.37,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "128717594",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 97.94999999999999
+        },
+        {
+          "pid": 2907401,
+          "created": 1791016253.07,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1418252707",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 9.4
+        },
+        {
+          "pid": 2907402,
+          "created": 1791016253.19,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "10753788",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 9.27
+        },
+        {
+          "pid": 2907403,
+          "created": 1791016253.31,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1887520797",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 9.16
+        },
+        {
+          "pid": 2907404,
+          "created": 1791016253.81,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1955597076",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 8.66
+        },
+        {
+          "pid": 2907405,
+          "created": 1791016255.7,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1322077755",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 6.779999999999999
+        },
+        {
+          "pid": 2907406,
+          "created": 1791016256.86,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1575252808",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 5.609999999999999
+        },
+        {
+          "pid": 2907473,
+          "created": 1791016257.48,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "331765568",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 4.989999999999999
+        },
+        {
+          "pid": 2907474,
+          "created": 1791016257.91,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "841808116",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 4.57
+        },
+        {
+          "pid": 2907477,
+          "created": 1791016259.01,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1612997694",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 3.4699999999999998
+        },
+        {
+          "pid": 2907479,
+          "created": 1791016259.76,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "1129407704",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 2.72
+        },
+        {
+          "pid": 2907487,
+          "created": 1791016261.36,
+          "cmdline": [
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+            "--seed",
+            "913882733",
+            "run",
+            "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered.hs",
+            "--iterations",
+            "20",
+            "--log-format",
+            "json,tsv",
+            "--name",
+            "independent-chain"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 1.12
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "43e07f1b5ecdfb75aefbdf0537288164f42c1318bb10f0777617efd9b2a3a81b",
+      "current_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      }
+    }
+  ],
+  "journal_bytes": 74902494,
+  "latest_complete_snapshot": {
+    "sequence": 5827,
+    "checked_utc": "2026-10-03T08:31:02.249281+00:00",
+    "sampler_controller_pid": 2826442,
+    "sampler_controller_created": 1791008208.54,
+    "elapsed_since_previous_snapshot_seconds": 1.0637357600498945,
+    "cgroup": {
+      "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+      "limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "memory_bytes": {
+        "memory.current": 11529953280,
+        "memory.peak": 14768316416,
+        "memory.swap.current": 0
+      },
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "scope": "Cgroup counters include descendants and kernel/cache charges; not the sum of native worker RSS. No counter resets or configuration writes."
+    },
+    "new_attempts": [
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered-chain3",
+        "pid": 2907487,
+        "created": 1791016261.36,
+        "command": [
+          "/usr/bin/prlimit",
+          "--as=12884901888",
+          "--cpu=900",
+          "--fsize=2147483648",
+          "--",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "913882733",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "identity_path": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/attempts/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered-chain3/attempt-0001/process.json",
+        "identity_sha256": "bf4851e45a604acb9a412bb96e8d70b2d88a586a4a6345c6c9429cfe4d1bb5a9",
+        "configuration_path": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/attempts/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered-chain3/configuration.json",
+        "configuration_sha256": "245ba02010241af729dff39f05dec3bd034be9bd596c10864a5d6549e6bd9bce",
+        "command_path": "results/ancestral/full-baliphy-reference-sampler-qualification-20261003-v1/attempts/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered-chain3/attempt-0001/command.json",
+        "command_sha256": "40e216c7f9fbeb4a93c29d268f33cb47bb6c3500d712fb4a1d3f93081d40defb"
+      }
+    ],
+    "native_observations": [
+      {
+        "chain_id": "71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-centered-chain1",
+        "pid": 2906240,
+        "created": 1791016156.46,
+        "identity_sha256": "593d838bbac29e314a27b9913444ea687880b333bd99f515279c9eeb3e4bec28",
+        "checked_utc": "2026-10-03T08:31:02.225286+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1558590786",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-centered.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 954736640,
+          "VmSize": 833867776,
+          "VmHWM": 933793792,
+          "VmRSS": 813953024,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 104.92999999999999,
+        "raw_proc_status_sha256": "4306631e8ee62e09a9a57498ed56a734e4f4d1e8aea42cf88d5ad72ad2754ea3",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-centered-chain3",
+        "pid": 2906326,
+        "created": 1791016161.23,
+        "identity_sha256": "190e10e6559169d65296980fdb58f8147bf24bf721e903c05aa379386ebdb165",
+        "checked_utc": "2026-10-03T08:31:02.227066+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1873920659",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-centered.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 977334272,
+          "VmSize": 857538560,
+          "VmHWM": 965689344,
+          "VmRSS": 845152256,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 100.07,
+        "raw_proc_status_sha256": "03b3b75b066b4629879db82a899fb372583d235f3e1b5b0a143579c47e31c36e",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package-chain1",
+        "pid": 2906395,
+        "created": 1791016163.35,
+        "identity_sha256": "2ce6f51a2932b3db62c153629999848feec625d4216cffe1220db8ed3d78715d",
+        "checked_utc": "2026-10-03T08:31:02.228552+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1951751687",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 953819136,
+          "VmSize": 833867776,
+          "VmHWM": 941187072,
+          "VmRSS": 822476800,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 98.05000000000001,
+        "raw_proc_status_sha256": "5bfa62748ad59d4ff4ad33494eae011015271954f0553440fe224a9a892ee571",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package-chain3",
+        "pid": 2906398,
+        "created": 1791016163.96,
+        "identity_sha256": "8d8e537ece7f7f679236a632473bbcf10c086f4f0409430ba3ff79147c6f4c71",
+        "checked_utc": "2026-10-03T08:31:02.229977+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "41109094",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 954576896,
+          "VmSize": 929087488,
+          "VmHWM": 944476160,
+          "VmRSS": 839979008,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 97.46,
+        "raw_proc_status_sha256": "cffecafadb4102e9c2800cc844fb53f0486edf7550314d8421fc549db530e604",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package-chain4",
+        "pid": 2906399,
+        "created": 1791016164.37,
+        "identity_sha256": "48da63332f16f9c4feb77663d267678d884c49efdff186e66b10d62590606d65",
+        "checked_utc": "2026-10-03T08:31:02.231480+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "128717594",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/71bd3c35cd9f5b01351bcc2ae5a480c1df2c63720466309b95ebcfeaeb0d6a7b-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 953507840,
+          "VmSize": 833863680,
+          "VmHWM": 942985216,
+          "VmRSS": 817745920,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 96.99,
+        "raw_proc_status_sha256": "e25288756d9ce39a4eba2816cfd45637fda72b56548b69a33eac2d8621c4422b",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package-chain1",
+        "pid": 2907401,
+        "created": 1791016253.07,
+        "identity_sha256": "783cb730fe3ce16663bfae4c144ec8450a438c286fa1fd3baa197e1b5b5b44c0",
+        "checked_utc": "2026-10-03T08:31:02.233614+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1418252707",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 798269440,
+          "VmSize": 793178112,
+          "VmHWM": 782704640,
+          "VmRSS": 778035200,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 8.45,
+        "raw_proc_status_sha256": "f7e9a112e393b2afd53b4984dae90c0afff0c0369b3a1a6675bcfef37db4dcd1",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package-chain2",
+        "pid": 2907402,
+        "created": 1791016253.19,
+        "identity_sha256": "91f8acbdef5a5e025f281aa88cd5111aefaafb24bb02368dbac43f82409d91f1",
+        "checked_utc": "2026-10-03T08:31:02.235006+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "10753788",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 806785024,
+          "VmSize": 806785024,
+          "VmHWM": 782499840,
+          "VmRSS": 782499840,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 8.32,
+        "raw_proc_status_sha256": "e9f662219d099927476f8140a2b3a27e97b9f9098ab9ae0c843b5cef843a57c1",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package-chain3",
+        "pid": 2907403,
+        "created": 1791016253.31,
+        "identity_sha256": "3caac7bd1001694d9411e3342a37f81c43a58d1ec80c4eaebea91fb7617fedbb",
+        "checked_utc": "2026-10-03T08:31:02.236376+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1887520797",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 798273536,
+          "VmSize": 793182208,
+          "VmHWM": 780550144,
+          "VmRSS": 775880704,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 8.219999999999999,
+        "raw_proc_status_sha256": "f5f56be11fb952288181cc2037b0ee29f1d6777c745471ea86b31703e7b97e87",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package-chain4",
+        "pid": 2907404,
+        "created": 1791016253.81,
+        "identity_sha256": "1c955eb9c4e7d26ed89dfec4b37d82e989d9c235f1d17c466931d6cda4c47a07",
+        "checked_utc": "2026-10-03T08:31:02.237742+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1955597076",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7b2827f936c203303cfabb2740e6217419147af4a7292fccb61ff5bd7a96762d-package.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 798269440,
+          "VmSize": 793178112,
+          "VmHWM": 776466432,
+          "VmRSS": 771796992,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 7.72,
+        "raw_proc_status_sha256": "a30fb563215065fd51e4be99258875378282872fe17f5166a184c859a9ff2e08",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad-chain1",
+        "pid": 2907405,
+        "created": 1791016255.7,
+        "identity_sha256": "5438da9f8d58db7bb664dc74a6a406f980b82f7d74aac434c33de8481322aeb9",
+        "checked_utc": "2026-10-03T08:31:02.239117+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1322077755",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 787075072,
+          "VmSize": 782921728,
+          "VmHWM": 768733184,
+          "VmRSS": 767160320,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 5.83,
+        "raw_proc_status_sha256": "8246ffd37fba337dd566360338ca8ebc842207e928e43cea70dfce63408d6a46",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad-chain2",
+        "pid": 2907406,
+        "created": 1791016256.86,
+        "identity_sha256": "074f64aa71267797b36e534ba036b55b9c6ba54121f240621f38cb5de801acfd",
+        "checked_utc": "2026-10-03T08:31:02.240489+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1575252808",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 770289664,
+          "VmSize": 770289664,
+          "VmHWM": 752824320,
+          "VmRSS": 752824320,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 4.67,
+        "raw_proc_status_sha256": "d551764ebd82c3cb6b14478590a656ff3a26f4e3d8aa684bf4104e78e333aa9e",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad-chain3",
+        "pid": 2907473,
+        "created": 1791016257.48,
+        "identity_sha256": "d53ee332506f8452d638018714f5666cf9b952bafa9d67d1a7e73aeb71fb1716",
+        "checked_utc": "2026-10-03T08:31:02.241855+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "331765568",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 637988864,
+          "VmSize": 637988864,
+          "VmHWM": 619577344,
+          "VmRSS": 619294720,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 4.05,
+        "raw_proc_status_sha256": "a8debe8c3915b27b130e71aa859d530117e42978205dd3973be25433e10fe088",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad-chain4",
+        "pid": 2907474,
+        "created": 1791016257.91,
+        "identity_sha256": "1e2e24eda06a3f941407100398c30663d63b99b398a3d838fc0494a77926f928",
+        "checked_utc": "2026-10-03T08:31:02.243231+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "841808116",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 559079424,
+          "VmSize": 559079424,
+          "VmHWM": 537919488,
+          "VmRSS": 537919488,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 3.62,
+        "raw_proc_status_sha256": "c032caa36bb926da3df766031449e3d373a205dcd3df529163fa91abda35f1e8",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered-chain1",
+        "pid": 2907477,
+        "created": 1791016259.01,
+        "identity_sha256": "439c2190bece7224cec8d0791ab988cde4601ad60d83a40583412cff7465a033",
+        "checked_utc": "2026-10-03T08:31:02.244602+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1612997694",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 482295808,
+          "VmSize": 482295808,
+          "VmHWM": 462422016,
+          "VmRSS": 462422016,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 2.53,
+        "raw_proc_status_sha256": "1dae94f77168b69e08108e4ebe9f49878793c410cf9a034a1f75ae81f1593ae6",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered-chain2",
+        "pid": 2907479,
+        "created": 1791016259.76,
+        "identity_sha256": "187c605f7de9213b9254320d5e4942bccfb0bd09afdef92faca09b88ad1ec4e0",
+        "checked_utc": "2026-10-03T08:31:02.245965+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1129407704",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 335626240,
+          "VmSize": 335626240,
+          "VmHWM": 317718528,
+          "VmRSS": 317718528,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 1.7799999999999998,
+        "raw_proc_status_sha256": "255ae8d5f168c7d2a26069efd56a91a0bc82d46c1c61458902dc9b526f2f4366",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      },
+      {
+        "chain_id": "7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered-chain3",
+        "pid": 2907487,
+        "created": 1791016261.36,
+        "identity_sha256": "bf4851e45a604acb9a412bb96e8d70b2d88a586a4a6345c6c9429cfe4d1bb5a9",
+        "checked_utc": "2026-10-03T08:31:02.247563+00:00",
+        "status": "verified_live_native_resource_observation",
+        "command": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "913882733",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-reference-startup-inputs-20261003-v1/models/7e207e8e6fc0d190143d5e55487874057827c1eecd1c5be97cdde51184c0a5d6-centered.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/fungal-baliphy-reference-sampler-qualification-20261003-v1.service",
+        "actual_limits": {
+          "Max address space": 12884901888,
+          "Max cpu time": 900,
+          "Max file size": 2147483648
+        },
+        "reported_memory_bytes": {
+          "VmPeak": 41394176,
+          "VmSize": 41123840,
+          "VmHWM": 23592960,
+          "VmRSS": 23592960,
+          "VmSwap": 0
+        },
+        "cpu_seconds": 0.18,
+        "raw_proc_status_sha256": "5c3b5618bb7c8a6404e01e4c5a1f548d74cc6c94cf41c4a331482f4f588a8d93",
+        "raw_proc_limits_sha256": "127484e0911bb0cf77fc2cc7d0d7b0205923c8b78448375d6a1330248244bcf4",
+        "scope": "Read-only Linux-reported virtual/resident values. RSS accounting is approximate; a sampled high-water value can miss a later peak. Not a measured final per-attempt peak or long-chain memory bound."
+      }
+    ]
+  },
+  "posterior_qualified": false,
+  "new_native_jobs": 0,
+  "gpu": false,
+  "scope": "Exact original handles, live caps and latest complete observation only; no full event/native replay, source closure or precision/final-peak claim."
+}
