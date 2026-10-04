@@ -1,0 +1,43 @@
+{
+  "status": "passed_complete_parallel_numerical_to_fit_source_adapter_v1",
+  "checked_utc": "2026-10-04T10:20:11.623014+00:00",
+  "complete_grids": [
+    {
+      "name": "unqualified",
+      "candidate_inputs": 24000
+    },
+    {
+      "name": "qualified-common-pair",
+      "candidate_inputs": 24000
+    },
+    {
+      "name": "qualified-pair-exception",
+      "candidate_inputs": 24000
+    }
+  ],
+  "serial_parallel_candidate_inputs_compared": 72000,
+  "private_serialized_checkpoint_corruptions_rejected": [
+    "cohort_index",
+    "cohort_id",
+    "entry",
+    "audits",
+    "links",
+    "designs",
+    "counts",
+    "link_counts",
+    "policy_counts",
+    "cache_changed",
+    "cache_unchecked",
+    "worker_as",
+    "scientific_eligibility",
+    "worker_pid",
+    "worker_created",
+    "worker_command"
+  ],
+  "matrices_responses_diagonals_and_audits_exactly_compared": true,
+  "complete_checkpoint_artifact_sets_checked": true,
+  "synthetic_numerical_closure_fixtures": true,
+  "working_model_fits_computed": 0,
+  "scientific_eligibility": false,
+  "scope": "All candidate inputs across three complete synthetic grids compared to the frozen serial source adapter. Closed parallel producer and independent reader checkpoint sets are additionally verified; sixteen private serialized checkpoint alterations rejected. Synthetic closure containers are explicit. No full actual numerical closure, timing run, fit or biological acceptance."
+}

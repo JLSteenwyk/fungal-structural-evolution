@@ -1,0 +1,35 @@
+{
+  "status": "passed_actual_native_watchpoint_debugger_v2_controls",
+  "checked_utc": "2026-10-04T09:21:03.233192+00:00",
+  "outcomes": {
+    "native_write": {
+      "status": "captured_native_watchpoint_positive_control",
+      "debugger_exit_code": 0,
+      "driver_exit_code": 0,
+      "installed_watchpoints": 2,
+      "native_write_hit": true,
+      "normal_exit_inspection_skipped": false,
+      "receipt": "data/software_audits/retained-factor-watchpoint-v2-controls-20261004-v1/native_write/driver_receipt.json",
+      "receipt_sha256": "0baafb50340685f59f5c20211129800ded9da6f5f460f2b14364d28b6c7e28e6"
+    },
+    "normal_exit": {
+      "status": "completed_artificial_watchpoint_normal_exit_control",
+      "debugger_exit_code": 0,
+      "driver_exit_code": 0,
+      "installed_watchpoints": 2,
+      "native_write_hit": false,
+      "normal_exit_inspection_skipped": true,
+      "receipt": "data/software_audits/retained-factor-watchpoint-v2-controls-20261004-v1/normal_exit/driver_receipt.json",
+      "receipt_sha256": "35ce220e85d7afd5255f576d49c2da9bbec9e008bb839b619ab8bd62388a9e4d"
+    }
+  },
+  "actual_native_debugger_controls": 2,
+  "artificial_control": true,
+  "transitive_project_source_modules": 26,
+  "original_factor_diagnostic_runs": 0,
+  "original_jobs_restarted": false,
+  "biological_fits": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Two actual GDB controls: capture deliberately written artificial word and skip live-register inspection after normal inferior exit. No original factors, math/source repair, original native retry, unprotected corruption attribution or biological acceptance."
+}

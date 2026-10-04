@@ -1,0 +1,19 @@
+{
+  "pid": 2726859,
+  "created": 1791108384.02,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_weighted_parallel_source_guards_v1.py",
+    "--plan",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/parallel.plan.json",
+    "--output",
+    "data/software_audits/full-weighted-parallel-source-guards-20261004-v1",
+    "--receipt",
+    "metadata/weighted_parallel_source_guards_software_validation_20261004_v1.json"
+  ]
+}

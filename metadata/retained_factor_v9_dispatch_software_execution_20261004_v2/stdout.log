@@ -1,0 +1,112 @@
+{
+  "status": "passed_actual_native_v9_dispatch_metadata_controls_v2",
+  "checked_utc": "2026-10-04T09:28:54.380288+00:00",
+  "actual_native_svd_calls": 3,
+  "artificial_probe_entry": true,
+  "original_probe_and_guard_runs": 0,
+  "cases": [
+    {
+      "case": "c_order",
+      "actual_native_svd_calls": 1,
+      "dispatch_line_events": 2,
+      "dispatch": {
+        "c_contiguous": true,
+        "compute_uv": true,
+        "f_contiguous": false,
+        "full_matrices": false,
+        "lapack_callable": "<fortran function dgesvd>",
+        "lapack_driver": "gesvd",
+        "operand_dtype": "float64",
+        "operand_pointer": 255625456,
+        "operand_shape": [
+          7,
+          3
+        ],
+        "operand_shares_source_factor": {
+          "artificial_a": false,
+          "artificial_b": false
+        },
+        "operand_strides": [
+          24,
+          8
+        ],
+        "overwrite_a": false,
+        "scope": "Actual Python dispatch operand/settings; LAPACK internal copied operands and work buffers are not captured. Metadata only; no operand snapshot.",
+        "workspace_elements": 210
+      },
+      "inputs_preserved": true,
+      "line_observer_events": 31
+    },
+    {
+      "case": "f_order",
+      "actual_native_svd_calls": 1,
+      "dispatch_line_events": 2,
+      "dispatch": {
+        "c_contiguous": false,
+        "compute_uv": true,
+        "f_contiguous": true,
+        "full_matrices": false,
+        "lapack_callable": "<fortran function dgesvd>",
+        "lapack_driver": "gesvd",
+        "operand_dtype": "float64",
+        "operand_pointer": 256416336,
+        "operand_shape": [
+          7,
+          3
+        ],
+        "operand_shares_source_factor": {
+          "artificial_a": false,
+          "artificial_b": false
+        },
+        "operand_strides": [
+          8,
+          56
+        ],
+        "overwrite_a": false,
+        "scope": "Actual Python dispatch operand/settings; LAPACK internal copied operands and work buffers are not captured. Metadata only; no operand snapshot.",
+        "workspace_elements": 210
+      },
+      "inputs_preserved": true,
+      "line_observer_events": 31
+    },
+    {
+      "case": "source_alias",
+      "actual_native_svd_calls": 1,
+      "dispatch_line_events": 2,
+      "dispatch": {
+        "c_contiguous": true,
+        "compute_uv": true,
+        "f_contiguous": false,
+        "full_matrices": false,
+        "lapack_callable": "<fortran function dgesvd>",
+        "lapack_driver": "gesvd",
+        "operand_dtype": "float64",
+        "operand_pointer": 248025744,
+        "operand_shape": [
+          7,
+          3
+        ],
+        "operand_shares_source_factor": {
+          "artificial_a": true,
+          "artificial_b": false
+        },
+        "operand_strides": [
+          24,
+          8
+        ],
+        "overwrite_a": false,
+        "scope": "Actual Python dispatch operand/settings; LAPACK internal copied operands and work buffers are not captured. Metadata only; no operand snapshot.",
+        "workspace_elements": 210
+      },
+      "inputs_preserved": true,
+      "line_observer_events": 31
+    }
+  ],
+  "transitive_project_source_modules": 49,
+  "original_jobs_restarted": false,
+  "production_tolerance_changed": false,
+  "biological_fits": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Three actual small SciPy gesvd calls: C order, F order and direct source-factor alias. Repeated CPython line events retain identical pre-dispatch metadata; they are not counted as extra native calls. Shape/type/workspace/flags/pointer/alias metadata checked. Probe entry alone is substituted in this private software process and restored; original math/guards are not exercised here. No original factors, mutation attribution, repair or biology."
+}

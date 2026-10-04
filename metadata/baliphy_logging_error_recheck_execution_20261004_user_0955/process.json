@@ -1,0 +1,17 @@
+{
+  "pid": 2596418,
+  "created": 1791107663.85,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/recheck_baliphy_logging_errors.py",
+    "--output",
+    "data/software_audits/baliphy-logging-error-recheck-20261004-user-0955",
+    "--receipt",
+    "metadata/baliphy_logging_error_recheck_20261004_user_0955.json"
+  ]
+}

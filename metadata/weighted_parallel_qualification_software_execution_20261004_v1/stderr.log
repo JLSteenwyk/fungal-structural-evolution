@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_weighted_parallel_software_v1.py", line 148, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_weighted_parallel_software_v1.py", line 38, in main
+    s=serial(grid['serial']); sr=serial(grid['serial'],True)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification.py", line 116, in run
+    plan = json.loads(path.read_text()); runtime(plan); source, bindings = source_inputs(plan, path)
+AttributeError: 'str' object has no attribute 'read_text'

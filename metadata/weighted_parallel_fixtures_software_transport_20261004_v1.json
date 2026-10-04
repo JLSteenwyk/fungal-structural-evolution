@@ -1,0 +1,63 @@
+{
+  "status": "verified_original_weighted_parallel_fixture_report_failure_retained",
+  "checked_utc": "2026-10-04T10:02:52.802893+00:00",
+  "original_tool_session_id": 77850,
+  "original_tool_initial_payload": {
+    "chunk_id": "01f1f0",
+    "wall_time_seconds": 1.000702465,
+    "session_id": 77850,
+    "original_token_count": 33,
+    "output": "Running as unit: fungal-weighted-parallel-fixtures-software-20261004-v1.service; invocation ID: 38fd45900086404988cc43dc3609726b\n"
+  },
+  "original_tool_terminal_payload": {
+    "chunk_id": "737691",
+    "wall_time_seconds": 1.5724e-05,
+    "exit_code": 1,
+    "original_token_count": 44,
+    "output": "Finished with result: exit-code\nMain processes terminated with: code=exited/status=1\nService runtime: 3.930s\nCPU time consumed: 3.900s\nMemory peak: 1.1M\nMemory swap peak: 0B\n"
+  },
+  "original_tool_terminal_exit_code": 1,
+  "invocation_id": "38fd45900086404988cc43dc3609726b",
+  "wrapper": {
+    "pid": 2612736,
+    "created": 1791108005.57,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/weighted_parallel_fixtures_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/weighted_parallel_fixtures_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_weighted_parallel_software_fixtures_v1.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fixtures-20261004-v1",
+      "--receipt",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v1.json"
+    ]
+  },
+  "whole_wrapper_initial_and_terminal_payloads_matched": true,
+  "manager_start_records": 1,
+  "manager_completion_records": 1,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/weighted_parallel_fixtures_software_resources_20261004_v1.json": "402e35470aaaf13a698bd299a5c1ab68afa7461ede70dd1da952153f1c07cdca",
+    "scripts/prepare_weighted_parallel_software_fixtures_v1.py": "63be0bb2d243a9cb9959ee34668156e9dfafdc4555aee494d687a366b3418812",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v1/stderr.log": "c2b9387bf6f85b107df7a5f8f654fec8965e707c97fd84b6de1001970cd659de",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v1/configuration.json": "ee92170ef062ab4d630df4f3c0db8f3912e42a38a01f85d207a9490d9af07ca5",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v1/stdout.log": "0e6e63e8071766afe7ecc740e645f9fa9ed2a47a5853998636bd3b2199b5e1a8",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v1/process.json": "179885aa4660f8345cc566bb160f2dad4a0b8132e60ba6855e73733346ac6a73",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_weighted_parallel_software_transport_v1.py": "1cafac856c23f9f0e8fdf2be6462a13b4e7e17fde23dfc356c7aa67632c528b1",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v1.json": "7256f18e03aa904db09276ca6056aa8ceb6d07e7605c48952f39267badfcdc4e",
+    "metadata/weighted_parallel_fixtures_software_original_tool_payloads_20261004_v1.json": "eec66e71cfa75ba97f084e512c855f2eea08870ff0ec1ae517aba48e38fae131",
+    "metadata/weighted_parallel_fixtures_software_preparation_20261004_v1.json": "0ec0ef555fba99caf206731a717f7b921e0840f6b1da6e166041ad2476b365a4",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v1/original-invocation-journal.jsonl": "4fa25acdaaa840195b36e87bcd1d9f02271360537abaf8d43ba9e12cbd5179f9"
+  },
+  "scientific_eligibility": false,
+  "scope": "Original software tool wait, wrapper identity, whole wrapper initial/terminal payloads, source hashes and original manager journal are verified. Report failures remain retained. Generic wrapper scope is superseded by its exact command; no production numerical closure, native repair or biological inference."
+}

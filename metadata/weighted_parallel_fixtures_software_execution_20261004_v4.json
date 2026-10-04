@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=180",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_weighted_parallel_software_fixtures_v4.py",
+    "--output",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4",
+    "--receipt",
+    "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/weighted_parallel_fixtures_software_resources_20261004_v1.json": "402e35470aaaf13a698bd299a5c1ab68afa7461ede70dd1da952153f1c07cdca",
+    "scripts/prepare_weighted_parallel_software_fixtures_v4.py": "f6ce69db135037e37be98394fb3bb0cfb2d355e857adc78dd7777e82f7e72611",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "a6aa045df5ef471aac1e1c2623c51f71",
+  "wrapper": {
+    "pid": 2658032,
+    "created": 1791108225.88,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/weighted_parallel_fixtures_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/weighted_parallel_fixtures_software_execution_20261004_v4.json",
+      "--receipt",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_weighted_parallel_software_fixtures_v4.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fixtures-20261004-v4",
+      "--receipt",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 300,
+  "started_utc": "2026-10-04T10:03:46.936855+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T10:03:50.791398+00:00",
+  "child": {
+    "pid": 2658151,
+    "created": 1791108226.24,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=180",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_weighted_parallel_software_fixtures_v4.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fixtures-20261004-v4",
+      "--receipt",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 3.8542706669541076,
+  "child_cpu_seconds": 3.790849,
+  "child_peak_rss_bytes": 158859264,
+  "receipt": "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json",
+  "receipt_sha256": "48c1537a125cd4286f6bb7dd89b5bae700fa69ebc8ee70080634690c6fbf6508",
+  "artifacts": {
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v4/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v4/configuration.json": "4910db8e611000e4e07279030d80700dd4d8021a4e060939bd4f694b9d74d84e",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v4/stdout.log": "6a0e964419a778823b533ea055002aec4ce9904d8c0d4550f908617441a5d004",
+    "metadata/weighted_parallel_fixtures_software_execution_20261004_v4/process.json": "9a7eea852ed432efc6ebc6d811e33ceec2a5eb589f6ad75acb6db46c5aae6b9d"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

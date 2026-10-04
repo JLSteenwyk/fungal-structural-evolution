@@ -1,0 +1,168 @@
+{
+  "status": "passed_actual_native_v9_dispatch_metadata_controls_v2",
+  "checked_utc": "2026-10-04T09:28:54.380288+00:00",
+  "actual_native_svd_calls": 3,
+  "artificial_probe_entry": true,
+  "original_probe_and_guard_runs": 0,
+  "cases": [
+    {
+      "case": "c_order",
+      "actual_native_svd_calls": 1,
+      "dispatch_line_events": 2,
+      "dispatch": {
+        "c_contiguous": true,
+        "compute_uv": true,
+        "f_contiguous": false,
+        "full_matrices": false,
+        "lapack_callable": "<fortran function dgesvd>",
+        "lapack_driver": "gesvd",
+        "operand_dtype": "float64",
+        "operand_pointer": 255625456,
+        "operand_shape": [
+          7,
+          3
+        ],
+        "operand_shares_source_factor": {
+          "artificial_a": false,
+          "artificial_b": false
+        },
+        "operand_strides": [
+          24,
+          8
+        ],
+        "overwrite_a": false,
+        "scope": "Actual Python dispatch operand/settings; LAPACK internal copied operands and work buffers are not captured. Metadata only; no operand snapshot.",
+        "workspace_elements": 210
+      },
+      "inputs_preserved": true,
+      "line_observer_events": 31
+    },
+    {
+      "case": "f_order",
+      "actual_native_svd_calls": 1,
+      "dispatch_line_events": 2,
+      "dispatch": {
+        "c_contiguous": false,
+        "compute_uv": true,
+        "f_contiguous": true,
+        "full_matrices": false,
+        "lapack_callable": "<fortran function dgesvd>",
+        "lapack_driver": "gesvd",
+        "operand_dtype": "float64",
+        "operand_pointer": 256416336,
+        "operand_shape": [
+          7,
+          3
+        ],
+        "operand_shares_source_factor": {
+          "artificial_a": false,
+          "artificial_b": false
+        },
+        "operand_strides": [
+          8,
+          56
+        ],
+        "overwrite_a": false,
+        "scope": "Actual Python dispatch operand/settings; LAPACK internal copied operands and work buffers are not captured. Metadata only; no operand snapshot.",
+        "workspace_elements": 210
+      },
+      "inputs_preserved": true,
+      "line_observer_events": 31
+    },
+    {
+      "case": "source_alias",
+      "actual_native_svd_calls": 1,
+      "dispatch_line_events": 2,
+      "dispatch": {
+        "c_contiguous": true,
+        "compute_uv": true,
+        "f_contiguous": false,
+        "full_matrices": false,
+        "lapack_callable": "<fortran function dgesvd>",
+        "lapack_driver": "gesvd",
+        "operand_dtype": "float64",
+        "operand_pointer": 248025744,
+        "operand_shape": [
+          7,
+          3
+        ],
+        "operand_shares_source_factor": {
+          "artificial_a": true,
+          "artificial_b": false
+        },
+        "operand_strides": [
+          24,
+          8
+        ],
+        "overwrite_a": false,
+        "scope": "Actual Python dispatch operand/settings; LAPACK internal copied operands and work buffers are not captured. Metadata only; no operand snapshot.",
+        "workspace_elements": 210
+      },
+      "inputs_preserved": true,
+      "line_observer_events": 31
+    }
+  ],
+  "transitive_project_source_modules": 49,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_retained_factor_v9_dispatch_metadata_v2.py": "9641eec822c7a4cf1b3b2c675acbec12c7a41b502454701f0e9f9364d72de571",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_baliphy_scalar_v6_preflight_v1.py": "336e752acfd78f8e03d027e0a9f340ea06735dad1124aa925bf15871d171baa5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_scalar_v6.py": "b6dffaee4b052be038620b306b0309582105d975751a73c00371bc1726308be6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/read_baliphy_scalar_json_v6b.py": "6fb852d050ee97c0685ce031697a15a08e033f926c8d00fbe2e211c921c36661",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_scalar_json_logger_v6c.py": "300afe8005dce67b299899522c7f0bb132bc833c0a52d809304b3b0674cf9ce0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_sampler_qualification.py": "e05eddfc2656522eb99d328b3997f28408023f41a3de915711416943ffeda3c6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_baliphy_reference_preflight.py": "24843280d4d9006eb8f3409da175b465f060571f7b64cb416d70a7308ca1b934",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_initialization.py": "ca3968c2a6c88972af9d772527e8989d42a1969a16a64fb4078a12dc1bdb05fb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_baliphy_sample_mapping.py": "b6e417691c97b9de4b4936b88ca13b2a95a3d912dbd912810dc31747c0d61f45",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_horizon_resource_inventory.py": "105dacbc76fd142af5330fcb4630f1c1a395ae3fcffe694b5271513e23296849",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_qualification_v3.py": "9522daf66f9688485a922d59de94b8fde3866703298d57488a29f602b8a13f9b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs_v2.py": "e80b6ed93d083fdb07dc63e3118f4c8ae395c03db4af886df79ff0492cb4a257",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_topology.py": "c0f92cf0c85396a6119270e733355a02e99352d1d915c6730c1977fa867cd98b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_alignment.py": "300752d2b1868fef116fa7811782667d7de64feee247662bea4fa181ccb190c1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_joint_ancestral_frames.py": "f9e119e00536d6c0f62b59d6dd5600c20879d64db1b615c14afe3fcb0189fb32",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v5.py": "c10f1caee7a5a793834aa626a772e50ee514fbc9501c513183ba6a50b8a232c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v3.py": "8e5d8e257e941d20396b9fd352b21ff439f7b7cae13f50a02c16829feccc099b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs.py": "ca8d604d21961891c82095b196e15a714f27ce0ffdd78e6c8365273d58de67e0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_full_node_logger.py": "ffc48764afa427d0482412ff7be7e94e2d9844e063c64445d7954843620fe54f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/diagnose_retained_timing_watched_traced_factors_v9.py": "12ddaa07c81b0496f8ecf89b4325b7853abb8cd3c3e25cda61b16b5c9ad932d1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_retained_shared_entity_timing.py": "f00944f780a3e3303751307593fa7a3a133b4ec00adc9b252dcaff58cfa24afb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_shared_entity_likelihood_fast.py": "af30887cf38d0a4a0941e77ed12c65b6d65f00aec3f883fc644d5417262158b3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_shared_entity_likelihood.py": "594b9c8aa0ea194843a2591b260463eb3642d20e8977ef6f8859b29a179a3120",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/retained_shared_entity_candidate.py": "12c9b8adc3be34a38f1b88899e6fa9d34c2f4d17cd761716c12fcb32d3e4d614",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_retained_shared_entity_fit_sources.py": "8d8df7d0d0d10c4ceefa1cd35659a2456413145f907f25dc77c9228df8bb205b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_shared_entity_fit_sources.py": "e4110acadef870b9c7b095e263c6bb3ed3a4f0ebaa98e306c03036ba73d5b215",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_reduced_covariance_sources_v3.py": "ff14bae8c6c0616463d82774f346848f21273932b3a91703b2258890b9837414",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_parallel_covariance_readback_v2.py": "6f153ca29c7fd170d59f9b2419cbb4bb2d18ee4c86c3ea9648330dab00ac352e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/parallel_covariance_readback_v2.py": "25c59078044f6b6b387e2cfa66463dd53b8cfe19d00d22b4b739317ffb96c233",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_exact_covariance_sources.py": "acdf71eb00dab593bcd1b6e5fd7ca6f511842d680466582bb319354f5836aa50",
+    "/home/bizon/anaconda3/lib/python3.10/site-packages/scipy/linalg/_decomp_svd.py": "12993b3fa9a62cb9980e24444d901bdcedafdf029f6ce8e61ac79690052544f3",
+    "/home/bizon/anaconda3/lib/python3.10/site-packages/scipy/linalg/_flapack.cpython-310-x86_64-linux-gnu.so": "11742f3f308733322369de8ef867af6aaf8c3b001d61005632dff37b3a4161ee",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v2/c_order.jsonl": "cf0c5ce06e8a1bceffef8c120aac8b0e6ab72d01f3072263ce5792eb558ab0b9",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v2/source_alias.jsonl": "1a8639c0a77f11a4fd97aba3f970684a8161619b6c97c7326fc6027f05904538",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v2/f_order.jsonl": "a443f5bbd78b2a1eb1d367345100ba1d3b5424f7ad5e16951be998abd99e0a96"
+  },
+  "original_jobs_restarted": false,
+  "production_tolerance_changed": false,
+  "biological_fits": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Three actual small SciPy gesvd calls: C order, F order and direct source-factor alias. Repeated CPython line events retain identical pre-dispatch metadata; they are not counted as extra native calls. Shape/type/workspace/flags/pointer/alias metadata checked. Probe entry alone is substituted in this private software process and restored; original math/guards are not exercised here. No original factors, mutation attribution, repair or biology."
+}

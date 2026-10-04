@@ -55,9 +55,12 @@ captured eight changed entries in a separate species-factor buffer. The responsi
 operation is now narrowed to the [native SVD call](docs/retained-native-svd-write-isolation-20261004.md);
 the exact write and validated repair remain unresolved. A
 [protected-factor diagnostic and unprotected hardware watchpoints](docs/retained-factor-watchpoints-20261004.md)
-retain both the 40-probe protected nonrecurrence and a new live attempt to catch
-the first native write. The artificial watchpoint control succeeds; this is
-diagnostic evidence, not a repair. Weighted numerical qualification
+retain both the 40-probe protected nonrecurrence and the V8 target's 40-probe
+nonrecurrence with its original debugger post-exit failure. A
+[fresh traced hardware-watchpoint diagnostic](docs/retained-factor-traced-watchpoints-20261004.md)
+has reached 17 of 40 groups without recurrence at 10:15 UTC. The corrected
+debugger's native-write/normal-exit controls pass; the original error remains
+unresolved. Weighted numerical qualification
 continues independently; fitting and calibration remain unfinished.
 
 The [dependent Gaussian simulation code](docs/weighted-shared-entity-simulation-20261004.md)
@@ -88,6 +91,16 @@ is now running after that exact source closure: all 5,208,000 audit records and
 Software checks passed three complete synthetic grids totaling 18,000 records
 and 72,000 links, including qualified nonuniform q4/q5/q6 bases and review states.
 Real weighted numerical output and model fits are not yet complete.
+
+A [full parallel version](docs/full-weighted-parallel-qualification-20261004.md)
+now runs the same complete numerical grid with 16 CPU workers. All 18,000
+synthetic audits and 72,000 links agree with the serial calculation and pass
+independent latent readback; 19 corruption cases and two private input mutations
+are rejected. At 10:24 UTC, 279/4,340 producer cohorts are complete, with all 16
+workers live, about 22 GiB memory and no swap or failure files. Full readback and
+closure are pending. A new downstream source adapter passes 72,000 candidate
+input comparisons, but its complete timing/fitting integration remains required.
+The original serial numerical and queued timing stages remain unchanged.
 
 A [four-control fitting source adapter and numerical bridge](docs/weighted-shared-entity-candidates-20261004.md)
 preserve actual residual diagonals through both likelihood implementations.

@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v2.py",
+    "--output",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v2",
+    "--receipt",
+    "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/retained_factor_v9_dispatch_software_resources_20261004_v2.json": "2123b20ef2aaab3da94e69bfa6151a43c358f47b9de5d2371eee902dfe1736fd",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v2.py": "9641eec822c7a4cf1b3b2c675acbec12c7a41b502454701f0e9f9364d72de571",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "8c30502576fd4cd6b8cf0f795022547b",
+  "wrapper": {
+    "pid": 2252575,
+    "created": 1791106132.68,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/retained_factor_v9_dispatch_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/retained_factor_v9_dispatch_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_v9_dispatch_metadata_v2.py",
+      "--output",
+      "data/software_audits/retained-factor-v9-dispatch-20261004-v2",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 180,
+  "started_utc": "2026-10-04T09:28:53.728789+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T09:28:54.522959+00:00",
+  "child": {
+    "pid": 2253429,
+    "created": 1791106133.03,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=120",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_v9_dispatch_metadata_v2.py",
+      "--output",
+      "data/software_audits/retained-factor-v9-dispatch-20261004-v2",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.7939183709677309,
+  "child_cpu_seconds": 0.7255839999999999,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json",
+  "receipt_sha256": "95f2d0a15ce3a09c6041d128c4dfab2a3f0f2221db6aee86a8f04644f9b0a0e8",
+  "artifacts": {
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v2/configuration.json": "73782d79ce48667df613d2dcaa91a4d854b2a467646cc0e31a2cd6c9f081e9df",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v2/stdout.log": "c12a16044b39fcd7ca7def4ad899a26ecf3c0ab36c491d35b5e237deb4c2ad7b",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v2/process.json": "a9924cd6ec379dcd7a27d0fdcc353b14036cdc2f7d85fac9268bbfb1cca38724"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

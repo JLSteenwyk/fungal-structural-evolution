@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_retained_factor_watchpoint_debugger_v2.py",
+    "--output",
+    "data/software_audits/retained-factor-watchpoint-v2-controls-20261004-v1",
+    "--receipt",
+    "metadata/retained_factor_watchpoint_debugger_v2_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/retained_factor_watchpoint_debugger_v2_software_resources_20261004_v1.json": "f33046aec36c1494c42f69ccfd79fec4916ec552396ded15cd860517d672115e",
+    "scripts/check_retained_factor_watchpoint_debugger_v2.py": "9317fef953abef8de891cf6783b4839ffa821ce059e6a2bab8211ece72fa0f83",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "482c792c0e7f411caa0cf7ca4a230f8a",
+  "wrapper": {
+    "pid": 1682455,
+    "created": 1791105659.57,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/retained_factor_watchpoint_debugger_v2_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/retained_factor_watchpoint_debugger_v2_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_watchpoint_debugger_v2_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_watchpoint_debugger_v2.py",
+      "--output",
+      "data/software_audits/retained-factor-watchpoint-v2-controls-20261004-v1",
+      "--receipt",
+      "metadata/retained_factor_watchpoint_debugger_v2_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 180,
+  "started_utc": "2026-10-04T09:21:00.608868+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T09:21:03.316112+00:00",
+  "child": {
+    "pid": 1682669,
+    "created": 1791105659.91,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=120",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_watchpoint_debugger_v2.py",
+      "--output",
+      "data/software_audits/retained-factor-watchpoint-v2-controls-20261004-v1",
+      "--receipt",
+      "metadata/retained_factor_watchpoint_debugger_v2_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 2.7069817630108446,
+  "child_cpu_seconds": 3.003525,
+  "child_peak_rss_bytes": 218329088,
+  "receipt": "metadata/retained_factor_watchpoint_debugger_v2_software_validation_20261004_v1.json",
+  "receipt_sha256": "aa4de6cfc28eeba27b818bea741f94637f4a180afde496c67a2f1721b4054422",
+  "artifacts": {
+    "metadata/retained_factor_watchpoint_debugger_v2_software_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_factor_watchpoint_debugger_v2_software_execution_20261004_v1/configuration.json": "3614452d1d9cd4ca9c2a4b1cb2fe9cd33969a4e20afd40d48894169d8ebc02de",
+    "metadata/retained_factor_watchpoint_debugger_v2_software_execution_20261004_v1/stdout.log": "eba12bff0300e4a3d85759f4182f4853265c2f3062d5aff4350cdaf1a0d1ec7c",
+    "metadata/retained_factor_watchpoint_debugger_v2_software_execution_20261004_v1/process.json": "58984e9398c560b6a6038691aaa89e65fc2893da867c5028fc662d049de20091"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

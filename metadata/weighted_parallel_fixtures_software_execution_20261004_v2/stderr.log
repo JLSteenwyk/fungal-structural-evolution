@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_weighted_parallel_software_fixtures_v2.py", line 64, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_weighted_parallel_software_fixtures_v2.py", line 60, in main
+    with a.receipt.open('x') as f:json.dump(result,f,indent=2);f.write('\n')
+  File "/home/bizon/anaconda3/lib/python3.10/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/home/bizon/anaconda3/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/bizon/anaconda3/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/home/bizon/anaconda3/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/home/bizon/anaconda3/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/home/bizon/anaconda3/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable

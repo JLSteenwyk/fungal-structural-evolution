@@ -1,0 +1,105 @@
+{
+  "status": "prepared_three_complete_private_parallel_software_grids_v1",
+  "checked_utc": "2026-10-04T10:00:09.922875+00:00",
+  "grids": [
+    {
+      "name": "unqualified",
+      "qualified": false,
+      "pair_exception": false,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/parallel.plan.json"
+    },
+    {
+      "name": "qualified-common-pair",
+      "qualified": true,
+      "pair_exception": false,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/qualified-common-pair/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/qualified-common-pair/parallel.plan.json"
+    },
+    {
+      "name": "qualified-pair-exception",
+      "qualified": true,
+      "pair_exception": true,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/qualified-pair-exception/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/qualified-pair-exception/parallel.plan.json"
+    }
+  ],
+  "negatives": [
+    {
+      "case": "raw_gram",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-raw_gram.plan.json"
+    },
+    {
+      "case": "projected_gram",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-projected_gram.plan.json"
+    },
+    {
+      "case": "raw_envelope",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-raw_envelope.plan.json"
+    },
+    {
+      "case": "projected_envelope",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-projected_envelope.plan.json"
+    },
+    {
+      "case": "diagnostic_rank",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-diagnostic_rank.plan.json"
+    },
+    {
+      "case": "retained_names",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-retained_names.plan.json"
+    },
+    {
+      "case": "uniform_class",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-uniform_class.plan.json"
+    },
+    {
+      "case": "control_label",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-control_label.plan.json"
+    },
+    {
+      "case": "diagonal_hash",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-diagonal_hash.plan.json"
+    },
+    {
+      "case": "source_design_status",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-source_design_status.plan.json"
+    },
+    {
+      "case": "promote_science",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-promote_science.plan.json"
+    },
+    {
+      "case": "omit_last_audit",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-omit_last_audit.plan.json"
+    },
+    {
+      "case": "duplicate_audit",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-duplicate_audit.plan.json"
+    },
+    {
+      "case": "foreign_record_count",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-foreign_record_count.plan.json"
+    },
+    {
+      "case": "foreign_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-foreign_link.plan.json"
+    },
+    {
+      "case": "missing_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-missing_link.plan.json"
+    },
+    {
+      "case": "duplicate_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-duplicate_link.plan.json"
+    },
+    {
+      "case": "changed_original_setting",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-changed_original_setting.plan.json"
+    },
+    {
+      "case": "changed_setting_ordinal",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v1/unqualified/negative-changed_setting_ordinal.plan.json"
+    }
+  ],
+  "project_modules": 

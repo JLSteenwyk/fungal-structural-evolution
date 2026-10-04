@@ -1,0 +1,25 @@
+{
+  "unit": "fungal-full-weighted-parallel-reader-20261004-v1.service",
+  "pid": 2735173,
+  "created": 1791108785.43,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json"
+  ],
+  "plan": "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json",
+  "plan_sha256": "491a7ec4c51a4fe1236e589dc38a5e91c224b267260c339d4fa728b71a17102e",
+  "checked_utc": "2026-10-04T10:13:07.356714+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "1600000 100000",
+    "memory.max": "214748364800",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "dc712dedbc0d4e9f8889a2f1361c7dcb",
+  "original_tool_session_id": 75216,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+  },
+  "scientific_eligibility": false
+}

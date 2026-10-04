@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v1.py",
+    "--output",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v1",
+    "--receipt",
+    "metadata/retained_factor_v9_dispatch_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/retained_factor_v9_dispatch_software_resources_20261004_v1.json": "adfd8084c9a3bdb45a87b5383b371dd1e515d7e7a0da5800f6a066728bafa3c8",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v1.py": "aad91537666fefe9b187c05d80c4c198d5b4f0c596d020f38f69d92a230146a2",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "c140520a84164d02b0abf694597e4856",
+  "wrapper": {
+    "pid": 1927409,
+    "created": 1791105949.91,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/retained_factor_v9_dispatch_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_v9_dispatch_metadata_v1.py",
+      "--output",
+      "data/software_audits/retained-factor-v9-dispatch-20261004-v1",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 180,
+  "started_utc": "2026-10-04T09:25:50.955063+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-04T09:25:51.800878+00:00",
+  "child": {
+    "pid": 1927902,
+    "created": 1791105950.26,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=120",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_v9_dispatch_metadata_v1.py",
+      "--output",
+      "data/software_audits/retained-factor-v9-dispatch-20261004-v1",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 0.8455557459965348,
+  "child_cpu_seconds": 0.776729,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/retained_factor_v9_dispatch_software_validation_20261004_v1.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/stderr.log": "217e3717598e4a38520e816d5d99de7c1b100485802b04686b735fce42a9db6a",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/configuration.json": "538d0c23d691780e7c1ba40a5bdaa9c5a8e592cfb59aacdbebbe6b1127a883e8",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/process.json": "242e97d38f49c4b66465af9e257c2acacb4327dcce5a2b351978513a61c80552"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

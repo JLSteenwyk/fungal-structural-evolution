@@ -1800,3 +1800,33 @@ the exact native write, after actual positive-control qualification. Watch
 two known affected words, preserve the limited coverage and stop on the first
 hit. Keep all original numerical guards, failed work and native libraries.
 [Observed limits and resources](retained-factor-watchpoints-20261004.md).
+
+## October 4: parallelize the complete weighted numerical grid
+
+Use sixteen bounded fork workers for all original 4,340 cohorts, 5,208,000 audits
+and 24,883,200 links. Preserve frozen component/latent arithmetic, raw/projected
+guards, tolerances, all weighting policies and review dispositions. Qualify
+complete synthetic serial/parallel numerical parity, independent readback,
+private corruption rejection and cached-input mutation guards before launch.
+Keep 192 GiB worker address-space reservations plus 8 GiB parent headroom within
+the 200 GiB/no-swap cgroup; observe actual original worker identities and limits.
+Bind every producer/reader checkpoint in full closure. On detected failure,
+stop new admissions, preserve exact inputs and allow already running tasks to
+finish; do not automatically retry or change failed original namespaces.
+Require a separate downstream source adapter that verifies the extra checkpoint
+artifacts rather than relaxing the old artifact inventory. Full timing/fitting
+integration, numerical closure and uncertainty calibration still gate biological
+models. Preserve the active original serial/queued timing and all original native
+errors. [Scope and evidence](full-weighted-parallel-qualification-20261004.md).
+
+## October 4: distinguish debugger exit handling from native corruption repair
+
+Preserve the original V8 target's 40 completed probes and original GDB/wrapper
+exit 1. Qualify V2 normal-exit handling and native-write capture on explicit private
+controls. Use a separate traced hardware-watchpoint diagnostic to retain actual
+SVD dispatch metadata and attempt native-write attribution. Repeated Python line
+events are not native-call counts; only Python dispatch operands/settings are
+observed. Missing recurrence under altered execution contexts is not proof of
+repair. Keep failed metadata checkers and unchanged guards; no original native
+job restart or installed-library change follows from the diagnostic alone.
+[Current traced evidence](retained-factor-traced-watchpoints-20261004.md).

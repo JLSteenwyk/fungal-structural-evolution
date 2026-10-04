@@ -1,0 +1,62 @@
+{
+  "status": "verified_original_v9_dispatch_software_checker_rejection_retained",
+  "checked_utc": "2026-10-04T09:31:00.700788+00:00",
+  "actual_tool_session_id": 55345,
+  "actual_tool_terminal_exit_code": 1,
+  "unit": "fungal-retained-v9-dispatch-software-20261004-v1.service",
+  "invocation_id": "c140520a84164d02b0abf694597e4856",
+  "wrapper": {
+    "pid": 1927409,
+    "created": 1791105949.91,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/retained_factor_v9_dispatch_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_v9_dispatch_metadata_v1.py",
+      "--output",
+      "data/software_audits/retained-factor-v9-dispatch-20261004-v1",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v1.json"
+    ]
+  },
+  "original_tool_terminal_payload": {
+    "chunk_id": "e518c9",
+    "wall_time_seconds": 1.3862e-05,
+    "exit_code": 1,
+    "original_token_count": 44,
+    "output": "Finished with result: exit-code\nMain processes terminated with: code=exited/status=1\nService runtime: 1.233s\nCPU time consumed: 1.194s\nMemory peak: 256.0K\nMemory swap peak: 0B\n"
+  },
+  "entire_terminal_payload_matched": true,
+  "original_start_records": 1,
+  "original_completion_records": 1,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/retained_factor_v9_dispatch_software_resources_20261004_v1.json": "adfd8084c9a3bdb45a87b5383b371dd1e515d7e7a0da5800f6a066728bafa3c8",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v1.py": "aad91537666fefe9b187c05d80c4c198d5b4f0c596d020f38f69d92a230146a2",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/stderr.log": "217e3717598e4a38520e816d5d99de7c1b100485802b04686b735fce42a9db6a",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/configuration.json": "538d0c23d691780e7c1ba40a5bdaa9c5a8e592cfb59aacdbebbe6b1127a883e8",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/process.json": "242e97d38f49c4b66465af9e257c2acacb4327dcce5a2b351978513a61c80552",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v1/c_order.jsonl": "8a8c97cbf93dd00cd5592f276d2019f406512e26ef8f5cce3fbb65f56684f0f8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_retained_dispatch_software_transport_v1.py": "fab17119413d0b5386248ab24b1f1e30e20a5bd4ec85c2cd26c74e155f8565a4",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1.json": "98259df931649124d7c8b32c4294f8e32aba2e8b6944f2b6bc63de55a41e4b3a",
+    "metadata/retained_factor_v9_dispatch_software_execution_20261004_v1/original-invocation-journal.jsonl": "2206d3f9e9877e4ca253fcb379a6433defbdb482eadb060baa2265b297c47594"
+  },
+  "qualified_actual_native_svd_calls": 0,
+  "recorded_repeated_dispatch_line_events": true,
+  "original_factor_runs": 0,
+  "original_jobs_restarted": false,
+  "scientific_eligibility": false,
+  "biological_fits": 0,
+  "gpu": false,
+  "scope": "Exact original capped dispatch checker wait and whole wrapper journal payloads plus manager start/end preserved. V1 rejected repeated CPython pre-dispatch line events; actual SVD observer stays unchanged. V2 verifies all three actual small SVD calls, including source alias, with duplicated metadata explicitly retained rather than counted as more calls. Private substituted probe entry, not original guards, factor corruption, repair or biology."
+}

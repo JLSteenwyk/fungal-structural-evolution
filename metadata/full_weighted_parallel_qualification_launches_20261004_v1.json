@@ -1,0 +1,30 @@
+{
+  "status": "launched_full_original_parallel_numerical_producer_with_gated_reader_and_closure",
+  "source_plan": "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+  "source_plan_sha256": "378adf05ebb5b95514121ed9562c7c32e33b752e1cb0ac12963eddb191dfb7a5",
+  "launches": [
+    "metadata/full_weighted_parallel_producer_launch_20261004_v1.json",
+    "metadata/full_weighted_parallel_reader_launch_20261004_v1.json",
+    "metadata/full_weighted_parallel_closure_launch_20261004_v1.json"
+  ],
+  "original_tool_sessions": [
+    45225,
+    75216,
+    15269
+  ],
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "designs": 130200,
+    "fit_inputs": 260400,
+    "settings": 622080,
+    "case_row_occurrences": 34110120,
+    "numerical_audit_rows": 5208000,
+    "setting_audit_links": 24883200
+  },
+  "scientific_eligibility": false,
+  "weighted_working_model_fits_launched": false,
+  "gpu": false,
+  "original_serial_jobs_restarted": false,
+  "all_eight_aims_incomplete": true
+}

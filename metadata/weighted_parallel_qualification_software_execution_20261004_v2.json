@@ -1,0 +1,91 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=1200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_weighted_parallel_software_v2.py",
+    "--fixtures",
+    "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json",
+    "--output",
+    "data/software_audits/full-weighted-parallel-qualification-20261004-v2",
+    "--receipt",
+    "metadata/weighted_parallel_qualification_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/weighted_parallel_qualification_software_resources_20261004_v1.json": "373efc5ea012c80f01bdbf826dd40eb31b81a490e9d715edf54506e9c4089d8c",
+    "scripts/check_weighted_parallel_software_v2.py": "a25c78e6ae0d368a0201ab206d402c0c52b363d5b99df5d8539cf743b5da6d53",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "130a35d0c49d42168aa601c39da2ea8a",
+  "wrapper": {
+    "pid": 2691329,
+    "created": 1791108273.26,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/weighted_parallel_qualification_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/weighted_parallel_qualification_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/weighted_parallel_qualification_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_parallel_software_v2.py",
+      "--fixtures",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json",
+      "--output",
+      "data/software_audits/full-weighted-parallel-qualification-20261004-v2",
+      "--receipt",
+      "metadata/weighted_parallel_qualification_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-04T10:04:34.475960+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T10:06:52.074613+00:00",
+  "child": {
+    "pid": 2691963,
+    "created": 1791108273.78,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=1200",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_parallel_software_v2.py",
+      "--fixtures",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json",
+      "--output",
+      "data/software_audits/full-weighted-parallel-qualification-20261004-v2",
+      "--receipt",
+      "metadata/weighted_parallel_qualification_software_validation_20261004_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 137.59831256896723,
+  "child_cpu_seconds": 183.370915,
+  "child_peak_rss_bytes": 203067392,
+  "receipt": "metadata/weighted_parallel_qualification_software_validation_20261004_v2.json",
+  "receipt_sha256": "1e455215d3ffff87b6211f89f038875d60fa535880b72eae2451785d706710b6",
+  "artifacts": {
+    "metadata/weighted_parallel_qualification_software_execution_20261004_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/weighted_parallel_qualification_software_execution_20261004_v2/configuration.json": "e89253c963e22c2ba7b1d273b6cc500eac39f580c71228feea4624c812567c8c",
+    "metadata/weighted_parallel_qualification_software_execution_20261004_v2/stdout.log": "6c8283d31e53d2a9d369c5f5d0f0515add75d3ad3856d505b8f2afd49a552200",
+    "metadata/weighted_parallel_qualification_software_execution_20261004_v2/process.json": "9b7d5560ea9f793f0d8ac2b737db4c27ef4a83864138ec4d46facdab3ba02868"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

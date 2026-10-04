@@ -13657,3 +13657,55 @@ while preserving the actual failure. No successful-debugger claim, retry,
 identified write instruction or repair is inferred. At 09:08 the corrected
 sampler has36completed dispositions35finite/one review and46original attempts;
 full closure and adequate posterior remain pending.
+
+## October 4, 10:24 UTC: complete parallel numerical grid is running
+
+The new sixteen-worker numerical producer retains all 4,340 cohorts,
+5,208,000 audits and 24,883,200 setting links. Three complete synthetic grids
+give 18,000 audit records and 72,000 setting links identical to frozen serial
+arithmetic, apart from separately bound identities; independent latent readback
+passes. Nineteen private rehashed corruption cases fail and thirteen exact
+numeric failure captures remain. One unchanged actual cohort and deliberate
+cached-factor mutations before/after arithmetic qualify the input guard. All
+original software waits, whole wrapper payloads and manager journals close.
+Report/path/count checker failures remain preserved in separate versions.
+
+All 13,119 full source-census archive bindings were freshly rehashed before
+launch. Parent 8 GiB soft AS, sixteen worker 12 GiB AS limits, 16 CPU/200 GiB/no-swap
+cgroup and BLAS 1 are observed directly. At 10:24, 279 producer checkpoints and
+all 16 workers are live; cgroup memory is about 22 GiB, with no swap/OOM/failure
+files. Original tool waits 45225/75216/15269 identify producer, gated independent
+reader and closer. Full numerical acceptance still requires the entire grid,
+all producer/reader checkpoints and the two original completion journals.
+[Full workflow and evidence](full-weighted-parallel-qualification-20261004.md).
+
+The existing fitting source adapter rejects the additional checkpoint files.
+A separate strict adapter now verifies both complete checkpoint sets. All
+72,000 synthetic candidate inputs match the serial reader's matrices, responses,
+diagonals, audit values and dispositions; 16 private checkpoint alterations fail.
+Complete timing/fitting integration remains required. Existing original serial
+numerics report 970/4,340 at 10:22 without recorded failures; the old queued timing
+is unchanged. No production weighted biological fits have been computed.
+
+The V2 GDB controls pass actual native-write capture and normal-exit handling,
+preserving V8's original post-exit failure. A fresh traced two-word watchpoint
+diagnostic retains 17/40 agreeing probes at 10:15; exact source words remain
+writable, actual SVD dispatch metadata is recorded, and no original corruption
+repair or native write instruction is established.
+[Traced diagnostic limits](retained-factor-traced-watchpoints-20261004.md).
+
+The corrected ancestral short sampler has 478 unclosed dispositions at 10:15:
+471 finite integrity checks and 7 explicit nonfinite/literal-null reviews. No
+reviewed ancestral arrays are admitted and these 20-iteration chains do not
+qualify posterior uncertainty. Full sampler/observer readback remains pending.
+Paired predictor resampling reaches 49,510/53,200 draws at 10:24 (93.1%); its full
+archive/native/readback/journal closure is also pending. GPU prediction remains
+paused. All eight aims, full structural coverage, calibrated fits and adequate
+ancestral posteriors remain unfinished.
+
+The preceding goal turn was progress through qualified debugger controls,
+actual traced diagnostic launch and retained native failure evidence. The
+intervening user error check freshly reproduced the installed formatter bug
+while verifying the original live diagnostic; the corrected path still passes.
+This turn is progress through complete parallel numerical software qualification,
+strict downstream source integration and actual full-scope sixteen-worker launch.

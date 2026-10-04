@@ -1,0 +1,1544 @@
+{
+  "status": "verified_live_original_full_parallel_weighted_numerical_calculation",
+  "checked_utc": "2026-10-04T10:14:37.403968+00:00",
+  "source_plan_sha256": "378adf05ebb5b95514121ed9562c7c32e33b752e1cb0ac12963eddb191dfb7a5",
+  "original_handles": [
+    {
+      "unit": "fungal-full-weighted-parallel-producer-20261004-v1.service",
+      "pid": 2734050,
+      "created": 1791108720.33,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_parallel_producer_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_parallel_producer_wait_plan_20261004_v1.json",
+      "plan_sha256": "679ad54d4c4d855584e87a7ca282abb3c9280793df995e1298d654e77a93546d",
+      "checked_utc": "2026-10-04T10:12:02.265341+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "a07ec9e72cf84a02a7c1601e85d2c331",
+      "original_tool_session_id": 45225,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_parallel_producer_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.060000000000000005,
+      "children": [
+        {
+          "pid": 2734056,
+          "created": 1791108720.49,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 57.58
+        },
+        {
+          "pid": 2734894,
+          "created": 1791108777.04,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 99.15
+        },
+        {
+          "pid": 2734895,
+          "created": 1791108777.1,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 99.11
+        },
+        {
+          "pid": 2734896,
+          "created": 1791108777.17,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 99.03
+        },
+        {
+          "pid": 2734897,
+          "created": 1791108777.23,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.97999999999999
+        },
+        {
+          "pid": 2734899,
+          "created": 1791108777.3,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.91
+        },
+        {
+          "pid": 2734900,
+          "created": 1791108777.36,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.84
+        },
+        {
+          "pid": 2734901,
+          "created": 1791108777.42,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.77
+        },
+        {
+          "pid": 2734902,
+          "created": 1791108777.49,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.71000000000001
+        },
+        {
+          "pid": 2734903,
+          "created": 1791108777.55,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.66
+        },
+        {
+          "pid": 2734904,
+          "created": 1791108777.61,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.57000000000001
+        },
+        {
+          "pid": 2734905,
+          "created": 1791108777.68,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.52000000000001
+        },
+        {
+          "pid": 2734906,
+          "created": 1791108777.74,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.45
+        },
+        {
+          "pid": 2734908,
+          "created": 1791108777.8,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.39
+        },
+        {
+          "pid": 2734911,
+          "created": 1791108777.87,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.31
+        },
+        {
+          "pid": 2734912,
+          "created": 1791108777.94,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.27
+        },
+        {
+          "pid": 2734916,
+          "created": 1791108778.0,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 98.21
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "5554e766fe5c9cd7b1ae9b505e9baabbfaff438d0872f8e1d5a3a875a9e0fdd8",
+      "current_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 12209098752,
+        "memory.peak": 12997009408,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 2734056,
+          "created": 1791108720.49,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3410735104,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         8589934592           25769803776          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734894,
+          "created": 1791108777.04,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3475668992,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734895,
+          "created": 1791108777.1,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3626926080,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734896,
+          "created": 1791108777.17,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3661533184,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734897,
+          "created": 1791108777.23,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3621572608,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734899,
+          "created": 1791108777.3,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3691642880,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734900,
+          "created": 1791108777.36,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3447246848,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734901,
+          "created": 1791108777.42,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3572899840,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734902,
+          "created": 1791108777.49,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3588530176,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734903,
+          "created": 1791108777.55,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3737628672,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734904,
+          "created": 1791108777.61,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3529891840,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734905,
+          "created": 1791108777.68,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3683774464,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734906,
+          "created": 1791108777.74,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3539415040,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734908,
+          "created": 1791108777.8,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3464515584,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734911,
+          "created": 1791108777.87,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3630092288,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734912,
+          "created": 1791108777.94,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3623149568,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 2734916,
+          "created": 1791108778.0,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 3727249408,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-weighted-parallel-reader-20261004-v1.service",
+      "pid": 2735173,
+      "created": 1791108785.43,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json",
+      "plan_sha256": "491a7ec4c51a4fe1236e589dc38a5e91c224b267260c339d4fa728b71a17102e",
+      "checked_utc": "2026-10-04T10:13:07.356714+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "dc712dedbc0d4e9f8889a2f1361c7dcb",
+      "original_tool_session_id": 75216,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_parallel_reader_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "a17cb18a2fd159b246ecda086a9d35701ab32176b77164657557042c280b91e9",
+      "current_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8474624,
+        "memory.peak": 8765440,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "unit": "fungal-full-weighted-parallel-closure-20261004-v1.service",
+      "pid": 2735677,
+      "created": 1791108809.8,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_parallel_closure_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_parallel_closure_wait_plan_20261004_v1.json",
+      "plan_sha256": "b34205774334b53ec01f06369b2b22135896b565e54900145fe42deb276a1d60",
+      "checked_utc": "2026-10-04T10:13:31.736460+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "6908e090a41a4b019bd7e72928a64d1a",
+      "original_tool_session_id": 15269,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_parallel_closure_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.06,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8466432,
+        "memory.peak": 8732672,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    }
+  ],
+  "native_parent": {
+    "pid": 2734056,
+    "created": 1791108720.49,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+      "--plan",
+      "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+    ],
+    "parent_pid": 2734050,
+    "status": "sleeping",
+    "cpu_seconds": 57.58,
+    "rss_bytes": 3410735104,
+    "vm_bytes": 4953825280,
+    "address_space_limits": [
+      8589934592,
+      25769803776
+    ]
+  },
+  "native_workers": [
+    {
+      "pid": 2734894,
+      "created": 1791108777.04,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.59,
+      "rss_bytes": 3475668992,
+      "vm_bytes": 4904599552,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734895,
+      "created": 1791108777.1,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.55,
+      "rss_bytes": 3483557888,
+      "vm_bytes": 4929036288,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734896,
+      "created": 1791108777.17,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.48,
+      "rss_bytes": 3697942528,
+      "vm_bytes": 5121216512,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734897,
+      "created": 1791108777.23,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.41999999999999,
+      "rss_bytes": 3621572608,
+      "vm_bytes": 5048201216,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734899,
+      "created": 1791108777.3,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.35000000000001,
+      "rss_bytes": 3693215744,
+      "vm_bytes": 5120847872,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734900,
+      "created": 1791108777.36,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.28,
+      "rss_bytes": 3447246848,
+      "vm_bytes": 4884180992,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734901,
+      "created": 1791108777.42,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.21,
+      "rss_bytes": 3572899840,
+      "vm_bytes": 4989812736,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734902,
+      "created": 1791108777.49,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.15,
+      "rss_bytes": 3588530176,
+      "vm_bytes": 5021802496,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734903,
+      "created": 1791108777.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.11,
+      "rss_bytes": 3737628672,
+      "vm_bytes": 5152354304,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734904,
+      "created": 1791108777.61,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 99.01,
+      "rss_bytes": 3529891840,
+      "vm_bytes": 4957683712,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734905,
+      "created": 1791108777.68,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 98.96000000000001,
+      "rss_bytes": 3683774464,
+      "vm_bytes": 5110722560,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734906,
+      "created": 1791108777.74,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 98.89999999999999,
+      "rss_bytes": 3539415040,
+      "vm_bytes": 4956696576,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734908,
+      "created": 1791108777.8,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 98.83,
+      "rss_bytes": 3464515584,
+      "vm_bytes": 4896235520,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734911,
+      "created": 1791108777.87,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 98.75,
+      "rss_bytes": 3630092288,
+      "vm_bytes": 5048102912,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734912,
+      "created": 1791108777.94,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 98.71,
+      "rss_bytes": 3623149568,
+      "vm_bytes": 5045841920,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    },
+    {
+      "pid": 2734916,
+      "created": 1791108778.0,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+      ],
+      "parent_pid": 2734056,
+      "status": "running",
+      "cpu_seconds": 98.64999999999999,
+      "rss_bytes": 3727249408,
+      "vm_bytes": 5142253568,
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ]
+    }
+  ],
+  "worker_count": 16,
+  "actual_parent_soft_address_space_gib": 8,
+  "actual_worker_address_space_gib": 12,
+  "cgroup_memory": {
+    "memory.current": "12103798784",
+    "memory.peak": "12997009408",
+    "memory.swap.current": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+  },
+  "completed_cohort_checkpoints": 30,
+  "completed_cohorts": [
+    {
+      "cohort_index": 0,
+      "cohort_id": "0020fd0d2cf4bf66025eeced096fc9f827e1cdfae6a9674033558f55d74f0d25",
+      "audits": 1200,
+      "links": 9600,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.04,
+        "pid": 2734894
+      }
+    },
+    {
+      "cohort_index": 1,
+      "cohort_id": "004003abe077c7b564eccd2d7c4aef04f02f7f57e26643f693a27a0ec87ecd41",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.17,
+        "pid": 2734896
+      }
+    },
+    {
+      "cohort_index": 2,
+      "cohort_id": "0048acecedff58f822f00506fdc275281324bd8f298921cd58b25dd3fc2c5c63",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.1,
+        "pid": 2734895
+      }
+    },
+    {
+      "cohort_index": 3,
+      "cohort_id": "004d4ac24ca51569f4055a43f8e8ad4a7fcc62cbc2121f1e0f80c29fb8fdb787",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.23,
+        "pid": 2734897
+      }
+    },
+    {
+      "cohort_index": 4,
+      "cohort_id": "004eef7de6deb66390d7599400e187e73d1bfe4d16bd2e068e4e484c398b3772",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.3,
+        "pid": 2734899
+      }
+    },
+    {
+      "cohort_index": 5,
+      "cohort_id": "006f5316d995e5a600508ae69bddde105efb87a0f169d4be12aa221d3cbcff8d",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.36,
+        "pid": 2734900
+      }
+    },
+    {
+      "cohort_index": 6,
+      "cohort_id": "007a7988d8d5996ec543f7e826f8ed7c2fb5cfaa584b409fcdb9cbe25e637352",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.42,
+        "pid": 2734901
+      }
+    },
+    {
+      "cohort_index": 7,
+      "cohort_id": "00802bb7f3219d2c61003b9a1d2538b4e19f7103f9e48fa0a6e39c3893b7f174",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.49,
+        "pid": 2734902
+      }
+    },
+    {
+      "cohort_index": 8,
+      "cohort_id": "0091747dee6b26ee008d3c1a2a12f596ac3be516be92c879a8747e50a4af9c5c",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.55,
+        "pid": 2734903
+      }
+    },
+    {
+      "cohort_index": 9,
+      "cohort_id": "00baf01b7f00b4ce2a223913b88dbb761775f25193c5a1139fd5708490eab953",
+      "audits": 1200,
+      "links": 9600,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.61,
+        "pid": 2734904
+      }
+    },
+    {
+      "cohort_index": 11,
+      "cohort_id": "00e287156af7576ed020125157b1b82e6c3aff4de89ab829e6395821256e84f2",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.8,
+        "pid": 2734908
+      }
+    },
+    {
+      "cohort_index": 12,
+      "cohort_id": "01075deb4dca02b81b70e9736c809a02e280f8eb4281545a9be7f3f9eef797cb",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.74,
+        "pid": 2734906
+      }
+    },
+    {
+      "cohort_index": 13,
+      "cohort_id": "010eab60a9433d02f1d1165b8c56d642051ffc4a320043f1caeda3b3634bd0e1",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.87,
+        "pid": 2734911
+      }
+    },
+    {
+      "cohort_index": 14,
+      "cohort_id": "01148fb821e68b84b5972bc0373220feee2a500978432a8699fd5ee2e3923dc9",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.94,
+        "pid": 2734912
+      }
+    },
+    {
+      "cohort_index": 17,
+      "cohort_id": "01553ded85021e7d0c19e36a2cdead1c1a248f9b590d70e1dbff31feba50e864",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.36,
+        "pid": 2734900
+      }
+    },
+    {
+      "cohort_index": 18,
+      "cohort_id": "016aa0c2cd3fb6fadf6f68d329b3a3df1539164ab42183e86682399cf763c869",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.23,
+        "pid": 2734897
+      }
+    },
+    {
+      "cohort_index": 19,
+      "cohort_id": "019dd7edaac66940248201d8edd56dd9a3670e357104b2c94b4799b72bf32b2d",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.17,
+        "pid": 2734896
+      }
+    },
+    {
+      "cohort_index": 20,
+      "cohort_id": "01a1a40616fd72b6ec6345de00b03e46f9b5ca37b57af69357c718f241bef7a0",
+      "audits": 1200,
+      "links": 9600,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.04,
+        "pid": 2734894
+      }
+    },
+    {
+      "cohort_index": 21,
+      "cohort_id": "01a61b1160774908264ea8900c18f1e29e33883dd95f30349f5b32a370c7e922",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.3,
+        "pid": 2734899
+      }
+    },
+    {
+      "cohort_index": 23,
+      "cohort_id": "01bc087c86c373a6124e326f2be54d98139ee3b0a1b0aa8ac281628894fb3cb1",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.49,
+        "pid": 2734902
+      }
+    },
+    {
+      "cohort_index": 24,
+      "cohort_id": "01cca11d15878e3731951019fcb38011a0c9596680f9365beb3249eed75681ec",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.8,
+        "pid": 2734908
+      }
+    },
+    {
+      "cohort_index": 25,
+      "cohort_id": "01cdb498b32ed2491055245ad6ccd1b01dfc23de0ac35d2d84d250b432037ce3",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.3,
+        "pid": 2734899
+      }
+    },
+    {
+      "cohort_index": 26,
+      "cohort_id": "01db71928be11892ccb090a135c88e3d73f47588037cf213d7b11137ab54423b",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.36,
+        "pid": 2734900
+      }
+    },
+    {
+      "cohort_index": 28,
+      "cohort_id": "0213b3aafa3bf68676b8df243e5b67ee2f65eb7ce7d98ff925b8a301209ab478",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.42,
+        "pid": 2734901
+      }
+    },
+    {
+      "cohort_index": 30,
+      "cohort_id": "0219c60dae43d3dbf1d289a8a7a04f34193551be22a92e0bceae5eacc7bd4042",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.8,
+        "pid": 2734908
+      }
+    },
+    {
+      "cohort_index": 33,
+      "cohort_id": "02466cb2d09d31a440a70bdb01ba88d0f448802bb5b743f2aa91a5fde9fd076e",
+      "audits": 1200,
+      "links": 19200,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.36,
+        "pid": 2734900
+      }
+    },
+    {
+      "cohort_index": 34,
+      "cohort_id": "024dcb1d1b9894c589f360c32bf49c48fa02e760648fa01d7dba59850b439d29",
+      "audits": 1200,
+      "links": 2400,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.36,
+        "pid": 2734900
+      }
+    },
+    {
+      "cohort_index": 35,
+      "cohort_id": "026c77b4aadf9254c8b974b1690463cab8403cabcc67e16f8cd44f044eec4298",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.8,
+        "pid": 2734908
+      }
+    },
+    {
+      "cohort_index": 37,
+      "cohort_id": "0287cacb4707b214c421a18b525ed300cfc4881dfd818f5d6f8790aa176263e6",
+      "audits": 1200,
+      "links": 9600,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.74,
+        "pid": 2734906
+      }
+    },
+    {
+      "cohort_index": 38,
+      "cohort_id": "0290703f7b745266b9d22ef748f45fa689a0d6964c14c7f37d9720814d3bdcb6",
+      "audits": 1200,
+      "links": 4800,
+      "worker": {
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json"
+        ],
+        "created": 1791108777.04,
+        "pid": 2734894
+      }
+    }
+  ],
+  "partially_serialized_checkpoint_files": [],
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "designs": 130200,
+    "fit_inputs": 260400,
+    "settings": 622080,
+    "case_row_occurrences": 34110120,
+    "numerical_audit_rows": 5208000,
+    "setting_audit_links": 24883200
+  },
+  "failure_files": [],
+  "producer_receipt_present": false,
+  "independent_readback_present": false,
+  "completion_present": false,
+  "source_hashes": {
+    "scripts/full_weighted_covariance_qualification.py": "0b0b26890b5f16d4ff1a28e05c4b4c4c70d50faeb89a1f844482be4a8388f779",
+    "scripts/check_full_weighted_covariance_qualification_v2.py": "2147a065ebe9f2132c47e5db338b0ac527dc126b7e05cf794a3b8c2b05daea22",
+    "scripts/weighted_covariance_qualified_source_fixture.py": "c7337168e0fceeb549ae027bec231dfc9d71b59802e681a0a8b5191508f41dfb",
+    "scripts/prepare_and_launch_full_weighted_covariance_qualification.py": "607dfe078986a126c6f70859e785b0e9b56022ce563c621a7de4f26f26f0614d",
+    "scripts/independent_positive_diagonal_basis_context.py": "7529f3df052dcc979483a3613acd4a51085d3aa1b521f1f2087001665ca26d83",
+    "scripts/independent_positive_diagonal_kernel_products.py": "0198f5bf692d72099408d111196f96c1550736e15a04006a525bc0dc87ce1a6f",
+    "scripts/positive_diagonal_basis_context.py": "364a99da2238de3f8a57c17ce72f50239b119e53a00b3c95e2186fd8b104ca47",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "scripts/full_weighted_covariance_sources_v2.py": "178e89555329fec4613b87b5ebaa465e610129b5a333743985792b825b9e4e85",
+    "scripts/full_exact_covariance_sources.py": "acdf71eb00dab593bcd1b6e5fd7ca6f511842d680466582bb319354f5836aa50",
+    "scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "scripts/nonuniform_covariance_cone.py": "16e2e5d35a3dff7d9252d9488b7bbde213c8a592db1423e2ae34065b860d6c94",
+    "scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "scripts/inverse_reuse_weight_controls.py": "e5973a1773bfac231ce88863e778fc8ccaa6aa27beb5df7d055d0c3589542fe0",
+    "scripts/run_full_inverse_reuse_weights.py": "5d7b3a5dbc358672bcc9ba423d1b726e9d954673818270bc86d50e30a5657762",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/launch_baliphy_reference_sampler_qualification.py": "6432c16a1adda4a8af4a4d64eb6f155d889ec67298079daa02456e215a2d44e6",
+    "scripts/launch_full_triad_sequence_geometry_followup.py": "60b05fde08408f65bad1e81ddb839f42957fad5a4a936d73cb3c49a7cc3bedba",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "metadata/positive_diagonal_basis_context_software_validation_20261003_v1.json": "ecfa3842cbebd7b62dd1b0295616a7a904af14eeca5247cc303a6474088ba570",
+    "metadata/positive_diagonal_basis_context_software_execution_20261003_v1.json": "28a0e429632cfa165bfb49d45dcaa1037084209b6967c5dcdf77fc1d29cd9017",
+    "metadata/positive_diagonal_basis_context_software_transport_20261003_v1.json": "606661943a220efef40c3063fe41e0922a1d97aef103eace382d1e04d5447b02",
+    "metadata/independent_positive_diagonal_basis_software_validation_20261004_v1.json": "aad0f573e681161e3dcd95cc007a14ab1ecb3a611a5595423e64083843f4ce13",
+    "metadata/independent_positive_diagonal_basis_software_execution_20261004_v1.json": "77678a1257fff5f5c6dd00f7b08d76a66ae19521141bc5f10bb83607cd64e451",
+    "metadata/independent_positive_diagonal_basis_software_transport_20261004_v1.json": "ec66d6837da4fa34b94517281b46ae930aa0978a72a9cba378c5ac64b81f9d14",
+    "metadata/full_weighted_covariance_qualification_software_validation_20261004_v2.json": "cab991134850849c34c757329e386446e103f904be8f00c17ce5c88c3e13e002",
+    "metadata/full_weighted_covariance_qualification_software_execution_20261004_v2.json": "411e361a0cfba9379801905bf61cf816174fe911fdcbb2e5f9469622a000075f",
+    "metadata/full_weighted_covariance_qualification_software_transport_20261004_v2.json": "fd12282567793a4440b471c5fd696cb916f9ef15a152791ca6e4465264874b98",
+    "metadata/full_weighted_covariance_source_census_plan_20261004_v1.json": "89dae41b21471034048ad0883c700044cab19b0970ff13dcc6beaf7c13ceabb8",
+    "metadata/full_weighted_covariance_source_census_launches_20261004_v1.json": "058371fa3295396ff7da78924e404aaab2166ab4d121c6661e76e5e2595ecac3",
+    "metadata/full_weighted_covariance_source_census_v1_closure_launch_20261003.json": "4bb67f0a480f6f9e098e3feff903a0b7b8f07bb628ebc4144cdf09210579451d",
+    "metadata/full_weighted_covariance_qualification_resources_20261004_v1.json": "04ffb3854bf9de265482ed09d8a1a54cb511ca4c00601d21f97a82de9ca96d8d",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "metadata/full_weighted_covariance_qualification_plan_20261004_v1.json": "0b3d08a7c9b09258b3289f5f2ddf574e8915203dd35658753b1bfc0d32125a8c",
+    "metadata/weighted_parallel_qualification_software_validation_20261004_v2.json": "1e455215d3ffff87b6211f89f038875d60fa535880b72eae2451785d706710b6",
+    "metadata/weighted_parallel_qualification_software_execution_20261004_v2.json": "f17738950046b11856498a122f5693df406ba3b30227d06f3e63166c878eeff9",
+    "metadata/weighted_parallel_qualification_software_transport_20261004_v2.json": "38d98eec5131d7f4f17d7e2756fd0bc5fb805c170c7db78b50962b8d22ff4bd6",
+    "metadata/weighted_parallel_source_guards_software_validation_20261004_v1.json": "329ac285d10321a283f24afeedb9c24d019af801c2fe7fb9319c7882939f7d49",
+    "metadata/weighted_parallel_source_guards_software_execution_20261004_v1.json": "97bd3e47bd838abcfae4169890f8bb43a7bc7ab74ad00d166dc972d18dfbee86",
+    "metadata/weighted_parallel_source_guards_software_transport_20261004_v1.json": "85a071b2ee9f3fd4ce2664a6c999aeba2af6c077239580c53440fa23361e14fc",
+    "metadata/full_weighted_covariance_source_census_completed_20261004_v1.json": "f038d9da6bb513296d65695bc852f72c6fad448310991de8d637445cf3c4dc69",
+    "results/phylogeny/full-four-control-covariance-source-census-20261004-v1/completion_archive.json": "bd4d20d2e90feb2dd97a683364faf85df176f553ce09399bf4c3573cbe39c507",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/close_full_weighted_parallel_stage_v1.py": "7ad17c98e558f76c1523f30a651dbde9dcd86a7cbfaf9f8ea7ae3712b8751fdf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification_parallel_v1.py": "f11cf237d46e710075bff519cf675489981b659bd8c104a9e23fed0f770badf1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification.py": "0b0b26890b5f16d4ff1a28e05c4b4c4c70d50faeb89a1f844482be4a8388f779",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/positive_diagonal_basis_context.py": "364a99da2238de3f8a57c17ce72f50239b119e53a00b3c95e2186fd8b104ca47",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_basis_context.py": "7529f3df052dcc979483a3613acd4a51085d3aa1b521f1f2087001665ca26d83",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_kernel_products.py": "0198f5bf692d72099408d111196f96c1550736e15a04006a525bc0dc87ce1a6f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_sources_v2.py": "178e89555329fec4613b87b5ebaa465e610129b5a333743985792b825b9e4e85",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_inverse_reuse_weights.py": "5d7b3a5dbc358672bcc9ba423d1b726e9d954673818270bc86d50e30a5657762",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/inverse_reuse_weight_controls.py": "e5973a1773bfac231ce88863e778fc8ccaa6aa27beb5df7d055d0c3589542fe0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_inverse_reuse_weights.py": "ffa934ef9e02c523bb376ce3ea5bdceef7a76b0acc27de23737208275b0b0feb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_inverse_reuse_weight_sources.py": "589c1ac5306503860c69b5c5698f61325a7a0f8ba1d709cb382baea6b588240f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_exact_covariance_sources.py": "acdf71eb00dab593bcd1b6e5fd7ca6f511842d680466582bb319354f5836aa50",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/nonuniform_covariance_cone.py": "16e2e5d35a3dff7d9252d9488b7bbde213c8a592db1423e2ae34065b860d6c94",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_parallel_qualification_v1.py": "f5c97e3ae2329b8c798b29ca1e664df22a54dda602812e61235da68eba82ec02",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_baliphy_scalar_v6_preflight_v1.py": "336e752acfd78f8e03d027e0a9f340ea06735dad1124aa925bf15871d171baa5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_scalar_v6.py": "b6dffaee4b052be038620b306b0309582105d975751a73c00371bc1726308be6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/read_baliphy_scalar_json_v6b.py": "6fb852d050ee97c0685ce031697a15a08e033f926c8d00fbe2e211c921c36661",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_scalar_json_logger_v6c.py": "300afe8005dce67b299899522c7f0bb132bc833c0a52d809304b3b0674cf9ce0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_sampler_qualification.py": "e05eddfc2656522eb99d328b3997f28408023f41a3de915711416943ffeda3c6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_baliphy_reference_preflight.py": "24843280d4d9006eb8f3409da175b465f060571f7b64cb416d70a7308ca1b934",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_initialization.py": "ca3968c2a6c88972af9d772527e8989d42a1969a16a64fb4078a12dc1bdb05fb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_baliphy_sample_mapping.py": "b6e417691c97b9de4b4936b88ca13b2a95a3d912dbd912810dc31747c0d61f45",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_horizon_resource_inventory.py": "105dacbc76fd142af5330fcb4630f1c1a395ae3fcffe694b5271513e23296849",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_qualification_v3.py": "9522daf66f9688485a922d59de94b8fde3866703298d57488a29f602b8a13f9b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs_v2.py": "e80b6ed93d083fdb07dc63e3118f4c8ae395c03db4af886df79ff0492cb4a257",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_topology.py": "c0f92cf0c85396a6119270e733355a02e99352d1d915c6730c1977fa867cd98b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_alignment.py": "300752d2b1868fef116fa7811782667d7de64feee247662bea4fa181ccb190c1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_joint_ancestral_frames.py": "f9e119e00536d6c0f62b59d6dd5600c20879d64db1b615c14afe3fcb0189fb32",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v5.py": "c10f1caee7a5a793834aa626a772e50ee514fbc9501c513183ba6a50b8a232c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v3.py": "8e5d8e257e941d20396b9fd352b21ff439f7b7cae13f50a02c16829feccc099b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs.py": "ca8d604d21961891c82095b196e15a714f27ce0ffdd78e6c8365273d58de67e0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_full_node_logger.py": "ffc48764afa427d0482412ff7be7e94e2d9844e063c64445d7954843620fe54f",
+    "metadata/full_weighted_parallel_qualification_resources_20261004_v1.json": "5126b42d5bab038875c7066c79b460604dc11f86890202d2d3dc2af469cda964",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00000.producer.json": "e3ad257f82736eb8b960f2416843c0a6f50d6c54655c85c5888387655596ff3e",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00001.producer.json": "37b85a95bbbd23c0192e4a0a13e9fb140d5529f2cefa51487b29b9ab70a4bd87",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00002.producer.json": "1faeea1ecf7142b1368a677058d16c416a6cdf94575054ca1baddf4e949a849e",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00003.producer.json": "7051d3e69cb571cab81ff1c11a4f19ba7f9cc0ddc884172a3e3befc2e8ba0a70",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00004.producer.json": "6bf554d3ccccc3273477893b38d030d2dfbf450a758679f01f1cfafacd018b18",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00005.producer.json": "b56f2abbd5f33b2502e90a1cf6cc57a6f54dd7db85bc747d780a1f1f4df2e4a9",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00006.producer.json": "8ff7f78e4e1e825a9593999f4d7afb2c88c5863767c0876fae9c3d47020e8fc9",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00007.producer.json": "1f7f42564f50d8800b87a8346407a9f6075a9cb360be036d9b91fde5a8c37660",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00008.producer.json": "434a9c2c8a299f4f184eeb934b5bce17c1cc8cf82749ab962a336fc30dd5f7d4",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00009.producer.json": "5623fe4bce60f4b6e48b7dfc3e7e7cd7ee30017472d60e1e20b0ca43a5e9e567",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00011.producer.json": "e40ff3b0589824c7264212cd21ee2ab2b19a714388e26176b246edb5e219f4fe",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00012.producer.json": "cded54fd27d18af81d2ab4c93effd2a5bae095a4153dee9a84f291a74797692a",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00013.producer.json": "083c3e800d756ac0ce1266bc2d44a7fd7dbe44f6e7048ca84012be65b406dc72",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00014.producer.json": "e24280ee7fe0a86c44ab3278fd8b1c44842f99e5830af614441b76d882fff5ad",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00017.producer.json": "1ed56a9f2146420cdc0987ac9eda517c2017665f4947d98db997fbac4e64603e",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00018.producer.json": "a357f68eca6f9c323eb1cb881d96606735e075d590c32bd120cb0dac07b15aa0",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00019.producer.json": "696b8a3126be3c691b32056c14834b61c3e803f3971c422b483c0debab876ce6",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00020.producer.json": "3d09ad5cd3e93c22871da096b96d0b46309dad03d5640acd98cba9d820f25891",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00021.producer.json": "d9583f3294010bad12893f63f6fc9a5e59435e519a9909cb07d932c3b7d9ee34",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00023.producer.json": "691210dd7368763955130be71f0af5c0d648dd341cb65b531e4d5b2ed9c0d9b7",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00024.producer.json": "1879d2a0876ab3b39b220cc29988973baf74c9538c402876c135abed2dbb6e8c",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00025.producer.json": "30678d51a966afabe4fa333aaf14cdc7c2e66edf4be772724815cc363dda5271",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00026.producer.json": "bcca82e1eea51699fd31ac3d6351a1da19c4bcbbc2de755b3e885f4d0da8a151",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00028.producer.json": "fe1b65dffc646f9ca14a440bbc8e754c3e69460b293acb17796f3aed7bdb64e5",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00030.producer.json": "a961d973487aca578d4b2350db583675bc1178e2b6c117a3d54bb9cc73c42d9e",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00033.producer.json": "cb4ebfffba36895991fc5cba823b5afe7740f087b9958563b0a2f92608c7ba88",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00034.producer.json": "036e3ab0d841b146970d2ebb73c365ca4ea18732f8a5678c9c8b8955685ae565",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00035.producer.json": "3423b3a05da6673b653b49f58d9029a766058169c66195b313c70b4ee4b22ccc",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00037.producer.json": "bbc9f4228c1670705ecd7c493d7e73d25ea05805099d7a53f21a70f478956334",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/checkpoints/00038.producer.json": "8d05724a11ddb55d2d8a5508ce3dd681b56997d4076cecef75a8b9e3caaa670c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_checkpoint_v1.py": "24eeb6bba85dea584b4b82e4fd93874a3d2f7c5f4bd1f6cfc1f0ff3d36434fd6",
+    "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json": "378adf05ebb5b95514121ed9562c7c32e33b752e1cb0ac12963eddb191dfb7a5",
+    "metadata/full_weighted_parallel_qualification_launches_20261004_v1.json": "569c8cd3c3a39dc33911b4f12a6a8f12c3395e104abb735b4b2495a4c2d5274f",
+    "metadata/full_weighted_parallel_producer_launch_20261004_v1.json": "5554e766fe5c9cd7b1ae9b505e9baabbfaff438d0872f8e1d5a3a875a9e0fdd8",
+    "metadata/full_weighted_parallel_reader_launch_20261004_v1.json": "a17cb18a2fd159b246ecda086a9d35701ab32176b77164657557042c280b91e9",
+    "metadata/full_weighted_parallel_closure_launch_20261004_v1.json": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2"
+  },
+  "working_model_fits_computed": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Exact live original controller/native parent/fork worker identities and actual limits are checked. Cohort checkpoints indicate completed producer arithmetic and preserved worker caches, not independent full-grid acceptance. Source hashes and available checkpoint hashes are reverified. Reader/closure, full timing and biological fitting remain required. RSS sums would double-count shared fork pages."
+}

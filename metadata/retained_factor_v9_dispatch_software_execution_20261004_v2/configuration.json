@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v2.py",
+    "--output",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v2",
+    "--receipt",
+    "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/retained_factor_v9_dispatch_software_resources_20261004_v2.json": "2123b20ef2aaab3da94e69bfa6151a43c358f47b9de5d2371eee902dfe1736fd",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v2.py": "9641eec822c7a4cf1b3b2c675acbec12c7a41b502454701f0e9f9364d72de571",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "8c30502576fd4cd6b8cf0f795022547b",
+  "wrapper": {
+    "pid": 2252575,
+    "created": 1791106132.68,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/retained_factor_v9_dispatch_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/retained_factor_v9_dispatch_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_retained_factor_v9_dispatch_metadata_v2.py",
+      "--output",
+      "data/software_audits/retained-factor-v9-dispatch-20261004-v2",
+      "--receipt",
+      "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 180,
+  "started_utc": "2026-10-04T09:28:53.728789+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "pid": 2691963,
+  "created": 1791108273.78,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=1200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_weighted_parallel_software_v2.py",
+    "--fixtures",
+    "metadata/weighted_parallel_fixtures_software_preparation_20261004_v4.json",
+    "--output",
+    "data/software_audits/full-weighted-parallel-qualification-20261004-v2",
+    "--receipt",
+    "metadata/weighted_parallel_qualification_software_validation_20261004_v2.json"
+  ]
+}

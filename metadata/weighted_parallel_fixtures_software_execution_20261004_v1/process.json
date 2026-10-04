@@ -1,0 +1,17 @@
+{
+  "pid": 2612821,
+  "created": 1791108005.91,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=180",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_weighted_parallel_software_fixtures_v1.py",
+    "--output",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v1",
+    "--receipt",
+    "metadata/weighted_parallel_fixtures_software_preparation_20261004_v1.json"
+  ]
+}

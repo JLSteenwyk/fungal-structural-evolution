@@ -1,0 +1,39 @@
+{
+  "source_plan": "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+  "producer_receipt": "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/readback.json",
+  "producer_status": "complete_full_four_control_covariance_numerical_qualification_pending_readback_v1",
+  "reader_status": "passed_full_four_control_covariance_numerical_latent_readback_v1",
+  "completed_status": "complete_verified_full_four_control_covariance_numerical_qualification_v1",
+  "summary_fields": [
+    "logical_cases",
+    "cohorts",
+    "designs",
+    "settings",
+    "numerical_audit_rows",
+    "setting_audit_links",
+    "audit_status_counts",
+    "link_status_counts",
+    "policy_audit_status_counts",
+    "policies",
+    "trees",
+    "loading_modes",
+    "parallel_workers",
+    "worker_address_space_gib",
+    "cached_numeric_inputs_preserved_for_all_cohorts"
+  ],
+  "launches": [
+    "metadata/full_weighted_parallel_producer_launch_20261004_v1.json",
+    "metadata/full_weighted_parallel_reader_launch_20261004_v1.json"
+  ],
+  "output": "metadata/full_weighted_parallel_qualification_completed_20261004_v1.json",
+  "scope": "All original4340cohorts/75188cases/130200designs/622080settings, four distinct control labels, both loading modes/five trees;5208000audit records and24883200original setting links. Execution gated by exact original full source census closure. Fresh component/image-product primary and separate long-double/pivoted-QR/gesvd/latent-overlap reader; rebuild every D correction and numerical envelope. Named source certificates alone select uniform/nonuniform bases; keep targetI for nonuniformD and preserve genuine physical-pair exceptions, zero norms, dependencies, original nonfit states and rank boundaries. No tolerance widening, clipping, saved uniform audit/envelope transfer or numerical basis deletion. Cohort segments retain every audit/setting ordinal and original row fields. Any rejected numeric case preserves exact inputs/primary/reference/error evidence. Complete every raw/projected Gram/envelope/diagnostic check and all original link rows, all consumed source/output hashes and two actual original process journals before closure. No covariance fit, component attribution, weighting precision calibration, accepted biological effect, posterior qualification or repair of historical uniform discrepancy implied. No native restart, GPU, new charge or unrelated settings changed. All8aims remain open. Parallel scheduling only: every original cohort, audit, setting and guard retained. Cached numeric source hashes checked before/after every cohort; first failure stops new admissions, no automatic retry. Independent reader rebuilds all numerical cases and binds all producer/reader checkpoints before original two-journal closure. Original failed timing/diagnostics and active serial numerical/timing stages are preserved. All eight aims remain incomplete.",
+  "pins": {
+    "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json": "378adf05ebb5b95514121ed9562c7c32e33b752e1cb0ac12963eddb191dfb7a5",
+    "metadata/full_weighted_parallel_producer_launch_20261004_v1.json": "5554e766fe5c9cd7b1ae9b505e9baabbfaff438d0872f8e1d5a3a875a9e0fdd8",
+    "metadata/full_weighted_parallel_reader_launch_20261004_v1.json": "a17cb18a2fd159b246ecda086a9d35701ab32176b77164657557042c280b91e9",
+    "scripts/close_full_weighted_parallel_stage_v1.py": "7ad17c98e558f76c1523f30a651dbde9dcd86a7cbfaf9f8ea7ae3712b8751fdf",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_parallel_followups_v1.py": "51778e2ec1923603c3fea95a4bccc681002899617fa2d3314ff3eacd2fc4b7a6"
+  }
+}

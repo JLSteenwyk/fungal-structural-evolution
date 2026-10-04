@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=180",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_weighted_parallel_software_fixtures_v3.py",
+    "--output",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v3",
+    "--receipt",
+    "metadata/weighted_parallel_fixtures_software_preparation_20261004_v3.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/weighted_parallel_fixtures_software_resources_20261004_v1.json": "402e35470aaaf13a698bd299a5c1ab68afa7461ede70dd1da952153f1c07cdca",
+    "scripts/prepare_weighted_parallel_software_fixtures_v3.py": "dd82ec07f6a83b72b6c2ad13bc84d652cdf9e2894ce685ba198030ffb2baacf1",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "9c48435402c54a448460760b3de3f905",
+  "wrapper": {
+    "pid": 2636216,
+    "created": 1791108135.58,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/weighted_parallel_fixtures_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/weighted_parallel_fixtures_software_execution_20261004_v3.json",
+      "--receipt",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v3.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_weighted_parallel_software_fixtures_v3.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fixtures-20261004-v3",
+      "--receipt",
+      "metadata/weighted_parallel_fixtures_software_preparation_20261004_v3.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 300,
+  "started_utc": "2026-10-04T10:02:16.626880+00:00"
+}

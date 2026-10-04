@@ -1,0 +1,17 @@
+{
+  "pid": 2253429,
+  "created": 1791106133.03,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_retained_factor_v9_dispatch_metadata_v2.py",
+    "--output",
+    "data/software_audits/retained-factor-v9-dispatch-20261004-v2",
+    "--receipt",
+    "metadata/retained_factor_v9_dispatch_software_validation_20261004_v2.json"
+  ]
+}

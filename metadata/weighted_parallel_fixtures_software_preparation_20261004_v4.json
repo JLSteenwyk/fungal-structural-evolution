@@ -1,0 +1,257 @@
+{
+  "status": "prepared_three_complete_private_parallel_software_grids_v1",
+  "checked_utc": "2026-10-04T10:03:50.546789+00:00",
+  "grids": [
+    {
+      "name": "unqualified",
+      "qualified": false,
+      "pair_exception": false,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/parallel.plan.json"
+    },
+    {
+      "name": "qualified-common-pair",
+      "qualified": true,
+      "pair_exception": false,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-common-pair/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-common-pair/parallel.plan.json"
+    },
+    {
+      "name": "qualified-pair-exception",
+      "qualified": true,
+      "pair_exception": true,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-pair-exception/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-pair-exception/parallel.plan.json"
+    }
+  ],
+  "negatives": [
+    {
+      "case": "raw_gram",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-raw_gram.plan.json"
+    },
+    {
+      "case": "projected_gram",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-projected_gram.plan.json"
+    },
+    {
+      "case": "raw_envelope",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-raw_envelope.plan.json"
+    },
+    {
+      "case": "projected_envelope",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-projected_envelope.plan.json"
+    },
+    {
+      "case": "diagnostic_rank",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-diagnostic_rank.plan.json"
+    },
+    {
+      "case": "retained_names",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-retained_names.plan.json"
+    },
+    {
+      "case": "uniform_class",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-uniform_class.plan.json"
+    },
+    {
+      "case": "control_label",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-control_label.plan.json"
+    },
+    {
+      "case": "diagonal_hash",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-diagonal_hash.plan.json"
+    },
+    {
+      "case": "source_design_status",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-source_design_status.plan.json"
+    },
+    {
+      "case": "promote_science",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-promote_science.plan.json"
+    },
+    {
+      "case": "omit_last_audit",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-omit_last_audit.plan.json"
+    },
+    {
+      "case": "duplicate_audit",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-duplicate_audit.plan.json"
+    },
+    {
+      "case": "foreign_record_count",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-foreign_record_count.plan.json"
+    },
+    {
+      "case": "foreign_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-foreign_link.plan.json"
+    },
+    {
+      "case": "missing_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-missing_link.plan.json"
+    },
+    {
+      "case": "duplicate_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-duplicate_link.plan.json"
+    },
+    {
+      "case": "changed_original_setting",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-changed_original_setting.plan.json"
+    },
+    {
+      "case": "changed_setting_ordinal",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-changed_setting_ordinal.plan.json"
+    }
+  ],
+  "project_modules": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_baliphy_sample_mapping.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/background_measurement_union_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_full_node_logger.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_horizon_resource_inventory.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v3.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v5.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_qualification_v3.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_scalar_v6.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_initialization.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_sampler_qualification.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_scalar_json_logger_v6c.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_covariance_qualification.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_entity_operators.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_inverse_reuse_weights.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_qualification_v2.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources_v4.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_weighted_parallel_software_v2.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_audit.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_context.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_independent.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_exact_folds_v2.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_covariance_qualification_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_entity_operator_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_exact_covariance_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_design_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_input_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_inverse_reuse_weight_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification_parallel_v1.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_sources_v2.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_inverse_reuse_weights.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_joint_ancestral_frames.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_alignment.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_topology.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_basis_context.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_kernel_products.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs_v2.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/inverse_reuse_weight_controls.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/nonuniform_covariance_cone.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/positive_diagonal_basis_context.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_baliphy_scalar_v6_preflight_v1.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_case_ancestral_neighborhoods.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_covariance_qualification.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_entity_operators.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_expanded_model_designs.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_weighted_parallel_software_fixtures_v4.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/read_baliphy_scalar_json_v6b.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_covariance_qualification.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_entity_operators.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_independent_baliphy_chain.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reduced_covariance_basis.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reference_measurement_union_sources.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_baliphy_reference_preflight.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_inverse_reuse_weights.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_weighted_covariance_source_census_v3.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_ortholog_pair_guide_comparison.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/shared_entity_covariance.py",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/weighted_covariance_qualified_source_fixture.py"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification_parallel_v1.py": "f11cf237d46e710075bff519cf675489981b659bd8c104a9e23fed0f770badf1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification.py": "0b0b26890b5f16d4ff1a28e05c4b4c4c70d50faeb89a1f844482be4a8388f779",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/positive_diagonal_basis_context.py": "364a99da2238de3f8a57c17ce72f50239b119e53a00b3c95e2186fd8b104ca47",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_basis_context.py": "7529f3df052dcc979483a3613acd4a51085d3aa1b521f1f2087001665ca26d83",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_kernel_products.py": "0198f5bf692d72099408d111196f96c1550736e15a04006a525bc0dc87ce1a6f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_sources_v2.py": "178e89555329fec4613b87b5ebaa465e610129b5a333743985792b825b9e4e85",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_inverse_reuse_weights.py": "5d7b3a5dbc358672bcc9ba423d1b726e9d954673818270bc86d50e30a5657762",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/inverse_reuse_weight_controls.py": "e5973a1773bfac231ce88863e778fc8ccaa6aa27beb5df7d055d0c3589542fe0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_inverse_reuse_weights.py": "ffa934ef9e02c523bb376ce3ea5bdceef7a76b0acc27de23737208275b0b0feb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_inverse_reuse_weight_sources.py": "589c1ac5306503860c69b5c5698f61325a7a0f8ba1d709cb382baea6b588240f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_exact_covariance_sources.py": "acdf71eb00dab593bcd1b6e5fd7ca6f511842d680466582bb319354f5836aa50",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/nonuniform_covariance_cone.py": "16e2e5d35a3dff7d9252d9488b7bbde213c8a592db1423e2ae34065b860d6c94",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_weighted_parallel_software_v2.py": "a25c78e6ae0d368a0201ab206d402c0c52b363d5b99df5d8539cf743b5da6d53",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_weighted_parallel_software_fixtures_v4.py": "f6ce69db135037e37be98394fb3bb0cfb2d355e857adc78dd7777e82f7e72611",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_baliphy_scalar_v6_preflight_v1.py": "336e752acfd78f8e03d027e0a9f340ea06735dad1124aa925bf15871d171baa5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_scalar_v6.py": "b6dffaee4b052be038620b306b0309582105d975751a73c00371bc1726308be6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/read_baliphy_scalar_json_v6b.py": "6fb852d050ee97c0685ce031697a15a08e033f926c8d00fbe2e211c921c36661",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_scalar_json_logger_v6c.py": "300afe8005dce67b299899522c7f0bb132bc833c0a52d809304b3b0674cf9ce0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_sampler_qualification.py": "e05eddfc2656522eb99d328b3997f28408023f41a3de915711416943ffeda3c6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_baliphy_reference_preflight.py": "24843280d4d9006eb8f3409da175b465f060571f7b64cb416d70a7308ca1b934",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_initialization.py": "ca3968c2a6c88972af9d772527e8989d42a1969a16a64fb4078a12dc1bdb05fb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_baliphy_sample_mapping.py": "b6e417691c97b9de4b4936b88ca13b2a95a3d912dbd912810dc31747c0d61f45",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_horizon_resource_inventory.py": "105dacbc76fd142af5330fcb4630f1c1a395ae3fcffe694b5271513e23296849",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_qualification_v3.py": "9522daf66f9688485a922d59de94b8fde3866703298d57488a29f602b8a13f9b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs_v2.py": "e80b6ed93d083fdb07dc63e3118f4c8ae395c03db4af886df79ff0492cb4a257",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_topology.py": "c0f92cf0c85396a6119270e733355a02e99352d1d915c6730c1977fa867cd98b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_alignment.py": "300752d2b1868fef116fa7811782667d7de64feee247662bea4fa181ccb190c1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_joint_ancestral_frames.py": "f9e119e00536d6c0f62b59d6dd5600c20879d64db1b615c14afe3fcb0189fb32",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v5.py": "c10f1caee7a5a793834aa626a772e50ee514fbc9501c513183ba6a50b8a232c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v3.py": "8e5d8e257e941d20396b9fd352b21ff439f7b7cae13f50a02c16829feccc099b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs.py": "ca8d604d21961891c82095b196e15a714f27ce0ffdd78e6c8365273d58de67e0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_full_node_logger.py": "ffc48764afa427d0482412ff7be7e94e2d9844e063c64445d7954843620fe54f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_qualification_v2.py": "2147a065ebe9f2132c47e5db338b0ac527dc126b7e05cf794a3b8c2b05daea22",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_weighted_covariance_source_census_v3.py": "3acc50d8035b144c48eb3084dd2a8da921f9cb2ec1f7437e0982c8ea5a89ec04",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/weighted_covariance_qualified_source_fixture.py": "c7337168e0fceeb549ae027bec231dfc9d71b59802e681a0a8b5191508f41dfb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_expanded_model_designs.py": "94bf748656a3aef71904c0d193728d76ca28926920587f7e817a8087e5b9c886",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_inverse_reuse_weights.py": "9e63ded260623273e3f99a7826b28b063ae4206d216ac62c9b12eb8231fcf2fc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources_v4.py": "9ccc3e59547afaf7a11908cec1e16faca6192c871b3a3eb6870c0b16055a0a46",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_covariance_qualification.py": "58d21b57502c37b2eb5299914613a393befb0da91fa35059fc163b49ff0ee399",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_covariance_qualification.py": "f2443726c3b1ca2558014e8297796738f49cccf3c1077669a4caf90278cda5dc",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_entity_operators.py": "6199c4e01dc65483355cb456689bafef06db7473bfa405a5f20c19f19af38a03",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_entity_operators.py": "932541dbec9a9882fa8d0fd2a5825559f6b21999258fe3d5c2ad3c07d8f39619",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_entity_operators.py": "d3fb8117d8fed77406b01695a8d5e665c572bcc0057c33d64272f3d1b2b90a4e",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/serial.plan.json": "bb84e6aae6ea7d0afa1eb290dbabd08aafaeaca07b2fa5452517df2828e56d3e",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/parallel.plan.json": "c140eb64703c64234f58cba57d4f285c5c7e40917366e3e621bd462d6654f207",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-raw_gram.plan.json": "87388464f4e0ddfb90a390acb829ceaff8fccda3fbb8b525fb9faa235cd0a435",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-projected_gram.plan.json": "6ac63aec2a1fdfcd69e59cef9f2fe62647c8bd40d1bf9f4b21b8e806e17ba795",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-raw_envelope.plan.json": "4762414362cad32647080f124567a79ac84e00b3ebad9401a12c25c969412113",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-projected_envelope.plan.json": "e1c99bf372e34608d65c3a6dc399f263ae116a7f271e998a2b558e594b1b3a19",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-diagnostic_rank.plan.json": "5a8c33fbb7564508db01b4c898315b1858648940f4b0f1055ed67c50e8dab9b8",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-retained_names.plan.json": "574e4f83087b7e99b88569da22ae4645414404248a84abb6056826ec3bcef222",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-uniform_class.plan.json": "c55c016b5a595eefe6d7a2537fd96b75e841b3e7799d0449d06fd67e8ca9d28b",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-control_label.plan.json": "ff3c68ceb4d182ee874b5a45544a2cc0f4909b29e5fbb3d96f22f43ea1bf78a9",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-diagonal_hash.plan.json": "63290e700232b2c2a36593c23c60739b3d4522170f3d3afa24e0f577626c0d07",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-source_design_status.plan.json": "c8c856687862a5310d441663463d38cfc5d1111a9206aa2e8b32fcdd2d322acb",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-promote_science.plan.json": "a03af4da8b520d75c3efecb40fd438340b62e8ab55160a4c460be1bb18e5ca06",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-omit_last_audit.plan.json": "072a8213c4855754159b8fde5be96d5245da7297f6646f0ddbc33d3033fa4985",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-duplicate_audit.plan.json": "c1151cb4678f14e740d2fd0679e17dd32efa16dc80216361986f5d9570dbe72e",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-foreign_record_count.plan.json": "43a10d600cc5a126f489dc6e20ba947712f988616b67b62ca60714e8cf55f428",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-foreign_link.plan.json": "e129affe6b85c3eae55e7d084c62e25619f901b28d9298138d07cdb847373fb0",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-missing_link.plan.json": "cc0dddb072d7bef2bc2ff4969a3003ecc7f0538e8f1c76ba3d76269bf6cdf258",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-duplicate_link.plan.json": "0a4990d18224bbb21c8ecdb969ae38fff318918b45a536d2bf5fb584d245d2ba",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-changed_original_setting.plan.json": "b1a2569ca5a1335aacc800b7c22f6f649d22f8d786e174da730a50283196ba29",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-changed_setting_ordinal.plan.json": "fa9b00af1f30373fdac61d9fd8af71a0e047d3c811a4a0f6a9cc54403b6a5620",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-common-pair/serial.plan.json": "9d1845fcd790d871dc39c6a5b55fd087b99cf37257069e2bbe6ab63526e58c91",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-common-pair/parallel.plan.json": "bf12a2da12c341c1f61b727fa82de40eabb73cef074790c4d1e9cd3d22cbb29e",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-pair-exception/serial.plan.json": "2b55c0500d1ed7e7424e4f4f98c69d0e554d509545c487d2b2bab7b1dae0c098",
+    "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-pair-exception/parallel.plan.json": "366175b74d740262355589bf0177db76cbb7f1c56d3e008d4f2c2b834368ff94"
+  },
+  "synthetic_source_closures": true,
+  "scientific_eligibility": false,
+  "scope": "Three complete synthetic source grids constructed and census/readback executed under their original two-CPU/16-GiB caps. Numerical plans are prepared before execution for two-CPU/32-GiB serial/parallel qualification. Separate output namespaces retain all private corruption cases. No biological pilot or production fit."
+}

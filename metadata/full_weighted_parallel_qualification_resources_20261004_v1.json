@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-04T10:11:01.622458+00:00",
+  "cpus": 16,
+  "memory_gib": 200,
+  "workers": 16,
+  "worker_address_space_gib": 12,
+  "reservation_capacity_gib": 192,
+  "parent_headroom_gib": 8,
+  "parent_soft_address_space_gib": 8,
+  "parent_hard_address_space_gib": 24,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "cpu_seconds_per_process": 604800,
+  "per_file_limit_mib": 512,
+  "minimum_free_disk_gib": 256,
+  "minimum_available_ram_gib": 200,
+  "output_and_scratch_allowance_gib": 160,
+  "available_ram_gib": 591.4287986755371,
+  "free_disk_gib": 10257.674304962158,
+  "uncompressed_audit_budget_bytes": 85327872000,
+  "uncompressed_link_budget_bytes": 50960793600,
+  "original_serial_process_vm_gib": 3.9780311584472656,
+  "original_serial_process_rss_gib": 2.6889495849609375,
+  "estimated_core_hours_per_stage": [
+    30,
+    100
+  ],
+  "planning_wall_hours_per_stage": [
+    3,
+    12
+  ],
+  "full_parallel_scaling_measured": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Sixteen fork workers, each limited to12GiB address space, plus8GiB parent soft address space and200GiB cgroup/no swap. Parent hard limit24GiB permits children to install12GiB limits; parent remains limited to8GiB. BLAS1. Full original scope and output allowance unchanged. Runtime range is a planning estimate informed by original serial progress, not a calibrated ETA. The old original serial job and its queued timing remain unchanged."
+}

@@ -1,0 +1,180 @@
+full_entity_operator_numeric_benchmark signed t1 cases 24 seconds 0.005156683968380094
+full_entity_operator_numeric_benchmark unsigned t1 cases 24 seconds 0.00446832797024399
+full_entity_operator_numeric_benchmark signed t2 cases 24 seconds 0.004310216987505555
+full_entity_operator_numeric_benchmark unsigned t2 cases 24 seconds 0.004247931996360421
+full_entity_operator_numeric_benchmark signed t3 cases 24 seconds 0.004496309906244278
+full_entity_operator_numeric_benchmark unsigned t3 cases 24 seconds 0.004431401030160487
+full_entity_operator_numeric_benchmark signed t4 cases 24 seconds 0.004387092893011868
+full_entity_operator_numeric_benchmark unsigned t4 cases 24 seconds 0.004441656987182796
+full_entity_operator_numeric_benchmark signed t5 cases 24 seconds 0.004358930047601461
+full_entity_operator_numeric_benchmark unsigned t5 cases 24 seconds 0.004346322035416961
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}
+independent_full_entity_operator_benchmark signed t1 24
+independent_full_entity_operator_benchmark unsigned t1 24
+independent_full_entity_operator_benchmark signed t2 24
+independent_full_entity_operator_benchmark unsigned t2 24
+independent_full_entity_operator_benchmark signed t3 24
+independent_full_entity_operator_benchmark unsigned t3 24
+independent_full_entity_operator_benchmark signed t4 24
+independent_full_entity_operator_benchmark unsigned t4 24
+independent_full_entity_operator_benchmark signed t5 24
+independent_full_entity_operator_benchmark unsigned t5 24
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}
+{"status": "complete_full_four_control_covariance_source_census_pending_readback_v1", "checked_utc": "2026-10-04T10:03:48.568740+00:00", "plan_sha256": "c214cc829e04418008abfccfbb5d6287d240e8abce6dad751f6251e6d49d5ca6", "source_contract": "ae2b40e1df304cc27324efb7242cfdda31ceb17161903a6d38ff402566d8099b", "logical_cases": 24, "cohorts": 5, "case_row_occurrences": 56, "designs": 150, "fit_inputs": 300, "settings": 600, "design_status_counts": {"full_rank_design": 90, "insufficient_residual_dimension": 60}, "fit_input_status_counts": {"ready_for_working_covariance_fit": 150, "insufficient_residual_dimension": 120, "constant_response_requires_review": 30}, "setting_status_counts": {"ready_for_working_covariance_fit": 300, "insufficient_residual_dimension": 240, "constant_response_requires_review": 60}, "policy_basis_counts": {"uniform:signed:q5": 4, "uniform:unsigned:q5": 4, "background_node:signed:q5": 4, "background_node:unsigned:q5": 4, "background_pair:signed:q5": 3, "background_pair:unsigned:q5": 3, "family_component:signed:q5": 4, "family_component:unsigned:q5": 4, "uniform:signed:q4": 1, "uniform:unsigned:q4": 1, "background_node:signed:q4": 1, "background_node:unsigned:q4": 1, "background_pair:signed:q4": 1, "background_pair:unsigned:q4": 1, "family_component:signed:q4": 1, "family_component:unsigned:q4": 1, "background_pair:signed:q6": 1, "background_pair:unsigned:q6": 1}, "expected_numerical_audit_rows": 6000, "expected_setting_audit_links": 24000, "policies": ["uniform", "background_node", "background_pair", "family_component"], "trees": ["t1", "t2", "t3", "t4", "t5"], "loading_modes": ["signed", "unsigned"], "numerical_audits_computed": 0, "working_model_fits_computed": 0, "raw_reml_basis_qualification_complete": false, "scientific_eligibility": false}
+{"status": "passed_full_four_control_covariance_source_census_readback_v1", "checked_utc": "2026-10-04T10:03:48.703811+00:00", "plan_sha256": "c214cc829e04418008abfccfbb5d6287d240e8abce6dad751f6251e6d49d5ca6", "source_contract": "ae2b40e1df304cc27324efb7242cfdda31ceb17161903a6d38ff402566d8099b", "logical_cases": 24, "cohorts": 5, "case_row_occurrences": 56, "designs": 150, "fit_inputs": 300, "settings": 600, "design_status_counts": {"full_rank_design": 90, "insufficient_residual_dimension": 60}, "fit_input_status_counts": {"ready_for_working_covariance_fit": 150, "insufficient_residual_dimension": 120, "constant_response_requires_review": 30}, "setting_status_counts": {"ready_for_working_covariance_fit": 300, "insufficient_residual_dimension": 240, "constant_response_requires_review": 60}, "policy_basis_counts": {"uniform:signed:q5": 4, "uniform:unsigned:q5": 4, "background_node:signed:q5": 4, "background_node:unsigned:q5": 4, "background_pair:signed:q5": 3, "background_pair:unsigned:q5": 3, "family_component:signed:q5": 4, "family_component:unsigned:q5": 4, "uniform:signed:q4": 1, "uniform:unsigned:q4": 1, "background_node:signed:q4": 1, "background_node:unsigned:q4": 1, "background_pair:signed:q4": 1, "background_pair:unsigned:q4": 1, "family_component:signed:q4": 1, "family_component:unsigned:q4": 1, "background_pair:signed:q6": 1, "background_pair:unsigned:q6": 1}, "expected_numerical_audit_rows": 6000, "expected_setting_audit_links": 24000, "policies": ["uniform", "background_node", "background_pair", "family_component"], "trees": ["t1", "t2", "t3", "t4", "t5"], "loading_modes": ["signed", "unsigned"], "numerical_audits_computed": 0, "working_model_fits_computed": 0, "raw_reml_basis_qualification_complete": false, "scientific_eligibility": false, "producer_receipt_sha256": "be61433c2a3bccf33e382711eac6c0c74fa5c493e830375d259de9cb3429e3d3"}
+full_entity_operator_numeric_benchmark signed t1 cases 24 seconds 0.004468427039682865
+full_entity_operator_numeric_benchmark unsigned t1 cases 24 seconds 0.004175961948931217
+full_entity_operator_numeric_benchmark signed t2 cases 24 seconds 0.004203745047561824
+full_entity_operator_numeric_benchmark unsigned t2 cases 24 seconds 0.004348685033619404
+full_entity_operator_numeric_benchmark signed t3 cases 24 seconds 0.004205106990411878
+full_entity_operator_numeric_benchmark unsigned t3 cases 24 seconds 0.004372671013697982
+full_entity_operator_numeric_benchmark signed t4 cases 24 seconds 0.004493125947192311
+full_entity_operator_numeric_benchmark unsigned t4 cases 24 seconds 0.004508669022470713
+full_entity_operator_numeric_benchmark signed t5 cases 24 seconds 0.004630364011973143
+full_entity_operator_numeric_benchmark unsigned t5 cases 24 seconds 0.004491091938689351
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}
+independent_full_entity_operator_benchmark signed t1 24
+independent_full_entity_operator_benchmark unsigned t1 24
+independent_full_entity_operator_benchmark signed t2 24
+independent_full_entity_operator_benchmark unsigned t2 24
+independent_full_entity_operator_benchmark signed t3 24
+independent_full_entity_operator_benchmark unsigned t3 24
+independent_full_entity_operator_benchmark signed t4 24
+independent_full_entity_operator_benchmark unsigned t4 24
+independent_full_entity_operator_benchmark signed t5 24
+independent_full_entity_operator_benchmark unsigned t5 24
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}
+{"status": "complete_full_four_control_covariance_source_census_pending_readback_v1", "checked_utc": "2026-10-04T10:03:49.493215+00:00", "plan_sha256": "046682a504ec058618997c04adc01bb6cb158db4223ec068c735a780b8790f8c", "source_contract": "d1a01d401682b2a286d80bae600e189e3d64d39bde0b431763fae576582f3625", "logical_cases": 24, "cohorts": 5, "case_row_occurrences": 55, "designs": 150, "fit_inputs": 300, "settings": 600, "design_status_counts": {"full_rank_design": 90, "insufficient_residual_dimension": 60}, "fit_input_status_counts": {"ready_for_working_covariance_fit": 150, "insufficient_residual_dimension": 120, "constant_response_requires_review": 30}, "setting_status_counts": {"ready_for_working_covariance_fit": 300, "insufficient_residual_dimension": 240, "constant_response_requires_review": 60}, "policy_basis_counts": {"uniform:signed:q4": 5, "uniform:unsigned:q4": 5, "background_node:signed:q5": 4, "background_node:unsigned:q5": 4, "background_pair:signed:q5": 4, "background_pair:unsigned:q5": 4, "family_component:signed:q4": 4, "family_component:unsigned:q4": 4, "background_node:signed:q4": 1, "background_node:unsigned:q4": 1, "background_pair:signed:q4": 1, "background_pair:unsigned:q4": 1, "family_component:signed:q5": 1, "family_component:unsigned:q5": 1}, "expected_numerical_audit_rows": 6000, "expected_setting_audit_links": 24000, "policies": ["uniform", "background_node", "background_pair", "family_component"], "trees": ["t1", "t2", "t3", "t4", "t5"], "loading_modes": ["signed", "unsigned"], "numerical_audits_computed": 0, "working_model_fits_computed": 0, "raw_reml_basis_qualification_complete": false, "scientific_eligibility": false}
+{"status": "passed_full_four_control_covariance_source_census_readback_v1", "checked_utc": "2026-10-04T10:03:49.618780+00:00", "plan_sha256": "046682a504ec058618997c04adc01bb6cb158db4223ec068c735a780b8790f8c", "source_contract": "d1a01d401682b2a286d80bae600e189e3d64d39bde0b431763fae576582f3625", "logical_cases": 24, "cohorts": 5, "case_row_occurrences": 55, "designs": 150, "fit_inputs": 300, "settings": 600, "design_status_counts": {"full_rank_design": 90, "insufficient_residual_dimension": 60}, "fit_input_status_counts": {"ready_for_working_covariance_fit": 150, "insufficient_residual_dimension": 120, "constant_response_requires_review": 30}, "setting_status_counts": {"ready_for_working_covariance_fit": 300, "insufficient_residual_dimension": 240, "constant_response_requires_review": 60}, "policy_basis_counts": {"uniform:signed:q4": 5, "uniform:unsigned:q4": 5, "background_node:signed:q5": 4, "background_node:unsigned:q5": 4, "background_pair:signed:q5": 4, "background_pair:unsigned:q5": 4, "family_component:signed:q4": 4, "family_component:unsigned:q4": 4, "background_node:signed:q4": 1, "background_node:unsigned:q4": 1, "background_pair:signed:q4": 1, "background_pair:unsigned:q4": 1, "family_component:signed:q5": 1, "family_component:unsigned:q5": 1}, "expected_numerical_audit_rows": 6000, "expected_setting_audit_links": 24000, "policies": ["uniform", "background_node", "background_pair", "family_component"], "trees": ["t1", "t2", "t3", "t4", "t5"], "loading_modes": ["signed", "unsigned"], "numerical_audits_computed": 0, "working_model_fits_computed": 0, "raw_reml_basis_qualification_complete": false, "scientific_eligibility": false, "producer_receipt_sha256": "c60bd56d9fcc11bf937628088c39c08bf1d3359fa890b6fa924ef07f53370e0d"}
+full_entity_operator_numeric_benchmark signed t1 cases 24 seconds 0.00470929394941777
+full_entity_operator_numeric_benchmark unsigned t1 cases 24 seconds 0.004600459011271596
+full_entity_operator_numeric_benchmark signed t2 cases 24 seconds 0.004427104955539107
+full_entity_operator_numeric_benchmark unsigned t2 cases 24 seconds 0.004423459060490131
+full_entity_operator_numeric_benchmark signed t3 cases 24 seconds 0.004385111038573086
+full_entity_operator_numeric_benchmark unsigned t3 cases 24 seconds 0.004699939046986401
+full_entity_operator_numeric_benchmark signed t4 cases 24 seconds 0.004516279906965792
+full_entity_operator_numeric_benchmark unsigned t4 cases 24 seconds 0.004383236984722316
+full_entity_operator_numeric_benchmark signed t5 cases 24 seconds 0.004364018910564482
+full_entity_operator_numeric_benchmark unsigned t5 cases 24 seconds 0.004304048023186624
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}
+independent_full_entity_operator_benchmark signed t1 24
+independent_full_entity_operator_benchmark unsigned t1 24
+independent_full_entity_operator_benchmark signed t2 24
+independent_full_entity_operator_benchmark unsigned t2 24
+independent_full_entity_operator_benchmark signed t3 24
+independent_full_entity_operator_benchmark unsigned t3 24
+independent_full_entity_operator_benchmark signed t4 24
+independent_full_entity_operator_benchmark unsigned t4 24
+independent_full_entity_operator_benchmark signed t5 24
+independent_full_entity_operator_benchmark unsigned t5 24
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}
+{"status": "complete_full_four_control_covariance_source_census_pending_readback_v1", "checked_utc": "2026-10-04T10:03:50.407669+00:00", "plan_sha256": "48fb3a28de3fe8371499b30e110abfbb89a5bdfcbf2788f93b235bb4796ebc30", "source_contract": "e98f5eacc84eb3eccec9673a2c9d7fbb39ec8d67d11bd72e38159a20ffb330b1", "logical_cases": 24, "cohorts": 5, "case_row_occurrences": 55, "designs": 150, "fit_inputs": 300, "settings": 600, "design_status_counts": {"full_rank_design": 90, "insufficient_residual_dimension": 60}, "fit_input_status_counts": {"ready_for_working_covariance_fit": 150, "insufficient_residual_dimension": 120, "constant_response_requires_review": 30}, "setting_status_counts": {"ready_for_working_covariance_fit": 300, "insufficient_residual_dimension": 240, "constant_response_requires_review": 60}, "policy_basis_counts": {"uniform:signed:q5": 5, "uniform:unsigned:q5": 5, "background_node:signed:q6": 4, "background_node:unsigned:q6": 4, "background_pair:signed:q6": 4, "background_pair:unsigned:q6": 4, "family_component:signed:q5": 4, "family_component:unsigned:q5": 4, "background_node:signed:q5": 1, "background_node:unsigned:q5": 1, "background_pair:signed:q5": 1, "background_pair:unsigned:q5": 1, "family_component:signed:q6": 1, "family_component:unsigned:q6": 1}, "expected_numerical_audit_rows": 6000, "expected_setting_audit_links": 24000, "policies": ["uniform", "background_node", "background_pair", "family_component"], "trees": ["t1", "t2", "t3", "t4", "t5"], "loading_modes": ["signed", "unsigned"], "numerical_audits_computed": 0, "working_model_fits_computed": 0, "raw_reml_basis_qualification_complete": false, "scientific_eligibility": false}
+{"status": "passed_full_four_control_covariance_source_census_readback_v1", "checked_utc": "2026-10-04T10:03:50.534926+00:00", "plan_sha256": "48fb3a28de3fe8371499b30e110abfbb89a5bdfcbf2788f93b235bb4796ebc30", "source_contract": "e98f5eacc84eb3eccec9673a2c9d7fbb39ec8d67d11bd72e38159a20ffb330b1", "logical_cases": 24, "cohorts": 5, "case_row_occurrences": 55, "designs": 150, "fit_inputs": 300, "settings": 600, "design_status_counts": {"full_rank_design": 90, "insufficient_residual_dimension": 60}, "fit_input_status_counts": {"ready_for_working_covariance_fit": 150, "insufficient_residual_dimension": 120, "constant_response_requires_review": 30}, "setting_status_counts": {"ready_for_working_covariance_fit": 300, "insufficient_residual_dimension": 240, "constant_response_requires_review": 60}, "policy_basis_counts": {"uniform:signed:q5": 5, "uniform:unsigned:q5": 5, "background_node:signed:q6": 4, "background_node:unsigned:q6": 4, "background_pair:signed:q6": 4, "background_pair:unsigned:q6": 4, "family_component:signed:q5": 4, "family_component:unsigned:q5": 4, "background_node:signed:q5": 1, "background_node:unsigned:q5": 1, "background_pair:signed:q5": 1, "background_pair:unsigned:q5": 1, "family_component:signed:q6": 1, "family_component:unsigned:q6": 1}, "expected_numerical_audit_rows": 6000, "expected_setting_audit_links": 24000, "policies": ["uniform", "background_node", "background_pair", "family_component"], "trees": ["t1", "t2", "t3", "t4", "t5"], "loading_modes": ["signed", "unsigned"], "numerical_audits_computed": 0, "working_model_fits_computed": 0, "raw_reml_basis_qualification_complete": false, "scientific_eligibility": false, "producer_receipt_sha256": "9a7197dbf9171e834af6e68edf28b6cb6467a091da6235c6b9b74a785f23aef0"}
+{
+  "status": "prepared_three_complete_private_parallel_software_grids_v1",
+  "checked_utc": "2026-10-04T10:03:50.546789+00:00",
+  "grids": [
+    {
+      "name": "unqualified",
+      "qualified": false,
+      "pair_exception": false,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/parallel.plan.json"
+    },
+    {
+      "name": "qualified-common-pair",
+      "qualified": true,
+      "pair_exception": false,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-common-pair/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-common-pair/parallel.plan.json"
+    },
+    {
+      "name": "qualified-pair-exception",
+      "qualified": true,
+      "pair_exception": true,
+      "serial": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-pair-exception/serial.plan.json",
+      "parallel": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/qualified-pair-exception/parallel.plan.json"
+    }
+  ],
+  "negatives": [
+    {
+      "case": "raw_gram",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-raw_gram.plan.json"
+    },
+    {
+      "case": "projected_gram",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-projected_gram.plan.json"
+    },
+    {
+      "case": "raw_envelope",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-raw_envelope.plan.json"
+    },
+    {
+      "case": "projected_envelope",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-projected_envelope.plan.json"
+    },
+    {
+      "case": "diagnostic_rank",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-diagnostic_rank.plan.json"
+    },
+    {
+      "case": "retained_names",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-retained_names.plan.json"
+    },
+    {
+      "case": "uniform_class",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-uniform_class.plan.json"
+    },
+    {
+      "case": "control_label",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-control_label.plan.json"
+    },
+    {
+      "case": "diagonal_hash",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-diagonal_hash.plan.json"
+    },
+    {
+      "case": "source_design_status",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-source_design_status.plan.json"
+    },
+    {
+      "case": "promote_science",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-promote_science.plan.json"
+    },
+    {
+      "case": "omit_last_audit",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-omit_last_audit.plan.json"
+    },
+    {
+      "case": "duplicate_audit",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-duplicate_audit.plan.json"
+    },
+    {
+      "case": "foreign_record_count",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-foreign_record_count.plan.json"
+    },
+    {
+      "case": "foreign_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-foreign_link.plan.json"
+    },
+    {
+      "case": "missing_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-missing_link.plan.json"
+    },
+    {
+      "case": "duplicate_link",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-duplicate_link.plan.json"
+    },
+    {
+      "case": "changed_original_setting",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-changed_original_setting.plan.json"
+    },
+    {
+      "case": "changed_setting_ordinal",
+      "plan": "data/software_audits/full-weighted-parallel-fixtures-20261004-v4/unqualified/negative-changed_setting_ordinal.plan.json"
+    }
+  ],
+  "synthetic_source_closures": true,
+  "scientific_eligibility": false,
+  "scope": "Three complete synthetic source grids constructed and census/readback executed under their original two-CPU/16-GiB caps. Numerical plans are prepared before execution for two-CPU/32-GiB serial/parallel qualification. Separate output namespaces retain all private corruption cases. No biological pilot or production fit."
+}

@@ -1,0 +1,21 @@
+{
+  "prepared_utc": "2026-10-04T09:28:53.321952+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 120,
+  "wall_seconds_per_stage": 180,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "output_allowance_gib": 1,
+  "available_ram_gib": 578.4661979675293,
+  "free_disk_gib": 10262.649990081787,
+  "actual_native_svd_calls": 3,
+  "original_factor_runs": 0,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Three actual small SciPy SVD calls, preserve repeated bytecode line metadata without inventing extra native executions. Original V1 checker assertion failure retained; V9 observer source unchanged."
+}

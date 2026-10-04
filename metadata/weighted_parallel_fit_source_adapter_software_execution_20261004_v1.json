@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=300",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_weighted_parallel_fit_source_adapter_v1.py",
+    "--output",
+    "data/software_audits/full-weighted-parallel-fit-source-adapter-20261004-v1",
+    "--receipt",
+    "metadata/weighted_parallel_fit_source_adapter_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/weighted_parallel_fit_source_adapter_software_resources_20261004_v1.json": "d19eccb83d26e36224505fe737788b731fed1e3aef4b2d4cad566aab7546bddc",
+    "scripts/check_weighted_parallel_fit_source_adapter_v1.py": "711d929d576f94f75cf5702a70240148a37ea4f13ac4bb4d1a1d337de4350753",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "62424a75f79e45c68f02b2df430ebfaf",
+  "wrapper": {
+    "pid": 2741843,
+    "created": 1791109192.38,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/weighted_parallel_fit_source_adapter_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/weighted_parallel_fit_source_adapter_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/weighted_parallel_fit_source_adapter_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_parallel_fit_source_adapter_v1.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fit-source-adapter-20261004-v1",
+      "--receipt",
+      "metadata/weighted_parallel_fit_source_adapter_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 450,
+  "started_utc": "2026-10-04T10:19:53.507532+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T10:20:11.853628+00:00",
+  "child": {
+    "pid": 2741849,
+    "created": 1791109192.81,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=300",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_parallel_fit_source_adapter_v1.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fit-source-adapter-20261004-v1",
+      "--receipt",
+      "metadata/weighted_parallel_fit_source_adapter_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 18.345846071024425,
+  "child_cpu_seconds": 18.287623,
+  "child_peak_rss_bytes": 191889408,
+  "receipt": "metadata/weighted_parallel_fit_source_adapter_software_validation_20261004_v1.json",
+  "receipt_sha256": "1131f79172716cc5fff87c26307d97d7ec7a4183e9d636c4168d7fce5feca9f1",
+  "artifacts": {
+    "metadata/weighted_parallel_fit_source_adapter_software_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/weighted_parallel_fit_source_adapter_software_execution_20261004_v1/configuration.json": "cdff04fc0ad2af0dff5b648140fe4ea9ced5a7113194772caa314032e7289292",
+    "metadata/weighted_parallel_fit_source_adapter_software_execution_20261004_v1/stdout.log": "ec6b385a6066b25146537519e554a30110205b31e224d4fb04b95477ace0faaa",
+    "metadata/weighted_parallel_fit_source_adapter_software_execution_20261004_v1/process.json": "4037a269044be1033dda68b6d638014c592337beebc95edbebebbe865465f304"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

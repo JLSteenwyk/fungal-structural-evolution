@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/recheck_baliphy_logging_errors.py",
+    "--output",
+    "data/software_audits/baliphy-logging-error-recheck-20261004-user-0955",
+    "--receipt",
+    "metadata/baliphy_logging_error_recheck_20261004_user_0955.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/baliphy_logging_error_recheck_resources_20261004_user_0955.json": "fd4aa360477f7511cd6da9cd3136928c223a10c24c2c83b454dcfdaebbb506f2",
+    "scripts/recheck_baliphy_logging_errors.py": "bfec9eb3fcbae8da54d2e84c09c025c941eb53eeb8e493400b1598d8a35205e1",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "182661e7024842778016bf1344f7aa5f",
+  "wrapper": {
+    "pid": 2596392,
+    "created": 1791107663.51,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/baliphy_logging_error_recheck_resources_20261004_user_0955.json",
+      "--execution",
+      "metadata/baliphy_logging_error_recheck_execution_20261004_user_0955.json",
+      "--receipt",
+      "metadata/baliphy_logging_error_recheck_20261004_user_0955.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/recheck_baliphy_logging_errors.py",
+      "--output",
+      "data/software_audits/baliphy-logging-error-recheck-20261004-user-0955",
+      "--receipt",
+      "metadata/baliphy_logging_error_recheck_20261004_user_0955.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 180,
+  "started_utc": "2026-10-04T09:54:24.543412+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T09:54:26.591109+00:00",
+  "child": {
+    "pid": 2596418,
+    "created": 1791107663.85,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=120",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/recheck_baliphy_logging_errors.py",
+      "--output",
+      "data/software_audits/baliphy-logging-error-recheck-20261004-user-0955",
+      "--receipt",
+      "metadata/baliphy_logging_error_recheck_20261004_user_0955.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 2.0474680570187047,
+  "child_cpu_seconds": 1.936617,
+  "child_peak_rss_bytes": 105381888,
+  "receipt": "metadata/baliphy_logging_error_recheck_20261004_user_0955.json",
+  "receipt_sha256": "2abf2c5716dc8733e570f363ac529a55921049a910df7b3680388468cd687347",
+  "artifacts": {
+    "metadata/baliphy_logging_error_recheck_execution_20261004_user_0955/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_logging_error_recheck_execution_20261004_user_0955/configuration.json": "f723e0ac55988d69483eebed00d5485efdb19e57e74b73d9406adf49d6852cb6",
+    "metadata/baliphy_logging_error_recheck_execution_20261004_user_0955/stdout.log": "5a6ab5bf624ad09fd1ef2e609e2d8a70d8c8599fc21911971173d38cce25e351",
+    "metadata/baliphy_logging_error_recheck_execution_20261004_user_0955/process.json": "3e674114f03304879c1c82a0e793ff009eb1405ee0b190cb0cbadc3cc09816a1"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}
