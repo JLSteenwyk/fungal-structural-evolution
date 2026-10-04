@@ -1,0 +1,14 @@
+{
+  "status": "live_only_observer_found_already_terminal_process",
+  "observer_script": "scripts/record_timing_factor_overwrite_context_v1.py",
+  "observer_exit_code": 1,
+  "exception": "psutil.NoSuchProcess",
+  "absent_native_pid": 1544658,
+  "actual_original_tool_session_id": 22851,
+  "actual_original_tool_terminal_exit_code": 0,
+  "original_terminal_proof": "metadata/retained_timing_ordered_probe_diagnostic_transport_20261004_v4.json",
+  "original_terminal_proof_sha256": "816324959a1bc653772b8f6418425387429771a88488b82cacd7aa7543b4a51d",
+  "output_created": false,
+  "original_restarted": false,
+  "scope": "Read-only observer requires a live V4 process; it was already absent. Original wait22851 subsequently returned0 and invocation terminal proof closed. No diagnostic/native restart."
+}

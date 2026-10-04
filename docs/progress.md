@@ -13559,3 +13559,30 @@ The original full V6 startup continues: 686/1,620 passing unclosed roles at
 07:43, no producer receipt, readback or closure. Corrected scalar fixtures
 remain available for independent rechecking. All eight biological aims remain
 incomplete, full-data weighted fits remain unstarted and GPU prediction paused.
+
+
+## October 4, 07:56 UTC: independent replay spans the first input mutation
+
+Fresh V4 and V5 diagnostics completed with original terminal/source/artifact
+proofs. V4 captures eight changed entries in another tree after its first
+probe; independent saved-array comparison shows a 56-byte zeroed span shared
+with V2. V5 watches all five factors and first detects the change across the
+original `audit_candidate` call. It stops explicitly, preserving the affected
+array and 39 unattempted identities. This narrows investigation to the
+independent replay; it is not an exact native instruction or root-cause claim.
+V6 now traces inside that replay and SciPy SVD, with original 82836/native1550842
+live and actual2CPU32GiB0swap limits verified at07:56. A pre-wrapper working-
+directory launch failure remains preserved; no original failed run is restarted.
+[Transition scope and proof](retained-factor-transition-isolation-20261004.md).
+
+Original native startup has750/1620passing unclosed roles and weighted numerical
+work reports710/4340cohorts at07:47 without recorded failures. No full-data
+biological fit, adequate posterior, GPU resume, new charge or completed aim.
+
+
+At 07:59, the original V6 trace has completed one agreeing probe with all input
+hashes preserved and continues in group two. No original wait terminal receipt
+is available yet. The exact live native library observer verifies155mapped
+library-file checksums at07:58; source attribution remains unresolved. Original
+ancestral startup now has918/1620passing unclosed roles at07:58. All goal
+requirements remain unchanged.

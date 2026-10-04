@@ -1,0 +1,47 @@
+{
+  "status": "verified_two_saved_factor_overwrite_byte_spans",
+  "checked_utc": "2026-10-04T07:53:58.212780+00:00",
+  "records": [
+    {
+      "version": 2,
+      "tree": "pmsf_profile_profile",
+      "probe_tree": "pmsf_mafft_profile",
+      "changed_entries": 8,
+      "changed_bytes": 56,
+      "first_array_byte_offset": 20500226,
+      "last_array_byte_offset": 20500281,
+      "contiguous": true,
+      "observed_changed_bytes_all_zero": true,
+      "snapshot": "results/phylogeny/retained-timing-ordered-probe-diagnostic-20261004-v2/captured_factors/527ec20a91ed82f748cc1f50c8835585d7d1845cd27a3cbabde93a7cacf6b083-pmsf_profile_profile-observed.npy",
+      "snapshot_sha256": "d01b47ab2f25e8be93298456db41e20e03ccc9f360ad89292d89f4475a5347b1"
+    },
+    {
+      "version": 4,
+      "tree": "pmsf_mafft_profile",
+      "probe_tree": "pmsf_profile_mafft",
+      "changed_entries": 8,
+      "changed_bytes": 56,
+      "first_array_byte_offset": 20500226,
+      "last_array_byte_offset": 20500281,
+      "contiguous": true,
+      "observed_changed_bytes_all_zero": true,
+      "snapshot": "results/phylogeny/retained-timing-ordered-probe-diagnostic-20261004-v4/captured_factors/004557b52f0f54dc276e118861e564bc50d72ed19b3aa88c70ce7e1fe2dc16fd-pmsf_mafft_profile-observed.npy",
+      "snapshot_sha256": "ccbce93a8cc332d4d7d6211af3d88968f3af3b67a5e0f47ae392a18d383ea8f0"
+    }
+  ],
+  "source_hashes": {
+    "results/phylogeny/retained-timing-covariance-diagnostic-20261004-v1/pmsf_profile_profile-factor.npy": "5402c48fbe4c8cdf858c18dd47a150af62605a8caa4d5e71e8737e805b99fe01",
+    "results/phylogeny/retained-timing-ordered-probe-diagnostic-20261004-v2/captured_factors/527ec20a91ed82f748cc1f50c8835585d7d1845cd27a3cbabde93a7cacf6b083-pmsf_profile_profile-observed.npy": "d01b47ab2f25e8be93298456db41e20e03ccc9f360ad89292d89f4475a5347b1",
+    "metadata/retained_timing_ordered_probe_diagnostic_20261004_v2.json": "92e080b4c57d92e5a2caa1965ccf349a647fe06c0e8563577417f39930c7a873",
+    "metadata/retained_timing_ordered_probe_diagnostic_transport_20261004_v2.json": "709c604cb78453fb859d027629cfebb4db379c807469e6ad7af4b3f4a6bd20a1",
+    "results/phylogeny/retained-timing-covariance-diagnostic-20261004-v1/pmsf_mafft_profile-factor.npy": "2037e53dfff6d2daa53db462676fddcf923f3089e8ad2a86d1fd3012855c93f0",
+    "results/phylogeny/retained-timing-ordered-probe-diagnostic-20261004-v4/captured_factors/004557b52f0f54dc276e118861e564bc50d72ed19b3aa88c70ce7e1fe2dc16fd-pmsf_mafft_profile-observed.npy": "ccbce93a8cc332d4d7d6211af3d88968f3af3b67a5e0f47ae392a18d383ea8f0",
+    "metadata/retained_timing_ordered_probe_diagnostic_20261004_v4.json": "57d41a08164f4c125851e0dad15497ce6ba2f2973e97ce862eba05ddc24925d5",
+    "metadata/retained_timing_ordered_probe_diagnostic_transport_20261004_v4.json": "816324959a1bc653772b8f6418425387429771a88488b82cacd7aa7543b4a51d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_timing_factor_byte_spans_v1.py": "e2df64a2db8f81493c95509b9a189e73a5241ae7f7f8353e1dabf64de9dee24f"
+  },
+  "original_jobs_restarted": false,
+  "root_cause_established": false,
+  "gpu": false,
+  "scope": "Fresh independent byte comparisons and snapshot checksums for two closed diagnostics. Both captured changes occupy exactly the same56bytearrayoffsetspan in different trees. No inference of responsible function, native instruction, hardware cause or original failure repair."
+}

@@ -1,0 +1,17 @@
+{
+  "pid": 1544658,
+  "created": 1791100188.86,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_retained_timing_probe_sequence_v4.py",
+    "--plan",
+    "metadata/retained_timing_ordered_probe_diagnostic_plan_20261004_v4.json",
+    "--receipt",
+    "metadata/retained_timing_ordered_probe_diagnostic_20261004_v4.json"
+  ]
+}
