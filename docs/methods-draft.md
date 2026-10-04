@@ -3205,3 +3205,17 @@ identities and 320 native timing groups, with 64 separate numerical groups;
 source/journal fixtures are synthetic and no native probe is mocked. Real
 full-data closure/timing and enforced fitting resources still gate fitting,
 followed by inferential calibration. [Full contracts and limits](full-weighted-timing-20261004.md).
+
+### Admission without changing measured model identities
+
+Real fitting must consume the exact immutable configuration used for timing;
+operational scheduling/capacity metadata must not change source contracts or
+candidate identities. Admission requires full original numerical/timing
+closure, reconstructs every candidate/source disposition/group/representative
+and budget sum, and byte-checks review inputs. Closed numeric timing probes are
+not reinterpreted as biological qualification. Separate production contracts
+reject partial scopes and altered tolerances. Capacity allocations use conditional
+timing costs plus explicit source/export/review allowances, retaining unmeasured
+review coverage; they are not runtime bounds or finish estimates. All real
+fits and calibrated effects remain pending.
+[Gate, software scope and remaining execution work](full-weighted-fit-admission-20261004.md).

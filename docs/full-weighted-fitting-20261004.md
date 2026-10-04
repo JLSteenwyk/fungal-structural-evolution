@@ -120,3 +120,12 @@ closure, real timing and installed fitting resources remain required before any 
 launch, followed by full independent real fit closure and inferential calibration.
 Existing local CPU resources imply no new charge; GPU prediction stays paused.
 All eight biological aims and the full original project remain incomplete.
+
+October 4 admission update: the [complete fitting gate](full-weighted-fit-admission-20261004.md)
+now reconstructs closed timing/source accounting without changing the measured
+model configuration. Software checks cover all three original grids and reject
+rehashed accounting and production-scope/tolerance relaxations. Operational
+requests/resources stay separate from the measured draft. The actual preflight
+is pending original numerical/timing closure, and preparation installs no
+resources or fitting worker. Enforced execution and full real calibration remain
+required; this gate is not a fitted scientific analysis.

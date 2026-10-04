@@ -1502,3 +1502,14 @@ the real timing root was absent, and weighted numerical production reported
 Real weighted timing, fits, calibration and all eight biological aims remain
 unfinished. GPU prediction stays paused; no new charge.
 [Timing scope, checks and limits](full-weighted-timing-20261004.md).
+
+
+October 4, 02:53 UTC: full fitting admission and prospective capacity are now
+software qualified over 72,000 original candidate identities. Tests preserve
+published parent bytes and reject 45 rehashed closure/accounting changes plus
+13 production scope/tolerance relaxations. A separate operational request
+keeps the measured model configuration unchanged. Actual preflight is pending
+both original numerical/timing closures; it installs no fit resource or worker.
+The original numerical job reported 170/4,340 cohorts with no recorded failures.
+Enforced execution, real fitting/readback, calibration and all eight biological
+aims remain unfinished. [Gate and scientific limits](full-weighted-fit-admission-20261004.md).

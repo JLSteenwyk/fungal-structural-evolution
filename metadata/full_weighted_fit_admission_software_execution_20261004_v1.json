@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_fit_admission.py",
+    "--output",
+    "data/software_audits/full-weighted-fit-admission-20261004-v1",
+    "--receipt",
+    "metadata/full_weighted_fit_admission_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_fit_admission_software_resources_20261004_v1.json": "e6c52403e8ed049e94fb5521e5b72287de7ce5364aced11085e606c118621ae3",
+    "scripts/check_full_weighted_fit_admission.py": "4d691a6f263eb25408c52fb38c6e216f449d7b3105ce37d6b0ce3618d574c1ae",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "90dcda9572354e6baac4a4895bc592c5",
+  "wrapper": {
+    "pid": 3724477,
+    "created": 1791082144.71,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_fit_admission_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/full_weighted_fit_admission_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/full_weighted_fit_admission_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_fit_admission.py",
+      "--output",
+      "data/software_audits/full-weighted-fit-admission-20261004-v1",
+      "--receipt",
+      "metadata/full_weighted_fit_admission_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T02:49:05.775981+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T02:49:59.382352+00:00",
+  "child": {
+    "pid": 3724985,
+    "created": 1791082145.08,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_fit_admission.py",
+      "--output",
+      "data/software_audits/full-weighted-fit-admission-20261004-v1",
+      "--receipt",
+      "metadata/full_weighted_fit_admission_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 53.606111193075776,
+  "child_cpu_seconds": 53.541216999999996,
+  "child_peak_rss_bytes": 172974080,
+  "receipt": "metadata/full_weighted_fit_admission_software_validation_20261004_v1.json",
+  "receipt_sha256": "400d81143669124ff4e03e44e47cc562972fecb9ff70f0cedfc3ff09827c0600",
+  "artifacts": {
+    "metadata/full_weighted_fit_admission_software_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_weighted_fit_admission_software_execution_20261004_v1/configuration.json": "ffbf89692f46442cef9aa8b635e14a0e069f77aebbd8a1b5d890192ed134529c",
+    "metadata/full_weighted_fit_admission_software_execution_20261004_v1/stdout.log": "784c58da8829ccc9daee828abf7a099083a6a56454aaba139df7160724bca261",
+    "metadata/full_weighted_fit_admission_software_execution_20261004_v1/process.json": "6e3211f1e818d5adaeb57ee87bfcdeca3b1d8fd0685dd3ad2b68e2478de96c30"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

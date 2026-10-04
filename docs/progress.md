@@ -13149,3 +13149,41 @@ through full weighted timing implementation/qualification and installed queued
 controllers. Real weighted numerical/timing/fitting/calibration and all eight
 biological aims remain open; GPU predictions remain paused, no paid resources.
 [Full timing workflow and original evidence](full-weighted-timing-20261004.md).
+
+
+## October 4, 02:53 UTC: full fitting admission qualified; prerequisites pending
+
+Implemented complete closed numerical/timing source admission, reconstructing
+every original candidate/census/source disposition, selected representative,
+eligible multiplicity, review-array reference and planning sum. Original
+measured model bytes stay unchanged; scheduling/capacity fields live separately.
+Production contracts retain 20,832,000 candidates and 49,766,400 setting links,
+all four controls/modes/trees/outcomes/methods and existing stricter tolerances.
+Conditional producer/reader capacity includes explicit source/export/review
+allowances and unmeasured review coverage, without a bound or finish ETA.
+
+All three copied timing-export grids passed admission over 72,000 candidate
+identities. The previously qualified parent numeric/hardware observations are
+inherited; source/journal closure fixtures are synthetic. Original published
+parents were never modified. Forty-five rehashed closure/accounting alterations
+and thirteen production scope/tolerance relaxations were rejected. Corrupted
+own fixture bytes were restored and positive full-grid admission reverified.
+Actual missing prerequisites were refused without a fitting root or resources.
+
+The original bounded software wait 27708 exited zero; exact wrapper PID/create/
+command and original invocation start/end were verified with 429 bound files.
+Native software CPU/RSS were 53.54 seconds/172,974,080 bytes, not full-data
+measurements. The complete operational request and actual pending preflight
+are saved. Both original closure handles were verified live. Actual enforcing
+execution/fit/readback/two-journal closure controllers remain to implement;
+no fitting resource or worker is installed or queued by this preparation.
+
+At 02:53 UTC weighted numerical production reported 170 of 4,340 cohorts,
+with 171 audit/170 link segment files and no recorded failure. Original timing
+controllers remain live waiting, with no real timing root or closure. The
+previous goal turn was progress through full timing qualification and queued
+original controllers. This turn is progress through complete admission/capacity
+implementation, software qualification and actual prerequisite refusal.
+Full numerical/timing/fitting/calibration and all eight biological aims remain
+unfinished. GPU prediction stays paused; no new charge.
+[Full admission workflow and original evidence](full-weighted-fit-admission-20261004.md).

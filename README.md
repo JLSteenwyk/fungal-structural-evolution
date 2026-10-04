@@ -49,6 +49,13 @@ all selections, replays every numeric probe and checks runtime accounting;
 shared review arrays retain their original bytes. Full-data timing and real
 weighted fitting have not started. GPU prediction remains paused.
 
+The [full fitting admission gate](docs/full-weighted-fit-admission-20261004.md)
+is now software qualified over the same 72,000 test candidate identities.
+It requires both original closures and reconstructs every source/census/selection
+and runtime-accounting record while preserving the measured model configuration.
+The real preflight is pending; no fit resources or workers are installed.
+Enforced execution, real fitting/readback and calibration remain required.
+
 A [matched predictor branch control](docs/matched-predictor-branch-controls-20261003.md)
 has completed all 931 fixed-topology native fits and independent full readback.
 It holds complete protein identity, sequence positions, observation masks and

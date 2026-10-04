@@ -1654,3 +1654,22 @@ timing plus installed fit resources before native optimization. Queue the full
 timing producer/reader/closer only; leave GPU predictions paused and real fits
 unlaunched. Conditional budgets are neither a runtime bound nor a finish ETA.
 [Original evidence, resource allowances and remaining gates](full-weighted-timing-20261004.md).
+
+
+## October 4: keep fit admission separate from the measured model configuration
+
+Require closed original numerical and full timing evidence, then reconstruct
+all original candidates, source states, selected representatives and planning
+sums before preparing operations. Preserve the immutable measured model plan
+so fitting and timing share exact candidate/source identities. Small software
+grids cannot satisfy the production contract; all original controls, modes,
+trees, methods, budgets and stricter tolerances remain bound.
+
+Reuse the closed original numeric timing qualification while independently
+rechecking full accounting and original review arrays. Do not claim a new
+numeric probe or hardware-duration reproduction. Assign separate producer/
+reader CPU capacity from conditional point costs with explicit uncalibrated
+source/export/review allowances, keeping unmeasured groups in full scope.
+Preparation installs no resource or worker. Both real prerequisites remain
+pending; actual enforcing controllers and complete fit/readback/calibration
+remain necessary. [Admission evidence and execution limits](full-weighted-fit-admission-20261004.md).
