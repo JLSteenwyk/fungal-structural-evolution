@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_weighted_shared_entity_simulation.py",
+    "--output",
+    "data/software_audits/weighted-shared-entity-simulation-20261004-v1",
+    "--receipt",
+    "metadata/weighted_shared_entity_simulation_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/weighted_shared_entity_simulation_software_resources_20261004_v1.json": "6df4dc4235d340a313b51559d4b918f12f2d78b3afc83c42adb420ecb8be5ead",
+    "scripts/check_weighted_shared_entity_simulation.py": "832086ce5871d9e31432be37175aa93bff53936e1e832f14acc3b99ffac95c61",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "6162a20feabe48ad895c0427c2c2a2b3",
+  "wrapper": {
+    "pid": 89685,
+    "created": 1791085356.95,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/weighted_shared_entity_simulation_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/weighted_shared_entity_simulation_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/weighted_shared_entity_simulation_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_shared_entity_simulation.py",
+      "--output",
+      "data/software_audits/weighted-shared-entity-simulation-20261004-v1",
+      "--receipt",
+      "metadata/weighted_shared_entity_simulation_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T03:42:37.996689+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T03:42:47.867594+00:00",
+  "child": {
+    "pid": 89687,
+    "created": 1791085357.3,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_shared_entity_simulation.py",
+      "--output",
+      "data/software_audits/weighted-shared-entity-simulation-20261004-v1",
+      "--receipt",
+      "metadata/weighted_shared_entity_simulation_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 9.870664873975329,
+  "child_cpu_seconds": 9.721447000000001,
+  "child_peak_rss_bytes": 143106048,
+  "receipt": "metadata/weighted_shared_entity_simulation_software_validation_20261004_v1.json",
+  "receipt_sha256": "d994998685f25a173ff4617bbd2a0971970aa086bb3eb60ef266a15e95aa95f8",
+  "artifacts": {
+    "metadata/weighted_shared_entity_simulation_software_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/weighted_shared_entity_simulation_software_execution_20261004_v1/configuration.json": "834e969994ace4bd87309338d1544527040c917dbc95c0726187e666b149dae4",
+    "metadata/weighted_shared_entity_simulation_software_execution_20261004_v1/stdout.log": "9ad86296335f69a94de1fd56feb4bdec05ec4c5eddd8ac31224ae5342e92317e",
+    "metadata/weighted_shared_entity_simulation_software_execution_20261004_v1/process.json": "d61ec5a23795fd7f0a8caf5a53b3d007fa9d2196cec86d23dbfe1f29fa11d4cc"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

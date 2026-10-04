@@ -3237,3 +3237,25 @@ four actual non-fit resource children. Pending production preflight creates
 no worker. Full-data launch/fits/closure/calibration remain unexecuted. These
 checks do not establish biological results or repair sampler failures.
 [Contracts, original execution and limitations](full-weighted-fit-controller-20261004.md).
+
+
+### Dependent responses for future weighted-model uncertainty calibration
+
+The new per-model Gaussian generator preserves mean X beta and covariance
+scale*(D + sum(theta_j Z_j Z_j.T) + theta_species F F.T) using independent
+residual, named sparse-entity and phylogenetic latent effects. Positive D and
+target identity remain separate; signed/coalesced loadings and zero components
+stay explicit. Source/scenario/replicate/component-derived streams are stable
+under scheduling order within the captured environment. Full response/record
+replay checks original entropy, truth and byte hashes.
+
+Software checks cover all 64 existing synthetic weighted models,192 dense
+covariance comparisons and 576 exact generated response replays, plus signed
+cancellation/zero-rank cases and 8,192 seeded moment smoke draws. Accounting
+requires every prespecified replicate of one generating model, keeping
+unresolved outcomes in fixed-sample exact binomial envelopes. Synthetic
+coverage-state fixtures are not numerical refits. No production simulation
+or uncertainty acceptance is established. Actual source/fit admission,
+scenarios/replicate counts, full independent refits, selection/tree uncertainty,
+global cross-model dependence and multiple testing remain required.
+[Generator, evidence and primary software references](weighted-shared-entity-simulation-20261004.md).

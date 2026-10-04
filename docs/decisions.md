@@ -1690,3 +1690,21 @@ scientific settings or parent proofs. Software resource children are non-fit
 probes. Production launch/closure remains pending actual prerequisites; all
 eight biological aims remain open.
 [Controller and original evidence](full-weighted-fit-controller-20261004.md).
+
+
+## October 4: retain exact dependence in calibration responses and every unresolved refit
+
+Use the original positive residual diagonal, exact named sparse loadings and
+phylogenetic factor when generating future working responses; do not replace
+shared entities with independent observation noise. Bind streams to original
+candidate/scenario/replicate/component identities and preserve response hashes.
+Copy/validate model inputs and keep signed cancellation and zero variance
+boundaries. Fixed-sample accounting requires every prespecified replicate;
+failed, pending and reviewed refits cannot disappear from coverage denominators.
+
+Qualify this generator with all 64 original software model cases, not a fungal
+pilot. Treat the Gaussian model, coverage-state fixtures and moment checks as
+software evidence only. Original source/fit admission, complete scenarios and
+native refits, joint dependence across models, selection/tree uncertainty and
+multiple-testing control remain open. Preserve original qualified parents.
+[Generator and original evidence](weighted-shared-entity-simulation-20261004.md).

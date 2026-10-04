@@ -1,0 +1,41 @@
+{
+  "status": "complete_verified_full_exact_retained_uniform_covariance_qualification_v3",
+  "logical_cases": 75188,
+  "model_setting_rows": 622080,
+  "unique_cohorts": 4340,
+  "unique_designs": 130200,
+  "audit_rows": 1302000,
+  "setting_audit_links": 6220800,
+  "audit_status_counts": {
+    "qualified_exact_retained_uniform_covariance_basis": 1302000
+  },
+  "link_status_counts": {
+    "qualified_exact_retained_uniform_covariance_basis": 6220800
+  },
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "loading_modes": [
+    "signed",
+    "unsigned"
+  ],
+  "retained_basis_audit_counts": {
+    "4": 1084800,
+    "5": 217200
+  },
+  "full_hash_archive": "results/phylogeny/full-exact-retained-covariance-qualification-20261003-v3/completion_archive.json",
+  "full_hash_archive_sha256": "4405bf35e6eee9cd9b79db8957ce614c5c520153169c2453d10456420f8f8d9c",
+  "bound_source_hashes": 45,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-exact-retained-covariance-qualification-20261003-v3/receipt.json",
+  "producer_receipt_sha256": "2d4581795361bb5d05a2d6f7625d3ae4cb9f5a97d9077b5fb88b9eb0fe91af95",
+  "independent_readback": "results/phylogeny/full-exact-retained-covariance-qualification-20261003-v3/readback.json",
+  "independent_readback_sha256": "ddee48edeeb6191f870d0dc6382debfac310175005261cdae8200df407d45bec",
+  "completion_plan_sha256": "e90aa4c345a1f012454e05223fcafb82dd396a2ade4b5e7f5d2f3cb20666fd22",
+  "scientific_eligibility": false,
+  "scope": "Complete original75188cases/622080settings/4340cohorts/130200designs:1302000exact retained covariance audits/6220800setting links, both modes and allfive working trees. Explicit separately closed parallel readback of the same original full seven-kernel producer required; original serial reader path neither required,written nor replaced. Source plan/producer/alternate-reader/worker/resource identity, exactV2operator/cone proof and complete original journals checked. Frozen reduction/independentgesvd/SQL and unchanged principal Gram/error envelopes; all review/nonready/constant cases retained. V4software admission requires process backend and worker identity, failure capture, unchanged original arithmetic and no rejected-case artifacts, then rehashes the entire positive fixture graph. New immutable source adapter/output/controller namespace; original serial/qualification/timing queues untouched. Full source/artifact/two new original journals before numerical closure. No tolerance relaxation,removed exception kernel,optimizer,model acceptance,nonuniform qualification,accepted phylogeny/reconciliation/calibration or completed biological aims."
+}

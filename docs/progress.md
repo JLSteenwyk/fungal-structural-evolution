@@ -13220,3 +13220,41 @@ checks and publication. Production launch/fits/readback/closure, inference
 calibration, accepted phylogenetic/reconciliation/dating framework and all
 eight biological aims remain incomplete.
 [Controller scope and original evidence](full-weighted-fit-controller-20261004.md).
+
+
+## October 4, 03:47 UTC: full retained qualification closed; dependent simulation qualified
+
+Original retained V3 numerical producer/readback/two-journal closure completed
+all 1,302,000 audits/6,220,800 setting links. All 45 archive hashes and three original
+terminal-success handles were freshly verified. All audits/links retain the
+qualified exact retained uniform basis disposition, with 1,084,800 q4/217,200 q5
+audits. This is a numerical prerequisite, not native fitting or biological
+acceptance, and does not explain the historical arithmetic discrepancy.
+Retained timing native 57441 is live loading sources after that closure; no
+new timing output was present at 03:47 UTC. Its original limits are unchanged.
+
+Implemented dependent per-model Gaussian response/seed/replay machinery for
+future calibration using original D, named sparse shared effects and F. All 64
+existing synthetic weighted cases passed192 dense covariance checks/576 exact
+latent-response replays, with errors below6e-15. Sixteen 512-draw moment smoke
+checks and signed/cancellation/zero-rank fixtures passed. Tests rejected 29
+input/scenario, 11 accounting and seven replay alterations. Fixed prespecified replicate
+accounting retains pending/failed/reviewed outcomes. All coverage-state examples
+are synthetic accounting fixtures; no optimizer/refit or production biological
+simulation ran. Original qualified parent bytes remained unchanged.
+
+Original wait 62497 exited zero; exact wrapper 89685/create/command and invocation
+start/end evidence were verified with 500 transport bindings. Software CPU/RSS
+were 9.72 seconds/143,106,048 bytes. Installed interpreter/NumPy 2.2.6/SciPy 1.15.3 and
+native RNG/statistics artifacts were separately observed after execution;
+exact cross-environment stream reproduction is not asserted. Primary software
+references, dictionary and workflow are documented.
+
+At 03:47 UTC weighted numerical production reported 270/4,340 cohorts with 272 audit/
+271 link segment files and no recorded failure. Full weighted numerical/timing/
+fitting/calibration remain pending; GPU prediction stays paused, no new charge.
+Previous goal turn was progress through full fitting controller qualification.
+This turn is progress through actual full retained closure verification and
+implemented/qualified dependent simulation. The full structural atlas, accepted
+phylogenetic/reconciliation/dating framework and all eight aims remain incomplete.
+[Generator and original evidence](weighted-shared-entity-simulation-20261004.md).

@@ -1,5 +1,12 @@
 # Full retained-kernel covariance qualification
 
+Current October 4 status: original V3 production, independent readback and
+two-journal closure are complete for all 1,302,000 audits/6,220,800 links.
+All 45 actual archive bindings and three original terminal-success handles
+have been freshly checked. The older V1/V2 queue descriptions below retain
+their historical context; those queues and their missing prerequisites are
+unchanged. [Current full verification](../metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json).
+
 The exact covariance proof has closed over all 4,340 cohorts, both loading
 modes and 75,188 original logical cases. It permits four kernels in 3,616
 cohorts and five in 724. The next numerical qualification stage is **queued**,
@@ -105,7 +112,14 @@ The first two commands require both closed prerequisites and an appropriately
 capped new environment; the reader uses the producer's completed root.
 Original launched roots are not reusable or editable.
 
-Full reduced-basis closure, revised full-scope timing, production optimization
+Original retained V3 closure is now complete for all 1,302,000 audits and
+6,220,800 links. All 45 archive bindings and three original terminal-success
+handles were freshly verified. This inherits the original complete numerical
+producer/reader, rather than performing a new numerical replay; historical
+covariance disagreement is not repaired by this completion.
+[Full original closure verification](../metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json).
+
+Revised full-scope timing, production optimization
 and independent fit readback remain prerequisites for sequence–structure
 coupling claims. Nonuniform weighting, model/predictor controls, phylogenetic
 acceptance, reconciliation, selection, ecological replication, adequate

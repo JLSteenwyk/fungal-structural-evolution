@@ -1,10 +1,17 @@
 # Complete retained covariance fitting and timing
 
 The complete fitting producer and independent reader are implemented and have
-passed software qualification. Whole-data timing is queued after the current
-process covariance reader and retained V3 qualification close successfully.
+passed software qualification. Whole-data timing is loading sources after the
+process covariance reader and retained V3 qualification closed successfully.
 No production fit has been launched or queued, and no evolutionary effect is
 accepted by these checks.
+
+October 4 update: original retained V3 qualification has closed all 1,302,000
+audits and 6,220,800 links. A fresh check verified every one of its 45 archive
+bindings and three original terminal-success handles. Retained timing is now
+loading sources under its original two-CPU/32-GiB/no-swap limits, with no
+timing output yet at 03:47 UTC. Actual timing/fitting/calibration remain pending.
+[Completed closure verification](../metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json).
 
 ## Scope and model
 

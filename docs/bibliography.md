@@ -125,3 +125,10 @@ especially for extracted domains and incomplete annotations.
   executable hashes and all six-order native software contracts are recorded
   separately. Cross-method agreement is a sensitivity diagnostic and does not
   validate homology or make sequence-derived predicted coordinates independent.
+
+
+## Dependent simulation and Monte Carlo accounting references
+
+- SciPy 1.15.3 [multivariate_normal](https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.stats.multivariate_normal.html), accessed October 4, 2026 UTC. Mean/covariance define the Gaussian working distribution. The new sparse latent generator preserves actual residual D, shared incidence and phylogenetic F; independent dense algebra validates implementation, not biological Gaussian adequacy.
+- SciPy 1.15.3 [binomtest](https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.stats.binomtest.html), accessed October 4, 2026 UTC. Exact fixed-sample proportion intervals are the independent reference for Monte Carlo coverage accounting. Unresolved refits remain in the denominator and interval envelope; these are not biological coefficient or simultaneous intervals.
+- NumPy 2.2 [random compatibility policy](https://numpy.org/doc/2.2/reference/random/compatibility.html), accessed October 4, 2026 UTC. Exact stream reproduction depends on generator, seed, call sequence, arguments and environment. Explicit PCG64/component streams and response hashes are recorded; installed NumPy 2.2.6/SciPy 1.15.3 native artifacts are separately observed. Cross-version/platform exact replay is not asserted.

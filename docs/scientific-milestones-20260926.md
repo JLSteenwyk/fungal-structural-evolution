@@ -1525,3 +1525,14 @@ production reported 220/4,340 cohorts with no recorded failure. Production launc
 full independent closure/calibration and all eight biological aims incomplete.
 GPU prediction stays paused.
 [Controller and limits](full-weighted-fit-controller-20261004.md).
+
+
+October 4, 03:47 UTC: original retained V3 qualification has full 1,302,000-audit/
+6,220,800-link and two-journal closure. Fresh verification checks all 45 archive
+bindings/three original terminal handles; retained timing is live loading
+sources. Weighted numerical production reported270/4,340 cohorts without recorded
+failure. New dependent Gaussian simulation primitive passed all 64 software
+model cases,192 dense covariance/576response-replay checks and fixed-sample
+unresolved accounting. No production refit/calibration or accepted biological
+effect; all eight aims remain incomplete. GPU prediction paused; no new charge.
+[Simulation scope and complete original evidence](weighted-shared-entity-simulation-20261004.md).

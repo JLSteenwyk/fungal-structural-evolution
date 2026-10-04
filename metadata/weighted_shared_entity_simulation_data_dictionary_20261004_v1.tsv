@@ -1,0 +1,17 @@
+field	type	definition
+input_contract	sha256	Exact original block labels, canonical sparse incidence values/indices, F, positive D, X and ordered component names.
+scenario_contract	sha256	Original beta, residual variance scale, ordered nonnegative variance ratios and parameter names.
+candidate_id	identifier	Original per-model source candidate; distinct from duplicated setting-link identity.
+scenario_id	identifier	Prespecified generating scenario identifier; changing it changes streams.
+replicate	integer	Prespecified nonnegative replicate index, independent of scheduling order.
+component_seed_entropy	map	Master seed/replicate plus SHA-derived input/source/scenario/component words for explicit PCG64/SeedSequence streams.
+response_sha256	sha256	Full float64 generated response shape/bytes; exact replay must regenerate the entire receipt and checksum.
+scale	float	Positive residual variance scale, not standard deviation.
+variance_ratios	vector	Ordered original named incidence/species variances relative to residual scale; zero boundaries retained.
+fits_computed	integer	Zero for generator qualification; no response draw is a native model refit.
+attempted	integer	Exactly all prespecified replicates of one generating input/scenario, including pending and failed refits.
+independently_checked	integer	Refit states accepted by separate numerical checking; software accounting examples explicitly synthetic.
+unresolved	integer	Pending/reviewed/failed outcomes retained in the attempted denominator.
+covered_qualified	vector	Known nominal-interval coverage counts among checked refits; no successful-only denominator.
+marginal_monte_carlo_intervals	objects	Fixed-sample exact binomial interval envelope over unresolved completions; not coefficient or simultaneous intervals.
+scientific_eligibility	boolean	False; no biological or uncertainty calibration acceptance.

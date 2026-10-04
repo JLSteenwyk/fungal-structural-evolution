@@ -12,6 +12,20 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
+The retained uniform covariance basis has now completed all 1,302,000 audits
+and 6,220,800 setting links with original independent readback and two-journal
+closure. A [fresh full closure check](metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json)
+verified all 45 archive bindings and three original terminal-success handles.
+Retained timing has started loading sources; weighted numerical qualification,
+fitting and calibration remain separate unfinished stages.
+
+The [dependent Gaussian simulation code](docs/weighted-shared-entity-simulation-20261004.md)
+is qualified for future uncertainty calibration: 192 dense covariance checks
+and 576 exact response replays across all 64 existing synthetic weighted models.
+It preserves phylogenetic/shared-entity/residual-weight dependence and retains
+unresolved replicate outcomes. Full-data simulation and native refits have
+not started; these software checks do not establish calibrated effects.
+
 The [full four-control covariance source census](docs/full-weighted-covariance-source-census-20261004.md)
 has completed all 4,340 original cohorts, 130,200 designs, 260,400 response
 inputs and 622,080 settings, including serialized readback and full provenance
@@ -136,16 +150,16 @@ including full provenance closure over 2,378,669 bindings and both original
 journals. Original seven-kernel covariance reviews remain explicit. The old
 mismatch is unexplained despite 2,700 passing diagnostic comparisons; this
 reader's success does not establish its cause or historical repair. The
-retained-basis qualification has started after that closure; production fitting
+retained-basis V3 qualification has now closed; production fitting
 has not started. Original failed outputs and serial queues stay preserved.
 
 The [complete retained fitting and timing workflow](docs/full-retained-fitting-and-timing-20261003.md)
 is now software qualified. It preserves all 5,208,000 potential candidates and
-12,441,600 setting links. The full-data timing census is queued behind complete
+12,441,600 setting links. Full-data timing is loading sources after complete
 process/retained covariance closure; no production fitting has been launched
 or queued. Independent fitting readback and numerical reviews remain explicit.
-The process reader and provenance closure have finished; retained qualification,
-timing and the cause of the original mismatch remain unresolved. Runtime remains
+The process reader and retained qualification have finished; complete timing
+and the cause of the original mismatch remain unresolved. Runtime remains
 uncalibrated, and all eight biological aims remain incomplete.
 
 The [full positive-diagonal covariance-cone proof](docs/nonuniform-covariance-cones-20261003.md)
@@ -336,7 +350,7 @@ integer-algebra, source/artifact and original-journal closure.
 [Complete identities and variance-cone evidence](docs/full-covariance-dependency-review-20261003.md).
 
 The [full retained-kernel numerical qualification](docs/full-reduced-covariance-qualification-20261003.md)
-is software-qualified and queued behind original arithmetic closure. It
+has completed original V3 production/readback/closure. It
 retains all 1,302,000 audits and 6,220,800 links, copies the exact principal
 Gram/error submatrices and independently checks every entry and rank.
 Numerical review states, original failed/non-ready settings, nonuniform
