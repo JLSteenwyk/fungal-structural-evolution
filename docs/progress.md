@@ -13470,3 +13470,30 @@ at 06:48, loading sources. Separate weighted numerical validation reports
 does not establish completion. GPU prediction stays paused and all eight
 biological aims remain incomplete.
 [Fresh check evidence](../metadata/current_analysis_error_recheck_20261004_user_0650.json).
+
+## October 4, 07:03 UTC: complete V6 native startup launched
+
+New startup producer/reader software passes all 1,620 actual role constructions,
+three new native synthetic initializations across priors, twelve altered
+designs, seven privately rehashed invalid/failure cases and four native custody
+corruptions. Explicitly mocked full controller serialization retains two
+failures/two unresolved quartets and rejects six corruptions/restarts. Actual
+software wait 68503 exited zero; exact original payload and manager start/end
+are verified. Transport rehashes 7,422 bindings, including 28 transitive project
+modules. This is startup-only evidence, not MCMC logger or posterior acceptance.
+
+The complete actual V6 native startup grid is now running in its fresh root,
+with producer 1495136 and separate original reader/closure controllers.
+At 07:02, 12/1,620 native checkpoints pass; no producer/readback/closure receipt
+exists. All roles, aliases, seeds and priors are retained. Two workers use
+2 CPU/32 GiB/no swap and 12 GiB per-native address-space limits. Existing
+samplers and historical outputs remain unchanged.
+
+The separate covariance diagnostic has checked all 40 selected groups of the
+failed 11th cohort by 06:57, and each passes the unchanged guard in the new
+run. Source verification and original terminal proof are still pending;
+the failure is not explained. The independent wider-precision reader remains
+unlaunched. Weighted numerical work reports 620/4,340 cohorts at 07:02 without
+recorded failures. All eight biological aims remain incomplete, no real
+full-data fits have started, and GPU prediction remains paused.
+[Scope, actual proof and next work](baliphy-scalar-v6-startup-20261004.md).

@@ -26,8 +26,10 @@ All 1,620 future roles are prepared with fresh seeds. A separate
 [V6 scalar admission adapter](docs/baliphy-scalar-v6-joint-admission-20261004.md)
 now checks the full role construction and retained native scalar/joint outputs,
 keeping malformed and special-value states in review without admitted arrays.
-Full V6 startup, controller, resource and source-closure qualification remain
-required before any full-grid native launch; existing jobs and historical
+The [complete V6 native startup grid](docs/baliphy-scalar-v6-startup-20261004.md)
+is now running after source, software and resource checks. Full startup readback
+and closure, followed by V6 sampler controller/resource/closure qualification,
+remain required before full-grid sampling; existing jobs and historical
 outputs remain unchanged.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits

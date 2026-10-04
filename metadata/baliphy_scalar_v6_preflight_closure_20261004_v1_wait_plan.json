@@ -1,0 +1,19 @@
+{
+  "dependencies": [
+    "metadata/baliphy_scalar_v6_preflight_producer_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_preflight_reader_20261004_v1_launch.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/baliphy_scalar_v6_preflight_completion_plan_20261004_v1.json"
+  ],
+  "pins": {
+    "metadata/baliphy_scalar_v6_preflight_completion_plan_20261004_v1.json": "3d1b4480a1c02b5ce0aa855361a5a099ccf919cd354088f6e0212d817c986ec2",
+    "metadata/baliphy_scalar_v6_preflight_producer_20261004_v1_launch.json": "dc6729e691d0215afd46bf9f6da77e34ea7c068fc9914af1fb8a2bc46534cbcb",
+    "metadata/baliphy_scalar_v6_preflight_reader_20261004_v1_launch.json": "e143ebff1d13fe833dddf5a3a1313b609019c81b6e07214b1c51d8ea00479c52",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/launch_baliphy_scalar_v6_preflight_v1.py": "f49525af9b4d72e84e2555355050a21ebf1a84fc355e6854bf8b90193e86d325",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

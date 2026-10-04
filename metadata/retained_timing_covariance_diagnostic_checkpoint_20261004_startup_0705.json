@@ -1,0 +1,91 @@
+{
+  "status": "verified_original_live_retained_covariance_diagnostic",
+  "checked_utc": "2026-10-04T06:57:47.098438+00:00",
+  "actual_original_tool_session_id": 65481,
+  "actual_tool_wait_terminal": false,
+  "wrapper": {
+    "pid": 1333144,
+    "created": 1791093636.85,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/retained_timing_covariance_diagnostic_resources_20261004_v1.json",
+      "--execution",
+      "metadata/retained_timing_covariance_diagnostic_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_timing_covariance_diagnostic_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_retained_timing_covariance_v1.py",
+      "--plan",
+      "metadata/retained_timing_covariance_diagnostic_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_timing_covariance_diagnostic_20261004_v1.json"
+    ]
+  },
+  "invocation_id": "1d4b04137c474a42b2eea4aae6de0f20",
+  "child": {
+    "pid": 1333148,
+    "created": 1791093637.27,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_retained_timing_covariance_v1.py",
+      "--plan",
+      "metadata/retained_timing_covariance_diagnostic_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_timing_covariance_diagnostic_20261004_v1.json"
+    ],
+    "status": "disk-sleep",
+    "cpu_seconds": 1978.93,
+    "rss_bytes": 4439048192
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "memory_events": {
+    "low": 0,
+    "high": 0,
+    "max": 85549,
+    "oom": 0,
+    "oom_kill": 0,
+    "oom_group_kill": 0
+  },
+  "last_progress_lines": [
+    "diagnostic_group 33 / 40 cae412e11b15a62e899a7df920f6559208dbeefe94f13476666b17f8fac4dac8 passed_unchanged_original_guard",
+    "diagnostic_group 34 / 40 d16d528829e6f70a2e8dd873e7485f45f0aeed07d8c07560babdc0be41c50045 passed_unchanged_original_guard",
+    "diagnostic_group 35 / 40 d6aab880c7bf12e52cbd7495bdc54469315670c0a279d3fd9f072a0a9c27aa24 passed_unchanged_original_guard",
+    "diagnostic_group 36 / 40 df656b49042b341983ad55096d618bcb4fe5166584996863924f93a141f61ac2 passed_unchanged_original_guard",
+    "diagnostic_group 37 / 40 e0d6626ac5d6625f0762a5caff26829648cb7308fd9fab975b6003d941884c70 passed_unchanged_original_guard",
+    "diagnostic_group 38 / 40 e488f7532c61df14c02d2cb889cfff6d5b12182fc17c82b34317936ea0445e01 passed_unchanged_original_guard",
+    "diagnostic_group 39 / 40 e6a87c8a65d856f2a416e3bf412708116ea09f0b4965f467940165da6d397033 passed_unchanged_original_guard",
+    "diagnostic_group 40 / 40 ea5a8a7ae9ea2be869b197dfdbce44c24bb1a6da9569341ca2c7ad43ebf66763 passed_unchanged_original_guard"
+  ],
+  "completed_group_records": 40,
+  "receipt_present": false,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/retained_timing_covariance_diagnostic_resources_20261004_v1.json": "61e8e9047c98bb047687963e7e4c326db3b8cfed459f5bc3e400ea31bc4f8147",
+    "scripts/diagnose_retained_timing_covariance_v1.py": "e0f2c348d27b7d2dad463536740c067dfc6d06ae83073fe50475fb2b38bb388c",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/prepare_full_retained_shared_entity_timing.py": "ce0d6acbed628bc8881f8165f137e941da1c7931bfa2de718b19bf66d13db1af",
+    "scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json": "a9d126e5a26ac86f21922b1b6d029d807056c782e190dd6c1311c3099c03d42f",
+    "metadata/full_retained_shared_entity_fit_draft_plan_20261003_v1.json": "70f53acfc72f60ba45b83d67fb784123c0b4b7f313a7f571f137c993abdca83d",
+    "metadata/full_retained_shared_entity_timing_failure_20261004_v2.json": "3cf2aa6e3092b0c51e907e0583b5f719643d653bac882cb86471a1524cada08e",
+    "metadata/retained_timing_covariance_diagnostic_plan_20261004_v1.json": "e51a821fe816730ca7ed0714cf1326f9fa87b1a4d06953917f0baf0056929b41",
+    "metadata/retained_timing_covariance_diagnostic_execution_20261004_v1/configuration.json": "1976bdea5ac5022d3edc1b9cbfae828db8edc8a583b3e4512b3b98d21d14130b",
+    "metadata/retained_timing_covariance_diagnostic_execution_20261004_v1/process.json": "5fc0ff64557ff317f47ecdcc52325fda12eacdfa8b082a7f30ca19b7349a88a2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_retained_covariance_diagnostic_checkpoint.py": "56a0fc67c39990639623e2a7a12cf337873ab1711e0d6799549785032a575104"
+  },
+  "original_jobs_restarted": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Fresh exact live original wrapper/native PID/create/command/invocation and actual limits. Snapshot of original source-loading/group progress only; no terminal wait, diagnostic completion, mismatch repair, original stage restart or biological acceptance."
+}

@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_scalar_v6_preflight_v1.py",
+    "--output",
+    "data/software_audits/baliphy-scalar-json-v6-startup-software-20261004-v1",
+    "--receipt",
+    "metadata/baliphy_scalar_v6_preflight_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/baliphy_scalar_v6_preflight_software_resources_20261004_v1.json": "2584beb6024bc411baacd9595dec21dc06a171fc4a0520f05d231161a74c6926",
+    "scripts/check_baliphy_scalar_v6_preflight_v1.py": "a271f02f4c3d37ffa9e85e5f0e1dce1a4fd6f548495549f536bfca99147ccd7a",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "e913ab432fd7438b8acff3d60a0ddeb7",
+  "wrapper": {
+    "pid": 1491064,
+    "created": 1791097065.14,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/baliphy_scalar_v6_preflight_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/baliphy_scalar_v6_preflight_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_preflight_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_v6_preflight_v1.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-startup-software-20261004-v1",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_preflight_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 900,
+  "started_utc": "2026-10-04T06:57:46.175104+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T06:58:57.548122+00:00",
+  "child": {
+    "pid": 1491068,
+    "created": 1791097065.48,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_v6_preflight_v1.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-startup-software-20261004-v1",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_preflight_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 71.37278981308918,
+  "child_cpu_seconds": 71.45532,
+  "child_peak_rss_bytes": 794185728,
+  "receipt": "metadata/baliphy_scalar_v6_preflight_software_validation_20261004_v1.json",
+  "receipt_sha256": "9bfc8a6532bab9e3a4aef1455c93be936a796c4565e998ea233b334fd37b7ccb",
+  "artifacts": {
+    "metadata/baliphy_scalar_v6_preflight_software_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_scalar_v6_preflight_software_execution_20261004_v1/configuration.json": "a776c8cb14785039b03cc2dc967efda4ce759c2e181559658b23f42cd1b95ddb",
+    "metadata/baliphy_scalar_v6_preflight_software_execution_20261004_v1/stdout.log": "158f0d51bed5fe4913e2cc5309f0f9c1b1ba469456a742b86dd3e839eccb594e",
+    "metadata/baliphy_scalar_v6_preflight_software_execution_20261004_v1/process.json": "b41ccd59bc42f27561530bebc88d6e7e8fdc492e93dd0be85432e730a9fa807c"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

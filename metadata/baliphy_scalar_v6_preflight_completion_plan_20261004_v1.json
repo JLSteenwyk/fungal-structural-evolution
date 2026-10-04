@@ -1,0 +1,34 @@
+{
+  "source_plan": "metadata/baliphy_scalar_v6_preflight_plan_20261004_v1.json",
+  "producer_receipt": "results/ancestral/full-baliphy-scalar-v6-preflight-20261004-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-scalar-v6-preflight-20261004-v1/readback.json",
+  "producer_status": "complete_full_scalar_v6_startup_dispositions_pending_readback_v1",
+  "reader_status": "passed_full_scalar_v6_startup_serialized_readback_v1",
+  "completed_status": "complete_verified_full_scalar_v6_startup_v1",
+  "summary_fields": [
+    "full_chains",
+    "full_quartets",
+    "effective_inputs",
+    "original_configuration_aliases",
+    "validated_startups",
+    "unsuccessful_startups",
+    "complete_startup_quartets",
+    "unresolved_startup_quartets",
+    "status_counts",
+    "posterior_sampling_launched"
+  ],
+  "launches": [
+    "metadata/baliphy_scalar_v6_preflight_producer_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_preflight_reader_20261004_v1_launch.json"
+  ],
+  "pins": {
+    "metadata/baliphy_scalar_v6_preflight_plan_20261004_v1.json": "884f8222c67e39e243a6559226e8d775a66f71ee97453f66bd701fbd6bd7e0a6",
+    "metadata/baliphy_scalar_v6_preflight_producer_20261004_v1_launch.json": "dc6729e691d0215afd46bf9f6da77e34ea7c068fc9914af1fb8a2bc46534cbcb",
+    "metadata/baliphy_scalar_v6_preflight_reader_20261004_v1_launch.json": "e143ebff1d13fe833dddf5a3a1313b609019c81b6e07214b1c51d8ea00479c52",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/launch_baliphy_scalar_v6_preflight_v1.py": "f49525af9b4d72e84e2555355050a21ebf1a84fc355e6854bf8b90193e86d325",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_scalar_v6_preflight_completed_20261004_v1.json",
+  "scope": "All1620preparedfreshV6roles,405quartets,135inputs,324aliases. Native--test initialization only: exact scalar inverse, reference homology, fixed-tip/free-ancestor representation, degree-aware density and rooted-tree checks. Strict initial CJSON records are distinct from MCMC V6 scalar rows. Retain every invalid/nativefailure role. Full original producer/readback/source/artifact/two-journal closure required. No MCMC, joint/scalar sampling qualification, posterior acceptance, original restart, GPU or paidresources."
+}
