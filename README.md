@@ -16,15 +16,19 @@ The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal
 closure. A [fresh full closure check](metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json)
 verified all 45 archive bindings and three original terminal-success handles.
-Retained timing has started loading sources; weighted numerical qualification,
+Retained timing has started writing cohort results; weighted numerical qualification,
 fitting and calibration remain separate unfinished stages.
 
 The [dependent Gaussian simulation code](docs/weighted-shared-entity-simulation-20261004.md)
 is qualified for future uncertainty calibration: 192 dense covariance checks
 and 576 exact response replays across all 64 existing synthetic weighted models.
 It preserves phylogenetic/shared-entity/residual-weight dependence and retains
-unresolved replicate outcomes. Full-data simulation and native refits have
-not started; these software checks do not establish calibrated effects.
+unresolved replicate outcomes. The [actual simulation-refit bridge](docs/weighted-shared-entity-simulation-refits-20261004.md)
+now passes 128 unmocked refits and serialized independent replays using unchanged
+production optimizer settings: 44 independently checked working results and
+84 retained reviews. These are synthetic software cases. Full-data simulation
+and production biological refits have not started; these checks do not establish
+calibrated effects.
 
 The [full four-control covariance source census](docs/full-weighted-covariance-source-census-20261004.md)
 has completed all 4,340 original cohorts, 130,200 designs, 260,400 response

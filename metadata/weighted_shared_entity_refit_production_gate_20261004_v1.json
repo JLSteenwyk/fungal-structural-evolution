@@ -1,0 +1,32 @@
+{
+  "status": "refused_actual_unclosed_production_sources_before_refits",
+  "checked_utc": "2026-10-04T04:22:31.196800+00:00",
+  "failure_type": "AssertionError",
+  "failure_message": "Complete original timing closure is required before fitting admission",
+  "fit_plan_sha256": "475a58c6abd9ca7e85120980f6f34718d389de28eca341dce9c6c094cb1ef36f",
+  "timing_plan_sha256": "c3abcb82b71bd85d6c0e958d88d8724f13a3524d185536dbbb5bf960d4f8fb81",
+  "paths_before": {
+    "results/phylogeny/full-four-control-shared-entity-fits-20261004-v1": false,
+    "results/phylogeny/full-four-control-fit-execution-20261004-v1": false,
+    "metadata/full_weighted_fit_controller_plan_20261004_v1.json": false,
+    "metadata/full_weighted_shared_entity_fits_completed_20261004_v1.json": false
+  },
+  "paths_after": {
+    "results/phylogeny/full-four-control-shared-entity-fits-20261004-v1": false,
+    "results/phylogeny/full-four-control-fit-execution-20261004-v1": false,
+    "metadata/full_weighted_fit_controller_plan_20261004_v1.json": false,
+    "metadata/full_weighted_shared_entity_fits_completed_20261004_v1.json": false
+  },
+  "original_numerical_completion_present": false,
+  "original_timing_completion_present": false,
+  "full_production_source_admitted": false,
+  "production_biological_fits_computed": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "source_hashes": {
+    "metadata/full_weighted_shared_entity_fit_draft_plan_20261004_v1.json": "475a58c6abd9ca7e85120980f6f34718d389de28eca341dce9c6c094cb1ef36f",
+    "metadata/full_weighted_shared_entity_timing_plan_20261004_v2.json": "c3abcb82b71bd85d6c0e958d88d8724f13a3524d185536dbbb5bf960d4f8fb81",
+    "scripts/full_weighted_fit_admission.py": "34b8f58f949a6911431ef440be400b025be3f6a55ba1af6e23e703af1f38abf0"
+  },
+  "scope": "Actual original complete-production admission gate refused missing closures without new worker/resource/output/controller. No fabricated closure, source load, production fit or restart."
+}

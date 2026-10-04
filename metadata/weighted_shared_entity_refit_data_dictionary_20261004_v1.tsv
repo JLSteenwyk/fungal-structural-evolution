@@ -1,0 +1,20 @@
+field	type	definition
+calibration_contract	sha256	Exact source/model, original fit draft, method, optimizer/reader settings, nominal interval, code hashes and recorded environment.
+original_source_identity_sha256	sha256	Upstream original candidate identity; source audits and response remain distinct from the simulated identity.
+original_source_rows_sha256	sha256	Ordered original global row indices before cohort-local computational rebasing.
+gaussian_generation_sha256	sha256	Entire generated response/truth/seed/component-stream receipt.
+simulated_identity	object	Original source fields with a new generated candidate/response identity and explicit original source bindings.
+primary	object	Actual frozen optimizer result, all three original starts, budgets, numerical reviews and conditional covariance.
+independent	object	Actual frozen likelihood/start/curvature/search readback; source closure remains a separate requirement.
+refit_independently_checked_pending_calibration	status	Frozen independent reader passes its working-model checks; still not calibrated or scientifically eligible.
+refit_requires_review	status	Primary or independent numerical/curvature/search outcome requires review and remains in denominator.
+refit_error_requires_review	status	Actual primary failure or expected independent numerical exception retained without coverage promotion.
+nominal_interval_diagnostics	object_or_null	For independently checked refits only, beta, truth, conditional SE, standardized error, normal-Wald limits and coverage booleans.
+nominal_interval_covers_generating_beta	boolean_vector	Coverage of fixed conditional normal-Wald nominal95% target; only populated for independently checked refits.
+interval_definition	object	Prespecified standard-normal95% conditional covariance target; estimated-variance uncertainty and empirical coverage unestablished.
+fits_computed	integer	One original primary refit attempted per Gaussian record; reader may separately reproduce failures.
+full_production_source_admitted	boolean	False for this primitive and all synthetic software verification; full original production admission remains separate.
+attempted	integer	Exactly all prescribed replicates, including failed and reviewed outcomes.
+unresolved	integer	Prescribed replicates without independently checked intervals; remain in denominator and Monte Carlo envelope.
+empirical_coverage_accepted	boolean	False; software integration does not establish coverage calibration.
+scientific_eligibility	boolean	False for all generated/refit/accounting records.

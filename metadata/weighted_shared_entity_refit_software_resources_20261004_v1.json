@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-10-04T04:17:24.309423+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 3600,
+  "wall_seconds_per_stage": 7200,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "output_allowance_gib": 2,
+  "available_ram_gib": 151.8799171447754,
+  "free_disk_gib": 10283.589038848877,
+  "runtime_calibrated": false,
+  "runtime_planning_seconds": [
+    10,
+    3600
+  ],
+  "gpu": false,
+  "new_cost_usd": 0,
+  "original_software_model_cases": 64,
+  "actual_software_refits": 128,
+  "serialized_independent_refit_replays": 128,
+  "scope": "Actual frozen optimizer and independent reader on all64synthetic original axes, zero/positive Gaussian scenarios, strict unchanged production settings and retained reviews. One replicate/model/scenario exercises software, not biological calibration or a pilot. Production source closure/admission, generating scenarios and replicate planning remain required."
+}

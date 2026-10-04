@@ -3259,3 +3259,27 @@ or uncertainty acceptance is established. Actual source/fit admission,
 scenarios/replicate counts, full independent refits, selection/tree uncertainty,
 global cross-model dependence and multiple testing remain required.
 [Generator, evidence and primary software references](weighted-shared-entity-simulation-20261004.md).
+
+## October 4: frozen mathematical refits of dependent Gaussian responses
+
+Connected the dependent generator to the original actual-D optimizer and
+independent spectral reader with unchanged strict production settings. Original
+source identity/response/row mapping and generating X/D/operators/F contracts
+remain distinct from each simulated candidate identity. Generating variance
+must remain inside the original scaled box and does not seed optimizer starts.
+The nominal calibration target uses normal95% Wald limits from fitted
+conditional coefficient covariance for both ML and REML; estimated-variance
+uncertainty and empirical coverage are not established.
+
+Software qualification ran 128 actual unmocked refits over all 64 original
+synthetic axes and two generating scenarios. Each serialized candidate passed
+frozen independent replay and dense selected-point likelihood/coefficient/
+covariance/scale comparisons. Forty-four independently checked working outcomes
+and 84 reviews are retained. All prescribed outcomes remain in the coverage
+denominator; complete contracts and replay precede accounting. Invariant failures
+are not swallowed as numerical reviews. A separate injected-reader-exception
+fixture checks error accounting, not biological calibration. Original tool wait,
+wrapper/invocation, manager start/end and entire terminal receipt/hash payload
+were verified. Full production source admission, real fitting/calibration,
+global dependence/selection/multiple-testing and all eight aims remain open.
+[Implementation, original evidence and limits](weighted-shared-entity-simulation-refits-20261004.md).

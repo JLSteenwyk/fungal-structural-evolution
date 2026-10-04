@@ -13258,3 +13258,47 @@ This turn is progress through actual full retained closure verification and
 implemented/qualified dependent simulation. The full structural atlas, accepted
 phylogenetic/reconciliation/dating framework and all eight aims remain incomplete.
 [Generator and original evidence](weighted-shared-entity-simulation-20261004.md).
+
+## October 4, 04:22 UTC: actual Gaussian refits and independent replay qualified
+
+Implemented source/identity/design-bound response-to-optimizer and frozen
+independent-reader integration without altering production settings or parents.
+Original response/row/coefficient identity stays distinct from simulated
+response/truth/seed identities. The nominal conditional normal95% Wald target
+is fixed in the calibration contract, with no empirical coverage claim.
+
+All 128 actual unmocked refits across the 64 original synthetic model axes and
+zero/positive generating scenarios passed serialized independent replay and
+dense selected-point comparisons. Forty-four independent working checks passed;
+84 producer/independent reviews remain unresolved in the prescribed denominators.
+Maximum dense objective/beta differences were 4.70e-10/3.77e-11. Thirty-nine
+source/replay/interval/generation/accounting changes were rejected. A separate
+explicit injected-reader exception remained unresolved and could not replay
+as an actual numerical result. No published parent bytes were modified.
+
+Original tool wait 3751 exited zero, wrapper 123957/invocation and complete
+original terminal receipt/hash payload plus manager start/completion were
+verified with 1,412 bound files. Software CPU/wall/RSS were 124.34 seconds/
+128.52 seconds/155,181,056 bytes. These are synthetic software measurements,
+not full-data estimates or biological calibration. Actual complete-production
+admission still refuses missing original timing closure without creating any
+fitting/resource/controller/output artifact.
+
+At 04:21 UTC weighted numerical production reported330/4,340 cohorts, with331 audit/
+330 link segments and no recorded failure. All original numerical/timing handles
+remain live; full closures are absent. Retained timing has two cohort receipts
+after its complete original retained-basis prerequisite, but no full timing
+receipt or closure. GPU prediction stays paused; no new charge.
+
+The intervening user error recheck freshly reproduced the installed formatter
+error on five of 12 constants; replacement CJSON constants and retained corrected
+sequence/state frames pass their scoped tests. Follow-up logs contain no new
+crash/allocation signature, but20 attempts timed out and four workers remained
+live at 04:10 UTC. The formatter and previous crashes are not declared fixed.
+
+Previous goal turn was progress through complete retained closure and dependent
+generator qualification. This turn is progress through implemented actual
+refits, software qualification, actual production-gate refusal and publication.
+Full production fitting/calibration, atlas, accepted species/gene/reconciliation/
+dating framework and all eight biological aims remain incomplete.
+[Actual refit scope and original evidence](weighted-shared-entity-simulation-refits-20261004.md).

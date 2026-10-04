@@ -1,0 +1,274 @@
+{
+  "status": "verified_original_full_retained_timing_runtime",
+  "checked_utc": "2026-10-04T04:21:51.128481+00:00",
+  "source_plan": "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json",
+  "source_plan_sha256": "a9d126e5a26ac86f21922b1b6d029d807056c782e190dd6c1311c3099c03d42f",
+  "frozen_pins_checked": 30,
+  "original_handles": [
+    {
+      "unit": "fungal-full-retained-shared-entity-timing-v1-20261003-v1.service",
+      "pid": 1177410,
+      "created": 1791063718.06,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_retained_shared_entity_timing_v1_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_retained_shared_entity_timing_v1_wait_plan_20261003.json",
+      "plan_sha256": "60d15f3f3f66b8ddf1f051d3609511913c99c0eb31d93ed45e974c11edfbb7b8",
+      "checked_utc": "2026-10-03T21:41:58.802842+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-retained-shared-entity-timing-v1-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_retained_shared_entity_timing_v1_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_retained_shared_entity_timing_v1_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.98,
+      "children": [
+        {
+          "pid": 57441,
+          "created": 1791083267.0,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/prepare_full_retained_shared_entity_timing.py",
+            "--plan",
+            "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 2814.0699999999997
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "b6beb58541e6017d81d211c7b2e98aa56fd421aa6f19765c5ca877554131ff3b",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 32428515328,
+        "memory.peak": 34359738368,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 90061,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 57441,
+          "created": 1791083267.0,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/prepare_full_retained_shared_entity_timing.py",
+            "--plan",
+            "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json"
+          ],
+          "rss_bytes": 4302036992,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         25769803776          25769803776          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-retained-shared-entity-timing-v1-readback-20261003-v1.service",
+      "pid": 1177414,
+      "created": 1791063718.12,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_retained_shared_entity_timing_v1_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_retained_shared_entity_timing_v1_readback_wait_plan_20261003.json",
+      "plan_sha256": "b970c4ce3f8c70545cc5df7519e3f8a0c9625ee480cf018eef91910d36b9fe92",
+      "checked_utc": "2026-10-03T21:41:58.856423+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-retained-shared-entity-timing-v1-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_retained_shared_entity_timing_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_retained_shared_entity_timing_v1_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 1.27,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "767aa1f8b0736dae5e2dbc7df8d604dfcf39f7848924f32dcc639bd633882fa4",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8470528,
+        "memory.peak": 8994816,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "unit": "fungal-full-retained-shared-entity-timing-v1-closure-20261003-v1.service",
+      "pid": 1177418,
+      "created": 1791063718.17,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_retained_shared_entity_timing_v1_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_retained_shared_entity_timing_v1_closure_wait_plan_20261003.json",
+      "plan_sha256": "529ff2fe6478ef025881792cab8c5d9cfc0974120b84e61ecd1a1c7da91875f9",
+      "checked_utc": "2026-10-03T21:41:58.908472+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-retained-shared-entity-timing-v1-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_retained_shared_entity_timing_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_retained_shared_entity_timing_v1_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 1.5599999999999998,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "944c2b3d715b8a53efdf81932b6d7e1fa3ca8e3b8c9eb476ee5b8838f4599355",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8474624,
+        "memory.peak": 8990720,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "launch": "metadata/reduced_covariance_process_source_v3_closure_launch_20261003.json",
+      "pid": 963503,
+      "created": 1791060866.38,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/reduced_covariance_process_source_v3_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "6bf26565ff277957a2d4c50c0ee204fabb305cb567bfeff1f1595271096ad918",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "7e1d722dc0e0fe87d944320912319fbfbb9835807d6492c7032f74cda1a4f1d6",
+      "captured_process_messages": 746,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791083250926875",
+          "CPU_USAGE_NSEC": "12681098000",
+          "MEMORY_PEAK": "2236416",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "completion_gates": {
+    "metadata/full_uniform_covariance_process_completed_20261003_v2.json": {
+      "present": true,
+      "status": "complete_verified_full_uniform_covariance_qualification",
+      "sha256": "b6b25289bf92b0fedaa15324217d4f49f6d327e2559283ee050c64d766ab772d",
+      "bound_source_hashes": 2378669,
+      "exact_process_journals_checked": 2
+    },
+    "metadata/full_reduced_covariance_qualification_completed_20261003_v3.json": {
+      "present": true,
+      "status": "complete_verified_full_exact_retained_uniform_covariance_qualification_v3",
+      "sha256": "1438c6e6f579335b90efe516446fc6e54189b06e0f64454d8625056e73f8ea38",
+      "bound_source_hashes": 45,
+      "exact_process_journals_checked": 2
+    },
+    "metadata/full_retained_shared_entity_timing_completed_20261003_v1.json": {
+      "present": false
+    }
+  },
+  "output_root_present": true,
+  "completed_cohort_receipts": 2,
+  "expected_cohorts": 4340,
+  "full_candidate_census": 5208000,
+  "producer_receipt_present": false,
+  "independent_readback_present": false,
+  "production_fitting_launched": false,
+  "all_eight_aims_incomplete": true,
+  "gpu": false,
+  "scope": "Original PID/create/command or invocation-specific terminal evidence, frozen plan/pins and current cgroup caps checked. Compact closure/archive presence and cohort counts only; no full source/artifact or timing replay, accepted fit, calibrated finish ETA or biological acceptance inferred. No job restart, limit change or original output mutation."
+}

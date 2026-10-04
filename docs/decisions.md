@@ -1708,3 +1708,22 @@ software evidence only. Original source/fit admission, complete scenarios and
 native refits, joint dependence across models, selection/tree uncertainty and
 multiple-testing control remain open. Preserve original qualified parents.
 [Generator and original evidence](weighted-shared-entity-simulation-20261004.md).
+
+## October 4: freeze source interpretation and the nominal interval before refitting
+
+Require upstream hashes of original identity and generating X/D/operators/F,
+in addition to frozen covariance guards, so column-space invariance cannot hide
+a changed coefficient interpretation. Keep original row and response identity
+when rebasing cohort-local arrays. Preserve production settings and all original
+three optimizer starts; generating truth must not become a search start.
+
+Use the conditional normal95% Wald interval as an explicit calibration target,
+without claiming coverage or estimated-variance uncertainty. Bind this target,
+method, source, environment and frozen math settings in each calibration
+contract. Serialized independent numerical replay must precede coverage
+accounting. Retain every review/failure in prescribed denominators; invariant
+assertions remain fatal and original attempts immutable. Qualification uses
+128 actual refits across all 64 original synthetic axes, with a separately
+labeled injected error branch. No biological pilot or full-data calibration
+is substituted for the complete project.
+[Refit evidence and remaining full scope](weighted-shared-entity-simulation-refits-20261004.md).

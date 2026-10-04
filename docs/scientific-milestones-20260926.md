@@ -1536,3 +1536,17 @@ model cases,192 dense covariance/576response-replay checks and fixed-sample
 unresolved accounting. No production refit/calibration or accepted biological
 effect; all eight aims remain incomplete. GPU prediction paused; no new charge.
 [Simulation scope and complete original evidence](weighted-shared-entity-simulation-20261004.md).
+
+October 4, 04:22 UTC: dependent Gaussian responses now run through the actual
+frozen optimizer and independent reader. All 128 synthetic model refits and
+serialized numerical replays passed; 44 working checks and 84 reviews are retained
+without inferential promotion. Source/method/interval/seed/history contracts
+and all prescribed unresolved denominators are checked. Dense selected-point
+differences remain below 5e-10. Actual wait 3751 / original wrapper / invocation / complete
+terminal hash payload / manager start and end verified. Real full production admission
+still refuses missing original timing closure; no real fit launched. Weighted
+numerical job reports330/4,340 cohorts with no recorded failure; retained timing
+has two cohort receipts. Full calibration/global dependence, biological model
+adequacy, accepted phylogenetic/reconciliation/dating framework, complete atlas
+and all eight aims remain open. GPU paused; no new charge.
+[Refits, original proof and scientific limits](weighted-shared-entity-simulation-refits-20261004.md).

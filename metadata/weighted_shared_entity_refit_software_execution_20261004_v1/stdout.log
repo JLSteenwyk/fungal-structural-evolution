@@ -1,0 +1,234 @@
+actual_gaussian_refits 1
+actual_gaussian_refits 2
+actual_gaussian_refits 3
+actual_gaussian_refits 4
+actual_gaussian_refits 5
+actual_gaussian_refits 6
+actual_gaussian_refits 7
+actual_gaussian_refits 8
+actual_gaussian_refits 9
+actual_gaussian_refits 10
+actual_gaussian_refits 11
+actual_gaussian_refits 12
+actual_gaussian_refits 13
+actual_gaussian_refits 14
+actual_gaussian_refits 15
+actual_gaussian_refits 16
+actual_gaussian_refits 17
+actual_gaussian_refits 18
+actual_gaussian_refits 19
+actual_gaussian_refits 20
+actual_gaussian_refits 21
+actual_gaussian_refits 22
+actual_gaussian_refits 23
+actual_gaussian_refits 24
+actual_gaussian_refits 25
+actual_gaussian_refits 26
+actual_gaussian_refits 27
+actual_gaussian_refits 28
+actual_gaussian_refits 29
+actual_gaussian_refits 30
+actual_gaussian_refits 31
+actual_gaussian_refits 32
+actual_gaussian_refits 33
+actual_gaussian_refits 34
+actual_gaussian_refits 35
+actual_gaussian_refits 36
+actual_gaussian_refits 37
+actual_gaussian_refits 38
+actual_gaussian_refits 39
+actual_gaussian_refits 40
+actual_gaussian_refits 41
+actual_gaussian_refits 42
+actual_gaussian_refits 43
+actual_gaussian_refits 44
+actual_gaussian_refits 45
+actual_gaussian_refits 46
+actual_gaussian_refits 47
+actual_gaussian_refits 48
+actual_gaussian_refits 49
+actual_gaussian_refits 50
+actual_gaussian_refits 51
+actual_gaussian_refits 52
+actual_gaussian_refits 53
+actual_gaussian_refits 54
+actual_gaussian_refits 55
+actual_gaussian_refits 56
+actual_gaussian_refits 57
+actual_gaussian_refits 58
+actual_gaussian_refits 59
+actual_gaussian_refits 60
+actual_gaussian_refits 61
+actual_gaussian_refits 62
+actual_gaussian_refits 63
+actual_gaussian_refits 64
+actual_gaussian_refits 65
+actual_gaussian_refits 66
+actual_gaussian_refits 67
+actual_gaussian_refits 68
+actual_gaussian_refits 69
+actual_gaussian_refits 70
+actual_gaussian_refits 71
+actual_gaussian_refits 72
+actual_gaussian_refits 73
+actual_gaussian_refits 74
+actual_gaussian_refits 75
+actual_gaussian_refits 76
+actual_gaussian_refits 77
+actual_gaussian_refits 78
+actual_gaussian_refits 79
+actual_gaussian_refits 80
+actual_gaussian_refits 81
+actual_gaussian_refits 82
+actual_gaussian_refits 83
+actual_gaussian_refits 84
+actual_gaussian_refits 85
+actual_gaussian_refits 86
+actual_gaussian_refits 87
+actual_gaussian_refits 88
+actual_gaussian_refits 89
+actual_gaussian_refits 90
+actual_gaussian_refits 91
+actual_gaussian_refits 92
+actual_gaussian_refits 93
+actual_gaussian_refits 94
+actual_gaussian_refits 95
+actual_gaussian_refits 96
+actual_gaussian_refits 97
+actual_gaussian_refits 98
+actual_gaussian_refits 99
+actual_gaussian_refits 100
+actual_gaussian_refits 101
+actual_gaussian_refits 102
+actual_gaussian_refits 103
+actual_gaussian_refits 104
+actual_gaussian_refits 105
+actual_gaussian_refits 106
+actual_gaussian_refits 107
+actual_gaussian_refits 108
+actual_gaussian_refits 109
+actual_gaussian_refits 110
+actual_gaussian_refits 111
+actual_gaussian_refits 112
+actual_gaussian_refits 113
+actual_gaussian_refits 114
+actual_gaussian_refits 115
+actual_gaussian_refits 116
+actual_gaussian_refits 117
+actual_gaussian_refits 118
+actual_gaussian_refits 119
+actual_gaussian_refits 120
+actual_gaussian_refits 121
+actual_gaussian_refits 122
+actual_gaussian_refits 123
+actual_gaussian_refits 124
+actual_gaussian_refits 125
+actual_gaussian_refits 126
+actual_gaussian_refits 127
+actual_gaussian_refits 128
+{
+  "status": "passed_actual_weighted_gaussian_refits_and_frozen_readback_v1",
+  "checked_utc": "2026-10-04T04:19:49.163892+00:00",
+  "original_software_model_cases": 64,
+  "original_axis_combinations": 64,
+  "basis_dimensions": [
+    4,
+    5,
+    6
+  ],
+  "generating_scenarios": 2,
+  "actual_software_refits": 128,
+  "serialized_independent_refit_replays": 128,
+  "primary_status_counts": {
+    "optimized_shared_entity_candidate_pending_independent_audit": 78,
+    "shared_entity_optimizer_candidate_requires_review": 50
+  },
+  "independent_status_counts": {
+    "independently_audited_working_candidate_pending_inferential_calibration": 44,
+    "independent_curvature_or_search_requires_review": 34,
+    "producer_candidate_requires_review_independent_numeric_replay_passed": 50
+  },
+  "refit_status_counts": {
+    "refit_independently_checked_pending_calibration": 44,
+    "refit_requires_review": 84
+  },
+  "dense_selected_point_comparisons": 128,
+  "maximum_absolute_dense_objective_error": 4.698392785940086e-10,
+  "maximum_absolute_dense_beta_error": 3.765665557153852e-11,
+  "source_rejections": [
+    "plan_hash",
+    "identity_hash",
+    "response_hash",
+    "model_contract",
+    "rotated_design",
+    "row_order",
+    "repeated_rows",
+    "fractional_rows",
+    "outside_rows",
+    "coefficient_mapping",
+    "science_promotion",
+    "nonuniform_promotion",
+    "source_gram",
+    "route",
+    "diagonal"
+  ],
+  "replay_rejections": [
+    "generation_seed",
+    "generation_truth",
+    "response_hash",
+    "calibration_contract",
+    "interval_reference",
+    "method",
+    "primary_objective",
+    "primary_start",
+    "primary_identity",
+    "primary_budget",
+    "independent_disposition",
+    "refit_status",
+    "lost_review",
+    "science_promotion",
+    "invented_failure"
+  ],
+  "interval_rejections": [
+    "coverage",
+    "standard_error",
+    "interval_lower",
+    "generating_beta"
+  ],
+  "generating_rejections": [
+    "outside_scaled_box",
+    "negative_ratio"
+  ],
+  "accounting_rejections": [
+    "missing_replicate",
+    "duplicate_replicate",
+    "foreign_context"
+  ],
+  "injected_reader_error_branch_retained": true,
+  "interval_definition": {
+    "name": "conditional_normal_wald_nominal_95_percent",
+    "nominal_probability": 0.95,
+    "reference": "standard_normal",
+    "critical_value": 1.959963984540054,
+    "covariance": "fitted_conditional_beta_covariance",
+    "variance_estimation_uncertainty_included": false,
+    "empirical_coverage_established": false
+  },
+  "original_full_expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "designs": 130200,
+    "fit_inputs": 260400,
+    "settings": 622080,
+    "candidate_rows": 20832000,
+    "setting_fit_links": 49766400
+  },
+  "full_production_source_admitted": false,
+  "full_data_simulation_launched": false,
+  "empirical_coverage_accepted": false,
+  "scientific_eligibility": false,
+  "production_biological_fits_computed": 0,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "128 actual unmocked frozen mathematical refits over 64 synthetic original model axes, with serialized independent checks, selected-point dense references and all reviews retained. Single replicate per model/scenario exercises plumbing, not coverage calibration. Exception injection is a separate explicit software fixture. No full source admission, biological calibration, global joint-null/multiple-testing analysis or aim completion claimed."
+}
