@@ -1,0 +1,20 @@
+field	type	definition
+scalar_rows_compared	integer	All 34,020 original scalar rows assessed; malformed JSON remains unavailable rather than numerically compared.
+valid_json_scalar_records_compared	integer	34,001 valid mapped records compared with original TSV.
+invalid_json_scalar_records_retained	integer	19 malformed records retained with source, line hash, prefix iteration and error; no token repair.
+numeric_values_compared	integer	1,462,043 mapped numeric comparisons, including iteration fields.
+unavailable_numeric_comparisons_invalid_json	integer	817 mapped comparisons unavailable because the entire original JSON row is malformed.
+encoding_discrepancy_values	integer	33 scalar JSON/TSV discrepancies at 2e-13 relative and zero absolute tolerance; all in alpha.
+original_category_rates	vector	Four unmodified historical category rates; each repeats across twenty amino-acid states.
+pure_native_model_rates	vector	Native conditional bin means with mixture scaling at logged TSV alpha; diagnostic reference, not restored historical sampler floats.
+native_original_encoder_values	vector	Faulty original encoder rendering of pure reference rates; contextual evidence, not a repair.
+rate_discrepancy_frames	integer	14 frames with at least one category discrepancy against native CJSON reference.
+rate_discrepancy_frames_passing_mean_one	integer	Two discrepant frames still pass the original strict mean-one check.
+rate_discrepancy_categories	integer	17 category values with discrepancies; not independent posterior observations.
+rate_discrepancy_repeated_cells	integer	340 repeated rate cells, twenty states per category; not 340 independent observations.
+independent_gamma_reference	object	SciPy conditional bin mean/normal limit reference with declared cross-library precision; function shared by reader.
+historical_rate_properties_qualified	boolean	False for all 4,860 frames and 388,800 historical cells, including matching values.
+original_numbers_repaired	boolean	False; original values are retained and never replaced or renormalized.
+separate_direct_scalar_lookup	boolean	Reader resolves mapped hierarchical keys without producer flattening implementation.
+native_roundtrip_checks_inherited	boolean	Reader reuses actual native batch facts; it does not rerun native calculations.
+scientific_eligibility	boolean	False; no ancestral posterior, likelihood, model adequacy or biological acceptance.

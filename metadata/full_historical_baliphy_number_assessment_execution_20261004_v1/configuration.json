@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/assess_full_historical_baliphy_numbers.py",
+    "--output",
+    "results/ancestral/full-historical-number-assessment-20261004-v1",
+    "--receipt",
+    "metadata/full_historical_baliphy_number_assessment_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_historical_baliphy_number_assessment_resources_20261004_v1.json": "3f7b74ec789fb0deff552000a16663b83f380e036062aaab5a545f0bc21db54a",
+    "scripts/assess_full_historical_baliphy_numbers.py": "5eba91126b9a471d3c02cbbb13797ed0f0ca2bc337e6fcad65afcec5d6f8a596",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "092ce68e8c7f499281bf52b0af6e3bba",
+  "wrapper": {
+    "pid": 141901,
+    "created": 1791088643.83,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_historical_baliphy_number_assessment_resources_20261004_v1.json",
+      "--execution",
+      "metadata/full_historical_baliphy_number_assessment_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/full_historical_baliphy_number_assessment_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/assess_full_historical_baliphy_numbers.py",
+      "--output",
+      "results/ancestral/full-historical-number-assessment-20261004-v1",
+      "--receipt",
+      "metadata/full_historical_baliphy_number_assessment_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T04:37:24.858975+00:00"
+}

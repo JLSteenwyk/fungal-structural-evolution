@@ -1,5 +1,11 @@
 # Native scientific-number formatting failure
 
+October 4: the [full scalar/rate assessment](full-historical-number-assessment-20261004.md)
+extends the original normalization census below. It finds 14 discrepant rate
+frames, including two mean-passing frames, 33 altered scalar alpha values and
+19 malformed scalar JSON records. Full separate readback and original driver
+journals are verified; no damaged number was repaired or qualified.
+
 All 1,620 historical 20-iteration sampler runs completed native execution and
 output/readback closure with zero allocation failures. This is a computational
 qualification result, not an adequate posterior. Their resource observer also

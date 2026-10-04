@@ -13302,3 +13302,49 @@ refits, software qualification, actual production-gate refusal and publication.
 Full production fitting/calibration, atlas, accepted species/gene/reconciliation/
 dating framework and all eight biological aims remain incomplete.
 [Actual refit scope and original evidence](weighted-shared-entity-simulation-refits-20261004.md).
+
+## October 4, 04:47 UTC: full historical number assessment and readback closed
+
+Assessed all 1,620 historical short-sampler roles, 405 model groups, 135 inputs,
+324 aliases, 34,020 scalar rows and 4,860 property frames. Mapped JSON/TSV
+comparison found 33 altered alpha values in valid scalar JSON, plus 19 malformed
+rows containing bare inf, with 817 numeric comparisons unavailable. Valid rows
+provided 1,462,043 numeric comparisons. The separate reader resolves hierarchical
+mapped keys directly rather than using the producer's flattening traversal.
+
+Pure installed native gamma/CJSON evaluation at every saved-frame TSV alpha
+found 17 discrepant category values in 14 frames, corresponding to 340 repeated
+amino-acid rate cells. Two new frames pass strict normalization despite exponent
+changes from about e-290/e-210 to e-29/e-21. All fourteen discrepant frames agree
+with the faulty original encoder's rendering at the declared precision. All
+19,440 native double roundtrips pass. SciPy rate references agree for all 4,860
+frames at the separate cross-library tolerance; the reader shares that reference
+function and does not repeat the native probe. All 388,800 historical rate cells
+remain unqualified. No original number, library or native attempt was changed.
+
+The first producer failed while parsing the native timing footer after its pure
+native batch exited zero. Original wait 69576/exit1 and all sources/output are
+preserved. Fresh V2 validates exactly 4,860 records plus the full six-line footer
+without changing numeric tolerances. Actual waits 88091 and 75257 exited zero;
+exact wrapper identity, invocation-specific manager start/end and entire
+terminal receipt/hash payload are verified. Full closure binds 8,170 source/artifact paths and
+both original driver journals. Producer/readback CPU times were 34.36/21.08
+seconds, with reported child RSS 346,537,984/216,764,416 bytes. No MCMC or GPU ran.
+
+V5 corrects ancestral properties but scalar parameter JSON still uses the
+faulty formatter. A future reversible scalar-encoding correction with explicit
+nonfinite-state handling is required; current programs remain immutable. This
+assessment is not recovery of exact historical floats, installed bug/crash
+repair or adequate posterior inference.
+
+At 04:46 UTC the original weighted numerical job reported 370/4,340 cohorts,
+with 374 audit/373 link segments and no recorded failures. Its complete closure
+and the original weighted timing closure remain absent; all original handles
+remain live. Stack follow-up has 21 unsuccessful checkpoints and three verified
+live workers, with no posterior qualification. GPU prediction remains paused;
+no new charge. Previous goal turn was progress through actual simulation refit
+qualification. This turn is progress through complete historical assessment,
+new discrepancy evidence, full serialized readback and publication. Full atlas,
+accepted phylogenetic/reconciliation/dating framework, production fitting/
+calibration and all eight biological aims remain incomplete.
+[Full data, scripts, original evidence and next correction](full-historical-number-assessment-20261004.md).

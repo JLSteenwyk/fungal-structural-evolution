@@ -6,6 +6,14 @@ installed native CJSON encoder. No installed binary or library was patched.
 All failed runs, historical numbers and original model programs remain intact.
 [Original diagnosis](baliphy-native-number-formatting-20261003.md).
 
+October 4 update: [complete historical scalar/rate assessment](full-historical-number-assessment-20261004.md)
+and separate readback found 33 altered alpha values in valid scalar JSON,
+19 malformed scalar records, and 14 rate frames with discrepancies, including
+two that pass mean normalization. V5 fixes only the ancestral-property field;
+scalar parameter JSON still needs a separately qualified reversible correction.
+All 388,800 historical rate cells remain unqualified and unchanged. These
+observations do not declare the installed formatter or prior crashes fixed.
+
 ## Exact scope of the correction
 
 `baliphy_joint_node_logger_v5.py` composes the preserved full-node/same-record

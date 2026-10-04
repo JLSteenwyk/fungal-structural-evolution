@@ -1,0 +1,56 @@
+historical_numeric_independent_lookup_readback 100 /1620
+historical_numeric_independent_lookup_readback 200 /1620
+historical_numeric_independent_lookup_readback 300 /1620
+historical_numeric_independent_lookup_readback 400 /1620
+historical_numeric_independent_lookup_readback 500 /1620
+historical_numeric_independent_lookup_readback 600 /1620
+historical_numeric_independent_lookup_readback 700 /1620
+historical_numeric_independent_lookup_readback 800 /1620
+historical_numeric_independent_lookup_readback 900 /1620
+historical_numeric_independent_lookup_readback 1000 /1620
+historical_numeric_independent_lookup_readback 1100 /1620
+historical_numeric_independent_lookup_readback 1200 /1620
+historical_numeric_independent_lookup_readback 1300 /1620
+historical_numeric_independent_lookup_readback 1400 /1620
+historical_numeric_independent_lookup_readback 1500 /1620
+historical_numeric_independent_lookup_readback 1600 /1620
+{
+  "status": "passed_full_historical_number_assessment_direct_lookup_readback",
+  "checked_utc": "2026-10-04T04:44:39.963619+00:00",
+  "producer_receipt_sha256": "f09dcc71d84c636d46d0fdeaae1140b3d487a381aa52b1655e38cd0c0f2150c4",
+  "full_roles": 1620,
+  "full_property_frames": 4860,
+  "scalar_rows_compared": 34020,
+  "scalar_numeric_counts": {
+    "valid_json_scalar_records_compared": 34001,
+    "numeric_values_compared": 1462043,
+    "agrees_at_declared_relative_precision": 1462010,
+    "encoding_discrepancy_values": 33,
+    "invalid_json_scalar_records_retained": 19,
+    "unavailable_numeric_comparisons_invalid_json": 817
+  },
+  "rate_counts": {
+    "category_values_compared": 19440,
+    "repeated_amino_acid_rate_cells_compared": 388800,
+    "rate_discrepancy_categories": 17,
+    "rate_discrepancy_repeated_cells": 340,
+    "mean_one_pass_frames": 4848,
+    "independent_gamma_agreement_frames": 4860,
+    "mean_one_failed_frames": 12,
+    "rate_discrepancy_frames": 14,
+    "discrepancy_frames_consistent_with_original_encoder": 14,
+    "rate_discrepancy_frames_passing_mean_one": 2
+  },
+  "native_double_roundtrips": 19440,
+  "native_roundtrip_checks_inherited": true,
+  "separate_direct_scalar_lookup": true,
+  "native_rate_probe_repeated": false,
+  "scipy_reference_function_shared": true,
+  "original_numbers_repaired": false,
+  "native_mcmc_runs": 0,
+  "all_historical_rate_cells_unqualified": 388800,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "scope": "All original mapped TSV/JSON rows and property values reconstructed with a separate direct scalar lookup; every discrepancy/malformed-record/status/count and full serialized rate/alpha/reference field checked. Native batch/roundtrip and original-source closure evidence inherited; SciPy function is shared. No restored native historical floats, repaired output, posterior acceptance, new MCMC or installed correction."
+}

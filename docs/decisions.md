@@ -1727,3 +1727,22 @@ assertions remain fatal and original attempts immutable. Qualification uses
 labeled injected error branch. No biological pilot or full-data calibration
 is substituted for the complete project.
 [Refit evidence and remaining full scope](weighted-shared-entity-simulation-refits-20261004.md).
+
+## October 4: assess all historical numeric output without repairing exponents
+
+Compare every mapped scalar JSON field with original native TSV output and
+retain malformed JSON rows as unavailable. Assess all property frames against
+pure installed native gamma/CJSON references at logged TSV alpha; keep the
+second SciPy reference and its distinct precision scope explicit. Mean-one
+normalization alone misses tiny rates with major relative exponent damage.
+Do not adopt recomputed values as recovered original sampler floats or promote
+matching historical values to qualified rates.
+
+The complete census/readback confirms 33 scalar alpha discrepancies, 19 malformed
+records and 14 discrepant rate frames, including two normalization-passing
+frames. Preserve the footer parser failure and run a separate V2 namespace;
+do not change old outputs, installed code or numeric tolerances. Future source
+correction must cover scalar parameter JSON as well as V5 ancestral properties,
+and distinguish nonfinite limit states explicitly. Current jobs and all
+388,800 historical rate cells remain unchanged and unqualified.
+[Complete evidence and scientific limits](full-historical-number-assessment-20261004.md).

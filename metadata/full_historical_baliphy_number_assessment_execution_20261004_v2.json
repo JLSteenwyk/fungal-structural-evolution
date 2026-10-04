@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/assess_full_historical_baliphy_numbers_v2.py",
+    "--output",
+    "results/ancestral/full-historical-number-assessment-20261004-v2",
+    "--receipt",
+    "metadata/full_historical_baliphy_number_assessment_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_historical_baliphy_number_assessment_resources_20261004_v2.json": "c8876317427825edeedbf0d2b3d0876b5ab76ccfc272e5d832186b176d175e3c",
+    "scripts/assess_full_historical_baliphy_numbers_v2.py": "96e8ec5017f29f0d12830020562a031001b416f8aa8d28aeb071aea7134e8062",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "947d8308bea240948a2b53a1f1849de6",
+  "wrapper": {
+    "pid": 144298,
+    "created": 1791088809.26,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_historical_baliphy_number_assessment_resources_20261004_v2.json",
+      "--execution",
+      "metadata/full_historical_baliphy_number_assessment_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/full_historical_baliphy_number_assessment_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/assess_full_historical_baliphy_numbers_v2.py",
+      "--output",
+      "results/ancestral/full-historical-number-assessment-20261004-v2",
+      "--receipt",
+      "metadata/full_historical_baliphy_number_assessment_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T04:40:10.317573+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T04:40:44.807542+00:00",
+  "child": {
+    "pid": 144300,
+    "created": 1791088809.62,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/assess_full_historical_baliphy_numbers_v2.py",
+      "--output",
+      "results/ancestral/full-historical-number-assessment-20261004-v2",
+      "--receipt",
+      "metadata/full_historical_baliphy_number_assessment_20261004_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 34.48970760102384,
+  "child_cpu_seconds": 34.361106,
+  "child_peak_rss_bytes": 346537984,
+  "receipt": "metadata/full_historical_baliphy_number_assessment_20261004_v2.json",
+  "receipt_sha256": "f09dcc71d84c636d46d0fdeaae1140b3d487a381aa52b1655e38cd0c0f2150c4",
+  "artifacts": {
+    "metadata/full_historical_baliphy_number_assessment_execution_20261004_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_historical_baliphy_number_assessment_execution_20261004_v2/configuration.json": "924b5b5fa17515b58b52ec40444116d822363937f9ea4a6fefc1c8827ce2435a",
+    "metadata/full_historical_baliphy_number_assessment_execution_20261004_v2/stdout.log": "1be6ef0da41ed153e898ba6e7f07a3b2c43ca331bcf18c92c16ae52972c68502",
+    "metadata/full_historical_baliphy_number_assessment_execution_20261004_v2/process.json": "15ec0f563d69852bed3d4526a0cc0e5e663c20853818e395be97cc9b2aa14e3e"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

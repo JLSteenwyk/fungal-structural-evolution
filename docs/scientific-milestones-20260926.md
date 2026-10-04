@@ -1550,3 +1550,15 @@ has two cohort receipts. Full calibration/global dependence, biological model
 adequacy, accepted phylogenetic/reconciliation/dating framework, complete atlas
 and all eight aims remain open. GPU paused; no new charge.
 [Refits, original proof and scientific limits](weighted-shared-entity-simulation-refits-20261004.md).
+
+October 4, 04:47 UTC: complete historical numeric assessment/readback closes
+all 1,620 roles, 34,020 scalar rows and 4,860 rate frames with 8,170 bindings
+and both exact original driver waits/journals. New evidence: 33 altered scalar
+alpha values, 19 malformed JSON rows, and 14 discrepant rate frames, including
+two mean-passing frames. All 388,800 historical rate cells remain unqualified
+and unchanged. Native references are diagnostics, not recovered original
+floats. Future reversible scalar JSON correction/nonfinite-state handling,
+posterior/model/likelihood/root uncertainty and prior crashes remain open.
+Original weighted numerical job reports 370/4,340 cohorts without recorded
+failure; full fitting/calibration, atlas/framework and all eight aims incomplete.
+[Full assessment and next correction](full-historical-number-assessment-20261004.md).

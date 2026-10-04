@@ -12,6 +12,13 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
+The [full historical numeric assessment](docs/full-historical-number-assessment-20261004.md)
+has checked all 1,620 ancestral short-run roles and 34,020 scalar rows. It found
+33 altered alpha values, 19 malformed scalar JSON rows and 14 discrepant rate
+frames, including two missed by normalization alone. Separate full readback
+and both original execution journals are verified. Historical numbers remain
+unqualified; the installed formatter and ancestral posterior are not accepted.
+
 The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal
 closure. A [fresh full closure check](metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json)

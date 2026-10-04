@@ -1,0 +1,60 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_historical_baliphy_numbers.py",
+    "--producer",
+    "metadata/full_historical_baliphy_number_assessment_20261004_v2.json",
+    "--transport",
+    "metadata/full_historical_baliphy_number_assessment_transport_20261004_v2.json",
+    "--output-root",
+    "results/ancestral/full-historical-number-assessment-20261004-v2",
+    "--receipt",
+    "metadata/full_historical_baliphy_number_readback_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_historical_baliphy_number_readback_resources_20261004_v1.json": "e6a9b16fff6f45b55d8682d2cd2ef7639e3c87f04bf0a3eb950ef91338f61e6d",
+    "scripts/readback_full_historical_baliphy_numbers.py": "dfdf47608b49ec345b92efb42f09f1dfa117845c5586f76fc3b80fd4b6ff8ae3",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "4fcc8433322649debae5ffcde9018454",
+  "wrapper": {
+    "pid": 148312,
+    "created": 1791089057.97,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_historical_baliphy_number_readback_resources_20261004_v1.json",
+      "--execution",
+      "metadata/full_historical_baliphy_number_readback_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/full_historical_baliphy_number_readback_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_historical_baliphy_numbers.py",
+      "--producer",
+      "metadata/full_historical_baliphy_number_assessment_20261004_v2.json",
+      "--transport",
+      "metadata/full_historical_baliphy_number_assessment_transport_20261004_v2.json",
+      "--output-root",
+      "results/ancestral/full-historical-number-assessment-20261004-v2",
+      "--receipt",
+      "metadata/full_historical_baliphy_number_readback_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T04:44:18.996306+00:00"
+}

@@ -1,0 +1,88 @@
+historical_numeric_source_frames 300 /4860
+historical_numeric_source_frames 600 /4860
+historical_numeric_source_frames 900 /4860
+historical_numeric_source_frames 1200 /4860
+historical_numeric_source_frames 1500 /4860
+historical_numeric_source_frames 1800 /4860
+historical_numeric_source_frames 2100 /4860
+historical_numeric_source_frames 2400 /4860
+historical_numeric_source_frames 2700 /4860
+historical_numeric_source_frames 3000 /4860
+historical_numeric_source_frames 3300 /4860
+historical_numeric_source_frames 3600 /4860
+historical_numeric_source_frames 3900 /4860
+historical_numeric_source_frames 4200 /4860
+historical_numeric_source_frames 4500 /4860
+historical_numeric_source_frames 4800 /4860
+{
+  "status": "completed_full_historical_baliphy_scalar_and_rate_encoding_assessment_v2",
+  "checked_utc": "2026-10-04T04:40:44.556782+00:00",
+  "full_roles": 1620,
+  "full_model_groups": 405,
+  "full_effective_inputs": 135,
+  "full_configuration_aliases": 324,
+  "scalar_rows_compared": 34020,
+  "scalar_numeric_counts": {
+    "valid_json_scalar_records_compared": 34001,
+    "numeric_values_compared": 1462043,
+    "agrees_at_declared_relative_precision": 1462010,
+    "encoding_discrepancy_values": 33,
+    "invalid_json_scalar_records_retained": 19,
+    "unavailable_numeric_comparisons_invalid_json": 817
+  },
+  "scalar_discrepancies_by_column": {
+    "ASRV.Gamma:alpha": 33
+  },
+  "scalar_discrepancies_by_family": {
+    "OG0000294": 14,
+    "OG0001203": 1,
+    "OG0001200": 1,
+    "OG0001082": 1,
+    "OG0000230": 14,
+    "OG0002650": 1,
+    "OG0000095": 1
+  },
+  "scalar_discrepancies_by_prior": {
+    "broad": 24,
+    "package": 5,
+    "centered": 4
+  },
+  "full_property_frames": 4860,
+  "rate_counts": {
+    "category_values_compared": 19440,
+    "repeated_amino_acid_rate_cells_compared": 388800,
+    "rate_discrepancy_categories": 17,
+    "rate_discrepancy_repeated_cells": 340,
+    "mean_one_pass_frames": 4848,
+    "independent_gamma_agreement_frames": 4860,
+    "mean_one_failed_frames": 12,
+    "rate_discrepancy_frames": 14,
+    "discrepancy_frames_consistent_with_original_encoder": 14,
+    "rate_discrepancy_frames_passing_mean_one": 2
+  },
+  "rate_discrepancy_frames_by_family": {
+    "OG0000294": 6,
+    "OG0000230": 4,
+    "OG0000972": 2,
+    "OG0001200": 1,
+    "OG0000107": 1
+  },
+  "native_double_roundtrips": 19440,
+  "native_alpha_parse_difference_count": 0,
+  "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-historical-number-assessment-20261004-v2/native-reference/attempt-0001/receipt.json",
+  "scalar_relative_tolerance": 2e-13,
+  "scalar_absolute_tolerance": 0.0,
+  "rate_relative_tolerance": 2e-13,
+  "rate_absolute_tolerance": 0.0,
+  "independent_gamma_relative_tolerance": 1e-07,
+  "independent_gamma_absolute_tolerance": 2e-12,
+  "all_historical_rate_cells_unqualified": 388800,
+  "original_numbers_repaired": false,
+  "original_sources_or_outputs_changed": false,
+  "native_mcmc_runs": 0,
+  "posterior_qualified": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Full historical1620-role scalar JSON/TSV mapped-number and4860property-frame gamma reference assessment. Actual pure installed native rates at logged TSV alpha, CJSON native roundtrip and original-encoder diagnostics supplemented by SciPy conditional-bin-mean/large-alpha references; numeric reviews retained. This does not recover exact original native floats, qualify historical rates, repair scalar JSON, prove likelihood/mixing or fix installed formatter/crashes. Every original artifact remains unchanged; original full output closure inherited, consumed sources freshly hashed. All biological aims remain open."
+}

@@ -3283,3 +3283,25 @@ wrapper/invocation, manager start/end and entire terminal receipt/hash payload
 were verified. Full production source admission, real fitting/calibration,
 global dependence/selection/multiple-testing and all eight aims remain open.
 [Implementation, original evidence and limits](weighted-shared-entity-simulation-refits-20261004.md).
+
+## October 4: complete historical scalar/rate serialization assessment
+
+For all 1,620 historical short-sampler roles, 34,020 scalar rows and 4,860
+property frames, compared JSON scalar values with their original mapped TSV
+columns and pure installed native gamma/CJSON rates at sampled TSV alpha.
+Scalar comparisons use relative tolerance 2e-13 with zero absolute tolerance;
+malformed JSON remains explicit, not repaired. A separate reader traverses
+mapped hierarchical keys directly and reconstructs every serialized difference
+and count. Native reference calculations/roundtrip evidence are inherited by
+the reader; its SciPy reference function is shared, not a third implementation.
+
+Found 33 altered alpha values in otherwise valid scalar JSON, 19 malformed rows
+and 14 discrepant rate frames, including two passing the original normalization
+check. The rate discrepancies affect 17 category values repeated across 340
+amino-acid cells. All 388,800 historical rate cells remain unqualified; reference
+calculations never replace historical numbers. Full source-consumption hashes,
+separate readback and both original driver waits/journals close this assessment.
+The preserved footer parser failure preceded a new V2 namespace with unchanged
+tolerances. Scalar JSON correction, nonfinite-state handling, posterior/model/
+root uncertainty, prior crashes and all eight biological aims remain unresolved.
+[Full assessment and exact scientific scope](full-historical-number-assessment-20261004.md).

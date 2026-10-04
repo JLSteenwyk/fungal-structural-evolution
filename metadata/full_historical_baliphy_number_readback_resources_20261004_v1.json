@@ -1,0 +1,32 @@
+{
+  "prepared_utc": "2026-10-04T04:44:18.613806+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 3600,
+  "wall_seconds_per_stage": 7200,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "output_allowance_gib": 8,
+  "available_ram_gib": 151.04323196411133,
+  "free_disk_gib": 10282.303462982178,
+  "runtime_calibrated": false,
+  "runtime_planning_seconds": [
+    10,
+    3600
+  ],
+  "gpu": false,
+  "new_cost_usd": 0,
+  "full_roles": 1620,
+  "full_scalar_rows": 34020,
+  "full_rate_frames": 4860,
+  "pure_native_rate_cpu_seconds": 600,
+  "pure_native_rate_wall_seconds": 900,
+  "pure_native_rate_address_space_gib": 8,
+  "pure_native_rate_file_limit_mib": 64,
+  "scope": "Complete separate direct mapped scalar lookup, original property parsing and serialized/count readback for all1620roles/34020scalarrows/4860frames. Native gamma/roundtrip/source closure evidence inherited, not new native calculations. SciPy reference function shared and explicitly identified. All reviews/malformed JSON retained; no source repair or posterior acceptance.",
+  "preserved_failed_attempt": "metadata/full_historical_baliphy_number_assessment_execution_20261004_v1.json"
+}
