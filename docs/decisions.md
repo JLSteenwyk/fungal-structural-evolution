@@ -1928,3 +1928,21 @@ all 24failed roles at their original input/prior/seed/caps and queue a reader
 only behind actual original producer success. A native zero exit with a
 special-value review remains a review; it cannot acquire an accepted array
 or establish posterior adequacy.
+
+
+## October 4: direct predictor coordinates and full phylogenetic control linkage
+
+Retain every original 643 model pair/12 confidence mask and all coverage failures.
+Compare physical coordinates on the original native-feature masks using proper
+rotations, whole-protein distances and spatial/sequence-local distances.
+Independent atom/mask/geometry and scalar summary replay are required before
+linkage. Arithmetic roundoff tolerances do not alter the weighted guard.
+
+Retain every 8,750 marker/view disposition and every 4,523,750 original branch slot.
+Join AA estimates, all six paired predictor distributions and both-side model
+identities/coordinate coverage on 31,290 observed paths. Preserve all original
+indices/units for merged paths. Do not filter by geometry, attribute merged
+changes to one original branch, convert substitutions into displacement or
+count shared views/taxa/models as independent replication. The selected 21 fungi
+control does not replace full 501 fungi+25 outgroup sampling or calibration.
+[Complete evidence](predictor-coordinate-and-phylogeny-controls-20261004.md).

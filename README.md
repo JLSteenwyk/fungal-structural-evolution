@@ -12,6 +12,15 @@ finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
+The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
+verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,
+5,171 geometry comparisons and 2,545 coverage exclusions. Independent geometry,
+summary and taxon-set readers pass. All 8,750 marker/tree-view cases and 31,290
+internal paths link coordinate controls, AA estimates and paired structural
+distributions; merged paths remain explicit. Reproducible PNG/PDF figures are
+published. These controls do not establish accepted evolutionary accelerations
+or complete the full fungal atlas and eight aims.
+
 The [full historical numeric assessment](docs/full-historical-number-assessment-20261004.md)
 has checked all 1,620 ancestral short-run roles and 34,020 scalar rows. It found
 33 altered alpha values, 19 malformed scalar JSON rows and 14 discrepant rate

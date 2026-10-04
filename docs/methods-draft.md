@@ -1,5 +1,25 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 4: complete direct predictor geometry and tree linkage
+
+Compare all 643 exact-complete-sequence predictor pairs at 12 original masks,
+validating raw polymer/all-atom/CA confidence identity. Require 50 and half the
+protein's residues; retain missing coverage. Measure proper-rotation CA RMSD,
+all-pair distances, spatial-contact union≤15 Å with original gap≥3, and
+sequence-local original-gap 3–10 distances. Independent raw/scalar-mask/rotation/
+pdist replay checks all 7,716 rows. Separate sorted/tied-rank/scalar arithmetic
+checks 12 threshold summaries/96 descriptive correlations without calibrated
+interval or significance claims.
+
+Link all 8,750 cases/31,290 internal paths to AA point estimates, six paired
+predictor distributions and both-side whole-protein coordinate coverage.
+Independently reconstruct 4,523,750 original branch slots with taxon sets;
+preserve missing data and every original index/unit in merged paths. Whole-
+protein and marker-column masks remain distinct. No physical-rate conversion,
+geometric additivity or single-branch attribution is accepted. Selected overlap
+uses 78 linkedmarkers/21 fungi, while ready branch controls use 71 markers.
+[Evidence and reproduction](predictor-coordinate-and-phylogeny-controls-20261004.md).
+
 The October 3 [joint ancestral logger](baliphy-joint-node-logger-20261003.md)
 places full ancestral alignments and category/state records in the same
 native logger action. The complete future 405-program/1,620-role grid uses

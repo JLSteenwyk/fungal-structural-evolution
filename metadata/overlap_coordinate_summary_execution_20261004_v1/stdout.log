@@ -1,0 +1,38 @@
+{
+  "status": "complete_descriptive_full_overlap_coordinate_summary_and_figure",
+  "checked_utc": "2026-10-04T16:32:12.722293+00:00",
+  "model_pairs": 643,
+  "confidence_settings": 12,
+  "source_rows": 7716,
+  "threshold_summary_rows": 12,
+  "descriptive_correlation_rows": 96,
+  "primary_mask_summary": {
+    "plddt_cutoff": 70,
+    "pae_cutoff": "10",
+    "declared_model_pairs": 643,
+    "compared_model_pairs": 545,
+    "insufficient_common_coverage": 98,
+    "coordinate_validation_rejected": 0,
+    "retained_residues": 130790,
+    "state_mismatches": 19367,
+    "ca_superposition_rmsd_angstrom_p025": 0.3757775464097632,
+    "ca_superposition_rmsd_angstrom_median": 1.0377938264962248,
+    "ca_superposition_rmsd_angstrom_p975": 21.999572053391155,
+    "all_distance_rms_change_angstrom_p025": 0.2746523695974424,
+    "all_distance_rms_change_angstrom_median": 0.7064396589723674,
+    "all_distance_rms_change_angstrom_p975": 23.590612308672295,
+    "local_distance_rms_change_angstrom_p025": 0.22042284149341085,
+    "local_distance_rms_change_angstrom_median": 0.3837581370570513,
+    "local_distance_rms_change_angstrom_p975": 4.74125419112097,
+    "sequence_local_distance_rms_change_angstrom_p025": 0.16138347252265578,
+    "sequence_local_distance_rms_change_angstrom_median": 0.26673568435886225,
+    "sequence_local_distance_rms_change_angstrom_p975": 0.8078803038167344
+  },
+  "figure_paths": [
+    "docs/figures/matched_predictor_coordinate_benchmark_20261004.png",
+    "docs/figures/matched_predictor_coordinate_benchmark_20261004.pdf"
+  ],
+  "scientific_eligibility": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Full independently replayed coordinate benchmark summarized at every original threshold, with explicit coverage. Linear empirical quantiles and descriptive rank correlations only; neither calibrated confidence intervals nor p-values. Model pairs, marker/taxon links and alternative thresholds are not independent evolutionary replications. Panels A-C condition on pLDDT70/PAE10; panel D retains every cohort count. Whole-protein RMSD includes domain orientation effects. Source model pairs link78markers/21fungi; ready phylogenetic branch controls cover71markers, a different cohort. Full501fungi+25outgroup project and original branch/path calibration remain unfinished."
+}

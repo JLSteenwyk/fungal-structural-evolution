@@ -1,0 +1,91 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_predictor_coordinate_phylogeny_links_v1.py",
+    "--producer",
+    "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json",
+    "--transport",
+    "metadata/predictor_coordinate_phylogeny_link_transport_20261004_v1.json",
+    "--receipt",
+    "metadata/predictor_coordinate_phylogeny_link_readback_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/predictor_coordinate_phylogeny_link_readback_resources_20261004_v1.json": "e1ede72ce16f13e3beb990eb012bb1a35ca99cdb90b1031a9223242caaaa8c5a",
+    "scripts/readback_predictor_coordinate_phylogeny_links_v1.py": "39a9d7fb5314e28f33c86087635485d662132df6317f40094fdd4e03e9e47f93",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "b03b58e6d3124493a6a9c3dcdbe9e0ee",
+  "wrapper": {
+    "pid": 135297,
+    "created": 1791132105.02,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/predictor_coordinate_phylogeny_link_readback_resources_20261004_v1.json",
+      "--execution",
+      "metadata/predictor_coordinate_phylogeny_link_readback_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/predictor_coordinate_phylogeny_link_readback_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_predictor_coordinate_phylogeny_links_v1.py",
+      "--producer",
+      "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json",
+      "--transport",
+      "metadata/predictor_coordinate_phylogeny_link_transport_20261004_v1.json",
+      "--receipt",
+      "metadata/predictor_coordinate_phylogeny_link_readback_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 900,
+  "started_utc": "2026-10-04T16:41:46.168643+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T16:41:57.992229+00:00",
+  "child": {
+    "pid": 135301,
+    "created": 1791132105.47,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_predictor_coordinate_phylogeny_links_v1.py",
+      "--producer",
+      "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json",
+      "--transport",
+      "metadata/predictor_coordinate_phylogeny_link_transport_20261004_v1.json",
+      "--receipt",
+      "metadata/predictor_coordinate_phylogeny_link_readback_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 11.823302098084241,
+  "child_cpu_seconds": 11.766861,
+  "child_peak_rss_bytes": 224280576,
+  "receipt": "metadata/predictor_coordinate_phylogeny_link_readback_20261004_v1.json",
+  "receipt_sha256": "244f6ab05a3bbce0f67b28838caa84aeebafb3b4f202dc58ba083d4060055101",
+  "artifacts": {
+    "metadata/predictor_coordinate_phylogeny_link_readback_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/predictor_coordinate_phylogeny_link_readback_execution_20261004_v1/configuration.json": "6ccf283e7099905d1713dc6e2d27f6d5d31a864cafb1a5e79253410acafaff82",
+    "metadata/predictor_coordinate_phylogeny_link_readback_execution_20261004_v1/stdout.log": "ac43922c438f3011063a56e5e1a3cd8c9410dc7ccd7cd472668d1982d671b141",
+    "metadata/predictor_coordinate_phylogeny_link_readback_execution_20261004_v1/process.json": "d83ee6b14a1c3ccd4d6063e464f519ec96d8e02ce07f6cd0fb598ba4c00934f4"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

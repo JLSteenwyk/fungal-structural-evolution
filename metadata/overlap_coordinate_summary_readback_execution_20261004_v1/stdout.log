@@ -1,0 +1,15 @@
+{
+  "status": "passed_full_independent_coordinate_summary_readback",
+  "checked_utc": "2026-10-04T16:33:49.622124+00:00",
+  "summary_receipt": "metadata/overlap_coordinate_summary_20261004_v1.json",
+  "summary_receipt_sha256": "201183fc5f1c6839a792bd487685908b800bde67c45c40b6d95da25fd975b317",
+  "source_rows": 7716,
+  "threshold_summary_rows": 12,
+  "descriptive_correlation_rows": 96,
+  "maximum_summary_absolute_difference": 1.1102230246251565e-16,
+  "summary_relative_tolerance": 1e-12,
+  "summary_absolute_tolerance": 1e-12,
+  "scientific_eligibility": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Every coverage count/empirical quantile/rank correlation independently verified with sorted linear ranks, explicit tied midranks and scalar math.fsum moments. Figure/source checksums verified; visual inspection separate. Summary roundoff tolerances do not change weighted numerical guards or qualify biological inference."
+}

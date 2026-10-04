@@ -1,5 +1,16 @@
 # Open scientific milestones — updated October 4, 2026
 
+The full selected predictor coordinate control closes 643 pairs×12 masks with
+complete independent geometry/summary replay. All 8,750 marker/view cases and
+31,290 internal paths link coordinates, AA and paired structural distributions;
+taxon-set reconstruction verifies 4,523,750 original slots. Six original stage
+transports/6,070 bindings close. This is a predictor-control handoff, not accepted
+evolutionary localization.78 linkedmarkers/21 fungi do not establish full-lineage
+coverage. Full timing has 68 checkpoints at 16: 44 UTC; the 24 ancestral comparisons
+have 16 native-zero exits including one review. Both original analyses remain
+active; all eight aims remain incomplete.
+[Evidence and remaining requirements](predictor-coordinate-and-phylogeny-controls-20261004.md).
+
 The full four-control numerical qualification has closed all 4,340 cohorts,
 5,208,000 audits and 24,883,200 links. Independent full arithmetic and original
 producer/reader/closer transport are verified, with a fresh complete rehash of

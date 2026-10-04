@@ -1,0 +1,106 @@
+{
+  "status": "passed_overlap_coordinate_software_controls_v1",
+  "checked_utc": "2026-10-04T16:23:59.797712+00:00",
+  "controls": [
+    {
+      "control": "identity",
+      "metrics": {
+        "ca_superposition_rmsd_angstrom": 8.131957364034819e-16,
+        "local_distance_pairs": 5,
+        "local_distance_mean_absolute_change_angstrom": 0.0,
+        "local_distance_rms_change_angstrom": 0.0,
+        "all_distance_pairs": 10,
+        "all_distance_mean_absolute_change_angstrom": 0.0,
+        "all_distance_rms_change_angstrom": 0.0,
+        "sequence_local_distance_pairs": 5,
+        "sequence_local_distance_mean_absolute_change_angstrom": 0.0,
+        "sequence_local_distance_rms_change_angstrom": 0.0
+      }
+    },
+    {
+      "control": "proper_rotation_translation",
+      "metrics": {
+        "ca_superposition_rmsd_angstrom": 1.0775456579060475e-15,
+        "local_distance_pairs": 5,
+        "local_distance_mean_absolute_change_angstrom": 0.0,
+        "local_distance_rms_change_angstrom": 0.0,
+        "all_distance_pairs": 10,
+        "all_distance_mean_absolute_change_angstrom": 0.0,
+        "all_distance_rms_change_angstrom": 0.0,
+        "sequence_local_distance_pairs": 5,
+        "sequence_local_distance_mean_absolute_change_angstrom": 0.0,
+        "sequence_local_distance_rms_change_angstrom": 0.0
+      }
+    },
+    {
+      "control": "reflection",
+      "metrics": {
+        "ca_superposition_rmsd_angstrom": 1.1236237937473308,
+        "local_distance_pairs": 5,
+        "local_distance_mean_absolute_change_angstrom": 0.0,
+        "local_distance_rms_change_angstrom": 0.0,
+        "all_distance_pairs": 10,
+        "all_distance_mean_absolute_change_angstrom": 0.0,
+        "all_distance_rms_change_angstrom": 0.0,
+        "sequence_local_distance_pairs": 5,
+        "sequence_local_distance_mean_absolute_change_angstrom": 0.0,
+        "sequence_local_distance_rms_change_angstrom": 0.0
+      }
+    },
+    {
+      "control": "scale",
+      "metrics": {
+        "ca_superposition_rmsd_angstrom": 2.297825058615212,
+        "local_distance_pairs": 5,
+        "local_distance_mean_absolute_change_angstrom": 4.361683480491414,
+        "local_distance_rms_change_angstrom": 4.449719092257398,
+        "all_distance_pairs": 10,
+        "all_distance_mean_absolute_change_angstrom": 3.3812314315589225,
+        "all_distance_rms_change_angstrom": 3.63318042491699,
+        "sequence_local_distance_pairs": 5,
+        "sequence_local_distance_mean_absolute_change_angstrom": 4.361683480491414,
+        "sequence_local_distance_rms_change_angstrom": 4.449719092257398
+      }
+    }
+  ],
+  "original_position_gap_control": {
+    "ca_superposition_rmsd_angstrom": 2.297825058615212,
+    "local_distance_pairs": 10,
+    "local_distance_mean_absolute_change_angstrom": 3.3812314315589225,
+    "local_distance_rms_change_angstrom": 3.63318042491699,
+    "all_distance_pairs": 10,
+    "all_distance_mean_absolute_change_angstrom": 3.3812314315589225,
+    "all_distance_rms_change_angstrom": 3.63318042491699,
+    "sequence_local_distance_pairs": 0,
+    "sequence_local_distance_mean_absolute_change_angstrom": "",
+    "sequence_local_distance_rms_change_angstrom": ""
+  },
+  "invalid_controls_refused": 5,
+  "full_declared_pairs": 643,
+  "full_declared_rows": 7716,
+  "actual_parser_control_pairs": 1,
+  "actual_parser_control_masks": 12,
+  "prior_software_failure": {
+    "stage": "initial_unsaved_pure_geometry_control",
+    "failure": "METRICS schema AssertionError",
+    "correction": "Two sequence_local metric labels now match the produced distance fields",
+    "native_full_stage_launched": false
+  },
+  "arithmetic_control_absolute_tolerance": 1e-13,
+  "source_hashes": {
+    "results/phylogeny/paired-source-model-context-20260926-v1/source_model_context.tsv": "a6136f0a35a94ad8ebf8c2f11e4faca84de85bfe23cae643fd3d9ff91094824d",
+    "results/phylogeny/overlap-model-feature-comparison-20260926-v1/model_pair_comparisons.tsv": "1956df1baec2803410e1c0b7f58374f06ec84598643b0c4b41caf6a5e34b954f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_overlap_coordinate_software_v1.py": "4cec2c5f456290d0312aef6461bbc6eaf22349b920ea3fc57ab0f62b41fef76d",
+    "scripts/overlap_coordinate_benchmark_v1.py": "51083d4e603bdd10a96ab0b372409f0c8608660fe803f1478a31116b5e95fbe4",
+    "scripts/compare_overlap_coordinates_v1.py": "99835a7ab0ebe6ab373efc3cb9aa52fedbdd0b2867f92bec91fe27226c108d2e",
+    "scripts/compare_marker_structures.py": "735a25224e73ac030d744119730c3cea86285955a659a7cf61579f6c658d1173",
+    "scripts/compare_predictor_alphabets.py": "cbf6da0b270ddb17b8c027ca0f48761446f10af7edda4cda576d95a881ca8111",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "results/structural_alphabet/audited-gdm-current-20260923-v2/AF-A0A0C2T460-F1-v6.npz": "c66d8363b7d64f0d93d822af505d9d01b565f11ceeea0a47fee859b917b46d93",
+    "data/structures/afdb/AF-A0A0C2T460-F1-v6.cif": "58ae887f1f8682ebbd46ccbeed1e23781bcbf091b400c2df724f9b719fa234df",
+    "results/structural_alphabet/audited-esmfold-ecology-v1/ESM-S81bc69823694ba1ffb29ac053dd0d71f2f9c6e35697c0b12b9fcf6b349aa950c-623b296eee58-v1.npz": "9d68e428c0e29d6b35fb37c352477aa38354b31f5d7d869f41fcdb69ec5bb6a2",
+    "results/structures/esmfold-ecology-complete-v1/models/ESM-S81bc69823694ba1ffb29ac053dd0d71f2f9c6e35697c0b12b9fcf6b349aa950c-623b296eee58-v1.cif": "7dc42a42b98cd7c3a75825afb0adb692cc8334a8b428a63d579b13614a495ad7"
+  },
+  "scientific_eligibility": false,
+  "scope": "Software controls and static complete-cohort contracts; one original parser fixture exercises twelve masks. Machine-rounding tolerance only applies to these arithmetic controls. Full benchmark and full independent raw-coordinate replay still required. No scientific inference or broader sampler/SVD repair."
+}

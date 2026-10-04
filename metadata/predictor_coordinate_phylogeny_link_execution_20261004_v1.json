@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/link_predictor_coordinates_to_phylogeny_v1.py",
+    "--output",
+    "results/phylogeny/predictor-coordinate-phylogeny-links-20261004-v1",
+    "--receipt",
+    "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/predictor_coordinate_phylogeny_link_resources_20261004_v1.json": "f9f52d1efc33655674ec3e44df4d58f4c47f84a7f64e5c5996c73325b37616bc",
+    "scripts/link_predictor_coordinates_to_phylogeny_v1.py": "a07f5814dc62187feb3532763a7d6c8548df4c34f30f053056e9e599c4b584fd",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "afd89bf9a18a4154ad50e1a62e1f2b3e",
+  "wrapper": {
+    "pid": 133791,
+    "created": 1791131940.99,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/predictor_coordinate_phylogeny_link_resources_20261004_v1.json",
+      "--execution",
+      "metadata/predictor_coordinate_phylogeny_link_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/link_predictor_coordinates_to_phylogeny_v1.py",
+      "--output",
+      "results/phylogeny/predictor-coordinate-phylogeny-links-20261004-v1",
+      "--receipt",
+      "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 900,
+  "started_utc": "2026-10-04T16:39:02.094802+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T16:39:14.720231+00:00",
+  "child": {
+    "pid": 133858,
+    "created": 1791131941.4,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/link_predictor_coordinates_to_phylogeny_v1.py",
+      "--output",
+      "results/phylogeny/predictor-coordinate-phylogeny-links-20261004-v1",
+      "--receipt",
+      "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 12.62515406194143,
+  "child_cpu_seconds": 12.579767,
+  "child_peak_rss_bytes": 278347776,
+  "receipt": "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json",
+  "receipt_sha256": "8c9472c674792924e445e6904de219c5cb31f35258d27e0efe08cc59e0a92dc6",
+  "artifacts": {
+    "metadata/predictor_coordinate_phylogeny_link_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/predictor_coordinate_phylogeny_link_execution_20261004_v1/configuration.json": "8376bceb04026d9b893f0233a5bdc53c9f13d257d8b5f46753a334519f969d0a",
+    "metadata/predictor_coordinate_phylogeny_link_execution_20261004_v1/stdout.log": "e906fd759dcc46b748bf25afcc396d8a3a6a6de08ce8ec942c42337b3d38bd10",
+    "metadata/predictor_coordinate_phylogeny_link_execution_20261004_v1/process.json": "1bbc03c56b648bfbef5729b12a5ff6b3a11d369f75dd2b116f1334e6f4737698"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

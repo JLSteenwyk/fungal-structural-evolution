@@ -1,5 +1,26 @@
 # Progress and evidence
 
+## October 4, 16: 45 UTC: direct coordinate controls and tree linkage closed
+
+All 643 pairs/12 masks retain 7,716 rows: 5,171 geometry comparisons,2,545 coverage
+exclusions and no rejected models. Full independent raw-coordinate/mask/geometry
+and 12 threshold/96 correlation replay pass. A PNG/PDF is visually inspected.
+Complete linkage retains 8,750 cases/4,523,750 original branch slots/31,290 paths;
+taxon-set reconstruction independently checks all coordinate/AA/distribution
+joins.13,235 paths map to one original branch; 18,055 combine several branches.
+Six original waits/whole wrapper/manager journals and 6,070 bindings close.
+No new fits, sampler, GPU work, charge or production restart occurred.
+[Methods, figure and reproduction](predictor-coordinate-and-phylogeny-controls-20261004.md).
+
+At 16: 44 UTC, original full timing has 68 producer checkpoints/16 workers and no
+failure files; full biological fits remain zero. The all 24 ancestral comparison
+has 16 native-zero exits: 15 finite-output checks and one special-value review,
+with four original native workers active. Full grid closure/posteriors remain
+unqualified. The fresh 16: 20 installed numeric probe still reproduces five wrong
+constants; the corrected twelve-value probe passes. Historical formatter/SVD
+errors, accepted frameworks, calibration, full atlas and all eight aims remain
+unfinished. The full 501 fungi+25 outgroup objective stays active.
+
 ## October 4, 01:20 UTC: requested error recheck
 
 A fresh installed-formatter probe reproduces the original BAli-Phy numeric

@@ -1,5 +1,7 @@
 # Annotated bibliography
 
+- Kabsch 1976. [A solution for the best rotation to relate two sets of vectors](https://doi.org/10.1107/S0567739476001873). Acta Crystallographica A32, 922–923. Primary least-squares rotation reference for direct CA superposition. Executed controls exclude reflection and check rigid-motion invariance. Whole-protein superposition does not distinguish local deformation from domain orientation or establish experimental accuracy. Publisher record checked October 4, 2026.
+
 - Huang et al. 2023. [Three amphioxus reference genomes reveal gene and chromosome evolution of chordates](https://doi.org/10.1073/pnas.2201504120). Primary study describes parental read partitioning and haploid assembly from interspecific specimens. The exact submitter deposition identifies selected GCF/GCA_019207075.1 as the B. belcheri principal haplotype, exposing a historical B. floridae label mismatch. Study and deposition evidence do not independently establish every sampled locus's parental purity. XML/reports are pinned in the [identity review](selected-taxon-identity-audit-20261003.md).
 
 - Wu et al. 2026. Structural genomics across insects. https://doi.org/10.1038/s41422-026-01220-0 — Atlas plus phylogenetic context and functional validation; pairwise remote-homology counts are not unique proteins.

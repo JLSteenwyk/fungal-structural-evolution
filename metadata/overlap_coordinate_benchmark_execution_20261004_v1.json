@@ -1,0 +1,91 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compare_overlap_coordinates_v1.py",
+    "--output",
+    "results/phylogeny/overlap-coordinate-benchmark-20261004-v1",
+    "--receipt",
+    "metadata/overlap_coordinate_benchmark_20261004_v1.json",
+    "--qualification",
+    "metadata/overlap_coordinate_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/overlap_coordinate_benchmark_resources_20261004_v1.json": "04c790e2b1e680c435a8210fbd61cfecb5e1b9f37c0f35be0d495e85a2266f3e",
+    "scripts/compare_overlap_coordinates_v1.py": "99835a7ab0ebe6ab373efc3cb9aa52fedbdd0b2867f92bec91fe27226c108d2e",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "32e9f1f9cd4d495184649d47de293ff2",
+  "wrapper": {
+    "pid": 124700,
+    "created": 1791131079.55,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/overlap_coordinate_benchmark_resources_20261004_v1.json",
+      "--execution",
+      "metadata/overlap_coordinate_benchmark_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/overlap_coordinate_benchmark_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/compare_overlap_coordinates_v1.py",
+      "--output",
+      "results/phylogeny/overlap-coordinate-benchmark-20261004-v1",
+      "--receipt",
+      "metadata/overlap_coordinate_benchmark_20261004_v1.json",
+      "--qualification",
+      "metadata/overlap_coordinate_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 5400,
+  "started_utc": "2026-10-04T16:24:40.697566+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T16:27:29.364729+00:00",
+  "child": {
+    "pid": 124709,
+    "created": 1791131080.0,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/compare_overlap_coordinates_v1.py",
+      "--output",
+      "results/phylogeny/overlap-coordinate-benchmark-20261004-v1",
+      "--receipt",
+      "metadata/overlap_coordinate_benchmark_20261004_v1.json",
+      "--qualification",
+      "metadata/overlap_coordinate_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 168.66691425198223,
+  "child_cpu_seconds": 168.62134,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/overlap_coordinate_benchmark_20261004_v1.json",
+  "receipt_sha256": "6fa2c1d9dccc0290ca8887130db3296f859ee78bebdf4d02bb3f8473a7c0ea0b",
+  "artifacts": {
+    "metadata/overlap_coordinate_benchmark_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/overlap_coordinate_benchmark_execution_20261004_v1/configuration.json": "eb0a0305868a5ea0b86e74d79fe841902a9a152c29c17e9c0a8c986ac38f4824",
+    "metadata/overlap_coordinate_benchmark_execution_20261004_v1/stdout.log": "e65c024fcc0d4bc44d6ca7bdc06ef230c711f96b4a8f552a59f7a3d28cd842b2",
+    "metadata/overlap_coordinate_benchmark_execution_20261004_v1/process.json": "7b60c030cf9856b25153f0091b342f8e07286978f2d1032bf2aa0c4ca6da180b"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

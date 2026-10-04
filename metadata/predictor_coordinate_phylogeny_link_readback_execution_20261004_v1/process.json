@@ -1,0 +1,19 @@
+{
+  "pid": 135301,
+  "created": 1791132105.47,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_predictor_coordinate_phylogeny_links_v1.py",
+    "--producer",
+    "metadata/predictor_coordinate_phylogeny_link_20261004_v1.json",
+    "--transport",
+    "metadata/predictor_coordinate_phylogeny_link_transport_20261004_v1.json",
+    "--receipt",
+    "metadata/predictor_coordinate_phylogeny_link_readback_20261004_v1.json"
+  ]
+}
