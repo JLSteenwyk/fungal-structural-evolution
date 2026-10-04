@@ -22,9 +22,13 @@ unqualified; the installed formatter and ancestral posterior are not accepted.
 A [future scalar JSON correction](docs/baliphy-scalar-json-v6-20261004.md)
 now passes complete 405-program source checks, paired native comparisons for
 all three priors, 63 scalar-row readbacks and explicit nonfinite-state checks.
-All 1,620 future roles are prepared with fresh seeds. Production audits still
-need the new schema integrated before any full-grid native launch; existing
-jobs and historical outputs remain unchanged.
+All 1,620 future roles are prepared with fresh seeds. A separate
+[V6 scalar admission adapter](docs/baliphy-scalar-v6-joint-admission-20261004.md)
+now checks the full role construction and retained native scalar/joint outputs,
+keeping malformed and special-value states in review without admitted arrays.
+Full V6 startup, controller, resource and source-closure qualification remain
+required before any full-grid native launch; existing jobs and historical
+outputs remain unchanged.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal

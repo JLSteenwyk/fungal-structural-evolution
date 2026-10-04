@@ -1767,3 +1767,18 @@ tolerances, and diagnose the discrepancy in a new version before any retry.
 Full weighted numerical work continues independently. All eight aims remain
 open; GPU prediction stays paused and no paid resources are provisioned.
 [Implementation and observed proof](baliphy-scalar-json-v6-20261004.md).
+
+## 2026-10-04: require scalar V6 admission before joint exports
+
+Use the separate V6 adapter to require both scalar validators, exact schema
+and iteration census, and finite mapped TSV agreement before joint-frame
+exports. Explicit nonfinite or literal-null states are reviews with no
+admitted arrays; malformed records and native failures stay unresolved.
+Readback must not recreate missing exports. Keep every future role and every
+review in full-grid accounting. The adapter qualification reuses only three
+previous actual native fixtures and explicitly labels synthetic summary and
+negative cases. It does not replace required full native startup, controller,
+resource or source closure gates. V2 expands provider/source bindings while
+retaining V1 and the unchanged adapter. No original sampler restart, global
+software patch or biological acceptance.
+[Evidence and next work](baliphy-scalar-v6-joint-admission-20261004.md).

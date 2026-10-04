@@ -1,0 +1,17 @@
+{
+  "pid": 1468696,
+  "created": 1791095671.83,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_joint_sampler_scalar_v6_v2.py",
+    "--output",
+    "data/software_audits/baliphy-scalar-json-v6-joint-adapter-20261004-v2",
+    "--receipt",
+    "metadata/baliphy_scalar_v6_joint_adapter_software_validation_20261004_v2.json"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_joint_sampler_scalar_v6_v2.py",
+    "--output",
+    "data/software_audits/baliphy-scalar-json-v6-joint-adapter-20261004-v2",
+    "--receipt",
+    "metadata/baliphy_scalar_v6_joint_adapter_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/baliphy_scalar_v6_joint_adapter_software_resources_20261004_v2.json": "9012dfc39c5efabdd15097bb1116f2ffeb7dd1d256e96d3bbfcac0ba4fd80a80",
+    "scripts/check_baliphy_joint_sampler_scalar_v6_v2.py": "4ed24f5a65029286d9f1b60ad974c5e2e7465d3cb22ae8df56dad16679e1c8e2",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "ab64d33ea78d4632853fabde45ee2290",
+  "wrapper": {
+    "pid": 1468694,
+    "created": 1791095671.5,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/baliphy_scalar_v6_joint_adapter_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/baliphy_scalar_v6_joint_adapter_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_joint_adapter_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_joint_sampler_scalar_v6_v2.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-joint-adapter-20261004-v2",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_joint_adapter_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-04T06:34:32.529729+00:00"
+}

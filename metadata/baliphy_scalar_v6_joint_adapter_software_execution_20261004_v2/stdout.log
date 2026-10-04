@@ -1,0 +1,96 @@
+{
+  "status": "passed_v6_scalar_joint_admission_adapter_software_v2",
+  "checked_utc": "2026-10-04T06:35:17.175808+00:00",
+  "full_source_roles": 1620,
+  "full_source_models": 405,
+  "effective_inputs": 135,
+  "original_configuration_aliases": 324,
+  "forbidden_seed_count": 6518,
+  "transitive_project_source_modules": 24,
+  "inherited_v3_plan_provider_pins_merged": true,
+  "design_cases_rejected": [
+    "missing_role",
+    "duplicate_id",
+    "duplicate_source",
+    "duplicate_seed",
+    "old_seed",
+    "bool_seed",
+    "changed_prior",
+    "changed_alias",
+    "changed_role",
+    "wrong_schema_seed_namespace",
+    "changed_program_digest",
+    "invented_native_execution"
+  ],
+  "retained_actual_native_roles": 3,
+  "retained_actual_scalar_rows": 63,
+  "retained_actual_mapped_values": 2709,
+  "retained_actual_joint_frames": 9,
+  "readback_missing_export_cases_rejected": 3,
+  "rehashed_private_output_cases": [
+    {
+      "case": "missing_json",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "old_header",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "duplicate_iteration",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "duplicate_key",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "changed_finite_value",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "wrong_quality_count",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "bare_infinity",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "wrong_placeholder",
+      "status": "invalid_joint_sampler_qualification_output_retained",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "tagged_infinity_review",
+      "status": "explicit_nonfinite_or_literal_null_scalar_output_retained_for_review",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "literal_null_review",
+      "status": "explicit_nonfinite_or_literal_null_scalar_output_retained_for_review",
+      "native_failure_is_synthetic": false
+    },
+    {
+      "case": "synthetic_native_failure",
+      "status": "unsuccessful_sampler_qualification_attempt_retained",
+      "native_failure_is_synthetic": true
+    }
+  ],
+  "new_native_runs": 0,
+  "full_grid_native_execution_launched": false,
+  "full_workflow_serialization_qualified": false,
+  "full_grid_v6_startup_qualified": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete original1620role construction plus three retained actual V6 native output admissions (63scalar rows,2709mapped values,9joint frames). Twelve altered role constructions rejected; eleven rehashed private output cases retain invalid/nonfinite/null/native-failure states without arrays. Full1620role summary accounting is synthetic fixture-template expansion, not actual executions or full controller/closure qualification. No original output, installed software, prior/model, production horizon or job changed."
+}

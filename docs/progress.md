@@ -13429,3 +13429,44 @@ reader is prepared but unlaunched. Weighted numerical stage reports530/4340
 cohorts and no recorded failure files. GPU prediction remains paused; all
 eight biological aims remain incomplete.
 [Evidence, scope and next action](retained-covariance-diagnostic-20261004.md).
+
+## October 4, 06:42 UTC: V6 scalar admission adapter qualified
+
+A new adapter combines V6 scalar checks with preserved joint sampler checks.
+All1,620future role constructions pass, preserving405quartets/135inputs/324aliases
+and prior/reservation identities. Three retained actual V6 native fixtures
+pass63scalar rows/2709mapped values and9joint frames, with no new native run.
+Twelve altered role designs and three missing-export readbacks fail. Eleven
+privately rehashed output cases retain eight invalid scalar states, two
+special-value reviews and one synthetic native failure without admitted arrays.
+The full-grid summary is explicitly synthetic, not actual fungal executions.
+Separate checkerV2 adds inherited provider pins and24transitive project source
+modules; all5819bindings rehash after execution. OriginalV1checks/output remain
+retained. Actual V2wait54507 exited0; whole wrapper payload and original manager
+start/end match invocationab64d33ea78d4632853fabde45ee2290. Transport5829bindings
+are freshly verified. Full V6 startup/controller/resource/closure workflow and
+adequate ancestral posterior remain unqualified. At06:41the original covariance
+diagnostic1333148 is live, still loading sources. Weighted numerical stage
+reports560/4340at06:32with no recorded failures. All eight aims remain incomplete;
+GPU prediction remains paused.
+[Scope, evidence and next gates](baliphy-scalar-v6-joint-admission-20261004.md).
+
+## October 4, 06:51 UTC: fresh user-requested error check
+
+Two new pure native probes reproduce the installed formatter bug: five of
+twelve constants change, including 2.34e-10 becoming 0.234. The alternate
+encoder passes all twelve exact native roundtrips. Independent readback of
+the corrected V6 fixtures again passes 63 rows and 2,709 mapped comparisons;
+5,829 V2 admission adapter source/artifact bindings also freshly rehash.
+Full-grid V6 startup/controller/closure remains unfinished and no new MCMC
+run was launched. Actual original wait 10189 exited zero; the full terminal
+payload and manager start/end match invocation
+7b2df43fad194159838200aaa8a5a517.
+
+The original retained covariance failure remains unresolved, with ten partial
+cohort receipts and no completion. Its exact original diagnostic remains live
+at 06:48, loading sources. Separate weighted numerical validation reports
+590/4,340 cohorts at 06:49 with no recorded failure files; this partial progress
+does not establish completion. GPU prediction stays paused and all eight
+biological aims remain incomplete.
+[Fresh check evidence](../metadata/current_analysis_error_recheck_20261004_user_0650.json).
