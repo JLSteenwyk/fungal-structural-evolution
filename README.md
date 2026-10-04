@@ -30,8 +30,11 @@ The [complete V6 native startup grid](docs/baliphy-scalar-v6-startup-20261004.md
 is now running after source, software and resource checks. Full startup readback
 and closure remain required. The
 [V6 sampler controller](docs/baliphy-scalar-v6-controller-20261004.md)
-now passes software serialization checks; native resource observation and
-source/artifact closure still need qualification before full-grid sampling.
+now passes software serialization checks. The
+[V6 resource observer](docs/baliphy-scalar-v6-resource-observer-20261004.md)
+also passes full role-accounting software checks. Startup closure and source-bound
+execution/resource gates remain required before sampling; actual native telemetry
+and its closure will follow that run.
 Existing jobs and historical outputs remain unchanged.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits
@@ -44,7 +47,8 @@ tolerances. A new exact-cohort diagnostic passes all 40 selected guards and
 an independent wider-precision raw reference agrees, but the original failure
 is unexplained. An [ordered timing-probe replay](docs/retained-covariance-ordered-probes-20261004.md)
 captured eight changed entries in a separate species-factor buffer. The responsible
-operation remains unknown. Weighted numerical qualification
+operation is now narrowed to the [native SVD call](docs/retained-native-svd-write-isolation-20261004.md);
+the exact write and validated repair remain unresolved. Weighted numerical qualification
 continues independently; fitting and calibration remain unfinished.
 
 The [dependent Gaussian simulation code](docs/weighted-shared-entity-simulation-20261004.md)

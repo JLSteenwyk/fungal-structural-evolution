@@ -1,0 +1,17 @@
+{
+  "pid": 1567654,
+  "created": 1791101468.43,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_retained_factor_protection_debugger_v1.py",
+    "--plan",
+    "metadata/retained_factor_protection_debugger_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/retained_factor_protection_debugger_20261004_v1.json"
+  ]
+}

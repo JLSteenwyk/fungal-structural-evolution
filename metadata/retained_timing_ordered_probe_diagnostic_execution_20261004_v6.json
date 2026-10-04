@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_retained_timing_probe_sequence_v6.py",
+    "--plan",
+    "metadata/retained_timing_ordered_probe_diagnostic_plan_20261004_v6.json",
+    "--receipt",
+    "metadata/retained_timing_ordered_probe_diagnostic_20261004_v6.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/retained_timing_ordered_probe_diagnostic_resources_20261004_v6.json": "ae1325db5a4252396d5c9c60688e04131f964be6613974d1cb5025bd94dae49e",
+    "scripts/diagnose_retained_timing_probe_sequence_v6.py": "48d28906e26a4ed2118eabe894488e7a1ceb6eb3973200372109521989f8367b",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "3a6c4b2756014618ba2b0d45d71741de",
+  "wrapper": {
+    "pid": 1550838,
+    "created": 1791100548.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/retained_timing_ordered_probe_diagnostic_resources_20261004_v6.json",
+      "--execution",
+      "metadata/retained_timing_ordered_probe_diagnostic_execution_20261004_v6.json",
+      "--receipt",
+      "metadata/retained_timing_ordered_probe_diagnostic_20261004_v6.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_retained_timing_probe_sequence_v6.py",
+      "--plan",
+      "metadata/retained_timing_ordered_probe_diagnostic_plan_20261004_v6.json",
+      "--receipt",
+      "metadata/retained_timing_ordered_probe_diagnostic_20261004_v6.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-04T07:55:49.851723+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T08:07:19.825884+00:00",
+  "child": {
+    "pid": 1550842,
+    "created": 1791100549.15,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=7200",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_retained_timing_probe_sequence_v6.py",
+      "--plan",
+      "metadata/retained_timing_ordered_probe_diagnostic_plan_20261004_v6.json",
+      "--receipt",
+      "metadata/retained_timing_ordered_probe_diagnostic_20261004_v6.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 689.9739257819019,
+  "child_cpu_seconds": 689.838963,
+  "child_peak_rss_bytes": 1001299968,
+  "receipt": "metadata/retained_timing_ordered_probe_diagnostic_20261004_v6.json",
+  "receipt_sha256": "166d4e902e07cc74d736853debe33ba180608f4aeb89d7fe43d455f93fe24c86",
+  "artifacts": {
+    "metadata/retained_timing_ordered_probe_diagnostic_execution_20261004_v6/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_timing_ordered_probe_diagnostic_execution_20261004_v6/configuration.json": "3002db672420466847e99fee51010bcd2d85e4426ff8f1b73bcf4ce5c8c2d733",
+    "metadata/retained_timing_ordered_probe_diagnostic_execution_20261004_v6/stdout.log": "51015e45d6f61c70b78fc2fb3c1692e11c0facc03e073c39d8e598de61a5b7cf",
+    "metadata/retained_timing_ordered_probe_diagnostic_execution_20261004_v6/process.json": "191513fd013ececf559d9e72aea8d71e6492281759031828a011b58e6da2b2fa"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

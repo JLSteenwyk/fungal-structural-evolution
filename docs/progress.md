@@ -13586,3 +13586,31 @@ is available yet. The exact live native library observer verifies155mapped
 library-file checksums at07:58; source attribution remains unresolved. Original
 ancestral startup now has918/1620passing unclosed roles at07:58. All goal
 requirements remain unchanged.
+
+
+## October4,08:14UTC: native SVD transition captured; V6 resource-observer software checked
+
+Original deeper trace82836 completed, with four agreeing probes and an explicit
+mutation stop in probe five. The first changed transition spans the native
+LAPACK dispatch within unwrapped SciPy SVD, line162→165. Affected tree differs
+from the probe tree. Saved eight-entry array is byte-identical to the previous
+V2 capture, and all35unattempted identities remain retained. Original whole
+terminal/source/artifact proof verified. This identifies an operation spanning
+the change, not an exact native instruction, original-failure cause or repair.
+A fresh protected-memory GDB run40959 remains live; all five factor interior
+ranges and exact original identities/caps verified at08:13.
+[Native write isolation scope](retained-native-svd-write-isolation-20261004.md).
+
+V6 resource-observer software25805 exits0 with entire original payload and
+manager start/end verified. Exact qualified future1620role job bytes and schema
+required; full explicitly artificial telemetry serialization retains two native
+failures and two missed live readings. Eight serialization and six altered-design
+cases fail. Shared procfs/native fixture qualification is inherited and rehashed;
+no actual future observer or sampler is launched. Producer/reader/source/artifact
+and actual observer-journal closure belong after the future native run, while
+software/resource/launch gates belong before it.
+[Qualification and execution requirements](baliphy-scalar-v6-resource-observer-20261004.md).
+
+Original full ancestral startup1106/1620passing unclosed roles and weighted
+numerical750/4340cohorts at08:11. All eight aims, full biological fits, adequate
+posteriors and the complete atlas remain unfinished; GPU prediction paused.

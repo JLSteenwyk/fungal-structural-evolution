@@ -1,0 +1,46 @@
+{
+  "status": "recorded_first_factor_mutation_spanning_native_svd_call",
+  "transition": {
+    "changed": true,
+    "current_file": "/home/bizon/anaconda3/lib/python3.10/site-packages/scipy/linalg/_decomp_svd.py",
+    "current_function": "svd",
+    "current_hash": {
+      "mafft_guide": "c4294ab623ad2ed80480eaac6e7670a7ed3246f90aefe7f104ad4c081cef59bf",
+      "pmsf_mafft_profile": "9ef55ba16f2fd45c243b98ab742959eec8538f1a2d10e3db5817553838732222",
+      "pmsf_profile_mafft": "4ff26d5fadfb47d1cb71d5b7ecbe70245e020a7f509369a90a6810d7f9de4a26",
+      "pmsf_profile_profile": "007faeb8b6c043e86762e1906fec61efeb1956326608ae4b333447d553c3c7c9",
+      "profile_guide": "68c9072ae0a23f51dee66b7c0399b8e12aa02c152a46b58ae9f582154e6735c5"
+    },
+    "current_line": 165,
+    "event": "line",
+    "group_id": "2279da186a51d103e3273a0b7fdd1ef487ff512181eb81f963b179bfdfc2ec55",
+    "previous_executed_line": 162,
+    "previous_file": "/home/bizon/anaconda3/lib/python3.10/site-packages/scipy/linalg/_decomp_svd.py",
+    "previous_function": "svd",
+    "previous_hash": {
+      "mafft_guide": "c4294ab623ad2ed80480eaac6e7670a7ed3246f90aefe7f104ad4c081cef59bf",
+      "pmsf_mafft_profile": "9ef55ba16f2fd45c243b98ab742959eec8538f1a2d10e3db5817553838732222",
+      "pmsf_profile_mafft": "4ff26d5fadfb47d1cb71d5b7ecbe70245e020a7f509369a90a6810d7f9de4a26",
+      "pmsf_profile_profile": "cf9c105fa9c6edeb44f21a86b21c6226da1efe7b967421f40dc5e404d68f1bdf",
+      "profile_guide": "68c9072ae0a23f51dee66b7c0399b8e12aa02c152a46b58ae9f582154e6735c5"
+    },
+    "previous_line_source": "u, s, v, info = gesXd(a1, compute_uv=compute_uv, lwork=lwork,",
+    "sequence": 5
+  },
+  "trace_event_count": 2120,
+  "executed_groups": 5,
+  "agreeing_groups": 4,
+  "diagnostic_rejected_groups": 1,
+  "unattempted_groups": 35,
+  "snapshot_byte_identical_to_v2": true,
+  "original_tool_session_id": 82836,
+  "original_tool_terminal_exit_code": 0,
+  "source_hashes": {
+    "results/phylogeny/retained-timing-ordered-probe-diagnostic-20261004-v6/original_probe_line_events.jsonl": "f4e025168e6d706b06594399ec993d984bcc532925f733137aba1d6832531584",
+    "metadata/retained_timing_ordered_probe_diagnostic_20261004_v6.json": "166d4e902e07cc74d736853debe33ba180608f4aeb89d7fe43d455f93fe24c86",
+    "metadata/retained_timing_ordered_probe_diagnostic_transport_20261004_v6.json": "0e94d900f500254735c3ce4f0dd82c43eab533ef936845f29fe847551581eb20",
+    "results/phylogeny/retained-timing-ordered-probe-diagnostic-20261004-v6/captured_factors/2279da186a51d103e3273a0b7fdd1ef487ff512181eb81f963b179bfdfc2ec55-pmsf_profile_profile-observed.npy": "d01b47ab2f25e8be93298456db41e20e03ccc9f360ad89292d89f4475a5347b1"
+  },
+  "root_cause_established": false,
+  "scope": "V6 line tracing first detects changed source-factor bytes immediately after the native gesXd call inside unwrapped SciPy SVD. Recorded source names the native LAPACK dispatch. Exact input shape/native instruction not saved by line observer. No claim of library version defect, original-run failure attribution or validated repair."
+}

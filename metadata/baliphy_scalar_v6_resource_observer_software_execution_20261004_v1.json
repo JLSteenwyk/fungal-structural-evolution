@@ -1,0 +1,91 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_scalar_v6_resource_observer_v1.py",
+    "--native-validation",
+    "metadata/baliphy_sampler_resource_observation_software_validation_20261003_v2.json",
+    "--output",
+    "data/software_audits/baliphy-scalar-v6-resource-observer-20261004-v1",
+    "--receipt",
+    "metadata/baliphy_scalar_v6_resource_observer_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_scalar_v6_resource_observer_software_resources_20261004_v1.json": "572e97b786e31fdefbd218205be420fb9305b1af59e3a2c48d297f604a7da728",
+    "scripts/check_baliphy_scalar_v6_resource_observer_v1.py": "1a7226efa127a32b1540ce4f69c060e1418c11fa93fb4833218a157a65721ece",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "3cd3e682a30a4bd9bd0dc8058a9b70ae",
+  "wrapper": {
+    "pid": 1560569,
+    "created": 1791101095.64,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_scalar_v6_resource_observer_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/baliphy_scalar_v6_resource_observer_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_resource_observer_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_v6_resource_observer_v1.py",
+      "--native-validation",
+      "metadata/baliphy_sampler_resource_observation_software_validation_20261003_v2.json",
+      "--output",
+      "data/software_audits/baliphy-scalar-v6-resource-observer-20261004-v1",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_resource_observer_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-04T08:04:56.756320+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T08:06:05.160289+00:00",
+  "child": {
+    "pid": 1560575,
+    "created": 1791101096.06,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_v6_resource_observer_v1.py",
+      "--native-validation",
+      "metadata/baliphy_sampler_resource_observation_software_validation_20261003_v2.json",
+      "--output",
+      "data/software_audits/baliphy-scalar-v6-resource-observer-20261004-v1",
+      "--receipt",
+      "metadata/baliphy_scalar_v6_resource_observer_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 68.40373325999826,
+  "child_cpu_seconds": 68.351729,
+  "child_peak_rss_bytes": 200245248,
+  "receipt": "metadata/baliphy_scalar_v6_resource_observer_software_validation_20261004_v1.json",
+  "receipt_sha256": "53fe7ab53400115375d175a677975a849367209b758f4161c131226b2d1a1806",
+  "artifacts": {
+    "metadata/baliphy_scalar_v6_resource_observer_software_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_scalar_v6_resource_observer_software_execution_20261004_v1/configuration.json": "45c5a4d5298e8a19697b8a2dd90e7673a58ab6f2fa27011f05000230eecb93d7",
+    "metadata/baliphy_scalar_v6_resource_observer_software_execution_20261004_v1/stdout.log": "8c261cec3dba4ad4e54af770cac4587bb478c079aadf2dc326b6317f74a55435",
+    "metadata/baliphy_scalar_v6_resource_observer_software_execution_20261004_v1/process.json": "6b3b63fea01ff839647f60be5f2537469263644df246fac6a283b8e7c592fdbf"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}
