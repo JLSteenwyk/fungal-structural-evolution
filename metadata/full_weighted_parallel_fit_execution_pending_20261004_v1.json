@@ -1,0 +1,78 @@
+{
+  "status": "pending_original_numerical_and_timing_closure_no_fit_prepared",
+  "checked_utc": "2026-10-04T12:14:31.643460+00:00",
+  "missing_prerequisites": [
+    "metadata/full_weighted_parallel_qualification_completed_20261004_v1.json",
+    "metadata/full_weighted_timing_parallel_completed_20261004_v1.json"
+  ],
+  "original_handles": [
+    {
+      "unit": "fungal-full-weighted-parallel-closure-20261004-v1.service",
+      "pid": 2735677,
+      "created": 1791108809.8,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_parallel_closure_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_parallel_closure_wait_plan_20261004_v1.json",
+      "plan_sha256": "b34205774334b53ec01f06369b2b22135896b565e54900145fe42deb276a1d60",
+      "checked_utc": "2026-10-04T10:13:31.736460+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "6908e090a41a4b019bd7e72928a64d1a",
+      "original_tool_session_id": 15269,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_parallel_closure_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.46,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2"
+    },
+    {
+      "unit": "fungal-full-weighted-timing-parallel-closure-20261004-v1.service",
+      "pid": 2801353,
+      "created": 1791113060.47,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_timing_parallel_closure_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_timing_parallel_closure_wait_plan_20261004_v1.json",
+      "plan_sha256": "0fe8402de90b96c8006788526afc9868402448818488d6b1aa5dac5ef48cc7cf",
+      "checked_utc": "2026-10-04T11:24:43.333243+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "e143531dba1e418ea5c1debe8001e8a5",
+      "original_tool_session_id": 46264,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_timing_parallel_closure_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.23,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "b99cfeca9ed3e92924a9cdb87082a2d48435a52e7e907f6b9ae5b2edf312b259"
+    }
+  ],
+  "fit_resources_installed": false,
+  "production_fitting_launched_or_queued": false,
+  "scientific_eligibility": false,
+  "request_sha256": "6dace166e5c7b656ed6572bf98e93c552bd170a61d840f603c6c6cd0226e2833",
+  "gpu": false,
+  "new_cost_usd": 0
+}

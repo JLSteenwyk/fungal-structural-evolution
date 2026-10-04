@@ -1,0 +1,30 @@
+{
+  "status": "complete_verified_full_scalar_v6_sampler_resource_observation_v1",
+  "expected_roles": 1620,
+  "roles_with_native_attempt": 1620,
+  "roles_with_live_observation": 1620,
+  "roles_without_live_observation": 0,
+  "roles_without_native_attempt": 0,
+  "native_outcome_status_counts": {
+    "exited_zero_pending_scientific_validation": 1596,
+    "failed": 24
+  },
+  "native_observations": 89550,
+  "unavailable_observations": 549,
+  "sampler_controller_terminal_status": "verified_original_terminal_success_with_bound_completed_artifacts",
+  "maximum_observed_cgroup_memory_bytes": 122971566080,
+  "maximum_observed_cgroup_reported_peak_bytes": 123334897664,
+  "maximum_observed_poll_gap_seconds": 1.2209101429907605,
+  "posterior_qualified": false,
+  "full_hash_archive": "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1/completion_archive.json",
+  "full_hash_archive_sha256": "b95adffed39b308137e6857ef3bb11280f24b5bb9586ce8e7bb1c23232d57dde",
+  "bound_source_hashes": 6501,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1/receipt.json",
+  "producer_receipt_sha256": "8e219646372785c80a70a64dd190efd392c0913d40c204196ed88e791e1f07f3",
+  "independent_readback": "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1/readback.json",
+  "independent_readback_sha256": "1c9be4c578e9f62becf9bb0cf786675b5d3481e3340d35b827af0a5340688a22",
+  "completion_plan_sha256": "0512615594af672dbfba9130445db1636965b524807534917a255a034f82623e",
+  "scientific_eligibility": false,
+  "scope": "Full1620V6role read-only exact original sampler/native telemetry. Missing/fast/transitioning/failure attempts explicit; no exact per-native peak guarantee. Source/artifact/independent serialized reader/two original observer journals close after sampler termination. No retries, native controls, posterior or biological acceptance."
+}

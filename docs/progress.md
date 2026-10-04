@@ -13774,3 +13774,92 @@ private native controls pass with exit-code capture and process-local64MiB
 stack. Separate wait99691 tests only that stack soft-limit change while retaining
 unlimited hard stack and all original AS/CPU/file/input/prior/seed settings.
 No production or machine-wide settings change. The comparison is pending.
+
+
+## October 4, 12:43 UTC: parallel fitting integration and corrected sampler closure
+
+Complete parallel-source fitting exports and the independent reader now pass
+three full software grids: 72,000 candidates and 144,000 original links.
+Complete-grid native fit outcomes are explicitly mocked; a separate set of
+64 actual saved fits passes unchanged independent numerical replay. Controlled
+producer/reader checkpoint resume preserves closed bytes, all six completed
+role restarts are refused, and sixteen private copied/rehashed corruptions fail.
+Original wait 21866 and its complete wrapper/journal transport close successfully.
+
+Parallel timing admission independently checks 72,000 candidates and fifteen
+producer/reader checkpoint pairs, rejects all 84 private corruptions, and streams
+probe planning without retaining all full probe arrays. Original wait 77311
+closes successfully. The real fitting operation request remains pending behind
+actual full numerical and timing closure: no fitting resources, root or native
+biological fit is installed or queued. The measured original fit plan remains
+byte-identical; later operational evidence records source integration separately.
+[Parallel fitting integration](full-weighted-parallel-fitting-20261004.md).
+
+The corrected sampler and telemetry now close all 1,620 roles and 405 quartets:
+1,584 finite integrity checks, twelve special-value reviews and 24 SIGSEGV
+failures in OG0000972 across two effective inputs. There are 387 complete
+quartets and eighteen unresolved quartets. The full independent sampler checks
+1,430,352 mapped scalar values, 4,752 joint frames and 53,689,714 ancestral
+residue/category pairs. Every sampler/telemetry archive binding (122,718 total)
+is freshly rehashed, with four original producer/reader journals verified.
+These are integrity and computational accounting results; twenty iterations
+do not establish adequate ancestral posterior uncertainty. Reviewed arrays
+remain unadmitted. [Corrected sampler closure](baliphy-scalar-v6-execution-20261004.md).
+
+At 12:41, the numerical producer has 3,873/4,340 complete cohort checkpoints
+(89.2% of that producer stage), sixteen verified live workers and no recorded
+failure, swap or OOM. Full numerical independent readback/closure and actual
+full timing remain pending. At 12:42, the matched predictor resampling producer
+is verified terminal success and its original independent reader is running;
+full 53,200-draw/372,400-role archive closure remains pending. The separate
+64 MiB native stack comparison is still live; no validated fix or production
+stack change is claimed.
+
+The preceding user check is progress: a fresh native test reproduces five of
+twelve installed formatter errors, checks the corrected twelve constants and
+2,709 saved values, and freshly verifies all 24 original failed native receipts.
+This goal turn adds guarded fitting execution and controller integration while
+preserving all original model settings. The first guarded test's invalid layout
+mutation fixture fails and is retained; fresh V3 tests use a valid zero-stride
+mutation. All eight evolutionary aims, full atlas coverage, accepted/calibrated
+biological fits, the accepted phylogenetic framework and adequate ancestral
+posteriors remain unfinished. GPU prediction remains paused; no charges accrue.
+
+
+At 12:49, guarded fitting V3 closes successfully with original wait 12762 and
+whole wrapper/manager transport: 72,000 mocked-grid candidates, 144,000 links,
+23 export corruptions and eighteen actual in-memory mutations rejected, plus
+64 actual native producer/readback pairs exactly matching saved results. The
+failed V2 source/output namespace is freshly hash-verified and preserved. A
+fresh guarded operation request refuses both missing actual full closures;
+no biological fit, output root or production fitting allocation is queued.
+Controller resource/custody and successful-preparation branch qualification
+now runs in a separate software namespace with explicitly non-fit children.
+
+
+At 12:56, the matching controller V3 closes with original wait 15300, four
+actual non-fit CPU/file/address-space/resource-observation probes, 53 rejected
+scope/capacity changes and 28 custody changes. The actual pending-production
+path refuses both missing closures; the successful preparation branch consumes
+actual qualified software proofs but explicitly mocks source closures/terminal
+checks and uses an unqualified private dummy completion. The real runtime
+rejects that synthetic completion. Earlier V2 fixture failure remains retained.
+The guarded V3 request keeps the actual full model/timing plan bytes unchanged;
+no fitting resources or full biological fit are installed. Full numerical
+production reaches 4,289/4,340 cohorts (98.8% of producer stage), sixteen original
+workers, no partial checkpoint or failure and no swap/OOM. Full independent
+numerical readback, actual timing, weighted optimization, uncertainty calibration
+and all eight aims still remain required.
+
+
+At 13:06, original numerical producer wait 45225 is terminal success. All 4,340
+cohorts/5,208,000 audits/24,883,200 links have completed producer arithmetic.
+Fresh verification rehashes 26,220 bindings and checks every cache checkpoint,
+the wrapper command header, distinct native parent terminal summary and original
+manager records. The first report helper's journal-PID assumption fails and is
+preserved; a fresh V2 reader uses the actual native label and matches the complete
+summary unchanged. The original full independent reader now has 16 workers and
+209/4,340 cohort checkpoints. Full numerical closure, actual timing and biological
+fits remain pending. This goal turn is progress through qualified guarded fitting
+and controller integration plus verified full producer termination; all eight
+scientific aims and required publication deliverables remain unfinished.

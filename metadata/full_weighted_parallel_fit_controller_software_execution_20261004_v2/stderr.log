@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_parallel_fit_controller_v2.py", line 261, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_parallel_fit_controller_v2.py", line 242, in main
+    successful_preparation = successful_preparation_control(a.output,request,fit,admission)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_parallel_fit_controller_v2.py", line 192, in successful_preparation_control
+    operation = prepare_operations(pp)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_parallel_fit_execution_v2.py", line 96, in run
+    pins={str(p):sha(p) for p in [request_path,request['admission_output'],request['resources_output'],gp,proof_path,
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_parallel_fit_execution_v2.py", line 96, in <dictcomp>
+    pins={str(p):sha(p) for p in [request_path,request['admission_output'],request['resources_output'],gp,proof_path,
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py", line 21, in sha
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+  File "/home/bizon/anaconda3/lib/python3.10/pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/home/bizon/anaconda3/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'metadata/full_weighted_timing_parallel_completed_20261004_v1.json'

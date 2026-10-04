@@ -8,7 +8,8 @@ The [startup closure](../metadata/baliphy_scalar_v6_preflight_completed_20261004
 does not establish MCMC convergence or ancestral uncertainty.
 
 The corrected native short sampler and concurrent read-only resource observer
-are now running. The [execution plan](../metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json)
+have now completed computational accounting, including unsuccessful attempts.
+The [execution plan](../metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json)
 retains every role, all three original priors and the existing 20-iteration
 computational horizon. Its copied jobs are byte-identical to the complete
 software-qualified future grid. No historical numeric values are adopted.
@@ -78,7 +79,46 @@ Launched plans, source bytes and output roots are immutable. Do not rerun the
 preparer/launcher into these namespaces. A new execution requires a new version,
 fresh admission evidence and explicit preservation of all earlier outcomes.
 
-Full reader/source/artifact/original-journal closure remains mandatory. Twenty
+## Closed computational results at 12:09 UTC
+
+The [sampler completion](../metadata/baliphy_scalar_v6_short_sampler_completed_20261004_v1.json)
+closes all 1,620 roles and 405 quartets: 1,584 finite integrity checks, twelve
+explicit nonfinite/literal-null reviews and 24 failed native attempts. All
+24 failures are SIGSEGV in OG0000972, spanning two effective inputs, all three
+priors and four roles. There are 387 complete quartets and eighteen unresolved
+quartets. The 36 unsuccessful dispositions include both the twelve special-value
+reviews and the 24 native failures; they are not 36 native crashes.
+
+Independent readback checks 1,430,352 mapped scalar values, 4,752 saved joint
+frames and 53,689,714 ancestral residue/category pairs. These counts establish
+serialization and sequence/state consistency within the retained short-run
+outputs. They do not establish effective sample size, model adequacy or
+posterior precision. Reviewed arrays remain unadmitted; no failed native
+attempt is restarted.
+
+The [resource-observer completion](../metadata/baliphy_scalar_v6_resource_observation_completed_20261004_v1.json)
+closes all 1,620 observed native attempts, including 1,596 zero native exits
+and 24 failures. Twelve zero exits still require special-value review. The
+observer records 89,550 observations and 549 unavailable process readings
+during transitions. Maximum observation gap is 1.221 seconds. Cgroup reported
+peak memory is about 114.9 GiB; this differs from the 192 GiB address-space
+reservation budget and from per-process memory measurements.
+
+The [fresh full verification](../metadata/baliphy_scalar_v6_sampler_full_closure_recheck_20261004_v1.json)
+rehashes every sampler archive binding (116,217) and every observer archive
+binding (6,501), and verifies four original producer/reader terminal journals.
+Large native outputs and full hash archives remain outside Git; completion
+receipts record their paths and checksums.
+
+The separate controlled comparison with a 64 MiB process-local stack remains
+running at the [12:22 exact-process observation](../metadata/current_analysis_error_live_recheck_20261004_user_1224.json).
+It retains the failing input, prior, seed, 20 iterations and native AS/CPU/file
+caps. Its completion and independent output validation are still required.
+The captured 8 MiB fault supports stack exhaustion in that diagnostic; neither
+that observation nor the ongoing comparison proves a fix for all original
+failures. Production and global stack settings remain unchanged.
+
+Full reader/source/artifact/original-journal closure is now verified. Twenty
 iterations are insufficient for accepted posterior uncertainty. Long chains,
 mixing/ESS/convergence, prior/model adequacy, predictor/root controls and the
 eight evolutionary aims remain open. GPU prediction stays paused; no paid

@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=600",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_parallel_fit_controller_v2.py",
+    "--output",
+    "data/software_audits/full-weighted-parallel-fit-controller-20261004-v2",
+    "--receipt",
+    "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_weighted_parallel_fit_controller_software_resources_20261004_v2.json": "4f29b080613deda1023d33b8dd829d0f62df6964cd612606c77c793dae74395b",
+    "scripts/check_full_weighted_parallel_fit_controller_v2.py": "3cf6ea46a0e81be1172b121a47e8adc67ceb556f90970906b60ae375ffad6636",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "c6660d1d2a044db087c92c263baf7a82",
+  "wrapper": {
+    "pid": 4159451,
+    "created": 1791118230.66,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_parallel_fit_controller_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/full_weighted_parallel_fit_controller_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_parallel_fit_controller_v2.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fit-controller-20261004-v2",
+      "--receipt",
+      "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1200,
+  "started_utc": "2026-10-04T12:50:31.797965+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-04T12:50:49.234094+00:00",
+  "child": {
+    "pid": 4159534,
+    "created": 1791118231.1,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=600",
+      "--fsize=536870912",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_parallel_fit_controller_v2.py",
+      "--output",
+      "data/software_audits/full-weighted-parallel-fit-controller-20261004-v2",
+      "--receipt",
+      "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v2.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 17.435855656978674,
+  "child_cpu_seconds": 16.570284,
+  "child_peak_rss_bytes": 144367616,
+  "receipt": "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v2.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/full_weighted_parallel_fit_controller_software_execution_20261004_v2/stderr.log": "d348a633ef420dc2f9275ebf7d0c51ad347a31f8867a44b5276222c01e74e343",
+    "metadata/full_weighted_parallel_fit_controller_software_execution_20261004_v2/configuration.json": "1550f0341ac720724e486585cc51cef760f10afe86c0c2050eeb62cf8244c874",
+    "metadata/full_weighted_parallel_fit_controller_software_execution_20261004_v2/stdout.log": "dd5fc1f9fc09e8cf62d55a907f8c6d6c48000fcc3bff78330df409038bd647b8",
+    "metadata/full_weighted_parallel_fit_controller_software_execution_20261004_v2/process.json": "1ad27528b6270fd404ae0997f08f0f56486d40b965138c2bbc5e26c38f68a530"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

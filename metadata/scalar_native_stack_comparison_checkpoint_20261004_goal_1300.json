@@ -1,0 +1,70 @@
+{
+  "status": "verified_live_original_controlled_stack_comparison",
+  "checked_utc": "2026-10-04T12:59:17.589595+00:00",
+  "original_tool_session_id": 99691,
+  "invocation_id": "eadee75fd20e4b51ab6d9ab87c2a7af1",
+  "wrapper": {
+    "pid": 3213924,
+    "created": 1791114273.36,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/scalar_native_stack_comparison_resources_20261004_v2.json",
+      "--execution",
+      "metadata/scalar_native_stack_comparison_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/scalar_native_stack_comparison_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v2.py",
+      "--plan",
+      "metadata/scalar_native_stack_comparison_plan_20261004_v2.json",
+      "--receipt",
+      "metadata/scalar_native_stack_comparison_20261004_v2.json"
+    ]
+  },
+  "native": [
+    {
+      "pid": 3215026,
+      "created": 1791114275.14,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+        "--seed",
+        "1322110685",
+        "run",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-scalar-json-v6-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+        "--iterations",
+        "20",
+        "--log-format",
+        "json,tsv",
+        "--name",
+        "independent-chain"
+      ],
+      "status": "running",
+      "cpu_seconds": 4481.2300000000005,
+      "rss_bytes": 43496873984,
+      "native_limits": {
+        "address_space": [
+          51539607552,
+          51539607552
+        ],
+        "stack": [
+          67108864,
+          -1
+        ],
+        "cpu": [
+          5674,
+          5674
+        ],
+        "file": [
+          2147483648,
+          2147483648
+        ]
+      }
+    }
+  ],
+  "production_changed": false,
+  "original_attempts_restarted": false,
+  "scientific_eligibility": false
+}

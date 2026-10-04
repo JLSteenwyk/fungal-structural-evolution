@@ -97,3 +97,28 @@ calibration remain mandatory before production model fitting. Zero full-data
 weighted biological fits have been computed. The earlier retained timing
 corruption is unresolved. All eight evolutionary aims and the complete atlas
 remain unfinished; GPU prediction remains paused.
+
+
+## Full producer terminal and independent reader, 13:06 UTC
+
+Original wait 45225 exits zero after 2h47m16s wall time and about 44h09m aggregate
+service CPU. All 4,340 cohorts, 5,208,000 audit rows and24,883,200 setting links
+are serialized; the producer retains every model and cached-input guard. All
+producer audits report a numerically qualified basis. This is producer arithmetic
+accounting, not independent full-grid acceptance or a biological fit.
+
+The [fresh producer verification](../metadata/full_weighted_parallel_producer_terminal_verified_20261004_v2.json)
+checks 26,220 source/output bindings, all 4,340 worker cache checkpoints, the
+original dependency-wrapper command header, the complete native parent terminal
+summary and original invocation manager start/end. The native parent has its
+own journal PID2734056, distinct from dependency wrapper2734050; their exact
+commands and previously live create-time identities are retained. The first
+report helper incorrectly sought the native summary under the wrapper's PID;
+its failed source and tool output are preserved. A new V2 helper uses the actual
+native label and matches every terminal summary field without modification.
+
+The [original independent reader](../metadata/full_weighted_parallel_reader_checkpoint_20261004_goal_1306.json)
+is running with 16 native workers and 209/4,340 checkpoints at13:06. Each worker
+has the original 12 GiB AS cap; cgroup/BLAS limits remain unchanged. The full reader,
+all reader checkpoint/source/artifact/original-journal closure and subsequent
+actual full timing remain required. No full weighted biological fit is queued.

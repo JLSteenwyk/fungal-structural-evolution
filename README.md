@@ -34,14 +34,13 @@ now passes software serialization checks. The
 [V6 resource observer](docs/baliphy-scalar-v6-resource-observer-20261004.md)
 also passes full role-accounting software checks. The
 [complete corrected sampler and concurrent telemetry](docs/baliphy-scalar-v6-execution-20261004.md)
-are now running after those gates: all 1,620 roles remain in scope, with 16 CPU
-workers, a 200 GiB memory cap and a 192 GiB reservation budget. One early native
-chain explicitly records an infinite alpha parameter and remains in review;
-its ancestral arrays are excluded. This is a 20-iteration computational check,
-not adequate ancestral posterior sampling. Full sampler and observer readbacks
-and closure remain required. At 11:27, 1,174 outcomes include 1,152 finite
-integrity checks, ten special-value reviews and twelve native segmentation
-faults in OG0000972 across all three priors. A
+have closed all 1,620 roles: 1,584 finite integrity checks, twelve special-value
+reviews and 24 native segmentation faults in OG0000972 across two effective
+inputs, all three priors and four chains. Independent sampler/telemetry readers
+and original journals are closed; all 122,718 archive bindings were freshly
+verified. The corrected scalar path passes 1,430,352 mapped values. Reviewed
+ancestral arrays remain excluded. These 20-iteration runs do not establish
+adequate ancestral posterior uncertainty. A
 [separate native debugger diagnostic](docs/scalar-native-signal-diagnostic-20261004.md)
 captured SIGSEGV at a native call writing below the fully grown 8 MiB stack.
 The original debugger terminal and stack evidence are verified. A separate
@@ -117,9 +116,22 @@ full numeric replay, 17 private export corruptions and three private memory
 mutations. Its full 20,832,000-candidate producer, reader and closer are queued
 behind the original parallel numerical closure, with 16 CPU/200 GiB/no-swap
 limits. At 11:26, the gate is still closed and no native timing job has started.
-Runtime remains uncalibrated. Complete fitting export/reader integration is
-still required.
-The original serial numerical and queued timing stages remain unchanged.
+Runtime remains uncalibrated. The [parallel fitting exporter, reader and
+admission](docs/full-weighted-parallel-fitting-20261004.md) now pass 72,000-row
+software grids and private export/checkpoint corruptions. Complete-grid native
+fit outcomes remain explicitly mocked; separate saved actual fits pass the
+unchanged numerical reader. In-memory input guards now pass eighteen mutation cases and 64 unchanged
+actual native producer/readback pairs. The matching resource controller now
+passes its model/capacity/native-custody and operational-preparation checks.
+The full numerical producer has now finished all 4,340 cohorts, 5,208,000
+audits and 24,883,200 links, with original wait 45225 exited zero. A
+[fresh producer verification](metadata/full_weighted_parallel_producer_terminal_verified_20261004_v2.json)
+checks all 26,220 bindings, every cache checkpoint and exact wrapper/native
+journal payloads. At 13:06, the original independent reader has sixteen
+workers and 209/4,340 cohort checkpoints. Producer completion is not full
+numerical acceptance.
+Full independent numerical closure, actual timing, optimization, uncertainty
+calibration and all eight evolutionary aims remain required.
 
 A [four-control fitting source adapter and numerical bridge](docs/weighted-shared-entity-candidates-20261004.md)
 preserve actual residual diagonals through both likelihood implementations.

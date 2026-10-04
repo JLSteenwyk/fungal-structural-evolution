@@ -1,0 +1,17 @@
+{
+  "pid": 4173543,
+  "created": 1791118457.92,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=600",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_parallel_fit_controller_v3.py",
+    "--output",
+    "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3",
+    "--receipt",
+    "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v3.json"
+  ]
+}

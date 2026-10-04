@@ -1,0 +1,12 @@
+{
+  "status": "preserved_producer_terminal_verifier_v1_label_error",
+  "checked_utc": "2026-10-04T13:05:39.819520+00:00",
+  "original_tool_session_id": 64923,
+  "verifier_exit_code": 1,
+  "failed_script": "scripts/record_full_weighted_parallel_producer_terminal_20261004_v1.py",
+  "failed_script_sha256": "a4fb1a903ff4a9730dbc78ca067b2726c0fb696f4223506c07064676cc8d786d",
+  "cause": "Original terminal summary is correctly journal-labeled with native parent2734056, rather than dependency wrapper2734050; the complete summary matches the receipt without field differences",
+  "original_producer_wait_45225_exit_code": 0,
+  "producer_modified": false,
+  "scientific_eligibility": false
+}

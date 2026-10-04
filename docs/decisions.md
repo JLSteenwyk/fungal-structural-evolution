@@ -1856,3 +1856,34 @@ evidence. Continue remaining full-grid accounting and preserve original failed
 attempts. Diagnostic results do not authorize changing priors, dropping a
 family or interpreting short chains as adequate posterior uncertainty.
 [Failure evidence](scalar-native-signal-diagnostic-20261004.md).
+
+
+## 2026-10-04: bind parallel fitting and in-memory custody separately from measured models
+
+Keep the full measured fit plan byte-identical when integrating parallel source
+exports, input guards and an operational controller. That plan and its pins
+participate in source/candidate identities already measured by timing. Later
+qualified software and operational requests carry the additional execution
+proofs rather than silently rewriting the model plan.
+
+Require source-file closure and numeric array custody. Cached-source/cohort
+checks cover native changes outside the active candidate; per-call checks
+cover designs, responses, row indices, residual diagonals and sparse operator
+arrays passed to native fitting/readback. Preserve changed arrays and exact
+before/after digest inventories, and refuse success checkpoints after mutation.
+Do not interpret detection as repair of the unresolved native SVD write.
+
+Keep the original guarded V2 software failure and all files immutable: its
+shape-mutation fixture raised before performing the intended change. A fresh
+V3 qualification uses a valid layout mutation. Software output-grid native
+outcomes remain explicitly mocked; separate actual native fit/readback checks
+must retain unchanged calculations. A controller must bind the guarded paths
+and reject legacy serial commands, missing closures and synthetic production
+headers. Software controls never confer biological acceptance.
+
+Treat the closed corrected 20-iteration sampler as computational qualification,
+with twelve special-value reviews and 24 native failures retained. Original
+native zero exits, finite-output integrity, complete quartets and adequate
+posteriors are distinct claims. Do not admit reviewed arrays or claim posterior
+uncertainty from the closed scalar/frame checks. The process-local larger-stack
+diagnostic remains separate from production and machine-wide limits.

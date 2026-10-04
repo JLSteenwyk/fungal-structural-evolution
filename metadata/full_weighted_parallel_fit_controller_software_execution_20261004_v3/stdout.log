@@ -1,0 +1,89 @@
+{"original_fit_execution_wrapper": {"pid": 4173543, "created": 1791118457.92, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_parallel_fit_controller_v3.py", "--output", "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3", "--receipt", "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v3.json"]}, "role": "software_boundary_observe", "invocation_id": "c7217f99e0a340f994ac83efa9f311d8"}
+{"role": "software_boundary_observe", "exit_code": 0, "wall_seconds": 0.9397327679907903, "native_cpu_seconds": 0.034519999999999995}
+{"original_fit_execution_wrapper": {"pid": 4173543, "created": 1791118457.92, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_parallel_fit_controller_v3.py", "--output", "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3", "--receipt", "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v3.json"]}, "role": "software_boundary_cpu", "invocation_id": "c7217f99e0a340f994ac83efa9f311d8"}
+{"role": "software_boundary_cpu", "exit_code": -9, "wall_seconds": 3.91092879709322, "native_cpu_seconds": 3.0000379999999995}
+{"original_fit_execution_wrapper": {"pid": 4173543, "created": 1791118457.92, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_parallel_fit_controller_v3.py", "--output", "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3", "--receipt", "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v3.json"]}, "role": "software_boundary_file", "invocation_id": "c7217f99e0a340f994ac83efa9f311d8"}
+{"role": "software_boundary_file", "exit_code": 1, "wall_seconds": 0.9381794669898227, "native_cpu_seconds": 0.037366000000000024}
+{"original_fit_execution_wrapper": {"pid": 4173543, "created": 1791118457.92, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_parallel_fit_controller_v3.py", "--output", "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3", "--receipt", "metadata/full_weighted_parallel_fit_controller_software_validation_20261004_v3.json"]}, "role": "software_boundary_address_space", "invocation_id": "c7217f99e0a340f994ac83efa9f311d8"}
+{"role": "software_boundary_address_space", "exit_code": 1, "wall_seconds": 0.9450128159951419, "native_cpu_seconds": 0.034793000000000227}
+{
+  "status": "passed_full_weighted_parallel_fit_controller_scope_and_actual_native_boundary_contracts_v3",
+  "checked_utc": "2026-10-04T12:54:36.569227+00:00",
+  "expected_production": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "designs": 130200,
+    "fit_inputs": 260400,
+    "settings": 622080,
+    "candidate_rows": 20832000,
+    "setting_fit_links": 49766400
+  },
+  "original_fit_plan_sha256": "5eeeaf49056f7be568760d0b1c68ab52c0b69931308b20deb8684040916b36a6",
+  "actual_native_boundary_probes": 4,
+  "actual_successful_boundary_probes": 1,
+  "actual_preserved_boundary_failures": 3,
+  "actual_boundary_cases": [
+    {
+      "case": "observe",
+      "receipt": "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3/observe/receipt.json",
+      "exit_code": 0,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    },
+    {
+      "case": "cpu",
+      "receipt": "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3/cpu/receipt.json",
+      "exit_code": -9,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    },
+    {
+      "case": "file",
+      "receipt": "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3/file/receipt.json",
+      "exit_code": 1,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    },
+    {
+      "case": "address_space",
+      "receipt": "data/software_audits/full-weighted-parallel-fit-controller-20261004-v3/address_space/receipt.json",
+      "exit_code": 1,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    }
+  ],
+  "rejected_scope_and_capacity_changes": 53,
+  "rejected_native_custody_changes": 28,
+  "completed_and_failed_attempt_restarts_refused": true,
+  "restart_cases": [
+    "observe",
+    "cpu",
+    "file",
+    "address_space"
+  ],
+  "actual_missing_prerequisite_refusal": true,
+  "successful_operational_preparation_branch_qualified": true,
+  "successful_branch_closures_explicitly_mocked": true,
+  "production_fitting_launched_or_queued": false,
+  "fits_computed": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Unchanged full20.832million candidate/49.7664million link model header and actual pending production refusal; synthetic header/capacity/custody changes, four actual non-fit CPU/file/address-space/resource-observation children, original exit/identity/log preservation and restart refusal. Prior complete-grid fitting math/export/admission proofs inherited and rehashed, not repeated; no real fit or production closure invented. Actual production launch and fit/readback closure remain unexecuted behind both original gates; all eight aims and inferential calibration open."
+}

@@ -1,0 +1,413 @@
+{
+  "status": "fresh_full_scalar_v6_sampler_and_resource_archives_verified",
+  "checked_utc": "2026-10-04T12:09:19.997557+00:00",
+  "closures": [
+    {
+      "stage": "sampler",
+      "completion": "metadata/baliphy_scalar_v6_short_sampler_completed_20261004_v1.json",
+      "sha256": "04f570066485d61a48bbc57dd80a3c5614e3b8832101d7e1614e572fbefb07ef",
+      "archive": "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/completion_archive.json",
+      "archive_sha256": "f473cb19a94b793791ab77de895784c00035460b503a08acb98a28fd7fa83134",
+      "bindings_rehashed": 116217,
+      "original_journals": 2,
+      "status": "complete_verified_full_scalar_v6_short_sampler_qualification_v1"
+    },
+    {
+      "stage": "observer",
+      "completion": "metadata/baliphy_scalar_v6_resource_observation_completed_20261004_v1.json",
+      "sha256": "2421075b58ac2743fb856ef7776ad411dc00db0503962d8dfae920da5a01108d",
+      "archive": "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1/completion_archive.json",
+      "archive_sha256": "b95adffed39b308137e6857ef3bb11280f24b5bb9586ce8e7bb1c23232d57dde",
+      "bindings_rehashed": 6501,
+      "original_journals": 2,
+      "status": "complete_verified_full_scalar_v6_sampler_resource_observation_v1"
+    }
+  ],
+  "original_terminal_handles": [
+    {
+      "launch": "metadata/baliphy_scalar_v6_execution_sampler-producer_20261004_v1_launch.json",
+      "pid": 1598110,
+      "created": 1791103413.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_scalar_v6_execution_sampler-producer_20261004_v1_wait_plan.json"
+      ],
+      "launch_sha256": "92aa0a4cf73428cb06aaee3e604de869a6f4b9d84dfce25c02680da9f774963c",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "1fddbbb77ebb922e9b3b7e1e97252a49e049d8f5db1ecfb0dc8a2a6e261aa857",
+      "captured_process_messages": 6,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791115053528524",
+          "CPU_USAGE_NSEC": "96023010065000",
+          "MEMORY_PEAK": "3780608",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_scalar_v6_execution_sampler-reader_20261004_v1_launch.json",
+      "pid": 1598114,
+      "created": 1791103413.11,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_scalar_v6_execution_sampler-reader_20261004_v1_wait_plan.json"
+      ],
+      "launch_sha256": "e50536bb2833e603cd30f2074aef56681f4e48d52f1a158368862bbbe1027a3f",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "cef8ba81f56f45668578e6c81a5b3d9ae044b37439194d08130ad4c917f8036f",
+      "captured_process_messages": 389,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791115345757906",
+          "CPU_USAGE_NSEC": "280910900000",
+          "MEMORY_PEAK": "4038656",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_scalar_v6_execution_observer-producer_20261004_v1_launch.json",
+      "pid": 1598129,
+      "created": 1791103413.25,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_scalar_v6_execution_observer-producer_20261004_v1_wait_plan.json"
+      ],
+      "launch_sha256": "008247a1994a5cfba8aa31d8e2e40c9fa4c92e403bd5a7aa0b4f4401775a879f",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ca2eba5053b29c6c02484b460d26255eab107d9ed0dca4c905fd2d5c7ebbfb6d",
+      "captured_process_messages": 6,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791115060559771",
+          "CPU_USAGE_NSEC": "550180793000",
+          "MEMORY_PEAK": "3514368",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_launch.json",
+      "pid": 1598133,
+      "created": 1791103413.29,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_wait_plan.json"
+      ],
+      "launch_sha256": "631ac9bd046f8aa5be6227c3d37c4fce655113bf5668eecf06fe433c2ef78b53",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ff90d55acac5f738551086dfed03747714c7c5d96a95bf502d8ad3409f12f367",
+      "captured_process_messages": 389,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791115072495613",
+          "CPU_USAGE_NSEC": "7403150000",
+          "MEMORY_PEAK": "2899968",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "full_roles": 1620,
+  "full_quartets": 405,
+  "finite_integrity_roles": 1584,
+  "special_value_reviews": 12,
+  "native_failed_roles": 24,
+  "failure_family_counts": {
+    "OG0000972": 24
+  },
+  "failed_roles": [
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 1,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1/attempt-0001/receipt.json",
+      "native_receipt_sha256": "32a7c422d73f4e183c040220b99feeb8e2c3dda67e0b9099ca04c0c130378ea2"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain2",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 2,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain2/attempt-0001/receipt.json",
+      "native_receipt_sha256": "d6e88e3d6acf0f3e23f6c5dcfc4e4d37320fcaab6118fbdead508a92fe478447"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain3",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 3,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain3/attempt-0001/receipt.json",
+      "native_receipt_sha256": "cded3d19c4a0bd6c30eb51d61d4cecba317625eabfde40bacee88a5458ab1588"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain4",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 4,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain4/attempt-0001/receipt.json",
+      "native_receipt_sha256": "704ef11fdc11608ca09fade3b9d021299caf3ce1ec47e92149aac34a6701d0d9"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 1,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1/attempt-0001/receipt.json",
+      "native_receipt_sha256": "72022a88fe2e47978215d27c8d714d41128e68b8d9e5e3b1a87c1b353d6c1a67"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 2,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2/attempt-0001/receipt.json",
+      "native_receipt_sha256": "0faae59c8dda09a7d8ee510ded433faa266ad43a786594cc36c4079d55ce44c1"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain3",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 3,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain3/attempt-0001/receipt.json",
+      "native_receipt_sha256": "8e189084b702d4e1a83cd73397b14641002d2d4d1e69767e0d0e8ae5e65ef984"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 4,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4/attempt-0001/receipt.json",
+      "native_receipt_sha256": "9011cd1c5fbc2dfbbff20c4325e5fb90bc077b5027e568e36b0644cbff998b18"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain1",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 1,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain1/attempt-0001/receipt.json",
+      "native_receipt_sha256": "c751e2bda636c818d3ea25d71a972d17648e801f858eaf0d15a57c3bcb2e3b6f"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain2",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 2,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain2/attempt-0001/receipt.json",
+      "native_receipt_sha256": "170a9cf94e58d5f201e6bec73ec3f735e09eaae34ceaf7f8ddf11bee65ffebe8"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain3",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 3,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain3/attempt-0001/receipt.json",
+      "native_receipt_sha256": "9f16142920dc1ef95307baa502474fe534a511864d641c09a7c6d5f42072f4c0"
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain4",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 4,
+      "effective_input_group": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain4/attempt-0001/receipt.json",
+      "native_receipt_sha256": "f6c527a5582e37705c14d8fe89dfeaddd2a1f879e4d74b918b1d91c38470038c"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain1",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 1,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain1/attempt-0001/receipt.json",
+      "native_receipt_sha256": "bc7f1e676afc9a884d7cd6779241b6e5bf19f43b14b692d1b1bea49f049f9e16"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain2",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 2,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain2/attempt-0001/receipt.json",
+      "native_receipt_sha256": "d142a31e7299aafeebb85cf1b78aae9f9cc94fe2b8eb06c9fa5fe1c42a198c76"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain3",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 3,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain3/attempt-0001/receipt.json",
+      "native_receipt_sha256": "4edfaef6a4808ff2ead7e647d547142caec9fe772155ca2a7a29928c65ee777f"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain4",
+      "family": "OG0000972",
+      "prior": "broad",
+      "role": 4,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain4/attempt-0001/receipt.json",
+      "native_receipt_sha256": "63afe3515f16e5c5ef4e8cbd570e48edbc6471f2caaeeca7224364d42f3abc71"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain1",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 1,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain1/attempt-0001/receipt.json",
+      "native_receipt_sha256": "7392fe9e6476a7b4e2614f2f6a1d74d7c31f6ced9576823db58c708acf2336d6"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain2",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 2,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain2/attempt-0001/receipt.json",
+      "native_receipt_sha256": "33ed72aad494dec3a92025bdaa658b4e7f85519fd283e658a8e53a28c539f068"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain3",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 3,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain3/attempt-0001/receipt.json",
+      "native_receipt_sha256": "f6b89066f21233b0aaa429b7be265079f076f5713a187ef5b254babb773a4fe6"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain4",
+      "family": "OG0000972",
+      "prior": "centered",
+      "role": 4,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain4/attempt-0001/receipt.json",
+      "native_receipt_sha256": "073e96fa6e856a9c2ac9b0f2a7edb4c37877aa09d0f8a283439d6caf757312fd"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain1",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 1,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain1/attempt-0001/receipt.json",
+      "native_receipt_sha256": "98f393ac530e013ddfa0ab8900f07266c0c7996a5768bffffbe2fddeedf64b98"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain2",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 2,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain2/attempt-0001/receipt.json",
+      "native_receipt_sha256": "98ef13be5c1c07fea2011614986583738d2068354e8ef320d082ac1371d1c523"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain3",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 3,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain3/attempt-0001/receipt.json",
+      "native_receipt_sha256": "ef653d5db8f62e0befe12f16af7dd2d43e0a11d3305ae0ed353bd8d87b72896f"
+    },
+    {
+      "chain_id": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain4",
+      "family": "OG0000972",
+      "prior": "package",
+      "role": 4,
+      "effective_input_group": "f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0",
+      "exit_code": -11,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain4/attempt-0001/receipt.json",
+      "native_receipt_sha256": "bfbcecbb73a6b4d52ca16f6d6893335f7d877c803aad6641334d03cf027426a3"
+    }
+  ],
+  "scalar_mapped_values_checked": 1430352,
+  "joint_saved_frames": 4752,
+  "joint_ancestral_residue_category_pairs": 53689714,
+  "source_hashes": {
+    "metadata/baliphy_scalar_v6_short_sampler_completed_20261004_v1.json": "04f570066485d61a48bbc57dd80a3c5614e3b8832101d7e1614e572fbefb07ef",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/completion_archive.json": "f473cb19a94b793791ab77de895784c00035460b503a08acb98a28fd7fa83134",
+    "metadata/baliphy_scalar_v6_resource_observation_completed_20261004_v1.json": "2421075b58ac2743fb856ef7776ad411dc00db0503962d8dfae920da5a01108d",
+    "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1/completion_archive.json": "b95adffed39b308137e6857ef3bb11280f24b5bb9586ce8e7bb1c23232d57dde",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1.json": "942845c3d04414f00f5a88f7e9018b772dcc9b1b7badd3c2a9d64198ce210af4",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain2.json": "9b5cc018b7985c8b813dcc592bdb39622ef45bfac2027d9d0a63edc0c60e55bf",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain3.json": "978ad20fdc6fb51f864a237f56b58fa44bda909fb5577e70a21bfa830a18321b",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain4.json": "f7c6adb6180571c699aa4e2abf2f847c10242d2191b1669e02f2d220d2794947",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1.json": "ed153a3a000e7cab77bee9bc63d859cd88e5d39629ef504a6ad1bdbdfb130793",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2.json": "77bebf2c94ddb1db4ea133727f923f1892d8ac0940b189a07217a7643a61e213",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain3.json": "1755fa0088f298abbc1b9122b4707a58be6ddfd29ef765303c6d01d02799dc66",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4.json": "527fe8ee6c2f3cc37fc83cd608c244bc40d3e1bf94fd36caf3cacecfc95af22f",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain1.json": "ea6e38748557c930aeba6ff5fd2db60ee3d31b756c9b3ef88614606f83361b97",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain2.json": "146b74c0e149104314e9400ce91b84c957f89fca689ff32a796fa662893c532a",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain3.json": "d0130b01f69445e74082270d70854bfc62a570b1f441ea55df93d11a735b3757",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain4.json": "6a12c5c18df0a4944ed97014be56e47fd592c35a03b91efaac310d520d78f96e",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain1.json": "119f8fda33063c1d8742817dbe712dd48613cca378ac55642629d222bf19d154",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain2.json": "ace8a2205186b42ed1f231951e98b5e11ee69e9e0ca6fdcc5c32d8dc12a83434",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain3.json": "2d2ffb9d8112798c52634cd4d11759ef7de5d40bf8c2fdb753ecc01d20a3dd2d",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-scalar-cjson-v6-chain4.json": "f2cc6e8389cea3c423b1d47a42117987add8995655ae549c949fb649c206fa59",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain1.json": "7e8f1588d4fa7b0dc30004bd0b26514c7e94afb7a7616fcd251690fbf9523c06",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain2.json": "ff9f47838c0855950039dc0c49bf71d731f3d33858fc51e97ee0dc259edfbfd7",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain3.json": "21aa62dd8dfec8ad1b58d66b29535cfb3f0cb135e21325f58cad30cc02952e53",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-scalar-cjson-v6-chain4.json": "2dcc2fb92806bf09bef5a1a62aff39633bad1bb9e10040b2b58bcb4d7a83dd44",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain1.json": "2264a5aa81bc311efbaa76fb71e1e50b97fe434bcf3e7c6e97134fe9648dbb06",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain2.json": "4b0398c86c7bbc91ee9efbbe49d1492afc563e377249aee6f4c8cd91fb502d80",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain3.json": "dfc550b2ed2466b2cddb9277aa825688dd47725ef8c6b7c30dcc53df6b1acef6",
+    "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/chains/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-scalar-cjson-v6-chain4.json": "8f3cbd10ef2ff485cc068d8359800bf66bd80aeefa9fc2fc36c89a4106029521",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/verify_closed_scalar_v6_sampler_20261004_v1.py": "fa1e64eb88623db8e2685aac30a083f65e22580de651c7789dd0822d0000378b"
+  },
+  "posterior_qualified": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "original_attempts_restarted": false,
+  "scope": "All116217sampler and6501telemetry archive bindings freshly rehashed; original four producer/reader terminal journals rechecked by exact original handles. All24failed roles remain retained, separate from twelve special-value reviews. The full original independent reader already replayed native output integrity; this is a fresh whole-archive/terminal check, not another numeric/native sampler execution, a crash repair or adequate posterior qualification."
+}

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_parallel_source_fits_v2.py", line 249, in <module>
+    if __name__ == '__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_parallel_source_fits_v2.py", line 218, in main
+    memory_rejections = memory_negatives(a.output, original, private_copy)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_weighted_parallel_fitting_memory_v2.py", line 126, in memory_negatives
+    if role == 'producer':run(pp)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_parallel_source_fits_v2.py", line 56, in run
+    value = guarded_call(candidate, source, plan, rows, expected, matrix, y, operators[basis_key], audit, route, diagonal, root=root)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/weighted_fit_numeric_memory_guard_v1.py", line 72, in guarded_call
+    return function(source, plan, rows, identity, matrix, response,
+  File "/home/bizon/anaconda3/lib/python3.10/unittest/mock.py", line 1114, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/home/bizon/anaconda3/lib/python3.10/unittest/mock.py", line 1118, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/home/bizon/anaconda3/lib/python3.10/unittest/mock.py", line 1179, in _execute_mock_call
+    result = effect(*args, **kwargs)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_weighted_parallel_fitting_memory_v2.py", line 93, in injected_call
+    if not injected:mutate(arguments)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_weighted_parallel_fitting_memory_v2.py", line 86, in mutate
+    values.shape = values.shape[::-1]
+AttributeError: Incompatible shape for in-place modification. Use `.reshape()` to make a copy with the desired shape.
