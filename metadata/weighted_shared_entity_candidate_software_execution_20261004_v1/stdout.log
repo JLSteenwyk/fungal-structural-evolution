@@ -1,0 +1,204 @@
+actual_weighted_fit_case 1 /64
+actual_weighted_fit_case 2 /64
+actual_weighted_fit_case 3 /64
+actual_weighted_fit_case 4 /64
+actual_weighted_fit_case 5 /64
+actual_weighted_fit_case 6 /64
+actual_weighted_fit_case 7 /64
+actual_weighted_fit_case 8 /64
+actual_weighted_fit_case 9 /64
+actual_weighted_fit_case 10 /64
+actual_weighted_fit_case 11 /64
+actual_weighted_fit_case 12 /64
+actual_weighted_fit_case 13 /64
+actual_weighted_fit_case 14 /64
+actual_weighted_fit_case 15 /64
+actual_weighted_fit_case 16 /64
+actual_weighted_fit_case 17 /64
+actual_weighted_fit_case 18 /64
+actual_weighted_fit_case 19 /64
+actual_weighted_fit_case 20 /64
+actual_weighted_fit_case 21 /64
+actual_weighted_fit_case 22 /64
+actual_weighted_fit_case 23 /64
+actual_weighted_fit_case 24 /64
+actual_weighted_fit_case 25 /64
+actual_weighted_fit_case 26 /64
+actual_weighted_fit_case 27 /64
+actual_weighted_fit_case 28 /64
+actual_weighted_fit_case 29 /64
+actual_weighted_fit_case 30 /64
+actual_weighted_fit_case 31 /64
+actual_weighted_fit_case 32 /64
+actual_weighted_fit_case 33 /64
+actual_weighted_fit_case 34 /64
+actual_weighted_fit_case 35 /64
+actual_weighted_fit_case 36 /64
+actual_weighted_fit_case 37 /64
+actual_weighted_fit_case 38 /64
+actual_weighted_fit_case 39 /64
+actual_weighted_fit_case 40 /64
+actual_weighted_fit_case 41 /64
+actual_weighted_fit_case 42 /64
+actual_weighted_fit_case 43 /64
+actual_weighted_fit_case 44 /64
+actual_weighted_fit_case 45 /64
+actual_weighted_fit_case 46 /64
+actual_weighted_fit_case 47 /64
+actual_weighted_fit_case 48 /64
+actual_weighted_fit_case 49 /64
+actual_weighted_fit_case 50 /64
+actual_weighted_fit_case 51 /64
+actual_weighted_fit_case 52 /64
+actual_weighted_fit_case 53 /64
+actual_weighted_fit_case 54 /64
+actual_weighted_fit_case 55 /64
+actual_weighted_fit_case 56 /64
+actual_weighted_fit_case 57 /64
+actual_weighted_fit_case 58 /64
+actual_weighted_fit_case 59 /64
+actual_weighted_fit_case 60 /64
+actual_weighted_fit_case 61 /64
+actual_weighted_fit_case 62 /64
+actual_weighted_fit_case 63 /64
+actual_weighted_fit_case 64 /64
+{
+  "actual_numerical_candidates": 64,
+  "dense_ml_reml_cases": 128,
+  "exhausted_budget_replays": 64,
+  "retained_source_reviews_and_constants": 88,
+  "altered_numeric_cases_rejected": 464,
+  "maximum_dense_objective_error": 1.4210854715202004e-14,
+  "maximum_dense_gradient_error": 8.526512829121202e-14,
+  "producer_status_counts": {
+    "optimized_shared_entity_candidate_pending_independent_audit": 26,
+    "shared_entity_optimizer_candidate_requires_review": 38
+  },
+  "independent_status_counts": {
+    "independent_curvature_or_search_requires_review": 8,
+    "producer_candidate_requires_review_independent_numeric_replay_passed": 38,
+    "independently_audited_working_candidate_pending_inferential_calibration": 18
+  },
+  "status": "passed_complete_weighted_fit_source_and_actual_diagonal_candidate_contracts_v1",
+  "checked_utc": "2026-10-04T01:33:11.834279+00:00",
+  "complete_source_grids": [
+    {
+      "grid": 0,
+      "source_plan": "data/software_audits/full-weighted-covariance-qualification-20261004-v2/fixture/numerical.plan.json",
+      "candidate_rows": 24000,
+      "candidate_status_counts": {
+        "exact_four_control_covariance_basis_requires_review": 12000,
+        "insufficient_residual_dimension": 9600,
+        "constant_response_requires_review": 2400
+      },
+      "policy_counts": {
+        "uniform": 6000,
+        "background_node": 6000,
+        "background_pair": 6000,
+        "family_component": 6000
+      },
+      "basis_dimensions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "grid": 1,
+      "source_plan": "data/software_audits/full-weighted-covariance-qualification-20261004-v2/qualified-common-pair/numerical.plan.json",
+      "candidate_rows": 24000,
+      "candidate_status_counts": {
+        "exact_four_control_covariance_basis_requires_review": 7200,
+        "insufficient_residual_dimension": 9600,
+        "numerically_qualified_exact_four_control_covariance_basis": 4800,
+        "constant_response_requires_review": 2400
+      },
+      "policy_counts": {
+        "uniform": 6000,
+        "background_node": 6000,
+        "background_pair": 6000,
+        "family_component": 6000
+      },
+      "basis_dimensions": [
+        4,
+        5
+      ]
+    },
+    {
+      "grid": 2,
+      "source_plan": "data/software_audits/full-weighted-covariance-qualification-20261004-v2/qualified-pair-exception/numerical.plan.json",
+      "candidate_rows": 24000,
+      "candidate_status_counts": {
+        "exact_four_control_covariance_basis_requires_review": 7200,
+        "insufficient_residual_dimension": 9600,
+        "numerically_qualified_exact_four_control_covariance_basis": 4800,
+        "constant_response_requires_review": 2400
+      },
+      "policy_counts": {
+        "uniform": 6000,
+        "background_node": 6000,
+        "background_pair": 6000,
+        "family_component": 6000
+      },
+      "basis_dimensions": [
+        5,
+        6
+      ]
+    }
+  ],
+  "total_candidate_identities": 72000,
+  "synthetic_closure_alterations_rejected": [
+    [
+      0,
+      "producer_hash"
+    ],
+    [
+      0,
+      "reader_hash"
+    ],
+    [
+      0,
+      "wrong_status"
+    ],
+    [
+      0,
+      "changed_count"
+    ],
+    [
+      1,
+      "producer_hash"
+    ],
+    [
+      1,
+      "reader_hash"
+    ],
+    [
+      1,
+      "wrong_status"
+    ],
+    [
+      1,
+      "changed_count"
+    ],
+    [
+      2,
+      "producer_hash"
+    ],
+    [
+      2,
+      "reader_hash"
+    ],
+    [
+      2,
+      "wrong_status"
+    ],
+    [
+      2,
+      "changed_count"
+    ]
+  ],
+  "source_and_journal_fixtures_synthetic": true,
+  "scientific_eligibility": false,
+  "production_fitting_launched": false,
+  "full_fitting_export_workflow_implemented": false
+}

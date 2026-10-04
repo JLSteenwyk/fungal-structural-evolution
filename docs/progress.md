@@ -13022,3 +13022,43 @@ and figure review remain next.
   not independently completed audits. Numerical qualification, fits and all
   eight biological aims remain incomplete.
   [Fresh source closure verification](../metadata/full_weighted_covariance_source_census_completed_verification_20261004_v1.json).
+
+## October 4, 01:33 UTC: actual-diagonal fitting bridge qualified
+
+Implemented a complete original-grid fitting source adapter with required
+weighted source/numerical closures, response range/hash/status reconstruction,
+exact basis routing and all four controls. The new numerical producer bridge
+and independent latent/spectral/start/curvature/search reader both retain
+actual D. Three frozen complete synthetic grids passed 72,000 candidate
+identities; 12 altered compact closures were rejected and original parents
+remained unchanged. All 64 actual numerical candidates and 128 dense references
+passed their integrity/comparison checks, retaining 38 producer reviews and
+eight independent curvature/search reviews. Eighteen working candidates remain
+pending inferential calibration; no biological effect is accepted. Exhausted
+budgets, 88 source/constant reviews and 464 altered numerical cases passed.
+
+The actual original software wait exited zero with verified PID/create/command,
+invocation-bound journals and 360 declared bindings. Native CPU/RSS were
+109.87 seconds/166,723,584 bytes, not full-data timing. Complete weighted scope
+is 20,832,000 potential candidates and 49,766,400 original-setting links;
+prospective uncompressed allowance is 1,954.69 GiB with proposed 3-TiB scratch.
+Fit resources are not installed. Complete exports/reader, full numerical
+closure, whole-grid timing, real fits/calibration and all eight aims remain open.
+[Contracts, evidence and remaining work](weighted-shared-entity-candidates-20261004.md).
+
+The original uniform process reader has terminal success over all 1,302,000
+audits/6,220,800 links. Its original closer is still live and hashing the full
+source graph; retained qualification and timing still await closure. The original
+uniform mismatch is not explained by this scheduling success. At 01:32 UTC
+the original weighted numerical producer reported 40 cohorts with no recorded
+failure; full independent readback/closure remains pending. At 01:31 UTC the
+ancestral follow-up had 15 retained timeouts and four live native workers.
+The preceding goal turn and intervening error check were progress: the former
+completed full source closure and numerical launch; the latter replayed all
+4,788 saved successful-role frames and freshly reproduced the installed
+formatter defect. This turn is progress through implemented/qualified actual-D
+fitting contracts. GPU inference remains paused and the full goal stays active.
+
+At 01:38 UTC, the original weighted producer reported 50 cohorts with no
+recorded failure; the independent full readback and closure remain pending.
+[Latest numerical checkpoint](../metadata/full_weighted_covariance_qualification_execution_checkpoint_20261004_goal_0138.json).

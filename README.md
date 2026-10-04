@@ -30,6 +30,15 @@ Software checks passed three complete synthetic grids totaling 18,000 records
 and 72,000 links, including qualified nonuniform q4/q5/q6 bases and review states.
 Real weighted numerical output and model fits are not yet complete.
 
+A [four-control fitting source adapter and numerical bridge](docs/weighted-shared-entity-candidates-20261004.md)
+now preserve actual residual diagonals through production and independent
+likelihood calculations. Software checked 72,000 identities across three
+complete synthetic grids and 64 actual numerical candidates; 18 passed the
+independent working-candidate checks and 46 retained reviews. These are software
+results. Complete fitting exports/readback, full-data timing and real fits remain
+unfinished. The full scope is 20,832,000 potential ML/REML candidates with
+49,766,400 original-setting links.
+
 A [matched predictor branch control](docs/matched-predictor-branch-controls-20261003.md)
 has completed all 931 fixed-topology native fits and independent full readback.
 It holds complete protein identity, sequence positions, observation masks and

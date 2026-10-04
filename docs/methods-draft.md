@@ -3142,3 +3142,24 @@ terminal handles. The full real numerical producer has started; its independent
 readback/closure, working-model timing/fits/calibration and all biological aims
 remain incomplete.
 [Closed source evidence](../metadata/full_weighted_covariance_source_census_completed_verification_20261004_v1.json).
+
+### Four-control actual-diagonal candidate fitting
+
+A complete source adapter retains all original cohorts/designs/responses and
+binds each policy/mode/tree/outcome/method candidate to closed source and fresh
+weighted numerical qualification. Both the production component likelihood
+and independent component-spectral likelihood receive the actual residual D.
+A separately derived latent general-D audit checks retained kernels and
+unchanged contraction bounds before independent start, curvature and multistart
+search checks. Source reviews/constants and reproduced numerical failures
+remain explicit. Exact covariance-cone equivalence is not acceptance of a
+weighting policy or identifiable original variance attribution.
+
+Three complete synthetic source grids pass all 72,000 candidate identities.
+Sixty-four actual q4/q5/q6 software candidates cover every control, both modes,
+responses and ML/REML; 128 dense references agree below 1e-13. Eighteen
+independently audited working candidates remain pending inferential calibration,
+and 46 retain review. These are computational qualification cases, not fungal
+effect estimates. Whole-grid exports/reader, 20.832-million candidate timing,
+real fitting and inference calibration remain required.
+[Methods, resources, checks and limitations](weighted-shared-entity-candidates-20261004.md).

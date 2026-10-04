@@ -1598,3 +1598,21 @@ uneven component reuse, all nonuniform controls and q4/q5/q6. Preserve the passe
 first version. Software cases are synthetic computational checks, not a real
 biological pilot or scope reduction.
 [Full gate, resources and evidence](full-weighted-covariance-qualification-20261004.md).
+
+## October 4: preserve actual residual controls through weighted fits
+
+Require complete source and weighted numerical closure before real fitting.
+Bind every candidate to its original response/design, actual D, control record,
+exact basis certificate and closed numerical audit. Only actual all-one D uses
+the uniform fold; retain target I and genuine pair exceptions otherwise.
+Require fresh actual-D component and independent latent qualification, then
+unchanged likelihood/start/curvature/search checks. Do not promote failed
+searches, reviews, constant responses or software cases into accepted effects.
+
+Keep all four controls, both outcomes/methods, both modes and five trees:
+20,832,000 potential candidates and 49,766,400 original-setting links.
+Complete source-adapter/candidate software does not replace full export/link
+readback or measured real timing. Record the 1,954.69-GiB uncompressed allowance
+and proposed 3-TiB scratch reserve before a fitting launch. Preserve existing
+stricter production tolerances; synthetic checks are explicitly distinct.
+[Actual-D fitting contracts and pending gates](weighted-shared-entity-candidates-20261004.md).

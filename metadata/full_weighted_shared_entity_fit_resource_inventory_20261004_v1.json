@@ -1,0 +1,53 @@
+{
+  "status": "prospective_complete_four_control_fitting_resources_not_launched",
+  "prepared_utc": "2026-10-04T01:32:35.835527+00:00",
+  "source_qualification_plan": "metadata/full_weighted_covariance_qualification_plan_20261004_v1.json",
+  "logical_cases": 75188,
+  "cohorts": 4340,
+  "original_designs": 130200,
+  "original_response_inputs": 260400,
+  "original_settings": 622080,
+  "policies": [
+    "uniform",
+    "background_node",
+    "background_pair",
+    "family_component"
+  ],
+  "loading_modes": [
+    "signed",
+    "unsigned"
+  ],
+  "trees": 5,
+  "methods": [
+    "ml",
+    "reml"
+  ],
+  "candidate_rows": 20832000,
+  "setting_fit_links": 49766400,
+  "maximum_numerical_basis_dimension": 6,
+  "timing_groups_maximum": 694400,
+  "timing_variance_points": [
+    0.0,
+    1.0
+  ],
+  "fit_record_allowance_bytes": 65536,
+  "independent_record_allowance_bytes": 32768,
+  "setting_link_allowance_bytes": 1024,
+  "uncompressed_export_allowance_gib": 1954.6875,
+  "proposed_output_scratch_reserve_gib": 3072,
+  "proposed_minimum_free_disk_gib": 3172,
+  "proposed_cpus_per_worker": 2,
+  "proposed_memory_gib_per_worker": 32,
+  "proposed_native_address_space_gib": 24,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "runtime_calibrated": false,
+  "production_finish_eta": null,
+  "fits_launched_or_queued": false,
+  "fit_resources_installed": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "observed_available_ram_gib": 152.6852149963379,
+  "observed_free_disk_gib": 10299.095893859863,
+  "scope": "Complete four-policy ML/REML fit scope and explicit prospective byte allowances, not measured runtime/peak memory or a directory quota. All original settings retained. Actual full numerical closure and whole-grid qualified-input timing plus enforced resources must precede a fit launch; complete producer/link exports and independent full reader remain to implement. No unready/review groups silently removed or fitted effect accepted."
+}

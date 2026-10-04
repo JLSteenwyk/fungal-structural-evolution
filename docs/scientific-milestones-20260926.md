@@ -1,15 +1,17 @@
 # Open scientific milestones — updated October 4, 2026
 
-The four-control covariance source census is running across all 4,340 original
-cohorts/130,200 designs/260,400 responses/622,080 settings. Completed SQL/Fraction
-reuse controls are connected to raw X/y reconstruction, exact basis routing
-and every setting link. Source software covers the complete declared grid and
-18 rehashed corruptions. Full source readback/closure remains pending, followed
-by fresh 5,208,000 numerical audits and 24,883,200 setting links. These latter
-counts are prospective. No weighted working-model fit or biological effect
-has been accepted. This advances prerequisites for aims 1 and 2 without
-changing any aim's completion criteria.
+The four-control covariance source census has completed all 4,340 original
+cohorts/130,200 designs/260,400 responses/622,080 settings, including readback
+and full provenance closure. A fresh check verified all 13,119 stage bindings
+and three original terminal handles. The separate numerical producer is running
+over 5,208,000 audits and 24,883,200 setting links; its full independent readback
+and closure remain pending. A new actual-D fitting source adapter and numerical
+bridge passed complete synthetic source-grid and candidate tests. Full fit
+exports/readback, measured timing, real working-model fits and calibrated
+biological effects remain required. These stages support aims 1 and 2 without
+changing any aim's completion criteria. All eight aims remain incomplete.
 [Full source workflow and execution](full-weighted-covariance-source-census-20261004.md).
+[Fitting bridge and remaining scope](weighted-shared-entity-candidates-20261004.md).
 
 
 October 3, 13:25 UTC: new native CJSON logging software qualification covers all

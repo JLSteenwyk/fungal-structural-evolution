@@ -1,0 +1,28 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 3600,
+  "wall_seconds_per_stage": 7200,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "output_allowance_gib": 1,
+  "runtime_planning_seconds": [
+    10,
+    3600
+  ],
+  "runtime_calibrated": false,
+  "synthetic_complete_source_grids": 3,
+  "total_declared_candidate_identities": 72000,
+  "actual_numerical_candidates": 64,
+  "dense_ml_reml_cases": 128,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "prepared_utc": "2026-10-04T01:31:04.485365+00:00",
+  "available_ram_gib": 179.72246551513672,
+  "free_disk_gib": 10299.23998260498,
+  "scope": "Complete declared 64 actual-D q4/q5/q6 candidate cases, all controls, modes, outcomes and methods; three existing closed complete synthetic source grids with actual reciprocal reuse diagonals. Numerical actual-D cases use arbitrary positive diagonals. No real biological pilot, production fit, or timing ETA."
+}
