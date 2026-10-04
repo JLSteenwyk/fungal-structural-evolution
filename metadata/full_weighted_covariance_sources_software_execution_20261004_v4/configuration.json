@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_covariance_sources_v4.py",
+    "--output",
+    "data/software_audits/full-weighted-covariance-sources-20261004-v4",
+    "--receipt",
+    "metadata/full_weighted_covariance_sources_software_validation_20261004_v4.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_covariance_sources_software_resources_20261004_v4.json": "1bbe5ab8e5de1e189a585565b43de87dd4e2bf8b56033730eb96677e8b44ae4e",
+    "scripts/check_full_weighted_covariance_sources_v4.py": "9ccc3e59547afaf7a11908cec1e16faca6192c871b3a3eb6870c0b16055a0a46",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "475de41875b84c2f9473b47f69935597",
+  "wrapper": {
+    "pid": 2422567,
+    "created": 1791072995.8,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_covariance_sources_software_resources_20261004_v4.json",
+      "--execution",
+      "metadata/full_weighted_covariance_sources_software_execution_20261004_v4.json",
+      "--receipt",
+      "metadata/full_weighted_covariance_sources_software_validation_20261004_v4.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_covariance_sources_v4.py",
+      "--output",
+      "data/software_audits/full-weighted-covariance-sources-20261004-v4",
+      "--receipt",
+      "metadata/full_weighted_covariance_sources_software_validation_20261004_v4.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-04T00:16:37.030242+00:00"
+}

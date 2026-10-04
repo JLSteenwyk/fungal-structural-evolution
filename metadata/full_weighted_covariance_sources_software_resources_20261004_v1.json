@@ -1,0 +1,28 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 900,
+  "wall_seconds_per_stage": 1800,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "synthetic_cases": 24,
+  "synthetic_nonempty_cohorts": 5,
+  "synthetic_designs": 150,
+  "synthetic_fit_inputs": 300,
+  "synthetic_settings": 600,
+  "prospective_audits": 6000,
+  "prospective_setting_links": 24000,
+  "output_allowance_mib": 64,
+  "runtime_planning_seconds": [
+    1,
+    900
+  ],
+  "runtime_calibrated": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete declared source/census software qualification. No covariance numerical audit or fit, no real data pilot. Original wrapper caps and native proof preserved."
+}

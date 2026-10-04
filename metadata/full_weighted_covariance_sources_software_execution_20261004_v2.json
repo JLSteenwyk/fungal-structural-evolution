@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_covariance_sources_v2.py",
+    "--output",
+    "data/software_audits/full-weighted-covariance-sources-20261004-v2",
+    "--receipt",
+    "metadata/full_weighted_covariance_sources_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_covariance_sources_software_resources_20261004_v2.json": "1155b2be94db15977378f9b4ae2a35374988b3b6bff890715da01a89dc8e15c5",
+    "scripts/check_full_weighted_covariance_sources_v2.py": "b71a919bd8ac97faa53500b82841c9a7b4d1bc137c7dc4e0a09c4abda15a36d4",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "3b2850121a4c47c7933f0345f5fd6f42",
+  "wrapper": {
+    "pid": 2230862,
+    "created": 1791072869.55,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_covariance_sources_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/full_weighted_covariance_sources_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/full_weighted_covariance_sources_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_covariance_sources_v2.py",
+      "--output",
+      "data/software_audits/full-weighted-covariance-sources-20261004-v2",
+      "--receipt",
+      "metadata/full_weighted_covariance_sources_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 1800,
+  "started_utc": "2026-10-04T00:14:30.819017+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-04T00:14:32.878069+00:00",
+  "child": {
+    "pid": 2232073,
+    "created": 1791072870.12,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=900",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_covariance_sources_v2.py",
+      "--output",
+      "data/software_audits/full-weighted-covariance-sources-20261004-v2",
+      "--receipt",
+      "metadata/full_weighted_covariance_sources_software_validation_20261004_v2.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 2.0587033219635487,
+  "child_cpu_seconds": 2.010274,
+  "child_peak_rss_bytes": 150994944,
+  "receipt": "metadata/full_weighted_covariance_sources_software_validation_20261004_v2.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v2/stderr.log": "fa3ddfa41e6087f5ced6a2560302b191eb5de61a3f729f2726fe242475663788",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v2/configuration.json": "a96858022b9ba3d92b695b15139a11aac49aa306c7ba04f311bfbafd54a75dbf",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v2/stdout.log": "578c636ab0c8cec77b1a15c9c9910baeca7139116ef257facb36c66aac4ec61a",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v2/process.json": "dd185f4ec1a4573728e366842b9960ba36dd185f44458f31a28b59508a4d56db"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

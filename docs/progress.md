@@ -12906,3 +12906,39 @@ and figure review remain next.
   complete atlas and all eight biological aims remain required. Approximately
   500fungi plus25outgroups remains the goal; GPU prediction stays paused and
   no new charges were incurred.
+
+- October 4, 00:22 UTC: implemented, qualified and launched the full four-control
+  covariance source census. All 4,340 cohorts, 130,200 designs, 260,400 response
+  inputs and 622,080 settings remain in scope. It reconstructs all original X/y
+  inputs from ten partitions, checks control arrays/reciprocal recipes and exact
+  cohort identities, and checks every setting link with SQLite. Only actual
+  all-one D selects the closed uniform fold; other diagonals retain target I
+  through the positive-diagonal cone. Full numerical arithmetic remains pending:
+  5,208,000 prospective audits and 24,883,200 prospective links are not completed
+  audits. [Source workflow, software failures and full resource plan](full-weighted-covariance-source-census-20261004.md).
+
+  Full software V4 passed five synthetic nonempty cohorts/150 designs/300 response
+  inputs/600 settings, 30 exact-one/constant-two/nearly-uniform routing checks and
+  18 rehashed corruptions. Actual original wait29272 returned zero; native CPU
+  3.518004 seconds, peak RSS150,994,944bytes, exact wrapper/invocation journals
+  verified. Failed V1 integer-label assumption and V2 duplicated self-pin filename
+  remain preserved. Passed V3 remains preserved; separately qualified V4 adds the
+  producer-receipt digest required for final closure. No real biological pilot.
+
+  Original producer2425068/native2425074 is live at the full scope, using scoped
+  2CPU/16GiB/no-swap/12GiB-AS/one-BLAS-thread caps. Reader2425072 and closer2425077
+  are live waiting for the original producer. At00:21:47UTC, 300cohorts had been
+  reported reconstructed; receipt, readback and closure remain absent. All47
+  frozen pins, original identities and actual resource limits were verified.
+  [Original runtime checkpoint](../metadata/full_weighted_covariance_source_census_execution_checkpoint_20261004_v1_0022.json).
+
+  Previous goal turn: progress published in5cde7e9 through full control closure
+  and fresh positive-diagonal arithmetic. The intervening user error check was
+  a verified wait on original live handles:12preserved ancestral timeouts/four
+  live workers, no current allocation/SIGSEGV signatures or OOM kills; uniform
+  process readback3328/4340with no recorded failures. Historical errors are not
+  declared repaired. This turn is progress: complete source workflow/software
+  evidence and original full-data execution/queue change authoritative state.
+  Numerical qualification, timing/fits/calibration, accepted species framework,
+  reconciliation/dating, atlas and all eight biological aims remain incomplete.
+  GPU inference remains paused; no paid infrastructure or unrelated settings changed.

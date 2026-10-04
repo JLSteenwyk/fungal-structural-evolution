@@ -1,0 +1,38 @@
+{
+  "source_plan": "metadata/full_weighted_covariance_source_census_plan_20261004_v1.json",
+  "producer_receipt": "results/phylogeny/full-four-control-covariance-source-census-20261004-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-four-control-covariance-source-census-20261004-v1/readback.json",
+  "producer_status": "complete_full_four_control_covariance_source_census_pending_readback_v1",
+  "reader_status": "passed_full_four_control_covariance_source_census_readback_v1",
+  "completed_status": "complete_verified_full_four_control_covariance_source_census_v1",
+  "summary_fields": [
+    "logical_cases",
+    "cohorts",
+    "case_row_occurrences",
+    "designs",
+    "fit_inputs",
+    "settings",
+    "design_status_counts",
+    "fit_input_status_counts",
+    "setting_status_counts",
+    "policy_basis_counts",
+    "expected_numerical_audit_rows",
+    "expected_setting_audit_links",
+    "policies",
+    "trees",
+    "loading_modes"
+  ],
+  "launches": [
+    "metadata/full_weighted_covariance_source_census_v1_launch_20261003.json",
+    "metadata/full_weighted_covariance_source_census_v1_readback_launch_20261003.json"
+  ],
+  "output": "metadata/full_weighted_covariance_source_census_completed_20261004_v1.json",
+  "scope": "Fresh consumed input hashes from seven independently closed parents; all original 4340 cohorts, 75188 cases, 34110120 cohort-row occurrences, 130200 designs, 260400 response inputs and 622080 settings. Reconstruct raw X and y from all ten original partitions, preserving case/input IDs, active exactly nonzero columns, original design and response dispositions. Recheck every saved control array/reciprocal recipe and exact membership identity. Original group assignment rests on the closed independent SQL/Fraction stage; it is not newly rederived from case-key tables here. Exact named uniform folds only for actual all-one D, otherwise retain D and target I using the closed positive-diagonal cone, including pair exceptions. Full original settings checked against unique design/response identities with SQLite; four controls/two modes/five trees imply 5208000 future numerical audits and 24883200 future links. These are prospective counts, not computed covariance audits. Serialized census replay plus all consumed source/artifact hashes and two actual original process journals gate closure. No numerical audit/envelope inherited, weighted fit, timing calibration, accepted biological effect, posterior acceptance, native restart, GPU or new charge. Unconsumed broader parent archive artifacts are not freshly replayed. All eight aims remain incomplete.",
+  "pins": {
+    "metadata/full_weighted_covariance_source_census_plan_20261004_v1.json": "89dae41b21471034048ad0883c700044cab19b0970ff13dcc6beaf7c13ceabb8",
+    "metadata/full_weighted_covariance_source_census_v1_launch_20261003.json": "156007d9697249f22bb6bfb9b7d8b6bfeb1db79b3b4a253e708b00eb2e25f332",
+    "metadata/full_weighted_covariance_source_census_v1_readback_launch_20261003.json": "c5727a90152ef8e1a359e1815c00092953676450cf4f36dd662a517206a32844",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  }
+}

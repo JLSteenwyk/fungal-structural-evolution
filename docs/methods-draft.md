@@ -3084,3 +3084,25 @@ These are software arithmetic checks, not full weighted source/design
 qualification, measured whole-data speedup, variance fits, adequate
 posterior uncertainty or accepted biological effects.
 [Derivation, qualification, resource correction and remaining gates](positive-diagonal-kernel-products-20261003.md).
+
+### Original-source reconstruction for the four reuse controls
+
+The source census retains all75,188cases/4,340cohorts/130,200designs/260,400
+responses/622,080settings. Raw predictors and responses are reconstructed from
+all ten original numeric partitions and checked against original ordered input,
+design and response hashes. Exact nonzero active columns, original dispositions
+and response ranges are preserved; SQLite checks every original setting against
+its unique design and response identity. Saved controls are checked for original
+cohort identity, counts, reciprocal arithmetic and recipe; their group assignment
+is supported by the closed independent SQL/Fraction stage, not rederived here.
+
+Only actual all-one diagonals use the exact named uniform certificates. Other
+positive diagonals use the independently closed cone that retains D separately
+from target I. Full source/output replay and two original process journals gate
+closure. The complete grid implies5,208,000future raw/REML audit records and
+24,883,200future setting links; source reconstruction computes none of these
+numerical audits. Software qualification covers the full declared synthetic
+grid,30uniform/constant/near-uniform routing checks and18rehashed source/output
+corruptions. Full real source execution/readback is underway; numerical
+qualification, timing, fits and accepted effects remain pending.
+[Implementation and execution evidence](full-weighted-covariance-source-census-20261004.md).

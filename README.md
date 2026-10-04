@@ -5,12 +5,21 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 3 October 2026
+## Current checkpoint — 4 October 2026
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
+
+The [full four-control covariance source census](docs/full-weighted-covariance-source-census-20261004.md)
+is running across all 4,340 original cohorts, 130,200 designs, 260,400 response
+inputs and 622,080 settings. It reconstructs every X/y input, verifies the saved
+reuse controls and preserves every setting link. The future numerical grid has
+5,208,000 audits and 24,883,200 setting links; these have **not** been computed
+by this source stage. Software checks passed all declared synthetic cases and
+18 rehashed corruptions. Full source readback/closure, numerical qualification,
+timing, weighted fits and biological acceptance remain pending.
 
 A [matched predictor branch control](docs/matched-predictor-branch-controls-20261003.md)
 has completed all 931 fixed-topology native fits and independent full readback.

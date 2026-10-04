@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources_v2.py", line 220, in <module>
+    if __name__ == '__main__': main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources_v2.py", line 132, in main
+    a.output.mkdir(exist_ok=False); pp = setup(a.output / 'fixture'); plan = json.loads(pp.read_text())
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources_v2.py", line 115, in setup
+    plan.update(pins={'scripts/' + m + '.py': sha('scripts/' + m + '.py') for m in modules}, trees=old['trees'],
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources_v2.py", line 115, in <dictcomp>
+    plan.update(pins={'scripts/' + m + '.py': sha('scripts/' + m + '.py') for m in modules}, trees=old['trees'],
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py", line 21, in sha
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+  File "/home/bizon/anaconda3/lib/python3.10/pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/home/bizon/anaconda3/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'scripts/check_full_weighted_covariance_sources_v2_v2.py'

@@ -1561,3 +1561,21 @@ arithmetic from full weighted source/qualification. Complete control
 readback/closure has passed, but numerical qualification, timing, fitting
 and accepted evolutionary effects remain separate gates.
 [Methods, checks and limitations](positive-diagonal-kernel-products-20261003.md).
+
+## October 4: qualify the entire four-control source grid before arithmetic
+
+Reconstruct every original X/y input and setting link. Consume the closed
+SQL/Fraction reuse controls with fresh saved-array/recipe checks; do not claim
+new group assignment reconstruction from case-key tables. Preserve all four
+policy labels and all original settings, including physically equal controls.
+Route only actual all-one D through a closed named uniform fold. Other constant
+or nearly uniform diagonals retain D and target I, with genuine pair exceptions.
+Prospective counts must never be reported as computed numerical audits.
+
+Use the complete synthetic scope to verify source/output corruption rejection,
+then run all4,340real cohorts with bounded source reconstruction and serialized
+readback. Preserve failed label/self-pin versions and actual original waits.
+Require full consumed-source/artifact/two-journal closure before advancing the
+full raw/REML numerical workflow; weighting acceptance, fits and biological
+interpretation remain separate.
+[Full source census and resource plan](full-weighted-covariance-source-census-20261004.md).

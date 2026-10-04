@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources.py", line 220, in <module>
+    if __name__ == '__main__': main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_covariance_sources.py", line 133, in main
+    produced = run(pp); checked = run(pp, True)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_weighted_covariance_source_census.py", line 41, in run
+    plan = json.loads(path.read_text()); source, bindings = load(plan, path)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_sources.py", line 88, in load
+    assert len(ids) == len(set(ids)) == n and labels.shape == (n,) and labels.dtype.kind in 'iu'
+AssertionError

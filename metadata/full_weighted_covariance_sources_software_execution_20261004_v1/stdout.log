@@ -1,0 +1,22 @@
+full_entity_operator_numeric_benchmark signed t1 cases 24 seconds 0.0054594919783994555
+full_entity_operator_numeric_benchmark unsigned t1 cases 24 seconds 0.004284422961063683
+full_entity_operator_numeric_benchmark signed t2 cases 24 seconds 0.004365756991319358
+full_entity_operator_numeric_benchmark unsigned t2 cases 24 seconds 0.0043229820439592
+full_entity_operator_numeric_benchmark signed t3 cases 24 seconds 0.0043293110793456435
+full_entity_operator_numeric_benchmark unsigned t3 cases 24 seconds 0.004221698036417365
+full_entity_operator_numeric_benchmark signed t4 cases 24 seconds 0.004311374039389193
+full_entity_operator_numeric_benchmark unsigned t4 cases 24 seconds 0.07794510899111629
+full_entity_operator_numeric_benchmark signed t5 cases 24 seconds 0.005489508039318025
+full_entity_operator_numeric_benchmark unsigned t5 cases 24 seconds 0.004917467013001442
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}
+independent_full_entity_operator_benchmark signed t1 24
+independent_full_entity_operator_benchmark unsigned t1 24
+independent_full_entity_operator_benchmark signed t2 24
+independent_full_entity_operator_benchmark unsigned t2 24
+independent_full_entity_operator_benchmark signed t3 24
+independent_full_entity_operator_benchmark unsigned t3 24
+independent_full_entity_operator_benchmark signed t4 24
+independent_full_entity_operator_benchmark unsigned t4 24
+independent_full_entity_operator_benchmark signed t5 24
+independent_full_entity_operator_benchmark unsigned t5 24
+{"logical_cases": 24, "entity_occurrences": 336, "unique_entities": {"target_node": 24, "background_node": 6, "model_pair": 12, "family": 2, "gene": 60, "model": 24}, "matrices": 13, "operator_nnz": {"signed|target_node": 24, "unsigned|target_node": 24, "signed|background_node": 24, "unsigned|background_node": 24, "signed|model_pair": 48, "unsigned|model_pair": 48, "signed|family": 0, "unsigned|family": 24, "signed|gene": 96, "unsigned|gene": 96, "signed|model": 96, "unsigned|model": 96, "contrast|family_intercept": 24}, "family_components": 2, "largest_component": 12, "sum_component_squared_sizes": 288, "trees": ["t1", "t2", "t3", "t4", "t5"], "kernel_gram_ranks": {"signed|t1": 4, "unsigned|t1": 4, "signed|t2": 4, "unsigned|t2": 4, "signed|t3": 4, "unsigned|t3": 4, "signed|t4": 4, "unsigned|t4": 4, "signed|t5": 4, "unsigned|t5": 4}, "zero_kernels": {"signed|t1": ["family"], "unsigned|t1": [], "signed|t2": ["family"], "unsigned|t2": [], "signed|t3": ["family"], "unsigned|t3": [], "signed|t4": ["family"], "unsigned|t4": [], "signed|t5": ["family"], "unsigned|t5": []}, "numerical_benchmarks": 10}

@@ -1,0 +1,18 @@
+{
+  "dependencies": [
+    "metadata/full_weighted_covariance_source_census_v1_launch_20261003.json",
+    "metadata/full_weighted_covariance_source_census_v1_readback_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_triad_sequence_stage.py",
+    "--plan",
+    "metadata/full_weighted_covariance_source_census_completion_plan_20261004_v1.json"
+  ],
+  "pins": {
+    "metadata/full_weighted_covariance_source_census_completion_plan_20261004_v1.json": "27effee5c26e3421535686b46b68e5d28f2208b59e09f1e39a27195637c1134b",
+    "metadata/full_weighted_covariance_source_census_v1_launch_20261003.json": "156007d9697249f22bb6bfb9b7d8b6bfeb1db79b3b4a253e708b00eb2e25f332",
+    "metadata/full_weighted_covariance_source_census_v1_readback_launch_20261003.json": "c5727a90152ef8e1a359e1815c00092953676450cf4f36dd662a517206a32844",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

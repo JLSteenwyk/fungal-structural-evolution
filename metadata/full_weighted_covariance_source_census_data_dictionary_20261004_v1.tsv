@@ -1,0 +1,17 @@
+field	type	definition
+source_contract	sha256	Canonical digest of source schema, every consumed source binding and basis-routing recipe; no numerical audit inherited.
+cohort_id	sha256	Original exact cohort identifier; membership and logical-case order unchanged.
+cohort_rows_sha256	sha256	Original int64 ordered global-row digest; not selection-record-expanded observations.
+ordered_case_ids_sha256	sha256	Original ordered S64 logical-case identity digest.
+design_ids	ordered list of sha256	All thirty original designs per cohort; exact active nonzero columns and raw X hashes checked.
+fit_input_ids	ordered list of sha256	Both original outcomes per design; raw response hash and fit-input identity checked.
+policy_basis_choices	eight records per cohort	Four distinct control labels by two loading modes; separate labels retained for identical arrays.
+diagonal_sha256	sha256	Float64 digest of the actual supplied reciprocal control diagonal in original cohort row order.
+exact_uniform_one	boolean	True only for actual all-one D; constant-two and nearly uniform values remain false.
+certificate_sha256	sha256	Canonical digest of the closed named uniform certificate or positive-diagonal cone record.
+route	enum	closed_exact_uniform_named_fold or closed_positive_diagonal_cone; numeric ranks do not authorize deletion.
+expected_numerical_audit_rows	integer	Prospective full original design by mode/tree/control count; not audits computed by source census.
+expected_setting_audit_links	integer	Prospective full original setting by mode/tree/control count; not numerical output links yet exported.
+numerical_audits_computed	integer	Zero throughout this source-only stage.
+raw_reml_basis_qualification_complete	boolean	False; separate fresh full numerical qualification required.
+scientific_eligibility	boolean	False; source fidelity alone does not accept weighting policies, fits or biological effects.

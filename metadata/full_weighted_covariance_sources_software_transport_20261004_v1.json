@@ -1,0 +1,46 @@
+{
+  "status": "verified_original_full_weighted_source_software_actual_wait_failed_retained",
+  "checked_utc": "2026-10-04T00:17:28.694691+00:00",
+  "actual_tool_session_id": 71596,
+  "actual_tool_terminal_exit_code": 1,
+  "unit": "fungal-weighted-covariance-source-software-20261004-v1.service",
+  "invocation_id": "5dc90733bb7a4e27a7729f1bebe58bb9",
+  "wrapper": {
+    "pid": 2178513,
+    "created": 1791072827.43,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_covariance_sources_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/full_weighted_covariance_sources_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/full_weighted_covariance_sources_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_covariance_sources.py",
+      "--output",
+      "data/software_audits/full-weighted-covariance-sources-20261004-v1",
+      "--receipt",
+      "metadata/full_weighted_covariance_sources_software_validation_20261004_v1.json"
+    ]
+  },
+  "exact_wrapper_pid_journal_entries": 2,
+  "original_start_records": 1,
+  "original_completion_records": 1,
+  "source_hashes": {
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v1.json": "5ec09b8ffad75fd27bdc124f1b95e457c5c6bad50a864c5eba588f746137d7bf",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v1/original-invocation-journal.jsonl": "9a4ac957684e4565fb69e06dc94fa7221ed2219f34a6c872baf212d407acd9fb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_covariance_sources_software_resources_20261004_v1.json": "1053583b0c4f58e41c32c42dddb0eff2aa624975249e5f2fcc76d4e8ae66cbb4",
+    "scripts/check_full_weighted_covariance_sources.py": "52764b92edcb901d65b55d756b5dfb53e7ffa31660acbb1894756df0529a9c14",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v1/stderr.log": "89d0336845759f596ef8174412c7e43813efc4d94c287e393c2133f2dc56c309",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v1/configuration.json": "1bfe7783fa25742bad6322eeadee6082e9f211fa925a4532569ad1bb71e776f6",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v1/stdout.log": "9eaa2f4f1044debc626f27247e4150deb50c6331b70513cd681e9399a9d22d46",
+    "metadata/full_weighted_covariance_sources_software_execution_20261004_v1/process.json": "83e7257bf1752ad961ec0ddb408b7734603565862f5481ff3240e302b75c6227"
+  },
+  "scope": "Actual original wait/exit, original wrapper PID/create/command and invocation-linked journal. Fresh direct checker/wrapper pins and all generated declared source hashes; synthetic parent closures and journals do not establish real data closure. No native fit or covariance arithmetic."
+}
