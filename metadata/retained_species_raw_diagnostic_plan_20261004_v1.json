@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-10-04T06:09:18.275068+00:00",
+  "cohort_id": "00c9462e56f1fcdf34d9e1f94c47c072ea4d26961d46c37b18de57bbc9ddc189",
+  "output": "results/phylogeny/retained-species-raw-diagnostic-20261004-v1",
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "address_space_gib": 12,
+    "cpu_seconds_per_stage": 900,
+    "wall_seconds_per_stage": 1200,
+    "per_file_limit_mib": 256,
+    "minimum_available_ram_gib": 16,
+    "minimum_free_disk_gib": 128,
+    "output_allowance_gib": 1,
+    "gpu": false,
+    "new_cost_usd": 0,
+    "available_ram_gib": 449.13915634155273,
+    "free_disk_gib": 10275.069778442383,
+    "runtime_calibrated": false,
+    "scope": "Scoped five-tree wider-precision species raw Gram comparisons for exact cohort11; all300original audits. Two scalar Gram entries per audit, no full guard replay or source acceptance. Conservative caps, not a finish estimate."
+  },
+  "pins": {
+    "scripts/diagnose_retained_species_raw_v1.py": "508d967b908ed94d82c11fba52f7d1dd93753182519a7244dede94a0a45d4640"
+  }
+}

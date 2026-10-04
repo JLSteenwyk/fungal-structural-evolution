@@ -13412,3 +13412,20 @@ Original wait60785 exited0 with invocation52fcbb6f323547fe8780f9882df8b19c;
 exact wrapper identity, entire terminal payload and original manager start/end
 were checked. GPU prediction remains paused and all eight biological aims remain
 incomplete. [Recheck evidence](../metadata/current_analysis_error_recheck_20261004_0556.json).
+
+## October 4, 06:15 UTC: exact-cohort covariance diagnostic launched
+
+A new two-CPU/32GiB diagnostic is reconstructing the exact failed11thcohort
+and all40original selected timing groups from1200candidates. Original
+wait65481 remains active; fresh exact PID/create/command/invocation proof
+shows source verification continues. Original stage and tolerance unchanged.
+A separate completed wider-precision check agrees with all600species raw
+Gram entries across300original cohort audits and five trees. It does not
+reproduce the reported failure in those two entries, and does not accept the
+complete original guard. Actual wait77536 exited0 and original invocation
+proof is verified; consumed22source bindings are explicitly distinguished
+from whole-source replay in separate transportV2. Full independent raw
+reader is prepared but unlaunched. Weighted numerical stage reports530/4340
+cohorts and no recorded failure files. GPU prediction remains paused; all
+eight biological aims remain incomplete.
+[Evidence, scope and next action](retained-covariance-diagnostic-20261004.md).

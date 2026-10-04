@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_retained_timing_covariance_v1.py",
+    "--plan",
+    "metadata/retained_timing_covariance_diagnostic_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/retained_timing_covariance_diagnostic_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/retained_timing_covariance_diagnostic_resources_20261004_v1.json": "61e8e9047c98bb047687963e7e4c326db3b8cfed459f5bc3e400ea31bc4f8147",
+    "scripts/diagnose_retained_timing_covariance_v1.py": "e0f2c348d27b7d2dad463536740c067dfc6d06ae83073fe50475fb2b38bb388c",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "1d4b04137c474a42b2eea4aae6de0f20",
+  "wrapper": {
+    "pid": 1333144,
+    "created": 1791093636.85,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/retained_timing_covariance_diagnostic_resources_20261004_v1.json",
+      "--execution",
+      "metadata/retained_timing_covariance_diagnostic_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_timing_covariance_diagnostic_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_retained_timing_covariance_v1.py",
+      "--plan",
+      "metadata/retained_timing_covariance_diagnostic_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_timing_covariance_diagnostic_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-04T06:00:37.963749+00:00"
+}

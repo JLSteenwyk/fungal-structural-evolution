@@ -1,0 +1,17 @@
+{
+  "pid": 1342420,
+  "created": 1791094157.98,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=900",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_retained_species_raw_v1.py",
+    "--plan",
+    "metadata/retained_species_raw_diagnostic_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/retained_species_raw_diagnostic_20261004_v1.json"
+  ]
+}

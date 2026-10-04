@@ -1,0 +1,32 @@
+{
+  "status": "prepared_retained_covariance_extended_reference_not_launched",
+  "prepared_utc": "2026-10-04T06:14:15.867828+00:00",
+  "producer_receipt": "metadata/retained_timing_covariance_diagnostic_20261004_v1.json",
+  "required_original_transport": "metadata/retained_timing_covariance_diagnostic_transport_20261004_v1.json",
+  "output": "metadata/retained_timing_covariance_extended_reference_20261004_v1.json",
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "address_space_gib": 24,
+    "cpu_seconds_per_stage": 3600,
+    "wall_seconds_per_stage": 7200,
+    "per_file_limit_mib": 256,
+    "minimum_available_ram_gib": 64,
+    "minimum_free_disk_gib": 256,
+    "output_allowance_gib": 2,
+    "gpu": false,
+    "new_cost_usd": 0,
+    "available_ram_gib": 308.37446212768555,
+    "free_disk_gib": 10274.864986419678,
+    "runtime_calibrated": false,
+    "scope": "Prepared independent longdouble raw reference over all40closed failed-cohort diagnostic exports, ten mode/tree contexts. No full-source reload, projected recomputation or biological fit. Conservative resource budget, not ETA."
+  },
+  "pins": {
+    "scripts/readback_retained_timing_covariance_diagnostic_v1.py": "8d628bd417ce9fa8c7a088d7b6649bd5e7bc9771ff1831b97a16d84af1326c7a",
+    "scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/retained_timing_covariance_diagnostic_plan_20261004_v1.json": "e51a821fe816730ca7ed0714cf1326f9fa87b1a4d06953917f0baf0056929b41"
+  },
+  "launch_state": "not_launched_or_queued"
+}

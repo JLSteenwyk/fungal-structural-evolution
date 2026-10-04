@@ -1,0 +1,37 @@
+{
+  "prepared_utc": "2026-10-04T06:00:37.480555+00:00",
+  "original_timing_plan": "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json",
+  "cohort_id": "00c9462e56f1fcdf34d9e1f94c47c072ea4d26961d46c37b18de57bbc9ddc189",
+  "records": 22881,
+  "output": "results/phylogeny/retained-timing-covariance-diagnostic-20261004-v1",
+  "pins": {
+    "scripts/diagnose_retained_timing_covariance_v1.py": "e0f2c348d27b7d2dad463536740c067dfc6d06ae83073fe50475fb2b38bb388c",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "scripts/prepare_full_retained_shared_entity_timing.py": "ce0d6acbed628bc8881f8165f137e941da1c7931bfa2de718b19bf66d13db1af",
+    "scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_retained_shared_entity_timing_plan_20261003_v1.json": "a9d126e5a26ac86f21922b1b6d029d807056c782e190dd6c1311c3099c03d42f",
+    "metadata/full_retained_shared_entity_fit_draft_plan_20261003_v1.json": "70f53acfc72f60ba45b83d67fb784123c0b4b7f313a7f571f137c993abdca83d",
+    "metadata/full_retained_shared_entity_timing_failure_20261004_v2.json": "3cf2aa6e3092b0c51e907e0583b5f719643d653bac882cb86471a1524cada08e"
+  },
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "address_space_gib": 24,
+    "cpu_seconds_per_stage": 7200,
+    "wall_seconds_per_stage": 14400,
+    "per_file_limit_mib": 512,
+    "minimum_available_ram_gib": 64,
+    "minimum_free_disk_gib": 256,
+    "output_allowance_gib": 8,
+    "available_ram_gib": 451.1864776611328,
+    "free_disk_gib": 10275.3948097229,
+    "gpu": false,
+    "new_cost_usd": 0,
+    "runtime_calibrated": false,
+    "scope": "Bounded diagnostic with original frozen full-source loading and all40selected groups in failing cohort11. No optimization or likelihood evaluation. CPU/wall limits are conservative budgets, not a finish estimate."
+  }
+}
