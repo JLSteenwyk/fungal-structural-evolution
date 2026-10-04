@@ -1,0 +1,28 @@
+{
+  "cpus": 2,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 64,
+  "cpu_seconds_per_stage": 7200,
+  "wall_seconds_per_stage": 7500,
+  "per_file_limit_mib": 2048,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 256,
+  "observed_original_role_wall_seconds": 118.35887306707446,
+  "median_original_failed_role_wall_seconds": 109.24029531050473,
+  "prospective_wall_minutes": [
+    2,
+    15
+  ],
+  "timing_uncalibrated_under_debugger": true,
+  "native_caps": {
+    "address_space_bytes": 51539607552,
+    "cpu_seconds": 5674,
+    "per_file_bytes": 2147483648
+  },
+  "output_allowance_gib": 4,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "One separate debugger inferior on unchanged failed input/prior/seed, with original 48GiB AS/5674CPU-second/2GiB-file native limits. Debugger/wrapper share64GiB cgroup and2CPU/no swap. Original failures took about two minutes; debugger execution time is uncalibrated. No original retry, production change, paid service or posterior acceptance."
+}

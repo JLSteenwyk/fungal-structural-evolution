@@ -1,0 +1,29 @@
+{
+  "cpus": 2,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 64,
+  "cpu_seconds_per_stage": 7200,
+  "wall_seconds_per_stage": 7500,
+  "per_file_limit_mib": 2048,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 256,
+  "observed_original_role_wall_seconds": 118.35887306707446,
+  "median_original_failed_role_wall_seconds": 109.24029531050473,
+  "prospective_wall_minutes": [
+    2,
+    15
+  ],
+  "timing_uncalibrated_under_debugger": true,
+  "native_caps": {
+    "address_space_bytes": 51539607552,
+    "cpu_seconds": 5674,
+    "per_file_bytes": 2147483648,
+    "stack_soft_bytes": 67108864
+  },
+  "output_allowance_gib": 4,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "One separate controlled stack comparison: unchanged original native command, input/prior/seed/20iterations and48GiB AS/5674CPU-second/2GiB-file limits; only native stack soft limit increases8to64MiB, hard limit remains unlimited. TwoCPU/64GiB/no swap/BLAS1 debugger wrapper. No global limits, sources, priors, production attempts or failed outputs changed. Runtime uncalibrated; a normal native exit still requires full independent output validation."
+}

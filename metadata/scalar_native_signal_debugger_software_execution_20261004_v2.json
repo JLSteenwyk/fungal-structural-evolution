@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=3221225472",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_scalar_native_signal_debugger_v2.py",
+    "--output",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2",
+    "--receipt",
+    "metadata/scalar_native_signal_debugger_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/scalar_native_signal_debugger_software_resources_20261004_v2.json": "e0ceadc5061d004a201c1bcd08b4ed717a84176a8586420bda0ebfa4d9b99f3a",
+    "scripts/check_scalar_native_signal_debugger_v2.py": "ea9af2f9b6b14ae58b8a3c475ac7ea891826513eb7261eca3e0f860e17ebb747",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "add70cd2a7d240b2a228a6fdb5d410b8",
+  "wrapper": {
+    "pid": 3117764,
+    "created": 1791114124.12,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/scalar_native_signal_debugger_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/scalar_native_signal_debugger_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_scalar_native_signal_debugger_v2.py",
+      "--output",
+      "data/software_audits/scalar-native-signal-debugger-20261004-v2",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "4294967296",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 180,
+  "started_utc": "2026-10-04T11:42:05.260755+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T11:42:07.412559+00:00",
+  "child": {
+    "pid": 3117893,
+    "created": 1791114124.56,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=3221225472",
+      "--cpu=120",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_scalar_native_signal_debugger_v2.py",
+      "--output",
+      "data/software_audits/scalar-native-signal-debugger-20261004-v2",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_software_validation_20261004_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 2.1515367159154266,
+  "child_cpu_seconds": 2.417415,
+  "child_peak_rss_bytes": 210292736,
+  "receipt": "metadata/scalar_native_signal_debugger_software_validation_20261004_v2.json",
+  "receipt_sha256": "82d98bb9c90412a5cac446054ff47547e431f73ec0ae08e0b68b1140e23ab7d2",
+  "artifacts": {
+    "metadata/scalar_native_signal_debugger_software_execution_20261004_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/scalar_native_signal_debugger_software_execution_20261004_v2/configuration.json": "aa9fc5dd316b433f74921494e0a452d43706be1af58ea5f059ae7de7ab8c44bc",
+    "metadata/scalar_native_signal_debugger_software_execution_20261004_v2/stdout.log": "fd3b15dc881a0282f490c49e8471d6a8c56498b4ca68a000e88959878983271a",
+    "metadata/scalar_native_signal_debugger_software_execution_20261004_v2/process.json": "ff84413a67c3f444d345d8e9eda112e07f2df4b9e9fff63a61bc96dc2a4736d2"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

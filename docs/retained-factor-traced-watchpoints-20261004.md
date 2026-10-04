@@ -28,21 +28,27 @@ changing the diagnostic or numerical code.
 [Metadata qualification](../metadata/retained_factor_v9_dispatch_software_transport_20261004_v2.json).
 
 The actual original wait **35504**, invocation
-`f9601cc5bc8b448683104fe9254f4c9f`, remains live. At 10:15 UTC, **17 of 40**
-ordered groups agreed and preserved their inputs. No native source write had
-been caught. An observed dispatch used a float64 22,881-by-10 C-order operand,
+`f9601cc5bc8b448683104fe9254f4c9f`, completed with exit **0** at 11:12 UTC.
+All **40 of 40** ordered groups agreed and preserved their inputs; no native
+source write was caught. All 46 target artifacts are freshly hashed, and
+the whole original wrapper initial/terminal payloads and manager start/end
+records match. The original exec initial tool payload was not retained; the
+original terminal payload and wrapper initial message are preserved.
+An observed dispatch used a float64 22,881-by-10 C-order operand,
 gesvd workspace 22,911, and no alias with any of the five cached source factors.
 Other calls have different dimensions; the 10:15 snapshot's final dispatch was
 a 5-by-5 singular-value-only call.
 
 - [Frozen plan](../metadata/retained_factor_watched_traced_debugger_plan_20261004_v1.json)
 - [Exact original live identities, limits and trace observation](../metadata/retained_factor_watched_traced_debugger_checkpoint_20261004_goal_1015.json)
+- [Completed original diagnostic and artifact transport](../metadata/retained_factor_watched_traced_debugger_transport_20261004_v1.json)
+- [Fresh formatter and corrected-value check](../metadata/current_analysis_error_recheck_20261004_user_1122.json)
 - Target outputs: `results/phylogeny/retained-timing-watched-traced-factor-probes-20261004-v9/`.
 - Debugger outputs: `results/phylogeny/retained-factor-watched-traced-debugger-20261004-v1/`.
 
 The diagnostic uses two CPUs, 32 GiB memory, zero swap and one BLAS thread,
-with a two-hour native CPU and four-hour wall cap. The original wait must be
-polled for terminal evidence; observation delay is not grounds for restarting
-it. Even 40 nonrecurrences under this execution context would not prove that
+with a two-hour native CPU and four-hour wall cap. Original terminal evidence
+was obtained by polling the same wait; no diagnostic was restarted.
+Forty nonrecurrences under this execution context do not prove that
 the original unprotected corruption is fixed. No exact write instruction,
 upstream library bug, ABI mismatch or installed-software repair is established.

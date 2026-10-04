@@ -1830,3 +1830,29 @@ observed. Missing recurrence under altered execution contexts is not proof of
 repair. Keep failed metadata checkers and unchanged guards; no original native
 job restart or installed-library change follows from the diagnostic alone.
 [Current traced evidence](retained-factor-traced-watchpoints-20261004.md).
+
+## October 4: gate complete parallel timing and preserve every candidate
+
+Use the strict checkpoint-aware numerical source adapter for the complete
+20,832,000-candidate timing census. Require actual serial/parallel native
+agreement, full independent replay, private serialized-corruption rejection
+and cached/submitted-array mutation detection before the full launch. Retain
+all original 4,340 cohorts and every control/mode/tree/outcome/method; bounded
+queues control memory rather than reduce biological scope. Require the exact
+original numerical closer before native admission, then complete producer,
+reader and all checkpoint/journal closure. Do not treat uncalibrated planning
+hours or an enforced CPU cap as a completion ETA. Keep the old serial workflow
+and all failures unchanged. [Full workflow](full-weighted-parallel-timing-20261004.md).
+
+## October 4: isolate native sampler segmentation faults without retrying failures
+
+Retain all twelve currently saved OG0000972 SIGSEGV roles across priors and
+chain roles, with independent artifact/identity/telemetry evidence. Do not
+infer sufficient memory, posterior adequacy or a prior cause from sampled
+high-water values. Qualify native signal/normal-exit capture on private controls,
+then use a fresh debugger namespace with the original input/seed and native
+48 GiB/CPU/file caps. Stop at a native signal and retain PC/stack/process
+evidence. Continue remaining full-grid accounting and preserve original failed
+attempts. Diagnostic results do not authorize changing priors, dropping a
+family or interpreting short chains as adequate posterior uncertainty.
+[Failure evidence](scalar-native-signal-diagnostic-20261004.md).

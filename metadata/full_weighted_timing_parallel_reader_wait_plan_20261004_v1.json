@@ -1,0 +1,23 @@
+{
+  "dependencies": [
+    "metadata/full_weighted_timing_parallel_producer_launch_20261004_v1.json"
+  ],
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592:25769803776",
+    "--cpu=4838400",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/full_weighted_timing_parallel_v1.py",
+    "--plan",
+    "metadata/full_weighted_timing_parallel_plan_20261004_v1.json",
+    "--reader"
+  ],
+  "pins": {
+    "metadata/full_weighted_timing_parallel_plan_20261004_v1.json": "47ff7c9a46d8b97753e271a3773ef8c89880096c6ffee578e826f000e31b9d54",
+    "metadata/full_weighted_timing_parallel_producer_launch_20261004_v1.json": "667ecabe6db4ea9d7f04592cdedb2d005bbfa619aaeb2057dbcc485b0d0b0c64",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_timing_parallel_followups_v1.py": "0e3b5e3ecce5771c7bf4890531bc59ae4166accfdbcf77f2d7bd633ffdc42dba"
+  }
+}

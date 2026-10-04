@@ -1,0 +1,38 @@
+{
+  "source_plan": "metadata/full_weighted_timing_parallel_plan_20261004_v1.json",
+  "producer_receipt": "results/phylogeny/full-four-control-shared-entity-parallel-timing-20261004-v1/receipt.json",
+  "independent_readback": "results/phylogeny/full-four-control-shared-entity-parallel-timing-20261004-v1/readback.json",
+  "producer_status": "complete_full_four_control_input_timing_pending_accounting_readback_v2",
+  "reader_status": "passed_full_four_control_input_timing_census_numeric_and_planning_readback_v2",
+  "completed_status": "complete_verified_full_four_control_input_timing_accounting_v2",
+  "summary_fields": [
+    "logical_cases",
+    "model_setting_rows",
+    "unique_cohorts",
+    "candidate_rows",
+    "eligible_candidates",
+    "timing_groups",
+    "source_status_counts",
+    "timing_status_counts",
+    "measured_candidate_coverage",
+    "unmeasured_review_candidate_coverage",
+    "conditional_budget_weighted_seconds",
+    "parallel_workers",
+    "worker_address_space_gib",
+    "cached_numeric_inputs_preserved_for_all_cohorts"
+  ],
+  "launches": [
+    "metadata/full_weighted_timing_parallel_producer_launch_20261004_v1.json",
+    "metadata/full_weighted_timing_parallel_reader_launch_20261004_v1.json"
+  ],
+  "output": "metadata/full_weighted_timing_parallel_completed_20261004_v1.json",
+  "scope": "Every original4340cohorts/130200designs/260400response inputs and20832000candidate identities, allfourpolicies/twoloadingmodes/fivetrees/twooutcomes/MLandREML. Complete deterministic representative census, actual-D component/latent qualification, component/spectral likelihoods atvariance0and1, every numeric group independently replayed. All original exclusions and construction/precision reviews retained with content-addressed original arrays. Cached source and submitted array bytes checked around every cohort; bounded task queue stops new admissions on failure. Both original journals and all producer/reader checkpoints gate full closure. Hardware timings are contextual observations and conditional fit-budget planning, not an optimizer runtime bound. Exact original full parallel numerical closer gates native execution. No original serial/timing plan changed, no native retry, pilot, GPU or paid infrastructure. Fitting/calibration, adequate ancestry and all8aims remain required.",
+  "pins": {
+    "metadata/full_weighted_timing_parallel_plan_20261004_v1.json": "47ff7c9a46d8b97753e271a3773ef8c89880096c6ffee578e826f000e31b9d54",
+    "metadata/full_weighted_timing_parallel_producer_launch_20261004_v1.json": "667ecabe6db4ea9d7f04592cdedb2d005bbfa619aaeb2057dbcc485b0d0b0c64",
+    "metadata/full_weighted_timing_parallel_reader_launch_20261004_v1.json": "b435edf89613c73aec49f23349e524f7aae30c3891c2ed0d38a39acc1e97016d",
+    "scripts/close_full_weighted_timing_parallel_v1.py": "4b44d526d04e6e2604238e9dd18487287eb6bbce4a2b3f26329eef254f961c8f",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_timing_parallel_followups_v1.py": "0e3b5e3ecce5771c7bf4890531bc59ae4166accfdbcf77f2d7bd633ffdc42dba"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "dependencies": [
+    "metadata/full_weighted_parallel_closure_launch_20261004_v1.json"
+  ],
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=8589934592:25769803776",
+    "--cpu=4838400",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/full_weighted_timing_parallel_v1.py",
+    "--plan",
+    "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+  ],
+  "pins": {
+    "metadata/full_weighted_timing_parallel_plan_20261004_v1.json": "47ff7c9a46d8b97753e271a3773ef8c89880096c6ffee578e826f000e31b9d54",
+    "metadata/full_weighted_parallel_closure_launch_20261004_v1.json": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

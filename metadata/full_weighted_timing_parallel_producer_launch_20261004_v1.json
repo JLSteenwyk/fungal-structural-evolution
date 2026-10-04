@@ -1,0 +1,25 @@
+{
+  "unit": "fungal-full-weighted-timing-parallel-producer-20261004-v1.service",
+  "pid": 2800846,
+  "created": 1791113023.44,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_weighted_timing_parallel_producer_wait_plan_20261004_v1.json"
+  ],
+  "plan": "metadata/full_weighted_timing_parallel_producer_wait_plan_20261004_v1.json",
+  "plan_sha256": "fec855716661ae94a32576483ac5fed53cf8fba4ecbc51a5a9b0f3a7772c446f",
+  "checked_utc": "2026-10-04T11:24:01.920890+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "1600000 100000",
+    "memory.max": "214748364800",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "8d70d8ba13c448a583462d0da1c3e288",
+  "original_tool_session_id": 45167,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+  },
+  "scientific_eligibility": false
+}

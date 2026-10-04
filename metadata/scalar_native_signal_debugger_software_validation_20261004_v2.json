@@ -1,0 +1,44 @@
+{
+  "status": "passed_actual_process_local_stack_signal_and_normal_exit_debugger_controls_v2",
+  "checked_utc": "2026-10-04T11:42:07.340338+00:00",
+  "outcomes": {
+    "segfault": {
+      "status": "captured_separate_native_signal_stop",
+      "signal": "SIGSEGV",
+      "receipt": "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault.receipt.json",
+      "sha256": "63c27ced0374afc68eff71a79df02ac457602a2fd4d62372d81752519cc9c669"
+    },
+    "normal": {
+      "status": "separate_native_debugger_exit_without_signal_stop",
+      "signal": null,
+      "receipt": "data/software_audits/scalar-native-signal-debugger-20261004-v2/normal.receipt.json",
+      "sha256": "079d0e3898ecc5d8c7d4ba1576fd540ab2c224568f9c9c4d22feb6554cd1c9e0"
+    }
+  },
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_scalar_native_signal_debugger_v2.py": "ea9af2f9b6b14ae58b8a3c475ac7ea891826513eb7261eca3e0f860e17ebb747",
+    "scripts/run_scalar_native_signal_debugger_v2.py": "3ccf8b366142935f59f209d774f0b4b1be608c00eec99a473815d2addf3c666a",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/gdb": "f0068d3b418ae039c309574b33901b82404025eb46c2e983246b9c3976ba7e83",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault.py": "53274669e76a5546c8b432bcc3f148804f91d1ad0713ca923853e47beaf3b3ae",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/normal.py": "b280ed168476250f2b2e3a3228889989934293282a6cc9bf0c60ea37d44a3484",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault.receipt.json": "63c27ced0374afc68eff71a79df02ac457602a2fd4d62372d81752519cc9c669",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/normal.plan.json": "90fe3ac88fea83e51ac1aaac37326e1e0b0d668a1fe77dbec397016aa154a82b",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/normal.receipt.json": "079d0e3898ecc5d8c7d4ba1576fd540ab2c224568f9c9c4d22feb6554cd1c9e0",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault.plan.json": "66ebedb01bc69eacf71af2b1dc5a21c9fde33ddab140113aff44209eed1fdfe3",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/normal-debugger/gdb_commands.txt": "c2a31b25b726f1f8d842463bee2ede1e8f848bf61e5ea7a68a6749b0d40b8c2b",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/normal-debugger/gdb_stdout.log": "6828a99813f4117e6c4ce989f474eed1cf9d28ea93b85aeeaa43049a84e6ac12",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/normal-debugger/gdb_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault-debugger/gdb_commands.txt": "c2a31b25b726f1f8d842463bee2ede1e8f848bf61e5ea7a68a6749b0d40b8c2b",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault-debugger/native-stop-limits.txt": "2cf427f45b8d94646eead5fda4a597d5550c429a42d29a866cff718c7b159c8e",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault-debugger/gdb_stdout.log": "31e17a649873bc51e894391066f2fc5e4d8985c708463f59ea6f9e202ad5df7e",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault-debugger/gdb_stderr.log": "598337690332678dcacea37fd011f7e4286a0eefa783fd2a0cba97c827cd74c5",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault-debugger/native-stop-status.txt": "950140a57840bf4512a1e41581b7b4c5be028a73fa9cb1aa93b54dd97c005733",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v2/segfault-debugger/native-stop-maps.txt": "b157ffafe68760dff6372ebedb5aa77bb8cc5c22dbe4d558b2c96cda20181e90"
+  },
+  "artificial_controls": 2,
+  "original_attempts_restarted": false,
+  "scientific_eligibility": false,
+  "gpu": false
+}

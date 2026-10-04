@@ -1,0 +1,56 @@
+{
+  "status": "captured_separate_native_signal_stop",
+  "checked_utc": "2026-10-04T11:38:52.705371+00:00",
+  "plan_sha256": "744aac7328f93aed79242be19cef95b3bb2a07b703e851caf4a7bde98871b556",
+  "native_stop": {
+    "live_stop": true,
+    "native_cmdline": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+      "--seed",
+      "1322110685",
+      "run",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-scalar-json-v6-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+      "--iterations",
+      "20",
+      "--log-format",
+      "json,tsv",
+      "--name",
+      "independent-chain"
+    ],
+    "pc": "0x614b91847b28 <reg_heap::incremental_evaluate1_changeable_(int)+56>",
+    "pid": 2952828,
+    "signal": "SIGSEGV"
+  },
+  "debugger_exit_code": 0,
+  "native_caps": {
+    "address_space_bytes": 51539607552,
+    "cpu_seconds": 5674,
+    "per_file_bytes": 2147483648
+  },
+  "debugger_command": [
+    "/usr/bin/gdb",
+    "-nx",
+    "--batch",
+    "-x",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/gdb_commands.txt",
+    "--args",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+    "--seed",
+    "1322110685",
+    "run",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-scalar-json-v6-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+    "--iterations",
+    "20",
+    "--log-format",
+    "json,tsv",
+    "--name",
+    "independent-chain"
+  ],
+  "original_attempts_restarted": false,
+  "source_or_prior_changed": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "artificial_control": false,
+  "scope": "One separate debugger inferior on unchanged failed input/prior/seed, with original 48GiB AS/5674CPU-second/2GiB-file native limits. Debugger/wrapper share64GiB cgroup and2CPU/no swap. Original failures took about two minutes; debugger execution time is uncalibrated. No original retry, production change, paid service or posterior acceptance. Signal stop captures PC, siginfo, backtrace, registers, instructions, shared libraries, process limits/status/maps. Debugger changes execution context; failure or nonrecurrence is not itself a root-cause repair. No core dump is requested. All remaining full-grid roles continue independently."
+}

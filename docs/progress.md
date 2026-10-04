@@ -13709,3 +13709,68 @@ intervening user error check freshly reproduced the installed formatter bug
 while verifying the original live diagnostic; the corrected path still passes.
 This turn is progress through complete parallel numerical software qualification,
 strict downstream source integration and actual full-scope sixteen-worker launch.
+
+## October 4, 11:38 UTC: full parallel timing is qualified and queued
+
+Three complete timing software grids retain 72,000 candidates and 320 actual
+native groups. Serial/parallel numerical probes agree at both variance points
+and every group passes independent numeric replay. Selections are independently
+reconstructed; seventeen private rehashed export corruptions fail. One actual
+unchanged eligible cohort plus private cached-source changes before/after
+arithmetic and a submitted-X mutation qualify all three memory guards. Original
+waits 5573 and 56888 and their whole wrapper/journal transports are closed.
+
+The real full 20,832,000-candidate timing producer, numeric reader and closer
+are queued with original waits 45167/35385/46264. Every cohort, policy, loading,
+tree, outcome and ML/REML setting remains in scope. Sixteen workers use 12 GiB
+AS each under a 200 GiB/no-swap cap. Actual original controllers and the
+original numerical closer are observed. At 11:26, numerical closure is absent,
+no native timing child exists and no timing output root has been created.
+The runtime estimate is an uncalibrated planning range, not an ETA. No old
+serial/timing plan or process is changed. Full fitting export/reader integration,
+actual timing, fits and calibrated effects remain required.
+[Full parallel timing](full-weighted-parallel-timing-20261004.md).
+
+At 11:25 the numerical producer has 1,854/4,340 complete checkpoints, sixteen
+actual workers, no recorded failures and no swap/OOM events. Full independent
+readback and original-journal closure remain pending. Paired predictor
+resampling reports 52,181/53,200 draws at 11:27 (98.1%); its complete native
+readback and archive remain pending.
+
+The original traced hardware-watchpoint wait 35504 finishes with exit zero at
+11:12. All forty groups agree and preserve inputs; all 46 target artifacts,
+whole original wrapper payloads and manager records are verified. No source
+write is caught, so the original retained timing corruption remains unresolved.
+The fresh user check reproduces the installed formatter error in five of twelve
+constants; the corrected project path passes twelve constants and 2,709 saved
+value comparisons. This is new evidence, not an installed-software repair.
+
+The corrected sampler's 11:27 checkpoint records 1,174 outcomes: 1,152 finite
+integrity checks, ten explicit special-value reviews and twelve failed attempts.
+All twelve failures are SIGSEGV in OG0000972 across four roles and three priors.
+Their original receipts/artifacts and 1,185 exact identity telemetry observations
+are verified. Sampled VmPeak reaches 35.61 GiB under a 48 GiB cap; final peaks
+and the cause are not established. Actual native signal/normal-exit GDB controls
+pass with original wait 77247. Separate wait 19850 runs the unchanged failing
+input/seed with original native caps in a fresh debugger namespace; its exact
+live wrapper/native limits are observed. No failed original attempt is retried.
+[Failure evidence and diagnostic](scalar-native-signal-diagnostic-20261004.md).
+
+The preceding user turn is progress through fresh native error evidence and
+the original forty-group diagnostic terminal. This turn is progress through
+complete parallel timing qualification, actual full-scope dependency launches,
+preserved native failure attribution and a qualified separate diagnostic.
+All eight evolutionary aims, complete atlas coverage, accepted/calibrated
+biological fits and adequate ancestral posteriors remain unfinished. GPU
+prediction remains paused; no new charges are incurred.
+
+At 11:44 the numerical producer reaches 2,351/4,340 cohorts with all sixteen
+workers live and no recorded failure/swap/OOM. The separate native diagnostic
+wait 19850 closes with exit zero after catching SIGSEGV at an evaluator call.
+Fault address equals rsp-8 below the fully grown8MiB stack; saved limits/maps,
+siginfo and repeated frames support stack exhaustion in this diagnostic.
+This is not proof for every original failure or a validated repair. V2 actual
+private native controls pass with exit-code capture and process-local64MiB
+stack. Separate wait99691 tests only that stack soft-limit change while retaining
+unlimited hard stack and all original AS/CPU/file/input/prior/seed settings.
+No production or machine-wide settings change. The comparison is pending.

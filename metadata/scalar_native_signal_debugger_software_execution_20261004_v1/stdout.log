@@ -1,0 +1,93 @@
+{
+  "status": "captured_separate_native_signal_stop",
+  "checked_utc": "2026-10-04T11:34:52.336974+00:00",
+  "plan_sha256": "6cec6a97658aa2ed54c37789e5f3507c7032711bdce32c69b29fc6ef7779bd15",
+  "native_stop": {
+    "live_stop": true,
+    "native_cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/scalar-native-signal-debugger-20261004-v1/segfault.py"
+    ],
+    "pc": "0x76be25d9b8dc <__strlen_evex+28>",
+    "pid": 2908967,
+    "signal": "SIGSEGV"
+  },
+  "debugger_exit_code": 0,
+  "native_caps": {
+    "address_space_bytes": 1073741824,
+    "cpu_seconds": 20,
+    "per_file_bytes": 16777216
+  },
+  "debugger_command": [
+    "/usr/bin/gdb",
+    "-nx",
+    "--batch",
+    "-x",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/scalar-native-signal-debugger-20261004-v1/segfault-debugger/gdb_commands.txt",
+    "--args",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/scalar-native-signal-debugger-20261004-v1/segfault.py"
+  ],
+  "original_attempts_restarted": false,
+  "source_or_prior_changed": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "artificial_control": true,
+  "scope": "Private artificial actual ctypes null-pointer native signal or normal exit; no biological run or repair."
+}
+{
+  "status": "separate_native_debugger_exit_without_signal_stop",
+  "checked_utc": "2026-10-04T11:34:52.716561+00:00",
+  "plan_sha256": "cab6e8002427606bc9429a9e585770cd9575a728626f73cd77c1b581378a0f45",
+  "native_stop": {
+    "live_stop": false,
+    "pid": 0,
+    "signal": null
+  },
+  "debugger_exit_code": 0,
+  "native_caps": {
+    "address_space_bytes": 1073741824,
+    "cpu_seconds": 20,
+    "per_file_bytes": 16777216
+  },
+  "debugger_command": [
+    "/usr/bin/gdb",
+    "-nx",
+    "--batch",
+    "-x",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/scalar-native-signal-debugger-20261004-v1/normal-debugger/gdb_commands.txt",
+    "--args",
+    "/home/bizon/anaconda3/bin/python",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/scalar-native-signal-debugger-20261004-v1/normal.py"
+  ],
+  "original_attempts_restarted": false,
+  "source_or_prior_changed": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "artificial_control": true,
+  "scope": "Private artificial actual ctypes null-pointer native signal or normal exit; no biological run or repair."
+}
+{
+  "status": "passed_actual_native_signal_and_normal_exit_debugger_controls",
+  "checked_utc": "2026-10-04T11:34:52.751670+00:00",
+  "outcomes": {
+    "segfault": {
+      "status": "captured_separate_native_signal_stop",
+      "signal": "SIGSEGV",
+      "receipt": "data/software_audits/scalar-native-signal-debugger-20261004-v1/segfault.receipt.json",
+      "sha256": "39fc632af0b3775be0e12243433208f21313ba524edfb0f6a5d6aab6c55a8f26"
+    },
+    "normal": {
+      "status": "separate_native_debugger_exit_without_signal_stop",
+      "signal": null,
+      "receipt": "data/software_audits/scalar-native-signal-debugger-20261004-v1/normal.receipt.json",
+      "sha256": "5aeec6dc90a7adeeab79590e52656dc942b24a87ffc6d55aefce481c5513b1c6"
+    }
+  },
+  "artificial_controls": 2,
+  "original_attempts_restarted": false,
+  "scientific_eligibility": false,
+  "gpu": false
+}

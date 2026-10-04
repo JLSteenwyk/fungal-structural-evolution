@@ -1,0 +1,17 @@
+{
+  "pid": 2908757,
+  "created": 1791113689.74,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=3221225472",
+    "--cpu=120",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_scalar_native_signal_debugger_v1.py",
+    "--output",
+    "data/software_audits/scalar-native-signal-debugger-20261004-v1",
+    "--receipt",
+    "metadata/scalar_native_signal_debugger_software_validation_20261004_v1.json"
+  ]
+}

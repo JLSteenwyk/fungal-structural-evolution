@@ -1,0 +1,50 @@
+{
+  "status": "verified_captured_native_stack_boundary_fault",
+  "checked_utc": "2026-10-04T11:43:19.758685+00:00",
+  "original_tool_session_id": 19850,
+  "native_signal": "SIGSEGV",
+  "program_counter": "0x614b91847b28 <reg_heap::incremental_evaluate1_changeable_(int)+56>",
+  "current_instruction": "=> 0x614b91847b28 <_ZN8reg_heap33incremental_evaluate1_changeable_Ei+56>:\tcall   0x614b917fb790 <_ZNK8reg_heap14result_for_regEi>",
+  "fault_address": "0x7ffe0e86af28",
+  "stack_pointer": "0x7ffe0e86af30",
+  "fault_equals_call_return_address_write": true,
+  "stack_mapping": [
+    "0x7ffe0e86b000",
+    "0x7ffe0f06b000"
+  ],
+  "fault_bytes_below_stack_mapping": 216,
+  "stack_soft_limit_bytes": 8388608,
+  "stack_mapping_bytes": 8388608,
+  "captured_memory_bytes": {
+    "VmPeak": 38236205056,
+    "VmSize": 30820204544,
+    "VmHWM": 37818642432,
+    "VmRSS": 30467944448,
+    "VmStk": 8388608
+  },
+  "original_address_space_cap_bytes": 51539607552,
+  "stack_exhaustion_supported_in_this_diagnostic": true,
+  "all_original_twelve_causes_proven": false,
+  "validated_fix": false,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_scalar_native_stack_fault_20261004_v1.py": "8f69eb40158fceaa70dc5b4177f5d1a62efa7a2fffbd0f0fc39bd9a5e49a775b",
+    "metadata/scalar_native_signal_debugger_transport_20261004_v1.json": "a44d4437d2173cb6754608058941389c7e3d54015b07a23c6892a320bf81c714",
+    "metadata/scalar_native_signal_debugger_20261004_v1.json": "16f7065d8589649f25cfdcef672b75530f42792917033d921795d98dbd6d0384",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/gdb_commands.txt": "3f6945398ce4f8b6c6c7d4c48d9534f69015f4ecc7217479abd83d9baa198221",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/native-stop-limits.txt": "7dc60d5f605f548db68190870cc80638131a40703932735ec37058859168de6e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/gdb_stdout.log": "a6bb2eeb6d9901e0ed676b1fbfbce755eb184e9a7453697d30b1e33d6cdbedb2",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/gdb_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/native-stop-status.txt": "bd22852f902a638b6212edadd3e8d24b54f0bef4617d3c502ed75080a10f322d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/native-stop-maps.txt": "b662ad39c5925701eeda1622eeb7ab47b219586061e96075e3c65d17e54f83c6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/independent-chain-1/C1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/independent-chain-1/C1.log.json": "16a1f27c973df20fa7e4fa6f97425985d23595c4f2a2b6df71819fcf8760c0db",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/independent-chain-1/runtime-tree.nwk": "f60720ab126a886cb656e00da3d0b52e925a6982c01fd14cacc5af8baa1d6d2d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/independent-chain-1/C1.P1.fastas": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/independent-chain-1/C1.P1.site-property-samples.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "original_attempts_restarted": false,
+  "posterior_qualified": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Captured x86-64 call writes at rsp-8 below the fully grown8MiB stack mapping with8MiB soft limit and SIGSEGV MAPERR. Repeated evaluator frames support stack exhaustion in this separate diagnostic. This does not prove all original twelve crashes share that cause or that a larger process-local stack resolves full sampling. No global limit/source/prior change or posterior acceptance."
+}

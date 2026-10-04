@@ -1,0 +1,124 @@
+{
+  "status": "completed_fresh_user_error_recheck",
+  "checked_utc": "2026-10-04T11:22:19.212317+00:00",
+  "original_formatter_error_reproduced": true,
+  "incorrect_native_constants": 5,
+  "example": {
+    "expected": 2.34e-10,
+    "observed": 0.234
+  },
+  "corrected_native_roundtrips": 12,
+  "corrected_v6_saved_rows_rechecked": 63,
+  "corrected_v6_mapped_values_rechecked": 2709,
+  "comparisons": [
+    {
+      "rows": 21,
+      "mapped_values_compared": 903,
+      "nonfinite_reviews": [],
+      "relative_tolerance": 2e-13,
+      "absolute_tolerance": 0.0,
+      "scientific_eligibility": false
+    },
+    {
+      "rows": 21,
+      "mapped_values_compared": 903,
+      "nonfinite_reviews": [],
+      "relative_tolerance": 2e-13,
+      "absolute_tolerance": 0.0,
+      "scientific_eligibility": false
+    },
+    {
+      "rows": 21,
+      "mapped_values_compared": 903,
+      "nonfinite_reviews": [],
+      "relative_tolerance": 2e-13,
+      "absolute_tolerance": 0.0,
+      "scientific_eligibility": false
+    }
+  ],
+  "diagnostic_completed_groups": 40,
+  "diagnostic_total_groups": 40,
+  "diagnostic_native_write_hit": false,
+  "diagnostic_inputs_preserved": true,
+  "retained_timing_original_failure_unresolved": true,
+  "original_failed_partial_cohorts": 10,
+  "memory_corruption_resolved": false,
+  "root_cause_established": false,
+  "fresh_probe_execution_proof": {
+    "invocation_id": "e50d8c55bdd5401491c446db51916c57",
+    "wrapper": {
+      "pid": 2798231,
+      "created": 1791112853.75,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_positive_diagonal_kernel_software_stage.py",
+        "--resources",
+        "metadata/baliphy_logging_error_recheck_resources_20261004_user_1122.json",
+        "--execution",
+        "metadata/baliphy_logging_error_recheck_execution_20261004_user_1122.json",
+        "--receipt",
+        "metadata/baliphy_logging_error_recheck_20261004_user_1122.json",
+        "--",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/recheck_baliphy_logging_errors.py",
+        "--output",
+        "data/software_audits/baliphy-logging-error-recheck-20261004-user-1122",
+        "--receipt",
+        "metadata/baliphy_logging_error_recheck_20261004_user_1122.json"
+      ]
+    },
+    "original_tool_session_id": 31567,
+    "original_tool_terminal_exit_code": 0,
+    "whole_wrapper_payloads_matched": true,
+    "manager_start_records": 1,
+    "manager_completion_records": 1
+  },
+  "diagnostic_execution_proof": {
+    "invocation_id": "f9601cc5bc8b448683104fe9254f4c9f",
+    "wrapper": {
+      "pid": 2558350,
+      "created": 1791106339.08,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_weighted_fit_controller_software_stage.py",
+        "--resources",
+        "metadata/retained_factor_watched_traced_debugger_resources_20261004_v1.json",
+        "--execution",
+        "metadata/retained_factor_watched_traced_debugger_execution_20261004_v1.json",
+        "--receipt",
+        "metadata/retained_factor_watched_traced_debugger_20261004_v1.json",
+        "--",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_retained_factor_watchpoint_debugger_v2.py",
+        "--plan",
+        "metadata/retained_factor_watched_traced_debugger_plan_20261004_v1.json",
+        "--receipt",
+        "metadata/retained_factor_watched_traced_debugger_20261004_v1.json"
+      ]
+    },
+    "original_tool_session_id": 35504,
+    "original_tool_terminal_exit_code": 0,
+    "whole_wrapper_payloads_matched": true,
+    "manager_start_records": 1,
+    "manager_completion_records": 1
+  },
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_user_error_recheck_20261004_1122.py": "8f12cb7a7d1d2119a9cd57faab44ba0249b4e06b44e1d323ec32d9b72b01faa0",
+    "metadata/current_analysis_error_original_tool_payloads_20261004_user_1122.json": "093afc6d716c0b7269e87defb4ccee38706b79d42b6d5cf2573392465afb375f",
+    "metadata/baliphy_logging_error_recheck_execution_20261004_user_1122.json": "24e54432ee946ff4fe6a683f108bae5449bd8eebea548d8eb9d4254bfcdc35bf",
+    "metadata/retained_factor_watched_traced_debugger_execution_20261004_v1.json": "f88e7f9895659e87490be6af899facd91ac6fb733ac58f4460ddc2fc892eaf78",
+    "metadata/baliphy_logging_error_recheck_20261004_user_1122.json": "f20d0313eab090ba38093d55713da42aa039c6c5fba00b09c1891cbb594d2fde",
+    "metadata/retained_factor_watched_traced_debugger_20261004_v1.json": "3d629ea3fb126f4dde385062619e581e22c620fdceaac5f373dbd65accc15d99",
+    "metadata/baliphy_scalar_json_v6_software_validation_20261004_v9.json": "9f90026e58c60b3b5f94bcad403fe92e03fd09eac74736a0f95dddcb0a888e2f",
+    "results/phylogeny/retained-factor-watched-traced-debugger-20261004-v1/target_receipt.json": "a6db5bbd8a1698b1bee7c0bb28cef97439909c0ab2a49d483f01aaefb4eebd3e",
+    "metadata/full_retained_shared_entity_timing_failure_20261004_v2.json": "3cf2aa6e3092b0c51e907e0583b5f719643d653bac882cb86471a1524cada08e"
+  },
+  "new_mcmc_runs": 0,
+  "original_jobs_restarted": false,
+  "installed_software_changed": false,
+  "production_tolerance_changed": false,
+  "biological_fits": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "The installed formatter still fails the fresh native constant test. The corrected project path passes twelve constants and independent readback of 2709 retained values. The original V9 diagnostic completed all forty groups without detected corruption; instrumentation changes execution context and this is not evidence of a root-cause repair. The original failed timing run remains preserved and incomplete."
+}

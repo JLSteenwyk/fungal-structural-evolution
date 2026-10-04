@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=68719476736",
+    "--cpu=7200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_scalar_native_signal_debugger_v1.py",
+    "--plan",
+    "metadata/scalar_native_signal_debugger_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/scalar_native_signal_debugger_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/scalar_native_signal_debugger_resources_20261004_v1.json": "58ce747e72dde92f2bdda7ea38a92f7e9f0ed6bc446f0ff4819c991885e4ab09",
+    "scripts/run_scalar_native_signal_debugger_v1.py": "3057abec25107af54ceb81ed9dcef72417b5aee3fcaeed21bd0da6187fc3a4a9",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "f1261b24602246d899fd02bc16b84c9d",
+  "wrapper": {
+    "pid": 2951630,
+    "created": 1791113791.37,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/scalar_native_signal_debugger_resources_20261004_v1.json",
+      "--execution",
+      "metadata/scalar_native_signal_debugger_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v1.py",
+      "--plan",
+      "metadata/scalar_native_signal_debugger_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7500,
+  "started_utc": "2026-10-04T11:36:32.536069+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T11:38:52.814974+00:00",
+  "child": {
+    "pid": 2951732,
+    "created": 1791113791.84,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=68719476736",
+      "--cpu=7200",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v1.py",
+      "--plan",
+      "metadata/scalar_native_signal_debugger_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 140.2785956140142,
+  "child_cpu_seconds": 140.907149,
+  "child_peak_rss_bytes": 37818642432,
+  "receipt": "metadata/scalar_native_signal_debugger_20261004_v1.json",
+  "receipt_sha256": "16f7065d8589649f25cfdcef672b75530f42792917033d921795d98dbd6d0384",
+  "artifacts": {
+    "metadata/scalar_native_signal_debugger_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/scalar_native_signal_debugger_execution_20261004_v1/configuration.json": "4030671fc59b36a3df62aea0fb792daa5ca6a53f9192f3ba04c3759db1c34d01",
+    "metadata/scalar_native_signal_debugger_execution_20261004_v1/stdout.log": "6a93db56dd5f1eb8ff70ebce13de44563fd3622edfd05ce4aed4d8c7fe2e9325",
+    "metadata/scalar_native_signal_debugger_execution_20261004_v1/process.json": "798fe8a38b330d0fea4443d7e5ea3ef929d8ac2e3e04390b4d929ae6b864be51"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

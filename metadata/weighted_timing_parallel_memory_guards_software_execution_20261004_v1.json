@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=240",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_weighted_timing_parallel_memory_guards_v1.py",
+    "--output",
+    "data/software_audits/weighted-timing-parallel-memory-guards-20261004-v1",
+    "--receipt",
+    "metadata/weighted_timing_parallel_memory_guards_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/weighted_timing_parallel_memory_guards_software_resources_20261004_v1.json": "42936b5510b9859cbed67ac71003e1b9a17b1ca216f5df27c3cf7f9b25f9a18d",
+    "scripts/check_weighted_timing_parallel_memory_guards_v1.py": "9b3fb5eae612f29f14c765e247a97be9692340bc745ecde513df2fd8a7726170",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "cec657c5563a45408d9f7887b51f8fad",
+  "wrapper": {
+    "pid": 2780030,
+    "created": 1791111641.19,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/weighted_timing_parallel_memory_guards_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/weighted_timing_parallel_memory_guards_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/weighted_timing_parallel_memory_guards_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_timing_parallel_memory_guards_v1.py",
+      "--output",
+      "data/software_audits/weighted-timing-parallel-memory-guards-20261004-v1",
+      "--receipt",
+      "metadata/weighted_timing_parallel_memory_guards_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 360,
+  "started_utc": "2026-10-04T11:00:42.298590+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T11:01:00.738748+00:00",
+  "child": {
+    "pid": 2780034,
+    "created": 1791111641.6,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=240",
+      "--fsize=536870912",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_weighted_timing_parallel_memory_guards_v1.py",
+      "--output",
+      "data/software_audits/weighted-timing-parallel-memory-guards-20261004-v1",
+      "--receipt",
+      "metadata/weighted_timing_parallel_memory_guards_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 18.439931186963804,
+  "child_cpu_seconds": 18.405991,
+  "child_peak_rss_bytes": 147849216,
+  "receipt": "metadata/weighted_timing_parallel_memory_guards_software_validation_20261004_v1.json",
+  "receipt_sha256": "990cda822b3ce3fc9b096f2cc14e948ec7b680a0a20df255522e8e5438c72240",
+  "artifacts": {
+    "metadata/weighted_timing_parallel_memory_guards_software_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/weighted_timing_parallel_memory_guards_software_execution_20261004_v1/configuration.json": "f77aa515f3d2969b5a53c36aa3a7dfe21a2f18b45cc632e77b39854a516dd78e",
+    "metadata/weighted_timing_parallel_memory_guards_software_execution_20261004_v1/stdout.log": "ae07ba9c2ffa1ba1a7e3f463cc5a9ec8afe2a69647816b60724b034d2727c697",
+    "metadata/weighted_timing_parallel_memory_guards_software_execution_20261004_v1/process.json": "450fdd58ff42d9360f90eb9566fd4624d218000ce0907b3d3a39f46f98cebb6e"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

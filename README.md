@@ -39,7 +39,15 @@ workers, a 200 GiB memory cap and a 192 GiB reservation budget. One early native
 chain explicitly records an infinite alpha parameter and remains in review;
 its ancestral arrays are excluded. This is a 20-iteration computational check,
 not adequate ancestral posterior sampling. Full sampler and observer readbacks
-and closure remain required.
+and closure remain required. At 11:27, 1,174 outcomes include 1,152 finite
+integrity checks, ten special-value reviews and twelve native segmentation
+faults in OG0000972 across all three priors. A
+[separate native debugger diagnostic](docs/scalar-native-signal-diagnostic-20261004.md)
+captured SIGSEGV at a native call writing below the fully grown 8 MiB stack.
+The original debugger terminal and stack evidence are verified. A separate
+controlled comparison uses a 64 MiB process-local stack with input, seed and
+other native caps unchanged; this is not yet a validated correction. Failed
+roles are retained; no production attempt is retried or global limit changed.
 Existing jobs and historical outputs remain unchanged.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits
@@ -58,7 +66,9 @@ the exact write and validated repair remain unresolved. A
 retain both the 40-probe protected nonrecurrence and the V8 target's 40-probe
 nonrecurrence with its original debugger post-exit failure. A
 [fresh traced hardware-watchpoint diagnostic](docs/retained-factor-traced-watchpoints-20261004.md)
-has reached 17 of 40 groups without recurrence at 10:15 UTC. The corrected
+completed all 40 groups without recurrence and its original wait exited zero
+at 11:12 UTC. All target artifact hashes and original wrapper journals are
+verified. The corrected
 debugger's native-write/normal-exit controls pass; the original error remains
 unresolved. Weighted numerical qualification
 continues independently; fitting and calibration remain unfinished.
@@ -97,9 +107,18 @@ now runs the same complete numerical grid with 16 CPU workers. All 18,000
 synthetic audits and 72,000 links agree with the serial calculation and pass
 independent latent readback; 19 corruption cases and two private input mutations
 are rejected. At 10:24 UTC, 279/4,340 producer cohorts are complete, with all 16
-workers live, about 22 GiB memory and no swap or failure files. Full readback and
+workers live, about 22 GiB memory and no swap or failure files. A fresh 11:25
+checkpoint records 1,854/4,340 cohorts and sixteen live workers without failures.
+Full readback and
 closure are pending. A new downstream source adapter passes 72,000 candidate
-input comparisons, but its complete timing/fitting integration remains required.
+input comparisons. A [complete parallel timing workflow](docs/full-weighted-parallel-timing-20261004.md)
+now passes all 72,000 synthetic candidate rows, 320 actual native timing groups,
+full numeric replay, 17 private export corruptions and three private memory
+mutations. Its full 20,832,000-candidate producer, reader and closer are queued
+behind the original parallel numerical closure, with 16 CPU/200 GiB/no-swap
+limits. At 11:26, the gate is still closed and no native timing job has started.
+Runtime remains uncalibrated. Complete fitting export/reader integration is
+still required.
 The original serial numerical and queued timing stages remain unchanged.
 
 A [four-control fitting source adapter and numerical bridge](docs/weighted-shared-entity-candidates-20261004.md)

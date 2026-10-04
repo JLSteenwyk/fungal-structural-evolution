@@ -1,0 +1,25 @@
+{
+  "status": "queued_complete_full_parallel_timing_after_original_numerical_closure",
+  "source_plan": "metadata/full_weighted_timing_parallel_plan_20261004_v1.json",
+  "source_plan_sha256": "47ff7c9a46d8b97753e271a3773ef8c89880096c6ffee578e826f000e31b9d54",
+  "launches": [
+    "metadata/full_weighted_timing_parallel_producer_launch_20261004_v1.json",
+    "metadata/full_weighted_timing_parallel_reader_launch_20261004_v1.json",
+    "metadata/full_weighted_timing_parallel_closure_launch_20261004_v1.json"
+  ],
+  "original_tool_sessions": [
+    45167,
+    35385,
+    46264
+  ],
+  "candidate_rows": 20832000,
+  "maximum_eligible_groups": 694400,
+  "variance_points_per_group": 2,
+  "independent_numeric_replay": "every_selected_group",
+  "numerical_dependency": "metadata/full_weighted_parallel_closure_launch_20261004_v1.json",
+  "scientific_eligibility": false,
+  "weighted_working_model_fits_launched": false,
+  "gpu": false,
+  "original_serial_jobs_restarted": false,
+  "all_eight_aims_incomplete": true
+}

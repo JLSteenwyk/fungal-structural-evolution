@@ -1,0 +1,133 @@
+{
+  "status": "verified_live_original_separate_scalar_signal_debugger",
+  "checked_utc": "2026-10-04T11:37:50.149647+00:00",
+  "unit": "fungal-scalar-native-signal-debugger-20261004-v1.service",
+  "original_tool_session_id": 19850,
+  "invocation_id": "f1261b24602246d899fd02bc16b84c9d",
+  "wrapper": {
+    "pid": 2951630,
+    "created": 1791113791.37,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/scalar_native_signal_debugger_resources_20261004_v1.json",
+      "--execution",
+      "metadata/scalar_native_signal_debugger_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v1.py",
+      "--plan",
+      "metadata/scalar_native_signal_debugger_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/scalar_native_signal_debugger_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "children": [
+    {
+      "pid": 2951732,
+      "created": 1791113791.84,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_scalar_native_signal_debugger_v1.py",
+        "--plan",
+        "metadata/scalar_native_signal_debugger_plan_20261004_v1.json",
+        "--receipt",
+        "metadata/scalar_native_signal_debugger_20261004_v1.json"
+      ],
+      "address_space_limits": [
+        68719476736,
+        68719476736
+      ],
+      "cpu_limits": [
+        7200,
+        7200
+      ],
+      "file_limits": [
+        2147483648,
+        2147483648
+      ],
+      "rss": 29110272
+    },
+    {
+      "pid": 2952609,
+      "created": 1791113793.08,
+      "cmdline": [
+        "/usr/bin/gdb",
+        "-nx",
+        "--batch",
+        "-x",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-signal-debugger-20261004-v1/gdb_commands.txt",
+        "--args",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+        "--seed",
+        "1322110685",
+        "run",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-scalar-json-v6-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+        "--iterations",
+        "20",
+        "--log-format",
+        "json,tsv",
+        "--name",
+        "independent-chain"
+      ],
+      "address_space_limits": [
+        68719476736,
+        68719476736
+      ],
+      "cpu_limits": [
+        7200,
+        7200
+      ],
+      "file_limits": [
+        2147483648,
+        2147483648
+      ],
+      "rss": 80216064
+    },
+    {
+      "pid": 2952828,
+      "created": 1791113793.26,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+        "--seed",
+        "1322110685",
+        "run",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-scalar-json-v6-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+        "--iterations",
+        "20",
+        "--log-format",
+        "json,tsv",
+        "--name",
+        "independent-chain"
+      ],
+      "address_space_limits": [
+        51539607552,
+        51539607552
+      ],
+      "cpu_limits": [
+        5674,
+        5674
+      ],
+      "file_limits": [
+        2147483648,
+        2147483648
+      ],
+      "rss": 15089848320
+    }
+  ],
+  "native_child_count": 1,
+  "source_plan": "metadata/scalar_native_signal_debugger_plan_20261004_v1.json",
+  "source_plan_sha256": "744aac7328f93aed79242be19cef95b3bb2a07b703e851caf4a7bde98871b556",
+  "scientific_eligibility": false,
+  "gpu": false,
+  "original_attempts_restarted": false,
+  "scope": "Actual separate debugger wrapper and descendants observed; original native caps checked if target exists. This is live status, not terminal or causal repair evidence."
+}
