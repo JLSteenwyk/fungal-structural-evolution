@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_shared_entity_fits.py",
+    "--output",
+    "data/software_audits/full-weighted-shared-entity-fits-20261004-v1",
+    "--receipt",
+    "metadata/full_weighted_fitting_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_fitting_software_resources_20261004_v1.json": "6f46e9a45db7596492c40f37a0203b31f9d1787efcfa3444967032ff292dea8a",
+    "scripts/check_full_weighted_shared_entity_fits.py": "4f93023afc36ccd4a86b04b571865f61046614b7c3eb9d2707b4c99fa7d441d7",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "daba2fa1b2204f8fb8bf2aa72d5ad684",
+  "wrapper": {
+    "pid": 3262895,
+    "created": 1791078560.07,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_fitting_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/full_weighted_fitting_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/full_weighted_fitting_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_shared_entity_fits.py",
+      "--output",
+      "data/software_audits/full-weighted-shared-entity-fits-20261004-v1",
+      "--receipt",
+      "metadata/full_weighted_fitting_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T01:49:21.129617+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-04T01:49:52.122903+00:00",
+  "child": {
+    "pid": 3262898,
+    "created": 1791078560.43,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_shared_entity_fits.py",
+      "--output",
+      "data/software_audits/full-weighted-shared-entity-fits-20261004-v1",
+      "--receipt",
+      "metadata/full_weighted_fitting_software_validation_20261004_v1.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 30.99291168199852,
+  "child_cpu_seconds": 30.924674000000003,
+  "child_peak_rss_bytes": 368996352,
+  "receipt": "metadata/full_weighted_fitting_software_validation_20261004_v1.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/stderr.log": "824b60ccc53e8b061508d82bb7e796d3599e952a47079c6246acee4af27c5b5d",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/configuration.json": "02de82e751bebf462c8198dbe2ac7d226085691f1b3663f03f700285d4251220",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/stdout.log": "cb417035721c7b415866b113f80f6b37c51b633fe9a927085860941cb05cf897",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/process.json": "c75b401d14f33676f466387caac4c3d5d30973429bd9eb457671f96a9e68925d"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

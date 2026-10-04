@@ -1,0 +1,52 @@
+{
+  "status": "preserved_original_complete_weighted_fitting_checker_v1_failure",
+  "checked_utc": "2026-10-04T01:51:40.034180+00:00",
+  "actual_tool_session_id": 24131,
+  "actual_tool_terminal_exit_code": 1,
+  "wrapper": {
+    "pid": 3262895,
+    "created": 1791078560.07,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_fitting_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/full_weighted_fitting_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/full_weighted_fitting_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_shared_entity_fits.py",
+      "--output",
+      "data/software_audits/full-weighted-shared-entity-fits-20261004-v1",
+      "--receipt",
+      "metadata/full_weighted_fitting_software_validation_20261004_v1.json"
+    ]
+  },
+  "invocation_id": "daba2fa1b2204f8fb8bf2aa72d5ad684",
+  "native_exit_code": 1,
+  "failure_type": "StopIteration",
+  "cause": "Missing candidate corruption is correctly rejected and exact input failure is captured; checker expected-rejection helper omitted StopIteration and aborted before subsequent cases.",
+  "scientific_jobs_affected": false,
+  "source_export_numerical_modules_changed": false,
+  "source_hashes": {
+    "metadata/full_weighted_fitting_software_execution_20261004_v1.json": "6719f27b5665f0db9dc5b5d183aa4ac9ec1c8f9b89d18ec8cd68312c3b3fb391",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/original-invocation-journal.jsonl": "f131199c8c77741c528d270cf4a2cba6c66b11eeef0b669426f92dc306f76994",
+    "metadata/full_weighted_fitting_software_resources_20261004_v1.json": "6f46e9a45db7596492c40f37a0203b31f9d1787efcfa3444967032ff292dea8a",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/stderr.log": "824b60ccc53e8b061508d82bb7e796d3599e952a47079c6246acee4af27c5b5d",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/configuration.json": "02de82e751bebf462c8198dbe2ac7d226085691f1b3663f03f700285d4251220",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/stdout.log": "cb417035721c7b415866b113f80f6b37c51b633fe9a927085860941cb05cf897",
+    "metadata/full_weighted_fitting_software_execution_20261004_v1/process.json": "c75b401d14f33676f466387caac4c3d5d30973429bd9eb457671f96a9e68925d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "scripts/check_full_weighted_shared_entity_fits.py": "4f93023afc36ccd4a86b04b571865f61046614b7c3eb9d2707b4c99fa7d441d7",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "scripts/full_weighted_fit_exports.py": "adc5da3c0f5f3216579b7f5de4a4812b007a0afd0343c8bd0b93960e941dc123",
+    "scripts/prepare_full_weighted_shared_entity_fits.py": "5bcf6628a134f2fc76870f185f9236c0d9fa77fb0863045dd9179792c355f14e",
+    "scripts/readback_full_weighted_shared_entity_fits.py": "95ecb3d21a004303761f2367f0d8c154aa00e32c804de02e3f93a010d5824de3",
+    "data/software_audits/full-weighted-shared-entity-fits-20261004-v1/exports-0/independent/failures/971bb3de70f1301491812cba6febfcda0f8be8545074627c4b035e156ab0427a/failure.json": "a4f4a5a7e8a17450e0a1b99c4a2ed85b08176157ddb18f6e59eec1d307a70399",
+    "data/software_audits/full-weighted-shared-entity-fits-20261004-v1/exports-0/independent/failures/971bb3de70f1301491812cba6febfcda0f8be8545074627c4b035e156ab0427a/original_numeric_inputs.npz": "b319f8a63915ca33f05a4e5133872d6be5a7f8bbfd4bf42415ab167c878abf2d"
+  },
+  "scope": "Original V1 execution, exact wrapper/invocation journal and partial failed software artifacts preserved. No real inference, no failed job restart, no tolerance or scope change; fresh V2 checker/root only."
+}

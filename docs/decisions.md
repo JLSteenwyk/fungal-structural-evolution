@@ -1616,3 +1616,20 @@ readback or measured real timing. Record the 1,954.69-GiB uncompressed allowance
 and proposed 3-TiB scratch reserve before a fitting launch. Preserve existing
 stricter production tolerances; synthetic checks are explicitly distinct.
 [Actual-D fitting contracts and pending gates](weighted-shared-entity-candidates-20261004.md).
+
+## October 4: preserve full weighted fit accounting and original failures
+
+Segment all candidate and original-setting exports by cohort. Preserve every
+original ordinal and duplicate row, actual-D identity, native failure and review.
+Require full independent numerical/setting replay; a local checkpoint hash is
+not enough to promote a result. On reuse, recompute reader numerical rows and
+verify exact saved exports before retaining byte-identical chunks. Refuse
+completed-stage restarts and retain incomplete/error files and exact arrays.
+
+Separate complete export-grid native mocks from independently replayed actual
+saved numeric fits. Preserve the V1 missing-row/checker exception failure and
+use a fresh V2 checker without altering scientific code or tolerance. The full
+unlaunched draft retains stricter production gradient1e-6/batch32 and all
+20.832-million potential candidates/49.7664-million links. Real numerical
+closure, complete timing and installed resources remain launch prerequisites.
+[Full contracts and actual original software evidence](full-weighted-fitting-20261004.md).

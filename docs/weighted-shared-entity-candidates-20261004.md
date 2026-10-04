@@ -3,8 +3,9 @@
 The complete original source adapter and individual numerical fitting bridge
 are implemented and software qualified. They carry each control's actual
 residual diagonal through production and independent likelihood calculations.
-They do not yet supply complete fitting exports/link accounting, a whole-grid
-fitting reader or measured full-data timing. No real-data fit is launched or
+Complete fitting exports/link accounting and the whole-grid reader have since
+passed separate [workflow qualification](full-weighted-fitting-20261004.md).
+Measured full-data timing remains unfinished. No real-data fit is launched or
 queued, and no evolutionary effect or weighting policy is accepted.
 
 ## Complete scope and source requirements
@@ -107,8 +108,8 @@ no new charge; GPU inference stays paused.
 
 Whole-grid timing would retain all 20.832 million candidate identities and
 at most 694,400 eligible cohort/policy/mode/tree/outcome/method groups with
-both declared variance points. Complete export/readback implementation,
-actual full numerical closure, full-grid timing and enforced resources remain
+both declared variance points. The completed export/readback software still
+requires actual full numerical closure, full-grid timing and enforced resources
 prerequisites to launching fits. Optimizer budgets, unmeasured reviews and
 calibration must remain explicit; a hardware timing census is not a biological
 pilot. Runtime is uncalibrated and no completion ETA is asserted.

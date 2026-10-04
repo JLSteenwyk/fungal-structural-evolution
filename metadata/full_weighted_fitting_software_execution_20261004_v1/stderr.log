@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_fits.py", line 200, in <module>
+    if __name__ == '__main__': main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_fits.py", line 153, in main
+    bad, n = corruptions(pp, root); rejections.extend(bad); captures += n
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_fits.py", line 93, in corruptions
+    rejected(lambda: readback(pp, root / 'rejected-reader.json'))
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_reduced_covariance_qualification.py", line 30, in rejected
+    try: function()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_fits.py", line 93, in <lambda>
+    rejected(lambda: readback(pp, root / 'rejected-reader.json'))
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_weighted_shared_entity_fits.py", line 71, in run
+    value = next(exports); validate_export(expected, value)
+StopIteration

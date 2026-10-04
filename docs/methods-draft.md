@@ -3163,3 +3163,23 @@ and 46 retain review. These are computational qualification cases, not fungal
 effect estimates. Whole-grid exports/reader, 20.832-million candidate timing,
 real fitting and inference calibration remain required.
 [Methods, resources, checks and limitations](weighted-shared-entity-candidates-20261004.md).
+
+### Complete weighted fitting exports and independent accounting
+
+All original candidate/source/link states are exported in cohort segments,
+retaining duplicate setting rows with their original ordinal and digest.
+Independent readback reconstructs all sources and checks each actual-D
+likelihood/start/curvature/search result plus every setting link. Checkpoint
+reuse includes a fresh numerical replay; source and producer reviews are never
+promoted by new local hashes. Original failed/incomplete files and exact input
+arrays are preserved. Full actual source/artifact/two-original-journal closure
+remains required for any real completed fit stage.
+
+Three complete synthetic accounting grids passed 72,000 candidates/144,000
+links with explicitly mocked native branches; a separate64actual serialized
+fit replay uses the frozen independent numerical reader. Full original scope
+is20.832million potential candidates/49.7664million links. Existing stricter
+production tolerances and proposed resources remain in an unlaunched draft;
+actual numerical closure, complete qualified-input timing and installed caps
+still gate fits. These software checks do not establish biological effects.
+[Producer/reader, tests, resources and pending gates](full-weighted-fitting-20261004.md).

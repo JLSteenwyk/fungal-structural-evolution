@@ -31,13 +31,14 @@ and 72,000 links, including qualified nonuniform q4/q5/q6 bases and review state
 Real weighted numerical output and model fits are not yet complete.
 
 A [four-control fitting source adapter and numerical bridge](docs/weighted-shared-entity-candidates-20261004.md)
-now preserve actual residual diagonals through production and independent
-likelihood calculations. Software checked 72,000 identities across three
-complete synthetic grids and 64 actual numerical candidates; 18 passed the
-independent working-candidate checks and 46 retained reviews. These are software
-results. Complete fitting exports/readback, full-data timing and real fits remain
-unfinished. The full scope is 20,832,000 potential ML/REML candidates with
-49,766,400 original-setting links.
+preserve actual residual diagonals through both likelihood implementations.
+The [complete checkpointed fitting exports and independent reader](docs/full-weighted-fitting-20261004.md)
+are now software qualified: 72,000 candidate rows and 144,000 setting links
+across three complete synthetic grids with explicitly mocked native fit branches,
+plus independent replay of all 64 actual saved numerical fits. These are software
+results. The full unlaunched configuration retains 20,832,000 potential ML/REML
+candidates and 49,766,400 original-setting links. Real numerical closure,
+full-data timing, real fits and biological inference remain unfinished.
 
 A [matched predictor branch control](docs/matched-predictor-branch-controls-20261003.md)
 has completed all 931 fixed-topology native fits and independent full readback.

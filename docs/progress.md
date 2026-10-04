@@ -13062,3 +13062,43 @@ fitting contracts. GPU inference remains paused and the full goal stays active.
 At 01:38 UTC, the original weighted producer reported 50 cohorts with no
 recorded failure; the independent full readback and closure remain pending.
 [Latest numerical checkpoint](../metadata/full_weighted_covariance_qualification_execution_checkpoint_20261004_goal_0138.json).
+
+## October 4, 01:56 UTC: complete weighted fit exports and reader qualified
+
+Implemented checkpointed all-cohort candidate exports, every original setting
+row/ordinal link and full independent source/latent/spectral/start/curvature/
+search/link replay. Closed reader chunks are numerically replayed before
+byte-identical reuse, preventing a rehashed checkpoint from promoting reviews.
+Three complete synthetic grids passed 72,000 candidate rows and 144,000 links
+with explicit native mocks for accounting branches; all 64 saved actual
+numerical candidates separately passed frozen independent serialized replay.
+Seventeen rehashed output/checkpoint alterations, twelve compact closure
+alterations and seven original-input numerical failure captures passed.
+Producer/reader closed-chunk interruption/reuse and completed restart refusal
+passed. Every original source exclusion, constant, failed fit and review remains.
+
+The first checker correctly rejected a missing row but its expected-rejection
+helper omitted StopIteration. The original V1 script/root, actual exit1 and
+exact journals remain preserved. Fresh V2 changes only that checker helper;
+source/export/numerical code, scope, tolerances and resource caps are unchanged.
+The actual V2 wait exited zero; exact wrapper/invocation journals and every
+465 declared binding were verified. Software native CPU/RSS was 150.22 seconds/
+2,148,712,448 bytes, not full-data timing or peak-memory bounds.
+
+A reproducible immutable full fitting draft now preserves 20,832,000 potential
+candidates/49,766,400 links, existing production gradient1e-6/batch32, all
+controls/modes/trees/outcomes/methods and proposed 3-TiB scratch. No worker is
+launched or queued and no fit resource is installed. Actual full numerical
+closure, whole-grid timing and enforced resources still gate real fits.
+[Complete workflow, preserved failure and remaining work](full-weighted-fitting-20261004.md).
+
+At 01:59 UTC, the original weighted producer reported 90 cohorts without a
+recorded failure; its full independent readback and closure remain unfinished.
+The full uniform process reader has original terminal success; its provenance
+closer remains live, and retained qualification/timing remain queued. At 01:50
+UTC the original ancestral follow-up had 16 preserved timeouts and four live
+workers, without qualifying an ancestral posterior. The previous goal turn
+was progress through full source-adapter/actual-D bridge qualification; this
+turn is progress through implemented/qualified full exports and reader plus
+a complete unlaunched configuration. All eight aims remain incomplete, the
+original goal stays active and GPU inference stays paused.

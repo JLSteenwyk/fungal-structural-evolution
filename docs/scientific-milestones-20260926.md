@@ -6,9 +6,9 @@ and full provenance closure. A fresh check verified all 13,119 stage bindings
 and three original terminal handles. The separate numerical producer is running
 over 5,208,000 audits and 24,883,200 setting links; its full independent readback
 and closure remain pending. A new actual-D fitting source adapter and numerical
-bridge passed complete synthetic source-grid and candidate tests. Full fit
-exports/readback, measured timing, real working-model fits and calibrated
-biological effects remain required. These stages support aims 1 and 2 without
+bridge passed complete synthetic source-grid and candidate tests. Complete fit exports and the independent reader now pass software qualification;
+real fit exports/readback, measured timing and calibrated biological effects
+remain required. These stages support aims 1 and 2 without
 changing any aim's completion criteria. All eight aims remain incomplete.
 [Full source workflow and execution](full-weighted-covariance-source-census-20261004.md).
 [Fitting bridge and remaining scope](weighted-shared-entity-candidates-20261004.md).
@@ -1478,3 +1478,13 @@ terminal handles. The full real numerical producer has started; its independent
 readback/closure, working-model timing/fits/calibration and all biological aims
 remain incomplete.
 [Closed source evidence](../metadata/full_weighted_covariance_source_census_completed_verification_20261004_v1.json).
+
+October4,01:56UTC: complete weighted fitting exports and independent reader
+are implemented and software qualified, retaining all original settings and
+checkpoint failure/review states. Complete accounting tests pass72000rows/
+144000links with explicit native mocks;64actual saved numeric fits are separately
+replayed. Full unlaunched20.832million candidate/49.7664million link configuration
+preserves stricter production settings. Actual numerical closure, full timing,
+installed resources, real fits/calibration and all eight biological aims remain
+required. GPU prediction paused; no new charge.
+[Full workflow and scientific limits](full-weighted-fitting-20261004.md).

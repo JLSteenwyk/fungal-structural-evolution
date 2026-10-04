@@ -1,0 +1,30 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 3600,
+  "wall_seconds_per_stage": 7200,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "output_allowance_gib": 2,
+  "runtime_planning_seconds": [
+    10,
+    3600
+  ],
+  "runtime_calibrated": false,
+  "complete_synthetic_source_grids": 3,
+  "synthetic_candidate_rows": 72000,
+  "synthetic_original_setting_links": 144000,
+  "actual_serialized_numerical_replays": 64,
+  "prepared_utc": "2026-10-04T01:51:40.019788+00:00",
+  "available_ram_gib": 151.66353225708008,
+  "free_disk_gib": 10296.6803855896,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete three-grid original four-control producer/reader/link/checkpoint software qualification with explicitly mocked native fits/failures for full exports; separate64actual serialized numerical fits replayed by frozen independent actual-D reader. Native real-data fits and timing are not launched; no biological pilot.",
+  "preserved_previous_checker_failure": "metadata/full_weighted_fitting_software_failure_20261004_v1.json",
+  "version_change": "Expected corrupt-export rejection helper now includes exhausted-stream StopIteration; complete grid, source/export/numerical code, native mocks, tolerances and resource caps unchanged."
+}

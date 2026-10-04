@@ -1,0 +1,12 @@
+field	type	definition
+candidate_id	sha256	Full closed fitting contract, original response identity, mode, tree, control and method.
+source_setting_ordinal	integer	Original zero-based setting-row ordinal; duplicate rows remain distinct.
+source_setting_sha256	sha256	Digest of ordered original string-valued setting row.
+candidate_disposition	enum	Producer state including original source nonfits, constants, covariance reviews, reproduced errors or candidate pending independent audit.
+independent_disposition	enum	Independent source review, reproduced numerical failure, numeric replay, curvature/search/precision review or candidate pending calibration; never accepted science.
+source_candidate_sha256	sha256	Canonical digest of exact serialized producer candidate replayed by independent reader.
+candidate_sha256	sha256	Whole completed producer cohort candidate segment byte checksum.
+audits_sha256	sha256	Whole completed independent cohort audit segment byte checksum; all numeric rows replayed on reuse.
+producer_receipt_sha256	sha256	Original completed producer receipt pinned by reader stage/checkpoints.
+scientific_eligibility	boolean	False in every source/candidate/audit/receipt; full real/inferential gates remain.
+complete_export_grids_native_producer_and_reader_explicitly_mocked	boolean	True only in software qualification: complete accounting grids use explicit native mocks, distinct from64actual saved numerical-fit replays.

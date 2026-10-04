@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_shared_entity_fits_v2.py",
+    "--output",
+    "data/software_audits/full-weighted-shared-entity-fits-20261004-v2",
+    "--receipt",
+    "metadata/full_weighted_fitting_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_fitting_software_resources_20261004_v2.json": "518595fff59157484e03b62aac5091dc2a4ab6b4e1d50de59df2984452f208f1",
+    "scripts/check_full_weighted_shared_entity_fits_v2.py": "963390477c8496621ac41820d63bf82f3179ec170c7e1d2f9e625dce76264d4c",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "2f259340f440441a896e56bdf7270cc3",
+  "wrapper": {
+    "pid": 3265011,
+    "created": 1791078699.43,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_fitting_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/full_weighted_fitting_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/full_weighted_fitting_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_shared_entity_fits_v2.py",
+      "--output",
+      "data/software_audits/full-weighted-shared-entity-fits-20261004-v2",
+      "--receipt",
+      "metadata/full_weighted_fitting_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T01:51:40.454517+00:00"
+}
