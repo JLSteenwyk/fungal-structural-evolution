@@ -1,0 +1,22 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 1800,
+  "wall_seconds_per_stage": 3600,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 256,
+  "output_allowance_gib": 1,
+  "expected_draw_arrays": 53200,
+  "planning_wall_minutes": [
+    1,
+    30
+  ],
+  "runtime_uncalibrated": true,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "All original paired draws,2CPU/16GiB/noSwap/12GiB AS; descriptive branch summary only, no additional native model fits or structure prediction."
+}

@@ -1,0 +1,91 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_matched_predictor_distributions_v1.py",
+    "--source",
+    "metadata/matched_predictor_distribution_summary_20261004_v1.json",
+    "--transport",
+    "metadata/matched_predictor_distribution_summary_transport_20261004_v1.json",
+    "--receipt",
+    "metadata/matched_predictor_distribution_readback_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/matched_predictor_distribution_readback_resources_20261004_v1.json": "6b46388c2350c096c821c0b3458079938f8fa1ea5446d6bb0b732132552fe3a2",
+    "scripts/readback_matched_predictor_distributions_v1.py": "6afb44d2ab52c5dd6f6160bccd046b9e49522fea3f90ff92c0148cb988fbf280",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "dfa51c576b9543579e5e1cb0eee68e88",
+  "wrapper": {
+    "pid": 96141,
+    "created": 1791128081.71,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/matched_predictor_distribution_readback_resources_20261004_v1.json",
+      "--execution",
+      "metadata/matched_predictor_distribution_readback_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/matched_predictor_distribution_readback_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_matched_predictor_distributions_v1.py",
+      "--source",
+      "metadata/matched_predictor_distribution_summary_20261004_v1.json",
+      "--transport",
+      "metadata/matched_predictor_distribution_summary_transport_20261004_v1.json",
+      "--receipt",
+      "metadata/matched_predictor_distribution_readback_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-04T15:34:42.837416+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T15:35:17.067262+00:00",
+  "child": {
+    "pid": 96145,
+    "created": 1791128082.14,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_matched_predictor_distributions_v1.py",
+      "--source",
+      "metadata/matched_predictor_distribution_summary_20261004_v1.json",
+      "--transport",
+      "metadata/matched_predictor_distribution_summary_transport_20261004_v1.json",
+      "--receipt",
+      "metadata/matched_predictor_distribution_readback_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 34.2295582749648,
+  "child_cpu_seconds": 34.175591,
+  "child_peak_rss_bytes": 172560384,
+  "receipt": "metadata/matched_predictor_distribution_readback_20261004_v1.json",
+  "receipt_sha256": "6b7fa4f5d9023f407000be50de3df35d4852c8fa41158fc944f013f680573023",
+  "artifacts": {
+    "metadata/matched_predictor_distribution_readback_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/matched_predictor_distribution_readback_execution_20261004_v1/configuration.json": "bc01960b80383b972a73e95b0cac3265c89eb521874f8154856de22377a5c44c",
+    "metadata/matched_predictor_distribution_readback_execution_20261004_v1/stdout.log": "79d4cb4f7590a820dfc1ab37a275bda2a2cfb96699a4d0995be749e462be748d",
+    "metadata/matched_predictor_distribution_readback_execution_20261004_v1/process.json": "b3ab3b0c73ca64e2e0e8a65c882db4982ddb598a22a8660fc209e176f3919873"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

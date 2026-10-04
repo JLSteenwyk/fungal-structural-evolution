@@ -1,0 +1,41 @@
+{
+  "status": "passed_full_independent_paired_predictor_distribution_summary_readback",
+  "checked_utc": "2026-10-04T15:35:16.824348+00:00",
+  "source_receipt_sha256": "cac01c217493fb5115dac34a8b82da56f25f8eeabcd2b7ee54834afce237ef3c",
+  "summary_rows_checked": 13170,
+  "original_draw_arrays_reread": 53200,
+  "branch_value_slots": 6146000,
+  "empirical_direction_counts": {
+    "circular_blocks10:af:includes_zero": 1998,
+    "circular_blocks10:af:negative": 87,
+    "circular_blocks10:af_empirical:includes_zero": 2007,
+    "circular_blocks10:af_empirical:negative": 86,
+    "circular_blocks10:llm:includes_zero": 2004,
+    "circular_blocks10:llm:negative": 86,
+    "iid_sites:af:includes_zero": 1989,
+    "iid_sites:af:negative": 86,
+    "iid_sites:af_empirical:includes_zero": 1993,
+    "iid_sites:af_empirical:negative": 82,
+    "iid_sites:llm:includes_zero": 1991,
+    "iid_sites:llm:negative": 84,
+    "circular_blocks10:af:positive": 110,
+    "circular_blocks10:llm:positive": 105,
+    "iid_sites:af:positive": 120,
+    "iid_sites:af_empirical:positive": 120,
+    "iid_sites:llm:positive": 120,
+    "circular_blocks10:af_empirical:positive": 102
+  },
+  "scientific_eligibility": false,
+  "calibrated_effect_intervals": false,
+  "all_eight_aims_incomplete": true,
+  "new_native_fits": 0,
+  "gpu": false,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_matched_predictor_distributions_v1.py": "6afb44d2ab52c5dd6f6160bccd046b9e49522fea3f90ff92c0148cb988fbf280",
+    "metadata/matched_predictor_distribution_summary_20261004_v1.json": "cac01c217493fb5115dac34a8b82da56f25f8eeabcd2b7ee54834afce237ef3c",
+    "metadata/matched_predictor_distribution_summary_transport_20261004_v1.json": "7c662becd736149759721d16e8c4fc1fd2ea9b273afb09e1c4df5f59b48a23ac",
+    "results/phylogeny/matched-predictor-distribution-summary-20261004-v1/paired_branch_distributions.tsv": "dce7722c72ffec9861d9d928084471382a421360ebc084868bfd8c98deb887ba",
+    "metadata/matched_predictor_resampling_plan_20261003_v1.json": "9060119ba4a2a9d9bf55da30938226cbc21b19797190af2862a14dbabe7842f6"
+  },
+  "scope": "Every summary row independently reconstructed from original paired branch arrays using sorted linear order statistics and math.fsum/scalar sums. Exact binomial tails check MC-fraction bounds. All source digests rechecked before/after. Eight machine epsilons times scale checks arithmetic roundoff only; no original numerical or biological tolerance is changed. Descriptive conditional ranges remain uncalibrated for effects, and dependent topology/branch/model summaries are not discoveries."
+}

@@ -1,0 +1,690 @@
+{
+  "status": "verified_original_gated_full_parallel_timing_runtime",
+  "checked_utc": "2026-10-04T15:17:29.083991+00:00",
+  "source_plan_sha256": "47ff7c9a46d8b97753e271a3773ef8c89880096c6ffee578e826f000e31b9d54",
+  "original_handles": [
+    {
+      "unit": "fungal-full-weighted-timing-parallel-producer-20261004-v1.service",
+      "pid": 2800846,
+      "created": 1791113023.44,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_timing_parallel_producer_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_timing_parallel_producer_wait_plan_20261004_v1.json",
+      "plan_sha256": "fec855716661ae94a32576483ac5fed53cf8fba4ecbc51a5a9b0f3a7772c446f",
+      "checked_utc": "2026-10-04T11:24:01.920890+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "8d70d8ba13c448a583462d0da1c3e288",
+      "original_tool_session_id": 45167,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_timing_parallel_producer_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.55,
+      "children": [
+        {
+          "pid": 77662,
+          "created": 1791126356.6,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "sleeping",
+          "cpu_seconds_at_observation": 79.92
+        },
+        {
+          "pid": 78211,
+          "created": 1791126418.13,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 626.9
+        },
+        {
+          "pid": 78221,
+          "created": 1791126418.14,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 629.35
+        },
+        {
+          "pid": 78232,
+          "created": 1791126418.16,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 628.76
+        },
+        {
+          "pid": 78245,
+          "created": 1791126418.18,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 628.1500000000001
+        },
+        {
+          "pid": 78255,
+          "created": 1791126418.2,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 627.49
+        },
+        {
+          "pid": 78267,
+          "created": 1791126418.22,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 626.8000000000001
+        },
+        {
+          "pid": 78277,
+          "created": 1791126418.24,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 626.21
+        },
+        {
+          "pid": 78278,
+          "created": 1791126418.26,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 626.4
+        },
+        {
+          "pid": 78281,
+          "created": 1791126418.28,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 624.59
+        },
+        {
+          "pid": 78282,
+          "created": 1791126418.3,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 623.2900000000001
+        },
+        {
+          "pid": 78283,
+          "created": 1791126418.32,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 624.62
+        },
+        {
+          "pid": 78284,
+          "created": 1791126418.34,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 622.61
+        },
+        {
+          "pid": 78285,
+          "created": 1791126418.35,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 621.52
+        },
+        {
+          "pid": 78286,
+          "created": 1791126418.37,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 618.9399999999999
+        },
+        {
+          "pid": 78287,
+          "created": 1791126418.39,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 620.37
+        },
+        {
+          "pid": 78288,
+          "created": 1791126418.41,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 617.5799999999999
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "667ecabe6db4ea9d7f04592cdedb2d005bbfa619aaeb2057dbcc485b0d0b0c64",
+      "current_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 13461852160,
+        "memory.peak": 14639415296,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 77662,
+          "created": 1791126356.6,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2942722048,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         8589934592           25769803776          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78211,
+          "created": 1791126418.13,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1933107200,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78221,
+          "created": 1791126418.14,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1793458176,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78232,
+          "created": 1791126418.16,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1645305856,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78245,
+          "created": 1791126418.18,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2069413888,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78255,
+          "created": 1791126418.2,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1912143872,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78267,
+          "created": 1791126418.22,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1980538880,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78277,
+          "created": 1791126418.24,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1924685824,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78278,
+          "created": 1791126418.26,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1866301440,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78281,
+          "created": 1791126418.28,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2103427072,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78282,
+          "created": 1791126418.3,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2152505344,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78283,
+          "created": 1791126418.32,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2025979904,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78284,
+          "created": 1791126418.34,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1861619712,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78285,
+          "created": 1791126418.35,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2067865600,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78286,
+          "created": 1791126418.37,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 1926017024,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78287,
+          "created": 1791126418.39,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2042200064,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        },
+        {
+          "pid": 78288,
+          "created": 1791126418.41,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_timing_parallel_v1.py",
+            "--plan",
+            "metadata/full_weighted_timing_parallel_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2162651136,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              4838400              4838400              seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-weighted-timing-parallel-reader-20261004-v1.service",
+      "pid": 2801052,
+      "created": 1791113041.83,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_timing_parallel_reader_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_timing_parallel_reader_wait_plan_20261004_v1.json",
+      "plan_sha256": "0dd5b3c08a560c459a65838e462ad87351e5390fb53bfad4ae05f0f3a5cbcea3",
+      "checked_utc": "2026-10-04T11:24:20.579976+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "a6ddf6c9464a4738814ae449509f1cdb",
+      "original_tool_session_id": 35385,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_timing_parallel_reader_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.51,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "b435edf89613c73aec49f23349e524f7aae30c3891c2ed0d38a39acc1e97016d",
+      "current_cgroup_limits": {
+        "cpu.max": "1600000 100000",
+        "memory.max": "214748364800",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8503296,
+        "memory.peak": 9220096,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "unit": "fungal-full-weighted-timing-parallel-closure-20261004-v1.service",
+      "pid": 2801353,
+      "created": 1791113060.47,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_timing_parallel_closure_wait_plan_20261004_v1.json"
+      ],
+      "plan": "metadata/full_weighted_timing_parallel_closure_wait_plan_20261004_v1.json",
+      "plan_sha256": "0fe8402de90b96c8006788526afc9868402448818488d6b1aa5dac5ef48cc7cf",
+      "checked_utc": "2026-10-04T11:24:43.333243+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "e143531dba1e418ea5c1debe8001e8a5",
+      "original_tool_session_id": 46264,
+      "source_hashes": {
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_weighted_timing_parallel_closure_launch_20261004_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.8099999999999999,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "b99cfeca9ed3e92924a9cdb87082a2d48435a52e7e907f6b9ae5b2edf312b259",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8491008,
+        "memory.peak": 9015296,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    }
+  ],
+  "exact_original_numerical_dependency": {
+    "launch": "metadata/full_weighted_parallel_closure_launch_20261004_v1.json",
+    "pid": 2735677,
+    "created": 1791108809.8,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/full_weighted_parallel_closure_wait_plan_20261004_v1.json"
+    ],
+    "launch_sha256": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2",
+    "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+    "journal_sha256_at_observation": "c5ca6ac88742ee4d1fc4ff0e044cac578c2c34ebaf9455180b3a3fa82b6c2e69",
+    "captured_process_messages": 584,
+    "original_failure_records": [],
+    "completion_resource_records": [
+      {
+        "__REALTIME_TIMESTAMP": "1791126351924736",
+        "CPU_USAGE_NSEC": "35222348000",
+        "MEMORY_PEAK": "8687616",
+        "MEMORY_SWAP_PEAK": "0"
+      }
+    ]
+  },
+  "numerical_completion_present": true,
+  "native_timing_process_count": 17,
+  "output_root_present": true,
+  "producer_checkpoints": 3,
+  "reader_checkpoints": 0,
+  "failure_files": [],
+  "source_hashes": {
+    "metadata/full_weighted_timing_parallel_software_validation_20261004_v1.json": "ddc1bd9c2f07937d5cb82b03d060f12347ec220e55560e7bc5c6f03a1a2519f6",
+    "metadata/full_weighted_timing_parallel_software_execution_20261004_v1.json": "c866c3617309f99bacbf952bbb75663fc1b8952c30e8af96a67d69e26cb767b6",
+    "metadata/full_weighted_timing_parallel_software_transport_20261004_v1.json": "a2d5645982b46c6515ca1bb340055c1b7beb6133ea67a5af425929d6045fd0b4",
+    "metadata/weighted_timing_parallel_memory_guards_software_validation_20261004_v1.json": "990cda822b3ce3fc9b096f2cc14e948ec7b680a0a20df255522e8e5438c72240",
+    "metadata/weighted_timing_parallel_memory_guards_software_execution_20261004_v1.json": "807ade2e71491e33e069084906398017cd5e2926ae8dbb06a3ff97039d6063eb",
+    "metadata/weighted_timing_parallel_memory_guards_software_transport_20261004_v1.json": "cfd26c408cd6e9464e183947ea8528bee7af7600148864a44267377fc79afe1a",
+    "metadata/full_weighted_shared_entity_fit_draft_plan_20261004_v1.json": "475a58c6abd9ca7e85120980f6f34718d389de28eca341dce9c6c094cb1ef36f",
+    "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json": "378adf05ebb5b95514121ed9562c7c32e33b752e1cb0ac12963eddb191dfb7a5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/close_full_weighted_timing_parallel_v1.py": "4b44d526d04e6e2604238e9dd18487287eb6bbce4a2b3f26329eef254f961c8f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_timing_parallel_v1.py": "86045ea96d3c3ba1d56c99522213f1d82ce06d6f52693511b7e68400564ad102",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_weighted_timing_parallel_source_reference_v1.py": "535762668b054a4135acd715ffcea4eedd15ad1a8e07d78500a6fc55ade2ab60",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_fit_exports.py": "adc5da3c0f5f3216579b7f5de4a4812b007a0afd0343c8bd0b93960e941dc123",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/weighted_shared_entity_candidate.py": "fb8f6a19cad441c7434d8cfc8307fab1d06f594f2ac8805ef92000db9466296a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/shared_entity_likelihood.py": "b33623b9582400196af2899d918c2fc7e1bde8eafbc24411c33f84519b7d555c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/shared_entity_covariance.py": "c05ab832a15cd08193fb77cdabb45299eb578dbd2f70d10765a4b32af2cac265",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_full_covariance_qualification.py": "7452fa28210b671330f584a3c444730604f33d1429f699a73c919a834dba9641",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_design_sources.py": "7c9d0e30ce2589fcc3305c762a5cfc78133d7284618b12e2574b2ca3cd98cfd6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_expanded_model_input_sources.py": "d67a3c0277fe44cebaa888cf9dc91841b8977a381d52579e65023ed8c6d51bf5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/background_measurement_union_sources.py": "68298e361adbe4232a8030b94079e99f4cd6d09ab2251b4153469f2cfebf791b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_entity_operator_sources.py": "4000439393a9eb97bd50cb28cf2f105061778a53deee0eeb8d65f014c0b2b9a1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_covariance_qualification_sources.py": "7a8dcfff5ba6da9dbfd87bc130efc5281ae904fbabd9f3086e67574a5e7bc263",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_independent.py": "8ad8e41bee30294ecb7100cafc1a56491171f1f79f370287e6fd94ad94acf376",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_sources_v2.py": "178e89555329fec4613b87b5ebaa465e610129b5a333743985792b825b9e4e85",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_full_inverse_reuse_weights.py": "5d7b3a5dbc358672bcc9ba423d1b726e9d954673818270bc86d50e30a5657762",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/inverse_reuse_weight_controls.py": "e5973a1773bfac231ce88863e778fc8ccaa6aa27beb5df7d055d0c3589542fe0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_inverse_reuse_weights.py": "ffa934ef9e02c523bb376ce3ea5bdceef7a76b0acc27de23737208275b0b0feb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_inverse_reuse_weight_sources.py": "589c1ac5306503860c69b5c5698f61325a7a0f8ba1d709cb382baea6b588240f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_exact_covariance_sources.py": "acdf71eb00dab593bcd1b6e5fd7ca6f511842d680466582bb319354f5836aa50",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/nonuniform_covariance_cone.py": "16e2e5d35a3dff7d9252d9488b7bbde213c8a592db1423e2ae34065b860d6c94",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification.py": "0b0b26890b5f16d4ff1a28e05c4b4c4c70d50faeb89a1f844482be4a8388f779",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/positive_diagonal_basis_context.py": "364a99da2238de3f8a57c17ce72f50239b119e53a00b3c95e2186fd8b104ca47",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_basis_context.py": "7529f3df052dcc979483a3613acd4a51085d3aa1b521f1f2087001665ca26d83",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_positive_diagonal_kernel_products.py": "0198f5bf692d72099408d111196f96c1550736e15a04006a525bc0dc87ce1a6f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/fit_shared_entity_likelihood.py": "692b45909635c60abe6d7d65d086e7a2a902991327e38644318a1734c5f653f1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_shared_entity_fit_sources.py": "0d18fcb066babc17ecb16831ec30af7a54a895c0d868f408ddb4bf21478a2004",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_timing_contracts_v2.py": "dc5b4ccd5ce4b7452b7b8ff67a40f5d4aa3a8fc2450b2664f50b9c921364f531",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_shared_entity_timing.py": "cfa209db1186afe540c223e650e52256561e1e0111eef28cbed440f074aa026f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_shared_entity_likelihood_fast.py": "af30887cf38d0a4a0941e77ed12c65b6d65f00aec3f883fc644d5417262158b3",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_shared_entity_likelihood.py": "594b9c8aa0ea194843a2591b260463eb3642d20e8977ef6f8859b29a179a3120",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_shared_entity_fit_sources_parallel_v1.py": "3e0f62a28b94b586d3c949e85b097fa29ff3de60d110f3c691f6c3a7a6ad2dbf",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/weighted_parallel_checkpoint_contracts_v1.py": "9334f785f915ba190d6ba8cd8bd362d369100b1c488ebf2180bfc987d99c35f1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_covariance_qualification_parallel_v1.py": "f11cf237d46e710075bff519cf675489981b659bd8c104a9e23fed0f770badf1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_weighted_timing_parallel_v1.py": "28c1260cc5cedb8468ce639412494db0f53c07d1eabb86f19c96c8a322a3973f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_baliphy_scalar_v6_preflight_v1.py": "336e752acfd78f8e03d027e0a9f340ea06735dad1124aa925bf15871d171baa5",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_scalar_v6.py": "b6dffaee4b052be038620b306b0309582105d975751a73c00371bc1726308be6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/read_baliphy_scalar_json_v6b.py": "6fb852d050ee97c0685ce031697a15a08e033f926c8d00fbe2e211c921c36661",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_scalar_json_logger_v6c.py": "300afe8005dce67b299899522c7f0bb132bc833c0a52d809304b3b0674cf9ce0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_sampler_qualification.py": "e05eddfc2656522eb99d328b3997f28408023f41a3de915711416943ffeda3c6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_baliphy_reference_preflight.py": "24843280d4d9006eb8f3409da175b465f060571f7b64cb416d70a7308ca1b934",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_reference_initialization.py": "ca3968c2a6c88972af9d772527e8989d42a1969a16a64fb4078a12dc1bdb05fb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/readback_independent_baliphy_chain.py": "cc712d1afc1f55bb2a0329d2190ea97b1321de7338ce3230dec5e6e2794d7f82",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_baliphy_sample_mapping.py": "b6e417691c97b9de4b4936b88ca13b2a95a3d912dbd912810dc31747c0d61f45",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_case_ancestral_neighborhoods.py": "4063c16d6f4aad55380e20a3979d0427e5ce726805919b597b6e9cb69b4d36a6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_horizon_resource_inventory.py": "105dacbc76fd142af5330fcb4630f1c1a395ae3fcffe694b5271513e23296849",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_sampler_qualification_v3.py": "9522daf66f9688485a922d59de94b8fde3866703298d57488a29f602b8a13f9b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs_v2.py": "e80b6ed93d083fdb07dc63e3118f4c8ae395c03db4af886df79ff0492cb4a257",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_topology.py": "c0f92cf0c85396a6119270e733355a02e99352d1d915c6730c1977fa867cd98b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_native_ancestral_alignment.py": "300752d2b1868fef116fa7811782667d7de64feee247662bea4fa181ccb190c1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_joint_ancestral_frames.py": "f9e119e00536d6c0f62b59d6dd5600c20879d64db1b615c14afe3fcb0189fb32",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v5.py": "c10f1caee7a5a793834aa626a772e50ee514fbc9501c513183ba6a50b8a232c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_joint_node_logger_v3.py": "8e5d8e257e941d20396b9fd352b21ff439f7b7cae13f50a02c16829feccc099b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/independent_short_sampler_outputs.py": "ca8d604d21961891c82095b196e15a714f27ce0ffdd78e6c8365273d58de67e0",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/baliphy_full_node_logger.py": "ffc48764afa427d0482412ff7be7e94e2d9844e063c64445d7954843620fe54f",
+    "metadata/full_weighted_parallel_source_fit_draft_plan_20261004_v1.json": "5eeeaf49056f7be568760d0b1c68ab52c0b69931308b20deb8684040916b36a6",
+    "metadata/full_weighted_shared_entity_timing_resources_20261004_v2.json": "ca5dfaeeba762a53e674fe49f9df3108cb89e5be753c0427746fdd4016952c5b",
+    "metadata/retained_factor_watchpoint_debugger_execution_20261004_v1.json": "c74da3207396bd388246f85088fac8e863cf28b190461f4c26132a184663413e",
+    "metadata/full_weighted_timing_parallel_resources_20261004_v1.json": "813a5872d1f246250eff5457ddceae2e5c3d8a79a40b7587fdbab555ee919c93",
+    "metadata/full_weighted_parallel_closure_launch_20261004_v1.json": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2",
+    "metadata/full_weighted_timing_parallel_producer_launch_20261004_v1.json": "667ecabe6db4ea9d7f04592cdedb2d005bbfa619aaeb2057dbcc485b0d0b0c64",
+    "metadata/full_weighted_timing_parallel_reader_launch_20261004_v1.json": "b435edf89613c73aec49f23349e524f7aae30c3891c2ed0d38a39acc1e97016d",
+    "metadata/full_weighted_timing_parallel_closure_launch_20261004_v1.json": "b99cfeca9ed3e92924a9cdb87082a2d48435a52e7e907f6b9ae5b2edf312b259",
+    "metadata/full_weighted_parallel_qualification_completed_20261004_v1.json": "6235aa92f12d3d6ea8f60d27e5745dfe1f77b0d2019fa7c9fe33efa18feceea6",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_timing_parallel_checkpoint_v1.py": "2762c985283e11f88ae00dd20b757c084ada255fd1049a94fe1a92278184b524",
+    "metadata/full_weighted_timing_parallel_plan_20261004_v1.json": "47ff7c9a46d8b97753e271a3773ef8c89880096c6ffee578e826f000e31b9d54",
+    "metadata/full_weighted_timing_parallel_launches_20261004_v1.json": "0a7997f4595e7cb7eb48d7c98b7ae284f42565d3d353af0e8ae210cb9176f854"
+  },
+  "candidate_rows": 20832000,
+  "maximum_eligible_groups": 694400,
+  "working_model_fits_computed": 0,
+  "production_finish_eta": null,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "all_eight_aims_incomplete": true,
+  "scope": "Exact original controller identities/cgroups or invocation-linked terminal evidence are observed, including the original numerical dependency. Absence of numerical closure requires no native timing child or output root. Artifact census and compact closure hashes are status evidence only; they do not independently qualify full arithmetic, timings, optimization, ancestral uncertainty or biological findings."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "complete_verified_full_matched_predictor_paired_resampling",
+  "original_comparison_cases": 8750,
+  "unique_inputs": 133,
+  "replicates_per_mode": 200,
+  "modes": [
+    "iid_sites",
+    "circular_blocks10"
+  ],
+  "resampling_cases": 53200,
+  "native_roles": 372400,
+  "native_status_counts": {
+    "native_point_output_integrity_checked_not_model_qualified": 372400
+  },
+  "complete_cases": 53200,
+  "unresolved_cases": 0,
+  "serialized_branch_value_slots": 6146000,
+  "finite_branch_values": 6146000,
+  "archived_native_files": 4734800,
+  "full_hash_archive": "results/phylogeny/matched-predictor-paired-resampling-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "984495bc524489e832f6a749966e186bfe7b5b8ffde047465b5fb4b59f57c0fc",
+  "bound_source_hashes": 176656,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/matched-predictor-paired-resampling-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "24ed5831140068a5a45fe160c29a8bb0ba0ad4e52d8d46923f5a06d782f3ac04",
+  "independent_readback": "results/phylogeny/matched-predictor-paired-resampling-20261003-v1/readback.json",
+  "independent_readback_sha256": "baa1de6a4a66a215e4a7ec29d9ffed3583d8ec25c3225b91ffeb05cc107b4ffa",
+  "completion_plan_sha256": "bd816c32e7a771c77176346f340ffc4ec951683c94f056aaa6c6b65cae207926",
+  "scientific_eligibility": false,
+  "scope": "Full paired predictor uncertainty control: every 133 ready fixed-topology input from the closed 8750-case/125-marker/70-view grid, with all 3780 insufficient comparisons preserved upstream. There are 71 markers and 21 fungal taxa in selected predictor overlap, not full fungal diversity. Two hundred iid-site and two hundred circular-ten-retained-column-block draws per input, using identical column indices for AA, AlphaFold and ESMFold states and all taxa; predictions, original taxon/missingness eligibility, tree topology and state models remain fixed. The 71 identical alignment/taxon/column draw groups share draws across alternative topologies. All 53200 cases and 372400 native roles are retained, including failed/invalid cases; no retry, new eligibility filter or successful-only interval acceptance. Independent full archive/tree/report/array readback and original producer/reader journal closure required. Branch lengths are state substitutions/site, not physical displacement or rates/year. Blocks use retained-column order and circular wrapping, not physical residue distance or guaranteed independent blocks. These are conditional uncertainty and sensitivity analyses, not predictive-source/model/orthology/framework acceptance, multiple-test calibration or any completed biological aim. No GPU prediction, costs or old job/source changes."
+}

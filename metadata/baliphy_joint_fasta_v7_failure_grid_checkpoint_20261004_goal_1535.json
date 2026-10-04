@@ -1,0 +1,219 @@
+{
+  "status": "verified_original_live_all24_v7_failure_comparison_runtime",
+  "checked_utc": "2026-10-04T15:35:50.960366+00:00",
+  "original_tool_session_id": 72605,
+  "invocation_id": "1b7d95ec720840408c545cf0ea7e7b1d",
+  "original_wrapper": {
+    "pid": 69938,
+    "created": 1791125648.41,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_resources_20261004_v1.json",
+      "--execution",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_execution_20261004_v1.json",
+      "--receipt",
+      "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/receipt.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json"
+    ]
+  },
+  "controller": {
+    "pid": 69944,
+    "created": 1791125648.88,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json"
+    ],
+    "status": "sleeping",
+    "address_space_limits": [
+      8589934592,
+      206158430208
+    ]
+  },
+  "actual_native_processes": [
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1-joint-fasta-v7-failure-comparison",
+      "pid": 86849,
+      "created": 1791127080.19,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+        "--seed",
+        "1653087071",
+        "run",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-joint-fasta-v7-failure-jobs-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered.hs",
+        "--iterations",
+        "20",
+        "--log-format",
+        "json,tsv",
+        "--name",
+        "independent-chain"
+      ],
+      "status": "running",
+      "cpu_seconds": 1067.98,
+      "rss_bytes": 2828292096,
+      "address_space_limits": [
+        51539607552,
+        51539607552
+      ],
+      "cpu_limits": [
+        6313,
+        6313
+      ],
+      "file_limits": [
+        2147483648,
+        2147483648
+      ],
+      "stack_limits": [
+        8388608,
+        -1
+      ]
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2-joint-fasta-v7-failure-comparison",
+      "pid": 86850,
+      "created": 1791127080.28,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+        "--seed",
+        "1588603753",
+        "run",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-joint-fasta-v7-failure-jobs-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered.hs",
+        "--iterations",
+        "20",
+        "--log-format",
+        "json,tsv",
+        "--name",
+        "independent-chain"
+      ],
+      "status": "running",
+      "cpu_seconds": 1067.95,
+      "rss_bytes": 2777309184,
+      "address_space_limits": [
+        51539607552,
+        51539607552
+      ],
+      "cpu_limits": [
+        6525,
+        6525
+      ],
+      "file_limits": [
+        2147483648,
+        2147483648
+      ],
+      "stack_limits": [
+        8388608,
+        -1
+      ]
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain3-joint-fasta-v7-failure-comparison",
+      "pid": 90242,
+      "created": 1791127428.95,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+        "--seed",
+        "423984323",
+        "run",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-joint-fasta-v7-failure-jobs-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered.hs",
+        "--iterations",
+        "20",
+        "--log-format",
+        "json,tsv",
+        "--name",
+        "independent-chain"
+      ],
+      "status": "running",
+      "cpu_seconds": 719.87,
+      "rss_bytes": 2756050944,
+      "address_space_limits": [
+        51539607552,
+        51539607552
+      ],
+      "cpu_limits": [
+        6506,
+        6506
+      ],
+      "file_limits": [
+        2147483648,
+        2147483648
+      ],
+      "stack_limits": [
+        8388608,
+        -1
+      ]
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4-joint-fasta-v7-failure-comparison",
+      "pid": 91159,
+      "created": 1791127538.6,
+      "cmdline": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+        "--seed",
+        "1401127030",
+        "run",
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-joint-fasta-v7-failure-jobs-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered.hs",
+        "--iterations",
+        "20",
+        "--log-format",
+        "json,tsv",
+        "--name",
+        "independent-chain"
+      ],
+      "status": "running",
+      "cpu_seconds": 610.49,
+      "rss_bytes": 2692947968,
+      "address_space_limits": [
+        51539607552,
+        51539607552
+      ],
+      "cpu_limits": [
+        4785,
+        4785
+      ],
+      "file_limits": [
+        2147483648,
+        2147483648
+      ],
+      "stack_limits": [
+        8388608,
+        -1
+      ]
+    }
+  ],
+  "current_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "214748364800",
+    "memory.swap.max": "0"
+  },
+  "cgroup_memory": {
+    "memory.current": 11808407552,
+    "memory.peak": 73049907200,
+    "memory.swap.current": 0
+  },
+  "active_lease_roles": 4,
+  "current_reserved_bytes": 206158430208,
+  "observed_lease_events": 12,
+  "completed_role_checkpoints": 4,
+  "expected_roles": 24,
+  "producer_receipt_present": false,
+  "reader_receipt_present": false,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_baliphy_joint_fasta_v7_failure_grid_checkpoint_v1.py": "4b292d7fa66359fb566d1a7161595a006b0ee85c7642ec9d3ca283d52b222cac",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json": "ea855869bb3f1136e76440526c3828b5add6fd99f8e7493e4354f9d9233e5749",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_execution_20261004_v1/configuration.json": "609f7e8c021600445bfabbb88b616c811ac9c109834733215768ddfefee24188",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_original_tool_initial_20261004_v1.json": "536747f87f75edb4a0a6eb23d411a2d8eb66e694340185937c201d3fdbf8b6ff",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-joint-fasta-v7-failure-jobs-20261004-v1/jobs.json": "c01f4701dd89cba0049dbf6a6d92f453325a60b054a11fcbff48960c452b7034"
+  },
+  "all24_output_integrity_qualified": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "scope": "Exact original live wrapper/controller/native identities,actual caps/BLAS settings and current lease-prefix accounting. Full native/source/output/independent/journal closure is not inferred from this observation. AS leases are not measured memory usage."
+}

@@ -1,0 +1,56 @@
+{
+  "checked_utc": "2026-10-04T15:47:22.913854+00:00",
+  "status": "verified_original_reader_live_waiting_on_all24_producer",
+  "original_handle": {
+    "unit": "fungal-joint-fasta-v7-failure-grid-reader-20261004-v1.service",
+    "pid": 88909,
+    "created": 1791127306.78,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_reader_wait_plan_20261004_v1.json"
+    ],
+    "plan": "metadata/baliphy_joint_fasta_v7_failure_grid_reader_wait_plan_20261004_v1.json",
+    "plan_sha256": "eb13a87c7bbb709ef4d3ee17f7e377c197a8edb792dc7ae1ebc24e425b5c8af2",
+    "invocation_id": "44a701e9737c45a480b6debd4c398c5d",
+    "original_tool_session_id": 84274,
+    "actual_cgroup_limits": {
+      "cpu.max": "200000 100000",
+      "memory.max": "34359738368",
+      "memory.swap.max": "0"
+    },
+    "source_hashes": {
+      "metadata/baliphy_joint_fasta_v7_failure_grid_reader_wait_plan_20261004_v1.json": "eb13a87c7bbb709ef4d3ee17f7e377c197a8edb792dc7ae1ebc24e425b5c8af2",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_reader_original_tool_initial_20261004_v1.json": "4c6d33c748d14f67f22fb466c4866d10ec09bebd484ad88806f0493e868159ff"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/baliphy_joint_fasta_v7_failure_grid_reader_launch_20261004_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.12,
+    "children": [],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "1d8cce79c35ba85dd2c967af08f7d8852696f25a4c095451bd7cb49208dfa0be",
+    "current_cgroup_limits": {
+      "cpu.max": "200000 100000",
+      "memory.max": "34359738368",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 14901248,
+      "memory.peak": 15351808,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": []
+  },
+  "expected_roles": 24,
+  "scientific_eligibility": false
+}

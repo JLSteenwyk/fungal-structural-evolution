@@ -54,13 +54,16 @@ roles are retained; no production attempt is retried or global limit changed.
 Existing jobs and historical outputs remain unchanged.
 
 A [joint FASTA serialization candidate](docs/baliphy-joint-fasta-v7-20261004.md)
-now constructs alignment lines directly from sequence rows. Three native prior
-controls preserve all six output files byte for byte. A separate full 622-tip
-comparison is running with the original 8 MiB stack and other native caps;
-its first complete joint frame and six scalar rows match nonempty saved output
-from the earlier 64 MiB diagnostic. Independent prefix readback checks 258
-scalar values and 320,014 ancestral residue/category pairs. The full horizon,
-all 24 failed roles and adequate posterior uncertainty remain unqualified.
+has completed a full 622-tip comparison at the original 8 MiB stack and other
+native caps. The native exit is zero; independent readers checked 903 scalar
+values and 956,096 ancestral residue/category pairs over three saved frames.
+The original wrapper's separate reporting failure is preserved and resolved
+by a fresh read-only review. A new comparison covers all 24 originally failed
+roles with their original inputs, seeds, priors and caps. At 15:35 UTC, four
+roles have native zero exits: three finite-output checks and one retained
+special-value review. Four workers continue; an independent reader is queued
+behind original producer success. Full failure-grid correction and adequate
+ancestral posterior uncertainty remain unqualified.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal
@@ -107,42 +110,23 @@ by this source stage. Software checks passed all declared synthetic cases and
 18 rehashed corruptions. Numerical qualification,
 timing, weighted fits and biological acceptance remain pending.
 
-The [complete weighted numerical workflow](docs/full-weighted-covariance-qualification-20261004.md)
-is now running after that exact source closure: all 5,208,000 audit records and
-24,883,200 original setting links, with separate component and latent arithmetic.
-Software checks passed three complete synthetic grids totaling 18,000 records
-and 72,000 links, including qualified nonuniform q4/q5/q6 bases and review states.
-Real weighted numerical output and model fits are not yet complete.
+The [full parallel numerical qualification](docs/full-weighted-parallel-qualification-20261004.md)
+has closed all **4,340 cohorts, 5,208,000 audits and 24,883,200 setting links**
+with independent arithmetic readback. A [fresh full verification](metadata/full_weighted_parallel_qualification_full_closure_verified_20261004_v1.json)
+rehashes all 30,561 archive bindings, checks every producer/reader checkpoint,
+and matches the complete original wrapper/native/manager journals and waits.
+The reader's large terminal message was reconstructed from all nine journal
+chunks. All four policies, both loading modes and five trees remain included;
+original comparison tolerances are unchanged. This does not repair the earlier
+native SVD write or establish biological effects.
 
-A [full parallel version](docs/full-weighted-parallel-qualification-20261004.md)
-now runs the same complete numerical grid with 16 CPU workers. All 18,000
-synthetic audits and 72,000 links agree with the serial calculation and pass
-independent latent readback; 19 corruption cases and two private input mutations
-are rejected. At 10:24 UTC, 279/4,340 producer cohorts are complete, with all 16
-workers live, about 22 GiB memory and no swap or failure files. A fresh 11:25
-checkpoint records 1,854/4,340 cohorts and sixteen live workers without failures.
-Full readback and
-closure are pending. A new downstream source adapter passes 72,000 candidate
-input comparisons. A [complete parallel timing workflow](docs/full-weighted-parallel-timing-20261004.md)
-now passes all 72,000 synthetic candidate rows, 320 actual native timing groups,
-full numeric replay, 17 private export corruptions and three private memory
-mutations. Its full 20,832,000-candidate producer, reader and closer are queued
-behind the original parallel numerical closure, with 16 CPU/200 GiB/no-swap
-limits. At 11:26, the gate is still closed and no native timing job has started.
-Runtime remains uncalibrated. The [parallel fitting exporter, reader and
-admission](docs/full-weighted-parallel-fitting-20261004.md) now pass 72,000-row
-software grids and private export/checkpoint corruptions. Complete-grid native
-fit outcomes remain explicitly mocked; separate saved actual fits pass the
-unchanged numerical reader. In-memory input guards now pass eighteen mutation cases and 64 unchanged
-actual native producer/readback pairs. The matching resource controller now
-passes its model/capacity/native-custody and operational-preparation checks.
-The full numerical producer has now finished all 4,340 cohorts, 5,208,000
-audits and 24,883,200 links, with original wait 45225 exited zero. A
-[fresh producer verification](metadata/full_weighted_parallel_producer_terminal_verified_20261004_v2.json)
-checks all 26,220 bindings, every cache checkpoint and exact wrapper/native
-journal payloads. At 13:06, the original independent reader has sixteen
-workers and 209/4,340 cohort checkpoints. Producer completion is not full
-numerical acceptance.
+The [full parallel timing stage](docs/full-weighted-parallel-timing-20261004.md)
+is now running under its original 16-CPU/200-GiB/no-swap limits. At 15:35 UTC,
+its parent and sixteen workers are live, with nine producer checkpoints and
+no failure files. The full scope remains 20,832,000 candidates. Guarded fitting
+and controller software are qualified, but actual timing/readback/closure
+still gate full weighted optimization: **zero full weighted biological fits**
+have been computed. Old serial jobs and failed namespaces remain unchanged.
 Full independent numerical closure, actual timing, optimization, uncertainty
 calibration and all eight evolutionary aims remain required.
 
@@ -190,16 +174,15 @@ published; uncertainty, model adequacy and accepted evolutionary effects
 remain unqualified.
 
 The [paired site/block uncertainty control](docs/matched-predictor-paired-resampling-20261003.md)
-is now running over all 133 ready inputs: 53,200 draws and 372,400 native fits.
-Each draw matches columns across AA and both predictors and retains every
-failure. Software qualification passed the complete draw grid; early
-production readback passed 42 native roles across both modes. Eight CPU
-workers/24 GiB/no swap run separately from the paused GPU predictions.
-Full resampling readback, provenance closure and calibrated uncertainty
-remain pending.
-At October 4, 09:01 UTC, the original controller reported 45,914/53,200
-completed draws (86.3%); full independent native archive closure remains pending.
-[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261004_sampler_0901.json).
+has closed all **53,200 draws and 372,400 native roles**, with independent
+archive/tree/report/array readback. A fresh check rehashes all 176,656 bindings
+and verifies the complete original native terminal summaries and journals.
+The [paired branch summaries and figure](docs/matched-predictor-distributions-20261004.md)
+now cover all 13,170 branch/model/mode rows and pass separate independent scalar
+and sorted-rank replay. They describe conditional predictor sensitivity for
+71 markers and 21 selected fungal taxa, with no accepted evolutionary effects
+or calibrated confidence intervals. Direct structural controls and broad
+fungal replication remain required.
 
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch

@@ -74,3 +74,53 @@ across all 24 failed roles. Adequate posterior sampling and all eight scientific
 aims remain separate unfinished requirements. No original failure is retried,
 replaced or interpreted as successful, and no family or fungal lineage is
 dropped to obtain a passing run.
+
+## Completed full-input comparison and all 24 original failed roles
+
+The original standalone native sampler has now completed all 20 iterations,
+with exit zero and 21 scalar rows/903 mapped values/three joint frames. Runtime
+was 1,429.61 seconds at the original caps. The wrapper subsequently exited one
+while looking for the column map in the earlier empty 8 MiB diagnostic. This
+reporting error, source, output namespace and original wait remain preserved;
+a fresh V2 read-only review uses the nonempty 64 MiB prefix and does not rerun
+the native attempt. All six older nonempty files match the new output prefix.
+[Exact original native and reporting outcomes](../metadata/baliphy_joint_fasta_v7_full_comparison_review_20261004_v2.json).
+
+A separate independent reader checks every native topology/branch, scalar,
+FASTA, joint-state frame and projection over 622 tips and 621 ancestors.
+All 903 scalar values, 956,096 ancestral residue/category pairs, 854,976 tip
+pairs and twelve projected candidate frames pass. Original reader wait 42976,
+whole wrapper payloads and invocation-bound manager records close successfully.
+This proves the output integrity of one controlled full-input horizon, not
+adequate posterior sampling or a repair across every original failure.
+[Independent full readback](../metadata/baliphy_joint_fasta_v7_full_comparison_readback_20261004_v1.json).
+
+The new all-failure comparison covers **24 original roles, six prior quartets,
+two effective full inputs and all three priors**. Software qualification
+checks each actual original recipe and rejects twenty altered contracts.
+Original seeds, inputs, priors, CPU/wall/file/address-space and 8 MiB stack
+limits are retained. The only inference-program change is the qualified V7
+serialization transformation. Old failed attempts are never overwritten.
+Four workers hold 48 GiB address-space leases under a 200 GiB/no-swap cgroup;
+leases are reservations, not measured peak usage. The one completed 24-minute
+case supports only an uncalibrated 2–12 hour planning range for this grid.
+[Full plan](../metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json).
+
+At 15:35 UTC, four broad-prior roles from the first effective input have native
+zero exits. Three pass finite-output checks; chain three retains an explicit
+nonfinite/literal-null review and has no accepted array. These are producer
+outcomes, pending whole-grid independent readback and original transport.
+Four further workers remain live. Original producer wait 72605 is unchanged;
+reader wait 84274 is queued with two CPUs/32 GiB/no swap behind original
+producer invocation success. The reader reconstructs every outcome with
+export creation disabled. Neither native zero exits nor review-state tagging
+qualifies an ancestral posterior. All eight scientific aims remain open.
+[Actual runtime](../metadata/baliphy_joint_fasta_v7_failure_grid_checkpoint_20261004_goal_1535.json).
+
+At 15:47 UTC, the original timing stage reaches fifteen producer checkpoints
+with sixteen actual workers and no failure files. The all 24 ancestral
+comparison has seven completed producer dispositions: six finite-output
+checks and one retained special-value review, all native exits zero.
+Original producer wait 72605 and reader wait 84274 remain live; the reader has
+no reconstruction child before producer closure. These partial outcomes do
+not qualify the entire failure grid or an ancestral posterior.

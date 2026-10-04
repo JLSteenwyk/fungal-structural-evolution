@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=68719476736",
+    "--cpu=7200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_joint_fasta_v7_full_comparison_v1.py",
+    "--plan",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_resources_20261004_v1.json": "badb9a8c55e9ff9177ce03032d91911169b6db38b736c6431c9bf4345f32bbd4",
+    "scripts/run_baliphy_joint_fasta_v7_full_comparison_v1.py": "1f30c6b75d3a157ba2d027da870ae7d50da65aa14b6382c4be7fc5e4ee3159af",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "8684cc6323004c818ec8d017ad21ef72",
+  "wrapper": {
+    "pid": 30081,
+    "created": 1791122868.83,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_joint_fasta_v7_full_comparison_resources_20261004_v1.json",
+      "--execution",
+      "metadata/baliphy_joint_fasta_v7_full_comparison_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_joint_fasta_v7_full_comparison_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_joint_fasta_v7_full_comparison_v1.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_full_comparison_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_joint_fasta_v7_full_comparison_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7500,
+  "started_utc": "2026-10-04T14:07:49.983406+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-04T14:31:48.167083+00:00",
+  "child": {
+    "pid": 30084,
+    "created": 1791122869.29,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=68719476736",
+      "--cpu=7200",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_joint_fasta_v7_full_comparison_v1.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_full_comparison_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_joint_fasta_v7_full_comparison_20261004_v1.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 1438.1834278349997,
+  "child_cpu_seconds": 1440.194769,
+  "child_peak_rss_bytes": 34863063040,
+  "receipt": "metadata/baliphy_joint_fasta_v7_full_comparison_20261004_v1.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/baliphy_joint_fasta_v7_full_comparison_execution_20261004_v1/stderr.log": "af56bf37a7bb971639f604899719ac2a4c01c91f3724e37c2234b0927cb7a2c1",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_execution_20261004_v1/configuration.json": "b5678e18372d51337e164fa66f5d2d02853e8e871aa91c60c922ef8d54cd1c18",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_execution_20261004_v1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_execution_20261004_v1/process.json": "bdc39df68f9a7b99421b7d4ad32ac0d48b64a3bbb5f8babee410fc573c9c5e7e"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

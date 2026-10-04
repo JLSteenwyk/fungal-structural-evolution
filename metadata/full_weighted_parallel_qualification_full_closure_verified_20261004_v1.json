@@ -1,0 +1,244 @@
+{
+  "status": "fresh_complete_full_parallel_numerical_archive_and_original_waits_verified",
+  "checked_utc": "2026-10-04T15:20:01.294460+00:00",
+  "archive_bindings_freshly_rehashed": 30561,
+  "producer_bindings_freshly_rehashed": 26220,
+  "cohorts": 4340,
+  "numerical_audit_rows": 5208000,
+  "setting_audit_links": 24883200,
+  "reader_checkpoint_count": 4340,
+  "original_worker_identities": {
+    "producer": [
+      [
+        2734894,
+        1791108777.04
+      ],
+      [
+        2734895,
+        1791108777.1
+      ],
+      [
+        2734896,
+        1791108777.17
+      ],
+      [
+        2734897,
+        1791108777.23
+      ],
+      [
+        2734899,
+        1791108777.3
+      ],
+      [
+        2734900,
+        1791108777.36
+      ],
+      [
+        2734901,
+        1791108777.42
+      ],
+      [
+        2734902,
+        1791108777.49
+      ],
+      [
+        2734903,
+        1791108777.55
+      ],
+      [
+        2734904,
+        1791108777.61
+      ],
+      [
+        2734905,
+        1791108777.68
+      ],
+      [
+        2734906,
+        1791108777.74
+      ],
+      [
+        2734908,
+        1791108777.8
+      ],
+      [
+        2734911,
+        1791108777.87
+      ],
+      [
+        2734912,
+        1791108777.94
+      ],
+      [
+        2734916,
+        1791108778.0
+      ]
+    ],
+    "reader": [
+      [
+        4178188,
+        1791118840.51
+      ],
+      [
+        4178189,
+        1791118840.57
+      ],
+      [
+        4178190,
+        1791118840.63
+      ],
+      [
+        4178191,
+        1791118840.69
+      ],
+      [
+        4178192,
+        1791118840.75
+      ],
+      [
+        4178193,
+        1791118840.81
+      ],
+      [
+        4178195,
+        1791118840.87
+      ],
+      [
+        4178196,
+        1791118840.93
+      ],
+      [
+        4178198,
+        1791118840.99
+      ],
+      [
+        4178199,
+        1791118841.05
+      ],
+      [
+        4178201,
+        1791118841.11
+      ],
+      [
+        4178202,
+        1791118841.18
+      ],
+      [
+        4178204,
+        1791118841.24
+      ],
+      [
+        4178205,
+        1791118841.3
+      ],
+      [
+        4178207,
+        1791118841.36
+      ],
+      [
+        4178208,
+        1791118841.42
+      ]
+    ]
+  },
+  "original_reader_and_closer_transport": [
+    {
+      "stage": "reader",
+      "original_tool_session_id": 75216,
+      "original_tool_terminal_exit_code": 0,
+      "invocation_id": "dc712dedbc0d4e9f8889a2f1361c7dcb",
+      "wrapper_pid": 2735173,
+      "native_pid": 4177187,
+      "native_summary_chunks": 9,
+      "whole_native_summary_matched": true,
+      "manager_start_records": 1,
+      "manager_completion_records": 1,
+      "terminal_handle": {
+        "launch": "metadata/full_weighted_parallel_reader_launch_20261004_v1.json",
+        "pid": 2735173,
+        "created": 1791108785.43,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_after_verified_dependencies_v2.py",
+          "--plan",
+          "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json"
+        ],
+        "launch_sha256": "a17cb18a2fd159b246ecda086a9d35701ab32176b77164657557042c280b91e9",
+        "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+        "journal_sha256_at_observation": "a37ff1f2611c41a92f71f67fac9d423f4ea5494026d4f025424f8f8a688446dd",
+        "captured_process_messages": 334,
+        "original_failure_records": [],
+        "completion_resource_records": [
+          {
+            "__REALTIME_TIMESTAMP": "1791126315025947",
+            "CPU_USAGE_NSEC": "118895446326000",
+            "MEMORY_PEAK": "8765440",
+            "MEMORY_SWAP_PEAK": "0"
+          }
+        ]
+      },
+      "journal": "metadata/full_weighted_parallel_reader_original_whole_journal_20261004_v1.jsonl",
+      "journal_sha256": "89afa3f9828824a1c5e9bf73d5b5731692f1af859da133e38e4accca9619fa87"
+    },
+    {
+      "stage": "closure",
+      "original_tool_session_id": 15269,
+      "original_tool_terminal_exit_code": 0,
+      "invocation_id": "6908e090a41a4b019bd7e72928a64d1a",
+      "wrapper_pid": 2735677,
+      "native_pid": 77153,
+      "native_summary_chunks": 1,
+      "whole_native_summary_matched": true,
+      "manager_start_records": 1,
+      "manager_completion_records": 1,
+      "terminal_handle": {
+        "launch": "metadata/full_weighted_parallel_closure_launch_20261004_v1.json",
+        "pid": 2735677,
+        "created": 1791108809.8,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_after_verified_dependencies_v2.py",
+          "--plan",
+          "metadata/full_weighted_parallel_closure_wait_plan_20261004_v1.json"
+        ],
+        "launch_sha256": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2",
+        "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+        "journal_sha256_at_observation": "58f693d0cc6076a799e0aa19ecb43c3f148782c8ab1523d4ba75da83d6f24f11",
+        "captured_process_messages": 584,
+        "original_failure_records": [],
+        "completion_resource_records": [
+          {
+            "__REALTIME_TIMESTAMP": "1791126351924736",
+            "CPU_USAGE_NSEC": "35222348000",
+            "MEMORY_PEAK": "8687616",
+            "MEMORY_SWAP_PEAK": "0"
+          }
+        ]
+      },
+      "journal": "metadata/full_weighted_parallel_closure_original_whole_journal_20261004_v1.jsonl",
+      "journal_sha256": "05316d9df433fa12166c4b4fda621f7e53db70fd32f1e28b7f4d8314ab1803b8"
+    }
+  ],
+  "full_numerical_qualification_closed": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/verify_closed_full_weighted_parallel_qualification_20261004_v1.py": "05e809d5b814bbcefe6490ae1f30a8e49968277b1b2abc6a569ce708a9e3e024",
+    "metadata/full_weighted_parallel_qualification_completed_20261004_v1.json": "6235aa92f12d3d6ea8f60d27e5745dfe1f77b0d2019fa7c9fe33efa18feceea6",
+    "results/phylogeny/full-four-control-covariance-parallel-qualification-20261004-v1/completion_archive.json": "1b5d1b1012742f9a59cbf4e825aaff21ce6ed82406610d6adf26b1a230ee3ac8",
+    "metadata/full_weighted_parallel_producer_terminal_verified_20261004_v2.json": "a07a8b6ec5968a870e134366559099be09e3b4f6cd017566ab1725f2864ed32d",
+    "metadata/full_weighted_parallel_reader_checkpoint_20261004_goal_1306.json": "b2460d91bd4789961d9ae3e668b676ce998ceda5fd0c8f371d4128d44b805818",
+    "metadata/full_weighted_parallel_reader_launch_20261004_v1.json": "a17cb18a2fd159b246ecda086a9d35701ab32176b77164657557042c280b91e9",
+    "metadata/full_weighted_parallel_reader_original_tool_payloads_20261004_v1.json": "8297582af7529c398e4e0cf558fa4668c92b108150b70e3768fa738ad2c5a3ff",
+    "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json": "491a7ec4c51a4fe1236e589dc38a5e91c224b267260c339d4fa728b71a17102e",
+    "metadata/full_weighted_parallel_reader_original_whole_journal_20261004_v1.jsonl": "89afa3f9828824a1c5e9bf73d5b5731692f1af859da133e38e4accca9619fa87",
+    "metadata/full_weighted_parallel_closure_launch_20261004_v1.json": "a1cca20574ef355cd1cb4158c42a4ea287c6dce4a20a9024dcd966f0de2d1fc2",
+    "metadata/full_weighted_parallel_closure_original_tool_payloads_20261004_v1.json": "96635efbccf5cc0a45c996e5139ddb1880ab0bb510ca160fa09ad6f02360e6b3",
+    "metadata/full_weighted_parallel_closure_wait_plan_20261004_v1.json": "b34205774334b53ec01f06369b2b22135896b565e54900145fe42deb276a1d60",
+    "metadata/full_weighted_parallel_closure_original_whole_journal_20261004_v1.jsonl": "05316d9df433fa12166c4b4fda621f7e53db70fd32f1e28b7f4d8314ab1803b8"
+  },
+  "biological_fits": 0,
+  "scientific_eligibility": false,
+  "all_eight_aims_incomplete": true,
+  "original_jobs_restarted": false,
+  "gpu": false,
+  "scope": "Complete archive/source/output rehash and checkpoint census, original actual waits, wrapper headers, complete distinct-native terminal summaries (including nine reader journal chunks), and invocation-bound manager records. Original independent reader performed full arithmetic; this check does not recompute it, repair historical SVD mutation, optimize biological models, accept nonuniform inference, or qualify posterior uncertainty."
+}

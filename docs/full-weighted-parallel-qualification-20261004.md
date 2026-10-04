@@ -1,10 +1,20 @@
 # Full parallel weighted covariance qualification — October 4
 
-The complete **4,340-cohort** numerical producer is running with 16 CPU workers.
-At 10:24 UTC, 279 producer checkpoints were complete, no failure files were
-present, and all 16 original workers were live. The cgroup used about 22 GiB
-with no swap or OOM events. These are producer checkpoints, not completed
-independent readback or biological fits.
+The complete **4,340-cohort** numerical producer, independent reader and closer
+are now terminal success. All 5,208,000 audit records and 24,883,200 links pass
+the unchanged component/latent arithmetic checks. A fresh whole-archive check
+rehashes 30,561 bindings and all 8,680 producer/reader checkpoints, including
+sixteen recorded worker identities in each stage. Original waits 45225, 75216
+and 15269 and exact wrapper/native/manager journals are verified.
+[Full closure evidence](../metadata/full_weighted_parallel_qualification_full_closure_verified_20261004_v1.json).
+
+The native reader emits a terminal record larger than one journal line. Default
+journal output omits nine large chunks. Full `journalctl --all` retrieval and
+concatenation reconstruct the exact saved summary, including all 4,340 reader
+checkpoint hashes. Collected service defaults alone are not completion proof.
+These arithmetic/source checks do not confer biological acceptance, repair the
+historical SVD mutation or qualify weighted optimizer results. Full native
+timing is running, with optimization still gated on its actual closure.
 
 The full scope remains 75,188 logical cases, 130,200 designs, 260,400 response
 inputs and 622,080 settings. The numerical stage computes **5,208,000 audits

@@ -1,0 +1,101 @@
+{
+  "status": "fresh_full_matched_predictor_resampling_archive_and_original_journals_verified",
+  "checked_utc": "2026-10-04T15:25:51.942561+00:00",
+  "original_comparison_cases": 8750,
+  "unique_inputs": 133,
+  "replicates_per_mode": 200,
+  "modes": [
+    "iid_sites",
+    "circular_blocks10"
+  ],
+  "resampling_cases": 53200,
+  "native_roles": 372400,
+  "native_status_counts": {
+    "native_point_output_integrity_checked_not_model_qualified": 372400
+  },
+  "complete_cases": 53200,
+  "unresolved_cases": 0,
+  "serialized_branch_value_slots": 6146000,
+  "finite_branch_values": 6146000,
+  "archived_native_files": 4734800,
+  "archive_bindings_freshly_rehashed": 176656,
+  "original_terminal_handles": [
+    {
+      "original_handle": {
+        "launch": "metadata/matched_predictor_resampling_launch_20261003.json",
+        "pid": 3169373,
+        "created": 1791041798.99,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_after_verified_dependencies_v2.py",
+          "--plan",
+          "metadata/matched_predictor_resampling_wait_plan_20261003.json"
+        ],
+        "launch_sha256": "967b6ccf7eed8680f7bde22dd7ba911f107f506107e0ce830d7442970dd903ac",
+        "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+        "journal_sha256_at_observation": "b169c614676615b69dfe2704e9791c8955a2d3b68dd88cd4c80ae6fee0ce2bdd",
+        "captured_process_messages": 1,
+        "original_failure_records": [],
+        "completion_resource_records": [
+          {
+            "__REALTIME_TIMESTAMP": "1791114938488563",
+            "CPU_USAGE_NSEC": "187769774769000",
+            "MEMORY_PEAK": "3066036224",
+            "MEMORY_SWAP_PEAK": "0"
+          }
+        ]
+      },
+      "native_summary_pid": "3169380",
+      "native_summary_cmdline": "/home/bizon/anaconda3/bin/python scripts/run_matched_predictor_resampling.py --plan metadata/matched_predictor_resampling_plan_20261003_v1.json",
+      "whole_native_summary_matched": true
+    },
+    {
+      "original_handle": {
+        "launch": "metadata/matched_predictor_resampling_readback_launch_20261003.json",
+        "pid": 3169377,
+        "created": 1791041799.05,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_after_verified_dependencies_v2.py",
+          "--plan",
+          "metadata/matched_predictor_resampling_readback_wait_plan_20261003.json"
+        ],
+        "launch_sha256": "a4f53b676a17ce277385e7d0541fdb371e6ff83722c39ed1d708c62ff06c45ab",
+        "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+        "journal_sha256_at_observation": "7e22338ad52b7d435df95eb42916ed754c271091a213e5e202cdcf26e5467c62",
+        "captured_process_messages": 2437,
+        "original_failure_records": [],
+        "completion_resource_records": [
+          {
+            "__REALTIME_TIMESTAMP": "1791122293893417",
+            "CPU_USAGE_NSEC": "7323957595000",
+            "MEMORY_PEAK": "3518464",
+            "MEMORY_SWAP_PEAK": "0"
+          }
+        ]
+      },
+      "native_summary_pid": "3937900",
+      "native_summary_cmdline": "/home/bizon/anaconda3/bin/python scripts/readback_matched_predictor_resampling.py --plan metadata/matched_predictor_resampling_plan_20261003_v1.json",
+      "whole_native_summary_matched": true
+    }
+  ],
+  "source_hashes": {
+    "metadata/matched_predictor_resampling_launch_20261003.json": "967b6ccf7eed8680f7bde22dd7ba911f107f506107e0ce830d7442970dd903ac",
+    "metadata/matched_predictor_resampling_0_original_whole_journal_20261004_v1.jsonl": "7fef0bf8d6b1d7d723468bbc32c9d56bcb3739d71067ac2f3b0049830dc0618a",
+    "metadata/matched_predictor_resampling_readback_launch_20261003.json": "a4f53b676a17ce277385e7d0541fdb371e6ff83722c39ed1d708c62ff06c45ab",
+    "metadata/matched_predictor_resampling_1_original_whole_journal_20261004_v1.jsonl": "f77fd4da17917c667819a5708bc35682d9932ac135a6ed328b8aa46bf009daf4",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/verify_closed_matched_predictor_resampling_20261004_v1.py": "a5b862611d2ab65264370acee1c423fc6c6037f556de306877dbd823baec91d5",
+    "metadata/matched_predictor_resampling_completed_20261003_v1.json": "420d4cd2c77fc037d4ef4e5dc2e226b0d73aca7b09261a951c8aabf517b70cd3",
+    "results/phylogeny/matched-predictor-paired-resampling-20261003-v1/completion_archive.json": "984495bc524489e832f6a749966e186bfe7b5b8ffde047465b5fb4b59f57c0fc"
+  },
+  "paired_uncertainty_stage_numerically_closed": true,
+  "predictor_overlap_markers": 71,
+  "predictor_overlap_fungal_taxa": 21,
+  "representative_of_full_fungal_sampling": false,
+  "calibrated_confidence_intervals": false,
+  "scientific_eligibility": false,
+  "all_eight_aims_incomplete": true,
+  "original_jobs_restarted": false,
+  "gpu": false,
+  "scope": "All176656 declared source/output/archive bindings rehashed and original wrapper/manager success evidence plus complete native terminal summaries matched. Original reader independently reconstructed all53200 draws and 372400 archived native roles. Fresh verification is not another native fit or archive-member numeric replay. Paired distribution summaries, Monte Carlo precision, coverage/model assessment, direct structural controls and broad fungal replication remain required before accepted effects or intervals."
+}

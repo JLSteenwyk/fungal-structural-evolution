@@ -1,0 +1,89 @@
+{
+  "checked_utc": "2026-10-04T15:48:50.836480+00:00",
+  "status": "fresh_completed_producer_disposition_census_not_full_independent_readback",
+  "completed_roles": 7,
+  "expected_roles": 24,
+  "status_counts": {
+    "full_joint_short_sampler_output_integrity_checked_not_posterior": 6,
+    "explicit_nonfinite_or_literal_null_scalar_output_retained_for_review": 1
+  },
+  "native_exit_counts": {
+    "0": 7
+  },
+  "rows": [
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1-joint-fasta-v7-failure-comparison",
+      "prior_label": "broad",
+      "chain_role": 1,
+      "status": "full_joint_short_sampler_output_integrity_checked_not_posterior",
+      "exit_code": 0,
+      "scalar_integrity_accepted": true
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain2-joint-fasta-v7-failure-comparison",
+      "prior_label": "broad",
+      "chain_role": 2,
+      "status": "full_joint_short_sampler_output_integrity_checked_not_posterior",
+      "exit_code": 0,
+      "scalar_integrity_accepted": true
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain3-joint-fasta-v7-failure-comparison",
+      "prior_label": "broad",
+      "chain_role": 3,
+      "status": "explicit_nonfinite_or_literal_null_scalar_output_retained_for_review",
+      "exit_code": 0,
+      "scalar_integrity_accepted": false
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain4-joint-fasta-v7-failure-comparison",
+      "prior_label": "broad",
+      "chain_role": 4,
+      "status": "full_joint_short_sampler_output_integrity_checked_not_posterior",
+      "exit_code": 0,
+      "scalar_integrity_accepted": true
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1-joint-fasta-v7-failure-comparison",
+      "prior_label": "centered",
+      "chain_role": 1,
+      "status": "full_joint_short_sampler_output_integrity_checked_not_posterior",
+      "exit_code": 0,
+      "scalar_integrity_accepted": true
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2-joint-fasta-v7-failure-comparison",
+      "prior_label": "centered",
+      "chain_role": 2,
+      "status": "full_joint_short_sampler_output_integrity_checked_not_posterior",
+      "exit_code": 0,
+      "scalar_integrity_accepted": true
+    },
+    {
+      "chain_id": "acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4-joint-fasta-v7-failure-comparison",
+      "prior_label": "centered",
+      "chain_role": 4,
+      "status": "full_joint_short_sampler_output_integrity_checked_not_posterior",
+      "exit_code": 0,
+      "scalar_integrity_accepted": true
+    }
+  ],
+  "source_hashes": {
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1-joint-fasta-v7-failure-comparison.json": "b1df7150aaefa0970e37d42d568ccea8b580f5078da75af1b4aa38c336910a4a",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1-joint-fasta-v7-failure-comparison/attempt-0001/receipt.json": "20856942c828498a6632266ab9d929ea723dcf70cea2c3eda64e58be4215e00e",
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain2-joint-fasta-v7-failure-comparison.json": "452a7226255a7ff74052e24b0c160c28772c0557d0bba4f35982493a1354644d",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain2-joint-fasta-v7-failure-comparison/attempt-0001/receipt.json": "5ec09ae00cfa4a50e9a8b405022cff3b40bb5f56711ff764fc3873ab8d6b8732",
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain3-joint-fasta-v7-failure-comparison.json": "18a444c07ec35c21e47f9f28b9939e24296bf29ccdf9f2634b626147c362a916",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain3-joint-fasta-v7-failure-comparison/attempt-0001/receipt.json": "39411e0e2f84bb4d77a02a0bd7ff0551b1dd23966c3b9687652232ca8266b616",
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain4-joint-fasta-v7-failure-comparison.json": "ba560948ae9b9197a2a27c700c2b8c263e52f6c2c1ba855599201350682eafc8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain4-joint-fasta-v7-failure-comparison/attempt-0001/receipt.json": "8e9658aa3f4e191cb4f4bba41de5e3540aad717383bb953a953807ea86070510",
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1-joint-fasta-v7-failure-comparison.json": "2a09efd593e130620d41851204d825f5b443a836a8cc93e668e4228cabd925de",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1-joint-fasta-v7-failure-comparison/attempt-0001/receipt.json": "cfd36abd21ce5518e797e155bd4eb5e1deabce4b82b60ff64f5d80eb26f38c40",
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2-joint-fasta-v7-failure-comparison.json": "4d23f53f2f4a436452f2350004e33bd26f672b6a02e8cc9b3eb4b0ed4f9ffb2c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2-joint-fasta-v7-failure-comparison/attempt-0001/receipt.json": "33467263244ad8b7905eda47dc53362dca4b01e27b21e00113e54ce22fe12ea1",
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4-joint-fasta-v7-failure-comparison.json": "988d40a0b78a7b1811abdfd93a88664a5e27670d2a5760a452104c29d05653b8",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4-joint-fasta-v7-failure-comparison/attempt-0001/receipt.json": "5f049c400224e12e727bb53e000b194d59267ed9915255a10375af6bbdb63be2"
+  },
+  "scientific_eligibility": false,
+  "posterior_qualified": false
+}

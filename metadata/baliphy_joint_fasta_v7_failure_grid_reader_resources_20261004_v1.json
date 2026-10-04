@@ -1,0 +1,23 @@
+{
+  "cpus": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 24,
+  "cpu_seconds_per_stage": 7200,
+  "wall_seconds_per_stage": 10800,
+  "per_file_limit_mib": 2048,
+  "minimum_available_ram_gib": 32,
+  "minimum_free_disk_gib": 256,
+  "expected_roles": 24,
+  "native_prediction_workers": 0,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "output_allowance_gib": 1,
+  "prospective_reader_wall_hours": [
+    0.1,
+    3
+  ],
+  "runtime_estimate_uncalibrated": true,
+  "scope": "Independent read-only reconstruction of every completed comparison outcome; 2CPU/32GiB/noSwap/24GiB AS, unchanged old readers and no native MCMC or export creation. Gated on original producer invocation success; failures and review outcomes remain explicit."
+}

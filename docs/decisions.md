@@ -1903,3 +1903,28 @@ files matching a new prefix are vacuous; compatibility requires nonempty saved
 bytes and independent readback. Preserve the first phase review unchanged and
 document the corrected iteration distinction in its successor evidence.
 [Candidate and original-limit comparison](baliphy-joint-fasta-v7-20261004.md).
+
+## October 4: retain numerical closure, predictor sensitivity and sampler review as distinct claims
+
+Close complete numerical stages against all declared bindings and actual
+original waits, not collected service defaults. Retrieve complete journal
+messages with --all and reconstruct line-max chunks before comparing a large
+native summary to its receipt. Numerical qualification does not repair the
+historical SVD mutation or admit biological fits before actual timing closure.
+
+Use the complete paired predictor resampling output to report within-draw
+ESMFold-minus-AlphaFold differences under identical model, topology and sampled
+columns. Preserve all 133 inputs/two modes/three models. Report empirical
+quantiles separately from Monte Carlo uncertainty in the positive-draw
+fraction. Verify quantiles using sorted ranks, means/SD using scalar sums and
+MC bounds using binomial tails. Do not count dependent branches, shared draw
+groups, model variants or alternate topologies as independent replications.
+No calibrated biological interval or multiple-testing discovery follows.
+
+Preserve the original standalone candidate wrapper failure after native
+success. Fresh read-only review and independent output reconstruction may
+establish native output integrity without rerunning that attempt. Compare
+all 24failed roles at their original input/prior/seed/caps and queue a reader
+only behind actual original producer success. A native zero exit with a
+special-value review remains a review; it cannot acquire an accepted array
+or establish posterior adequacy.

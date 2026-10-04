@@ -1,0 +1,33 @@
+{
+  "dependencies": [
+    "metadata/baliphy_joint_fasta_v7_failure_grid_producer_launch_20261004_v1.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_resources_20261004_v1.json",
+    "--execution",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_execution_20261004_v1.json",
+    "--receipt",
+    "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/readback.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+    "--plan",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json",
+    "--reader"
+  ],
+  "pins": {
+    "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json": "ea855869bb3f1136e76440526c3828b5add6fd99f8e7493e4354f9d9233e5749",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_producer_launch_20261004_v1.json": "857569ae601e0e014b48a963cd28e08fd99092aae1d30ab1c9558d04c2c83df0",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_resources_20261004_v1.json": "dc181c48cb51d1fa157c89730c607eaf8fdd4f9f4501c6a99cb3aa9e56d2b37b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-joint-fasta-v7-failure-jobs-20261004-v1/jobs.json": "c01f4701dd89cba0049dbf6a6d92f453325a60b054a11fcbff48960c452b7034",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_baliphy_joint_fasta_v7_failure_grid_reader_v1.py": "a1d4dacae7dab1a464dcc0291eb59e0d8df2565ac55c9e3681cab1016f90d66a",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py": "c5cfb15e5791712a5da69e693fe980a4fe6abd4209bc0153a6249a4e73c3b5b9"
+  },
+  "scientific_eligibility": false,
+  "no_native_attempts_restarted": true
+}

@@ -60,3 +60,22 @@ The new fitting-source draft points to the checkpoint-aware parallel numerical
 closure, but fitting export/reader integration, actual timing-derived resources,
 full native fits and uncertainty calibration still gate biological models.
 Ancestral posterior adequacy and all eight evolutionary aims remain unfinished.
+
+## Actual admission after full numerical closure
+
+The original numerical closer has now exited zero with complete source/output
+and original wait/journal verification. The original timing producer is
+admitted without rewriting its plan or limits. At 15:35 UTC, its native parent
+and sixteen workers are live, with nine producer cohort checkpoints, no reader
+checkpoints and no failure files. This is actual full-input native timing,
+not a queued intent or completed optimizer fit.
+[Admission and runtime](../metadata/full_weighted_timing_parallel_checkpoint_20261004_goal_1535.json).
+
+Guarded fitting exports/readback and the resource controller are now software
+qualified. A fresh operational preparation check confirms that only the actual
+full timing completion remains missing; no fit resources, fitting root or
+full biological optimizer run have been installed. Full timing-derived
+capacity, independent numeric replay and original closure are still required.
+The historical fixed fit-plan bytes and all original serial jobs remain
+unchanged. The stage is not an ETA for completion of the project.
+[Current fitting gate](../metadata/full_weighted_parallel_fit_execution_pending_20261004_goal_1523.json).

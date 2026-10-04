@@ -13908,3 +13908,46 @@ calibration remain pending. Matched predictor resampling's original producer
 is terminal, with its original independent reader still running and closure
 absent. All eight evolutionary aims, full atlas coverage and required final
 deliverables remain incomplete; GPU prediction remains paused.
+
+## October 4, 15:40 UTC: full numerical closure and paired predictor summaries
+
+The preceding goal turn is progress: it completed the 622-tip original-stack
+candidate, separately closed its preserved wrapper reporting error through a
+fresh V2 review, independently checked the full candidate and launched all 24
+original failed-role comparisons. The intervening user recheck freshly
+reproduced five installed numeric errors and confirmed the corrected numeric
+path; it did not claim the installed software or full crash grid repaired.
+
+This continuation verifies full parallel numerical closure: all 4,340 cohorts,
+5,208,000 audits and24,883,200 links, all 30,561 archive bindings and complete
+original waits/journals. The native reader summary is reconstructed from nine
+large journal chunks. Original full timing is now running with 16 workers;
+nine producer checkpoints are present at 15:35. Full weighted optimizer fits
+remain zero, gated on actual timing closure. Historical SVD mutation remains
+unresolved and original numerical tolerances remain unchanged.
+
+Matched predictor resampling has independently closed all 53,200 draws and
+372,400 native roles. The full 176,656-binding archive and original journals are
+freshly verified. A new complete summary replays all 6,146,000 branch-value slots
+into 13,170 paired distribution rows across three models and two sampling modes.
+Separate scalar/sorted-rank arithmetic and binomial tails check every row;
+both original bounded waits/journals close. A validated descriptive figure is
+published. The initial pure arithmetic test required machine-roundoff tolerance
+for reversed interpolated quantiles; production statistics were unchanged.
+These are conditional sensitivity summaries for 71 markers/21 selected fungi,
+not calibrated effect intervals, independent branch replicates or discoveries.
+
+The all 24ancestral comparison's first four roles have native zero exits:
+three finite-output checks and one retained special-value review. Four workers
+continue. A two-CPU/32 GiB original gated reader is queued with no new native
+MCMC or export creation. The old failed roles remain unchanged. Full-grid
+correction, adequate posteriors, broad prediction coverage, calibrated full
+models and all eight aims remain unfinished. GPU prediction remains paused.
+
+At 15:47 UTC, the original timing stage reaches fifteen producer checkpoints
+with sixteen actual workers and no failure files. The all 24 ancestral
+comparison has seven completed producer dispositions: six finite-output
+checks and one retained special-value review, all native exits zero.
+Original producer wait 72605 and reader wait 84274 remain live; the reader has
+no reconstruction child before producer closure. These partial outcomes do
+not qualify the entire failure grid or an ancestral posterior.

@@ -1,0 +1,19 @@
+{
+  "status": "passed_paired_summary_arithmetic_controls",
+  "controls": [
+    "paired_sign_swap",
+    "known_linear_quantiles",
+    "zero_boundary_MC_binomial_bounds",
+    "common_draw_permutation",
+    "wrong_draw_count_refusal",
+    "nonfinite_draw_refusal",
+    "negative_branch_refusal"
+  ],
+  "first_check_exact_float_sign_symmetry_assertion_failed": true,
+  "corrected_control_uses_1e_minus13_absolute_machine_roundoff_tolerance": true,
+  "production_statistics_unchanged": true,
+  "source_hashes": {
+    "scripts/summarize_matched_predictor_resampling_v1.py": "6acb3357e32015c8392b30f045576fb87ee394dadbb25179aa409faedb6230d1"
+  },
+  "scientific_eligibility": false
+}

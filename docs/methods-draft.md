@@ -3337,3 +3337,35 @@ unchanged numerical guard; its failed controllers and10partial cohort
 receipts remain retained, not complete. No historical number repair, installed
 patch, adequate posterior, accepted model or completed biological aim follows.
 [Schema, exact evidence and limitations](baliphy-scalar-json-v6-20261004.md).
+
+## October 4: completed numerical and paired predictor sensitivity checkpoints
+
+The complete four-control numerical grid covers4,340 cohorts/130,200 designs/
+622,080 settings and retains5,208,000 audit rows/24,883,200 setting links. Independent
+component/latent arithmetic and source preservation pass at unchanged 3e-9/2e-8
+comparison tolerances. Full original wait/header/native/manager and30,561-file
+closure checks pass. Actual full timing is running; weighted optimization,
+model calibration and accepted evolutionary inference remain pending.
+
+All53,200paired site/block draws and372,400 native predictor roles pass complete
+independent archive/tree/report/array readback. For each original input,
+branch, model and resampling mode, summarize paired ESMFold-minus-AlphaFold
+branch lengths using all 200 draws. Keep predictor/site/topology conditioning
+and shared draw-group identities explicit. Empirical2.5th/median/97.5th
+percentiles use NumPy linear interpolation. Report positive/negative/exact-zero
+counts and exact 95% binomial Monte Carlo bounds for the conditional positive
+fraction. Those bounds quantify simulation precision, not biological effect
+coverage. No calibrated effect interval or significance statement is made.
+An independent reader reconstructs all 13,170 rows with sorted linear ranks,
+math.fsum moments and independent binomial-tail equations; eight scaled machine
+epsilons check only arithmetic roundoff. The original numerical guard remains
+unchanged. The full table/PNG/PDF and provenance are reproducible through
+[the paired distribution workflow](matched-predictor-distributions-20261004.md).
+
+The full 622-tip V7 serialization candidate finishes 20 iterations at the original
+8 MiB stack/48 GiB AS/native CPU/file limits and passes independent scalar/joint/
+FASTA/projection readback. A reporting error caused the original wrapper to
+exit one after native zero exit; its exact history is preserved. All24original
+failed roles are now compared with unchanged priors/seeds/input/caps and fresh
+output namespaces. Four native exits are zero, including one special-value
+review; full readback and sufficient posterior sampling remain required.

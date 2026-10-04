@@ -1,0 +1,66 @@
+{
+  "status": "completed_candidate_full_input_horizon_pending_full_failure_grid_qualification",
+  "checked_utc": "2026-10-04T14:38:18.265339+00:00",
+  "plan_sha256": "8d6e468f47be2a51ef7cbe073e340c2da45e74c4010f506bf7c555d3879ac05a",
+  "native_exit_code": 0,
+  "native_status": "exited_zero_pending_scientific_validation",
+  "native_receipt": "results/ancestral/baliphy-joint-fasta-v7-full-input-comparison-20261004-v1/native/attempt-0001/receipt.json",
+  "native_elapsed_seconds": 1429.6076658229576,
+  "planned_horizon_completed": true,
+  "native_caps": {
+    "address_space_bytes": 51539607552,
+    "cpu_seconds": 5674,
+    "per_file_bytes": 2147483648,
+    "stack_soft_bytes": 8388608
+  },
+  "scalar_readback": {
+    "rows": 21,
+    "mapped_values_compared": 903,
+    "nonfinite_reviews": [],
+    "relative_tolerance": 2e-13,
+    "absolute_tolerance": 0.0,
+    "scientific_eligibility": false
+  },
+  "original_wrapper_reporting_failure": {
+    "original_tool_session_id": 58381,
+    "original_tool_exit_code": 1,
+    "invocation_id": "8684cc6323004c818ec8d017ad21ef72",
+    "wrapper": {
+      "pid": 30081,
+      "created": 1791122868.83,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_weighted_fit_controller_software_stage.py",
+        "--resources",
+        "metadata/baliphy_joint_fasta_v7_full_comparison_resources_20261004_v1.json",
+        "--execution",
+        "metadata/baliphy_joint_fasta_v7_full_comparison_execution_20261004_v1.json",
+        "--receipt",
+        "metadata/baliphy_joint_fasta_v7_full_comparison_20261004_v1.json",
+        "--",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_baliphy_joint_fasta_v7_full_comparison_v1.py",
+        "--plan",
+        "metadata/baliphy_joint_fasta_v7_full_comparison_plan_20261004_v1.json",
+        "--receipt",
+        "metadata/baliphy_joint_fasta_v7_full_comparison_20261004_v1.json"
+      ]
+    },
+    "whole_wrapper_initial_and_terminal_payloads_matched": true,
+    "manager_start_records": 1,
+    "manager_completion_records": 1,
+    "error_type": "FileNotFoundError",
+    "missing_original8MiB_diagnostic_file": "C1.log.column-map.json",
+    "original_v1_source_and_output_namespace_preserved": true
+  },
+  "child_peak_rss_bytes_as_recorded_by_wrapper": 34863063040,
+  "cgroup_manager_memory_is_not_native_peak": true,
+  "full_24_original_failure_grid_qualified": false,
+  "validated_production_repair": false,
+  "original_jobs_restarted": false,
+  "installed_software_changed": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "scope": "Original standalone native exits0 with21scalar rows and3fulljointframes at original 8MiB stack and other native caps. Wrapper originally exits1 on missing older8MiB diagnostic column-map during reporting; that exact failure/source/tool/journal is preserved. Fresh readonlyV2 uses nonempty original64MiB evidence, verifies all native artifacts,903scalar values and3primary full-node frames, without rerunning any native attempt. Independent full source/tree/projection replay is still separate; all24failure roles and adequate posterior remain unqualified."
+}

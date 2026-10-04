@@ -1,0 +1,803 @@
+{
+  "status": "verified_original_full_parallel_numerical_reader_after_producer_terminal",
+  "checked_utc": "2026-10-04T14:28:07.872521+00:00",
+  "original_tool_session_id": 75216,
+  "original_handle": {
+    "unit": "fungal-full-weighted-parallel-reader-20261004-v1.service",
+    "pid": 2735173,
+    "created": 1791108785.43,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json"
+    ],
+    "plan": "metadata/full_weighted_parallel_reader_wait_plan_20261004_v1.json",
+    "plan_sha256": "491a7ec4c51a4fe1236e589dc38a5e91c224b267260c339d4fa728b71a17102e",
+    "checked_utc": "2026-10-04T10:13:07.356714+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "1600000 100000",
+      "memory.max": "214748364800",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "dc712dedbc0d4e9f8889a2f1361c7dcb",
+    "original_tool_session_id": 75216,
+    "source_hashes": {
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_weighted_parallel_reader_launch_20261004_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.6200000000000001,
+    "children": [
+      {
+        "pid": 4177187,
+        "created": 1791118786.47,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 62.04
+      },
+      {
+        "pid": 4178188,
+        "created": 1791118840.51,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5243.23
+      },
+      {
+        "pid": 4178189,
+        "created": 1791118840.57,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5243.12
+      },
+      {
+        "pid": 4178190,
+        "created": 1791118840.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5243.01
+      },
+      {
+        "pid": 4178191,
+        "created": 1791118840.69,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5243.0
+      },
+      {
+        "pid": 4178192,
+        "created": 1791118840.75,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.96
+      },
+      {
+        "pid": 4178193,
+        "created": 1791118840.81,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.87
+      },
+      {
+        "pid": 4178195,
+        "created": 1791118840.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.66
+      },
+      {
+        "pid": 4178196,
+        "created": 1791118840.93,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.57
+      },
+      {
+        "pid": 4178198,
+        "created": 1791118840.99,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.59
+      },
+      {
+        "pid": 4178199,
+        "created": 1791118841.05,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.46
+      },
+      {
+        "pid": 4178201,
+        "created": 1791118841.11,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.35
+      },
+      {
+        "pid": 4178202,
+        "created": 1791118841.18,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.39
+      },
+      {
+        "pid": 4178204,
+        "created": 1791118841.24,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.32
+      },
+      {
+        "pid": 4178205,
+        "created": 1791118841.3,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.320000000001
+      },
+      {
+        "pid": 4178207,
+        "created": 1791118841.36,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.3099999999995
+      },
+      {
+        "pid": 4178208,
+        "created": 1791118841.42,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 5242.4
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "a17cb18a2fd159b246ecda086a9d35701ab32176b77164657557042c280b91e9",
+    "current_cgroup_limits": {
+      "cpu.max": "1600000 100000",
+      "memory.max": "214748364800",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 12940009472,
+      "memory.peak": 13980356608,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 4177187,
+        "created": 1791118786.47,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3430735872,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         8589934592           25769803776          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178188,
+        "created": 1791118840.51,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3634585600,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178189,
+        "created": 1791118840.57,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3771527168,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178190,
+        "created": 1791118840.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3582468096,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178191,
+        "created": 1791118840.69,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3786399744,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178192,
+        "created": 1791118840.75,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3653447680,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178193,
+        "created": 1791118840.81,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3555799040,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178195,
+        "created": 1791118840.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3536056320,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178196,
+        "created": 1791118840.93,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3775881216,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178198,
+        "created": 1791118840.99,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3784486912,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178199,
+        "created": 1791118841.05,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3605733376,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178201,
+        "created": 1791118841.11,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3716173824,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178202,
+        "created": 1791118841.18,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3712978944,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178204,
+        "created": 1791118841.24,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3748184064,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178205,
+        "created": 1791118841.3,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3770961920,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178207,
+        "created": 1791118841.36,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3788492800,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 4178208,
+        "created": 1791118841.42,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+          "--plan",
+          "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+          "--reader"
+        ],
+        "rss_bytes": 3621908480,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "native_parent": {
+    "pid": 4177187,
+    "created": 1791118786.47,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+      "--plan",
+      "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+      "--reader"
+    ],
+    "status": "sleeping",
+    "address_space_limits": [
+      8589934592,
+      25769803776
+    ],
+    "cpu_seconds": 55.419999999999995
+  },
+  "workers": [
+    {
+      "pid": 4178188,
+      "created": 1791118840.51,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5243.36
+    },
+    {
+      "pid": 4178189,
+      "created": 1791118840.57,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5243.25
+    },
+    {
+      "pid": 4178190,
+      "created": 1791118840.63,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5243.139999999999
+    },
+    {
+      "pid": 4178191,
+      "created": 1791118840.69,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5243.13
+    },
+    {
+      "pid": 4178192,
+      "created": 1791118840.75,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5243.08
+    },
+    {
+      "pid": 4178193,
+      "created": 1791118840.81,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5243.0
+    },
+    {
+      "pid": 4178195,
+      "created": 1791118840.87,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.78
+    },
+    {
+      "pid": 4178196,
+      "created": 1791118840.93,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.7
+    },
+    {
+      "pid": 4178198,
+      "created": 1791118840.99,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.72
+    },
+    {
+      "pid": 4178199,
+      "created": 1791118841.05,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.59
+    },
+    {
+      "pid": 4178201,
+      "created": 1791118841.11,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.48
+    },
+    {
+      "pid": 4178202,
+      "created": 1791118841.18,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.52
+    },
+    {
+      "pid": 4178204,
+      "created": 1791118841.24,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.45
+    },
+    {
+      "pid": 4178205,
+      "created": 1791118841.3,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.4400000000005
+    },
+    {
+      "pid": 4178207,
+      "created": 1791118841.36,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.44
+    },
+    {
+      "pid": 4178208,
+      "created": 1791118841.42,
+      "status": "running",
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/full_weighted_covariance_qualification_parallel_v1.py",
+        "--plan",
+        "metadata/full_weighted_parallel_qualification_plan_20261004_v1.json",
+        "--reader"
+      ],
+      "address_space_limits": [
+        12884901888,
+        12884901888
+      ],
+      "cpu_seconds": 5242.5199999999995
+    }
+  ],
+  "completed_reader_checkpoints": 3004,
+  "expected_cohorts": 4340,
+  "independent_readback_present": false,
+  "full_numerical_completion_present": false,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_reader_checkpoint_v1.py": "9516fadebf5024d821e9b06b4440aaa799ce0962c1b2d46aeb19084887775057",
+    "metadata/full_weighted_parallel_reader_launch_20261004_v1.json": "a17cb18a2fd159b246ecda086a9d35701ab32176b77164657557042c280b91e9",
+    "metadata/full_weighted_parallel_reader_checkpoint_20261004_goal_1306.json": "b2460d91bd4789961d9ae3e668b676ce998ceda5fd0c8f371d4128d44b805818"
+  },
+  "scientific_eligibility": false,
+  "biological_fits": 0,
+  "gpu": false,
+  "scope": "Exact original wrapper/native identities,16actual workers and caps; checkpoint census is progress only, not independently accepted full arithmetic or biological fitting."
+}

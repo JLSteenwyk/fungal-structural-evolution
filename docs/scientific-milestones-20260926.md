@@ -1,17 +1,25 @@
 # Open scientific milestones — updated October 4, 2026
 
-The four-control covariance source census has completed all 4,340 original
-cohorts/130,200 designs/260,400 responses/622,080 settings, including readback
-and full provenance closure. A fresh check verified all 13,119 stage bindings
-and three original terminal handles. The separate numerical producer is running
-over 5,208,000 audits and 24,883,200 setting links; its full independent readback
-and closure remain pending. A new actual-D fitting source adapter and numerical
-bridge passed complete synthetic source-grid and candidate tests. Complete fit exports and the independent reader now pass software qualification;
-real fit exports/readback, measured timing and calibrated biological effects
-remain required. These stages support aims 1 and 2 without
-changing any aim's completion criteria. All eight aims remain incomplete.
-[Full source workflow and execution](full-weighted-covariance-source-census-20261004.md).
-[Fitting bridge and remaining scope](weighted-shared-entity-candidates-20261004.md).
+The full four-control numerical qualification has closed all 4,340 cohorts,
+5,208,000 audits and 24,883,200 links. Independent full arithmetic and original
+producer/reader/closer transport are verified, with a fresh complete rehash of
+30,561 archive bindings. Native full timing is running with sixteen workers;
+its original completion still gates full weighted biological fits, currently
+zero. Historical SVD mutation and inference calibration remain unresolved.
+
+The matched predictor control has closed all 53,200 draws/372,400 native roles;
+all 176,656 archive bindings and original journals are freshly verified.
+Paired descriptive summaries independently replay all 13,170 rows. They cover
+71 markers and 21 selected taxa and do not establish calibrated intervals or
+broad fungal effects. The 622-tip V7 ancestral serialization comparison has
+passed a complete 20-iteration horizon and independent output readback. Its
+24 originally failed roles are now compared without changing priors, seeds or
+native caps: four have completed, including one special-value review. Full
+failure-grid readback and adequate ancestral posterior remain unfinished.
+All eight aims retain their original completion criteria.
+[Numerical closure](full-weighted-parallel-qualification-20261004.md),
+[predictor summaries](matched-predictor-distributions-20261004.md), and
+[ancestral comparison](baliphy-joint-fasta-v7-20261004.md).
 
 
 October 3, 13:25 UTC: new native CJSON logging software qualification covers all

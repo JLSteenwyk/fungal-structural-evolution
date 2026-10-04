@@ -1,0 +1,36 @@
+{
+  "status": "completed_fresh_user_numeric_error_and_candidate_recheck",
+  "checked_utc": "2026-10-04T15:16:00.845882+00:00",
+  "installed_formatter_error_reproduced": true,
+  "incorrect_native_constants": 5,
+  "example": {
+    "expected": 2.34e-10,
+    "observed": 0.234
+  },
+  "corrected_native_roundtrips": 12,
+  "completed_candidate_native_exit_code": 0,
+  "completed_candidate_scalar_rows": 21,
+  "completed_candidate_mapped_values_freshly_recompared": 903,
+  "completed_candidate_joint_frames": 3,
+  "completed_candidate_ancestral_pairs": 956096,
+  "independent_candidate_output_bindings_freshly_verified": 19400,
+  "independent_candidate_transport_bindings_freshly_verified": 19410,
+  "all24_comparisons_expected": 24,
+  "all24_completed_role_checkpoints": 0,
+  "all24_actual_native_processes": 4,
+  "runtime_checked_utc": "2026-10-04T15:14:36.574813+00:00",
+  "all24_fix_validated": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "installed_software_changed": false,
+  "original_jobs_restarted": false,
+  "new_mcmc_runs": 0,
+  "source_hashes": {
+    "metadata/baliphy_logging_error_recheck_20261004_user_1515.json": "cdb8f7195c8ff107091ab6241c7ca361bcdbacebb28535b9ea6658212dad25a3",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_readback_20261004_v1.json": "e7bbf333f8b180b07221e29e9e3ba59e714989933039a1f8207d7145d21f83e2",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_readback_transport_20261004_v1.json": "858745fd30e6e7badfd2667025b44b207da543b5b26fb9096d84b9e4ac46d534",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_checkpoint_20261004_user_1515.json": "84f33bcfdd8701d8f9864bcee5b1ea4469496f6ec4c3d8ca3a09616ff7e58ef7",
+    "results/ancestral/baliphy-joint-fasta-v7-full-input-comparison-20261004-v1/native/attempt-0001/receipt.json": "c2b8620d238ecf3f97f27ae34b558413556a16eab02194dcb4d4cb5acfe99c81"
+  },
+  "scope": "Two fresh bounded numeric probes, fresh complete candidate source/output/transport digest checks, fresh scalar comparison and actual live comparison process checkpoint. Original installed formatting defect persists. One corrected full-input case previously completed and passed independent readback; all24 comparisons remain running and unqualified. No installed software changes or new MCMC runs in this recheck."
+}

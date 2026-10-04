@@ -1,6 +1,7 @@
 # Paired predictor branch uncertainty
 
-The full paired resampling control is running. It extends the
+The full paired resampling control has completed independent numerical and
+provenance closure. It extends the
 [completed matched point fits](matched-predictor-branch-controls-20261003.md)
 with uncertainty from sampled alignment columns. It does not replace the
 approximately 500-fungus/25-outgroup study or establish accepted biological
@@ -127,3 +128,21 @@ error, alignment uncertainty or full phylogenetic uncertainty. Branch lengths
 remain state substitutions/site, not physical displacement or rates/year.
 Boundary calibration, direct-coordinate/experimental controls and broad
 fungal replication remain required. All eight biological aims are incomplete.
+
+## Complete paired-draw closure, October 4
+
+The original full reader closed at 13:58 UTC and the archive closed at 13:59 UTC.
+All 53,200 cases and 372,400 native roles have independently checked output
+integrity, with zero unresolved cases and 6,146,000 finite branch-value slots.
+Every native role remains classified as output-integrity checked, not model
+qualified. The fresh complete archive check rehashes 176,656 bindings and
+matches the whole native terminal summaries and original wrapper/manager
+journals. The previously documented running snapshots are historical.
+[Fresh full closure](../metadata/matched_predictor_resampling_full_closure_verified_20261004_v1.json).
+
+All 13,170 paired branch/model/mode distribution summaries now pass a separate
+independent scalar and sorted-order-statistic replay, including binomial-tail
+checks of conditional Monte Carlo precision. The selected 71-marker/21-fungus
+scope, fixed predictions and topology, dependent branch/topology comparisons,
+and remaining effect-interval calibration are retained explicitly.
+[Full summaries, figure and interpretation](matched-predictor-distributions-20261004.md).
