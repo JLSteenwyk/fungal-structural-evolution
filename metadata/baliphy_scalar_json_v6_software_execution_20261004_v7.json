@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_scalar_json_logger_v6_v7.py",
+    "--output",
+    "data/software_audits/baliphy-scalar-json-v6-20261004-v7",
+    "--receipt",
+    "metadata/baliphy_scalar_json_v6_software_validation_20261004_v7.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/baliphy_scalar_json_v6_software_resources_20261004_v7.json": "1710b6617b099b8815aad5ee3ae2c85b15f826ddb658637c0949096ef8245149",
+    "scripts/check_baliphy_scalar_json_logger_v6_v7.py": "4d09199e02e784e99fece8c20211b8a16f2209305c0d12dad8efeaf29817765d",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "26c7a7016bf744f9a2556a081103503d",
+  "wrapper": {
+    "pid": 1297859,
+    "created": 1791091519.59,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/baliphy_scalar_json_v6_software_resources_20261004_v7.json",
+      "--execution",
+      "metadata/baliphy_scalar_json_v6_software_execution_20261004_v7.json",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v7.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_json_logger_v6_v7.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-20261004-v7",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v7.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T05:25:20.633243+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-04T05:25:28.393943+00:00",
+  "child": {
+    "pid": 1297873,
+    "created": 1791091519.94,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_json_logger_v6_v7.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-20261004-v7",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v7.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 7.760461628087796,
+  "child_cpu_seconds": 7.695011,
+  "child_peak_rss_bytes": 720285696,
+  "receipt": "metadata/baliphy_scalar_json_v6_software_validation_20261004_v7.json",
+  "receipt_sha256": null,
+  "artifacts": {
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v7/stderr.log": "f0980974fd741d7dd6a871d214da88b0dd99e44dd982d7b835612bf8d74bbf88",
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v7/configuration.json": "b71c78597a589aec7c4aae01670f0becdbc15971ed40d0d3c35a2dbd5ffbe0b9",
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v7/stdout.log": "55245ae2439ae9ea4f27d1320996f7f0e1632a956efd4a66f012dc68da48c42c",
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v7/process.json": "a766def145e5ee1bb9370b33d247ad48bef668311a060dcc37d228a093a9f854"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

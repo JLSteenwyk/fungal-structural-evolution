@@ -1,0 +1,31 @@
+field	type	definition
+projectScalarSchema	string	Header schema identifier; requires V6-aware consumers
+iter	nonnegative integer	One scalar sample iteration; no horizon adequacy implied
+statistics//	object	Original context fields plus reserved context quality metadata
+parameters//	object	Original parameter fields with native finite encoding and special-value placeholders
+numericParameterQuality//	object	Quality of original unsanitized parameter Values
+__project_scalar_v6_quality__	object	Reserved context quality field; original collision is rejected
+numericLeafCount	nonnegative integer	Finite numeric leaves plus tagged nonfinite leaves; excludes literal null
+nonfinite	array of path/kind objects	Exact typed paths and nan/positive_infinity/negative_infinity kinds
+literalNullPaths	array of typed paths	Original literal Null Values, distinct from nonfinite states
+path	array of string keys/integer indices	Nonempty typed path preserves object keys versus array coordinates
+__project_scalar_v6__:positive_infinity	reserved string	Diagnostic positive infinity; never a numerical estimate
+__project_scalar_v6__:negative_infinity	reserved string	Diagnostic negative infinity; never a numerical estimate
+__project_scalar_v6__:nan	reserved string	Diagnostic NaN; never a numerical estimate
+__project_scalar_v6__:literal_null	reserved string	Original semantic literal null; avoids observed native null encoder crash
+finite_record	boolean	No nonfinite tags; this alone never establishes scientific eligibility
+native_finite_value_roundtrips	integer	17 exact native finite encode/read fixture checks
+native_smallest_subnormal_construction_and_python_readback	integer	One exact native binary component and Python readback; native Text.Read unsupported
+native_subnormal_components	two integer array	Native normalized mantissa/exponent; independent ldexp reconstruction checked
+native_positive_and_negative_zero_signs_verified	boolean	Native reciprocal sign and Python copysign, not native isNegativeZero
+forbidden_seed_count	integer	6518 prior/original/future/software fixture seeds censused
+full_programs_checked	integer	405 exact inverse static source checks; not full native execution
+full_roles_checked	integer	1620 original role identities retained
+native_runs	integer	Seven native software runs: pure Value probe and three paired priors
+scalar_rows_checked	integer	63 model fixture scalar rows; all20iteration paired chains included
+mapped_values_compared	integer	903 per prior; relative2e-13 and absolute0 comparison with native TSV
+existing_sampler_audit_compatible	boolean false	Production audits require versioned V6 integration before launch
+production_horizon	null in Python manifest	No production posterior horizon chosen; not passed through native CJSON
+native_execution_launched	boolean false	Prepared source/seed grid has no full native launch
+scientific_eligibility	boolean false	No biological promotion by serialization checks
+posterior_qualified	boolean false	Ancestral posterior remains unqualified

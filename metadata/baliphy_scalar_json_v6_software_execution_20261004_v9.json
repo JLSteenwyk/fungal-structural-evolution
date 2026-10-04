@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_scalar_json_logger_v6_v9.py",
+    "--output",
+    "data/software_audits/baliphy-scalar-json-v6-20261004-v9",
+    "--receipt",
+    "metadata/baliphy_scalar_json_v6_software_validation_20261004_v9.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/baliphy_scalar_json_v6_software_resources_20261004_v9.json": "985916170015000555bca1c5d3959de601b8d03c76f8df1822c60b81c58b23d7",
+    "scripts/check_baliphy_scalar_json_logger_v6_v9.py": "13578c20d89429d69aa51365e3cdfec9607e0769980f515a3fe5ea0a5da33ccf",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "73f9ebfde4a94fc781ca17f0d010182e",
+  "wrapper": {
+    "pid": 1301056,
+    "created": 1791091728.75,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/baliphy_scalar_json_v6_software_resources_20261004_v9.json",
+      "--execution",
+      "metadata/baliphy_scalar_json_v6_software_execution_20261004_v9.json",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v9.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_json_logger_v6_v9.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-20261004-v9",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v9.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T05:28:49.797520+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T05:29:48.211171+00:00",
+  "child": {
+    "pid": 1301063,
+    "created": 1791091729.1,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_json_logger_v6_v9.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-20261004-v9",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v9.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 58.41340636298992,
+  "child_cpu_seconds": 58.229134,
+  "child_peak_rss_bytes": 808341504,
+  "receipt": "metadata/baliphy_scalar_json_v6_software_validation_20261004_v9.json",
+  "receipt_sha256": "9f90026e58c60b3b5f94bcad403fe92e03fd09eac74736a0f95dddcb0a888e2f",
+  "artifacts": {
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v9/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v9/configuration.json": "355ddd551feaac8b98b40498806b1ce109779fa4f10aa75f398f35ee89562757",
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v9/stdout.log": "92424438faf56fd3ed056120be503910d03e87c957c3e04279811afb9417c03e",
+    "metadata/baliphy_scalar_json_v6_software_execution_20261004_v9/process.json": "460b303f595a836ecf3f7b5a9e5cab06f91ef5b6a7d6fef03c30bc3c6d94d102"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

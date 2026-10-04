@@ -1562,3 +1562,24 @@ posterior/model/likelihood/root uncertainty and prior crashes remain open.
 Original weighted numerical job reports 370/4,340 cohorts without recorded
 failure; full fitting/calibration, atlas/framework and all eight aims incomplete.
 [Full assessment and next correction](full-historical-number-assessment-20261004.md).
+
+October 4, 05:30 UTC: future scalar V6c rendering qualified over all405sources/
+1620roles plus seven actual native fixture runs. Three prior pairs preserve
+TSV/tree/alignment/joint-sample bytes;63scalar rows,2709mapped values, nine
+NPZs, explicit nonfinite/literal-null records and24negative cases pass.
+Full future grid prepared with1620fresh seeds, native production unlaunched.
+Original retained timing separately failed on unchanged covariance guard
+after10cohort receipts; all three failed controllers/partial artifacts retained.
+Weighted numerical work continues, its full timing pending. No real full-data
+fit/calibration, completed atlas/framework or finished biological aim.
+[Correction and preserved failures](baliphy-scalar-json-v6-20261004.md).
+
+October 4, 05:40 UTC: all24original stack-followup native attempts ended in
+timeout. Original full-role/resource/readback/two-journal closure is complete;
+a separate read-only V2 observer freshly rehashes90987bindings and verifies
+all three original terminal controllers. Original1596successes remain,
+399complete and six unresolved quartets; no extra successful sampling or
+qualified posterior. The first observer's missing-launch-key error is retained
+and corrected only in a new script version. Weighted numerical stage at
+05:37reports470/4340cohort progress,473partial audits and no recorded failure.
+[Fresh followup proof](../metadata/baliphy_stack_followup_completed_verification_20261004_v2.json).

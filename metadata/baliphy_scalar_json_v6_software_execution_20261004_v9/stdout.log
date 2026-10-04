@@ -1,0 +1,73 @@
+scalar_v6_native value-probe exited_zero
+scalar_v6_native broad-v5 exited_zero
+scalar_v6_native broad-v6 exited_zero
+scalar_v6_native centered-v5 exited_zero
+scalar_v6_native centered-v6 exited_zero
+scalar_v6_native package-v5 exited_zero
+scalar_v6_native package-v6 exited_zero
+{
+  "status": "passed_scalar_json_v6_full_source_and_paired_native_qualification",
+  "checked_utc": "2026-10-04T05:29:48.109396+00:00",
+  "full_programs_checked": 405,
+  "full_roles_checked": 1620,
+  "exactly_reversible_from_v5": true,
+  "context_action_evaluated_once": true,
+  "native_runs": 7,
+  "scalar_rows_checked": 63,
+  "joint_frames_checked": 9,
+  "ancestral_records_checked": 36,
+  "serialized_array_checks": 9,
+  "native_finite_value_roundtrips": 17,
+  "native_smallest_subnormal_construction_and_python_readback": 1,
+  "native_subnormal_components": [
+    4503599627370496,
+    -1126
+  ],
+  "native_positive_and_negative_zero_signs_verified": true,
+  "native_nonfinite_tags_checked": 6,
+  "native_literal_null_tags_checked": 2,
+  "malformed_record_cases_rejected_by_both_readers": [
+    "statistics//:missing_tag",
+    "statistics//:wrong_kind",
+    "statistics//:duplicate_tag",
+    "statistics//:negative_index",
+    "statistics//:bool_index",
+    "statistics//:wrong_count",
+    "statistics//:null_overlap",
+    "statistics//:missing_literal",
+    "statistics//:tag_finite",
+    "statistics//:untagged_null",
+    "statistics//:nonstandard_number",
+    "statistics//:wrong_placeholder",
+    "parameters//:missing_tag",
+    "parameters//:wrong_kind",
+    "parameters//:duplicate_tag",
+    "parameters//:negative_index",
+    "parameters//:bool_index",
+    "parameters//:wrong_count",
+    "parameters//:null_overlap",
+    "parameters//:missing_literal",
+    "parameters//:tag_finite",
+    "parameters//:untagged_null",
+    "parameters//:nonstandard_number",
+    "parameters//:wrong_placeholder"
+  ],
+  "future_seed_namespace": "fungal-scalar-cjson-explicit-nonfinite-future-20261004-v6",
+  "deterministic_disjoint_future_seeds": 1620,
+  "forbidden_seed_count": 6518,
+  "fixture_seed_values": [
+    20269001,
+    20269002,
+    20269003
+  ],
+  "project_scalar_schema": "native-cjson-explicit-special-values-v6",
+  "full_grid_native_execution_launched": false,
+  "probability_model_changed": false,
+  "installed_binary_or_library_changed": false,
+  "original_outputs_changed": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "scope": "Full405program/1620role static reversibility; all three priors paired at fresh fixture seeds for20iterations preserve original TSV/mapping/tree/ancestral alignment/joint frames byte-exact. 63scalar rows read by two validators and independently mapped to TSV at rel2e-13 abs0; 17native finite probes roundtrip exactly (including zero sign), plus one exact native smallest-subnormal construction/Python readback, six explicit nonfinite tagged string placeholders and two literal-null tags,24malformed records rejected by both readers. No full-grid startup/horizon, crash repair, recovered historical numbers, posterior adequacy or biological aim completion."
+}

@@ -135,3 +135,13 @@ crashes remain unresolved. The ancestral structural predictions, mechanistic
 case studies, complete structural atlas, accepted phylogenetic/reconciliation/
 dating framework and all eight biological aims remain incomplete. The original
 weighted covariance and timing jobs continue; GPU prediction stays paused.
+
+## Follow-up at 05:30 UTC
+
+The [future scalar V6c source correction](baliphy-scalar-json-v6-20261004.md)
+has now passed complete static source-grid and actual paired native software
+qualification. All405models/1620new roles are prepared without a production
+launch. Explicit nonfinite/literal-null tagged strings avoid observed native
+nonstandard JSON and null-encoding failure. Historical values and installed
+formatter remain unchanged; full-grid native audits/runtime and posterior
+adequacy remain unresolved.

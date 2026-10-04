@@ -135,3 +135,13 @@ especially for extracted domains and incomplete annotations.
 - SciPy 1.15.3 [normal distribution and inverse CDF](https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.stats.norm.html), accessed October 4, 2026 UTC. Defines the standard-normal quantile used by the prespecified conditional Wald nominal95% calibration target. This reference supports quantile computation; it does not establish interval coverage when variances are estimated, model adequacy for fungi, simultaneous inference or biological significance. The actual refit bridge requires independent numerical checks and retains all unresolved outcomes.
 
 - SciPy 1.15.3 [inverse incomplete gamma](https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.special.gammaincinv.html) and [incomplete gamma](https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.special.gammainc.html), accessed October 4, 2026 UTC. Define equal-probability boundaries and truncated first-moment quantities used in the historical gamma-rate reference. Their implementation lineage overlaps Boost; no fully independent special-function algorithm is claimed. Full native/source/serialized comparisons assess observed numeric discrepancies, not original-float recovery, model adequacy or ancestral posterior validity.
+
+## Local native serialization evidence, October 4
+
+The installed BAli-Phy4.3 Probability.Logger, Data.JSON.Types.Foreign and
+Compiler.RealFloat sources are hashed in the scalar V6 qualification receipt.
+Actual native/GDB fixtures, not an upstream behavior assumption, establish
+the observed finite encoder, nonstandard Infinity/NaN output, ejson_null
+crash site and native decoder/zero-test limitations. These software findings
+do not establish model/likelihood correctness, mixing, crash repair in larger
+families or biological inference. [Artifacts and exact limitations](baliphy-scalar-json-v6-20261004.md).

@@ -1,0 +1,55 @@
+{
+  "status": "complete_verified_full_role_stack_followup_v1",
+  "full_chains": 1620,
+  "full_quartets": 405,
+  "effective_inputs": 135,
+  "original_configuration_aliases": 324,
+  "original_status_counts": {
+    "full_joint_short_sampler_output_integrity_checked_not_posterior": 1596,
+    "unsuccessful_sampler_qualification_attempt_retained": 24
+  },
+  "original_failed_roles": 24,
+  "followup_roles": 24,
+  "followup_status_counts": {
+    "unsuccessful_sampler_qualification_attempt_retained": 24
+  },
+  "selected_checked_sampler_attempts": 1596,
+  "selected_unsuccessful_sampler_attempts": 24,
+  "selected_complete_quartets": 399,
+  "selected_unresolved_quartets": 6,
+  "selected_joint_saved_frames": 4788,
+  "selected_joint_ancestral_residue_category_pairs": 54527895,
+  "all_original_failures_retained": true,
+  "all_fresh_seeds_disjoint": true,
+  "posterior_qualified": false,
+  "resource_audit": {
+    "expected_followup_roles": 24,
+    "observations": 37723,
+    "roles_with_live_stack_limit_observation": 24,
+    "roles_without_live_observation": 0,
+    "observed_cgroup_reported_peak_bytes": 167373033472,
+    "maximum_observed_poll_gap_seconds": 1.1492913219844922,
+    "no_observed_cgroup_oom_or_limit_event": true,
+    "stack_limit_bytes": 67108864,
+    "scope": "Identity-bound sampled procfs and cgroup resources; missed/transitioning observations retained. Not precise final native peaks or longer-chain resource bounds."
+  },
+  "reservation_audit": {
+    "roles_reserved": 24,
+    "ledger_events": 48,
+    "peak_reserved_bytes": 206158430208,
+    "maximum_simultaneous_roles": 4,
+    "reservation_capacity_bytes": 206158430208,
+    "scope": "Declared address-space reservations held through native execution and output audit; not measured native peak RSS."
+  },
+  "full_hash_archive": "results/ancestral/full-baliphy-stack-followup-20261003-v1/completion_archive.json",
+  "full_hash_archive_sha256": "97f89deaae56d29db1eea34df7a392e09007e0f2c7c57091c249ac905b2356b4",
+  "bound_source_hashes": 90982,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/ancestral/full-baliphy-stack-followup-20261003-v1/receipt.json",
+  "producer_receipt_sha256": "735f98dd3c821bc66db644fd19973c3bb36a6c8101af2e1fd527e8ed78d532fb",
+  "independent_readback": "results/ancestral/full-baliphy-stack-followup-20261003-v1/readback.json",
+  "independent_readback_sha256": "e25afa24a43e12eec6e904d1030407491f185bf2d071e08cbb5ef27ff5c9ea3a",
+  "completion_plan_sha256": "245d5d2d8558bdcb66bd198b918b58dd5db5e752d14f2a1ffc0a84462663186d",
+  "scientific_eligibility": false,
+  "scope": "Complete1620original roles/405quartets/135inputs/324aliases retained with explicit original and follow-up provenance. Twenty-four new20iteration attempts cover all two-input/three-prior/four-chain diagnosedSIGSEGV roles;64MiB stack is scoped to their native prlimit commands. Fresh seed namespace disjoint all original/current/historical/known diagnostic seeds; no continuation,concatenation,restart,replacement of originals or automatic repeated attempts. Original models, priors,alignments,trees,AS48GiB,file2GiB and CPU/wall caps preserved. Complete source sampler/resource/artifact/two-journal closures and two causal strict initial-frame diagnostics required. All1596original successes reused by immutable reference; all24original failures retained even if follow-ups succeed. All follow-up native/config/identity/scalar/joint-frame/array checks, sampled stack/memory/cgroup limits, FIFO reservations and independent serialized full-role readback required. Failed fresh attempts and unresolved quartets remain explicit. No adequate posterior, precise final native resource peaks, long-run qualification, historical bad_alloc repair, accepted tree/root/model or completed biological aims implied. GPU prediction remains paused; no paid resources or global defaults changed."
+}

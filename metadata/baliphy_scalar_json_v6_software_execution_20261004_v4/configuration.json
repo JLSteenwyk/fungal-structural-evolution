@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_scalar_json_logger_v6_v4.py",
+    "--output",
+    "data/software_audits/baliphy-scalar-json-v6-20261004-v4",
+    "--receipt",
+    "metadata/baliphy_scalar_json_v6_software_validation_20261004_v4.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/baliphy_scalar_json_v6_software_resources_20261004_v4.json": "99f11bc3957f7ce2234e7ab3cca69fecd1392390f0a96423d69da426fe472694",
+    "scripts/check_baliphy_scalar_json_logger_v6_v4.py": "5013d0a7753face85733ee9275cb79faa4aec77a21b79b46dbbde8f873a6f4ad",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "99015da2f68e4f5b97e88d9e417c1937",
+  "wrapper": {
+    "pid": 1286234,
+    "created": 1791090808.39,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/baliphy_scalar_json_v6_software_resources_20261004_v4.json",
+      "--execution",
+      "metadata/baliphy_scalar_json_v6_software_execution_20261004_v4.json",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v4.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_scalar_json_logger_v6_v4.py",
+      "--output",
+      "data/software_audits/baliphy-scalar-json-v6-20261004-v4",
+      "--receipt",
+      "metadata/baliphy_scalar_json_v6_software_validation_20261004_v4.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T05:13:29.448956+00:00"
+}

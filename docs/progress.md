@@ -13348,3 +13348,50 @@ new discrepancy evidence, full serialized readback and publication. Full atlas,
 accepted phylogenetic/reconciliation/dating framework, production fitting/
 calibration and all eight biological aims remain incomplete.
 [Full data, scripts, original evidence and next correction](full-historical-number-assessment-20261004.md).
+
+## October 4, 05:30 UTC: scalar V6 rendering qualified; complete future grid prepared
+
+The preceding user error-recheck turn produced fresh native failure evidence
+and a22-timeout original followup snapshot. This continuation made progress:
+implemented separate future scalar rendering and two strict readers, qualified
+the complete405program/1620role source scope plus seven actual native fixture
+runs, and prepared all405models/1620fresh roles without a production launch.
+
+Paired20iteration native comparisons for broad/centered/package priors preserve
+TSV, column maps, tree, ancestral FASTA and joint-property JSON bytes exactly.
+Sixty-three corrected scalar rows,2709mapped TSV values and nine independent
+joint-array readbacks pass. Seventeen native finite encode/read probes and
+one separately reconstructed smallest subnormal pass; positive/negative zero
+sign is checked independently. Six nonfinite and two literal-null tags pass,
+while24malformed records fail both readers. New V6-aware production audits
+and full-grid native qualification remain required; old scripts/jobs unchanged.
+
+Actual original wait89239 exited0; wrapper1301056 and invocation73f9ebfde4a94fc781ca17f0d010182e
+are matched to the entire terminal payload and manager start/end. Transport
+rehashes4225bindings; future manifest4634bindings,6518forbidden seeds.
+Eight failed software attempts are preserved. Actual diagnostic wait16702
+exited0 and GDB localized the literal-null fixture crash to ejson_null; raw
+native nonfinite output was Infinity/-Infinity/NaN, not valid JSON. Explicit
+tagged strings avoid both paths. Decoder limitations are documented rather
+than silently removing subnormal or zero-sign checks.
+
+A new independent failure was observed: original retained-input timing stopped
+after10cohort receipts on backend_guard,9/25matrix elements outside unchanged
+rtol3e-9/atol2e-8 (max reported absolute2.56917974,relative1.52149497e-8).
+Producer and both original dependent controllers have invocation-bound exit1
+evidence; every partial artifact/source is retained. No retry or tolerance
+relaxation. Separate weighted numerical stage reports420/4340cohorts with
+425partial audit files and no recorded failure; its dependent full timing
+still waits. Real full-data fits/calibration, atlas/framework and all eight
+biological aims remain incomplete. GPU prediction paused, no new charge.
+[Correction, native proof and next work](baliphy-scalar-json-v6-20261004.md).
+
+October 4, 05:40 UTC: all24original stack-followup native attempts ended in
+timeout. Original full-role/resource/readback/two-journal closure is complete;
+a separate read-only V2 observer freshly rehashes90987bindings and verifies
+all three original terminal controllers. Original1596successes remain,
+399complete and six unresolved quartets; no extra successful sampling or
+qualified posterior. The first observer's missing-launch-key error is retained
+and corrected only in a new script version. Weighted numerical stage at
+05:37reports470/4340cohort progress,473partial audits and no recorded failure.
+[Fresh followup proof](../metadata/baliphy_stack_followup_completed_verification_20261004_v2.json).

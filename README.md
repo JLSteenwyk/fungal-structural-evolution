@@ -19,12 +19,21 @@ frames, including two missed by normalization alone. Separate full readback
 and both original execution journals are verified. Historical numbers remain
 unqualified; the installed formatter and ancestral posterior are not accepted.
 
+A [future scalar JSON correction](docs/baliphy-scalar-json-v6-20261004.md)
+now passes complete 405-program source checks, paired native comparisons for
+all three priors, 63 scalar-row readbacks and explicit nonfinite-state checks.
+All 1,620 future roles are prepared with fresh seeds. Production audits still
+need the new schema integrated before any full-grid native launch; existing
+jobs and historical outputs remain unchanged.
+
 The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal
 closure. A [fresh full closure check](metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json)
 verified all 45 archive bindings and three original terminal-success handles.
-Retained timing has started writing cohort results; weighted numerical qualification,
-fitting and calibration remain separate unfinished stages.
+Retained timing stopped after 10 cohort receipts on a covariance agreement
+guard; its original failure and downstream failures are retained with unchanged
+tolerances. Weighted numerical qualification continues independently; fitting
+and calibration remain unfinished.
 
 The [dependent Gaussian simulation code](docs/weighted-shared-entity-simulation-20261004.md)
 is qualified for future uncertainty calibration: 192 dense covariance checks
@@ -148,12 +157,13 @@ output checks and 24 SIGSEGV failures remain**, with 84,071 bound hashes and
 both original journals. All failures belong to two 622-protein `OG0000972`
 inputs. Controlled diagnostics reproduced 8-MiB native stack exhaustion on
 both; a scoped 64-MiB limit allowed initial logging to finish. The
-[fresh follow-up](docs/baliphy-native-stack-correction-20261003.md) now runs
-all 24 failed roles with new seeds, preserved models/priors and full
-1,620-role provenance. At 02:26 UTC October 4, sixteen follow-ups had timed out and four
-workers were active. Full sampling/readback/closure remains pending. Originals and global
-defaults stay unchanged. These short checks do not qualify ancestral
-posteriors or repair the two older allocation failures.
+[fresh follow-up](docs/baliphy-native-stack-correction-20261003.md) has now
+closed all 24 new attempts; every attempt timed out. A
+[fresh full closure verification](metadata/baliphy_stack_followup_completed_verification_20261004_v2.json)
+checked 90,987 bindings and all three original terminal controllers.
+The 1,596 original successes remain; six quartets are unresolved. Originals
+and global defaults stay unchanged. These short checks do not qualify
+ancestral posteriors or repair the two older allocation failures.
 
 The [fresh full covariance reader](docs/full-process-covariance-readback-20261003.md)
 has completed all 4,340 cohorts, 1,302,000 audits and 6,220,800 setting links,
@@ -166,8 +176,8 @@ has not started. Original failed outputs and serial queues stay preserved.
 
 The [complete retained fitting and timing workflow](docs/full-retained-fitting-and-timing-20261003.md)
 is now software qualified. It preserves all 5,208,000 potential candidates and
-12,441,600 setting links. Full-data timing is loading sources after complete
-process/retained covariance closure; no production fitting has been launched
+12,441,600 setting links. Full-data timing stopped on a numerical guard after
+10 cohort receipts; its failure is preserved. No production fitting has been launched
 or queued. Independent fitting readback and numerical reviews remain explicit.
 The process reader and retained qualification have finished; complete timing
 and the cause of the original mismatch remain unresolved. Runtime remains

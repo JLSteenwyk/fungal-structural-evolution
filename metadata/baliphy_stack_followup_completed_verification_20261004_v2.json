@@ -1,0 +1,103 @@
+{
+  "status": "fresh_verified_complete_original_stack_followup_hashes_and_terminal_handles",
+  "checked_utc": "2026-10-04T05:40:32.585663+00:00",
+  "original_completion_sha256": "45c53e9d52b67db03284200118136af360c6a922b8d13f9594cab2294bc46722",
+  "full_bindings_checked": 90987,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/verify_completed_stack_followup_v2.py": "6607e70c560f044df229749aa52d7a1bc1cb3db7ae55563e4f977c1d3d09fdb0",
+    "metadata/baliphy_stack_followup_completed_20261003_v1.json": "45c53e9d52b67db03284200118136af360c6a922b8d13f9594cab2294bc46722",
+    "results/ancestral/full-baliphy-stack-followup-20261003-v1/completion_archive.json": "97f89deaae56d29db1eea34df7a392e09007e0f2c7c57091c249ac905b2356b4",
+    "metadata/baliphy_stack_followup_launches_20261003_v1.json": "19b90874b01a1df108dbc0e0128231ba8b74a7733feb6f03199282ad57423cc7",
+    "metadata/baliphy_stack_followup_plan_20261003_v1.json": "e983ecad073e8c9c706ae89f7edbf7a0594ce5ce8ec45e54ae6fda60016907ee",
+    "metadata/baliphy_stack_followup_v1_launch_20261003.json": "084d2610b36598bcd29e0e624c7c6a0bb96751241ff6e3583c56f59b8bd474c5",
+    "metadata/baliphy_stack_followup_v1_readback_launch_20261003.json": "9fa0a9f7269e2ed0695a084f460ffba3cb4a4f64136952c13a0513ee20d22768",
+    "metadata/baliphy_stack_followup_v1_closure_launch_20261003.json": "17c2a62faacb3ccbbc22ddccf628b5eff99ca457dfc557dfea1142185cabb38f"
+  },
+  "original_terminal_handles": [
+    {
+      "launch": "metadata/baliphy_stack_followup_v1_launch_20261003.json",
+      "pid": 3330319,
+      "created": 1791052033.99,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_stack_followup_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "084d2610b36598bcd29e0e624c7c6a0bb96751241ff6e3583c56f59b8bd474c5",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "26e50828c756bdd0e76c7c46a3d6c7c917599e0ff63b85014616416f65f4b83e",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791090231087699",
+          "CPU_USAGE_NSEC": "150772584168000",
+          "MEMORY_PEAK": "2854912",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_stack_followup_v1_readback_launch_20261003.json",
+      "pid": 3330323,
+      "created": 1791052034.02,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_stack_followup_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "9fa0a9f7269e2ed0695a084f460ffba3cb4a4f64136952c13a0513ee20d22768",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "3497e67b5e7dcf0ca3f4f92d5bd9f94d86d89325bfefe3d0aef099213138b628",
+      "captured_process_messages": 1273,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791090266594878",
+          "CPU_USAGE_NSEC": "35899398000",
+          "MEMORY_PEAK": "2764800",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/baliphy_stack_followup_v1_closure_launch_20261003.json",
+      "pid": 3330328,
+      "created": 1791052034.05,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/baliphy_stack_followup_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "17c2a62faacb3ccbbc22ddccf628b5eff99ca457dfc557dfea1142185cabb38f",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "ec16b3bd808a31931129f13b1d7de52cd5435c32d9da7c3505fafd6f8b7a9d8b",
+      "captured_process_messages": 1275,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791090321306596",
+          "CPU_USAGE_NSEC": "30553290000",
+          "MEMORY_PEAK": "2756608",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "original_successful_roles": 1596,
+  "original_failed_roles_retained": 24,
+  "followup_roles": 24,
+  "followup_native_status_counts": {
+    "timeout": 24
+  },
+  "selected_complete_quartets": 399,
+  "selected_unresolved_quartets": 6,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "original_jobs_restarted": false,
+  "scope": "Freshly rehashes the complete closed original followup archive and every bound file; checks all three exact original terminal controllers and24native timeout receipts. Inherited full output/resource/readback qualification is not reimplemented here. All24fresh attempts timed out; no additional successful sampler, adequate posterior, crash repair or completed biological aim is inferred. Original outputs unchanged."
+}

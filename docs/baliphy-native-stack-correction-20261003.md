@@ -159,3 +159,14 @@ prove complete repair; the full twenty-iteration horizon remains unresolved.
 [Read-only error recheck](../metadata/project_error_recheck_20261003_2044.json).
 Original limits, attempts and next planned roles are unchanged, with no
 automatic retry or extension.
+
+## October 4: all followups ended in timeout
+
+All24fresh20iteration attempts timed out. Original full1620role accounting,
+resource/readback and exact original execution closure has completed; no
+additional successful sampler was selected. A fresh complete source/artifact
+hash check covers90987bindings and all three terminal controllers.
+399original quartets remain complete and six unresolved; posterior adequacy
+and larger-family runtime remain unqualified. No original retry, concatenation
+or changed tolerance follows from closure.
+[Fresh proof](../metadata/baliphy_stack_followup_completed_verification_20261004_v2.json).

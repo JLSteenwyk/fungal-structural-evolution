@@ -3305,3 +3305,35 @@ The preserved footer parser failure preceded a new V2 namespace with unchanged
 tolerances. Scalar JSON correction, nonfinite-state handling, posterior/model/
 root uncertainty, prior crashes and all eight biological aims remain unresolved.
 [Full assessment and exact scientific scope](full-historical-number-assessment-20261004.md).
+
+## October 4: future scalar serialization with explicit special-value records
+
+Implemented a reversible V5-to-V6c source transformation that leaves the
+probability model, initialization, TSV and shared ancestral logger intact.
+Scalar parameter finite values use native CJSON. A single context evaluation
+produces context fields and quality metadata. Nonfinite and literal-null
+Values are sanitized into reserved tagged strings before native encoding,
+with exact typed-path/kind/count checks in two separate Python readers.
+This is required because native Infinity/NaN output is not strict JSON, and
+the retained literal-null fixture crashed in the native ejson_null operation.
+Tagged diagnostic states are not numerically substituted or accepted samples.
+
+All405sources/1620roles are statically reversible. Three fresh same-seed
+V5/V6 fixture pairs (all priors,20iterations) preserve TSV/mapping/tree/
+alignment/joint-sample bytes;63scalar rows and2709mapped values pass at
+rel2e-13/abs0. Joint frame/NPZ readback covers nine frames and36ancestors.
+Seventeen finite values have native exact encode/read evidence; the smallest
+subnormal uses native binary components and independent Python reconstruction
+because installed Text.Read rejects its JSON text. Reciprocal sign and Python
+copysign check zero sign. Six nonfinite/two literal-null tags and24negative
+record cases verify explicit diagnostic treatment. Eight failed namespaces
+remain unchanged. Actual original wait/journal/terminal payload is closed.
+
+The full405model/1620role future grid is prepared, unlaunched, with seeds
+disjoint from6518earlier/fixture seeds. Production scalar audits need this
+new schema integrated and full native startup/runtime qualification before
+future posterior inference. Original retained timing separately failed its
+unchanged numerical guard; its failed controllers and10partial cohort
+receipts remain retained, not complete. No historical number repair, installed
+patch, adequate posterior, accepted model or completed biological aim follows.
+[Schema, exact evidence and limitations](baliphy-scalar-json-v6-20261004.md).

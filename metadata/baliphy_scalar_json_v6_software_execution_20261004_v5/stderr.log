@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_scalar_json_logger_v6_v5.py", line 243, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_scalar_json_logger_v6_v5.py", line 165, in main
+    directory=native('value-probe',probe)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_scalar_json_logger_v6_v5.py", line 122, in native
+    assert result['exit_code']==0, str(receipt)
+AssertionError: /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-scalar-json-v6-20261004-v5/native/value-probe/attempt-0001/receipt.json

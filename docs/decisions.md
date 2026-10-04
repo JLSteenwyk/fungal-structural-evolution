@@ -1746,3 +1746,24 @@ correction must cover scalar parameter JSON as well as V5 ancestral properties,
 and distinguish nonfinite limit states explicitly. Current jobs and all
 388,800 historical rate cells remain unchanged and unqualified.
 [Complete evidence and scientific limits](full-historical-number-assessment-20261004.md).
+
+## 2026-10-04: preserve actual special-value semantics in future scalar logs
+
+Use the separately qualified V6c project-local logger for future preparation.
+Keep both context and parameter finite CJSON values; explicitly tag nonfinite
+and literal-null states before encoding. Native raw nonfinite serialization
+is not strict JSON and native literal-null encoding crashed in the fixture.
+Do not patch installed code or original programs/results. Retain all failed
+software versions and actual original waits/journals. Keep the smallest
+subnormal and zero-sign checks, documenting native decoder limitations and
+using exact independent reconstruction rather than silently skipping cases.
+
+Prepare the entire405program/1620role grid only after actual software
+qualification. Production audits must understand the declared V6 schema;
+preparation is not native full-grid execution or posterior acceptance.
+Original retained covariance timing has now failed: preserve its10partial
+cohorts and all three original failed controllers, retain numerical
+tolerances, and diagnose the discrepancy in a new version before any retry.
+Full weighted numerical work continues independently. All eight aims remain
+open; GPU prediction stays paused and no paid resources are provisioned.
+[Implementation and observed proof](baliphy-scalar-json-v6-20261004.md).

@@ -1,0 +1,17 @@
+{
+  "pid": 1292989,
+  "created": 1791091212.13,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_scalar_v6_native_probe.py",
+    "--output",
+    "data/software_audits/baliphy-scalar-json-v6-diagnostic-20261004-v1",
+    "--receipt",
+    "metadata/baliphy_scalar_json_v6_diagnostic_20261004_v1.json"
+  ]
+}

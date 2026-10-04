@@ -167,3 +167,16 @@ resource enforcement still gate production fitting. Nonuniform weighting and
 control variants, inferential calibration, accepted species/gene/dating and
 reconciliation frameworks, ancestral posterior adequacy, the full atlas and
 all eight biological aims remain incomplete.
+
+## October 4: original whole-data timing stopped
+
+The original producer stopped after10cohort receipts on backend_guard matrix
+agreement:9/25elements exceeded unchanged rtol3e-9/atol2e-8. Both original
+dependency controllers subsequently failed; no complete timing/fit receipt
+exists. Every partial artifact and invocation-specific terminal journal is
+retained in metadata/full_retained_shared_entity_timing_failure_20261004_v2.json.
+The earlier running-stage checkpoint command now refuses the failed terminal
+state; use scripts/record_retained_timing_original_failure_v2.py with a fresh
+--output path for read-only terminal observation. Do not restart the failed
+original or relax tolerances. Diagnose a new version first.
+[Observed failure and independent ongoing work](baliphy-scalar-json-v6-20261004.md).
