@@ -13648,3 +13648,12 @@ At 09:01, a fresh original sampler/observer checkpoint records 18 dispositions,
 controller independently reports 45,914/53,200 completed draws (86.3%);
 full archive/readback/journal closure remains pending. These are live original
 jobs; no new launches or restarts are inferred from progress alone.
+
+At 09:13, all 40 unprotected watchpoint probes have completed with inputs
+preserved and no watchpoint hit. The inferior exits normally, but GDB's sourced
+post-exit register inspection fails, giving original wait91413/driver/wrapper
+exit1. A separate source/artifact/whole-journal reader verifies completed probes
+while preserving the actual failure. No successful-debugger claim, retry,
+identified write instruction or repair is inferred. At 09:08 the corrected
+sampler has36completed dispositions35finite/one review and46original attempts;
+full closure and adequate posterior remain pending.

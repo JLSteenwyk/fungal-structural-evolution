@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_retained_factor_watchpoint_debugger_v1.py",
+    "--plan",
+    "metadata/retained_factor_watchpoint_debugger_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/retained_factor_watchpoint_debugger_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/retained_factor_watchpoint_debugger_resources_20261004_v1.json": "93ee56d099e3a875b10c3ffcdea4f85bddca74f0e0e055db99222a642c7decdd",
+    "scripts/run_retained_factor_watchpoint_debugger_v1.py": "4fd5266b3804633fef11704e68aba2d17e902bacbf57365470538c30cdc22a14",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "6695d60f70394f828cd411cdc69b8181",
+  "wrapper": {
+    "pid": 1607519,
+    "created": 1791103985.11,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/retained_factor_watchpoint_debugger_resources_20261004_v1.json",
+      "--execution",
+      "metadata/retained_factor_watchpoint_debugger_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_watchpoint_debugger_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_retained_factor_watchpoint_debugger_v1.py",
+      "--plan",
+      "metadata/retained_factor_watchpoint_debugger_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_watchpoint_debugger_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-04T08:53:06.220148+00:00",
+  "status": "failed_stage_retained",
+  "checked_utc": "2026-10-04T09:11:43.442515+00:00",
+  "child": {
+    "pid": 1607526,
+    "created": 1791103985.52,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=7200",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_retained_factor_watchpoint_debugger_v1.py",
+      "--plan",
+      "metadata/retained_factor_watchpoint_debugger_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_watchpoint_debugger_20261004_v1.json"
+    ]
+  },
+  "exit_code": 1,
+  "timed_out": false,
+  "wall_seconds": 1117.2221206009854,
+  "child_cpu_seconds": 1118.072183,
+  "child_peak_rss_bytes": 999673856,
+  "receipt": "metadata/retained_factor_watchpoint_debugger_20261004_v1.json",
+  "receipt_sha256": "92a1859ebaffac14daa09570fb1a948030d1a9f74ab872ab4ea970cb1e99c3ff",
+  "artifacts": {
+    "metadata/retained_factor_watchpoint_debugger_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_factor_watchpoint_debugger_execution_20261004_v1/configuration.json": "f595c4bb21fcc2b77375a073ffa04f913b639089d38b890ebff22a333d980840",
+    "metadata/retained_factor_watchpoint_debugger_execution_20261004_v1/stdout.log": "78b8b1d252994994f68e912d59f30d453832d2df0f9c522880bb977ac68ab2b4",
+    "metadata/retained_factor_watchpoint_debugger_execution_20261004_v1/process.json": "9d4f000512768de8e5f9405eb74dd93de7e400682b034cdf96b2467880410207"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

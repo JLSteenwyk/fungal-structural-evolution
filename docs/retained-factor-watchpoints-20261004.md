@@ -58,6 +58,21 @@ actual caps, one BLAS thread and both watched words mapped writable. The
 first two probes agree with all input hashes preserved. No final receipt or
 native write instruction is established at this checkpoint.
 
+The run subsequently completed all 40 probes with unchanged numerical guards
+and all input hashes preserved; neither watched word changed. The inferior
+exited normally. GDB's sourced command file then tried to print the program
+counter after exit and failed with `No registers.` Original GDB, wrapper and
+tool wait 91413 consequently exited **1**. The failed driver status, complete
+original terminal payload, original journals and exact logs are preserved.
+The [separate completed-target evidence](../metadata/retained_factor_watchpoint_debugger_post_exit_evidence_20261004_v1.json)
+freshly verifies source/artifact hashes and every completed probe. It does
+not claim a successful debugger exit or reclassify the failed original job.
+This nonrecurrence still does not repair the earlier corruption.
+
+Future capture tooling needs conditional post-exit inspection before a new
+diagnostic namespace is launched. The executed V1 sources and outputs stay
+unchanged; no original native run is retried to hide a reporting error.
+
 Scripts:
 
 ```text
