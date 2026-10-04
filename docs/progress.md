@@ -13395,3 +13395,20 @@ qualified posterior. The first observer's missing-launch-key error is retained
 and corrected only in a new script version. Weighted numerical stage at
 05:37reports470/4340cohort progress,473partial audits and no recorded failure.
 [Fresh followup proof](../metadata/baliphy_stack_followup_completed_verification_20261004_v2.json).
+
+## October 4, 05:57 UTC: fresh user-requested error recheck
+
+The installed original BAli-Phy numeric formatter still changes five of twelve
+fixed test values; fresh pure native probes reproduce the error. The alternate
+encoder passes twelve exact native roundtrips. All63saved corrected V6 scalar
+rows independently pass2709mapped TSV comparisons, and all original qualification
+source bindings freshly rehash. V6 full-grid native execution remains unlaunched.
+The separate retained-input timing covariance guard failure remains unresolved:
+its ten original cohort checkpoints and failure evidence are unchanged, all
+three original controllers ended, and no completion exists. This recheck does
+not rerun that failed stage. The independent weighted numerical job is live,
+reports500/4340cohorts and has no recorded failure files; full closure is absent.
+Original wait60785 exited0 with invocation52fcbb6f323547fe8780f9882df8b19c;
+exact wrapper identity, entire terminal payload and original manager start/end
+were checked. GPU prediction remains paused and all eight biological aims remain
+incomplete. [Recheck evidence](../metadata/current_analysis_error_recheck_20261004_0556.json).
