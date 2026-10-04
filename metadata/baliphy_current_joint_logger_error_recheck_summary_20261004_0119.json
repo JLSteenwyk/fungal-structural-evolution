@@ -1,0 +1,31 @@
+{
+  "status": "completed_read_only_current_joint_logger_error_recheck",
+  "checked_utc": "2026-10-04T01:22:20.461676+00:00",
+  "closed_startups_checked": 1620,
+  "startup_closure_bindings_rehashed": 14402,
+  "available_completed_roles_replayed": 1620,
+  "expected_sampler_roles": 1620,
+  "status_counts": {
+    "full_joint_short_sampler_output_integrity_checked_not_posterior": 1596,
+    "unsuccessful_sampler_qualification_attempt_retained": 24
+  },
+  "unsuccessful_or_invalid_available_roles": 24,
+  "saved_joint_frames_replayed": 4788,
+  "ancestral_residue_category_pairs_checked": 54527895,
+  "native_inference_runs_started": 0,
+  "existing_jobs_restarted": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "scope": "Every completed checkpoint present at the initial snapshot is replayed from native output; all exported array keys, shapes, dtypes and values are checked. Strict mean-one rate validation is unchanged. Partial sampler progress does not establish full completion, historical allocation repair or posterior adequacy. No original outputs are written or replaced.",
+  "full_replay_receipt": "metadata/baliphy_current_joint_logger_error_recheck_20261004_0119.json",
+  "full_replay_receipt_sha256": "50bf07ed7c6ff2cdec9d074f5538fd1c3f5142eca3854260de3443fe62de2af4",
+  "bound_source_hashes": 24208,
+  "full_replay_receipt_retained_locally": true,
+  "actual_tool_wait": {
+    "session_id": 43600,
+    "exit_code": 0,
+    "observed_process_pid": 3096924,
+    "observed_process_created": 1791076707.38
+  },
+  "interpretation": "All 4,788 exported successful-role frames replay exactly, including strict rate and sequence/category validation. Twenty-four original failed roles remain explicit; this is output integrity, not posterior adequacy or repair of the installed original formatter."
+}

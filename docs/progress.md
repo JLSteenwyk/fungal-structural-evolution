@@ -1,5 +1,31 @@
 # Progress and evidence
 
+## October 4, 01:20 UTC: requested error recheck
+
+A fresh installed-formatter probe reproduces the original BAli-Phy numeric
+serialization defect in five of twelve constants. The replacement CJSON
+formatter preserves all twelve exact native roundtrips; nine retained corrected
+fixture frames also pass. This does not repair the installed original formatter.
+[Fresh native probe](../metadata/baliphy_logging_error_recheck_summary_20261004_0122.json).
+
+At 01:22 UTC, a fresh read-only replay completed all 1,620 original role records:
+1,596 successful roles retain 4,788 exact saved frames and 54,527,895 ancestral
+residue/category pairs. All exported arrays and strict rate/sequence/category
+checks pass; the 24 original unsuccessful roles remain explicit. No native sampler
+was launched or restarted, and posterior adequacy remains unqualified.
+[Complete saved-output replay](../metadata/baliphy_current_joint_logger_error_recheck_summary_20261004_0119.json).
+
+Original job identities and frozen pins remain valid. Seventeen current ancestral
+follow-up error logs and the recent original service journals contain no observed
+allocation or segmentation-fault signatures. All thirteen terminal follow-up
+attempts are actual timeouts, with four native workers still running and no
+observed cgroup OOM kills. Historical failures remain unresolved.
+[Current log scan](../metadata/current_analysis_error_signature_recheck_20261004_0120.json).
+The original covariance reader has all 4,340 cohort reports without a recorded
+new mismatch; final linkage and closure remain pending. Weighted numerical
+qualification is running without a recorded failure. No jobs were restarted,
+GPU inference remains paused, and all eight aims remain incomplete.
+
 ## October 3: full controls closed; nonuniform Gram arithmetic qualified
 
 Independent SQL/Fraction readback completed all 4,340 cohorts, 34,110,120
