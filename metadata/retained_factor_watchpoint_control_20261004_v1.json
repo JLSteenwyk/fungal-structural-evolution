@@ -1,0 +1,63 @@
+{
+  "status": "captured_native_watchpoint_positive_control",
+  "checked_utc": "2026-10-04T08:50:50.624025+00:00",
+  "plan": "metadata/retained_factor_watchpoint_control_plan_20261004_v1.json",
+  "plan_sha256": "1d10e94b9829ad4521497cf0345ec7406abd5b30433f4d0b7b47e3d7198ce969",
+  "debugger_exit_code": 0,
+  "debugger_identity": {
+    "pid": 1605374,
+    "created": 1791103848.41,
+    "cmdline": [
+      "/usr/bin/gdb",
+      "-nx",
+      "--batch",
+      "-x",
+      "results/phylogeny/retained-factor-watchpoint-control-debugger-20261004-v1/gdb_commands.txt",
+      "--args",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/retained_factor_watchpoint_positive_control_v1.py",
+      "--metadata",
+      "results/phylogeny/retained-factor-watchpoint-positive-control-20261004-v1/watchpoints.json"
+    ]
+  },
+  "installed_watchpoints": [
+    [
+      "artificial_word_a",
+      "0x7d40829e3a10"
+    ],
+    [
+      "artificial_word_b",
+      "0x7d40829e3a18"
+    ]
+  ],
+  "native_write_hit": true,
+  "stopped_program_counters": [
+    "0x7d40835a1b69"
+  ],
+  "target_receipt_present": false,
+  "artificial_control": true,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/retained_factor_watchpoint_positive_control_v1.py": "61736078c20b16f6f98ed35f88d7d79925af005f26cbd2c4444ec834b0b07428",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_retained_factor_watchpoint_debugger_v1.py": "4fd5266b3804633fef11704e68aba2d17e902bacbf57365470538c30cdc22a14",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "/usr/bin/gdb": "f0068d3b418ae039c309574b33901b82404025eb46c2e983246b9c3976ba7e83",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "metadata/retained_factor_watchpoint_control_plan_20261004_v1.json": "1d10e94b9829ad4521497cf0345ec7406abd5b30433f4d0b7b47e3d7198ce969",
+    "results/phylogeny/retained-factor-watchpoint-control-debugger-20261004-v1/gdb_commands.txt": "942d1bb8decb976ab335d888bd91d735e13ddcfcd06e741baf953e97a642f317",
+    "results/phylogeny/retained-factor-watchpoint-control-debugger-20261004-v1/gdb_stdout.log": "aa5d9c27e77de968c298858b1ebf044f858223ae6399e12b88deddd8c1330730",
+    "results/phylogeny/retained-factor-watchpoint-control-debugger-20261004-v1/gdb_stderr.log": "f09ad362a0bde9b8853af37b47f405fcda0b4f617d48b59a8d0efadda10aceaf",
+    "results/phylogeny/retained-factor-watchpoint-control-debugger-20261004-v1/debugger_process.json": "0dc9670ccbb263f4f45b26ae5ed67b4b38f8069f3f6b9b9be40ad5586ad34f62",
+    "results/phylogeny/retained-factor-watchpoint-control-debugger-20261004-v1/debugger_command.json": "4308a226e9311430577afc5aad785a0433f7656f451a6c485714d81f195272e6",
+    "results/phylogeny/retained-factor-watchpoint-positive-control-20261004-v1/watchpoints.json": "1081d636161036deaeeff76f4f19d411259f44b40f455652c644aec4f1a313ba"
+  },
+  "process_local_read_only_protection": false,
+  "original_jobs_restarted": false,
+  "production_tolerance_changed": false,
+  "scientific_eligibility": false,
+  "biological_fits": 0,
+  "gpu": false,
+  "scope": "Separate unprotected inferior with two hardware word watchpoints at the previously affected source-factor locations. First hit stops; partial evidence and native stack/PC remain. The two watched words do not cover every byte of five factors. Debugger and SIGSTOP alter execution context. Positive control is artificial, not source corruption. No automatic retries, global native-library changes, tolerance relaxation or biological acceptance."
+}

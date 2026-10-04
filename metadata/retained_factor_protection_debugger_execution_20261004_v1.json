@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_retained_factor_protection_debugger_v1.py",
+    "--plan",
+    "metadata/retained_factor_protection_debugger_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/retained_factor_protection_debugger_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/retained_factor_protection_debugger_resources_20261004_v1.json": "700320f335d9ad6ec3200f748fd4e9d7596e6dc4c69e2ec5907a20c37f6d17e6",
+    "scripts/run_retained_factor_protection_debugger_v1.py": "f24cdca18596991bef17d221df2e9584091b0089fe89c85c388c5decfabf2982",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "761385dcacf74166907922d21d90ef30",
+  "wrapper": {
+    "pid": 1567650,
+    "created": 1791101468.01,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/retained_factor_protection_debugger_resources_20261004_v1.json",
+      "--execution",
+      "metadata/retained_factor_protection_debugger_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_protection_debugger_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_retained_factor_protection_debugger_v1.py",
+      "--plan",
+      "metadata/retained_factor_protection_debugger_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_protection_debugger_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-04T08:11:09.126903+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T08:26:56.936591+00:00",
+  "child": {
+    "pid": 1567654,
+    "created": 1791101468.43,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=7200",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_retained_factor_protection_debugger_v1.py",
+      "--plan",
+      "metadata/retained_factor_protection_debugger_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/retained_factor_protection_debugger_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 947.8093955910299,
+  "child_cpu_seconds": 948.7763110000001,
+  "child_peak_rss_bytes": 999968768,
+  "receipt": "metadata/retained_factor_protection_debugger_20261004_v1.json",
+  "receipt_sha256": "f0a7a11d676d50c519e0271f80c2b2f57514b63100114b0dc243ab0860fcc7ab",
+  "artifacts": {
+    "metadata/retained_factor_protection_debugger_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/retained_factor_protection_debugger_execution_20261004_v1/configuration.json": "53dce90ba138263b7f14dee25ed8d7b9f078f7c2a8d92ad74f7cace8ae170fa4",
+    "metadata/retained_factor_protection_debugger_execution_20261004_v1/stdout.log": "ebfa36fec55b60c7c93a38353d6860a8f0f2b27517fa7892e85e193554d964f4",
+    "metadata/retained_factor_protection_debugger_execution_20261004_v1/process.json": "de93d5f578e0add855698b887e86e2a55f8b6ec97e9cdfc61eb00e4774707df3"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

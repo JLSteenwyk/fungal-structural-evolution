@@ -1,0 +1,17 @@
+{
+  "dependencies": [
+    "metadata/baliphy_scalar_v6_preflight_closure_20261004_v1_launch.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_scalar_v6_resource_observer_v1.py",
+    "--plan",
+    "metadata/baliphy_scalar_v6_resource_observation_plan_20261004_v1.json"
+  ],
+  "pins": {
+    "metadata/baliphy_scalar_v6_resource_observation_plan_20261004_v1.json": "067f79eef2bf42fd8e39825d0acd37aaca9520e288874a65ae92b4a8ae23bf86",
+    "metadata/baliphy_scalar_v6_preflight_closure_20261004_v1_launch.json": "384f5b8cf9003703784e19e8531837213ebb93288d45e0aea95d27cb3920a85e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/launch_baliphy_scalar_v6_sampler_execution_v1.py": "b90a3efa61d0849ca809147cf42672c2326ca388eff23bc976b2a2f7a3941719",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

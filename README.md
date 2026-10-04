@@ -27,14 +27,19 @@ All 1,620 future roles are prepared with fresh seeds. A separate
 now checks the full role construction and retained native scalar/joint outputs,
 keeping malformed and special-value states in review without admitted arrays.
 The [complete V6 native startup grid](docs/baliphy-scalar-v6-startup-20261004.md)
-is now running after source, software and resource checks. Full startup readback
-and closure remain required. The
+has passed all 1,620 roles and 405 quartets, with independent readback and full
+source/artifact/two-journal closure. The
 [V6 sampler controller](docs/baliphy-scalar-v6-controller-20261004.md)
 now passes software serialization checks. The
 [V6 resource observer](docs/baliphy-scalar-v6-resource-observer-20261004.md)
-also passes full role-accounting software checks. Startup closure and source-bound
-execution/resource gates remain required before sampling; actual native telemetry
-and its closure will follow that run.
+also passes full role-accounting software checks. The
+[complete corrected sampler and concurrent telemetry](docs/baliphy-scalar-v6-execution-20261004.md)
+are now running after those gates: all 1,620 roles remain in scope, with 16 CPU
+workers, a 200 GiB memory cap and a 192 GiB reservation budget. One early native
+chain explicitly records an infinite alpha parameter and remains in review;
+its ancestral arrays are excluded. This is a 20-iteration computational check,
+not adequate ancestral posterior sampling. Full sampler and observer readbacks
+and closure remain required.
 Existing jobs and historical outputs remain unchanged.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits
@@ -48,7 +53,11 @@ an independent wider-precision raw reference agrees, but the original failure
 is unexplained. An [ordered timing-probe replay](docs/retained-covariance-ordered-probes-20261004.md)
 captured eight changed entries in a separate species-factor buffer. The responsible
 operation is now narrowed to the [native SVD call](docs/retained-native-svd-write-isolation-20261004.md);
-the exact write and validated repair remain unresolved. Weighted numerical qualification
+the exact write and validated repair remain unresolved. A
+[protected-factor diagnostic and unprotected hardware watchpoints](docs/retained-factor-watchpoints-20261004.md)
+retain both the 40-probe protected nonrecurrence and a new live attempt to catch
+the first native write. The artificial watchpoint control succeeds; this is
+diagnostic evidence, not a repair. Weighted numerical qualification
 continues independently; fitting and calibration remain unfinished.
 
 The [dependent Gaussian simulation code](docs/weighted-shared-entity-simulation-20261004.md)
@@ -131,9 +140,9 @@ production readback passed 42 native roles across both modes. Eight CPU
 workers/24 GiB/no swap run separately from the paused GPU predictions.
 Full resampling readback, provenance closure and calibrated uncertainty
 remain pending.
-At October 3, 22:11 UTC, the original controller reported 17,478/53,200
-completed draws (32.9%); full independent native archive closure remains pending.
-[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261003_goal_followup_2211.json).
+At October 4, 09:01 UTC, the original controller reported 45,914/53,200
+completed draws (86.3%); full independent native archive closure remains pending.
+[Current original runtime](metadata/matched_predictor_resampling_execution_checkpoint_20261004_sampler_0901.json).
 
 A [full structural-marker tree coverage audit](docs/structural-marker-tree-coverage-20261003.md)
 has produced all 17,500 view/predictor/marker cases and 9,047,500 original-branch

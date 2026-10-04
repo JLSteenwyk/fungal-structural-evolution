@@ -1,0 +1,25 @@
+{
+  "dependencies": [
+    "metadata/baliphy_scalar_v6_preflight_closure_20261004_v1_launch.json",
+    "metadata/baliphy_joint_logger_preflight_closure_v5_launch_20261003.json",
+    "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+    "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+    "metadata/independent_short_sampler_replay_v3_closure_launch_20261003.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_scalar_v6_sampler_v1.py",
+    "--plan",
+    "metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json"
+  ],
+  "pins": {
+    "metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json": "fd8f7365c733467321cf4590d32adab6a0dbcb67aaf4cd585e95f550f165c7f9",
+    "metadata/baliphy_scalar_v6_preflight_closure_20261004_v1_launch.json": "384f5b8cf9003703784e19e8531837213ebb93288d45e0aea95d27cb3920a85e",
+    "metadata/baliphy_joint_logger_preflight_closure_v5_launch_20261003.json": "c3a33e6f6d17f9f4751592224fabd4207b265035a79cce5919e3d66fdbbeb9fd",
+    "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json": "84f13d5c49b95e5eaf43842bbc6b5f0c29782a19baed655a4fa576adac3dcbe8",
+    "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json": "02804dc80e11b5c67ac37b5cb963ffc65fdb4cc17746df235be4a5db031ac837",
+    "metadata/independent_short_sampler_replay_v3_closure_launch_20261003.json": "b68c4abbfca3d4cb646b7200a095c626ee59a2c3ad911a05a89d02fd35b97a48",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/launch_baliphy_scalar_v6_sampler_execution_v1.py": "b90a3efa61d0849ca809147cf42672c2326ca388eff23bc976b2a2f7a3941719",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84"
+  }
+}

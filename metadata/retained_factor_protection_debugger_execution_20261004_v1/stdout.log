@@ -1,0 +1,17 @@
+{
+  "status": "completed_protected_factor_probe_without_native_fault",
+  "checked_utc": "2026-10-04T08:26:56.871113+00:00",
+  "plan": "metadata/retained_factor_protection_debugger_plan_20261004_v1.json",
+  "plan_sha256": "e20b61ed9727188980eccf601dd2ba418d28c12dd188553e38a512d146a779c8",
+  "debugger_exit_code": 0,
+  "target_receipt_present": true,
+  "native_sigsegv_observed": false,
+  "fault_addresses": [],
+  "protected_factor_faults": [],
+  "original_jobs_restarted": false,
+  "production_tolerance_changed": false,
+  "scientific_eligibility": false,
+  "biological_fits": 0,
+  "gpu": false,
+  "scope": "Separate process-local protected-factor probe under GDB. Raw native backtrace, instruction, fault address, protection ranges and exact debugger/inferior identities retained. Protected fault is diagnostic evidence, not a repair or attribution of the original unprotected timing failure. Partial edge pages remain writable. No original restart, tolerance relaxation, optimizer, MCMC or biological acceptance."
+}

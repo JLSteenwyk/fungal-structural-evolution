@@ -1782,3 +1782,21 @@ resource or source closure gates. V2 expands provider/source bindings while
 retaining V1 and the unchanged adapter. No original sampler restart, global
 software patch or biological acceptance.
 [Evidence and next work](baliphy-scalar-v6-joint-admission-20261004.md).
+
+## 2026-10-04: execute the complete corrected grid after actual startup closure
+
+Launch all 1,620 corrected roles with original priors, settings, fresh qualified
+future seeds and 20-iteration computational horizon after the original startup
+closure plus four historical prerequisite closures. Run telemetry concurrently;
+its actual artifact/journal closure follows native termination. Preserve every
+nonfinite, malformed and native-failure role; admit no ancestral arrays from
+special-value reviews. Do not call these short chains adequate posterior
+sampling. Keep original jobs and output bytes unchanged and never automatically
+retry a native failure. [Actual execution](baliphy-scalar-v6-execution-20261004.md).
+
+The protected-factor nonrecurrence is diagnostic evidence rather than repair.
+Use a separate unprotected hardware-watchpoint namespace to attempt capture of
+the exact native write, after actual positive-control qualification. Watch
+two known affected words, preserve the limited coverage and stop on the first
+hit. Keep all original numerical guards, failed work and native libraries.
+[Observed limits and resources](retained-factor-watchpoints-20261004.md).

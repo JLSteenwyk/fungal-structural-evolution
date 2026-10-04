@@ -1,0 +1,18 @@
+{
+  "status": "retained_special_value_evidence_reader_v1_field_lookup_failure",
+  "checked_utc": "2026-10-04T09:00:39.611706+00:00",
+  "actual_tool_session_id": 83607,
+  "actual_tool_terminal_exit_code": 1,
+  "script": "scripts/record_scalar_v6_special_value_role_evidence_v1.py",
+  "script_sha256": "ada3166241b142f0c17d002c4c5eff021222a29e3ec9561e78e5ab65a890cab6",
+  "error_type": "KeyError",
+  "error_field": "parameters",
+  "cause": "Evidence reader used normalized audit section name as a native MCON key; actual field is parameters//. Existing independent role reconstruction passed before this report lookup failed.",
+  "native_runs": 0,
+  "original_inputs_modified": false,
+  "original_jobs_restarted": false,
+  "evidence_receipt_created": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "remediation": "Separate V2 reader maps normalized audit sections to exact serialized MCON fields; V1 source preserved."
+}

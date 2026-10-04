@@ -1,0 +1,42 @@
+{
+  "unit": "fungal-scalar-v6-execution-observer-reader-20261004-v1.service",
+  "pid": 1598133,
+  "created": 1791103413.29,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_wait_plan.json"
+  ],
+  "plan": "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_wait_plan.json",
+  "plan_sha256": "bd108837a4f430b751611c89033dea65ac1bb13783b0ba6fa27b38e1f962adef",
+  "checked_utc": "2026-10-04T08:43:34.011412+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "4294967296",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-scalar-v6-execution-observer-reader-20261004-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "-p",
+    "CPUQuota=200%",
+    "-p",
+    "MemoryMax=4G",
+    "-p",
+    "MemorySwapMax=0",
+    "-p",
+    "TasksMax=512",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_wait_plan.json"
+  ]
+}

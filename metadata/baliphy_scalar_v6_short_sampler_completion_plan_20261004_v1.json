@@ -1,0 +1,51 @@
+{
+  "source_plan": "metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json",
+  "producer_receipt": "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-scalar-v6-short-sampler-20261004-v1/readback.json",
+  "producer_status": "complete_full_scalar_v6_short_sampler_dispositions_pending_readback_v1",
+  "reader_status": "passed_full_scalar_v6_short_sampler_serialized_readback_v1",
+  "completed_status": "complete_verified_full_scalar_v6_short_sampler_qualification_v1",
+  "summary_fields": [
+    "full_chains",
+    "full_quartets",
+    "effective_inputs",
+    "original_configuration_aliases",
+    "checked_sampler_attempts",
+    "unsuccessful_sampler_attempts",
+    "complete_quartets",
+    "unresolved_quartets",
+    "saved_alignments",
+    "candidate_frames",
+    "status_counts",
+    "allocation_warning_attempts",
+    "bad_alloc_attempts",
+    "gamma_equal_rate_limit_events",
+    "other_nonfinite_events",
+    "nonpositive_parameter_review_events",
+    "posterior_qualified",
+    "joint_saved_frames",
+    "joint_ancestral_records",
+    "joint_ancestral_residue_category_pairs",
+    "joint_tip_residue_category_pairs",
+    "joint_anchored_candidate_cells",
+    "joint_unanchored_candidate_residues",
+    "joint_category_data_available_for_checked_roles",
+    "scalar_review_roles",
+    "scalar_v6_finite_checked_roles",
+    "scalar_v6_mapped_values_checked",
+    "reservation_audit"
+  ],
+  "launches": [
+    "metadata/baliphy_scalar_v6_execution_sampler-producer_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_execution_sampler-reader_20261004_v1_launch.json"
+  ],
+  "pins": {
+    "metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json": "fd8f7365c733467321cf4590d32adab6a0dbcb67aaf4cd585e95f550f165c7f9",
+    "metadata/baliphy_scalar_v6_execution_sampler-producer_20261004_v1_launch.json": "92aa0a4cf73428cb06aaee3e604de869a6f4b9d84dfce25c02680da9f774963c",
+    "metadata/baliphy_scalar_v6_execution_sampler-reader_20261004_v1_launch.json": "e50536bb2833e603cd30f2074aef56681f4e48d52f1a158368862bbbe1027a3f",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_scalar_v6_short_sampler_completed_20261004_v1.json",
+  "scope": "All1620qualified V6 roles/405quartets/135inputs/324aliases: unchanged20iteration computational gate with preserved model/priors/initialization and exact future seeds. Full original V6startup plus four historical source/memory/sequence-coordinate-review prerequisites close before native admission. Historical numeric values never adopted. Malformed/nonfinite/native-failure roles and unresolved quartets remain explicit, no automatic retry. Original independent serialized replay and full source/artifact/two original-journal closure mandatory. Concurrent read-only observer keeps missing readings and requires its own closure after native termination. No adequate posterior, global model/root/predictor validation, biological acceptance, original restart, GPU or charges."
+}

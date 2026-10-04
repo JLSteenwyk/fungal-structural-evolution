@@ -1,0 +1,28 @@
+{
+  "sampler_plan": "metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json",
+  "sampler_launch": "metadata/baliphy_scalar_v6_execution_sampler-producer_20261004_v1_launch.json",
+  "output": "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1",
+  "resources": {
+    "cpus": 1,
+    "memory_gib": 2,
+    "reader_cpus": 2,
+    "reader_memory_gib": 4,
+    "swap_gib": 0,
+    "poll_seconds": 1,
+    "minimum_free_disk_gib": 64,
+    "output_allowance_gib": 16,
+    "finish_eta": null,
+    "gpu": false,
+    "new_cost_usd": 0
+  },
+  "completion": "metadata/baliphy_scalar_v6_resource_observation_completed_20261004_v1.json",
+  "pins": {
+    "metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json": "fd8f7365c733467321cf4590d32adab6a0dbcb67aaf4cd585e95f550f165c7f9",
+    "metadata/baliphy_scalar_v6_execution_sampler-producer_20261004_v1_launch.json": "92aa0a4cf73428cb06aaee3e604de869a6f4b9d84dfce25c02680da9f774963c",
+    "scripts/run_baliphy_scalar_v6_resource_observer_v1.py": "108d8f008bcb96ee4861c4a41ff23cce80a5d6f1c2ef64ddc36467a6f0a83d1b",
+    "scripts/baliphy_sampler_resource_observation.py": "b3c3b3064a2c3fcf40e0ba49fd613374a8e2a24afd281d7480a974c791ab8c2e",
+    "metadata/baliphy_scalar_v6_resource_observer_software_transport_20261004_v1.json": "b7347d35b9dd31aeba06e17916f3065ff451ed48901ebe8cd95d2f9f5558e79b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/launch_baliphy_scalar_v6_sampler_execution_v1.py": "b90a3efa61d0849ca809147cf42672c2326ca388eff23bc976b2a2f7a3941719"
+  },
+  "scope": "Full1620V6role read-only exact original sampler/native telemetry. Missing/fast/transitioning/failure attempts explicit; no exact per-native peak guarantee. Source/artifact/independent serialized reader/two original observer journals close after sampler termination. No retries, native controls, posterior or biological acceptance."
+}

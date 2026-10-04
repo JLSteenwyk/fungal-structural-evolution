@@ -1,0 +1,27 @@
+{
+  "status": "queued_full_scalar_v6_short_sampler_and_read_only_observer",
+  "source_plan": "metadata/baliphy_scalar_v6_sampler_execution_plan_20261004_v1.json",
+  "source_plan_sha256": "fd8f7365c733467321cf4590d32adab6a0dbcb67aaf4cd585e95f550f165c7f9",
+  "sampler_launches": [
+    "metadata/baliphy_scalar_v6_execution_sampler-producer_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_execution_sampler-reader_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_execution_sampler-closure_20261004_v1_launch.json"
+  ],
+  "observer_launches": [
+    "metadata/baliphy_scalar_v6_execution_observer-producer_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_execution_observer-closure_20261004_v1_launch.json"
+  ],
+  "original_prerequisite_closures": [
+    "metadata/baliphy_scalar_v6_preflight_closure_20261004_v1_launch.json",
+    "metadata/baliphy_joint_logger_preflight_closure_v5_launch_20261003.json",
+    "metadata/baliphy_reference_sampler_qualification_closure_launch_20261003.json",
+    "metadata/baliphy_sampler_resource_observation_closure_launch_20261003.json",
+    "metadata/independent_short_sampler_replay_v3_closure_launch_20261003.json"
+  ],
+  "expected_native_roles": 1620,
+  "iterations_per_role": 20,
+  "posterior_qualified": false,
+  "gpu": false,
+  "new_cost_usd": 0
+}

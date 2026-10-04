@@ -1,0 +1,36 @@
+{
+  "source_plan": "metadata/baliphy_scalar_v6_resource_observation_plan_20261004_v1.json",
+  "producer_receipt": "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1/receipt.json",
+  "independent_readback": "results/ancestral/full-baliphy-scalar-v6-resource-observation-20261004-v1/readback.json",
+  "producer_status": "complete_full_scalar_v6_sampler_resource_observation_pending_readback_v1",
+  "reader_status": "passed_full_scalar_v6_sampler_resource_observation_serialized_readback_v1",
+  "completed_status": "complete_verified_full_scalar_v6_sampler_resource_observation_v1",
+  "summary_fields": [
+    "expected_roles",
+    "roles_with_native_attempt",
+    "roles_with_live_observation",
+    "roles_without_live_observation",
+    "roles_without_native_attempt",
+    "native_outcome_status_counts",
+    "native_observations",
+    "unavailable_observations",
+    "sampler_controller_terminal_status",
+    "maximum_observed_cgroup_memory_bytes",
+    "maximum_observed_cgroup_reported_peak_bytes",
+    "maximum_observed_poll_gap_seconds",
+    "posterior_qualified"
+  ],
+  "launches": [
+    "metadata/baliphy_scalar_v6_execution_observer-producer_20261004_v1_launch.json",
+    "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_launch.json"
+  ],
+  "pins": {
+    "metadata/baliphy_scalar_v6_resource_observation_plan_20261004_v1.json": "067f79eef2bf42fd8e39825d0acd37aaca9520e288874a65ae92b4a8ae23bf86",
+    "metadata/baliphy_scalar_v6_execution_observer-producer_20261004_v1_launch.json": "008247a1994a5cfba8aa31d8e2e40c9fa4c92e403bd5a7aa0b4f4401775a879f",
+    "metadata/baliphy_scalar_v6_execution_observer-reader_20261004_v1_launch.json": "631ac9bd046f8aa5be6227c3d37c4fce655113bf5668eecf06fe433c2ef78b53",
+    "scripts/close_full_triad_sequence_stage.py": "04b6fa8d9cb11e11f9f05fa1106aed1f86c6390a87ab0a3f2a0c0668a1e01a60",
+    "scripts/record_completed_process_handoffs_v2.py": "0e8f15e48492464855a4bbdf6a5dcd4decd55e0dcd4d90f2157d1309d4a03c4c"
+  },
+  "output": "metadata/baliphy_scalar_v6_resource_observation_completed_20261004_v1.json",
+  "scope": "Full1620V6role read-only exact original sampler/native telemetry. Missing/fast/transitioning/failure attempts explicit; no exact per-native peak guarantee. Source/artifact/independent serialized reader/two original observer journals close after sampler termination. No retries, native controls, posterior or biological acceptance."
+}

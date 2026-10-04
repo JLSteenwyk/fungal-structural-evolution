@@ -1,0 +1,45 @@
+{
+  "output": "results/phylogeny/retained-factor-watchpoint-positive-control-20261004-v1",
+  "debugger_output": "results/phylogeny/retained-factor-watchpoint-control-debugger-20261004-v1",
+  "watchpoint_metadata": "results/phylogeny/retained-factor-watchpoint-positive-control-20261004-v1/watchpoints.json",
+  "target_command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/retained_factor_watchpoint_positive_control_v1.py",
+    "--metadata",
+    "results/phylogeny/retained-factor-watchpoint-positive-control-20261004-v1/watchpoints.json"
+  ],
+  "target_receipt": "results/phylogeny/retained-factor-watchpoint-positive-control-20261004-v1/never_expected_receipt.json",
+  "target_expected_status": null,
+  "artificial_control": true,
+  "pins": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/retained_factor_watchpoint_positive_control_v1.py": "61736078c20b16f6f98ed35f88d7d79925af005f26cbd2c4444ec834b0b07428",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_retained_factor_watchpoint_debugger_v1.py": "4fd5266b3804633fef11704e68aba2d17e902bacbf57365470538c30cdc22a14",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_ortholog_pair_guide_comparison.py": "bd138b5946d127fa8177e2bf7665b4e3123fec0c49cbe9e9c71d869709ac2daf",
+    "/usr/bin/gdb": "f0068d3b418ae039c309574b33901b82404025eb46c2e983246b9c3976ba7e83",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b"
+  },
+  "resources": {
+    "prepared_utc": "2026-10-04T08:50:48.604983+00:00",
+    "cpus": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "address_space_gib": 12,
+    "cpu_seconds_per_stage": 120,
+    "wall_seconds_per_stage": 180,
+    "per_file_limit_mib": 256,
+    "minimum_available_ram_gib": 16,
+    "minimum_free_disk_gib": 128,
+    "output_allowance_gib": 1,
+    "available_ram_gib": 722.1431350708008,
+    "free_disk_gib": 10265.183723449707,
+    "artificial_control": true,
+    "gpu": false,
+    "new_cost_usd": 0
+  },
+  "transitive_project_source_modules": 5,
+  "scope": "Positive native hardware watchpoint control on two artificial uint64 words. No original factors loaded or changed; not a production diagnostic or corruption attribution."
+}

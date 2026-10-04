@@ -13614,3 +13614,37 @@ software/resource/launch gates belong before it.
 Original full ancestral startup1106/1620passing unclosed roles and weighted
 numerical750/4340cohorts at08:11. All eight aims, full biological fits, adequate
 posteriors and the complete atlas remain unfinished; GPU prediction paused.
+
+## October 4, 09:01 UTC: corrected full sampler starts after complete startup closure
+
+All 1,620 corrected native startup roles and 405 quartets now pass, with
+independent readback, 20,397 source/artifact bindings and two original journals
+closed. The full 1,620-role, 20-iteration sampler and its concurrent resource
+observer now run under six original controllers, preserving every prior,
+configuration alias, numerical review and failure. Sixteen CPU workers share
+a 200 GiB/no-swap cgroup and a 192 GiB address-space reservation budget; actual
+native telemetry is recording. These short runs are computational qualification,
+not adequate posterior uncertainty. An early OG0000230 broad-prior role records
+explicit positive infinity for alpha; independent whole-role reconstruction
+confirms the review and absence of admitted ancestral arrays. No native retry
+or change to priors/tolerances. [Execution evidence](baliphy-scalar-v6-execution-20261004.md).
+
+The protected-factor GDB diagnostic completed all 40 unchanged probes with
+inputs preserved and no fault. Original terminal/source/journal proof is
+closed. This does not repair the earlier unprotected memory corruption. A
+new two-word hardware-watchpoint diagnostic remains live; an artificial native
+write control qualifies capture mechanics. At 08:59, 14 actual unprotected
+probes agree, both watched words are writable and no write has been caught.
+[Diagnostic scope](retained-factor-watchpoints-20261004.md).
+
+Weighted numerical work continues, reporting 810 of 4,340 cohorts at 08:47
+without recorded failure files. Its full numerical closure, real timing,
+weighted biological fits and calibration remain pending. All eight evolutionary
+aims, full structural coverage and adequate ancestral posteriors remain open.
+GPU prediction remains paused; no paid infrastructure has been provisioned.
+
+At 09:01, a fresh original sampler/observer checkpoint records 18 dispositions,
+17 finite and one special-value review. The paired predictor uncertainty
+controller independently reports 45,914/53,200 completed draws (86.3%);
+full archive/readback/journal closure remains pending. These are live original
+jobs; no new launches or restarts are inferred from progress alone.

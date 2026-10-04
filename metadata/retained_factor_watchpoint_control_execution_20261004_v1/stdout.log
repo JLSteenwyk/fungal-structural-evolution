@@ -1,0 +1,30 @@
+{
+  "status": "captured_native_watchpoint_positive_control",
+  "checked_utc": "2026-10-04T08:50:50.624025+00:00",
+  "plan": "metadata/retained_factor_watchpoint_control_plan_20261004_v1.json",
+  "plan_sha256": "1d10e94b9829ad4521497cf0345ec7406abd5b30433f4d0b7b47e3d7198ce969",
+  "debugger_exit_code": 0,
+  "installed_watchpoints": [
+    [
+      "artificial_word_a",
+      "0x7d40829e3a10"
+    ],
+    [
+      "artificial_word_b",
+      "0x7d40829e3a18"
+    ]
+  ],
+  "native_write_hit": true,
+  "stopped_program_counters": [
+    "0x7d40835a1b69"
+  ],
+  "target_receipt_present": false,
+  "artificial_control": true,
+  "process_local_read_only_protection": false,
+  "original_jobs_restarted": false,
+  "production_tolerance_changed": false,
+  "scientific_eligibility": false,
+  "biological_fits": 0,
+  "gpu": false,
+  "scope": "Separate unprotected inferior with two hardware word watchpoints at the previously affected source-factor locations. First hit stops; partial evidence and native stack/PC remain. The two watched words do not cover every byte of five factors. Debugger and SIGSTOP alter execution context. Positive control is artificial, not source corruption. No automatic retries, global native-library changes, tolerance relaxation or biological acceptance."
+}
