@@ -1,0 +1,523 @@
+{
+  "checked_utc": "2026-10-04T03:14:45.028930+00:00",
+  "logs_scanned": 68,
+  "patterns": {
+    "segmentation_fault": "SIGSEGV|segmentation fault",
+    "allocation_failure": "bad_alloc|cannot allocate memory|out of memory|allocation fail",
+    "rate_normalization_failure": "rates?.{0,40}(not normalized|mean.?one|mean.{0,20}(fail|invalid))"
+  },
+  "error_signature_matches": [],
+  "native_status_counts": {
+    "timeout": 19
+  },
+  "receipts": [
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain1-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain2-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain3-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain4-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/receipt.json",
+      "status": "timeout",
+      "exit_code": -9
+    }
+  ],
+  "log_snapshots": [
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7682,
+      "sha256": "905d5976f4abd71c723a4106a13aba81b1af90ec8772d01d59a90bd7e9b1637e",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7688,
+      "sha256": "fb75532313e7cb9ece74c2ab3985f31ecf7ab03ddc709e01c138609c62ecb0ef",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7681,
+      "sha256": "4e88061b0c3fa5749eadde41f75ce52d6510ed81f89a038facd7fcea87b89fed",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7672,
+      "sha256": "319309fce0762bb6db7e99a6e0b9173246d3592176745c0821c0038465115348",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7718,
+      "sha256": "da8d758b5b296f3dc24679abf228c1d05b5e33decbc4358b5fe6910c7d89e418",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7706,
+      "sha256": "a0b3abc708053f5ef553a23578b4f51ee79de310219179f7cc8c44bc919c3842",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7687,
+      "sha256": "f03fea5c8a108b6a42a4fb63f6a37afe57fad53844c8437aea496bd66eb70148",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7682,
+      "sha256": "6ab1980a0f2a47b519a26ec30a1ea78e27251b059b3cab44ee9f92bb8de91cd8",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain1-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7702,
+      "sha256": "b76176bb7b13ca2e23159b398d42ee139366ecc579136e846cc1b75ca9a48e63",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain2-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7696,
+      "sha256": "9d53017da653b6dd4c58114ececf0b93ca3ef35b73b412d718cb3c9e57fc04c6",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain3-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7676,
+      "sha256": "b175fa7696a38cb651b8c170238f5de69aa8dfbf923bfeeec48b185eae66cce1",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain4-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7692,
+      "sha256": "25d1e5f241903f53018204a947c4b7b8b40b7b76f23e63db7b337b251f6fdab9",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7747,
+      "sha256": "7e3354c537f1645e158d6b70ce0d48745aaf56a7a68c880ee25b9accb0bc9ec1",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7722,
+      "sha256": "3c9ecd22585689dc31ba8b5655dc3a17f07abc8d37fd2e567537c5e509acc5c0",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7740,
+      "sha256": "8dc30c2594e1aa17fd7916ba09daac977c0b9e345f19d050d9cd6a61c350ade4",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7690,
+      "sha256": "fc73750a9ac5b6e1c0ba2fd2560d7afc0ec0cd12006b4c773fea3eb25d4cd9b3",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7730,
+      "sha256": "3eadae2b9d13fc3e7feec067a21598d86c6efb6dd9d9ab494d08632aad5d4ccc",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7735,
+      "sha256": "4a310165cc35247fc320c7dc2f4231fd4a5bcb2651b1f3ea9f42b1ce2c314f7a",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7733,
+      "sha256": "057798f680c96df5fcfc8a67667aae4eee49ade0c7f537834c6df51b0ebc721c",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7719,
+      "sha256": "18dd189f06fa29c83552758a39b3db02bdb9bb5a13fa95735ee91636d9182fb5",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-centered-joint-cjson-v5-chain4-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain1-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 7716,
+      "sha256": "34cfce3e3e43b971a4b645341352e50aeb4a843d28cc2d6a1e339350ee9164dd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain1-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain2-stack64-v1/attempt-0001/independent-chain-1/C1.log",
+      "bytes": 3321,
+      "sha256": "4b23c4d92b9dea4d5a94915134d138c99a1ddb5a36e180a10694400448cc5706",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain2-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 719,
+      "sha256": "e1c8476e3aa3043e7e17c33eb152f86088fd10fb866d1f6efad40f03c4b102bd",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    },
+    {
+      "path": "results/ancestral/full-baliphy-stack-followup-20261003-v1/attempts/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-package-joint-cjson-v5-chain3-stack64-v1/attempt-0001/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": []
+    }
+  ],
+  "jobs_restarted": false,
+  "settings_changed": false,
+  "scope": "Fresh scoped follow-up log bytes and original terminal receipts. Absence of signatures does not establish repair or posterior adequacy."
+}

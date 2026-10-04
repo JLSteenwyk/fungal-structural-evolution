@@ -1673,3 +1673,20 @@ source/export/review allowances, keeping unmeasured groups in full scope.
 Preparation installs no resource or worker. Both real prerequisites remain
 pending; actual enforcing controllers and complete fit/readback/calibration
 remain necessary. [Admission evidence and execution limits](full-weighted-fit-admission-20261004.md).
+
+
+## October 4: enforce fit resources with separate original role custody
+
+Keep the full measured model configuration unchanged and require both original
+numerical/timing closures plus complete admission before fitting. Validate
+actual cgroup/BLAS limits and native CPU/address-space/file limits, preserving
+original process/invocation/command/log/output identities. Completed and failed
+attempts refuse automatic reuse. Write two-role launch inventory before closer
+submission. Capacity remains an allocation, not a finish ETA.
+
+Preserve the first wrapper failure caused by its frozen 16-GiB assertion;
+qualify a fresh checker and declared-resource wrapper at 32 GiB without changing
+scientific settings or parent proofs. Software resource children are non-fit
+probes. Production launch/closure remains pending actual prerequisites; all
+eight biological aims remain open.
+[Controller and original evidence](full-weighted-fit-controller-20261004.md).

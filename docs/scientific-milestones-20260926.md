@@ -1513,3 +1513,15 @@ both original numerical/timing closures; it installs no fit resource or worker.
 The original numerical job reported 170/4,340 cohorts with no recorded failures.
 Enforced execution, real fitting/readback, calibration and all eight biological
 aims remain unfinished. [Gate and scientific limits](full-weighted-fit-admission-20261004.md).
+
+
+October 4, 03:23 UTC: enforced full weighted fitting producer/reader and closure
+orchestration are implemented. Software rejects 50 scope/capacity and 28 custody
+changes and preserves three actual non-fit resource failures, with all four
+completed/failed attempt restarts refused. The first 16/32-GiB wrapper preflight failure
+is retained; fresh V2 checks and original wait passed. Actual preflight remains pending
+both original closures; no fitting resource or worker installed. Numerical
+production reported 220/4,340 cohorts with no recorded failure. Production launch,
+full independent closure/calibration and all eight biological aims incomplete.
+GPU prediction stays paused.
+[Controller and limits](full-weighted-fit-controller-20261004.md).

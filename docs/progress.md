@@ -13187,3 +13187,36 @@ implementation, software qualification and actual prerequisite refusal.
 Full numerical/timing/fitting/calibration and all eight biological aims remain
 unfinished. GPU prediction stays paused; no new charge.
 [Full admission workflow and original evidence](full-weighted-fit-admission-20261004.md).
+
+
+## October 4, 03:23 UTC: fitting controller boundaries qualified
+
+Implemented enforced producer/reader/native custody and full-output/original-
+journal closure orchestration for the unchanged 20.832-million-candidate/
+49.7664-million-link design. Actual caps, command/source/output identities,
+original attempt preservation and restart refusal are explicit. Closure's
+two-role inventory precedes launch; capacity is not a runtime bound.
+
+The first wrapper failed before checker startup because its frozen assertion
+requires 16 GiB while the unit declared 32 GiB. Original journal and sources are
+preserved. Fresh V2 checker and separate wrapper passed 50 scope/capacity and
+28 custody changes plus four actual non-fit probes: one successful inspection
+and three preserved CPU/file/address-space failures. All four restarts refused
+reuse. Published parents were never modified. Original wait 43476 exited zero;
+exact wrapper/invocation/manager start/end evidence is saved. Full-grid math/
+export/admission proofs are inherited, not new fitting results.
+
+Actual preflight reports both original closures pending and verifies their
+live handles without creating fitting root/resource/controller. At 03:23 UTC
+numerical production reported 220/4,340 cohorts with 229 audit/228 link segment files
+and no recorded failure. Timing controllers are live waiting; timing root
+and both closures remain absent. Partial files are not completed audits.
+GPU prediction remains paused; no new charge.
+
+Previous implementation goal turn was progress through admission; intervening
+user error recheck verified exact live jobs and fresh formatter/log evidence.
+This turn is progress through controller implementation, actual boundary
+checks and publication. Production launch/fits/readback/closure, inference
+calibration, accepted phylogenetic/reconciliation/dating framework and all
+eight biological aims remain incomplete.
+[Controller scope and original evidence](full-weighted-fit-controller-20261004.md).

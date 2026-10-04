@@ -3219,3 +3219,21 @@ timing costs plus explicit source/export/review allowances, retaining unmeasured
 review coverage; they are not runtime bounds or finish estimates. All real
 fits and calibrated effects remain pending.
 [Gate, software scope and remaining execution work](full-weighted-fit-admission-20261004.md).
+
+
+### Resource custody for unchanged full weighted fitting
+
+Operational producer/reader/closure roles preserve the immutable measured
+model and all 20.832 million candidates/49.7664 million setting links. Both actual
+original closures and complete admission are required before native fitting.
+Actual two-CPU/32-GiB/no-swap/one-BLAS cgroups and separate CPU/address-space/
+file limits are enforced. Original command/process/invocation/source/log
+identities are retained in exclusive attempts; completed/failed attempts
+cannot automatically restart. Closure binds native custody, full independent
+output and two original controller journals. Capacity is not a runtime bound.
+
+Software checks reject 50 scope/capacity and 28 custody alterations and exercise
+four actual non-fit resource children. Pending production preflight creates
+no worker. Full-data launch/fits/closure/calibration remain unexecuted. These
+checks do not establish biological results or repair sampler failures.
+[Contracts, original execution and limitations](full-weighted-fit-controller-20261004.md).

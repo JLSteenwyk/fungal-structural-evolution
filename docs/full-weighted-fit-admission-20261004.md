@@ -51,9 +51,10 @@ The [execution request](../metadata/full_weighted_fit_execution_request_20261004
 is currently pending both original closures. The
 [actual preflight](../metadata/full_weighted_fit_execution_preflight_20261004_v1.json)
 verified the two original closure handles live and produced no fitting output,
-operational configuration, fit-resource file or worker. A controller enforcing
-actual cgroup/BLAS/native caps and operational pins, followed by complete real
-fit/readback/two-journal closure, remains to implement. The request is not a
+operational configuration, fit-resource file or worker. The
+[controller enforcing cgroup/BLAS/native caps](full-weighted-fit-controller-20261004.md)
+is now implemented with qualified software boundary checks. Production launch
+and complete real fit/readback/two-journal closure remain pending. The request is not a
 queued fitting job. GPU prediction stays paused and there is no new charge.
 
 ## Software evidence
@@ -82,7 +83,7 @@ full-data runtime or memory measurements.
 - [Actual wait and original journal proof](../metadata/full_weighted_fit_admission_software_transport_20261004_v1.json).
 - [Admission dictionary](../metadata/full_weighted_fit_admission_data_dictionary_20261004_v1.tsv).
 
-Real numerical/timing closure, enforced execution, complete real fits,
+Real numerical/timing closure, production execution, complete real fits,
 calibration and all eight biological aims remain unfinished. Admission and
 capacity planning do not accept weighting, component attribution or biological
 effects, and do not repair historical covariance or ancestral-sampler failures.

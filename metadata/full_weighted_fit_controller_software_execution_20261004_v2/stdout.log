@@ -1,0 +1,87 @@
+{"original_fit_execution_wrapper": {"pid": 70076, "created": 1791084091.76, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_fit_controller_v2.py", "--output", "data/software_audits/full-weighted-fit-controller-20261004-v2", "--receipt", "metadata/full_weighted_fit_controller_software_validation_20261004_v2.json"]}, "role": "software_boundary_observe", "invocation_id": "d5edbeea388d4df181bd8bcb3acb119c"}
+{"role": "software_boundary_observe", "exit_code": 0, "wall_seconds": 0.3358208549907431, "native_cpu_seconds": 0.035396}
+{"original_fit_execution_wrapper": {"pid": 70076, "created": 1791084091.76, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_fit_controller_v2.py", "--output", "data/software_audits/full-weighted-fit-controller-20261004-v2", "--receipt", "metadata/full_weighted_fit_controller_software_validation_20261004_v2.json"]}, "role": "software_boundary_cpu", "invocation_id": "d5edbeea388d4df181bd8bcb3acb119c"}
+{"role": "software_boundary_cpu", "exit_code": -9, "wall_seconds": 3.3011289569549263, "native_cpu_seconds": 3.0002880000000003}
+{"original_fit_execution_wrapper": {"pid": 70076, "created": 1791084091.76, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_fit_controller_v2.py", "--output", "data/software_audits/full-weighted-fit-controller-20261004-v2", "--receipt", "metadata/full_weighted_fit_controller_software_validation_20261004_v2.json"]}, "role": "software_boundary_file", "invocation_id": "d5edbeea388d4df181bd8bcb3acb119c"}
+{"role": "software_boundary_file", "exit_code": 1, "wall_seconds": 0.333217510022223, "native_cpu_seconds": 0.03624199999999968}
+{"original_fit_execution_wrapper": {"pid": 70076, "created": 1791084091.76, "cmdline": ["/home/bizon/anaconda3/bin/python", "scripts/check_full_weighted_fit_controller_v2.py", "--output", "data/software_audits/full-weighted-fit-controller-20261004-v2", "--receipt", "metadata/full_weighted_fit_controller_software_validation_20261004_v2.json"]}, "role": "software_boundary_address_space", "invocation_id": "d5edbeea388d4df181bd8bcb3acb119c"}
+{"role": "software_boundary_address_space", "exit_code": 1, "wall_seconds": 0.3317386730341241, "native_cpu_seconds": 0.034885000000000305}
+{
+  "status": "passed_full_weighted_fit_controller_scope_and_actual_native_boundary_contracts_v1",
+  "checked_utc": "2026-10-04T03:21:38.886468+00:00",
+  "expected_production": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "designs": 130200,
+    "fit_inputs": 260400,
+    "settings": 622080,
+    "candidate_rows": 20832000,
+    "setting_fit_links": 49766400
+  },
+  "original_fit_plan_sha256": "475a58c6abd9ca7e85120980f6f34718d389de28eca341dce9c6c094cb1ef36f",
+  "actual_native_boundary_probes": 4,
+  "actual_successful_boundary_probes": 1,
+  "actual_preserved_boundary_failures": 3,
+  "actual_boundary_cases": [
+    {
+      "case": "observe",
+      "receipt": "data/software_audits/full-weighted-fit-controller-20261004-v2/observe/receipt.json",
+      "exit_code": 0,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    },
+    {
+      "case": "cpu",
+      "receipt": "data/software_audits/full-weighted-fit-controller-20261004-v2/cpu/receipt.json",
+      "exit_code": -9,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    },
+    {
+      "case": "file",
+      "receipt": "data/software_audits/full-weighted-fit-controller-20261004-v2/file/receipt.json",
+      "exit_code": 1,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    },
+    {
+      "case": "address_space",
+      "receipt": "data/software_audits/full-weighted-fit-controller-20261004-v2/address_space/receipt.json",
+      "exit_code": 1,
+      "native_limits": {
+        "cpu_seconds": 3,
+        "address_space_bytes": 134217728,
+        "per_file_bytes": 65536
+      },
+      "nonfit_software_probe": true
+    }
+  ],
+  "rejected_scope_and_capacity_changes": 50,
+  "rejected_native_custody_changes": 28,
+  "completed_and_failed_attempt_restarts_refused": true,
+  "restart_cases": [
+    "observe",
+    "cpu",
+    "file",
+    "address_space"
+  ],
+  "actual_missing_prerequisite_refusal": true,
+  "production_fitting_launched_or_queued": false,
+  "fits_computed": 0,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Unchanged full20.832million candidate/49.7664million link model header and actual pending production refusal; synthetic header/capacity/custody changes, four actual non-fit CPU/file/address-space/resource-observation children, original exit/identity/log preservation and restart refusal. Prior complete-grid fitting math/export/admission proofs inherited and rehashed, not repeated; no real fit or production closure invented. Actual production launch and fit/readback closure remain unexecuted behind both original gates; all eight aims and inferential calibration open."
+}
