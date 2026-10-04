@@ -13497,3 +13497,65 @@ unlaunched. Weighted numerical work reports 620/4,340 cohorts at 07:02 without
 recorded failures. All eight biological aims remain incomplete, no real
 full-data fits have started, and GPU prediction remains paused.
 [Scope, actual proof and next work](baliphy-scalar-v6-startup-20261004.md).
+
+## October 4, 07:24 UTC: V6 controller checked; covariance context replay launched
+
+The V6 sampler producer/readback software passes complete 1,620-role job
+construction, three retained actual native fixtures, 63 scalar rows, 2,709 mapped
+values, nine joint frames and explicit full controller serialization. Synthetic
+invalid/review/native-failure roles remain in accounting: 1,617 checked,
+402 complete and three unresolved quartets, with no arrays for unresolved roles.
+Eleven serialized corruptions and eleven startup metadata corruptions fail;
+two exceptional/incomplete-attempt cases abort further native admission.
+Actual unclosed V6 startup is refused before future sampler admission.
+Original wait 91197 exited zero; the whole invocation-bound payload and manager
+start/end were verified and 12,343 bindings rehashed. No future native sampler,
+resource observer or posterior qualification. Original full startup at 07:17
+has 232 passing unclosed checkpoints.
+[Controller scope and evidence](baliphy-scalar-v6-controller-20261004.md).
+
+Exact-cohort covariance wait 65481 and independent raw-reference wait 68396 both
+exit zero with original terminal proofs. All 40 original selected groups pass unchanged
+guards, raw/projected latent comparisons and preserved contraction bounds;
+2,378,755 source bindings freshly rehash in the actual producer. All 40 independent
+63-bit raw references agree across ten contexts. The original failure remains
+unexplained. A distinct ordered diagnostic now runs the original 40 timing probes,
+including primary/independent likelihood evaluations at zero/one and before/after
+factor/operator/design/response hashes. It does not replay the preceding ten
+cohort probe sequences. At 07:23 original 76890/native 1517023 is live with
+three passing probes and no input changes. No original restart or loosened guard.
+Weighted numerical work reports 670/4,340 without recorded failures. All eight
+aims remain incomplete, full-data weighted fits unstarted and GPU prediction paused.
+[Diagnostic proof, scope and next action](retained-covariance-ordered-probes-20261004.md).
+
+October 4, 07:36 UTC: ordered V1 wait 76890 ended successfully after five
+probes agreed at both points, but a factor-buffer fingerprint changed during
+probe five. The affected `pmsf_profile_profile` buffer differs from that
+probe's `profile_guide` tree. The diagnostic stopped and retained all 35
+unattempted identities. Entire original terminal payload and manager start/end
+are verified. This is a fingerprint discrepancy, not yet captured value-change
+or root-cause evidence. A fresh V2 run now saves affected factor arrays, bitwise
+differences, repeated hashes and nonoverlap layouts. Original V1 remains intact.
+At 07:35 original V2 wait 54817/native 1529398 is live with two agreeing probes
+and no input changes. Original startup at 07:29 has 444 passing unclosed roles.
+The original failure remains unresolved; no GPU prediction or full-data fit.
+
+
+## October 4, 07:44 UTC: actual altered factor captured; fresh user recheck
+
+Ordered V2 diagnostic 54817 completed at 07:37 with nine agreeing likelihood
+probes, eight changed entries in a separate species-factor buffer, and 31
+unattempted identities retained. The affected `pmsf_profile_profile` factor
+changes at row 8513, columns 115–122, while the current probe uses
+`pmsf_mafft_profile`. Six entries become zero and edge entries lose stored
+bits. Nonoverlapping factor layouts, repeated hashes and the affected NPY
+snapshot are preserved. Original invocation-bound complete terminal payload
+and manager start/end are verified. This captures an actual input change;
+it does not establish the responsible operation, resolve the original failure
+or qualify biological fits. Original failed work is not restarted.
+[Captured values and original proof](retained-covariance-ordered-probes-20261004.md).
+
+The original full V6 startup continues: 686/1,620 passing unclosed roles at
+07:43, no producer receipt, readback or closure. Corrected scalar fixtures
+remain available for independent rechecking. All eight biological aims remain
+incomplete, full-data weighted fits remain unstarted and GPU prediction paused.

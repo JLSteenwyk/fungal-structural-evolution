@@ -28,9 +28,11 @@ now checks the full role construction and retained native scalar/joint outputs,
 keeping malformed and special-value states in review without admitted arrays.
 The [complete V6 native startup grid](docs/baliphy-scalar-v6-startup-20261004.md)
 is now running after source, software and resource checks. Full startup readback
-and closure, followed by V6 sampler controller/resource/closure qualification,
-remain required before full-grid sampling; existing jobs and historical
-outputs remain unchanged.
+and closure remain required. The
+[V6 sampler controller](docs/baliphy-scalar-v6-controller-20261004.md)
+now passes software serialization checks; native resource observation and
+source/artifact closure still need qualification before full-grid sampling.
+Existing jobs and historical outputs remain unchanged.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal
@@ -38,8 +40,12 @@ closure. A [fresh full closure check](metadata/full_reduced_covariance_qualifica
 verified all 45 archive bindings and three original terminal-success handles.
 Retained timing stopped after 10 cohort receipts on a covariance agreement
 guard; its original failure and downstream failures are retained with unchanged
-tolerances. Weighted numerical qualification continues independently; fitting
-and calibration remain unfinished.
+tolerances. A new exact-cohort diagnostic passes all 40 selected guards and
+an independent wider-precision raw reference agrees, but the original failure
+is unexplained. An [ordered timing-probe replay](docs/retained-covariance-ordered-probes-20261004.md)
+captured eight changed entries in a separate species-factor buffer. The responsible
+operation remains unknown. Weighted numerical qualification
+continues independently; fitting and calibration remain unfinished.
 
 The [dependent Gaussian simulation code](docs/weighted-shared-entity-simulation-20261004.md)
 is qualified for future uncertainty calibration: 192 dense covariance checks

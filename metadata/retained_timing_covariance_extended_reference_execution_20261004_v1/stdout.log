@@ -1,0 +1,28 @@
+extended_precision_reference unsigned pmsf_profile_mafft unique_factor_rows 6782
+extended_precision_reference unsigned profile_guide unique_factor_rows 6782
+extended_precision_reference signed mafft_guide unique_factor_rows 6782
+extended_precision_reference signed profile_guide unique_factor_rows 6782
+extended_precision_reference unsigned pmsf_mafft_profile unique_factor_rows 6782
+extended_precision_reference unsigned mafft_guide unique_factor_rows 6782
+extended_precision_reference unsigned pmsf_profile_profile unique_factor_rows 6782
+extended_precision_reference signed pmsf_mafft_profile unique_factor_rows 6782
+extended_precision_reference signed pmsf_profile_profile unique_factor_rows 6782
+extended_precision_reference signed pmsf_profile_mafft unique_factor_rows 6782
+{
+  "status": "completed_extended_precision_failed_cohort_raw_reference_v1",
+  "checked_utc": "2026-10-04T07:15:44.121352+00:00",
+  "producer": "metadata/retained_timing_covariance_diagnostic_20261004_v1.json",
+  "producer_sha256": "bc62be8de12936d3e16eb93a49893269903848ed7b59a9dec2769f0ed0aefbe2",
+  "producer_artifact_bindings_verified": 98,
+  "selected_groups": 40,
+  "raw_reference_contexts": 10,
+  "arithmetic_mantissa_bits": 63,
+  "elapsed_seconds": 78.18612721702084,
+  "projected_gram_independently_recomputed": false,
+  "full_source_archive_rehashed": false,
+  "scientific_eligibility": false,
+  "production_tolerance_changed": false,
+  "biological_fits": 0,
+  "gpu": false,
+  "scope": "Independent raw-kernel arithmetic on original completed diagnostic exports: sparse latent entity overlaps, longdouble entity/species products and counted unique factor-row longdouble species Gram. Same allclose tolerances retained. A wider floating-point reference is not an interval proof, source repair, projected-kernel acceptance, full original source replay or biological result."
+}
