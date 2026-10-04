@@ -78,3 +78,22 @@ Poll the same original wait for terminal evidence; observation timeout is not
 grounds for restarting. No source, prior, tolerance, seed or process cap is
 changed in the production sampler. Full independent output integrity and
 adequate posterior sampling remain required, alongside all eight aims.
+
+
+## Controlled 64 MiB stack outcome, 13:28 UTC
+
+The unchanged-input/prior/seed/20-iteration comparison ends with native
+SIGKILL. Original debugger wait 99691 exits zero, but its native child never
+completes the planned horizon. The original callback's null code/signal and
+normal-exit inspection label do not prove normal native termination. Original
+GDB text is explicit; every artifact and whole wrapper/manager record is
+verified. Ten saved scalar rows, iterations 0 through 9, independently compare
+all 430 mapped values. No posterior arrays are adopted from this partial run.
+
+The 5,674 CPU-second hard cap and process-local 64 MiB soft/unlimited-hard stack
+remain unchanged. Prior live CPU consumption approached the cap before the
+child disappears; cap attribution is consistent with observations rather
+than separately captured kernel evidence. The stack increase alone is not a
+validated correction for the original 24 SIGSEGV failures. No automatic retry,
+production policy or machine-wide limit is changed.
+[Full terminal review](../metadata/scalar_native_stack_comparison_terminal_review_20261004_v3.json).

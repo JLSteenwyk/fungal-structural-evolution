@@ -13771,7 +13771,7 @@ Fault address equals rsp-8 below the fully grown8MiB stack; saved limits/maps,
 siginfo and repeated frames support stack exhaustion in this diagnostic.
 This is not proof for every original failure or a validated repair. V2 actual
 private native controls pass with exit-code capture and process-local64MiB
-stack. Separate wait99691 tests only that stack soft-limit change while retaining
+stack. Separate wait 99691 tests only that stack soft-limit change while retaining
 unlimited hard stack and all original AS/CPU/file/input/prior/seed settings.
 No production or machine-wide settings change. The comparison is pending.
 
@@ -13863,3 +13863,19 @@ summary unchanged. The original full independent reader now has 16 workers and
 fits remain pending. This goal turn is progress through qualified guarded fitting
 and controller integration plus verified full producer termination; all eight
 scientific aims and required publication deliverables remain unfinished.
+
+
+## October 4, 13:28 UTC: larger-stack native diagnostic remains unresolved
+
+Original controlled comparison wait 99691 has closed with debugger/wrapper
+exit zero. Its unchanged GDB text explicitly reports native SIGKILL, while
+the original callback retains a null native exit code/signal. Last saved
+iteration is 9 of 20; paired independent scalar readback checks all 430 mapped
+values in the ten saved rows. The fixed 5,674 CPU-second cap and prior live native
+limits are verified. Termination is consistent with that cap, but the kernel
+cause is not independently captured. No native success, adequate posterior or
+standalone stack fix is inferred. All native outputs, original wrapper payloads
+and manager records are verified; failed attempts are not retried and no global
+or production limits change. A reporting helper's empty-list-versus-zero
+assertion is preserved; a new V3 helper uses the actual scalar reader schema.
+[Terminal evidence](../metadata/scalar_native_stack_comparison_terminal_review_20261004_v3.json).

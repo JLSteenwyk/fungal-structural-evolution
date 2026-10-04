@@ -110,12 +110,21 @@ binding (6,501), and verifies four original producer/reader terminal journals.
 Large native outputs and full hash archives remain outside Git; completion
 receipts record their paths and checksums.
 
-The separate controlled comparison with a 64 MiB process-local stack remains
+The separate controlled comparison with a 64 MiB process-local stack was
 running at the [12:22 exact-process observation](../metadata/current_analysis_error_live_recheck_20261004_user_1224.json).
 It retains the failing input, prior, seed, 20 iterations and native AS/CPU/file
-caps. Its completion and independent output validation are still required.
+caps. Its [terminal review](../metadata/scalar_native_stack_comparison_terminal_review_20261004_v3.json)
+now verifies original wait 99691, whole wrapper/manager payloads and every
+original native artifact. The debugger exits zero, but its unchanged text
+explicitly records native SIGKILL. Only iterations zero through nine are saved;
+all 430 mapped values in those ten scalar rows pass paired independent
+readback. The planned twenty iterations are incomplete. The original GDB
+callback records a null exit code/signal after the killed process disappears;
+its `NORMAL_EXIT_INSPECTION_SKIPPED` message does not prove a normal native exit.
+Termination is consistent with the unchanged 5,674-second CPU hard cap,
+but the kernel cause is not independently captured. No failed attempt restarts.
 The captured 8 MiB fault supports stack exhaustion in that diagnostic; neither
-that observation nor the ongoing comparison proves a fix for all original
+that observation nor this incomplete larger-stack comparison proves a fix for all original
 failures. Production and global stack settings remain unchanged.
 
 Full reader/source/artifact/original-journal closure is now verified. Twenty

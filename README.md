@@ -45,7 +45,11 @@ adequate ancestral posterior uncertainty. A
 captured SIGSEGV at a native call writing below the fully grown 8 MiB stack.
 The original debugger terminal and stack evidence are verified. A separate
 controlled comparison uses a 64 MiB process-local stack with input, seed and
-other native caps unchanged; this is not yet a validated correction. Failed
+other native caps unchanged. That diagnostic has now ended: the debugger exits
+zero, but the native sampler is killed by SIGKILL with its last saved iteration
+at nine of twenty. Independent readback checks its ten saved scalar rows.
+Termination is consistent with the fixed native CPU cap; the kernel cause is
+not separately captured. This is not a validated correction. Failed
 roles are retained; no production attempt is retried or global limit changed.
 Existing jobs and historical outputs remain unchanged.
 

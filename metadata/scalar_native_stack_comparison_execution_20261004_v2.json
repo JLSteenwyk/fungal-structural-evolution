@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=68719476736",
+    "--cpu=7200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_scalar_native_signal_debugger_v2.py",
+    "--plan",
+    "metadata/scalar_native_stack_comparison_plan_20261004_v2.json",
+    "--receipt",
+    "metadata/scalar_native_stack_comparison_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/scalar_native_stack_comparison_resources_20261004_v2.json": "4a9108557ef3547fdb5182b3ea2dbb628368841f2700d3c3909b7746ab813fc8",
+    "scripts/run_scalar_native_signal_debugger_v2.py": "3ccf8b366142935f59f209d774f0b4b1be608c00eec99a473815d2addf3c666a",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "eadee75fd20e4b51ab6d9ab87c2a7af1",
+  "wrapper": {
+    "pid": 3213924,
+    "created": 1791114273.36,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/scalar_native_stack_comparison_resources_20261004_v2.json",
+      "--execution",
+      "metadata/scalar_native_stack_comparison_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/scalar_native_stack_comparison_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v2.py",
+      "--plan",
+      "metadata/scalar_native_stack_comparison_plan_20261004_v2.json",
+      "--receipt",
+      "metadata/scalar_native_stack_comparison_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7500,
+  "started_utc": "2026-10-04T11:44:34.537455+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T13:19:17.316519+00:00",
+  "child": {
+    "pid": 3214229,
+    "created": 1791114273.84,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=68719476736",
+      "--cpu=7200",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v2.py",
+      "--plan",
+      "metadata/scalar_native_stack_comparison_plan_20261004_v2.json",
+      "--receipt",
+      "metadata/scalar_native_stack_comparison_20261004_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 5682.778801849927,
+  "child_cpu_seconds": 5692.054281,
+  "child_peak_rss_bytes": 44254949376,
+  "receipt": "metadata/scalar_native_stack_comparison_20261004_v2.json",
+  "receipt_sha256": "e296edeab1bf6cbb0fcc6e6302f02bdd59a67b9e7a0dc295f569b90d8b25ad0b",
+  "artifacts": {
+    "metadata/scalar_native_stack_comparison_execution_20261004_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/scalar_native_stack_comparison_execution_20261004_v2/configuration.json": "5ad4d2d8eadb1fc0bc446562398235d5aaa19cd2dc24d4b5735331512e5bdb23",
+    "metadata/scalar_native_stack_comparison_execution_20261004_v2/stdout.log": "0649cf59d1a14274277587464190b30d1bf82f5286e2232e6f4e3e385dc8c04e",
+    "metadata/scalar_native_stack_comparison_execution_20261004_v2/process.json": "de0fcf097354b475d87d6dace3e489c92c715f34ca6f58d506724301d79c2862"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

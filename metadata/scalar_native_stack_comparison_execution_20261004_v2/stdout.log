@@ -1,0 +1,44 @@
+{
+  "status": "separate_native_debugger_exit_without_signal_stop",
+  "checked_utc": "2026-10-04T13:19:17.179291+00:00",
+  "plan_sha256": "548acdc34352049e875f313616b6d984dd308cdf50c13b07136b1dff6719347c",
+  "native_stop": {
+    "live_stop": false,
+    "native_exit_code": null,
+    "pid": 0,
+    "signal": null
+  },
+  "debugger_exit_code": 0,
+  "native_caps": {
+    "address_space_bytes": 51539607552,
+    "cpu_seconds": 5674,
+    "per_file_bytes": 2147483648,
+    "stack_soft_bytes": 67108864
+  },
+  "debugger_command": [
+    "/usr/bin/gdb",
+    "-nx",
+    "--batch",
+    "-x",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/scalar-native-stack-comparison-20261004-v2/gdb_commands.txt",
+    "--args",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+    "--seed",
+    "1322110685",
+    "run",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-full-scalar-json-v6-20261004-v1/models/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+    "--iterations",
+    "20",
+    "--log-format",
+    "json,tsv",
+    "--name",
+    "independent-chain"
+  ],
+  "original_attempts_restarted": false,
+  "source_or_prior_changed": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "artificial_control": false,
+  "scope": "One separate controlled stack comparison: unchanged original native command, input/prior/seed/20iterations and48GiB AS/5674CPU-second/2GiB-file limits; only native stack soft limit increases8to64MiB, hard limit remains unlimited. TwoCPU/64GiB/no swap/BLAS1 debugger wrapper. No global limits, sources, priors, production attempts or failed outputs changed. Runtime uncalibrated; a normal native exit still requires full independent output validation."
+}
