@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=68719476736",
+    "--cpu=7200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_scalar_native_signal_debugger_v2.py",
+    "--plan",
+    "metadata/baliphy_logger_phase_diagnostic_plan_20261004_v1.json",
+    "--receipt",
+    "metadata/baliphy_logger_phase_diagnostic_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_logger_phase_diagnostic_resources_20261004_v1.json": "7fca7eb943d6e5894513c0cfa2b5d3789fd7a9932721f51281dda2a47a724532",
+    "scripts/run_scalar_native_signal_debugger_v2.py": "3ccf8b366142935f59f209d774f0b4b1be608c00eec99a473815d2addf3c666a",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "e58d7fc55ec049ef81ddfa34b2e8b08c",
+  "wrapper": {
+    "pid": 23375,
+    "created": 1791122314.59,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_logger_phase_diagnostic_resources_20261004_v1.json",
+      "--execution",
+      "metadata/baliphy_logger_phase_diagnostic_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_logger_phase_diagnostic_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v2.py",
+      "--plan",
+      "metadata/baliphy_logger_phase_diagnostic_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_logger_phase_diagnostic_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7500,
+  "started_utc": "2026-10-04T13:58:35.771863+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T14:00:38.596982+00:00",
+  "child": {
+    "pid": 23377,
+    "created": 1791122315.07,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=68719476736",
+      "--cpu=7200",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_scalar_native_signal_debugger_v2.py",
+      "--plan",
+      "metadata/baliphy_logger_phase_diagnostic_plan_20261004_v1.json",
+      "--receipt",
+      "metadata/baliphy_logger_phase_diagnostic_20261004_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 122.82484193402342,
+  "child_cpu_seconds": 123.25915599999999,
+  "child_peak_rss_bytes": 41583796224,
+  "receipt": "metadata/baliphy_logger_phase_diagnostic_20261004_v1.json",
+  "receipt_sha256": "cf12be24d1cd0b0705a12b7bcc8415d819aebbf9562016a55401b194ce54f144",
+  "artifacts": {
+    "metadata/baliphy_logger_phase_diagnostic_execution_20261004_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_logger_phase_diagnostic_execution_20261004_v1/configuration.json": "6251617d43ee218583f7e0ab865071edd089d7da8f226ce5516f7ccbd738fa8d",
+    "metadata/baliphy_logger_phase_diagnostic_execution_20261004_v1/stdout.log": "ece284a37f98d4f0ade63dee06d175ed783eee1e42d96900c699a54c9c5da986",
+    "metadata/baliphy_logger_phase_diagnostic_execution_20261004_v1/process.json": "65d5bec80073634b81894cad427b2b8c64fa32a89c7a9ef990e6807907ccee95"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

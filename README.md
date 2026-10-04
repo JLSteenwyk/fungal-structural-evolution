@@ -53,6 +53,15 @@ not separately captured. This is not a validated correction. Failed
 roles are retained; no production attempt is retried or global limit changed.
 Existing jobs and historical outputs remain unchanged.
 
+A [joint FASTA serialization candidate](docs/baliphy-joint-fasta-v7-20261004.md)
+now constructs alignment lines directly from sequence rows. Three native prior
+controls preserve all six output files byte for byte. A separate full 622-tip
+comparison is running with the original 8 MiB stack and other native caps;
+its first complete joint frame and six scalar rows match nonempty saved output
+from the earlier 64 MiB diagnostic. Independent prefix readback checks 258
+scalar values and 320,014 ancestral residue/category pairs. The full horizon,
+all 24 failed roles and adequate posterior uncertainty remain unqualified.
+
 The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal
 closure. A [fresh full closure check](metadata/full_reduced_covariance_qualification_completed_verification_20261004_v3.json)

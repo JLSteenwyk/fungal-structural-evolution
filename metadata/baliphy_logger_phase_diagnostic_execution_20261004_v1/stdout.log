@@ -1,0 +1,58 @@
+{
+  "status": "captured_separate_native_signal_stop",
+  "checked_utc": "2026-10-04T14:00:38.471482+00:00",
+  "plan_sha256": "64f1a42535c0440fedbb9c08f2b7711f2e5cb8d7a67282d6bd2027e126d1f21e",
+  "native_stop": {
+    "live_stop": true,
+    "native_cmdline": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+      "--seed",
+      "1322110685",
+      "run",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-logger-phase-diagnostic-20261004-v1/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+      "--iterations",
+      "20",
+      "--log-format",
+      "json,tsv",
+      "--name",
+      "independent-chain"
+    ],
+    "native_exit_code": null,
+    "pc": "0x61d7bd136ee6 <reg_heap::incremental_evaluate1(int)+6>",
+    "pid": 23400,
+    "signal": "SIGSEGV"
+  },
+  "debugger_exit_code": 0,
+  "native_caps": {
+    "address_space_bytes": 51539607552,
+    "cpu_seconds": 5674,
+    "per_file_bytes": 2147483648,
+    "stack_soft_bytes": 8388608
+  },
+  "debugger_command": [
+    "/usr/bin/gdb",
+    "-nx",
+    "--batch",
+    "-x",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-logger-phase-diagnostic-20261004-v1/gdb_commands.txt",
+    "--args",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+    "--seed",
+    "1322110685",
+    "run",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-logger-phase-diagnostic-20261004-v1/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+    "--iterations",
+    "20",
+    "--log-format",
+    "json,tsv",
+    "--name",
+    "independent-chain"
+  ],
+  "original_attempts_restarted": false,
+  "source_or_prior_changed": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "artificial_control": false,
+  "scope": "One separate full-input failed-family diagnostic, with reversible IO phase markers only. Original probability expressions, alignment, tree, prior, seed1322110685,20iterations, 48GiB AS/5674CPU-seconds/2GiB file/8MiB soft-unlimited hard stack remain. No original attempt is restarted and no full-sampling scope is reduced. Marker noninterference is qualified on three existing tiny controls, not assumed on full input. Debugger exit0 and null callback status do not prove a completed native sampler; original signal text, output horizon, and independent readback must be reviewed. No posterior or biological acceptance, GPU, paid resource, or installed-library change."
+}

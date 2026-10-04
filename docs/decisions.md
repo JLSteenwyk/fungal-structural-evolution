@@ -1887,3 +1887,19 @@ native zero exits, finite-output integrity, complete quartets and adequate
 posteriors are distinct claims. Do not admit reviewed arrays or claim posterior
 uncertainty from the closed scalar/frame checks. The process-local larger-stack
 diagnostic remains separate from production and machine-wide limits.
+
+## 2026-10-04: preserve joint output while removing whole-alignment character expansion
+
+Test a pure row-wise joint FASTA construction with unchanged native inference
+and output schema. Preserve the full alignment, every tip/internal node, prior,
+seed and original AS/CPU/file/stack limits. Require byte-identical native prior
+controls and independently check the full failed-input horizon before proposing
+a full failure-grid correction. Diagnostic progress must not shrink the project
+to software fixtures or confer posterior acceptance.
+
+Attribute logger phase markers only to the instrumented run that emitted them.
+The original 8 MiB and separate 64 MiB diagnostic outputs are distinct. Empty original
+files matching a new prefix are vacuous; compatibility requires nonempty saved
+bytes and independent readback. Preserve the first phase review unchanged and
+document the corrected iteration distinction in its successor evidence.
+[Candidate and original-limit comparison](baliphy-joint-fasta-v7-20261004.md).

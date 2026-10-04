@@ -1,0 +1,18 @@
+joint_fasta_v7_native_control broad passed
+joint_fasta_v7_native_control centered passed
+joint_fasta_v7_native_control package passed
+{
+  "status": "passed_reversible_rowwise_joint_fasta_v7_paired_native_controls",
+  "checked_utc": "2026-10-04T14:04:14.623435+00:00",
+  "full_programs_reversibly_checked": 405,
+  "native_prior_controls": 3,
+  "native_scalar_rows": 63,
+  "native_mapped_comparisons": 2709,
+  "native_joint_frames": 9,
+  "probability_model_changed": false,
+  "installed_software_changed": false,
+  "original_jobs_restarted": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "scope": "Pure logger construction replaces the whole-alignment Text.unpack/lines/pack roundtrip with two native Text rows per sequence, sharing the same ancestral data. Three prior controls preserve all six scientific files byte-for-byte; all405full models reverse exactly to original source. This is a candidate software correction, not a validated full-input crash repair or posterior."
+}

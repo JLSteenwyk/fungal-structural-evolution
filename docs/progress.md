@@ -13879,3 +13879,32 @@ and manager records are verified; failed attempts are not retried and no global
 or production limits change. A reporting helper's empty-list-versus-zero
 assertion is preserved; a new V3 helper uses the actual scalar reader schema.
 [Terminal evidence](../metadata/scalar_native_stack_comparison_terminal_review_20261004_v3.json).
+
+## October 4, 14:13 UTC: original-stack joint-output candidate advances
+
+The preceding user turn is progress through two fresh native formatter probes,
+independent readback and newly published error evidence. This continuation adds
+reversible logger phase markers and a candidate row-wise FASTA construction.
+Both pass three native prior controls with all six scientific files byte
+identical. The phase diagnostic closes with a captured iteration-zero SIGSEGV
+during joint writing at the original 8 MiB stack boundary. Original 8 MiB
+uninstrumented debugger outputs are empty; later saved iterations belong to
+the separate 64 MiB run. The V1 diagnostic review's iteration distinction is
+qualified explicitly by the nonempty-prefix checkpoint and methods note.
+
+The standalone candidate's original wait 58381 is live. Its first full joint
+frame and six scalar rows match the original 64 MiB diagnostic byte for byte,
+with independent checks of 258 scalar values and 320,014 ancestral pairs over
+622 tips and 621 internal nodes. The original 8 MiB stack and AS/CPU/file caps
+are directly verified. Completion of all 20 iterations, checks across all 24 failed roles
+and adequate posterior uncertainty remain pending. No native or biological
+success is inferred from the partial prefix.
+[Serialization candidate and evidence](baliphy-joint-fasta-v7-20261004.md).
+
+The original numerical reader has 16 verified workers and 2,491/4,340 cohort
+checkpoints. Original numerical producer arithmetic is already closed; full
+independent closure, native timing, full weighted fitting and uncertainty
+calibration remain pending. Matched predictor resampling's original producer
+is terminal, with its original independent reader still running and closure
+absent. All eight evolutionary aims, full atlas coverage and required final
+deliverables remain incomplete; GPU prediction remains paused.

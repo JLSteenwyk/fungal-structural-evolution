@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-10-04T13:58:07.099031+00:00",
+  "cpus": 2,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 64,
+  "cpu_seconds_per_stage": 7200,
+  "wall_seconds_per_stage": 7500,
+  "per_file_limit_mib": 2048,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 256,
+  "available_ram_gib": 613.4513702392578,
+  "free_disk_gib": 10235.075199127197,
+  "output_allowance_gib": 4,
+  "prospective_wall_minutes": [
+    2,
+    15
+  ],
+  "prospective_debugger_runtime_uncalibrated": true,
+  "prior_original_failed_role_wall_seconds": 118.35887306707446,
+  "prior_64_mib_stack_diagnostic_minutes": 94.7,
+  "maximum_native_cpu_seconds": 5674,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "One separate full-input failed-family diagnostic, with reversible IO phase markers only. Original probability expressions, alignment, tree, prior, seed1322110685,20iterations, 48GiB AS/5674CPU-seconds/2GiB file/8MiB soft-unlimited hard stack remain. No original attempt is restarted and no full-sampling scope is reduced. Marker noninterference is qualified on three existing tiny controls, not assumed on full input. Debugger exit0 and null callback status do not prove a completed native sampler; original signal text, output horizon, and independent readback must be reviewed. No posterior or biological acceptance, GPU, paid resource, or installed-library change."
+}

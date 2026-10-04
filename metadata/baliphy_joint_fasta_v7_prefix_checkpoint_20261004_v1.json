@@ -1,0 +1,90 @@
+{
+  "status": "verified_live_original_limit_candidate_with_closed_identical_saved_prefix",
+  "checked_utc": "2026-10-04T14:13:19.413801+00:00",
+  "original_tool_session_id": 58381,
+  "native": {
+    "pid": 30166,
+    "created": 1791122871.56,
+    "cmdline": [
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+      "--seed",
+      "1322110685",
+      "run",
+      "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/prepared-joint-fasta-v7-full-comparison-20261004-v1/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad.hs",
+      "--iterations",
+      "20",
+      "--log-format",
+      "json,tsv",
+      "--name",
+      "independent-chain"
+    ],
+    "status": "running",
+    "cpu_seconds": 327.08000000000004,
+    "address_space": [
+      51539607552,
+      51539607552
+    ],
+    "cpu_limit": [
+      5674,
+      5674
+    ],
+    "file_limit": [
+      2147483648,
+      2147483648
+    ],
+    "stack_limit": [
+      8388608,
+      -1
+    ]
+  },
+  "snapshot_root": "data/software_audits/baliphy-joint-fasta-v7-prefix-observation-20261004-v1",
+  "scalar_readback": {
+    "rows": 6,
+    "mapped_values_compared": 258,
+    "nonfinite_reviews": [],
+    "relative_tolerance": 2e-13,
+    "absolute_tolerance": 0.0,
+    "scientific_eligibility": false
+  },
+  "joint_frame_readback": {
+    "tip_pairs": 284992,
+    "ancestral_pairs": 320014,
+    "native_nodes": 1243,
+    "native_tips": 622,
+    "native_ancestors": 621,
+    "frame_sha256": "1a126dcf062e17a2096df958e7d872845221a887ecaccec010ab19c2295b7e06",
+    "ancestral_categories_available": true,
+    "posterior_qualified": false,
+    "scientific_eligibility": false,
+    "same_record_alignment_state_correspondence_checked": true
+  },
+  "captured_first_joint_frame_bytes": 7519894,
+  "nonempty_scalar_and_joint_prefix_byte_identical_to_original_64_mib_run": true,
+  "original_8_mib_uninstrumented_saved_scalar_rows": 0,
+  "original_8_mib_uninstrumented_saved_joint_frames": 0,
+  "earlier_trace_review_v1_iteration_comparison_needs_this_qualification": true,
+  "full_horizon_verified": false,
+  "all_24_failures_repaired": false,
+  "source_hashes": {
+    "results/ancestral/scalar-native-stack-comparison-20261004-v2/independent-chain-1/C1.log": "09baf1750849bb75008375265989792956c8ba766cb6959bf260ef7d8cebb2ec",
+    "results/ancestral/scalar-native-stack-comparison-20261004-v2/independent-chain-1/C1.log.json": "f591eeb626aff3da4e1d22038ff252e96c9ab8a503ca91b965d6c454cb894a72",
+    "results/ancestral/scalar-native-stack-comparison-20261004-v2/independent-chain-1/C1.log.column-map.json": "7a757bbe430f9415582f6f51c7ae16e7b64be6e269836533779696fa9519c657",
+    "results/ancestral/scalar-native-stack-comparison-20261004-v2/independent-chain-1/runtime-tree.nwk": "f60720ab126a886cb656e00da3d0b52e925a6982c01fd14cacc5af8baa1d6d2d",
+    "results/ancestral/scalar-native-stack-comparison-20261004-v2/independent-chain-1/C1.P1.site-property-samples.jsonl": "d881f206867053762aff685209e62e87c42a39eb2e12f49939e3787939b73f09",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_baliphy_joint_fasta_v7_prefix_checkpoint_v1.py": "8709c0cfd219b6c2f1da8e5e606fa53ff0d1f1dddd4ab53e64d14c94aa9243f3",
+    "metadata/baliphy_joint_fasta_v7_full_comparison_plan_20261004_v1.json": "8d6e468f47be2a51ef7cbe073e340c2da45e74c4010f506bf7c555d3879ac05a",
+    "results/ancestral/baliphy-joint-fasta-v7-full-input-comparison-20261004-v1/native/attempt-0001/process.json": "a07d4c22256779bf32d75098d0e26d3ac05c092570fb671ff57e346cb4e1b452",
+    "metadata/scalar_native_stack_comparison_terminal_review_20261004_v3.json": "ac2c82169f6b72806ece3ec7a95f0355c8416b37ac92c8207d2e737e75cf2d2f",
+    "data/software_audits/baliphy-joint-fasta-v7-prefix-observation-20261004-v1/C1.log": "3ac4b38fd7a9c1f4d32613181ff95079149fa021259a58befbc8a933349f7208",
+    "data/software_audits/baliphy-joint-fasta-v7-prefix-observation-20261004-v1/C1.log.column-map.json": "7a757bbe430f9415582f6f51c7ae16e7b64be6e269836533779696fa9519c657",
+    "data/software_audits/baliphy-joint-fasta-v7-prefix-observation-20261004-v1/C1.log.json": "7069cc096ff09e9abf222f54bef22877da0aa75661c947e5e9c1669a5f199c86",
+    "data/software_audits/baliphy-joint-fasta-v7-prefix-observation-20261004-v1/runtime-tree.nwk": "f60720ab126a886cb656e00da3d0b52e925a6982c01fd14cacc5af8baa1d6d2d",
+    "data/software_audits/baliphy-joint-fasta-v7-prefix-observation-20261004-v1/C1.P1.site-property-samples.jsonl": "d881f206867053762aff685209e62e87c42a39eb2e12f49939e3787939b73f09",
+    "results/ancestral/scalar-native-signal-debugger-20261004-v1/independent-chain-1/C1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/ancestral/scalar-native-signal-debugger-20261004-v1/independent-chain-1/C1.P1.site-property-samples.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "original_jobs_restarted": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "scope": "Live original8MiB stack candidate produces the first full joint frame and scalar rows. A closed captured prefix matches actual nonempty output of the original64MiB run and is independently reread. Original8MiB uninstrumented debugger files are empty, so their vacuous prefix comparisons provide no compatibility evidence. The phase diagnostic also failed before its first joint frame; its V1 statement about later uninstrumented iterations applies to the separate64MiB run, not the original8MiB run. No completed20-iteration horizon, all24-failure repair or posterior acceptance is inferred."
+}

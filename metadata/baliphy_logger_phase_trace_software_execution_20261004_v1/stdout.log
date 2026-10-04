@@ -1,0 +1,18 @@
+phase_trace_native_control broad passed
+phase_trace_native_control centered passed
+phase_trace_native_control package passed
+{
+  "status": "passed_reversible_logger_phase_trace_and_paired_native_controls_v1",
+  "checked_utc": "2026-10-04T13:55:17.962354+00:00",
+  "full_programs_reversibly_checked": 405,
+  "native_prior_controls": 3,
+  "native_scalar_rows": 63,
+  "native_mapped_comparisons": 2709,
+  "phase_events": 1008,
+  "probability_model_changed": false,
+  "installed_software_changed": false,
+  "original_jobs_restarted": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "scope": "Diagnostic IO markers surround the original context/write actions without extra value forcing or model changes. Three existing tiny prior controls retain all six scientific output files byte-for-byte. This does not establish noninterference on a full alignment, resolve a crash, or qualify a posterior."
+}
