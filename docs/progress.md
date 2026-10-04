@@ -12942,3 +12942,57 @@ and figure review remain next.
   Numerical qualification, timing/fits/calibration, accepted species framework,
   reconciliation/dating, atlas and all eight biological aims remain incomplete.
   GPU inference remains paused; no paid infrastructure or unrelated settings changed.
+
+- October4,00:57UTC: qualified and queued the complete four-control numerical
+  covariance workflow:4340cohorts/130200designs/622080settings,5208000audit records
+  and24883200original setting links. Fresh component/image-product primary and
+  long-double/pivoted-QR/gesvd/latent-overlap reader rebuild every D contraction
+  and error envelope. Named certificates alone select bases; retain targetI for
+  nonuniformD, genuine pair exceptions, review states and original nonfit rows.
+  Cohort segments preserve every setting ordinal and original row field. Exact
+  rejected-case inputs/primary/reference/error evidence is saved. No tolerance
+  widening, clipping, inherited uniform audit or rank-based deletion.
+  [Full workflow, resource estimates and evidence](full-weighted-covariance-qualification-20261004.md).
+
+  Independent cached arithmetic passed24general-D/fournamed-uniform cases,
+  permutations/column transforms/reordering,20caller/result isolation checks,
+ 16constant-diagonal diagnostic reviews/fourzero norms and40invalid inputs.
+  Original wait84241exitedzero. First full pipeline software V1 passed all6000
+  records/24000links, then fresh V2 retained that review grid and added two full
+  identifiable grids. All18000records/72000links passed:10800numeric calculations,
+ 7200original nonfit records, qualifiedq4/q5/q6 and allthree nonuniform controls.
+  Each added grid has1200qualified records,900nonuniform. Nineteen rehashed audit/
+  link corruptions rejected;13actual numerical rejection captures preserved.
+  Original V2wait33138exitedzero,62.149324native CPU seconds,197156864bytes RSS;
+  exact original wrapper/invocation journals and338declared hashes passed.
+  Parent closures/journals synthetic; no biological pilot or real numerical
+  completion claimed. Passed earlier V1 preserved unchanged.
+
+  Real source producer completed all4340cohorts/130200X/260400y/622080settings
+  at00:41:30UTC and its original terminal success is verified. Source readback
+  and full closure remain pending. New numerical controllers2975921/2975928/
+ 2975938are live waiting behind original source closer2425077. All44pins and
+  actual2CPU/32GiB/no-swap caps verified; numerical output root remains absent.
+  AS24GiB/nativeCPU604800seconds/file512MiB/one-BLAS-thread caps planned and
+  enforced at native entry. Full settings measured:maximum960percohort,348bytes
+  peroriginal row.160GiBoutput/scratch allowance with256GiBfree required; runtime
+  uncalibrated and CPUcap is not ETA. No weighted optimizer, GPU or paid resource.
+
+  Original uniform process reader has all4340cohortreports; remaining link/receipt/
+  closure not completed. Old discrepancy remains unexplained. Previous goal turn
+  was progress published630effd through complete source software/implementation/
+  launch. This turn is progress through full numerical source/output/reader
+  implementation, qualification, resources and original full-scope queue. Full
+  timing/fits/calibration, species framework/reconciliation/dating, atlas, adequate
+  ancestral uncertainty and all eight biological aims remain incomplete.
+
+  Same-turn completion update,01:07:01UTC: source readback and full two-journal
+  closure passed. Every13119actual stage binding freshly rehashed; complete
+  serialized4340cohort/130200design/260400response/basis census and allthree
+  original terminal handles verified. All34,110,120cohort-row occurrences and
+ 622,080original settings are accounted. Uniform q4/q5 counts per mode:3616/724;
+  each nonuniform control q5/q6:3616/724. Original numerical producer2975921/
+  native3078625is now running; reader/closer remain queued. Partial segments are
+  not independently completed audits. Numerical qualification, fits and all
+  eight biological aims remain incomplete.
+  [Fresh source closure verification](../metadata/full_weighted_covariance_source_census_completed_verification_20261004_v1.json).

@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_covariance_qualification_v2.py",
+    "--output",
+    "data/software_audits/full-weighted-covariance-qualification-20261004-v2",
+    "--receipt",
+    "metadata/full_weighted_covariance_qualification_software_validation_20261004_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_covariance_qualification_software_resources_20261004_v2.json": "caa16e9156ce8669eae874e5c8af11e649553053cfd8913e1a00c3e16d191285",
+    "scripts/check_full_weighted_covariance_qualification_v2.py": "2147a065ebe9f2132c47e5db338b0ac527dc126b7e05cf794a3b8c2b05daea22",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "1fc6cd8d58774f8e9e99007c158a18de",
+  "wrapper": {
+    "pid": 2965894,
+    "created": 1791074829.27,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_covariance_qualification_software_resources_20261004_v2.json",
+      "--execution",
+      "metadata/full_weighted_covariance_qualification_software_execution_20261004_v2.json",
+      "--receipt",
+      "metadata/full_weighted_covariance_qualification_software_validation_20261004_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_covariance_qualification_v2.py",
+      "--output",
+      "data/software_audits/full-weighted-covariance-qualification-20261004-v2",
+      "--receipt",
+      "metadata/full_weighted_covariance_qualification_software_validation_20261004_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-04T00:47:10.350791+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T00:48:12.630298+00:00",
+  "child": {
+    "pid": 2965898,
+    "created": 1791074829.65,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_covariance_qualification_v2.py",
+      "--output",
+      "data/software_audits/full-weighted-covariance-qualification-20261004-v2",
+      "--receipt",
+      "metadata/full_weighted_covariance_qualification_software_validation_20261004_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 62.27925821894314,
+  "child_cpu_seconds": 62.149324,
+  "child_peak_rss_bytes": 197156864,
+  "receipt": "metadata/full_weighted_covariance_qualification_software_validation_20261004_v2.json",
+  "receipt_sha256": "cab991134850849c34c757329e386446e103f904be8f00c17ce5c88c3e13e002",
+  "artifacts": {
+    "metadata/full_weighted_covariance_qualification_software_execution_20261004_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_weighted_covariance_qualification_software_execution_20261004_v2/configuration.json": "8ee27d99dd1ce1266585651b30c9d8217415e23b058bab33d359d9d6b1648755",
+    "metadata/full_weighted_covariance_qualification_software_execution_20261004_v2/stdout.log": "75307390ae4f438060d759df01cc2c86ea4894d73d072482c6b88a6e9ff5c1f1",
+    "metadata/full_weighted_covariance_qualification_software_execution_20261004_v2/process.json": "0ca4042974a53ea2372391ad4476e8fac4b4ec40dfd3bbc10d85c5fdf963ba4c"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

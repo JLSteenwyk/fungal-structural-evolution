@@ -1,10 +1,21 @@
 # Full four-control covariance source census
 
-The original source census is running. This stage connects the independently
+The original source census has completed its producer, serialized readback and
+full source/artifact/two-journal closure. This stage connects the independently
 closed reuse controls to every original design, response input and setting.
 It computes no covariance Gram matrices or working-model fits. The project
 still targets approximately 500 fungi and 25 outgroups; all eight biological
 aims remain incomplete and GPU prediction remains paused.
+
+At October4,01:07:01UTC, a [fresh completed-stage verification](../metadata/full_weighted_covariance_source_census_completed_verification_20261004_v1.json)
+rehashed all **13,119 actual stage bindings**, checked the complete serialized
+4,340-cohort/130,200-design/260,400-response/basis census and all three original
+terminal handles. All original 622,080 settings and 34,110,120 cohort-row
+occurrences passed the closed reconstruction/readback. The actual completed
+stage has two original process journals. Uniform controls use q4 in 3,616 cohorts
+per mode and q5 in 724; each nonuniform control uses q5 in 3,616 and q6 in 724.
+Full numerical qualification has now started separately; no fit or effect is
+accepted by this source completion.
 
 ## Scope and provenance
 
@@ -95,8 +106,8 @@ launcher retains its October 3 suffix in handle filenames; the new plan and
 actual launch UTC are October 4. No scientific job was restarted, no paid
 infrastructure provisioned and no unrelated resource settings changed.
 
-Full closure requires complete producer/reader equality, every consumed source
-and output digest and two actual original process journals. After source closure,
-the next gate is fresh full-scope raw/REML numerical qualification with separate
+Full closure passed complete producer/reader equality, every consumed source
+and output digest and two actual original process journals. The next gate is
+fresh full-scope raw/REML numerical qualification with separate
 arithmetic, unchanged review policies, resource estimates and measured timing.
 Working-model fits and inferential calibration remain later gates.

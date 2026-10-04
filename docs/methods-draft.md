@@ -3106,3 +3106,39 @@ grid,30uniform/constant/near-uniform routing checks and18rehashed source/output
 corruptions. Full real source execution/readback is underway; numerical
 qualification, timing, fits and accepted effects remain pending.
 [Implementation and execution evidence](full-weighted-covariance-source-census-20261004.md).
+
+### Full four-control raw/REML qualification
+
+The complete numerical workflow has5,208,000audit records and24,883,200setting
+links over all original4340cohorts/130200designs/622080settings, fourcontrols,
+ two loading modes and five trees. It waits for the complete source census's
+exact original closure. Component/image products and separately implemented
+latent overlaps compute fresh raw and error-contrast Grams. The latter uses
+long-double column normalization, pivotedQR and gesvd. Nonresidual contractions
+may be shared within a context, with every D contraction and error envelope
+recomputed. Existing strict matrix/envelope/reciprocal-condition checks and
+review policies remain unchanged.
+
+Only exact named certificates authorize bases. Actual all-oneD selects uniform
+folds; other positiveD keeps targetI separately. Original pair exceptions and
+nonfit states, unresolved norms, dependent kernels and rank boundaries remain
+explicit. Every original setting row/ordinal is exported and checked through
+cohort segments. Rejected numerical cases save source identity, exact X/D/F/
+selected rows, primary/reference and error; full original operator bindings
+remain attached. This establishes numerical basis fidelity, not calibrated
+precision, accepted component attribution, fitted effects or biological claims.
+
+Complete software checks passed three five-cohort grids totaling18000records/
+72000links, including qualified q4/q5/q6 and allthree nonuniform policies,
+original review/nonfit states and19rehashed audit/link corruptions. Thirteen
+actual numerical rejection captures passed. Source closures/journals synthetic;
+full real numerical execution is queued, independent readback/closure pending.
+[Implementation, arithmetic, resource plan and actual original waits](full-weighted-covariance-qualification-20261004.md).
+
+October4,01:07UTC completion update: full source reconstruction/readback/
+closure passed all4,340cohorts/130,200designs/260,400responses/622,080settings.
+A fresh verification checked all13,119actual stage bindings and three original
+terminal handles. The full real numerical producer has started; its independent
+readback/closure, working-model timing/fits/calibration and all biological aims
+remain incomplete.
+[Closed source evidence](../metadata/full_weighted_covariance_source_census_completed_verification_20261004_v1.json).

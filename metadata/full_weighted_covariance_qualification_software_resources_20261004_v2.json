@@ -1,0 +1,30 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 1800,
+  "wall_seconds_per_stage": 3600,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "synthetic_logical_cases": 24,
+  "synthetic_cohorts": 5,
+  "synthetic_designs": 150,
+  "synthetic_settings": 600,
+  "synthetic_audit_records": 6000,
+  "synthetic_setting_links": 24000,
+  "output_allowance_gib": 1,
+  "runtime_planning_seconds": [
+    5,
+    1800
+  ],
+  "runtime_calibrated": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete declared four-control numerical/source/export/latent-readback/corruption checker. Whole synthetic scope retained; no real data pilot, fit or covariance basis deletion. Additional two complete five-cohort grids cover qualified uniform/nonuniform q4/q5/q6 bases, all controls and genuine pair exceptions; V1 baseline is preserved.",
+  "synthetic_complete_grids": 3,
+  "total_declared_audit_records": 18000,
+  "total_declared_setting_links": 72000
+}

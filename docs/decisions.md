@@ -1579,3 +1579,22 @@ Require full consumed-source/artifact/two-journal closure before advancing the
 full raw/REML numerical workflow; weighting acceptance, fits and biological
 interpretation remain separate.
 [Full source census and resource plan](full-weighted-covariance-source-census-20261004.md).
+
+## October4: retain the full weighted numerical grid and independent algebra
+
+Queue all5.208million audit records/24.8832million setting links behind the exact
+original full source closure. Use fresh component/image products and separate
+latent-overlap arithmetic with long-double normalization, pivoted QR and gesvd.
+Share unchanged nonresidual contractions only within the current numerical
+context; rebuild all D corrections and envelopes. Keep exact named bases,
+original nonfit states, zero norms, dependencies and boundaries as reviews.
+Do not propagate historical uniform disposition names as weighting acceptance.
+
+Segment by cohort to bound files while retaining every original row and ordinal.
+Preserve exact rejected numeric inputs and reference/primary/error evidence.
+The complete software review grid is insufficient to establish the qualified
+branch: add complete identifiable common/exceptional-pair grids, including
+uneven component reuse, all nonuniform controls and q4/q5/q6. Preserve the passed
+first version. Software cases are synthetic computational checks, not a real
+biological pilot or scope reduction.
+[Full gate, resources and evidence](full-weighted-covariance-qualification-20261004.md).

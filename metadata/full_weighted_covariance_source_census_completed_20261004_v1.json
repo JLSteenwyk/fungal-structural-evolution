@@ -1,0 +1,66 @@
+{
+  "status": "complete_verified_full_four_control_covariance_source_census_v1",
+  "logical_cases": 75188,
+  "cohorts": 4340,
+  "case_row_occurrences": 34110120,
+  "designs": 130200,
+  "fit_inputs": 260400,
+  "settings": 622080,
+  "design_status_counts": {
+    "full_rank_design": 130200
+  },
+  "fit_input_status_counts": {
+    "ready_for_working_covariance_fit": 260400
+  },
+  "setting_status_counts": {
+    "ready_for_working_covariance_fit": 622080
+  },
+  "policy_basis_counts": {
+    "background_node:signed:q5": 3616,
+    "background_node:signed:q6": 724,
+    "background_node:unsigned:q5": 3616,
+    "background_node:unsigned:q6": 724,
+    "background_pair:signed:q5": 3616,
+    "background_pair:signed:q6": 724,
+    "background_pair:unsigned:q5": 3616,
+    "background_pair:unsigned:q6": 724,
+    "family_component:signed:q5": 3616,
+    "family_component:signed:q6": 724,
+    "family_component:unsigned:q5": 3616,
+    "family_component:unsigned:q6": 724,
+    "uniform:signed:q4": 3616,
+    "uniform:signed:q5": 724,
+    "uniform:unsigned:q4": 3616,
+    "uniform:unsigned:q5": 724
+  },
+  "expected_numerical_audit_rows": 5208000,
+  "expected_setting_audit_links": 24883200,
+  "policies": [
+    "uniform",
+    "background_node",
+    "background_pair",
+    "family_component"
+  ],
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "loading_modes": [
+    "signed",
+    "unsigned"
+  ],
+  "full_hash_archive": "results/phylogeny/full-four-control-covariance-source-census-20261004-v1/completion_archive.json",
+  "full_hash_archive_sha256": "bd4d20d2e90feb2dd97a683364faf85df176f553ce09399bf4c3573cbe39c507",
+  "bound_source_hashes": 13119,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-four-control-covariance-source-census-20261004-v1/receipt.json",
+  "producer_receipt_sha256": "391295a167d3cf92e2672f2fb0574a9c5d3abbecb2b7272dbb2faa10b4701e87",
+  "independent_readback": "results/phylogeny/full-four-control-covariance-source-census-20261004-v1/readback.json",
+  "independent_readback_sha256": "5114f08bb6c8910be29c618db4fa6ac92b34ec23764646d3438e62940c673b7a",
+  "completion_plan_sha256": "27effee5c26e3421535686b46b68e5d28f2208b59e09f1e39a27195637c1134b",
+  "scientific_eligibility": false,
+  "scope": "Fresh consumed input hashes from seven independently closed parents; all original 4340 cohorts, 75188 cases, 34110120 cohort-row occurrences, 130200 designs, 260400 response inputs and 622080 settings. Reconstruct raw X and y from all ten original partitions, preserving case/input IDs, active exactly nonzero columns, original design and response dispositions. Recheck every saved control array/reciprocal recipe and exact membership identity. Original group assignment rests on the closed independent SQL/Fraction stage; it is not newly rederived from case-key tables here. Exact named uniform folds only for actual all-one D, otherwise retain D and target I using the closed positive-diagonal cone, including pair exceptions. Full original settings checked against unique design/response identities with SQLite; four controls/two modes/five trees imply 5208000 future numerical audits and 24883200 future links. These are prospective counts, not computed covariance audits. Serialized census replay plus all consumed source/artifact hashes and two actual original process journals gate closure. No numerical audit/envelope inherited, weighted fit, timing calibration, accepted biological effect, posterior acceptance, native restart, GPU or new charge. Unconsumed broader parent archive artifacts are not freshly replayed. All eight aims remain incomplete."
+}

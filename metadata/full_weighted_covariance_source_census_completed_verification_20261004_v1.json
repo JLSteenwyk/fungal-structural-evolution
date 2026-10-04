@@ -1,0 +1,111 @@
+{
+  "status": "verified_completed_full_four_control_source_census_whole_stage_hashes_and_original_terminals_v1",
+  "checked_utc": "2026-10-04T01:07:01.516536+00:00",
+  "completion": "metadata/full_weighted_covariance_source_census_completed_20261004_v1.json",
+  "completion_sha256": "f038d9da6bb513296d65695bc852f72c6fad448310991de8d637445cf3c4dc69",
+  "full_hash_archive_sha256": "bd4d20d2e90feb2dd97a683364faf85df176f553ce09399bf4c3573cbe39c507",
+  "fresh_stage_bindings_checked": 13119,
+  "original_terminal_handles_checked": 3,
+  "original_terminals": [
+    {
+      "launch": "metadata/full_weighted_covariance_source_census_v1_launch_20261003.json",
+      "pid": 2425068,
+      "created": 1791073168.84,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_source_census_v1_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "156007d9697249f22bb6bfb9b7d8b6bfeb1db79b3b4a253e708b00eb2e25f332",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "7f693d0c6562b84acb7311d56c65982dc9e5b3acd363d608a323afbfb46bb1d0",
+      "captured_process_messages": 1,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791074491554598",
+          "CPU_USAGE_NSEC": "1310903442000",
+          "MEMORY_PEAK": "3792896",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_weighted_covariance_source_census_v1_readback_launch_20261003.json",
+      "pid": 2425072,
+      "created": 1791073168.92,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_source_census_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "c5727a90152ef8e1a359e1815c00092953676450cf4f36dd662a517206a32844",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "b8a89080d0c10e194b84b04fe4df2c5d46493a4cf47b7aa942fa4dc54f195d4d",
+      "captured_process_messages": 46,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791075675284216",
+          "CPU_USAGE_NSEC": "1144807837000",
+          "MEMORY_PEAK": "3309568",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    },
+    {
+      "launch": "metadata/full_weighted_covariance_source_census_v1_closure_launch_20261003.json",
+      "pid": 2425077,
+      "created": 1791073168.98,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_source_census_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch_sha256": "4bb67f0a480f6f9e098e3feff903a0b7b8f07bb628ebc4144cdf09210579451d",
+      "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+      "journal_sha256_at_observation": "965c1a5e76c423194585ecbf8bc37a16a673e81a687b24bb8e838c5777f17018",
+      "captured_process_messages": 85,
+      "original_failure_records": [],
+      "completion_resource_records": [
+        {
+          "__REALTIME_TIMESTAMP": "1791075708545869",
+          "CPU_USAGE_NSEC": "16441475000",
+          "MEMORY_PEAK": "3514368",
+          "MEMORY_SWAP_PEAK": "0"
+        }
+      ]
+    }
+  ],
+  "logical_cases": 75188,
+  "cohorts": 4340,
+  "case_row_occurrences": 34110120,
+  "designs": 130200,
+  "fit_inputs": 260400,
+  "original_settings": 622080,
+  "policy_basis_counts": {
+    "uniform:signed:q4": 3616,
+    "uniform:unsigned:q4": 3616,
+    "background_node:signed:q5": 3616,
+    "background_node:unsigned:q5": 3616,
+    "background_pair:signed:q5": 3616,
+    "background_pair:unsigned:q5": 3616,
+    "family_component:signed:q5": 3616,
+    "family_component:unsigned:q5": 3616,
+    "uniform:signed:q5": 724,
+    "uniform:unsigned:q5": 724,
+    "background_node:signed:q6": 724,
+    "background_node:unsigned:q6": 724,
+    "background_pair:signed:q6": 724,
+    "background_pair:unsigned:q6": 724,
+    "family_component:signed:q6": 724,
+    "family_component:unsigned:q6": 724
+  },
+  "numerical_audits_computed": 0,
+  "working_model_fits_computed": 0,
+  "scientific_eligibility": false,
+  "scope": "Every actual closed stage binding freshly rehashed; complete serialized cohort/design/response/basis census and three exact original terminal handles verified. Complete X/y/setting reconstruction rests on the closed source producer/reader; not rerun here. No broader unconsumed parent replay, covariance numeric audit, fit or biological acceptance."
+}

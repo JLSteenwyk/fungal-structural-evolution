@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_covariance_qualification.py",
+    "--output",
+    "data/software_audits/full-weighted-covariance-qualification-20261004-v1",
+    "--receipt",
+    "metadata/full_weighted_covariance_qualification_software_validation_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_covariance_qualification_software_resources_20261004_v1.json": "e0a00bc0f6de74e0c5fa1d0ee7abebbf4701beaa004d92f609d650a635a96f74",
+    "scripts/check_full_weighted_covariance_qualification.py": "4077fb801b0265e109086d053ac1b7dc11730af2b253647baa2580e093283bf4",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "ea66180a8c414c11a5be7b00af49778a",
+  "wrapper": {
+    "pid": 2534053,
+    "created": 1791074346.82,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_covariance_qualification_software_resources_20261004_v1.json",
+      "--execution",
+      "metadata/full_weighted_covariance_qualification_software_execution_20261004_v1.json",
+      "--receipt",
+      "metadata/full_weighted_covariance_qualification_software_validation_20261004_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_covariance_qualification.py",
+      "--output",
+      "data/software_audits/full-weighted-covariance-qualification-20261004-v1",
+      "--receipt",
+      "metadata/full_weighted_covariance_qualification_software_validation_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-04T00:39:07.981242+00:00"
+}

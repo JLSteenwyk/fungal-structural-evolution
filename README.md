@@ -13,13 +13,22 @@ evolutionary analyses have finished. GPU prediction remains paused. Authorized
 CPU analyses and background catalog retrieval continue.
 
 The [full four-control covariance source census](docs/full-weighted-covariance-source-census-20261004.md)
-is running across all 4,340 original cohorts, 130,200 designs, 260,400 response
-inputs and 622,080 settings. It reconstructs every X/y input, verifies the saved
-reuse controls and preserves every setting link. The future numerical grid has
+has completed all 4,340 original cohorts, 130,200 designs, 260,400 response
+inputs and 622,080 settings, including serialized readback and full provenance
+closure. A fresh check verified all 13,119 stage bindings and three original
+terminal jobs. It reconstructs every X/y input, verifies the saved reuse controls
+and retains every setting link. The numerical grid has
 5,208,000 audits and 24,883,200 setting links; these have **not** been computed
 by this source stage. Software checks passed all declared synthetic cases and
-18 rehashed corruptions. Full source readback/closure, numerical qualification,
+18 rehashed corruptions. Numerical qualification,
 timing, weighted fits and biological acceptance remain pending.
+
+The [complete weighted numerical workflow](docs/full-weighted-covariance-qualification-20261004.md)
+is now running after that exact source closure: all 5,208,000 audit records and
+24,883,200 original setting links, with separate component and latent arithmetic.
+Software checks passed three complete synthetic grids totaling 18,000 records
+and 72,000 links, including qualified nonuniform q4/q5/q6 bases and review states.
+Real weighted numerical output and model fits are not yet complete.
 
 A [matched predictor branch control](docs/matched-predictor-branch-controls-20261003.md)
 has completed all 931 fixed-topology native fits and independent full readback.

@@ -1,0 +1,25 @@
+{
+  "status": "queued_full_original_four_control_numerical_qualification_and_latent_readback",
+  "source_plan": "metadata/full_weighted_covariance_qualification_plan_20261004_v1.json",
+  "source_plan_sha256": "0b3d08a7c9b09258b3289f5f2ddf574e8915203dd35658753b1bfc0d32125a8c",
+  "launches": [
+    "metadata/full_weighted_covariance_numerical_v1_launch_20261003.json",
+    "metadata/full_weighted_covariance_numerical_v1_readback_launch_20261003.json",
+    "metadata/full_weighted_covariance_numerical_v1_closure_launch_20261003.json"
+  ],
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "designs": 130200,
+    "fit_inputs": 260400,
+    "settings": 622080,
+    "case_row_occurrences": 34110120,
+    "numerical_audit_rows": 5208000,
+    "setting_audit_links": 24883200
+  },
+  "prerequisite_source_closure": "metadata/full_weighted_covariance_source_census_completed_20261004_v1.json",
+  "weighted_working_model_fits_launched": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "all_eight_aims_incomplete": true
+}

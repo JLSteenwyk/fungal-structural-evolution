@@ -1,0 +1,287 @@
+{
+  "status": "verified_original_full_four_control_numerical_runtime",
+  "checked_utc": "2026-10-04T01:11:30.786052+00:00",
+  "source_plan": "metadata/full_weighted_covariance_qualification_plan_20261004_v1.json",
+  "source_plan_sha256": "0b3d08a7c9b09258b3289f5f2ddf574e8915203dd35658753b1bfc0d32125a8c",
+  "frozen_pins_checked": 44,
+  "original_handles": [
+    {
+      "unit": "fungal-full-weighted-covariance-numerical-v1-20261003-v1.service",
+      "pid": 2975921,
+      "created": 1791075296.46,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_numerical_v1_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_weighted_covariance_numerical_v1_wait_plan_20261003.json",
+      "plan_sha256": "a85921d91db1cad04ae62548240b5494e1b7131f5c7b43e8cd4fde89665e3a69",
+      "checked_utc": "2026-10-04T00:54:57.197607+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-weighted-covariance-numerical-v1-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_numerical_v1_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_weighted_covariance_numerical_v1_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.08,
+      "children": [
+        {
+          "pid": 3078625,
+          "created": 1791075717.04,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification.py",
+            "--plan",
+            "metadata/full_weighted_covariance_qualification_plan_20261004_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 572.44
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "24f8df33b54cc4991f7ee882d6374f7c849afb3804987514ba65d90e1b351a5e",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 2826153984,
+        "memory.peak": 2936856576,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 3078625,
+          "created": 1791075717.04,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/full_weighted_covariance_qualification.py",
+            "--plan",
+            "metadata/full_weighted_covariance_qualification_plan_20261004_v1.json"
+          ],
+          "rss_bytes": 2849656832,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             536870912            536870912            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         25769803776          25769803776          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-weighted-covariance-numerical-v1-readback-20261003-v1.service",
+      "pid": 2975928,
+      "created": 1791075296.51,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_numerical_v1_readback_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_weighted_covariance_numerical_v1_readback_wait_plan_20261003.json",
+      "plan_sha256": "e745f6ac72dd3f64cb0da27788493bf9b835ebaf0d502848d5477733aa1019fa",
+      "checked_utc": "2026-10-04T00:54:57.233353+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-weighted-covariance-numerical-v1-readback-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_numerical_v1_readback_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_weighted_covariance_numerical_v1_readback_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.1,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "c551d1bf365a47c4cae7573acab874a71d6890d81938546a1f113789917a26ef",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8466432,
+        "memory.peak": 8990720,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    },
+    {
+      "unit": "fungal-full-weighted-covariance-numerical-v1-closure-20261003-v1.service",
+      "pid": 2975938,
+      "created": 1791075296.55,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_numerical_v1_closure_wait_plan_20261003.json"
+      ],
+      "plan": "metadata/full_weighted_covariance_numerical_v1_closure_wait_plan_20261003.json",
+      "plan_sha256": "5443f530a22c84aafc21ca6a62798c7b12424e47beba04f209d05d3a32240d60",
+      "checked_utc": "2026-10-04T00:54:57.270616+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "systemd_launch_command": [
+        "systemd-run",
+        "--user",
+        "--collect",
+        "--unit=fungal-full-weighted-covariance-numerical-v1-closure-20261003-v1.service",
+        "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+        "--property=CPUQuota=200%",
+        "--property=MemoryMax=32G",
+        "--property=MemorySwapMax=0",
+        "--setenv=PYTHONUNBUFFERED=1",
+        "--setenv=OPENBLAS_NUM_THREADS=1",
+        "--setenv=OMP_NUM_THREADS=1",
+        "--setenv=MKL_NUM_THREADS=1",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_after_verified_dependencies_v2.py",
+        "--plan",
+        "metadata/full_weighted_covariance_numerical_v1_closure_wait_plan_20261003.json"
+      ],
+      "launch": "metadata/full_weighted_covariance_numerical_v1_closure_launch_20261003.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.11,
+      "children": [],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "204e727306ae2dc39ff59dc50a5b7bd2d6fb23500e612bda4c38e6341a3db753",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 8474624,
+        "memory.peak": 8790016,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": []
+    }
+  ],
+  "original_source_closure_dependency": {
+    "launch": "metadata/full_weighted_covariance_source_census_v1_closure_launch_20261003.json",
+    "pid": 2425077,
+    "created": 1791073168.98,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_after_verified_dependencies_v2.py",
+      "--plan",
+      "metadata/full_weighted_covariance_source_census_v1_closure_wait_plan_20261003.json"
+    ],
+    "launch_sha256": "4bb67f0a480f6f9e098e3feff903a0b7b8f07bb628ebc4144cdf09210579451d",
+    "status": "verified_original_terminal_success_with_bound_completed_artifacts",
+    "journal_sha256_at_observation": "aff26ab5ed439999567ec0e9761cd83f3a1ea437d558c29c75aa6ed2c012d43c",
+    "captured_process_messages": 85,
+    "original_failure_records": [],
+    "completion_resource_records": [
+      {
+        "__REALTIME_TIMESTAMP": "1791075708545869",
+        "CPU_USAGE_NSEC": "16441475000",
+        "MEMORY_PEAK": "3514368",
+        "MEMORY_SWAP_PEAK": "0"
+      }
+    ]
+  },
+  "expected": {
+    "logical_cases": 75188,
+    "cohorts": 4340,
+    "designs": 130200,
+    "fit_inputs": 260400,
+    "settings": 622080,
+    "case_row_occurrences": 34110120,
+    "numerical_audit_rows": 5208000,
+    "setting_audit_links": 24883200
+  },
+  "output_root_present": true,
+  "cohort_audit_segment_files": 11,
+  "cohort_link_segment_files": 10,
+  "receipt_states": {
+    "receipt.json": {
+      "present": false
+    },
+    "readback.json": {
+      "present": false
+    }
+  },
+  "completion_gates": {
+    "source": {
+      "path": "metadata/full_weighted_covariance_source_census_completed_20261004_v1.json",
+      "present": true,
+      "status": "complete_verified_full_four_control_covariance_source_census_v1",
+      "sha256": "f038d9da6bb513296d65695bc852f72c6fad448310991de8d637445cf3c4dc69",
+      "bound_source_hashes": 13119,
+      "exact_process_journals_checked": 2
+    },
+    "numerical": {
+      "path": "metadata/full_weighted_covariance_qualification_completed_20261004_v1.json",
+      "present": false
+    }
+  },
+  "last_progress_message": "fresh_weighted_covariance_cohorts 10",
+  "current_failure_files": [],
+  "working_model_fits_launched": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "all_eight_aims_incomplete": true,
+  "scope": "Original identities/journals and actual caps, frozen pins, available receipts/segments and closure archive hashes only. Partial segment files are not completed audits. No independent full output/source replay, native fit, new numerical qualification claim, restart or biological acceptance."
+}

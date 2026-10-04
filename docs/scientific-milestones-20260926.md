@@ -1457,3 +1457,22 @@ dependent. Uniform validation, whole-grid fitting, uncertainty calibration,
 accepted framework/reconciliation, ancestral posterior adequacy and all
 eight biological aims remain open. GPU inference stays paused.
 [Completed proof and remaining scope](nonuniform-covariance-cones-20261003.md).
+
+
+October4,00:57UTC: the full source producer has completed4340cohorts/130200X/
+260400y/622080settings; serialized source readback/closure remains pending.
+The complete four-control numerical producer/latent-reader/two-journal-closure
+are now queued:5208000records/24883200links without narrowing the original
+grid. Software passed all18000records/72000links across three complete grids,
+including qualified nonuniform q4/q5/q6, all controls and explicit reviews.
+Real numerical qualification, timing/fits/calibration and accepted effects
+remain incomplete. None of the eight aims is complete; GPU prediction paused.
+[Workflow and remaining gates](full-weighted-covariance-qualification-20261004.md).
+
+October4,01:07UTC completion update: full source reconstruction/readback/
+closure passed all4,340cohorts/130,200designs/260,400responses/622,080settings.
+A fresh verification checked all13,119actual stage bindings and three original
+terminal handles. The full real numerical producer has started; its independent
+readback/closure, working-model timing/fits/calibration and all biological aims
+remain incomplete.
+[Closed source evidence](../metadata/full_weighted_covariance_source_census_completed_verification_20261004_v1.json).

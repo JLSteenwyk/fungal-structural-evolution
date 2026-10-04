@@ -1,0 +1,36 @@
+{
+  "status": "passed_independent_cached_positive_diagonal_basis_contracts_v1",
+  "checked_utc": "2026-10-04T00:32:02.996799+00:00",
+  "general_diagonal_cases": 24,
+  "named_uniform_basis_cases": 4,
+  "row_permutations": 24,
+  "full_rank_design_transforms": 24,
+  "reordered_calls": 24,
+  "caller_input_and_result_isolation_checks": 20,
+  "constant_diagonal_diagnostic_reviews": 16,
+  "explicit_zero_norm_cases": 4,
+  "invalid_diagonal_design_cases_rejected": 40,
+  "maximum_dense_raw_error": 1.4551915228366852e-11,
+  "maximum_dense_projected_error": 1.4551915228366852e-11,
+  "unchanged_comparison_rtol": 3e-09,
+  "unchanged_comparison_atol": 2e-08,
+  "source_hashes": {
+    "scripts/independent_positive_diagonal_basis_context.py": "7529f3df052dcc979483a3613acd4a51085d3aa1b521f1f2087001665ca26d83",
+    "scripts/check_independent_positive_diagonal_basis_context.py": "d2dfd3216596c3eb4f58ff1c1982a5d7c7ea7d2840421f0fc613eeec7f5b05d8",
+    "scripts/independent_positive_diagonal_kernel_products.py": "0198f5bf692d72099408d111196f96c1550736e15a04006a525bc0dc87ce1a6f",
+    "scripts/positive_diagonal_basis_context.py": "364a99da2238de3f8a57c17ce72f50239b119e53a00b3c95e2186fd8b104ca47",
+    "scripts/covariance_basis_context.py": "2b7a23ddf885aa71fe345d3994dd69abcfff1227f1120651bea70a49db7881b8",
+    "scripts/covariance_basis_audit.py": "51a21f1f40f4c3365d6b9d18353591fc0237a81fd0463f57b1a14485ff913608",
+    "scripts/reduced_covariance_basis.py": "5126f8f7d1a5d52cae903a906fbaa040151e64e411f8c4cc7bcd992820495b1a",
+    "scripts/covariance_exact_folds_v2.py": "bf2bdc481f591977f9c98974f8bcfab224a22b30c11b3054a294ad7fb1fe6b30",
+    "scripts/check_positive_diagonal_kernel_products.py": "890d7b37b368c127fb4ea7f50df8a377def256d0c2a418a479f6d1abf08dd4cd",
+    "scripts/check_retained_shared_entity_candidates.py": "ba170584e0b2806c10b0a59d27d78f43d8adf1237dbe61009bfbc7f4795bd47f",
+    "scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f"
+  },
+  "artifacts": {
+    "data/software_audits/independent-positive-diagonal-basis-20261004-v1/independent_cached_diagonal_cases.json": "6bfd6e8059851f635ff162a6a6a26c1c6ccf135802506f8878eccab64945a1d1"
+  },
+  "scientific_eligibility": false,
+  "full_real_data_weighted_qualification_complete": false,
+  "scope": "Complete declared q4/q5/q6 mode/diagonal comparisons to separate latent calculations, component cache and explicit dense error contrasts. Fresh bounds, same strict comparisons, constant/near-uniform dependence and zero norm reviews retained. No saved uniform audit or measured real-data speedup, fit or biological acceptance."
+}
