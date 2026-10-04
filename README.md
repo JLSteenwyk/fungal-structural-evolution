@@ -40,6 +40,15 @@ results. The full unlaunched configuration retains 20,832,000 potential ML/REML
 candidates and 49,766,400 original-setting links. Real numerical closure,
 full-data timing, real fits and biological inference remain unfinished.
 
+The [complete four-control timing workflow](docs/full-weighted-timing-20261004.md)
+is implemented and queued behind the original weighted numerical closure.
+Software checks passed 72,000 candidate identities, 320 eligible groups with
+actual numerical probes and 64 additional q4/q5/q6 cases. Every real candidate,
+source review and eligible group remains in scope. The reader reconstructs
+all selections, replays every numeric probe and checks runtime accounting;
+shared review arrays retain their original bytes. Full-data timing and real
+weighted fitting have not started. GPU prediction remains paused.
+
 A [matched predictor branch control](docs/matched-predictor-branch-controls-20261003.md)
 has completed all 931 fixed-topology native fits and independent full readback.
 It holds complete protein identity, sequence positions, observation masks and
@@ -105,28 +114,27 @@ inputs. Controlled diagnostics reproduced 8-MiB native stack exhaustion on
 both; a scoped 64-MiB limit allowed initial logging to finish. The
 [fresh follow-up](docs/baliphy-native-stack-correction-20261003.md) now runs
 all 24 failed roles with new seeds, preserved models/priors and full
-1,620-role provenance. At 22:10 UTC, eight follow-ups had timed out and four
+1,620-role provenance. At 02:26 UTC October 4, sixteen follow-ups had timed out and four
 workers were active. Full sampling/readback/closure remains pending. Originals and global
 defaults stay unchanged. These short checks do not qualify ancestral
 posteriors or repair the two older allocation failures.
 
 The [fresh full covariance reader](docs/full-process-covariance-readback-20261003.md)
-is running across all 4,340 cohorts, 1,302,000 audits and 6,220,800 setting
-links. Eight bounded worker processes retain frozen arithmetic and tolerances
-and now capture the exact audit/matrices if rejected. Complete software
-checks passed; full numerical validation remains pending. The old mismatch
-is unexplained despite 2,700 passing diagnostic comparisons. The newly
-qualified retained-basis stage is queued behind complete validation; production
-fitting has not started. Original failed outputs and serial queues stay
-preserved.
+has completed all 4,340 cohorts, 1,302,000 audits and 6,220,800 setting links,
+including full provenance closure over 2,378,669 bindings and both original
+journals. Original seven-kernel covariance reviews remain explicit. The old
+mismatch is unexplained despite 2,700 passing diagnostic comparisons; this
+reader's success does not establish its cause or historical repair. The
+retained-basis qualification has started after that closure; production fitting
+has not started. Original failed outputs and serial queues stay preserved.
 
 The [complete retained fitting and timing workflow](docs/full-retained-fitting-and-timing-20261003.md)
 is now software qualified. It preserves all 5,208,000 potential candidates and
 12,441,600 setting links. The full-data timing census is queued behind complete
 process/retained covariance closure; no production fitting has been launched
 or queued. Independent fitting readback and numerical reviews remain explicit.
-At 22:10 UTC the process reader had checked 1,147/4,340 cohorts; validation and
-the cause of the original mismatch remain unresolved. Runtime remains
+The process reader and provenance closure have finished; retained qualification,
+timing and the cause of the original mismatch remain unresolved. Runtime remains
 uncalibrated, and all eight biological aims remain incomplete.
 
 The [full positive-diagonal covariance-cone proof](docs/nonuniform-covariance-cones-20261003.md)

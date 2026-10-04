@@ -3183,3 +3183,25 @@ production tolerances and proposed resources remain in an unlaunched draft;
 actual numerical closure, complete qualified-input timing and installed caps
 still gate fits. These software checks do not establish biological effects.
 [Producer/reader, tests, resources and pending gates](full-weighted-fitting-20261004.md).
+
+### Complete actual-D qualified-input timing
+
+The full 20,832,000-candidate grid is censused before native fitting. Each
+eligible cohort/control/mode/tree/outcome/method selects the greatest active
+column count, then normalized design condition, then candidate ID over all
+original designs. At scaled variance zero and one, actual-D source/production/
+independent latent guards and primary/component-spectral likelihood agreement
+are measured separately. Original certificate bases, all four controls,
+pair exceptions, response identities, numerical tolerances and reviews remain
+bound. The reader reconstructs every source/selection and replays all numeric
+groups, while retaining original observed hardware durations. Reviews preserve
+original input arrays through byte-bound content-addressed custody.
+
+Conditional budget accounting includes 1,503 primary evaluations and
+1,522/1,526/1,530 independent evaluations for q4/q5/q6 plus guards/setup and
+failure-reproduction paths. This neither bounds unknown optimizer-point costs
+nor forecasts finish time. Three complete synthetic grids pass 72,000 candidate
+identities and 320 native timing groups, with 64 separate numerical groups;
+source/journal fixtures are synthetic and no native probe is mocked. Real
+full-data closure/timing and enforced fitting resources still gate fitting,
+followed by inferential calibration. [Full contracts and limits](full-weighted-timing-20261004.md).

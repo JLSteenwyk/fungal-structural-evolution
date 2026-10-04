@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_timing.py", line 212, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_timing.py", line 176, in main
+    pp=next(p for p in (root/'cohorts').glob('*.probes.json') if json.loads(p.read_text()))
+StopIteration

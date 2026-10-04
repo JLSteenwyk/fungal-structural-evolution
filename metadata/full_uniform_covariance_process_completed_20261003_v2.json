@@ -1,0 +1,37 @@
+{
+  "status": "complete_verified_full_uniform_covariance_qualification",
+  "logical_cases": 75188,
+  "model_setting_rows": 622080,
+  "unique_cohorts": 4340,
+  "unique_designs": 130200,
+  "audit_rows": 1302000,
+  "setting_audit_links": 6220800,
+  "audit_status_counts": {
+    "covariance_basis_requires_review": 1302000
+  },
+  "link_status_counts": {
+    "covariance_basis_requires_review": 6220800
+  },
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "loading_modes": [
+    "signed",
+    "unsigned"
+  ],
+  "full_hash_archive": "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/completion_archive.json",
+  "full_hash_archive_sha256": "d7ab103e78283d08d4b5da017a7d3aab76df9d0c2ab381834bb515cdd5365145",
+  "bound_source_hashes": 2378669,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/phylogeny/full-uniform-covariance-qualification-20261002-v1/receipt.json",
+  "producer_receipt_sha256": "6120453f5305a5a6afec5af5ebb0dd7e9460c786f54763d9b9d59fe3109bebef",
+  "independent_readback": "results/phylogeny/full-uniform-covariance-process-readback-20261003-v2/readback.json",
+  "independent_readback_sha256": "7e91deb966218e2dc4d12759aa21ba776401108e43021a28fc3b73272ac2c5e2",
+  "completion_plan_sha256": "fdba6fbe4ecf3dd856ea678c152d038fc1bda0dda164ed8c3285a593fb4c721d",
+  "scientific_eligibility": false,
+  "scope": "Complete independent readback of the unchanged original75188cases/622080settings/4340cohorts/130200designs/1302000audits/6220800setting links, both loading modes and all five trees. Eight bounded forked cohort processes change only scheduling; original latent independent products, normalizedQR, reciprocal-condition checks, entire Gram/error envelopes,gesvd rank validation and failure reproduction remain frozen. All source hashes, recipes, review/empty/constant/failed states and exact SQL identities retained. At most16pending cohort payloads; new immutable root, capture rejected exact audits/matrices/reference products without allowing completion; no original edits/restarts/output substitution. Original producer plus this complete independent reader require both exact original process/invocation journals and complete hashes for separate alternate closure. Original serial reader and queued descendants remain unchanged. New downstream consumers need a separately versioned explicit alternate-readback source adapter; old paths are never written. No numerical tolerance relaxation, rank deletion, accepted covariance/variance model, production optimizer or biological effect. Existing CPU resources only; no GPU, new charges or completed biological aims."
+}

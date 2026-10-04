@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_weighted_shared_entity_timing_v3.py",
+    "--output",
+    "data/software_audits/full-weighted-shared-entity-timing-20261004-v3",
+    "--receipt",
+    "metadata/full_weighted_timing_software_validation_20261004_v3.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_positive_diagonal_kernel_software_stage.py": "c095c356e6a5118e573b42ec96319a4f9f2cb3509dc46dc38b6043d4f154ce1f",
+    "metadata/full_weighted_timing_software_resources_20261004_v3.json": "61c9c3ae6e283481772f8a93740153d5800b89b5d9da55ee339f869e82751c88",
+    "scripts/check_full_weighted_shared_entity_timing_v3.py": "67530792debd87a05b967502e86144c98aa554ac56be9401e328487a2a5f11c9",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "ba1a301a70f945678d6a79c3f99b75cc",
+  "wrapper": {
+    "pid": 3297438,
+    "created": 1791080745.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_positive_diagonal_kernel_software_stage.py",
+      "--resources",
+      "metadata/full_weighted_timing_software_resources_20261004_v3.json",
+      "--execution",
+      "metadata/full_weighted_timing_software_execution_20261004_v3.json",
+      "--receipt",
+      "metadata/full_weighted_timing_software_validation_20261004_v3.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_shared_entity_timing_v3.py",
+      "--output",
+      "data/software_audits/full-weighted-shared-entity-timing-20261004-v3",
+      "--receipt",
+      "metadata/full_weighted_timing_software_validation_20261004_v3.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-04T02:25:46.842700+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T02:27:57.029250+00:00",
+  "child": {
+    "pid": 3297444,
+    "created": 1791080746.15,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_weighted_shared_entity_timing_v3.py",
+      "--output",
+      "data/software_audits/full-weighted-shared-entity-timing-20261004-v3",
+      "--receipt",
+      "metadata/full_weighted_timing_software_validation_20261004_v3.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 130.18633889290504,
+  "child_cpu_seconds": 130.065569,
+  "child_peak_rss_bytes": 186900480,
+  "receipt": "metadata/full_weighted_timing_software_validation_20261004_v3.json",
+  "receipt_sha256": "513f90d92b47088941d358d4204d5e0ba127a9eca4b89b46b54152bdea22c63c",
+  "artifacts": {
+    "metadata/full_weighted_timing_software_execution_20261004_v3/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_weighted_timing_software_execution_20261004_v3/configuration.json": "697980c277c7707334ce82e89c6d301f2e70ca35dd9121a0aa48087208f63bb3",
+    "metadata/full_weighted_timing_software_execution_20261004_v3/stdout.log": "8f8cce71fb051e1d1c2034cea3c0e76d196a222b6e5b819f107343d59fdb7df4",
+    "metadata/full_weighted_timing_software_execution_20261004_v3/process.json": "388e28a432fe40911c7fed9052f798be7d8400adeb931222eb5d6c9022f1820b"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

@@ -13102,3 +13102,50 @@ was progress through full source-adapter/actual-D bridge qualification; this
 turn is progress through implemented/qualified full exports and reader plus
 a complete unlaunched configuration. All eight aims remain incomplete, the
 original goal stays active and GPU inference stays paused.
+
+
+## October 4, 02:30 UTC: complete weighted timing qualified and queued
+
+Implemented the full20.832million-candidate census, deterministic maximum
+column/condition/identity selection in every eligible cohort/control/mode/tree/
+outcome/method group, actual-D qualification and primary/component-spectral
+probes at0and1, full fresh numerical/selection/accounting readback and restart
+contracts. Every original exclusion/review remains explicit. Content-addressed
+original review arrays preserve exact rows/labels/X/y/D/factors without repeated
+matrix storage; all referenced original bytes are rechecked.
+
+Three complete synthetic five-cohort grids passed72000candidate identities,
+320eligible native timing groups/640points;64separate q4/q5/q6common/exception
+cases passed128points. Native probes are not mocked; source/journal fixtures
+are synthetic. Fifteen rehashed output/checkpoint alterations, fifteen malformed
+probe exports and twelve source-closure alterations were rejected. Positive
+restoration, independent selection maxima, byte-preserving checkpoint replay,
+completed restart refusal and array-sharing/corruption checks passed. V1/V2
+fixture failures are preserved; V3 changes only the missing parent-directory
+setup after V2's three complete grids passed, without scientific code changes.
+
+Actual original V3 tool wait50869exited0; exact wrapper/create/command and
+original invocation start/end were verified with442bound artifacts. Native
+software CPU/RSS130.07seconds/186900480bytes do not estimate production costs.
+The full timing plan preserves the historical unlaunched fitting draft and
+stricter production gradient1e-6/batch32. Prospective raw arrays/records559.39GiB,
+768GiBscratch/868GiBfree disk; two CPU/32GiB/no swap/BLAS1/AS24GiB with168CPUhour
+capacity cap and2GiBfile limit are installed in the three timing controllers.
+
+All three original timing controllers were freshly confirmed live, waiting
+for original weighted numerical closer2975938; no real timing root or real fit
+exists. Weighted numerical producer reported140/4340cohorts, no recorded failure;
+independent readback/closure remains pending. Uniform process readback now has
+full1.302million-audit/6.2208million-link/2378669binding closure and both original
+journals; retained qualification has started. Its success does not explain the
+historical uniform mismatch. Predictor resampling reported27344/53200draws;
+ancestral follow-up retains16timeouts/four live workers without posterior
+adequacy. The installed original numeric formatter still fails its fresh probe.
+
+The preceding goal turn was progress through full weighted fit exports and
+software qualification. The intervening user error recheck was a verified wait
+on exact live jobs plus a fresh native formatter probe. This turn is progress
+through full weighted timing implementation/qualification and installed queued
+controllers. Real weighted numerical/timing/fitting/calibration and all eight
+biological aims remain open; GPU predictions remain paused, no paid resources.
+[Full timing workflow and original evidence](full-weighted-timing-20261004.md).

@@ -1,0 +1,30 @@
+{
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 3600,
+  "wall_seconds_per_stage": 7200,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "output_allowance_gib": 2,
+  "runtime_planning_seconds": [
+    10,
+    3600
+  ],
+  "runtime_calibrated": false,
+  "complete_synthetic_source_grids": 3,
+  "synthetic_candidate_rows": 72000,
+  "actual_additional_numeric_groups": 64,
+  "actual_additional_numeric_points": 128,
+  "prepared_utc": "2026-10-04T02:21:28.523877+00:00",
+  "available_ram_gib": 296.39637756347656,
+  "free_disk_gib": 10293.296741485596,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Complete source/census/selection/timing/checkpoint/readback software qualification, all four actual residual controls, both modes/outcomes/methods and all five trees; synthetic source/journal closures. Every eligible group uses native numerical probes without mocks; separate64q4/q5/q6groups. No native optimization, biological pilot or production timing launch.",
+  "preserved_previous_checker_failure": "metadata/full_weighted_timing_software_failure_20261004_v1.json",
+  "version_change": "Checkpoint test reaches the first eligible cohort instead of assuming either first two cohorts is eligible. Review custody uses byte-bound content-addressed arrays shared across all probes, preserving all inputs while removing duplicate array storage. Frozen numerical/source/likelihood modules and tolerance/budget/resource caps unchanged."
+}

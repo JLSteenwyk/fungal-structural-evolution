@@ -1,0 +1,21 @@
+field	type	definition
+candidate_id	sha256	Original full fitting-contract identity; all controls/modes/trees/responses/methods retained.
+identity_sha256	sha256	Canonical digest of the exact source candidate, reconstructed during readback.
+source_disposition	enum	Original source state, including exclusions/constants/numerical covariance reviews.
+group_id	sha256_or_null	Eligible cohort/control/mode/tree/outcome/method timing group; null for unready original candidates.
+benchmark_candidate_id	sha256_or_null	Maximum active-column/normalized-condition/candidate-ID tuple over all original designs in that eligible group.
+eligible_candidates	integer	Original qualified candidate multiplicity represented by the measured group.
+diagonal_sha256	sha256	Actual residual D array identity, bound to original control record and source audit.
+variance_points	float_array	Declared scaled variance points zero and one; no optimization performed.
+status	enum	Numeric agreement only, precision review, numerical disagreement review or construction review.
+primary_evaluation_seconds	float	Observed primary point duration, not a bound on unmeasured optimizer points.
+independent_evaluation_seconds	float	Observed independent spectral point duration; hardware durations are not reproduced by the reader.
+original_numeric_inputs	object	Review-input references for original rows/labels/X/y/D/factor; byte-bound content-addressed arrays.
+original_bytes_sha256	sha256	Raw contiguous original array bytes before compression, with dtype and shape separately bound.
+source_hashes	path_sha256_mapping	Consumed source artifacts and actual stage contracts; full closure includes two original journals.
+conditional_budget_weighted_seconds	float	Original eligible counts times explicit evaluation budgets times maximum measured point costs plus setup; conditional planning only.
+unmeasured_review_candidate_coverage	integer	Eligible candidates represented by review probes; excluded from conditional runtime extrapolation but retained in census.
+fresh_numeric_probes_replayed	integer	Every exported group reconstructed and numerically recomputed during full reader validation.
+independent_hardware_timing_reimplementation	boolean	False; reader verifies accounting and numerical semantics, not independently reproducible hardware durations.
+production_finish_eta	null	Timing probes do not establish a production or project finish ETA.
+scientific_eligibility	boolean	Always false; software/timing success does not accept a fitted biological effect.

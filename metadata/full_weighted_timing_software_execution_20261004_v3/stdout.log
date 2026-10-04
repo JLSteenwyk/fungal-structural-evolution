@@ -1,0 +1,168 @@
+full_shared_entity_timing_cohort 1 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 2 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 3 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 4 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 5 / 5 cases 4800 timing_groups 0
+{"logical_cases": 24, "model_setting_rows": 600, "unique_cohorts": 5, "candidate_rows": 24000, "eligible_candidates": 0, "timing_groups": 0, "source_status_counts": {"exact_four_control_covariance_basis_requires_review": 12000, "insufficient_residual_dimension": 9600, "constant_response_requires_review": 2400}, "timing_status_counts": {}, "measured_candidate_coverage": 0, "unmeasured_review_candidate_coverage": 0, "conditional_budget_weighted_seconds": 0}
+{"logical_cases": 24, "model_setting_rows": 600, "unique_cohorts": 5, "candidate_rows": 24000, "eligible_candidates": 0, "timing_groups": 0, "source_status_counts": {"exact_four_control_covariance_basis_requires_review": 12000, "insufficient_residual_dimension": 9600, "constant_response_requires_review": 2400}, "timing_status_counts": {}, "measured_candidate_coverage": 0, "unmeasured_review_candidate_coverage": 0, "conditional_budget_weighted_seconds": 0}
+full_shared_entity_timing_cohort 1 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 2 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 3 / 5 cases 4800 timing_groups 160
+full_shared_entity_timing_cohort 1 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 2 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 1 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 2 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 3 / 5 cases 4800 timing_groups 160
+full_shared_entity_timing_cohort 4 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 5 / 5 cases 4800 timing_groups 0
+{"logical_cases": 24, "model_setting_rows": 600, "unique_cohorts": 5, "candidate_rows": 24000, "eligible_candidates": 4800, "timing_groups": 160, "source_status_counts": {"exact_four_control_covariance_basis_requires_review": 7200, "insufficient_residual_dimension": 9600, "numerically_qualified_exact_four_control_covariance_basis": 4800, "constant_response_requires_review": 2400}, "timing_status_counts": {"timed_all_declared_points_agree_only": 160}, "measured_candidate_coverage": 4800, "unmeasured_review_candidate_coverage": 0, "conditional_budget_weighted_seconds": 41877.080635197926}
+{"logical_cases": 24, "model_setting_rows": 600, "unique_cohorts": 5, "candidate_rows": 24000, "eligible_candidates": 4800, "timing_groups": 160, "source_status_counts": {"exact_four_control_covariance_basis_requires_review": 7200, "insufficient_residual_dimension": 9600, "numerically_qualified_exact_four_control_covariance_basis": 4800, "constant_response_requires_review": 2400}, "timing_status_counts": {"timed_all_declared_points_agree_only": 160}, "measured_candidate_coverage": 4800, "unmeasured_review_candidate_coverage": 0, "conditional_budget_weighted_seconds": 41877.080635197926}
+full_shared_entity_timing_cohort 1 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 2 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 3 / 5 cases 4800 timing_groups 160
+full_shared_entity_timing_cohort 4 / 5 cases 4800 timing_groups 0
+full_shared_entity_timing_cohort 5 / 5 cases 4800 timing_groups 0
+{"logical_cases": 24, "model_setting_rows": 600, "unique_cohorts": 5, "candidate_rows": 24000, "eligible_candidates": 4800, "timing_groups": 160, "source_status_counts": {"exact_four_control_covariance_basis_requires_review": 7200, "insufficient_residual_dimension": 9600, "numerically_qualified_exact_four_control_covariance_basis": 4800, "constant_response_requires_review": 2400}, "timing_status_counts": {"timed_all_declared_points_agree_only": 160}, "measured_candidate_coverage": 4800, "unmeasured_review_candidate_coverage": 0, "conditional_budget_weighted_seconds": 57231.30713468185}
+{"logical_cases": 24, "model_setting_rows": 600, "unique_cohorts": 5, "candidate_rows": 24000, "eligible_candidates": 4800, "timing_groups": 160, "source_status_counts": {"exact_four_control_covariance_basis_requires_review": 7200, "insufficient_residual_dimension": 9600, "numerically_qualified_exact_four_control_covariance_basis": 4800, "constant_response_requires_review": 2400}, "timing_status_counts": {"timed_all_declared_points_agree_only": 160}, "measured_candidate_coverage": 4800, "unmeasured_review_candidate_coverage": 0, "conditional_budget_weighted_seconds": 57231.30713468185}
+{
+  "status": "passed_complete_four_control_timing_census_native_numeric_and_accounting_contracts_v3",
+  "checked_utc": "2026-10-04T02:27:56.788070+00:00",
+  "complete_synthetic_grids": [
+    {
+      "grid": 0,
+      "candidate_rows": 24000,
+      "timing_groups": 0,
+      "eligible_candidates": 0,
+      "timing_status_counts": {},
+      "producer": "data/software_audits/full-weighted-shared-entity-timing-20261004-v3/timing-0/receipt.json",
+      "reader": "data/software_audits/full-weighted-shared-entity-timing-20261004-v3/timing-0/readback.json"
+    },
+    {
+      "grid": 1,
+      "candidate_rows": 24000,
+      "timing_groups": 160,
+      "eligible_candidates": 4800,
+      "timing_status_counts": {
+        "timed_all_declared_points_agree_only": 160
+      },
+      "producer": "data/software_audits/full-weighted-shared-entity-timing-20261004-v3/timing-1/receipt.json",
+      "reader": "data/software_audits/full-weighted-shared-entity-timing-20261004-v3/timing-1/readback.json"
+    },
+    {
+      "grid": 2,
+      "candidate_rows": 24000,
+      "timing_groups": 160,
+      "eligible_candidates": 4800,
+      "timing_status_counts": {
+        "timed_all_declared_points_agree_only": 160
+      },
+      "producer": "data/software_audits/full-weighted-shared-entity-timing-20261004-v3/timing-2/receipt.json",
+      "reader": "data/software_audits/full-weighted-shared-entity-timing-20261004-v3/timing-2/readback.json"
+    }
+  ],
+  "total_candidate_rows": 72000,
+  "full_grid_selected_groups": 320,
+  "actual_additional_numeric_groups": 64,
+  "actual_additional_numeric_points": 128,
+  "full_grid_native_probes_mocked": false,
+  "source_and_journal_fixtures_synthetic": true,
+  "rehashed_output_alterations_rejected": [
+    "rehashed_checkpoint_foreign_diagonal",
+    "omit_candidate",
+    "duplicate_candidate",
+    "control_identity",
+    "selected_candidate",
+    "eligible_count",
+    "missing_probe",
+    "false_success",
+    "invented_review",
+    "changed_diagonal",
+    "changed_planning",
+    "missing_artifact",
+    "extra_artifact",
+    "source_hash",
+    "stage_contract"
+  ],
+  "malformed_probe_exports_rejected": [
+    "foreign_identity",
+    "wrong_control",
+    "changed_D",
+    "count",
+    "condition",
+    "lost_point",
+    "negative_time",
+    "nan_time",
+    "false_agreement",
+    "extra_field",
+    "missing_parameter",
+    "negative_normalization",
+    "promote_science",
+    "invented_precision",
+    "invented_construction"
+  ],
+  "synthetic_source_closure_alterations_rejected": [
+    [
+      0,
+      "producer_hash"
+    ],
+    [
+      0,
+      "reader_hash"
+    ],
+    [
+      0,
+      "wrong_status"
+    ],
+    [
+      0,
+      "changed_count"
+    ],
+    [
+      1,
+      "producer_hash"
+    ],
+    [
+      1,
+      "reader_hash"
+    ],
+    [
+      1,
+      "wrong_status"
+    ],
+    [
+      1,
+      "changed_count"
+    ],
+    [
+      2,
+      "producer_hash"
+    ],
+    [
+      2,
+      "reader_hash"
+    ],
+    [
+      2,
+      "wrong_status"
+    ],
+    [
+      2,
+      "changed_count"
+    ]
+  ],
+  "closed_producer_chunks_replayed_without_rewrite": true,
+  "completed_producer_and_reader_restarts_refused": true,
+  "full_grid_selections_independently_recomputed": true,
+  "review_input_arrays_content_addressed_and_byte_replayed": true,
+  "review_input_array_corruption_rejected": true,
+  "primary_evaluation_budget": 1503,
+  "independent_evaluation_budgets": [
+    1522,
+    1526,
+    1530
+  ],
+  "production_finish_eta": null,
+  "scientific_eligibility": false,
+  "fits_computed": 0,
+  "production_timing_launched": false
+}

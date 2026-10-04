@@ -1488,3 +1488,17 @@ preserves stricter production settings. Actual numerical closure, full timing,
 installed resources, real fits/calibration and all eight biological aims remain
 required. GPU prediction paused; no new charge.
 [Full workflow and scientific limits](full-weighted-fitting-20261004.md).
+
+October 4, 02:30 UTC: full four-control timing census/probes/readback and shared
+review-array custody are implemented and software qualified. Three complete
+synthetic grids pass 72,000 original candidate identities and 320 native timing
+groups; 64 additional common/pair-exception groups cover q4/q5/q6. No native
+probe is mocked. Full 20.832-million-candidate timing is queued behind the
+original weighted numerical closer with enforced two-CPU/32-GiB/no-swap caps.
+At the fresh check, all three original timing controllers were live waiting,
+the real timing root was absent, and weighted numerical production reported
+140/4,340 cohorts with no recorded failure. Full uniform process readback and
+2,378,669-binding closure are now complete; retained qualification has started.
+Real weighted timing, fits, calibration and all eight biological aims remain
+unfinished. GPU prediction stays paused; no new charge.
+[Timing scope, checks and limits](full-weighted-timing-20261004.md).

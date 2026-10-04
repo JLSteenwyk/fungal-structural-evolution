@@ -1633,3 +1633,24 @@ unlaunched draft retains stricter production gradient1e-6/batch32 and all
 20.832-million potential candidates/49.7664-million links. Real numerical
 closure, complete timing and installed resources remain launch prerequisites.
 [Full contracts and actual original software evidence](full-weighted-fitting-20261004.md).
+
+## October 4: measure every eligible actual-D input group before weighted fitting
+
+Retain all 20.832 million original candidate identities and all four policy
+labels, even when two policy diagonals are equal. Choose the largest active
+design, then highest normalized condition, then candidate identity, within
+each cohort/control/mode/tree/outcome/method. Measure both declared variance
+points and source/constructor/fresh production/independent latent costs.
+Independently reconstruct every selection and recompute every numeric probe
+during readback, including successes; hardware durations remain observations.
+Checkpoint hashes alone cannot invent or conceal a numerical result.
+
+Share identical original review arrays through content-addressed, byte-checked
+custody instead of storing full matrices for every mode/method probe. Retain
+every review with its exact source and numerical evidence. Preserve original
+V1/V2 fixture failures and qualify fresh V3 without numerical/tolerance changes.
+Require original full weighted numerical closure before timing and full real
+timing plus installed fit resources before native optimization. Queue the full
+timing producer/reader/closer only; leave GPU predictions paused and real fits
+unlaunched. Conditional budgets are neither a runtime bound nor a finish ETA.
+[Original evidence, resource allowances and remaining gates](full-weighted-timing-20261004.md).

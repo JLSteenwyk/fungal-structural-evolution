@@ -113,8 +113,10 @@ Whole-grid timing must retain all potential candidate identities and every
 eligible cohort/policy/mode/tree/outcome/method group, up to 694,400 groups.
 Both variance points, constructor/qualification costs and optimizer/audit budgets
 must be accounted for; unmeasured reviews cannot silently enter an ETA. Runtime
-remains uncalibrated. A complete timing implementation, actual full numerical
-closure, real timing and installed resources remain required before any fit
+remains uncalibrated. The [complete timing implementation](full-weighted-timing-20261004.md)
+is now software qualified and queued behind original numerical closure, retaining
+every candidate and all four controls. Actual full numerical
+closure, real timing and installed fitting resources remain required before any fit
 launch, followed by full independent real fit closure and inferential calibration.
 Existing local CPU resources imply no new charge; GPU prediction stays paused.
 All eight biological aims and the full original project remain incomplete.

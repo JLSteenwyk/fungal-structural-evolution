@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_timing_v2.py", line 230, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_timing_v2.py", line 209, in main
+    actual_bindings,probe_rejections=actual(a.output);bindings.update(actual_bindings)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_weighted_shared_entity_timing_v2.py", line 52, in actual
+    saved_arrays+=review_inputs(capture_root,captured,r,source,rows)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/full_weighted_timing_contracts_v2.py", line 117, in review_inputs
+    bank.mkdir(exist_ok=True)
+  File "/home/bizon/anaconda3/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/software_audits/full-weighted-shared-entity-timing-20261004-v2/review-array-custody/review_input_arrays'
