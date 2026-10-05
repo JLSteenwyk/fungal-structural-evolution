@@ -23,6 +23,12 @@ filtering and ESMFold integration. The complete old/new comparison verifies
 tables and a descriptive PNG/PDF figure are available; 2,820,979 proteins
 remain unlinked in this AFDB snapshot. The structural atlas is unfinished.
 
+The [full refreshed domain registry](docs/completed-retrieval-domain-registry-20261005.md)
+is now running across all 2.94 million models with unchanged annotation
+policies. Complete independent interval/protein-link readback is prepared;
+confidence, predictor integration and evolutionary event inference remain
+separate requirements.
+
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite
 integrity checks and two excluded special-value reviews**. This does not

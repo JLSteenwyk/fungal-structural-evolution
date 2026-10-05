@@ -1,0 +1,14 @@
+{
+  "producer_plan": "metadata/completed_afdb_domain_registry_plan_20261005_v1.json",
+  "producer_receipt": "metadata/completed_afdb_domain_registry_20261005_v1.json",
+  "producer_transport": "metadata/completed_afdb_domain_registry_transport_20261005_v1.json",
+  "output": "results/domains/whole-proteome-structure-domain-registry-20261005-v1-readback",
+  "pins": {
+    "metadata/completed_afdb_domain_registry_plan_20261005_v1.json": "a91a87a06e641d63bd273d67d78ac096778cbbde5340128446d4f4b59c522939",
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "scripts/readback_structure_domain_registry_v2.py": "62942a115471e7a67c154b8d9ab0347043b9d1aca8ba7f8ed18c8e44270534c0",
+    "scripts/readback_structure_domain_registry.py": "8c9ad8f237a449467bb25346652e59aedc0e6b32d58d74e15052474dae8742d7",
+    "metadata/completed_afdb_domain_registry_source_equivalence_20261005_v1.json": "47ec1bfb05b5f3245f2575c0ae2788221cd17714d1e40a4dbc310a233b560859"
+  },
+  "scope": "Independent full2,935,733model/2,994,868proteinlink reconstruction; do not launch before actual original producer wait and transport close. Every interval/policy/candidate flag/protein link required. No partial acceptance or changed policy thresholds."
+}

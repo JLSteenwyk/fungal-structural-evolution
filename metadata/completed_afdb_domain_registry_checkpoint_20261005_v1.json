@@ -1,0 +1,69 @@
+{
+  "status": "verified_original_full_domain_registry_running",
+  "checked_utc": "2026-10-05T16:57:14.204098+00:00",
+  "unit": "fungal-completed-afdb-domain-registry-20261005-v1.service",
+  "invocation_id": "544cc1e796ce41658556ca4aca061ef7",
+  "original_tool_session_id": 93892,
+  "wrapper": {
+    "pid": 251281,
+    "created": 1791219275.13,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_afdb_domain_registry_resources_20261005_v1.json",
+      "--execution",
+      "metadata/completed_afdb_domain_registry_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_domain_registry_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_completed_afdb_domain_registry_v1.py",
+      "--plan",
+      "metadata/completed_afdb_domain_registry_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_domain_registry_20261005_v1.json"
+    ]
+  },
+  "child_processes": [
+    {
+      "pid": 251285,
+      "created": 1791219275.54,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_completed_afdb_domain_registry_v1.py",
+        "--plan",
+        "metadata/completed_afdb_domain_registry_plan_20261005_v1.json",
+        "--receipt",
+        "metadata/completed_afdb_domain_registry_20261005_v1.json"
+      ]
+    },
+    {
+      "pid": 251426,
+      "created": 1791219289.6,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/build_structure_domain_registry.py",
+        "--plan",
+        "metadata/completed_afdb_domain_registry_plan_20261005_v1.json"
+      ]
+    }
+  ],
+  "checkpoint_counts": {
+    "models": 1150000,
+    "models_without_hits": 417299,
+    "segments": 1151322,
+    "policy_hits": 4582766
+  },
+  "stage": "joining_models",
+  "producer_receipt_present": false,
+  "full_independent_reader_launched": false,
+  "full_scope_models": 2935733,
+  "full_scope_protein_links": 2994868,
+  "source_hashes": {
+    "metadata/completed_afdb_domain_registry_launch_20261005_v1.json": "75a56a710b644c1fbec1a329e6385c98dac80d17875d7e18fb9560908c0e3545"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Exact original running wrapper/create/command and current process tree/checkpoint. Live state JSON counts are checkpoint evidence only, not full registry or independent arithmetic acceptance."
+}

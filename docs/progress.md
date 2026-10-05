@@ -1,5 +1,18 @@
 # Progress and evidence
 
+## October 5, 16:55 UTC: full refreshed domain registry launched
+
+The expanded catalog now feeds the unchanged full annotation registry:
+2,935,733 models and 2,994,868 protein links, all four architecture policies
+and original interval eligibility rules. Closed full catalog/comparison
+receipts and the complete annotation database are pinned. The original
+producer is confirmed live under two CPUs, 32 GiB/no swap and original
+session 93892; its join has recorded 410,000 models. A full independent
+reader with unchanged reconstruction and an actual original transport
+gate is prepared, not launched. Confidence/PAE, ESMFold integration,
+structural boundaries and evolutionary events are not accepted by this join.
+[Scope, resources, exact launch and remaining gates](completed-retrieval-domain-registry-20261005.md).
+
 ## October 5, 16:42 UTC: full catalog and all-taxon change replay closed
 
 The completed retrieval catalog now has full producer/independent-reader

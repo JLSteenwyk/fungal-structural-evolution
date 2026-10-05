@@ -1,0 +1,28 @@
+{
+  "prepared_utc": "2026-10-05T16:55:32.155131+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 7200,
+  "wall_seconds_per_stage": 14400,
+  "per_file_limit_mib": 32768,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 256,
+  "available_ram_gib": 623.4556198120117,
+  "free_disk_gib": 10137.59790802002,
+  "output_allowance_gib": 1,
+  "estimated_wall_hours": [
+    0.1,
+    1.5
+  ],
+  "runtime_is_uncalibrated": true,
+  "expected_models": 2935733,
+  "expected_protein_links": 2994868,
+  "previous_full_producer_seconds": 347.791444027971,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Full independent readback of every2,935,733model/interval/policy/candidate and2,994,868proteinlinks with SQLintegrity/hash/source checks; full old reader reconstruction unchanged. Actual original producer terminal/transport required. No native fitting, prediction, coordinate confidence or evolutionary acceptance."
+}
