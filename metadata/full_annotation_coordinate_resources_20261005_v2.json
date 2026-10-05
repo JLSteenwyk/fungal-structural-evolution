@@ -1,0 +1,33 @@
+{
+  "prepared_utc": "2026-10-05T21:07:04.947956+00:00",
+  "cpus": 4,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 28,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 16384,
+  "minimum_available_ram_gib": 32,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 256,
+  "estimated_output_gib": [
+    20,
+    128
+  ],
+  "estimated_wall_hours": [
+    1,
+    48
+  ],
+  "runtime_is_uncalibrated": true,
+  "ncbi_feature_rows": 60434823,
+  "ncbi_cds_segments": 23306261,
+  "ncbi_annotation_compressed_bytes": 1183724940,
+  "largest_ncbi_annotation_feature_rows": 1549550,
+  "available_ram_gib": 634.3851051330566,
+  "free_disk_gib": 10022.583885192871,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "basis": "All519NCBI annotation receipts contain60,434,823features/23,306,261CDSparts in1,183,724,940compressedbytes. Includes five external annotations and two full provisional ORF tables,5,927,745sourceproducts and 5,815,847representatives. Four CPU workers,32GiB,no swap, one BLAS thread. SQLite raw lines,decoded attributes and indexes estimated20-128GiB;256GiB allowance includes journals/temp/index scratch. 1-48h uncalibrated planning range,7day CPU/wall safety caps are not an ETA; no new paid resources."
+}

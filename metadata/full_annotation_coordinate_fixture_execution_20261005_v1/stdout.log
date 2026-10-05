@@ -1,0 +1,27 @@
+{
+  "status": "passed_offline_literal_full_annotation_registry_controls",
+  "checked_utc": "2026-10-05T21:04:48.176315+00:00",
+  "checks": [
+    "ncbi_protein_gff:full_literal_independent_replay",
+    "transcript_gff:full_literal_independent_replay",
+    "creolimax_gtf:full_literal_independent_replay",
+    "verified_orf_coordinates:full_literal_independent_replay",
+    "literal_multipart_phase_circular_virtual_coordinates_retained",
+    "literal_escaped_commas_and_translation_exception_retained",
+    "literal_alternative_unresolved_and_outside_source_products_retained",
+    "independent_reader_rejects_coordinate_despite_rebound_hash",
+    "independent_reader_rejects_phase_despite_rebound_hash",
+    "independent_reader_rejects_multipart_identifier_despite_rebound_hash",
+    "independent_reader_rejects_candidate_reference_despite_rebound_hash",
+    "independent_reader_rejects_parent_despite_rebound_hash",
+    "independent_reader_rejects_representative_selection_despite_rebound_hash",
+    "independent_reader_rejects_gene_mapping_despite_rebound_hash",
+    "independent_reader_rejects_missing_feature_despite_rebound_hash",
+    "independent_reader_rejects_lost_exception_despite_rebound_hash"
+  ],
+  "count": 16,
+  "scientific_eligibility": false,
+  "corpus_pilot": false,
+  "gpu": false,
+  "scope": "All four source modes, complete literal source/product inventory and deliberately corrupted coordinate/phase/parent/multipart/product/exception/baseline records. No corpus or genome reconstruction qualification."
+}

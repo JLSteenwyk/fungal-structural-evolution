@@ -1,5 +1,16 @@
 # Open scientific milestones — updated October 5, 2026
 
+## October 5: full annotation-coordinate stage running
+
+The full 526-entry registry preserves all 5,927,745 source protein products,
+unchanged 5,815,847 representatives and all annotation feature/Parent/CDS
+candidate records. Sixteen literal controls pass; original fullCPU execution
+is live. Independent full replay and assembly-DNA-to-CDS checks remain
+pending; existing 519 taxon CDS-to-protein comparisons do not establish genomic
+agreement. This is an annotation/artifact-control dependency, not accepted
+gene copies or a completed evolutionary aim. All eight aims and final release
+remain unfinished. [Scope and evidence](full-annotation-coordinate-registry-20261005.md).
+
 Independent original PAE decoding/statistic reconstruction now closes all
 55,959 available matrices/18,290,462,939 directional values with actual original
 reader API/native/full-journal completion. All 61,660 bindings pass; the original

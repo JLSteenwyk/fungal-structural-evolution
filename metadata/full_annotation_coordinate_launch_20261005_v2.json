@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-full-annotation-coordinate-registry-20261005-v2.service",
+  "pid": 446987,
+  "created": 1791234432.73,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_annotation_coordinate_resources_20261005_v2.json",
+    "--execution",
+    "metadata/full_annotation_coordinate_execution_20261005_v2.json",
+    "--receipt",
+    "metadata/full_annotation_coordinate_20261005_v2.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_annotation_coordinate_registry_v2.py",
+    "--plan",
+    "metadata/full_annotation_coordinate_plan_20261005_v2.json",
+    "--receipt",
+    "metadata/full_annotation_coordinate_20261005_v2.json"
+  ],
+  "plan": "metadata/full_annotation_coordinate_plan_20261005_v2.json",
+  "plan_sha256": "c47d164010ae05533207bf5ab781ff5573314fbd9814f9afba305c450af36890",
+  "checked_utc": "2026-10-05T21:07:46.391798+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "efca3a4c4c804e949e1b21876340e7c4",
+  "original_tool_session_id": 9848,
+  "source_hashes": {
+    "metadata/full_annotation_coordinate_execution_20261005_v2/configuration.json": "af41cd7136edd0b1ca433f5f920b86d9f1bd87a540f5853677544ad02a5d1ad6",
+    "metadata/full_annotation_coordinate_plan_20261005_v2.json": "c47d164010ae05533207bf5ab781ff5573314fbd9814f9afba305c450af36890"
+  },
+  "scientific_eligibility": false
+}

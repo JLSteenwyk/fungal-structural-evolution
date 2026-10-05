@@ -1,5 +1,21 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## Full annotation-coordinate inventory, October 5
+
+The full annotation registry indexes every original feature and Parent/product
+reference from 519 NCBI GFFs, four external GFFs, the Creolimax GTF and two full
+provisional ORF tables. It binds original source hashes and preserves all
+5,927,745 normalized source products with exact sequence digests, original
+mapping/selection records and5,815,847 unchanged representatives. Multipart
+CDS coordinates, strand, phase, partial/exception/translation/circular
+attributes and unresolved candidates remain explicit. It does not trim
+phase or reconstruct/translate coding DNA. A separate full reader replays
+all source lines, candidate links and products;16 offline controls include
+literal exceptions and independent rejection of rebound-hash corruption.
+Shared Python/SQLite/Biopython dependencies remain. Full producer/reader
+closure and independently qualified assembly-to-CDS reconstruction are
+pending. [Detailed method and limitations](full-annotation-coordinate-registry-20261005.md).
+
 ## October 5: complete original PAE reconstruction and full genomic DNA inputs
 
 The independent available-matrix reader reconstructs all 55,959 original AFDB/

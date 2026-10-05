@@ -1,5 +1,34 @@
 # Progress and evidence
 
+## October 5, 21:08 UTC: full annotation-coordinate/product registry launched
+
+The preceding goal continuation was a verified wait: original DNA 63351 and
+PAE 80777 handles were confirmed live, source/annotation conventions were
+inspected, and no new analysis stage was launched. The subsequent user update
+verified the completed source-model counts; it added no structures.
+
+This continuation freezes all 526 annotation/product sources and launches the
+full registry with four CPU workers/32 GiB/no swap. It includes all 5,927,745 source
+products, unchanged 5,815,847 representatives, all alternatives/unresolved
+mappings, and both provisional ORF tables. The 519 NCBI source receipts contain
+60,434,823 features and 23,306,261 CDS parts; all source rows/Parent/exception/phase
+and direct product candidates are retained. Sixteen offline independent
+corruption/literal controls pass with actual original tool/native exits.
+V1 controls are preserved; V2 fixes a prelaunch transient-journal inventory
+race without changing annotation rules. Full original session 9848 is live,
+59 taxa/4,469,257 features indexed at 21:08 UTC. The full independent reader is prepared,
+not launched or queued before original full producer closure.
+
+Fresh original identities/resources are verified: DNA 280/526 taxa with no
+errors and all deposited lengths matching; PAE 9,400 new matrices/zero failures;
+coordinate profiles 764,000 models/295,790,383 positions, no rejection;
+domain extraction 805,230 intervals, no rejection. Full timing has 16 workers,
+1,266 checkpoints/no failure files; full biological fits remain zero. GPU
+prediction remains paused. Existing CDS-to-protein checks do not replace
+assembly-to-CDS reconstruction. Full atlas/source qualification, accepted
+frameworks, uncertainty, all eight evolutionary aims and final release remain
+unfinished. [Full registry scope and continuation gates](full-annotation-coordinate-registry-20261005.md).
+
 ## October 5, 20:39 UTC: complete available-PAE reconstruction; full assembly DNA launched
 
 The previous goal turn is progress: it recovered executor access, stopped and

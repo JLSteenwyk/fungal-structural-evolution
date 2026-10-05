@@ -1,5 +1,17 @@
 # Decisions and unresolved questions
 
+## 2026-10-05: retain every annotation coordinate and source protein product
+
+Build the full 526-taxon indexed registry before genomic CDS reconstruction.
+Keep all 5,927,745 source products, alternatives, unresolved gene maps and
+provisional ORFs alongside the unchanged 5,815,847 representative baseline.
+Preserve multipart/circular/phase/exception/Parent records and outside-source
+CDS references. Candidate transcript/gene links are not biological admission.
+Full producer and independent every-row replay must close before reuse;
+genome-CDS comparisons additionally require independently closed assembly DNA.
+V1 software controls are immutable; full V2 changes only the stable-file
+storage guard. [Scope, resources and evidence](full-annotation-coordinate-registry-20261005.md).
+
 ## October 5: acquire exact assembly DNA across the full sampling universe
 
 Retain all 526 entries and exact original assembly/publisher versions. Verify

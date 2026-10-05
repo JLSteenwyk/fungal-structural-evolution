@@ -1,0 +1,17 @@
+{
+  "prepared_utc": "2026-10-05T21:07:04.947956+00:00",
+  "producer_plan": "metadata/full_annotation_coordinate_plan_20261005_v2.json",
+  "producer_receipt": "metadata/full_annotation_coordinate_20261005_v2.json",
+  "producer_transport": "metadata/full_annotation_coordinate_transport_20261005_v2.json",
+  "output": "results/annotation-coordinate-independent-readback-20261005-v1",
+  "cpu": 4,
+  "expected_taxa": 526,
+  "launch_state": "not_launched_or_queued",
+  "pins": {
+    "metadata/full_annotation_coordinate_plan_20261005_v2.json": "c47d164010ae05533207bf5ab781ff5573314fbd9814f9afba305c450af36890",
+    "scripts/readback_full_annotation_coordinate_registry_v1.py": "fb8edfdc61460bcb10589ad63af9280fd9e5271afa0c101d83948b222e9b5677",
+    "metadata/full_annotation_coordinate_fixture_20261005_v2.json": "a6e061650230357490b5c0409b04ff1dc2e0d2853d476040cf94ec89ad240248",
+    "metadata/full_annotation_coordinate_fixture_transport_20261005_v2.json": "fa7826da3835063f9c6b303360107d6785854648ee039d4b8ee8ffb5b6cf6aee"
+  },
+  "gate": "Actual original full producer API/native zero, whole journal and all declared source/output bindings; unavailable receipt/transport keeps this reader unlaunched. Genome-CDS work additionally requires qualified assembly DNA."
+}
