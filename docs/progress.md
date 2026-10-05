@@ -1,5 +1,39 @@
 # Progress and evidence
 
+## October 5, 22:26 UTC: complete genome acquisition and independent CDS reader software
+
+The preceding goal turn made progress: it completed the full annotation producer/
+independent replay and original execution closure, prepared the full genome-CDS
+producer/source freezer with 19 offline controls, and published 51 owned files
+at 0ad020a0. The intervening user status check changed no analysis state.
+
+Original genome acquisition has completed all 526 entries with zero errors,
+retaining 26,645,610,508 bases. All 519 NCBI lengths match deposited whole-
+assembly reports. Actual original API 63351/native zero, full invocation journal
+and source/output bindings close. The independent whole-genome reader is
+verified live under original 98777, with 423 genomes reconstructed at 22:26 UTC;
+its full completion and original execution closure are required before CDS
+source freezing.
+
+The separate full genomic-CDS comparison reader is prepared and passes 18
+offline literal/semantic corruption controls with original tool/native/full-
+wrapper closure. It uses its own FASTA decoder, byte-table complement, physical-
+feature reference grouping and explicit ordering. All original products,
+alternatives, loci, target multiplicities, phases and exceptions remain in
+scope. Full comparison producer/reader execution is not launched or queued.
+The 19 producer controls remain unchanged. This is annotation-control progress,
+not new structures, accepted gene copies or completed evolutionary findings.
+All eight aims and final release remain unfinished.
+[Full genome evidence](full-assembly-dna-20261005.md) and
+[comparison reader/source gate](full-genome-annotation-cds-20261005.md).
+
+Fresh exact original runtime checks at 22:27–22:29 UTC verify 1,086,000
+coordinate-audited models/429,199,537 positions, 1,129,047 exported domain
+intervals and 15,700 new verified PAE matrices, without current rejection/
+retrieval failures. Full timing has 16 workers/1,321 checkpoints and zero
+full biological fits. No native job is restarted; GPU prediction remains
+paused. These partial observations do not replace full independent closure.
+
 ## October 5, 21:45 UTC: full annotation registry independently closed; CDS software prepared
 
 The preceding goal turn was progress: it froze the complete 526-entry

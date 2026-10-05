@@ -1,5 +1,17 @@
 # Decisions and unresolved questions
 
+## 2026-10-05: compare genomic CDS with independently implemented sequence logic
+
+Prepare the complete comparison reader before launching the full producer.
+Use a separate binary FASTA parser, IUPAC complement table and physical-feature
+reference aggregation to check every source coordinate/candidate/target/product.
+Retain shared Python/gzip/SQLite/hash dependencies explicitly. Eighteen offline
+controls, including ten rebound-hash semantic corruptions, pass with original
+execution closure. Full reader source freezing follows complete source-plan
+preparation; actual full comparison producer API/native/journal completion gates
+full reader launch. No corpus pilot, source repair or predictor selection is
+introduced. [Full reader evidence and scope](full-genome-annotation-cds-20261005.md).
+
 ## 2026-10-05: genomic CDS agreement requires unmodified, source-bound comparisons
 
 The full annotation index and independent source replay are closed across
@@ -9,8 +21,8 @@ DNA. Preserve phase, overlaps, exceptions, ambiguous loci/orders and all
 alternatives. Compare all original 519 NCBI and four external publisher CDS
 files; mark the two ORF-derived targets as dependent consistency evidence.
 Creolimax transcript data are not a qualified CDS target. Nineteen literal
-controls pass; full source freezing/comparison and its independent reader
-remain pending. [Method/resources/limitations](full-genome-annotation-cds-20261005.md).
+controls pass; full source freezing/comparison and full reader execution remain pending.
+The separate comparison reader is now prepared with 18 offline controls. [Method/resources/limitations](full-genome-annotation-cds-20261005.md).
 
 ## 2026-10-05: retain every annotation coordinate and source protein product
 

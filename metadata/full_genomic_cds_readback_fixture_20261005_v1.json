@@ -1,0 +1,38 @@
+{
+  "status": "passed_offline_independent_genomic_CDS_full_source_replay_controls",
+  "checked_utc": "2026-10-05T22:12:29.119764+00:00",
+  "checks": [
+    "hand_calculated_all_IUPAC_complements_and_case",
+    "ncbi_protein_gff:every_literal_coordinate_candidate_CDS_product_replayed",
+    "transcript_gff:every_literal_coordinate_candidate_CDS_product_replayed",
+    "creolimax_gtf:every_literal_coordinate_candidate_CDS_product_replayed",
+    "verified_orf_coordinates:every_literal_coordinate_candidate_CDS_product_replayed",
+    "duplicate_gene_and_transcript_reference_does_not_duplicate_exon",
+    "unavailable_genome_keeps_all_source_and_target_records",
+    "unqualified_CDS_target_keeps_products_without_transcript_substitution",
+    "independent_reader_rejects_coordinate_end_despite_rebound_hash",
+    "independent_reader_rejects_candidate_sequence_hash_despite_rebound_hash",
+    "independent_reader_rejects_original_phase_despite_rebound_hash",
+    "independent_reader_rejects_explicit_order_despite_rebound_hash",
+    "independent_reader_rejects_lost_exception_despite_rebound_hash",
+    "independent_reader_rejects_target_sequence_hash_despite_rebound_hash",
+    "independent_reader_rejects_matching_locus_despite_rebound_hash",
+    "independent_reader_rejects_target_header_despite_rebound_hash",
+    "independent_reader_rejects_alternative_selection_despite_rebound_hash",
+    "independent_reader_rejects_missing_unresolved_product_despite_rebound_hash"
+  ],
+  "count": 18,
+  "source_hashes": {
+    "scripts/readback_full_genome_annotation_cds_v1.py": "5e4fbe23d49cc6291ade75bbaec254245aad7a879f5babf2b75ffb6986c386e6",
+    "scripts/audit_full_genome_annotation_cds_v1.py": "3272d6f5f6e9c734dabef17c6812034f0c0b5d8cb50b295630ff0c032baedc3e",
+    "scripts/genomic_cds_join_v1.py": "c9e9dbedcf0b26261df270a1d43c526848b4a8f53c904660c1b84a2c868e83be",
+    "scripts/build_full_annotation_coordinate_registry_v2.py": "eefc243a639ef7c59d9144930c656c70f7318c81df84248a0c0cf36f9d5f00b9",
+    "scripts/check_full_annotation_coordinate_registry_cases_v2.py": "995e0e21a44c5c1c412c1df38e8096035052758bca83c9bb0ba9bc9da167884c",
+    "scripts/check_full_genomic_cds_readback_cases_v1.py": "03a25a8a89acf20b34703ad983444a00c44c519d507d5874e3049924a3815cbc"
+  },
+  "scientific_eligibility": false,
+  "corpus_pilot": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Hand IUPAC complement, all four source modes, duplicate reference/missing source/target retention and10rebound-hash semantic corruptions. Reader imports no producer decoder, grouping or complement implementation. Literal software evidence only; no full corpus or biological acceptance."
+}

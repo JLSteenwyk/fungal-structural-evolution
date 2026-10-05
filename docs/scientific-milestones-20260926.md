@@ -1,5 +1,27 @@
 # Open scientific milestones — updated October 5, 2026
 
+## October 5, 22:26 UTC: complete genome acquisition and independent CDS reader software
+
+Original genome acquisition has completed all 526 entries with zero errors,
+retaining 26,645,610,508 bases. All 519 NCBI lengths match deposited whole-
+assembly reports. Actual original API 63351/native zero, full invocation journal
+and source/output bindings close. The independent whole-genome reader is
+verified live under original 98777, with 423 genomes reconstructed at 22:26 UTC;
+its full completion and original execution closure are required before CDS
+source freezing.
+
+The separate full genomic-CDS comparison reader is prepared and passes 18
+offline literal/semantic corruption controls with original tool/native/full-
+wrapper closure. It uses its own FASTA decoder, byte-table complement, physical-
+feature reference grouping and explicit ordering. All original products,
+alternatives, loci, target multiplicities, phases and exceptions remain in
+scope. Full comparison producer/reader execution is not launched or queued.
+The 19 producer controls remain unchanged. This is annotation-control progress,
+not new structures, accepted gene copies or completed evolutionary findings.
+All eight aims and final release remain unfinished.
+[Full genome evidence](full-assembly-dna-20261005.md) and
+[comparison reader/source gate](full-genome-annotation-cds-20261005.md).
+
 ## October 5, 21:45 UTC: full annotation source replay closed
 
 All 526 entry annotation/product databases and independent every-row source

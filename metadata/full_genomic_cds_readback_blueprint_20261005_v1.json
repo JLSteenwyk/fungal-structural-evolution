@@ -1,0 +1,38 @@
+{
+  "prepared_utc": "2026-10-05T22:19:56.097996+00:00",
+  "status": "full_independent_genomic_CDS_reader_software_prepared_source_plan_gated",
+  "expected_taxa": 526,
+  "expected_source_products": 5927745,
+  "expected_representatives": 5815847,
+  "offline_cases_passed": 18,
+  "source_hashes": {
+    "scripts/readback_full_genome_annotation_cds_v1.py": "5e4fbe23d49cc6291ade75bbaec254245aad7a879f5babf2b75ffb6986c386e6",
+    "scripts/prepare_full_genomic_cds_readback_plan_v1.py": "b07aa36337b6d0d0b887bf77c1acdedb561c390d33d458777fbae680e437e5ee",
+    "metadata/full_genomic_cds_readback_fixture_20261005_v1.json": "885a197010762fb4cb33528476e66860aaed7d31c5ff9ee89084c52fe0b70e3e",
+    "metadata/full_genomic_cds_readback_fixture_transport_20261005_v1.json": "6aa3f67dcacc6c68fefb02a7d0176cc4e156e102c994b40901cd24a3473482c9",
+    "metadata/full_genome_annotation_cds_blueprint_20261005_v1.json": "449524d66d980e9e7b970f83aba08da5da18353b6da51175505c90272beb99f9"
+  },
+  "source_plan_freezer": "scripts/prepare_full_genome_annotation_cds_v1.py",
+  "reader_plan_freezer": "scripts/prepare_full_genomic_cds_readback_plan_v1.py",
+  "launch_state": "not_launched_or_queued",
+  "full_comparison_source_plan_frozen": false,
+  "full_native_comparisons": 0,
+  "resources_design": {
+    "cpus": 4,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "address_space_gib": 56,
+    "blas_threads": 1,
+    "estimated_wall_hours": [
+      2,
+      72
+    ],
+    "runtime_is_uncalibrated": true,
+    "output_allowance_gib": 8,
+    "new_cost_usd": 0
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Complete future comparison reader uses own FASTA/byte complement/reference grouping/order; all original source products, alternatives, coordinate/target exclusions retained. Eighteen offline cases pass; full source-plan freeze awaits original independently closed assembly DNA. Full source-dependent estimates/plan and actual native comparison remain pending."
+}

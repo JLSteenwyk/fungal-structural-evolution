@@ -1,0 +1,240 @@
+{
+  "status": "verified_original_full_assembly_dna_runtime",
+  "checked_utc": "2026-10-05T22:26:49.021671+00:00",
+  "original_handle": {
+    "unit": "fungal-full-assembly-dna-readback-20261005-v1.service",
+    "pid": 499553,
+    "created": 1791238346.49,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_assembly_dna_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_assembly_dna_readback_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_assembly_dna_readback_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_assembly_dna_v1.py",
+      "--plan",
+      "metadata/full_assembly_dna_readback_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_assembly_dna_readback_20261005_v1.json"
+    ],
+    "plan": "metadata/full_assembly_dna_readback_plan_20261005_v1.json",
+    "plan_sha256": "bcc40295c4a7d3d2b8f373846c1c189758544cf87a8d32c47cd220e0cd00debd",
+    "checked_utc": "2026-10-05T22:16:47.796205+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "34359738368",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "27befef20bf64d1fa635bc01c27df9fa",
+    "original_tool_session_id": 98777,
+    "source_hashes": {
+      "metadata/full_assembly_dna_readback_execution_20261005_v1/configuration.json": "e44f61a0395492c915eeab78d7fa226b6e15bc5ee2cf75f198651c2b8a950b43",
+      "metadata/full_assembly_dna_readback_plan_20261005_v1.json": "bcc40295c4a7d3d2b8f373846c1c189758544cf87a8d32c47cd220e0cd00debd"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_assembly_dna_readback_launch_20261005_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 1.3199999999999998,
+    "children": [
+      {
+        "pid": 499555,
+        "created": 1791238346.93,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_assembly_dna_v1.py",
+          "--plan",
+          "metadata/full_assembly_dna_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_assembly_dna_readback_20261005_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 0.6799999999999999
+      },
+      {
+        "pid": 499556,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(7)"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 0.02
+      },
+      {
+        "pid": 499557,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 859.4
+      },
+      {
+        "pid": 499560,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 859.4200000000001
+      },
+      {
+        "pid": 499561,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=16)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 859.35
+      },
+      {
+        "pid": 499562,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=18)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 859.3100000000001
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "8bdfd1227f5070bb243cfa4f56d46ccddca83183b7404e71994f100b3f83ace8",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "34359738368",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 296833024,
+      "memory.peak": 432021504,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 499555,
+        "created": 1791238346.93,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_assembly_dna_v1.py",
+          "--plan",
+          "metadata/full_assembly_dna_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_assembly_dna_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 56623104,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             8589934592           8589934592           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 499556,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(7)"
+        ],
+        "rss_bytes": 7864320,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             8589934592           8589934592           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 499557,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 70443008,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             8589934592           8589934592           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 499560,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 94568448,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             8589934592           8589934592           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 499561,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=16)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 91398144,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             8589934592           8589934592           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 499562,
+        "created": 1791238347.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=18)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 88334336,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             8589934592           8589934592           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 98777,
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "efd5829ba5830fdfb424f54e06ff1c1a97e71b3eab4c5b5c4a04b93f20695014",
+    "value": {
+      "completed_taxa": 423,
+      "expected_taxa": 526,
+      "counts": {
+        "independently_reconstructed_original_genome": 423
+      }
+    }
+  },
+  "source_hashes": {
+    "metadata/full_assembly_dna_plan_20261005_v1.json": "50a873c07aacfc48c44f854d26b7a5effb19ba55398075fc7736be7e2892bf99",
+    "scripts/readback_full_assembly_dna_v1.py": "17ceab628f6de7bedb042d8c16aaa8958332af6473b5dbecf06357e2036c7ce3",
+    "metadata/full_assembly_dna_readback_fixture_20261005_v1.json": "66aaf06eff6dbb9fdfa6d22494c84bbfd3f9771903fb3e2b6adfe960322d4ecf",
+    "metadata/full_assembly_dna_readback_launch_20261005_v1.json": "8bdfd1227f5070bb243cfa4f56d46ccddca83183b7404e71994f100b3f83ace8",
+    "metadata/full_assembly_dna_readback_original_initial_tool_20261005_v1.json": "31adf8a37e0350df89d3e604109f75ebbc4c2f074e9a93a3097398996a87bb7c",
+    "metadata/full_assembly_dna_readback_plan_20261005_v1.json": "bcc40295c4a7d3d2b8f373846c1c189758544cf87a8d32c47cd220e0cd00debd",
+    "metadata/full_assembly_dna_readback_resources_20261005_v1.json": "29a0cdb5c7dfc5950519420dd3d970f8717596ec8f04c4a51a84fa230caf7c00",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_assembly_dna_checkpoint_v1.py": "861801b11b6020ec6146cd011b7796101f626e8daf53247a499fbfa04d14db7d"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original API initial identity, immutable plan/configuration sources and current native process/cgroup; producer state is a partial observation. No original API terminal, full genomic retrieval/statistic reconstruction, annotation or biology inferred. This observation does not restart jobs or modify original publisher sources."
+}

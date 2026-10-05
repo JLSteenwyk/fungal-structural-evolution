@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-full-assembly-dna-readback-20261005-v1.service",
+  "pid": 499553,
+  "created": 1791238346.49,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_assembly_dna_readback_resources_20261005_v1.json",
+    "--execution",
+    "metadata/full_assembly_dna_readback_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/full_assembly_dna_readback_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_assembly_dna_v1.py",
+    "--plan",
+    "metadata/full_assembly_dna_readback_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_assembly_dna_readback_20261005_v1.json"
+  ],
+  "plan": "metadata/full_assembly_dna_readback_plan_20261005_v1.json",
+  "plan_sha256": "bcc40295c4a7d3d2b8f373846c1c189758544cf87a8d32c47cd220e0cd00debd",
+  "checked_utc": "2026-10-05T22:16:47.796205+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "27befef20bf64d1fa635bc01c27df9fa",
+  "original_tool_session_id": 98777,
+  "source_hashes": {
+    "metadata/full_assembly_dna_readback_execution_20261005_v1/configuration.json": "e44f61a0395492c915eeab78d7fa226b6e15bc5ee2cf75f198651c2b8a950b43",
+    "metadata/full_assembly_dna_readback_plan_20261005_v1.json": "bcc40295c4a7d3d2b8f373846c1c189758544cf87a8d32c47cd220e0cd00debd"
+  },
+  "scientific_eligibility": false
+}

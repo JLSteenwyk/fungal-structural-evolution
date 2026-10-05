@@ -72,23 +72,30 @@ are zero live requests in those controls and no corpus pilot.
 
 ## Current evidence and required independent check
 
-The original full stage is live under API session 63351 and its exact immutable
-PID/creation/command/invocation/cgroup. At 20:39 UTC, **42/526 taxa** have publisher-
-bound DNA and original-record inventories, with no acquisition errors; all
-42 recomputed lengths match deposited whole-assembly totals. This is a partial
-producer observation, not completed acquisition or independent QC.
-[Runtime checkpoint](../metadata/full_assembly_dna_checkpoint_20261005_goal_2041.json).
+The original acquisition is complete across **526/526 entries**, with zero
+source/format errors: 519 downloaded NCBI genomes and seven publisher genomes
+checked in place. The retained FASTAs contain **26,645,610,508 bases**;
+**8,101,966,631 bytes** were downloaded. All 519 recomputed NCBI lengths match
+the original deposited whole-assembly reports. Original API session 63351
+returned zero; the exact native wrapper, original invocation journal and
+all declared source/output bindings close.
+[Full acquisition receipt](../metadata/full_assembly_dna_20261005_v1.json)
+and [original execution closure](../metadata/full_assembly_dna_transport_20261005_v1.json).
 
-A complete independent reader is prepared and fixture-checked, **not launched
-or queued** before actual original producer completion and original API/native
-zero/full-journal closure. It uses a separate Biopython sequence parser and raw
-headers, checks every contig digest, reconstructs all record/base/case/ambiguity/
-N50 metrics with integer/rational arithmetic, and rechecks every publisher
-listing/version/receipt. Fractional metrics use an explicit two-ULP roundoff
-bound; integer/count/hash checks are exact. Failed taxa remain present and
-unadmitted. Seven literal controls reject altered counts/metrics/contig hashes.
-The future full read uses four CPUs/32 GiB/no swap, with an uncalibrated 2–72 h
-planning range and seven-day cap.
+The complete independent reader launched only after that closure under original
+API session **98777**, with four CPUs, 32 GiB RAM and no swap. At **22:26 UTC**, it
+had independently reconstructed **423/526** genomes and remained verified live.
+Full completion and original API/native/journal closure are still required.
+[Original reader launch](../metadata/full_assembly_dna_readback_launch_20261005_v1.json)
+and [exact runtime checkpoint](../metadata/full_assembly_dna_readback_checkpoint_20261005_goal_2227.json).
+
+It uses a separate Biopython sequence parser and raw header/whitespace passes,
+checks every contig digest, reconstructs record/base/case/ambiguity/N50 metrics
+with integer/rational arithmetic, and rechecks every publisher listing/version/
+receipt. Fractional metrics use the unchanged explicit two-ULP roundoff bound;
+integer/count/hash checks are exact. Seven literal controls reject altered
+counts/metrics/contig hashes. The planning range was 2–72 hours, uncalibrated,
+with seven-day safety caps. No corpus pilot or source normalization occurs.
 
 - [Independent full reader](../scripts/readback_full_assembly_dna_v1.py)
   and [literal controls](../metadata/full_assembly_dna_readback_fixture_20261005_v1.json).

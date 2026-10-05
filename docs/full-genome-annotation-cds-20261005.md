@@ -9,9 +9,10 @@ readbacks, with their actual original execution closures.
 
 The software passed **19 offline checks** with actual original tool/native
 exit zero. The checks are hand-calculated literal joins and complete small
-source inventories, not a corpus pilot or biological qualification. A full
-independent comparison reader remains to be prepared before interpreting
-results. The overall project and all eight evolutionary aims remain unfinished.
+source inventories, not a corpus pilot or biological qualification. A separate full
+comparison reader is prepared and passes **18 offline controls**. Its full
+source plan and execution remain gated on completed genomic source verification
+and the original full comparison producer. The overall project and all eight evolutionary aims remain unfinished.
 
 ## Complete scope
 
@@ -90,6 +91,35 @@ seven-day CPU/wall and 16 GiB per-file safety caps are not ETAs. The freezer
 will record exact qualified genome/target totals and resource estimates
 before any expensive full launch. No GPU, prediction or paid provisioning is
 part of this stage.
+
+## Independent reader
+
+The separate reader imports no comparison-producer or join helpers. It uses
+its own binary FASTA decoder, IUPAC byte-table reverse complement, feature
+reference grouping and explicit-part ordering. It replays every feature
+coordinate, genomic candidate, original target record and source-product
+mapping/selection disposition. All matching loci, alternatives, phase and
+exception fields and missing-target reasons must agree. Python, gzip, SQLite,
+hashing libraries and original source inventories remain shared dependencies.
+
+Eighteen offline controls cover all four source modes, hand-calculated IUPAC
+complements, repeated gene/transcript references to one physical exon,
+unavailable genomes and the unqualified Creolimax target. Ten deliberate
+changes to coordinates, candidate/target sequence hashes, phase, part order,
+exceptions, matching indices, target headers, alternative selection and an
+unresolved product are rejected even after rebinding output hashes. These
+literal checks are software evidence; the full corpus has not been compared.
+The original single-call tool/native execution and complete wrapper journal
+close. The future full reader uses four CPUs, 64 GiB RAM, no swap, 56 GiB
+address space, one BLAS thread and an 8 GiB output allowance. Its 2–72 hour
+planning range is uncalibrated; seven-day safety caps are not an ETA.
+
+- [Separate reader](../scripts/readback_full_genome_annotation_cds_v1.py),
+  [offline controls](../scripts/check_full_genomic_cds_readback_cases_v1.py),
+  [actual result](../metadata/full_genomic_cds_readback_fixture_20261005_v1.json)
+  and [original execution closure](../metadata/full_genomic_cds_readback_fixture_transport_20261005_v1.json).
+- [Reader preparation blueprint](../metadata/full_genomic_cds_readback_blueprint_20261005_v1.json)
+  and [full reader plan freezer](../scripts/prepare_full_genomic_cds_readback_plan_v1.py).
 
 ## Reproducibility and launch gate
 

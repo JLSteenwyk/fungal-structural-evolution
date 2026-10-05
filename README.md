@@ -15,8 +15,8 @@ segments**. All coordinates, phases, exceptions, Parent links and unresolved
 candidate associations are retained for later assembly-to-CDS checks. Sixteen
 offline controls pass; full independent replay and original execution closure
 are complete. Genomic agreement remains pending. The [genome-to-CDS software](docs/full-genome-annotation-cds-20261005.md)
-also passes 19 offline controls; its full run remains gated on both source
-readbacks. These stages add annotation controls, not structures or inferred events.
+passes 19 producer and 18 independent-reader offline controls. Its full run
+remains gated on original independent assembly-DNA closure. These stages add annotation controls, not structures or inferred events.
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -63,8 +63,8 @@ The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now ret
 every source model and independently reconstruct the entire missing queue.
 All **55,959 previously available matrices** pass source/body validation and
 full independent decoding/statistic reconstruction across all 112 jobs. The
-corrected complete-queue downloader has verified **4,900 new PAE matrices**
-at 20:39 UTC, with no failures.
+corrected complete-queue downloader has verified **15,700 new PAE matrices**
+at 22:29 UTC, with no failures.
 Its initial cache-path failure, stopped output and unreceipted bytes are retained
 and excluded. PAE retrieval adds uncertainty data for existing structures;
 it does not add predicted structures or complete scientific atlas qualification.
@@ -72,12 +72,14 @@ Native completion of the available-matrix validation is journal-proven; its
 lost original API terminal remains explicit.
 
 The independent PAE reader has complete original API/native execution closure.
-The [full assembly-DNA stage](docs/full-assembly-dna-20261005.md) is running across
-all 526 taxa: exact files for 519 NCBI entries and seven existing publisher
-bundles. At 20:39 UTC, 42 taxa have verified DNA/record inventories. Full
-acquisition and independent readback remain pending; annotation, contamination,
-haplotig and duplication checks are subsequent requirements. DNA and PAE
-acquisition add supporting data, not predicted structures.
+The [full assembly-DNA stage](docs/full-assembly-dna-20261005.md) has completed
+across all 526 taxa with zero acquisition errors: 519 exact NCBI assembly files
+and seven publisher genomes checked in place, containing 26.65 billion bases.
+Original acquisition API/native/journal closure is complete. Its independent
+reader is running with four CPUs/32 GiB/no swap, with 423 genomes reconstructed
+at 22:26 UTC. Full reader completion remains required before genome-to-CDS
+comparison; contamination, haplotig and duplication checks remain subsequent
+requirements. DNA and PAE acquisition add supporting data, not structures.
 
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite
