@@ -6,6 +6,11 @@ a compatible log-scale exponentiation overflow mechanism. Original latent
 values remain unavailable; neither review case is admitted and no historical
 cause or adequate posterior is proven.
 
+The [V10 latent log-alpha logger](baliphy-latent-log-alpha-v10-20261005.md)
+now passes software and independent diagnostic controls while preserving
+all original scientific files in three paired short controls. Full-input
+V10 comparisons have not launched; old reviewed arrays remain excluded.
+
 ## October 5: all original failed-role comparisons closed
 
 All 24 original comparison roles finished with native exit zero. Independent

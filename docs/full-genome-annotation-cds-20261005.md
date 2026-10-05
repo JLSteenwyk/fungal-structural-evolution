@@ -1,21 +1,33 @@
 # Full assembly-to-annotation and CDS comparisons
 
-This stage will compare original assembly DNA with all annotated coordinates
-and available original CDS sequences across **526 entries**. It supports
-annotation controls for sequence–structure coupling, duplication, domain
-architecture and codon analyses. The complete source plan is now frozen after both full annotation and
-assembly-DNA readers passed with actual original execution closures. The full
-comparison launched under original session **18749** with four CPUs, 64 GiB RAM
-and no swap. At 22:43 UTC it is verified live while checking source hashes;
-no comparison rows have been completed yet. The paired full reader plan is
-prepared, not launched or queued before actual original producer closure.
+The full producer has compared original assembly DNA, annotation coordinates
+and all available original CDS sequences across **526 entries**, retaining
+**5,927,745 source products** and the unchanged **5,815,847 representatives**.
+Original producer session **18749** exited zero; complete native, source-hash
+and invocation-journal closure is recorded. The separate original reader
+**56533** has reconstructed every entry and all **5,923,039 CDS records**,
+with actual original API/native zero, full source-hash verification and
+complete invocation-journal closure. The compact handoff binds **10,604
+source/output files** and publishes all 526 taxon denominators.
+[Producer receipt](../metadata/full_genome_annotation_cds_20261005_v1.json) and
+[closed original execution](../metadata/full_genome_annotation_cds_transport_20261005_v1.json).
 
-The software passed **19 offline checks** with actual original tool/native
-exit zero. The checks are hand-calculated literal joins and complete small
-source inventories, not a corpus pilot or biological qualification. A separate full
-comparison reader is prepared and passes **18 offline controls**. Its full
-source plan is prepared after completed genomic source verification; full
-reader execution remains gated on the original full comparison producer. The overall project and all eight evolutionary aims remain unfinished.
+The producer reports **5,849,816 records with one exact unmodified genomic
+CDS candidate**, **66,481 without an exact match**, **2,663 exact candidates
+with retained annotation exceptions**, **3,988 missing/ambiguous product IDs**,
+**90 records whose candidates all require review**, and **one exact candidate
+with multiple target records**. These are target-record dispositions, not
+gene-copy counts, translation qualification or evolutionary findings. These
+counts agree with the completed independent every-record reconstruction.
+[Full completed handoff](../metadata/full_genomic_cds_completed_20261005_v1.json),
+[526-row taxon table](../metadata/full_genomic_cds_taxon_dispositions_20261005_v1.tsv)
+and [separate table check](../metadata/full_genomic_cds_taxon_table_check_20261005_v1.json).
+
+Software qualification retains **19 producer** and **18 independent-reader**
+offline controls, without a corpus pilot or source repair. The full stages
+use four CPUs, 64 GiB RAM, no swap, 56 GiB address space and one BLAS thread.
+All eight evolutionary aims, genome contamination/haplotig checks, taxonomy
+qualification and adequate ancestral uncertainty remain incomplete.
 
 ## Complete scope
 
@@ -82,7 +94,7 @@ of the deposited target. One exact candidate is sequence agreement, not proof
 of expression, gene-copy identity, annotation correctness or absence of
 contamination/haplotigs.
 
-Four per-taxon artifacts will retain every coordinate, genomic candidate,
+Four per-taxon artifacts retain every coordinate, genomic candidate,
 original CDS comparison and source-product disposition. Original genomes,
 annotations, CDS files and the representative baseline remain unchanged.
 Creolimax needs additional coding-boundary evidence; its original mRNA FASTA
@@ -123,9 +135,10 @@ unavailable genomes and the unqualified Creolimax target. Ten deliberate
 changes to coordinates, candidate/target sequence hashes, phase, part order,
 exceptions, matching indices, target headers, alternative selection and an
 unresolved product are rejected even after rebinding output hashes. These
-literal checks are software evidence; the full corpus has not been compared.
+literal checks are software evidence; the full corpus now has separate
+independent replay and original execution closure.
 The original single-call tool/native execution and complete wrapper journal
-close. The prepared full reader uses four CPUs, 64 GiB RAM, no swap, 56 GiB
+close. The completed full reader used four CPUs, 64 GiB RAM, no swap, 56 GiB
 address space, one BLAS thread and an 8 GiB output allowance. Its 2–72 hour
 planning range is uncalibrated; seven-day safety caps are not an ETA.
 
@@ -141,9 +154,12 @@ planning range is uncalibrated; seven-day safety caps are not an ETA.
 Both source and reader preparation commands have actual original tool zero
 exits. The producer stage's exact wrapper/native launch, source plan/configuration
 hashes and current cgroup limits are recorded separately from the immutable
-prelaunch plan. At 22:43 UTC no per-taxon outputs exist: input-hash checking
-precedes creation of the output root. Mutable counters never establish full
-execution or sequence agreement.
+prelaunch plan. The original 22:43 UTC launch checkpoint recorded input-hash checking
+before output creation. Both full executions are now closed against their
+actual original tool terminals and complete journals. Producer native wall
+time was 21 minutes 8 seconds; the reader took 14 minutes 59 seconds. These
+are observed runs, separate from the broad prelaunch resource estimate.
+Mutable counters alone never establish full execution or sequence agreement.
 
 - [Original full producer launch](../metadata/full_genome_annotation_cds_launch_20261005_v1.json)
   and [exact native runtime checkpoint](../metadata/full_genome_annotation_cds_checkpoint_20261005_goal_2244.json).
@@ -173,3 +189,35 @@ readers and every taxon/source. The full comparison reader runs only after
 actual original full producer API/native zero, full journal and source/output
 closure. Immutable plans retain their prelaunch states; launch/execution
 records separately establish what has actually run.
+
+## Completed handoff and remaining biological controls
+
+The compact merger compares every per-taxon producer/reader disposition and
+publishes all 526 rows without a third full corpus scan. It accounts for
+60,917,860 original annotation features and 16,588 provisional ORF rows:
+60,934,448 coordinate rows total. All annotation features are within their
+original sequence bounds; one original provisional ORF remains out of bounds.
+There are 69 circular multipart candidates lacking qualified order and
+21 candidates with incomplete/invalid explicit part order, all retained.
+
+The merger's first invocation used a literal total 400 rows too high and
+exited one before writing a table or handoff. The failed source and actual
+tool result are retained. The corrected total is the sum of the two unchanged
+source inventories; neither full native execution failed and no scientific
+tolerance or disposition changed.
+[Retained reporting failure](../metadata/full_genomic_cds_merger_reporting_failure_20261005_v1.json)
+and [compact merger](../scripts/assemble_full_genomic_cds_completed_v1.py).
+
+Large genomic comparison outputs remain outside Git at
+`results/genome-annotation-cds-20261005-v1/`; independent replay is recorded
+at `results/genome-annotation-cds-independent-readback-20261005-v1/`.
+Reproduction requires the pinned original genomes, annotation databases and
+CDS files, with fresh output namespaces. Scripts, plans, resource estimates,
+closed execution logs, original tool payloads and all source hashes are
+versioned; complete public release of the large data remains outstanding.
+
+Next connect these dispositions to the existing CDS-to-protein translation
+checks and preserve explicit protein/isoform/copy uncertainty in codon,
+duplication and sequence–structure analyses. Resolve assembly redundancy,
+contamination and taxonomic exceptions before biological copy admission.
+Exact genomic DNA agreement alone does not qualify those conclusions.

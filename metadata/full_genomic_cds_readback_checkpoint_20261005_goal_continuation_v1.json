@@ -1,0 +1,235 @@
+{
+  "status": "verified_original_full_genomic_cds_runtime",
+  "checked_utc": "2026-10-05T23:18:07.727712+00:00",
+  "original_handle": {
+    "unit": "fungal-full-genomic-cds-readback-20261005-v1.service",
+    "pid": 544326,
+    "created": 1791241646.65,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_genomic_cds_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_genomic_cds_readback_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genomic_cds_readback_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_genome_annotation_cds_v1.py",
+      "--plan",
+      "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genomic_cds_readback_20261005_v1.json"
+    ],
+    "plan": "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+    "plan_sha256": "1586433c3b393739c74a0a748cd85787e1307008e6a0677209dc27ca35a87c3b",
+    "checked_utc": "2026-10-05T23:07:28.559059+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "f7ced133d8204ab7887bc8c91a756646",
+    "original_tool_session_id": 56533,
+    "source_hashes": {
+      "metadata/full_genomic_cds_readback_execution_20261005_v1/configuration.json": "d5ac7ef58200e3641e0238e7efd385a4453626ba83e7e1f1a34c2491d22e2211",
+      "metadata/full_genomic_cds_readback_plan_20261005_v1.json": "1586433c3b393739c74a0a748cd85787e1307008e6a0677209dc27ca35a87c3b",
+      "metadata/full_genomic_cds_readback_resources_20261005_v1.json": "29ec70e92108071d689feeb8b18033117834c9af8a48876c8c78e8db602fe994"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_genomic_cds_readback_launch_20261005_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 1.14,
+    "children": [
+      {
+        "pid": 544328,
+        "created": 1791241647.13,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 96.11
+      },
+      {
+        "pid": 545285,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 542.97
+      },
+      {
+        "pid": 545286,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 542.6800000000001
+      },
+      {
+        "pid": 545287,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 542.89
+      },
+      {
+        "pid": 545288,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 542.78
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "bebf105c5d735975f1e68d9c8746df52cb6cbb64aebf2f1e7dc2b03581a18ca2",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 4682539008,
+      "memory.peak": 5629022208,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 544328,
+        "created": 1791241647.13,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 54947840,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 545285,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 1697402880,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 545286,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 1045782528,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 545287,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 1336426496,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 545288,
+        "created": 1791241742.67,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genomic_cds_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 434716672,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 56533,
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "da0f63102060e1ab3c18b577c11edc07cf2820047e2419e1c0429742eec90ba4",
+    "value": {
+      "stage": "independent_full_genomic_cds_and_source_replay",
+      "completed_taxa": 439,
+      "expected_taxa": 526,
+      "target_records": 4896371,
+      "elapsed_seconds": 544.2945117899217
+    }
+  },
+  "output_root_present": true,
+  "immutable_taxon_receipts": 0,
+  "source_hashes": {
+    "metadata/full_genomic_cds_readback_execution_20261005_v1/configuration.json": "d5ac7ef58200e3641e0238e7efd385a4453626ba83e7e1f1a34c2491d22e2211",
+    "metadata/full_genomic_cds_readback_plan_20261005_v1.json": "1586433c3b393739c74a0a748cd85787e1307008e6a0677209dc27ca35a87c3b",
+    "metadata/full_genomic_cds_readback_resources_20261005_v1.json": "29ec70e92108071d689feeb8b18033117834c9af8a48876c8c78e8db602fe994",
+    "metadata/full_genomic_cds_readback_launch_20261005_v1.json": "bebf105c5d735975f1e68d9c8746df52cb6cbb64aebf2f1e7dc2b03581a18ca2",
+    "metadata/full_genomic_cds_readback_original_initial_tool_20261005_v1.json": "9c3f38c5f15e76a6d026b85df221d4ba86e9fee203109ddc4caaee20aa51ebfb",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_genomic_cds_checkpoint_v1.py": "9491ff207d3eedbc68a165176345d08f13948577187464838da1ef138567482f"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original launch/API identity and current native/cgroup state; immutable plan and execution-configuration bindings checked. Mutable counters/receipt census are partial observations, not full original API completion, independent genomic-CDS replay or biological acceptance. Original source hashes are checked by the producer; this observer does not repeat their full scan, restart jobs or alter original data."
+}

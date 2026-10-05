@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=60129542144",
+    "--cpu=604800",
+    "--fsize=17179869184",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_genome_annotation_cds_v1.py",
+    "--plan",
+    "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_genomic_cds_readback_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_genomic_cds_readback_resources_20261005_v1.json": "29ec70e92108071d689feeb8b18033117834c9af8a48876c8c78e8db602fe994",
+    "scripts/readback_full_genome_annotation_cds_v1.py": "5e4fbe23d49cc6291ade75bbaec254245aad7a879f5babf2b75ffb6986c386e6",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "f7ced133d8204ab7887bc8c91a756646",
+  "wrapper": {
+    "pid": 544326,
+    "created": 1791241646.65,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_genomic_cds_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_genomic_cds_readback_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genomic_cds_readback_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_genome_annotation_cds_v1.py",
+      "--plan",
+      "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genomic_cds_readback_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 604800,
+  "started_utc": "2026-10-05T23:07:27.826934+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T23:22:26.411659+00:00",
+  "child": {
+    "pid": 544328,
+    "created": 1791241647.13,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=60129542144",
+      "--cpu=604800",
+      "--fsize=17179869184",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_genome_annotation_cds_v1.py",
+      "--plan",
+      "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genomic_cds_readback_20261005_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 898.5844686679775,
+  "child_cpu_seconds": 2911.6257960000003,
+  "child_peak_rss_bytes": 3724066816,
+  "receipt": "metadata/full_genomic_cds_readback_20261005_v1.json",
+  "receipt_sha256": "36d53702e78b762abfe5eb52928e1909567c499248f4b6488c85d3ca0426ed18",
+  "artifacts": {
+    "metadata/full_genomic_cds_readback_execution_20261005_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_genomic_cds_readback_execution_20261005_v1/configuration.json": "d5ac7ef58200e3641e0238e7efd385a4453626ba83e7e1f1a34c2491d22e2211",
+    "metadata/full_genomic_cds_readback_execution_20261005_v1/stdout.log": "b1fc79835f3b363a21950c778ce198aeb9e3fc8fc4b814cb7ffbb8450d65c056",
+    "metadata/full_genomic_cds_readback_execution_20261005_v1/process.json": "982e4e5b26e3fe993b2ebb37f350bd61ecffe59db9a26dbf4378180e92bfff5b"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

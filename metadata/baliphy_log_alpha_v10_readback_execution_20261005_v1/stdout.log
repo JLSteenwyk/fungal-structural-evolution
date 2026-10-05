@@ -1,0 +1,25 @@
+{
+  "status": "passed_independent_V10_latent_alpha_and_native_output_reconstruction",
+  "checked_utc": "2026-10-05T23:09:57.976686+00:00",
+  "native_prior_rows": 63,
+  "deterministic_rows": 57,
+  "overflow_rows_retained": 15,
+  "original_file_byte_checks": 18,
+  "decimal_precision": 90,
+  "semantic_rejection_controls": [
+    "reject_latent_value",
+    "reject_derived_value",
+    "reject_prior_location",
+    "reject_prior_scale",
+    "reject_latent_density",
+    "reject_category_rates",
+    "reject_leaf_count",
+    "reject_finite_as_boolean",
+    "reject_missing_overflow_tag",
+    "reject_wrong_overflow_state"
+  ],
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "original_chain_overflow_cause_proven": false,
+  "scope": "Separate strict JSON/Decimal parser and90digit arithmetic check every saved latent draw, derived alpha, prior density/category state/quality tag and original paired bytes. Ten semantic mutations rejected. Shared original sources, SHA functions and native outputs remain explicit. This does not independently compile all405sources or qualify a full inference horizon, installed formatter repair, old review arrays or ancestral posterior."
+}

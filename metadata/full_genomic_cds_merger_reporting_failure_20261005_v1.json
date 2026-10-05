@@ -1,0 +1,21 @@
+{
+  "status": "retained_compact_merger_incorrect_literal_total",
+  "checked_utc": "2026-10-05T23:25:43.070590+00:00",
+  "original_actual_tool_result": {
+    "chunk_id": "175ff9",
+    "wall_time_seconds": 2.3015e-05,
+    "exit_code": 1,
+    "original_token_count": 103,
+    "output": "Traceback (most recent call last):\n  File \"/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/assemble_full_genomic_cds_completed_v1.py\", line 104, in <module>\n    main()\n  File \"/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/assemble_full_genomic_cds_completed_v1.py\", line 45, in main\n    assert sum(aggregates['feature_counts'].values()) == 60934848\nAssertionError\n"
+  },
+  "failed_source": "data/software_audits/full-genomic-cds-merger-reporting-failure-20261005-v1/assemble_full_genomic_cds_completed_v1.py",
+  "source_sha256": "c7e1ba4ef658113773e845174c927a6305d94b629605b0f0472bb56b73f22687",
+  "asserted_total": 60934848,
+  "source_derived_total": 60934448,
+  "original_annotation_features": 60917860,
+  "provisional_orf_rows": 16588,
+  "output_created": false,
+  "taxon_table_created": false,
+  "native_producer_or_reader_failure": false,
+  "scope": "Compact post-closure merger used an incorrect literal total400rows too high. Both full native producer and independent reader remain complete with actual exit zero. No source data, scientific tolerance or disposition changed; correct merger must retain60917860originalfeatures+16588ORFrows."
+}

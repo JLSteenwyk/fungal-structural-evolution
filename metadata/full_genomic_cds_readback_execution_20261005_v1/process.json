@@ -1,0 +1,17 @@
+{
+  "pid": 544328,
+  "created": 1791241647.13,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=60129542144",
+    "--cpu=604800",
+    "--fsize=17179869184",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_genome_annotation_cds_v1.py",
+    "--plan",
+    "metadata/full_genomic_cds_readback_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_genomic_cds_readback_20261005_v1.json"
+  ]
+}

@@ -1,5 +1,33 @@
 # Progress and evidence
 
+## October 5, 23:26 UTC: full genomic-CDS replay closed and latent-alpha logger qualified
+
+The genomic-CDS producer completed all 526 entries, 5,927,745 source products
+and 5,923,039 original CDS records with actual original session 18749/native
+zero and full source/journal closure. The separate original reader 56533 has
+reconstructed every entry and target record, with actual original API/native
+zero, complete source-hash verification and invocation-journal closure. The
+compact handoff merges 10,604 bindings and publishes all 526 taxon rows. All alternatives, missing
+CDS targets, exceptions and mismatches remain explicit. Agreement does not
+establish correct translation, gene copies, absence of contamination or
+haplotigs, or evolutionary effects.
+[Complete comparison scope](full-genome-annotation-cds-20261005.md).
+
+The V10 latent log-alpha logger passes all 405 generated-source checks, three
+paired native prior controls and separate strict JSON/90-digit Decimal
+reconstruction of all 120 diagnostic rows. All 18 original scientific files
+are byte identical in paired controls. Fifteen deterministic overflow cases
+and ten semantic rejection controls pass without changing tolerances. V8
+and V9 failed the unchanged-output requirement; their sources, actual failures,
+changed outputs and whole journals remain retained. Full-input V10 runs,
+adequate posterior uncertainty and the historical overflow cause remain
+unqualified. [Logger method and evidence](baliphy-latent-log-alpha-v10-20261005.md).
+
+GPU prediction stays paused. Full weighted biological fits remain zero;
+accepted phylogenetic/reconciliation/dating frameworks, predictor calibration,
+all eight evolutionary aims and complete public data release remain unfinished.
+Earlier dated checkpoints below describe their original observation times.
+
 ## October 5, 22:43 UTC: full genome-to-CDS comparison launched
 
 Independent genome reconstruction is complete across all 526 entries and

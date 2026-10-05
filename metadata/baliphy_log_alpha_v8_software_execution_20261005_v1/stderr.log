@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_log_alpha_logger_v8.py", line 184, in <module>
+    main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_log_alpha_logger_v8.py", line 107, in main
+    assert (before/name).read_bytes() == (after/name).read_bytes(), (item['prior'], name)
+AssertionError: ('broad', 'C1.log')

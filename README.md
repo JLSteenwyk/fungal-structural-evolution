@@ -14,11 +14,13 @@ The original NCBI annotations contain **60,434,823 features/23,306,261 CDS
 segments**. All coordinates, phases, exceptions, Parent links and unresolved
 candidate associations are retained for later assembly-to-CDS checks. Sixteen
 offline controls pass; full independent replay and original execution closure
-are complete. Genomic agreement remains pending. The [genome-to-CDS software](docs/full-genome-annotation-cds-20261005.md)
-passes 19 producer and 18 independent-reader offline controls. Its full run
-now runs across all 526 entries after independent assembly-DNA closure,
-with 5,923,039 original CDS records in its frozen inputs. The separate full
-reader plan is prepared and gated on original full producer completion. These stages add annotation controls, not structures or inferred events.
+are complete. The [genome-to-CDS comparison](docs/full-genome-annotation-cds-20261005.md)
+has completed across all 526 entries and 5,923,039 original CDS records,
+with actual original producer API/native/journal closure. The separate full
+reader has replayed every entry, with final source verification and actual
+original API/native/journal closure. All 526 taxon dispositions are published;
+66,481 CDS targets without an exact genomic match remain explicit. Software retains 19 producer and 18
+independent-reader offline controls. These stages add annotation controls, not structures or inferred events.
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -79,8 +81,8 @@ across all 526 taxa with zero acquisition errors: 519 exact NCBI assembly files
 and seven publisher genomes checked in place, containing 26.65 billion bases.
 Original acquisition API/native/journal closure is complete. Its independent
 reader has independently reconstructed all 526 genomes and 26.65 billion
-bases, with actual original API/native/journal closure. Full genome-to-CDS
-comparison is now launched; contamination, haplotig and duplication checks remain subsequent
+bases, with actual original API/native/journal closure. The full genome-to-CDS
+producer and independent replay are complete; contamination, haplotig and duplication checks remain subsequent
 requirements. DNA and PAE acquisition add supporting data, not structures.
 
 All **24 ancestral failed-role comparisons** now finish without native crashes.
@@ -95,6 +97,13 @@ log-scale exponentiation overflow mechanism in 57 deterministic cases.
 This explains a possible source of infinite parameters without proving the
 historical cause: latent log-alpha was not saved. Reviewed arrays remain
 excluded. Reproducible diagnostic PNG/PDF figures retain nonfinite counts.
+
+The [V10 latent log-alpha logger](docs/baliphy-latent-log-alpha-v10-20261005.md)
+now passes all 405 source checks, three paired native prior controls and
+independent reconstruction of 120 diagnostic rows. All 18 original scientific
+files stay byte identical in those controls. Earlier failed candidates are
+retained. Full-input V10 comparisons and adequate posterior sampling remain
+unlaunched; historical latent values remain unavailable.
 
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,

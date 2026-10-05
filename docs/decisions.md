@@ -1,5 +1,28 @@
 # Decisions and unresolved questions
 
+## 2026-10-05: retain the latent random draw without changing scientific output
+
+Use V10's nested functor operation and existing scalar logger action to retain
+log-alpha in future runs. All three paired native controls preserve all six
+original scientific files byte for byte. Two earlier direct-draw candidates
+failed that requirement and remain retained, without altered acceptance
+criteria. The independent reader reconstructs all 120 diagnostic rows and
+rejects ten semantic changes. Software qualification does not qualify full
+inputs, a historical overflow cause or posterior uncertainty. Require the
+complete 24-role full-input comparison before extending sampling.
+[Method, resources and closed evidence](baliphy-latent-log-alpha-v10-20261005.md).
+
+## 2026-10-05: all genomic-CDS source and independent execution closures complete
+
+The original full producer completed all 526 entries with actual original
+API/native zero and source/journal closure. The independent reader has
+reconstructed all entries and 5,923,039 targets, with final hash checks,
+actual original API/native zero and complete invocation-journal closure. Preserve every mismatch,
+annotation exception and missing target. The compact merger compares
+all per-taxon dispositions and publishes every taxon denominator from these
+closed receipts without a third corpus scan. Gene-copy and translation
+qualification remain separate. [Full method](full-genome-annotation-cds-20261005.md).
+
 ## 2026-10-05: genomic source gate now closed across every selected entry
 
 Both original full genome and annotation producers/readers have actual original

@@ -1,0 +1,30 @@
+{
+  "prepared_utc": "2026-10-05T22:57:19.386084+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 1200,
+  "wall_seconds_per_stage": 1800,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 128,
+  "available_ram_gib": 767.9489097595215,
+  "free_disk_gib": 9905.096508026123,
+  "estimated_wall_seconds": [
+    25,
+    120
+  ],
+  "output_allowance_gib": 2,
+  "native_controls": 4,
+  "native_as_gib": 12,
+  "native_cpu_seconds": 300,
+  "native_wall_seconds": 300,
+  "new_cost_usd": 0,
+  "gpu": false,
+  "scope": "V9 uses the existing scalar logging action, all405model-source reversals, unchanged paired seeds/priors/caps and all57deterministic diagnostic rows. V8 failed output noninterference is preserved. No tolerance changes, full new posterior horizon, GPU or paid infrastructure.",
+  "full_model_sources": 405,
+  "deterministic_rows": 57,
+  "new_diagnostic_rows": 63
+}

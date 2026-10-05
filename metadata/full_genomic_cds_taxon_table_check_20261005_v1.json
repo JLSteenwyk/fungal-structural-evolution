@@ -1,0 +1,22 @@
+{
+  "status": "passed_full_526_taxon_table_vs_closed_independent_reader",
+  "checked_utc": "2026-10-05T23:26:15.377494+00:00",
+  "taxa": 526,
+  "target_records": 5923039,
+  "original_annotation_features": 60917860,
+  "original_provisional_orfs": 16588,
+  "target_source_kind_counts": {
+    "publisher_external": 4,
+    "genome_derived_dependent_orf": 2,
+    "none": 1,
+    "publisher_ncbi": 519
+  },
+  "source_hashes": {
+    "metadata/full_genomic_cds_completed_20261005_v1.json": "9c250c6e5c20bf12af74f8755f652793a97d1e958df8f716836e94a19ef58232",
+    "metadata/full_genomic_cds_taxon_dispositions_20261005_v1.tsv": "1eb730e43264de25a4fb4a69b2ad68b1c9007d250703feadf5b80961b174477c",
+    "metadata/full_genomic_cds_readback_20261005_v1.json": "36d53702e78b762abfe5eb52928e1909567c499248f4b6488c85d3ca0426ed18"
+  },
+  "scientific_eligibility": false,
+  "new_predictions": 0,
+  "scope": "Separate emittedTSV record and source-kind/count checks against the closed independent reader; no third original-corpus replay and no biological acceptance."
+}

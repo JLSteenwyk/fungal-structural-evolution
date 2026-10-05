@@ -1,0 +1,236 @@
+{
+  "status": "verified_original_full_genomic_cds_runtime",
+  "checked_utc": "2026-10-05T22:47:36.951077+00:00",
+  "original_handle": {
+    "unit": "fungal-full-genome-annotation-cds-20261005-v1.service",
+    "pid": 527885,
+    "created": 1791240179.39,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_genome_annotation_cds_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_genome_annotation_cds_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genome_annotation_cds_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/audit_full_genome_annotation_cds_v1.py",
+      "--plan",
+      "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genome_annotation_cds_20261005_v1.json"
+    ],
+    "plan": "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+    "plan_sha256": "ccb2438386557ffe8abf79969aba1ce87c23bfd7ce602f6de659dcd13ef2de35",
+    "checked_utc": "2026-10-05T22:43:26.104462+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "0234a22dc3234062b68ff310e4f58d1a",
+    "original_tool_session_id": 18749,
+    "source_hashes": {
+      "metadata/full_genome_annotation_cds_execution_20261005_v1/configuration.json": "812d2c40e9d8703fa406ccb01e9a5adafbe61306c2e130c30039ffd0612d3984",
+      "metadata/full_genome_annotation_cds_plan_20261005_v1.json": "ccb2438386557ffe8abf79969aba1ce87c23bfd7ce602f6de659dcd13ef2de35",
+      "metadata/full_genome_annotation_cds_resources_20261005_v1.json": "4e11916dbfafe02a421b42c0297d900961323756d11d4829ee47f8e7d31a69aa"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_genome_annotation_cds_launch_20261005_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.6799999999999999,
+    "children": [
+      {
+        "pid": 527887,
+        "created": 1791240179.8,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 272.05
+      },
+      {
+        "pid": 531059,
+        "created": 1791240451.86,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 4.27
+      },
+      {
+        "pid": 531060,
+        "created": 1791240451.86,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 4.26
+      },
+      {
+        "pid": 531061,
+        "created": 1791240451.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 4.26
+      },
+      {
+        "pid": 531062,
+        "created": 1791240451.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 4.24
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "b65a3e49ed57fff36f6ad34d386be771bbc8f0fadf0ab655822296df0b9577fd",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 859648000,
+      "memory.peak": 949362688,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 527887,
+        "created": 1791240179.8,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "rss_bytes": 83554304,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 531059,
+        "created": 1791240451.86,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "rss_bytes": 133406720,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 531060,
+        "created": 1791240451.86,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "rss_bytes": 154046464,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 531061,
+        "created": 1791240451.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "rss_bytes": 170373120,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 531062,
+        "created": 1791240451.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/audit_full_genome_annotation_cds_v1.py",
+          "--plan",
+          "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_genome_annotation_cds_20261005_v1.json"
+        ],
+        "rss_bytes": 296726528,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 18749,
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "f159dbded688336dd279aadbffb9eb6be6968d1d15ba2f31ea860ec3d5fc522c",
+    "value": {
+      "stage": "full_genome_annotation_cds_comparison",
+      "completed_taxa": 3,
+      "expected_taxa": 526,
+      "source_products": 28564,
+      "target_records": 28564,
+      "elapsed_seconds": 4.33337642904371
+    }
+  },
+  "output_root_present": true,
+  "immutable_taxon_receipts": 3,
+  "source_hashes": {
+    "metadata/full_genome_annotation_cds_execution_20261005_v1/configuration.json": "812d2c40e9d8703fa406ccb01e9a5adafbe61306c2e130c30039ffd0612d3984",
+    "metadata/full_genome_annotation_cds_plan_20261005_v1.json": "ccb2438386557ffe8abf79969aba1ce87c23bfd7ce602f6de659dcd13ef2de35",
+    "metadata/full_genome_annotation_cds_resources_20261005_v1.json": "4e11916dbfafe02a421b42c0297d900961323756d11d4829ee47f8e7d31a69aa",
+    "metadata/full_genome_annotation_cds_launch_20261005_v1.json": "b65a3e49ed57fff36f6ad34d386be771bbc8f0fadf0ab655822296df0b9577fd",
+    "metadata/full_genome_annotation_cds_original_initial_tool_20261005_v1.json": "792eeaf5f5fbce678d28b3adac7464857bc58cf1e6f0a8b9c483b7d18b5dce8f",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_genomic_cds_checkpoint_v1.py": "9491ff207d3eedbc68a165176345d08f13948577187464838da1ef138567482f"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original launch/API identity and current native/cgroup state; immutable plan and execution-configuration bindings checked. Mutable counters/receipt census are partial observations, not full original API completion, independent genomic-CDS replay or biological acceptance. Original source hashes are checked by the producer; this observer does not repeat their full scan, restart jobs or alter original data."
+}
