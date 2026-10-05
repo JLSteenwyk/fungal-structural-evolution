@@ -1,0 +1,36 @@
+{
+  "prepared_utc": "2026-10-05T20:35:22.779764+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 8192,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 160,
+  "estimated_wall_hours": [
+    2,
+    72
+  ],
+  "runtime_is_uncalibrated": true,
+  "http_workers": 2,
+  "estimated_uncompressed_ncbi_bases": 26331168114,
+  "largest_deposited_ncbi_assembly_bases": 1488883982,
+  "estimated_compressed_gib": [
+    5,
+    25
+  ],
+  "maximum_download_bytes": 137438953472,
+  "per_genome_bytes": 8589934592,
+  "available_ram_gib": 636.7803764343262,
+  "free_disk_gib": 10040.542911529541,
+  "free_inodes": 409499384,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "basis": "All519verified deposited all-scope assembly reports imply26,331,168,114uncompressed bases; largest1,488,883,982bases. Gzip5-25GiB is an uncalibrated compression estimate,128GiB cumulative payload-byte ceiling/160GiB output allowance. Two HTTPworkers, streaming FASTA/record hashes and all526taxa. 2-72h planning range reflects unknown network latency/retries/parsing;7day CPU/wall caps are notETA. Seven cached external genomes are not redownloaded; no paid resources.",
+  "scope": "Every selected taxon, exact manifest genome URL/assembly version; seven existing publisher bundles reverified and retained,519NCBI exact genome files with original publisher checksum listings. Preserves all FASTA records including lowercase, ambiguity and organelles, no contamination/taxon/duplication admission. Full independent every-taxon/sequence/hash/metric readback and GFF/CDS/flanking-source review remain required. No corpus pilot or new structure prediction."
+}

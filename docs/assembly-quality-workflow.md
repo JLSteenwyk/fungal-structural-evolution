@@ -2,6 +2,19 @@
 
 Assembly statistics supplement marker recovery and annotation reconciliation. They do not establish absence of contamination, correct gene models or independent species identity.
 
+## October 5: exact whole-sampling genomic DNA acquisition
+
+The [full assembly-DNA workflow](full-assembly-dna-20261005.md) now verifies the
+complete source/resource plan and runs across all 526 entries: exact genome files
+for 519 NCBI assemblies and seven cached publisher bundles. It preserves every
+original record, ambiguity, lowercase masking and organelle, with whole-FASTA
+record metrics and per-contig sequence hashes. Full independent sequence/source/
+metric reconstruction must follow actual original completion; exact GFF/CDS/
+protein and genomic-flank checks remain subsequent requirements. Source/length
+agreement does not establish absence of annotation/haplotig/contamination errors
+or correct species identity. Previous deposited-report and external-QC results
+below retain their original scopes.
+
 ## NCBI assembly reports
 
 `retrieve_assembly_statistics.py` retrieves the `_assembly_stats.txt` report belonging to each of the 519 selected NCBI assembly versions. The exact accession must appear in the report's GenBank/RefSeq header. Publisher MD5 values and local SHA256 hashes are verified, and raw reports plus per-assembly receipts remain under ignored `data/assembly_statistics/`. Completed cached files are hash-checked and reparsed. Two download workers are used.

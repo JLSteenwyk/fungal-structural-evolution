@@ -1,0 +1,144 @@
+{
+  "status": "verified_original_full_atlas_pae_runtime",
+  "checked_utc": "2026-10-05T20:28:09.064619+00:00",
+  "original_handle": {
+    "unit": "fungal-full-atlas-missing-pae-20261005-v2.service",
+    "pid": 416517,
+    "created": 1791231473.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_atlas_missing_pae_resources_20261005_v2.json",
+      "--execution",
+      "metadata/full_atlas_missing_pae_execution_20261005_v2.json",
+      "--receipt",
+      "metadata/full_atlas_missing_pae_20261005_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/retrieve_full_atlas_missing_pae_v2.py",
+      "--plan",
+      "metadata/full_atlas_missing_pae_plan_20261005_v2.json",
+      "--receipt",
+      "metadata/full_atlas_missing_pae_20261005_v2.json"
+    ],
+    "plan": "metadata/full_atlas_missing_pae_plan_20261005_v2.json",
+    "plan_sha256": "2c63e6b50803630d789dd93abdc64b20a3b9c40cf432f070380617a88a6d642a",
+    "checked_utc": "2026-10-05T20:18:47.003618+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "200000 100000",
+      "memory.max": "17179869184",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "26bd9abf9e104819ad30a7822ced142e",
+    "original_tool_session_id": 80777,
+    "source_hashes": {
+      "metadata/full_atlas_missing_pae_execution_20261005_v2/configuration.json": "80a25c629811d935aa015218b336c2820adf03af665c82332556087943fbbf62",
+      "metadata/full_atlas_missing_pae_plan_20261005_v2.json": "2c63e6b50803630d789dd93abdc64b20a3b9c40cf432f070380617a88a6d642a",
+      "metadata/full_atlas_missing_pae_original_initial_tool_20261005_v2.json": "5e39e8b023caf54841c6c5abf83b6390336b5e34140a05ef9275ff03c399b6e8"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_atlas_missing_pae_launch_20261005_v2.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 1.1,
+    "children": [
+      {
+        "pid": 416519,
+        "created": 1791231474.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/retrieve_full_atlas_missing_pae_v2.py",
+          "--plan",
+          "metadata/full_atlas_missing_pae_plan_20261005_v2.json",
+          "--receipt",
+          "metadata/full_atlas_missing_pae_20261005_v2.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 801.4000000000001
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "f6df4229a3e39889b65297c06a77db2b1202a75ecb20d79685098c0aa9f87c43",
+    "current_cgroup_limits": {
+      "cpu.max": "200000 100000",
+      "memory.max": "17179869184",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 350031872,
+      "memory.peak": 360251392,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 416519,
+        "created": 1791231474.16,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/retrieve_full_atlas_missing_pae_v2.py",
+          "--plan",
+          "metadata/full_atlas_missing_pae_plan_20261005_v2.json",
+          "--receipt",
+          "metadata/full_atlas_missing_pae_20261005_v2.json"
+        ],
+        "rss_bytes": 131452928,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              10368000             10368000             seconds   \nMax file size             34359738368          34359738368          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 80777,
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "e323a1f99ba539421fdcd2186f2b6e97a64528d92ac1c6814ac4ae73ae409b4f",
+    "value": {
+      "stage": "retrieving_complete_missing_queue",
+      "counts": {
+        "attempted": 2300,
+        "verified": 2300,
+        "failed": 0,
+        "compressed_bytes": 144354530,
+        "json_bytes": 1047286470
+      },
+      "error_types": {},
+      "expected_models": 2905096,
+      "elapsed_seconds": 589.3555046570254,
+      "http_workers": 2,
+      "future_window": 64
+    }
+  },
+  "source_hashes": {
+    "results/structures/full-atlas-pae-inventory-20261005-v1/missing_afdb_models.jsonl": "55cb85ff4998a8eec51a9f23157e22b30ce372158defbe608d2af17ad9c8e302",
+    "metadata/full_atlas_pae_availability_readback_20261005_v1.json": "e330bcf7de78b81a6feebd85a7a5484dd2c10530ac93483d6ed3cb2bf3cf66e1",
+    "metadata/full_atlas_pae_availability_readback_transport_20261005_v1.json": "14eea5a1b44d043fa060f95888b8d5b4a814c69046955884fed984575c7e73af",
+    "metadata/full_atlas_pae_inventory_20261005_v1.json": "a16a73405ce05791c8ddb2c789e3ae9f9a445705b8865e4d51125fc90230b045",
+    "scripts/retrieve_full_atlas_missing_pae_v1.py": "02ddd9ce94b39616f5ca6b26d97c33323af2bb317b9ba1f38e56e1112627e0b3",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+    "metadata/full_atlas_missing_pae_plan_20261005_v1.json": "10685fc0fc555c396c94d12eb98d2e7f091cca11982182dddd9af9049a254cfa",
+    "metadata/full_atlas_missing_pae_stop_review_20261005_v1.json": "8320701f3b48c77de5bba8d75109ff542e852f58523dfca71a9893a541932b91",
+    "scripts/retrieve_full_atlas_missing_pae_v2.py": "cbce35ade54b5923de13ffd86d338d55583f02f9ba9fb56d7e3b9c938eeefe06",
+    "scripts/check_full_atlas_pae_cache_paths_v2.py": "8e6a5ea8002f75d24798882131c57f57e5ca72eb6d73d6e007a72e55045d060f",
+    "metadata/full_atlas_pae_cache_path_fixture_20261005_v2.json": "2d967fd581b0bfeef93fb132334102539690c1c08b1b8f601e69e0d148e3bed4",
+    "metadata/full_atlas_pae_cache_path_fixture_transport_20261005_v3.json": "f333b76b6aacb6316087716b06a27191c2da9e591ad391699c8f2e69e7e3c87e",
+    "metadata/full_atlas_missing_pae_launch_20261005_v2.json": "f6df4229a3e39889b65297c06a77db2b1202a75ecb20d79685098c0aa9f87c43",
+    "metadata/full_atlas_missing_pae_original_initial_tool_20261005_v2.json": "5e39e8b023caf54841c6c5abf83b6390336b5e34140a05ef9275ff03c399b6e8",
+    "metadata/full_atlas_missing_pae_plan_20261005_v2.json": "2c63e6b50803630d789dd93abdc64b20a3b9c40cf432f070380617a88a6d642a",
+    "metadata/full_atlas_missing_pae_resources_20261005_v2.json": "865589299b1bb576688ef671c72a663745b7bf63cf2c295391e7e02f67e0d60c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_atlas_pae_checkpoint_v1.py": "779214bb1bff1fc963af3be768651aea35566c737471af120e08d3235a905b3f"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original API initial identity, immutable plan/configuration sources and current native process/cgroup; producer state is a partial observation. No original API terminal, full retrieval/statistic reconstruction, confidence calibration or biology inferred. This observation does not restart jobs or adopt stopped V1 unreceipted bytes."
+}

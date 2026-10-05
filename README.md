@@ -50,14 +50,23 @@ explicit. PAE/context qualification and accuracy calibration are still required.
 
 The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now retain
 every source model and independently reconstruct the entire missing queue.
-All **55,959 previously available matrices** pass source/body validation; full
-independent statistic reconstruction is running. The corrected complete-queue
-downloader has verified **1,100 new PAE matrices** at 20:22 UTC, with no failures.
+All **55,959 previously available matrices** pass source/body validation and
+full independent decoding/statistic reconstruction across all 112 jobs. The
+corrected complete-queue downloader has verified **4,900 new PAE matrices**
+at 20:39 UTC, with no failures.
 Its initial cache-path failure, stopped output and unreceipted bytes are retained
 and excluded. PAE retrieval adds uncertainty data for existing structures;
 it does not add predicted structures or complete scientific atlas qualification.
 Native completion of the available-matrix validation is journal-proven; its
 lost original API terminal remains explicit.
+
+The independent PAE reader has complete original API/native execution closure.
+The [full assembly-DNA stage](docs/full-assembly-dna-20261005.md) is running across
+all 526 taxa: exact files for 519 NCBI entries and seven existing publisher
+bundles. At 20:39 UTC, 42 taxa have verified DNA/record inventories. Full
+acquisition and independent readback remain pending; annotation, contamination,
+haplotig and duplication checks are subsequent requirements. DNA and PAE
+acquisition add supporting data, not predicted structures.
 
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite

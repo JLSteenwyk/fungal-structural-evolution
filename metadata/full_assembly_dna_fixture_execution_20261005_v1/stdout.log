@@ -1,0 +1,26 @@
+{
+  "status": "passed_offline_full_assembly_dna_contract_controls",
+  "checks": [
+    "exact_literal_dna_lengths_n50_case_ambiguity_and_hashes",
+    "reject_duplicate_id",
+    "reject_empty_record",
+    "reject_non_iupac",
+    "reject_before_header",
+    "reject_all_unknown",
+    "reject_missing_gzip_trailer",
+    "exact_publisher_checksum_match",
+    "reject_absent_or_duplicate_publisher_checksum",
+    "reject_absent_or_duplicate_publisher_checksum",
+    "literal_two_request_download_checksum_body_receipt_and_absolute_paths",
+    "reject_global_download_budget_overrun"
+  ],
+  "live_http_requests": 0,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_assembly_dna_cases_v1.py": "40f568abf16ad0aeff58675e19a0e6c4a49812a0c992d0e03851f4f462194ade",
+    "scripts/retrieve_full_assembly_dna_v1.py": "af35ce5b74619e21a4b95c16cca57c58a069d6c8b1b1208d5377612466e268db"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Synthetic DNA and HTTP responses only; exact streaming record/hash/statistic controls, malformed/truncated data and checksum ambiguity rejection, full receipt/path contract and resource budget. No corpus pilot or live downloads."
+}

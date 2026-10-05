@@ -1,0 +1,38 @@
+{
+  "unit": "fungal-full-assembly-dna-20261005-v1.service",
+  "pid": 428971,
+  "created": 1791232543.8,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_assembly_dna_resources_20261005_v1.json",
+    "--execution",
+    "metadata/full_assembly_dna_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/full_assembly_dna_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/retrieve_full_assembly_dna_v1.py",
+    "--plan",
+    "metadata/full_assembly_dna_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_assembly_dna_20261005_v1.json"
+  ],
+  "plan": "metadata/full_assembly_dna_plan_20261005_v1.json",
+  "plan_sha256": "50a873c07aacfc48c44f854d26b7a5effb19ba55398075fc7736be7e2892bf99",
+  "checked_utc": "2026-10-05T20:36:59.565543+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "7a19bd89e94a4cc08501da3ac19d34a9",
+  "original_tool_session_id": 63351,
+  "source_hashes": {
+    "metadata/full_assembly_dna_execution_20261005_v1/configuration.json": "da447b4cc42159caaf7bde61feb69efe09be270601484b2b470e5f0a1672f868",
+    "metadata/full_assembly_dna_plan_20261005_v1.json": "50a873c07aacfc48c44f854d26b7a5effb19ba55398075fc7736be7e2892bf99",
+    "metadata/full_assembly_dna_original_initial_tool_20261005_v1.json": "a34b9c39d7727f6b577c732f60e9322674c270e546f4a1c12158a06f5a1eea3b"
+  },
+  "scientific_eligibility": false
+}

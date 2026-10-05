@@ -1,5 +1,41 @@
 # Progress and evidence
 
+## October 5, 20:39 UTC: complete available-PAE reconstruction; full assembly DNA launched
+
+The previous goal turn is progress: it recovered executor access, stopped and
+preserved a verified systematic cache-path failure, qualified and launched the
+corrected complete PAE queue, recovered original native matrix evidence without
+inventing an API terminal, and published all 103 owned files at 7e8267c7.
+
+The complete independent PAE reader now passes every 55,959 original available
+matrix and all 18,290,462,939 directional values across 112 jobs. Source digests,
+provenance, extrema, sorted counts and extended-precision means reconstruct;
+maximum absolute mean difference is 3.552713678800501e-15. Its actual original
+API session 81310 exits zero, with whole native/manager journals and all 61,660
+declared bindings closed. The original producer API terminal is still unavailable.
+The corrected retrieval has 4,900 verified receipts/zero failures at 20:39 UTC.
+No predicted structures are added by PAE acquisition or reconstruction.
+
+A complete 526-taxon assembly-DNA plan verifies 519 original NCBI genome URLs/
+assembly-statistic receipts and all seven existing external publisher bundles,
+with 1,060 pinned sources. Reported whole-assembly totals imply 26.33 Gb DNA;
+resource/compression/runtime estimates precede launch. Twelve offline producer
+controls and seven independent-reader controls pass. Full acquisition is live
+with two CPU/HTTP workers and 16 GiB/no swap; 42 taxa have verified genomic DNA
+and original-record inventories, no errors, and matching deposited lengths.
+The full independent reader is prepared, not launched/queued before original
+producer completion and execution closure. This supplies annotation/flank/QC
+inputs, not accepted genome quality, duplication or evolutionary events.
+
+Original full coordinate auditing is live with eight workers: 640,000 models/
+247,159,346 positions, no rejection. Full domain extraction has 689,242 exported
+intervals, no rejection. Full timing has 16 workers/1,248 checkpoints, no failures;
+full weighted biological fits remain zero. GPU prediction remains paused. Full
+atlas/missing coverage, accepted frameworks, context/source calibration,
+adequate ancestral uncertainty, all eight aims and final release remain pending.
+[Assembly scope/resources/gates](full-assembly-dna-20261005.md) and
+[closed PAE reconstruction](full-atlas-pae-20261005.md).
+
 ## October 5, 20:22 UTC: full PAE body validation; corrected missing-queue retrieval
 
 The preceding goal turn was no progress: executor setup failed before commands,

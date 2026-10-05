@@ -1,5 +1,29 @@
 # Full atlas PAE inventory, validation and retrieval — October 5, 2026
 
+## Update: full independent reconstruction closed at 20:31 UTC
+
+The complete independent decoder/statistic reader now passes all **55,959
+matrices, 112 jobs and 18,290,462,939 directional entries**. All numeric digests,
+identities, bounds, extrema and sorted threshold counts match. The largest
+absolute mean difference is 3.552713678800501e-15, at most 0.005997 of the
+predeclared roundoff bound. Both sources remain separate; no symmetrization,
+changed source bounds or evolutionary tolerances occur. The original reader
+API session 81310 has an actual zero terminal and complete native/full-journal
+closure, with all 61,660 declared bindings reverified. This closes independent
+available-matrix reconstruction; the original producer API terminal remains
+unavailable as recorded. Full missing-matrix acquisition, native context
+qualification and accuracy calibration remain outstanding.
+
+- [Complete independent reconstruction](../metadata/full_atlas_pae_statistics_readback_20261005_v1.json).
+- [Original reader execution closure](../metadata/full_atlas_pae_statistics_readback_transport_20261005_v1.json).
+
+At 20:39 UTC the original corrected downloader has **4,900 verified retrievals
+and zero failures**; its complete 2,905,096 queue and full independent cache/body
+readback remain unfinished. Original coordinate auditing reaches 640,000
+models/247,159,346 positions; domain extraction reaches 689,242 intervals; full
+timing reaches 1,248 checkpoints with 16 workers. Full biological fits remain
+zero. The older running-reader checkpoints below are preserved as history.
+
 This stage retains all 2,961,055 original source models across the fixed
 501-fungus/25-outgroup representative universe. Predicted aligned error (PAE)
 matrices support later assessment of relative residue/domain placement

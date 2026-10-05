@@ -1,0 +1,16 @@
+{
+  "prepared_utc": "2026-10-05T20:39:29.475242+00:00",
+  "producer_plan": "metadata/full_assembly_dna_plan_20261005_v1.json",
+  "producer_receipt": "metadata/full_assembly_dna_20261005_v1.json",
+  "producer_transport": "metadata/full_assembly_dna_transport_20261005_v1.json",
+  "output": "results/assembly-dna-independent-readback-20261005-v1",
+  "cpu": 4,
+  "expected_taxa": 526,
+  "launch_state": "not_launched_or_queued",
+  "gate": "Actual original producer API/native zero with full wrapper journal and all declared source bindings; unavailable receipt/transport keeps this full reader unlaunched",
+  "pins": {
+    "metadata/full_assembly_dna_plan_20261005_v1.json": "50a873c07aacfc48c44f854d26b7a5effb19ba55398075fc7736be7e2892bf99",
+    "scripts/readback_full_assembly_dna_v1.py": "17ceab628f6de7bedb042d8c16aaa8958332af6473b5dbecf06357e2036c7ce3",
+    "metadata/full_assembly_dna_readback_fixture_20261005_v1.json": "66aaf06eff6dbb9fdfa6d22494c84bbfd3f9771903fb3e2b6adfe960322d4ecf"
+  }
+}

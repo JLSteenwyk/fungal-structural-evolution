@@ -1,5 +1,38 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5: complete original PAE reconstruction and full genomic DNA inputs
+
+The independent available-matrix reader reconstructs all 55,959 original AFDB/
+ESMFold matrices and 18,290,462,939 directional values without producer decoder
+imports. All identities, dtypes, numeric digests, extrema and sorted threshold
+counts match; the maximum extended-precision mean difference is 3.552713678800501e-15
+within the declared positive-sum roundoff bound. Its actual original API/native
+completion and full journals/source bindings close. Original producer API
+completion remains unavailable; original native/journal evidence is preserved.
+These descriptive reconstructions do not calibrate accuracy or qualify domains.
+
+The complete genomic-input plan keeps all 501 fungal entries/25 outgroups. Verify
+519 exact NCBI assembly URLs and all original deposited report receipts, retaining
+whole-versus-primary scope. Match all seven cached external genome URLs to exact
+publisher file receipts/MD5/article versions and reverify their original bytes.
+Estimate resource use from all 26,331,168,114 deposited NCBI whole-assembly bases
+before launch. Two HTTP/CPU workers/16 GiB/no swap acquire exact genomes and
+publisher checksum listings under global/per-file/disk caps; all source/format
+errors remain per-taxon dispositions, with resource failures stopping the stage.
+
+Stream every original FASTA record and complete gzip body; require unique,
+nonempty IDs and IUPAC DNA. Preserve full descriptions, lowercase masking,
+ambiguity, sequence and uppercase-sequence hashes, organelles and other original
+records. Report record-level N50/L50 separately from deposited contig metrics;
+whole-length disagreement is a scope-review outcome, not silently corrected.
+Twelve offline producer controls and seven separate-reader controls pass.
+Full acquisition is running; the independent Biopython/raw-header/rational
+reconstruction is prepared and requires full original producer closure before
+launch. No sequences, taxa, gene copies or quality states are admitted based on
+literal controls or partial acquisition. GFF/CDS/protein correspondence, flank
+and contamination/haplotig/species reviews remain separate outstanding work.
+[Full DNA inputs and resources](full-assembly-dna-20261005.md).
+
 ## October 5: complete PAE inventory, body validation and uncertainty preparation
 
 Freeze the original AFDB cache under its exclusive retrieval mutex and bind

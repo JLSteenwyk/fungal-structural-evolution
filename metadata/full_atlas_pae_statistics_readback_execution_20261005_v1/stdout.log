@@ -1,0 +1,33 @@
+{
+  "status": "passed_full_independent_available_pae_decode_and_statistic_reconstruction",
+  "checked_utc": "2026-10-05T20:31:37.634433+00:00",
+  "checks": [
+    "literal_directional_values_and_scalar_statistics",
+    "reject_pae_le5",
+    "reject_mean",
+    "reject_numeric_sha256",
+    "reject_symmetrized",
+    "reject_original_dtype",
+    "extended_precision_available_on_runtime"
+  ],
+  "matrices": {
+    "AFDB": 30637,
+    "ESMFold": 25322
+  },
+  "directional_entries": {
+    "AFDB": 10872748823,
+    "ESMFold": 7417714116
+  },
+  "source_matrix_bytes": {
+    "AFDB": 4103784373,
+    "ESMFold": 25846628960
+  },
+  "jobs": 112,
+  "maximum_absolute_mean_error": 3.552713678800501e-15,
+  "maximum_mean_roundoff_bound_fraction": 0.0059966174898140314,
+  "original_producer_api_terminal_available": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Every available original AFDB/ESMFold matrix decoded without producer decoder imports; all directional numeric bytes, identities, extrema and threshold counts reconstructed. Extended precision means use a declared positive-sum roundoff bound. No symmetrization, new PAE value bounds, prediction, calibrated accuracy, context boundaries or biological effects. All missing matrices remain explicit. Original producer native completion is journal-proven; lost original API terminal remains unavailable."
+}

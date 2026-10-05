@@ -1,5 +1,27 @@
 # Open scientific milestones — updated October 5, 2026
 
+Independent original PAE decoding/statistic reconstruction now closes all
+55,959 available matrices/18,290,462,939 directional values with actual original
+reader API/native/full-journal completion. All 61,660 bindings pass; the original
+producer's lost API terminal remains unavailable. Full missing-matrix retrieval,
+native context/accuracy qualification and biological effects are not complete.
+At 20:39 UTC the corrected full queue has 4,900 verified matrices/zero errors.
+
+Full assembly DNA acquisition now covers all 526 intended entries: exact recorded
+519 NCBI assembly URLs and seven cached external publisher bundles. The complete
+plan/source/resource inventory and offline producer/independent-reader controls
+pass. The original full producer is live with 42 verified taxa/zero errors at
+20:39 UTC; full completion and original execution closure remain pending. The
+full independent reader is prepared, not launched or queued. Follow with GFF/CDS/
+annotation and flank evidence before resolving duplicate/haplotig/contamination
+hypotheses. Genome acquisition alone does not accept genome quality.
+
+Current coordinate/domain/timing jobs remain live: 640,000 audited models,
+689,242 exported intervals and 1,248 timing checkpoints. Full biological fits
+remain zero, GPU prediction paused and all eight aims incomplete.
+[Full assembly stage](full-assembly-dna-20261005.md) and
+[complete PAE reconstruction](full-atlas-pae-20261005.md).
+
 The complete PAE source/cache inventory and every-row independent missing-queue
 reconstruction are closed. All 55,959 existing available original matrices pass
 source/body validation; original native completion is journal-proven, while its

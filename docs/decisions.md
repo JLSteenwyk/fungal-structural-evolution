@@ -1,5 +1,24 @@
 # Decisions and unresolved questions
 
+## October 5: acquire exact assembly DNA across the full sampling universe
+
+Retain all 526 entries and exact original assembly/publisher versions. Verify
+all 519 NCBI genome URLs against their recorded assembly/protein directory and
+published checksum listing; reverify all seven existing external genomes without
+redownload. Derive estimates from complete 519 deposited assembly reports before
+launch. Two workers share bounded payload/disk allowances; preserve every taxon
+error and every deposited FASTA record, ambiguity, lowercase masking and organelle.
+No gap splitting, source normalization, taxon relabeling or duplicate admission
+occurs. Record whole-assembly length differences as scope-review dispositions.
+
+Require full original producer API/native/journal completion before launching
+the prepared independently parsed whole-genome reader. Literal controls do not
+substitute for full dataset reconstruction. Genome acquisition/length agreement
+does not resolve annotations, contamination, species identity, haplotigs or
+duplications; follow with exact GFF/CDS/gene/protein and genomic-flank checks.
+Keep the full objective and all eight aims open.
+[Whole sampling, source provenance and resource/gate evidence](full-assembly-dna-20261005.md).
+
 ## October 5: retain full PAE scope and recover missing monitoring evidence honestly
 
 Freeze and independently reconstruct the entire source/cache/missing queue before
