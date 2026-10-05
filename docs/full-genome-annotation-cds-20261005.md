@@ -3,16 +3,19 @@
 This stage will compare original assembly DNA with all annotated coordinates
 and available original CDS sequences across **526 entries**. It supports
 annotation controls for sequence–structure coupling, duplication, domain
-architecture and codon analyses. The full comparison has **not been launched
-or queued**. Source freezing requires both full annotation and assembly-DNA
-readbacks, with their actual original execution closures.
+architecture and codon analyses. The complete source plan is now frozen after both full annotation and
+assembly-DNA readers passed with actual original execution closures. The full
+comparison launched under original session **18749** with four CPUs, 64 GiB RAM
+and no swap. At 22:43 UTC it is verified live while checking source hashes;
+no comparison rows have been completed yet. The paired full reader plan is
+prepared, not launched or queued before actual original producer closure.
 
 The software passed **19 offline checks** with actual original tool/native
 exit zero. The checks are hand-calculated literal joins and complete small
 source inventories, not a corpus pilot or biological qualification. A separate full
 comparison reader is prepared and passes **18 offline controls**. Its full
-source plan and execution remain gated on completed genomic source verification
-and the original full comparison producer. The overall project and all eight evolutionary aims remain unfinished.
+source plan is prepared after completed genomic source verification; full
+reader execution remains gated on the original full comparison producer. The overall project and all eight evolutionary aims remain unfinished.
 
 ## Complete scope
 
@@ -27,10 +30,22 @@ and the original full comparison producer. The overall project and all eight evo
 | External publisher CDS targets | Four deposited CDS FASTAs |
 | External provisional targets | Both previous ORF-derived CDS files, explicitly not independent publisher evidence |
 | Creolimax | All candidates/products retained; transcript sequence is not substituted for a CDS target |
+| Complete CDS inventory | 5,923,039 records and 8,023,872,320 nucleotide bases |
+| Complete genomic inventory | All 526 verified genomes and 26,645,610,508 bases |
 
 Existing 519-taxon CDS-to-protein translation comparisons remain separate.
 This stage compares DNA sequences and does not translate, infer selection,
 or qualify a protein product as biologically correct.
+
+The frozen plan binds **7,946 sources**, all entries, unchanged representatives
+and all 60,917,860 original feature rows. CDS targets comprise 5,847,336 NCBI
+records, 59,116 records from four publisher FASTAs and 16,587 previously
+extracted provisional-ORF records. Those ORF targets retain their shared genome
+dependency; the one out-of-bounds ORF remains a source/product review record.
+Creolimax has no qualified original CDS target. Target-record and protein-product
+counts are different inventories and do not establish gene-copy counts.
+[Complete immutable source plan](../metadata/full_genome_annotation_cds_plan_20261005_v1.json)
+and [source-derived resources](../metadata/full_genome_annotation_cds_resources_20261005_v1.json).
 
 ## Comparisons and retained dispositions
 
@@ -88,7 +103,7 @@ address space, one BLAS thread and a 128 GiB output allowance. Whole per-taxon
 genomes and CDS candidate/target caches motivate the RAM allowance. The
 uncalibrated planning range is 2–72 hours with 2–32 GiB estimated output;
 seven-day CPU/wall and 16 GiB per-file safety caps are not ETAs. The freezer
-will record exact qualified genome/target totals and resource estimates
+has recorded exact qualified genome/target totals and resource estimates
 before any expensive full launch. No GPU, prediction or paid provisioning is
 part of this stage.
 
@@ -110,7 +125,7 @@ exceptions, matching indices, target headers, alternative selection and an
 unresolved product are rejected even after rebinding output hashes. These
 literal checks are software evidence; the full corpus has not been compared.
 The original single-call tool/native execution and complete wrapper journal
-close. The future full reader uses four CPUs, 64 GiB RAM, no swap, 56 GiB
+close. The prepared full reader uses four CPUs, 64 GiB RAM, no swap, 56 GiB
 address space, one BLAS thread and an 8 GiB output allowance. Its 2–72 hour
 planning range is uncalibrated; seven-day safety caps are not an ETA.
 
@@ -120,6 +135,25 @@ planning range is uncalibrated; seven-day safety caps are not an ETA.
   and [original execution closure](../metadata/full_genomic_cds_readback_fixture_transport_20261005_v1.json).
 - [Reader preparation blueprint](../metadata/full_genomic_cds_readback_blueprint_20261005_v1.json)
   and [full reader plan freezer](../scripts/prepare_full_genomic_cds_readback_plan_v1.py).
+
+## Original launch and paired full readback plan
+
+Both source and reader preparation commands have actual original tool zero
+exits. The producer stage's exact wrapper/native launch, source plan/configuration
+hashes and current cgroup limits are recorded separately from the immutable
+prelaunch plan. At 22:43 UTC no per-taxon outputs exist: input-hash checking
+precedes creation of the output root. Mutable counters never establish full
+execution or sequence agreement.
+
+- [Original full producer launch](../metadata/full_genome_annotation_cds_launch_20261005_v1.json)
+  and [exact native runtime checkpoint](../metadata/full_genome_annotation_cds_checkpoint_20261005_goal_2244.json).
+- [Full independent reader plan](../metadata/full_genomic_cds_readback_plan_20261005_v1.json)
+  and [resources](../metadata/full_genomic_cds_readback_resources_20261005_v1.json).
+- [Original source-plan preparation result](../metadata/full_genome_annotation_cds_preparation_original_tool_20261005_v1.json)
+  and [paired reader-plan preparation result](../metadata/full_genomic_cds_readback_preparation_original_tool_20261005_v1.json).
+- [Runtime observer](../scripts/record_full_genomic_cds_checkpoint_v1.py) checks
+  the immutable plan/launch/current native identity; it does not repeat the
+  producer's complete original-source scan or restart a missing handle.
 
 ## Reproducibility and launch gate
 
@@ -133,7 +167,9 @@ planning range is uncalibrated; seven-day safety caps are not an ETA.
 - [Full annotation registry](full-annotation-coordinate-registry-20261005.md)
   and [full assembly-DNA acquisition/readback](full-assembly-dna-20261005.md).
 
-The blueprint is not a frozen full run plan. Its future source receipts are
-unavailable at preparation. Run the freezer only after both full original
-readbacks close; it binds every taxon/source and writes a distinct immutable
-plan and estimates. There is no scheduler or queued full comparison.
+The software blueprints retain their original preparation-time gates. The
+separate frozen source plan above now binds both completed original source
+readers and every taxon/source. The full comparison reader runs only after
+actual original full producer API/native zero, full journal and source/output
+closure. Immutable plans retain their prelaunch states; launch/execution
+records separately establish what has actually run.

@@ -1,0 +1,31 @@
+{
+  "prepared_utc": "2026-10-05T22:42:14.235113+00:00",
+  "cpus": 4,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 56,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 16384,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 8,
+  "estimated_output_gib": [
+    0.01,
+    1
+  ],
+  "estimated_wall_hours": [
+    2,
+    72
+  ],
+  "runtime_is_uncalibrated": true,
+  "expected_taxa": 526,
+  "expected_source_products": 5927745,
+  "expected_representatives": 5815847,
+  "expected_cds_targets": 5923039,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "basis": "Complete original genomes, indexed annotations/CDS references and all available CDS targets; every coordinate/candidate/target/source product independently replayed. Own FASTA decoder and byte-table complement, fourCPU64GiB0swap56GiBAS, one BLAS thread. Source-derived planning2-72h is uncalibrated;7day safety caps are notETA; no full producer repeat or output mutation."
+}

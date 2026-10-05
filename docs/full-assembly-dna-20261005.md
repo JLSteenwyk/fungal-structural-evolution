@@ -82,12 +82,23 @@ all declared source/output bindings close.
 [Full acquisition receipt](../metadata/full_assembly_dna_20261005_v1.json)
 and [original execution closure](../metadata/full_assembly_dna_transport_20261005_v1.json).
 
-The complete independent reader launched only after that closure under original
-API session **98777**, with four CPUs, 32 GiB RAM and no swap. At **22:26 UTC**, it
-had independently reconstructed **423/526** genomes and remained verified live.
-Full completion and original API/native/journal closure are still required.
-[Original reader launch](../metadata/full_assembly_dna_readback_launch_20261005_v1.json)
-and [exact runtime checkpoint](../metadata/full_assembly_dna_readback_checkpoint_20261005_goal_2227.json).
+The independent reader has completed **all 526 genomes** and every original
+record/source disposition. It independently verifies **26,645,610,508 bases**,
+sequence/case digests, descriptions, base/ambiguity/count/record-N50 statistics
+and publisher version/checksum bindings. Original API session **98777** returned
+zero after 21 minutes 58 seconds; native child CPU usage was 5,101 seconds and
+peak child RSS 279,355,392 bytes. Original API/native/full-journal closure is
+complete. No tolerance or source sequence was changed.
+[Full independent result](../metadata/full_assembly_dna_readback_20261005_v1.json)
+and [original reader execution closure](../metadata/full_assembly_dna_readback_transport_20261005_v1.json).
+
+A [compact completed handoff](../metadata/full_assembly_dna_completed_20261005_v1.json)
+merges both closed source inventories, **3,189 bindings**, all 526 independently
+verified genomes and zero acquisition errors. Its
+[reproducible assembler](../scripts/assemble_full_assembly_dna_completed_v1.py)
+checks receipt/transport digests and overlapping binding consistency; it does
+not perform a third genome scan. Genome-CDS agreement, contamination, taxonomy,
+gene-copy identity and evolutionary acceptance remain separate requirements.
 
 It uses a separate Biopython sequence parser and raw header/whitespace passes,
 checks every contig digest, reconstructs record/base/case/ambiguity/N50 metrics

@@ -1,5 +1,43 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5, 22:43 UTC: full genome-to-CDS comparison launched
+
+Independent genome reconstruction is complete across all 526 entries and
+26,645,610,508 bases, with actual original producer/reader API/native/full-
+journal closure. The comparison source freezer has completed:7,946 bindings,
+all5,927,745 source products,5,815,847 representatives and5,923,039 original
+CDS records/8,023,872,320 bases. The separate full reader plan is prepared;
+19 producer and18 independent-reader offline controls remain qualified.
+
+Original full comparison session18749 is verified live under fourCPU64GiB/
+no-swap limits. It is checking original source hashes; no output root or
+comparison counts exist yet at22:43UTC. All coordinates, phases, exceptions,
+alternatives, missing targets and multiple matching loci remain explicit.
+Full producer completion and actual original API/native/journal/source closure
+gate independent every-row comparison replay. GPU prediction stays paused;
+full biological fits remain zero and all eight aims/final release are unfinished.
+[Completed genome sources](full-assembly-dna-20261005.md) and
+[full comparison/reader scope and resources](full-genome-annotation-cds-20261005.md).
+
+## October 5, 22:35 UTC: complete independent genomic DNA verification
+
+All 526 genomes and 26,645,610,508 bases now pass independent every-record
+reconstruction. Original reader API 98777 exits zero; native execution,
+complete original invocation journal and all source/output hashes close.
+The compact handoff merges both original producer/reader closures and 3,189
+bindings. It does not establish contamination-free genomes, gene copies,
+CDS agreement or correct taxonomy.
+
+The complete genome/annotation/CDS source freezer is now running after both
+original source readers have closed. It retains all 5,927,745 source products,
+5,815,847 representatives, alternatives, annotation features and all available
+original CDS targets. No taxon or difficult locus is dropped. The full
+comparison is not yet launched at this checkpoint; separate full producer/
+reader plans and resource estimates precede launch. All eight evolutionary
+aims, adequate ancestral uncertainty and final release remain unfinished.
+[Complete genome evidence](full-assembly-dna-20261005.md) and
+[full comparison scope](full-genome-annotation-cds-20261005.md).
+
 ## October 5, 22:26 UTC: complete genome acquisition and independent CDS reader software
 
 Original genome acquisition has completed all 526 entries with zero errors,

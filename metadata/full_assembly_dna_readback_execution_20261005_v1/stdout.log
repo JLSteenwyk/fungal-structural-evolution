@@ -1,0 +1,22 @@
+{
+  "status": "passed_full_selected_genome_disposition_and_original_fasta_reconstruction",
+  "checked_utc": "2026-10-05T22:34:25.454662+00:00",
+  "taxa": 526,
+  "counts": {
+    "independently_reconstructed_original_genome": 526
+  },
+  "verified_genome_bases": 26645610508,
+  "checks": [
+    "independent_literal_records_hashes_n50_case_ambiguity_and_rational_metrics",
+    "reject_changed_total_length",
+    "reject_changed_record_N50",
+    "reject_changed_lowercase_bases",
+    "reject_changed_N_bases",
+    "reject_changed_gc_percent_canonical",
+    "reject_changed_per_contig_sequence_digest"
+  ],
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Every original taxon/error disposition and available publisher-bound genome, every original FASTA record, sequence/case digest, base/length/N50/ambiguity and rational metrics independently reconstructed with separate Biopython parser; publisher listings/source version rechecked. GFF/CDS/annotation, flanks, contamination/haplotig/taxon identity and biology remain separate. No missing genome is excluded or considered available; no source files are rewritten."
+}

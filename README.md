@@ -16,7 +16,9 @@ candidate associations are retained for later assembly-to-CDS checks. Sixteen
 offline controls pass; full independent replay and original execution closure
 are complete. Genomic agreement remains pending. The [genome-to-CDS software](docs/full-genome-annotation-cds-20261005.md)
 passes 19 producer and 18 independent-reader offline controls. Its full run
-remains gated on original independent assembly-DNA closure. These stages add annotation controls, not structures or inferred events.
+now runs across all 526 entries after independent assembly-DNA closure,
+with 5,923,039 original CDS records in its frozen inputs. The separate full
+reader plan is prepared and gated on original full producer completion. These stages add annotation controls, not structures or inferred events.
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -76,9 +78,9 @@ The [full assembly-DNA stage](docs/full-assembly-dna-20261005.md) has completed
 across all 526 taxa with zero acquisition errors: 519 exact NCBI assembly files
 and seven publisher genomes checked in place, containing 26.65 billion bases.
 Original acquisition API/native/journal closure is complete. Its independent
-reader is running with four CPUs/32 GiB/no swap, with 423 genomes reconstructed
-at 22:26 UTC. Full reader completion remains required before genome-to-CDS
-comparison; contamination, haplotig and duplication checks remain subsequent
+reader has independently reconstructed all 526 genomes and 26.65 billion
+bases, with actual original API/native/journal closure. Full genome-to-CDS
+comparison is now launched; contamination, haplotig and duplication checks remain subsequent
 requirements. DNA and PAE acquisition add supporting data, not structures.
 
 All **24 ancestral failed-role comparisons** now finish without native crashes.

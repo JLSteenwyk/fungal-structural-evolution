@@ -1,0 +1,33 @@
+{
+  "prepared_utc": "2026-10-05T22:40:13.889254+00:00",
+  "cpus": 4,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 56,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 16384,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 128,
+  "estimated_output_gib": [
+    2,
+    32
+  ],
+  "estimated_wall_hours": [
+    2,
+    72
+  ],
+  "runtime_is_uncalibrated": true,
+  "source_genome_bases": 26645610508,
+  "largest_source_genome_bases": 1488883982,
+  "source_cds_records": 5923039,
+  "source_cds_bases": 8023872320,
+  "available_ram_gib": 770.9907646179199,
+  "free_disk_gib": 9914.155570983887,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "basis": "All526source entries,5,927,745products and60,917,860annotation features. Whole genomes and per-taxon CDS candidates/targets are loaded by fourCPUworkers;64GiB and56GiBAS cover the largest deposited genome plus annotation/target caches. Every original coordinate/candidate/target/product disposition retained in gzip tables;2-32GiB estimated output,128GiB allowance. 2-72h uncalibrated planning range;7day CPU/wall caps are notETA. No phase trimming, corpus pilot, GPU or paid resources."
+}

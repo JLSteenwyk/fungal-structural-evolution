@@ -1,5 +1,16 @@
 # Decisions and unresolved questions
 
+## 2026-10-05: genomic source gate now closed across every selected entry
+
+Both original full genome and annotation producers/readers have actual original
+API/native zero exits, complete invocation journals and matching source/output
+bindings. Keep their immutable plans and outputs. Prepare the complete genomic-
+CDS comparison from all 526 entries and available CDS sources, retaining the
+same representative baseline and review cases. Independent comparison software
+is qualified; its actual full run follows full original producer completion.
+The compact genome merger reuses already verified bindings rather than running
+a third genome parser. [Full source evidence](full-assembly-dna-20261005.md).
+
 ## 2026-10-05: compare genomic CDS with independently implemented sequence logic
 
 Prepare the complete comparison reader before launching the full producer.

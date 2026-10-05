@@ -1,0 +1,19 @@
+{
+  "prepared_utc": "2026-10-05T22:42:14.235113+00:00",
+  "producer_plan": "metadata/full_genome_annotation_cds_plan_20261005_v1.json",
+  "producer_receipt": "metadata/full_genome_annotation_cds_20261005_v1.json",
+  "producer_transport": "metadata/full_genome_annotation_cds_transport_20261005_v1.json",
+  "output": "results/genome-annotation-cds-independent-readback-20261005-v1",
+  "cpu": 4,
+  "expected_taxa": 526,
+  "pins": {
+    "metadata/full_genome_annotation_cds_plan_20261005_v1.json": "ccb2438386557ffe8abf79969aba1ce87c23bfd7ce602f6de659dcd13ef2de35",
+    "metadata/full_genomic_cds_readback_fixture_20261005_v1.json": "885a197010762fb4cb33528476e66860aaed7d31c5ff9ee89084c52fe0b70e3e",
+    "metadata/full_genomic_cds_readback_fixture_transport_20261005_v1.json": "6aa3f67dcacc6c68fefb02a7d0176cc4e156e102c994b40901cd24a3473482c9",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/prepare_full_genomic_cds_readback_plan_v1.py": "b07aa36337b6d0d0b887bf77c1acdedb561c390d33d458777fbae680e437e5ee",
+    "scripts/readback_full_genome_annotation_cds_v1.py": "5e4fbe23d49cc6291ade75bbaec254245aad7a879f5babf2b75ffb6986c386e6"
+  },
+  "launch_state": "not_launched_or_queued",
+  "scientific_eligibility": false,
+  "gate": "Actual original full comparison producer API/native zero, complete original journal and all source/output bindings; unavailable receipt/transport keeps the full reader unlaunched."
+}
