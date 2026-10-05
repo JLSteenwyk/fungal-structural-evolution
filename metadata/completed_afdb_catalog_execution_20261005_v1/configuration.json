@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=94489280512",
+    "--cpu=172800",
+    "--fsize=17179869184",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_completed_afdb_catalog_v1.py",
+    "--plan",
+    "metadata/completed_afdb_catalog_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/completed_afdb_catalog_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_afdb_catalog_resources_20261005_v1.json": "fd0772bc5e265594977de570fe7b3d708e3bc637629af3269c7b3abd073fadba",
+    "scripts/run_completed_afdb_catalog_v1.py": "00e8c9b221ec473f12383802a26dff784ec53b607e19d761936a3e92d9af6c96",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "d7e9f4b8b9564af199fa395c97ea6447",
+  "wrapper": {
+    "pid": 181280,
+    "created": 1791214001.47,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_afdb_catalog_resources_20261005_v1.json",
+      "--execution",
+      "metadata/completed_afdb_catalog_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_catalog_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_completed_afdb_catalog_v1.py",
+      "--plan",
+      "metadata/completed_afdb_catalog_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_catalog_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "103079215104",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 259200,
+  "started_utc": "2026-10-05T15:26:42.552868+00:00"
+}

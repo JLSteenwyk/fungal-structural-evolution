@@ -1,0 +1,25 @@
+{
+  "status": "retained_first_freeze_failure_before_source_copy",
+  "checked_utc": "2026-10-05T15:22:35.945516+00:00",
+  "execution": "metadata/completed_afdb_inventory_freeze_execution_20261005_v1.json",
+  "original_tool_terminal_exit_code": 1,
+  "output_root_absent": true,
+  "source_copy_started": false,
+  "reason": "The completed retrieval transient service is not-found; V1 required loaded/inactive retained ExecMain state. No systemd inactive/success defaults are accepted as completion proof.",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_afdb_inventory_freeze_resources_20261005_v1.json": "8879399223702551cbb418b2f2b4e6159614b48e30fc3a8db13d87d92e11d173",
+    "scripts/freeze_completed_afdb_inventory_v1.py": "ac45ff17de2fa9099094b5389822777e82d9935338a563cb1f4f73f2de8efd62",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "metadata/completed_afdb_inventory_freeze_execution_20261005_v1/stderr.log": "8c282f3d2faabd21d57f22ab9e77ce328613369cce164c5e023f3322bc330085",
+    "metadata/completed_afdb_inventory_freeze_execution_20261005_v1/configuration.json": "f371b2055d2672994787b0ba0e3329392f86d60316150d02f85baa0564ada902",
+    "metadata/completed_afdb_inventory_freeze_execution_20261005_v1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/completed_afdb_inventory_freeze_execution_20261005_v1/process.json": "0e7461c2c05e6435c5a3f91de0d5c863cbee968636220b6de4342ce229357109",
+    "metadata/completed_afdb_inventory_freeze_execution_20261005_v1.json": "ca94968822dab416eaf33e99cacc4ba801a1378d763a4a3093d768d7c96edfaa",
+    "metadata/completed_afdb_inventory_freeze_original_tool_initial_20261005_v1.json": "df876e2b2a8b49ab8af82273053cb4198d7523efd2cf5d1b0441abf87239853f",
+    "metadata/completed_afdb_inventory_freeze_execution_20261005_v1/original-invocation-journal.jsonl": "4743d00ab9b18cf66a7c851e432009ac7c0a813842f1f0f5d807c3c33243718a"
+  },
+  "scientific_eligibility": false,
+  "new_native_retrieval_runs": 0
+}

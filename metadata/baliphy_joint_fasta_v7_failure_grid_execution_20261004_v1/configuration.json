@@ -1,0 +1,48 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=206158430208",
+    "--cpu=43200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+    "--plan",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_resources_20261004_v1.json": "f3e47e1f67ed1fb22573cf653600cdfb36e002b3877c4d8c5c4a93bc64f28702",
+    "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py": "c5cfb15e5791712a5da69e693fe980a4fe6abd4209bc0153a6249a4e73c3b5b9",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "1b7d95ec720840408c545cf0ea7e7b1d",
+  "wrapper": {
+    "pid": 69938,
+    "created": 1791125648.41,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_resources_20261004_v1.json",
+      "--execution",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_execution_20261004_v1.json",
+      "--receipt",
+      "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/receipt.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "214748364800",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 86400,
+  "started_utc": "2026-10-04T14:54:09.577083+00:00"
+}

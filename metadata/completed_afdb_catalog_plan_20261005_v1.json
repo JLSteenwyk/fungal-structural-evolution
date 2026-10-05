@@ -1,0 +1,48 @@
+{
+  "output": "results/structures/whole-proteome-afdb-catalog-20261005-v1",
+  "inventory": "results/structures/afdb-completed-inventory-20261005-v2/inventory.jsonl",
+  "representatives": "metadata/gene_representatives_receipt.json",
+  "manifest": "metadata/analysis_manifest.tsv",
+  "expected_taxa": 526,
+  "expected_proteins": 5815847,
+  "provider": "GDM",
+  "tool": "AlphaFold Monomer v2.0 pipeline",
+  "resources": {
+    "prepared_utc": "2026-10-05T15:26:17.635603+00:00",
+    "cpus": 2,
+    "memory_gib": 96,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "address_space_gib": 88,
+    "cpu_seconds_per_stage": 172800,
+    "wall_seconds_per_stage": 259200,
+    "per_file_limit_mib": 16384,
+    "minimum_available_ram_gib": 96,
+    "minimum_free_disk_gib": 256,
+    "available_ram_gib": 647.3569145202637,
+    "free_disk_gib": 10150.177646636963,
+    "output_allowance_gib": 16,
+    "new_mcmc_runs": 0,
+    "gpu": false,
+    "new_cost_usd": 0,
+    "estimated_wall_hours": [
+      0.5,
+      36
+    ],
+    "runtime_is_uncalibrated": true,
+    "prior_observed_wall_seconds": 2229.9332048892975,
+    "prior_coordinate_bytes_verified": 723178056701,
+    "scope": "Full 526-taxon/5,815,847-protein current snapshot catalog; all selected coordinate bytes rehashed. Prior full producer completed about37minutes for723GB. Current3.3GiB log has3,020,697 records; wider RAM/time allowance covers latest-row/model dictionaries and disk contention. Estimates exclude any independent reader. No download, prediction, GPU, MCMC, native retry or paid resource."
+  },
+  "pins": {
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_completed_afdb_catalog_v1.py": "00e8c9b221ec473f12383802a26dff784ec53b607e19d761936a3e92d9af6c96",
+    "metadata/gene_representatives_receipt.json": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/completed_afdb_inventory_freeze_20261005_v2.json": "7909cde60165403c0c1baf1a34c51c213d6e8306e12ea1a195e211683a8907db",
+    "metadata/completed_afdb_inventory_freeze_transport_20261005_v2.json": "0412f81dbd76da7a55550fa409a33036a290e1d616ca9f8dfb206cc1f3854a80",
+    "results/structures/afdb-completed-inventory-20261005-v2/receipt.json": "28a3a0cb0e39caf8afb4a4159fea5af4c7b900c12a5e031c0714da1ee4835df1",
+    "metadata/completed_afdb_catalog_resources_20261005_v1.json": "fd0772bc5e265594977de570fe7b3d708e3bc637629af3269c7b3abd073fadba",
+    "results/structures/afdb-completed-inventory-20261005-v2/inventory.jsonl": "aa3b3e770e1ae46b6ea3630d08722f8e0ad3a7b845effe71e94ce3a9381c4eb1"
+  }
+}

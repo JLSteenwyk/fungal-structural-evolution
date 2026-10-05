@@ -1,0 +1,43 @@
+{
+  "producer_plan": "metadata/completed_afdb_catalog_plan_20261005_v1.json",
+  "producer_launch": "metadata/completed_afdb_catalog_launch_20261005_v1.json",
+  "producer_execution": "metadata/completed_afdb_catalog_execution_20261005_v1.json",
+  "producer_adapter_receipt": "metadata/completed_afdb_catalog_20261005_v1.json",
+  "output": "metadata/completed_afdb_catalog_readback_20261005_v1.json",
+  "resources": {
+    "prepared_utc": "2026-10-05T15:28:09.224145+00:00",
+    "cpus": 2,
+    "memory_gib": 96,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "address_space_gib": 88,
+    "cpu_seconds_per_stage": 172800,
+    "wall_seconds_per_stage": 259200,
+    "per_file_limit_mib": 16384,
+    "minimum_available_ram_gib": 96,
+    "minimum_free_disk_gib": 256,
+    "available_ram_gib": 647.3569145202637,
+    "free_disk_gib": 10150.177646636963,
+    "output_allowance_gib": 1,
+    "new_mcmc_runs": 0,
+    "gpu": false,
+    "new_cost_usd": 0,
+    "estimated_wall_hours": [
+      0.1,
+      12
+    ],
+    "runtime_is_uncalibrated": true,
+    "prior_observed_wall_seconds": 2325.11727809906,
+    "prior_coordinate_bytes_verified": 0,
+    "scope": "Full independent reconstruction of all5,815,847proteins/526taxa: separate FASTA parser, stable sorted latest-status candidate ranking, every emitted link/selected model/taxon count. Coordinate byte hashes were verified by producer and are not repeated here. Stage budget applies after original producer wait. Full original execution payloads checked before reader. No download, prediction, MCMC, native retry, GPU or cost."
+  },
+  "pins": {
+    "metadata/completed_afdb_catalog_plan_20261005_v1.json": "fcd46a135ddbcf2d8febe5f6766ff2d322cbcfbdd40f19af8a567b1afb7913c5",
+    "metadata/completed_afdb_catalog_launch_20261005_v1.json": "cf66cddf127908f4c49f2a80b5da66329047170f9e68beb87926a5a3c1d4c0f0",
+    "metadata/completed_afdb_catalog_source_equivalence_20261005_v1.json": "87d2755b6468ffe8be372e24984472e14f113fc7a99899d04f49088306b94230",
+    "metadata/completed_afdb_catalog_readback_resources_20261005_v1.json": "c56645d02d604c2ade265679c6fa45a949c1c4747bd4c6f78c93be5816fd26d9",
+    "scripts/readback_whole_proteome_catalog_v3.py": "810c6f313ba059cbf6d9bca91398abb162754f6816aab8a7ca62ae6b2e0edcf2",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_after_verified_dependencies.py": "76ca60d2cd85b8f0ef05aa405c6740aa4464976d7efd7c17c76c8093af48b837"
+  }
+}

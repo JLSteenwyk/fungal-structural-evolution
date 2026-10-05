@@ -1,12 +1,26 @@
-# Open scientific milestones — updated October 4, 2026
+# Open scientific milestones — updated October 5, 2026
+
+The full 3.3 GiB retrieval log is frozen and record-validated. A full updated
+catalog retains all 526 taxa and 5,815,847 proteins; its producer is running
+and independent reader is queued. Updated coverage is not accepted yet.
+All 24 ancestral comparison roles and the independent reader are closed,
+with 22 finite integrity checks and two explicit reviews containing eight
+infinite alpha values. The full timing stage has 1,028 producer checkpoints
+at 15:19 UTC and no failure files. Full biological fits remain zero; adequate
+posteriors, accepted phylogenetic/reconciliation/dating frameworks, full atlas,
+calibrated uncertainty and all eight scientific aims remain incomplete.
+[Catalog work](completed-retrieval-catalog-refresh-20261005.md) and
+[ancestral closure](baliphy-joint-fasta-v7-20261004.md).
+
+The following October 4 checkpoints are retained as dated history.
 
 The full selected predictor coordinate control closes 643 pairs×12 masks with
 complete independent geometry/summary replay. All 8,750 marker/view cases and
 31,290 internal paths link coordinates, AA and paired structural distributions;
 taxon-set reconstruction verifies 4,523,750 original slots. Six original stage
 transports/6,070 bindings close. This is a predictor-control handoff, not accepted
-evolutionary localization.78 linkedmarkers/21 fungi do not establish full-lineage
-coverage. Full timing has 68 checkpoints at 16: 44 UTC; the 24 ancestral comparisons
+evolutionary localization.78 linked markers/21 fungi do not establish full-lineage
+coverage. Full timing has 68 checkpoints at 16:44 UTC; the 24 ancestral comparisons
 have 16 native-zero exits including one review. Both original analyses remain
 active; all eight aims remain incomplete.
 [Evidence and remaining requirements](predictor-coordinate-and-phylogeny-controls-20261004.md).

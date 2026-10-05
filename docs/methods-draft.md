@@ -1,5 +1,35 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5: complete retrieval snapshot and ancestral comparison custody
+
+Freeze every complete retrieval-log line under the original exclusive lock,
+with exact original wrapper absence and no active retrieval script before and
+after copying. Check completed queue receipt/log and matching manager invocation;
+record missing transient metadata and unavailable original exit status explicitly.
+Hash source and copy, exclude no tail, and stream-check every accession/status
+and target-source identity, length, confidence and path contract. The snapshot
+contains 3,020,697 append records; counts are not distinct protein coverage.
+
+The unchanged full cataloger and independent reconstruction reader now process
+all 526 taxa and 5,815,847 representative proteins. Latest-accession status,
+exact sequence/length and source-specific ranking are retained. Selected
+coordinate bytes are rehashed by the producer; the separate reader reconstructs
+every emitted link, selected model and per-taxon count. Replace unsafe transient
+service defaults with original PID/create/command, matching invocation, complete
+wrapper payloads, native exit, receipt hash and source binding gates. Catalog
+refresh is running; its new coverage is unverified.
+[Full snapshot and execution design](completed-retrieval-catalog-refresh-20261005.md).
+
+Close all 24 ancestral comparison dispositions against their independent reader,
+both actual original tool terminals and complete invocation journals. Twenty-two
+roles pass finite integrity checks, with 19,866 mapped scalars and 66 accepted
+joint frames. Two roles retain eight positive-infinity ASRV alpha values and
+have no admitted ancestral arrays. Preserve original failures, inputs, priors,
+seeds and native caps. The 20-iteration horizon does not establish posterior
+adequacy; nonfinite values remain unresolved rather than silently removed or
+interpreted as a uniform-rate limit.
+[Full comparison closure](baliphy-joint-fasta-v7-20261004.md).
+
 ## October 4: complete direct predictor geometry and tree linkage
 
 Compare all 643 exact-complete-sequence predictor pairs at 12 original masks,

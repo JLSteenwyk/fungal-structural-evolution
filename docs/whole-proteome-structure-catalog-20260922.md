@@ -1,5 +1,10 @@
 # Whole-proteome structure catalog
 
+An [October 5 refresh](completed-retrieval-catalog-refresh-20261005.md) uses the
+entire completed retrieval log and is running across all 526 taxa and 5,815,847
+representative proteins. Its independent reader is queued; updated coverage
+remains unverified. The earlier catalog evidence below remains dated history.
+
 The marker catalog does not measure whole-proteome coverage. A separate
 full-data catalog has completed screening all **5,815,847 representative proteins
 from 526 sampled entries**. It uses the same frozen AlphaFold retrieval log

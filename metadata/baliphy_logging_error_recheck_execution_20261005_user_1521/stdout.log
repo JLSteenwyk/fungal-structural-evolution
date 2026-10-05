@@ -1,0 +1,59 @@
+{
+  "status": "completed_fresh_native_and_retained_logger_error_recheck",
+  "checked_utc": "2026-10-05T15:19:21.632710+00:00",
+  "corrected_fixture_bindings_checked": 507,
+  "corrected_saved_frames_checked": 9,
+  "corrected_ancestral_records_checked": 36,
+  "corrected_ancestral_residue_category_pairs": 233,
+  "corrected_same_record_sequence_state_mismatches": 0,
+  "numeric_probes": {
+    "original": {
+      "error_reproduced": true,
+      "incorrect_constant_indices": [
+        0,
+        2,
+        3,
+        4,
+        7
+      ],
+      "values": [
+        0.234,
+        2.34e-11,
+        0.0234,
+        2.34e-05,
+        0.234,
+        2.34e-101,
+        23400000000,
+        234.0,
+        0,
+        1,
+        0.25,
+        4
+      ],
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-logging-error-recheck-20261005-user-1521/original/attempt-0001/receipt.json"
+    },
+    "cjson": {
+      "native_exact_roundtrips": 12,
+      "values": [
+        2.34e-10,
+        2.34e-11,
+        2.34e-20,
+        2.34e-50,
+        2.34e-100,
+        2.3399999999999998e-101,
+        23400000000.0,
+        2.34e+20,
+        0.0,
+        1.0,
+        0.25,
+        4.0
+      ],
+      "full_model_logger_fix_qualified": false,
+      "native_receipt": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-logging-error-recheck-20261005-user-1521/cjson/attempt-0001/receipt.json"
+    }
+  },
+  "new_mcmc_runs": 0,
+  "existing_jobs_restarted": false,
+  "child_cpu_seconds": 1.166354,
+  "scope": "Retained corrected sequence/state frames pass. Installed original numeric formatter still fails; CJSON exact roundtrip passes only the twelve fixed native constants. Full future logger correction, historical float assessment and posterior qualification remain pending. No installed binary/library or old output changes."
+}

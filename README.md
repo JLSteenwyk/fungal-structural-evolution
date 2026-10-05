@@ -5,12 +5,25 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 4 October 2026
+## Current checkpoint — 5 October 2026
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
-CPU analyses and background catalog retrieval continue.
+CPU analyses continue. The original retrieval queue has finished its accession
+attempts; individual errors and no-match outcomes remain explicit.
+
+The [completed retrieval snapshot and full catalog refresh](docs/completed-retrieval-catalog-refresh-20261005.md)
+preserve all **526 taxa and 5,815,847 representative proteins**. The entire
+3.3 GiB retrieval log is frozen and validated. Full sequence/model matching
+and selected coordinate hashing are running, with an independent full reader
+queued behind the original producer. Updated coverage remains unverified.
+
+All **24 ancestral failed-role comparisons** now finish without native crashes.
+Independent readback and original execution closure pass, with **22 finite
+integrity checks and two excluded special-value reviews**. This does not
+qualify an adequate ancestral posterior or repair the installed formatter.
+[Completed comparison and remaining issues](docs/baliphy-joint-fasta-v7-20261004.md).
 
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,
@@ -67,12 +80,12 @@ has completed a full 622-tip comparison at the original 8 MiB stack and other
 native caps. The native exit is zero; independent readers checked 903 scalar
 values and 956,096 ancestral residue/category pairs over three saved frames.
 The original wrapper's separate reporting failure is preserved and resolved
-by a fresh read-only review. A new comparison covers all 24 originally failed
-roles with their original inputs, seeds, priors and caps. At 15:35 UTC, four
-roles have native zero exits: three finite-output checks and one retained
-special-value review. Four workers continue; an independent reader is queued
-behind original producer success. Full failure-grid correction and adequate
-ancestral posterior uncertainty remain unqualified.
+by a fresh read-only review. The complete 24-role comparison preserves original
+inputs, seeds, priors and caps. Both original executions and independent
+readback have closed: 22 roles pass finite integrity checks, while two retain
+eight infinite alpha values and have no accepted arrays. Full failure-grid
+output integrity, a global repair and adequate ancestral posterior uncertainty
+remain unqualified.
 
 The retained uniform covariance basis has now completed all 1,302,000 audits
 and 6,220,800 setting links with original independent readback and two-journal

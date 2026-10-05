@@ -1,0 +1,25 @@
+{
+  "unit": "fungal-completed-afdb-catalog-readback-20261005-v1.service",
+  "pid": 182513,
+  "created": 1791214088.59,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/completed_afdb_catalog_readback_wait_plan_20261005_v1.json"
+  ],
+  "plan": "metadata/completed_afdb_catalog_readback_wait_plan_20261005_v1.json",
+  "plan_sha256": "fefdf098f50707670be182c9e04d34411771cb4d4b8264b0a5a58e6a4f18c662",
+  "checked_utc": "2026-10-05T15:28:31.983424+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "103079215104",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "b0650b67b6f145b3a9e6e17c8083d3b7",
+  "original_tool_session_id": 32067,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_weighted_parallel_launch_v1.py": "8e53d899c37aee2dea8603df8f286c854a5504575857b5689227999807baa698"
+  },
+  "scientific_eligibility": false
+}

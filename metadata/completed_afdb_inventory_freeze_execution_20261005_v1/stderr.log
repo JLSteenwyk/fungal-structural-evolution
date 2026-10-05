@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/freeze_completed_afdb_inventory_v1.py", line 79, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/freeze_completed_afdb_inventory_v1.py", line 32, in main
+    assert state['LoadState']=='loaded' and state['ActiveState']=='inactive'
+AssertionError

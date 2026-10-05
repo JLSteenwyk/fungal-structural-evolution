@@ -1,5 +1,38 @@
 # Joint ancestral alignment serialization, October 4
 
+## October 5: all original failed-role comparisons closed
+
+All 24 original comparison roles finished with native exit zero. Independent
+readback and both actual original tool terminals close: producer session
+72605 and reader session 84274. The complete closure checks 20,090 bound
+source/output files and whole invocation journals, including the queued
+reader's original outer controller and native/wrapper summary payloads.
+[Complete comparison closure](../metadata/baliphy_joint_fasta_v7_failure_grid_completed_20261005_v1.json).
+
+Twenty-two roles pass finite output-integrity checks: 19,866 mapped scalar
+values, 66 joint frames and 21,017,330 ancestral residue/category pairs.
+Two roles remain explicit special-value reviews with no accepted ancestral
+arrays. Eight positive-infinity values occur only in
+`parameters["S1/"]["ASRV.Gamma:alpha"]`: first input broad-prior chain 3,
+iterations 1–5, and second input centered-prior chain 4, iterations 1–3.
+These cases contain no literal-null scalar values. Four of six prior
+quartets have all four roles pass finite integrity checks. The entire
+24-role grid is not accepted for output integrity or posterior inference.
+
+No original failures are replaced, concatenated or retried. Original inputs,
+seeds, priors and native caps remain preserved. Absence of crashes in these
+short comparisons does not establish a global native repair. The native
+cause or mathematical interpretation of the infinite alpha values remains
+unproven; they are not silently treated as valid rate parameters, discarded
+as burn-in or admitted as ancestral arrays.
+
+The installed original formatter still reproduces five incorrect constants
+in a fresh October 5 probe; the replacement path passes all twelve tested
+roundtrips. Its passing constants and the finite full-model comparisons
+do not repair the installed original formatter or qualify an adequate
+ancestral posterior. All eight scientific aims remain incomplete.
+[Fresh error recheck](../metadata/current_analysis_error_recheck_20261005_user_1521.json).
+
 The current candidate writes the same joint ancestral-state record using
 sequence rows directly, avoiding conversion of the entire multi-megabyte FASTA
 alignment into a Haskell character list and then back into text. The ancestral

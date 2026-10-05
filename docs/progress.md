@@ -1,6 +1,34 @@
 # Progress and evidence
 
-## October 4, 16: 45 UTC: direct coordinate controls and tree linkage closed
+## October 5: full retrieval snapshot verified; catalog refresh running
+
+The entire 3.3 GiB retrieval log is frozen, source/target rehashed and all
+3,020,697 records validated. The completed original queue is not a full atlas
+coverage claim. A failed snapshot adapter remains preserved; its corrected
+version checks process absence and exclusive locking without inventing an
+unavailable original exit status. The full catalog refresh retains all 526
+taxa and 5,815,847 proteins, with unchanged qualified matching/ranking and
+selected coordinate byte hashing. Its full independent reader is queued
+behind original producer invocation checks. Updated coverage is not accepted
+until both original executions and the independent reader close.
+[Evidence, resource estimates and reproduction](completed-retrieval-catalog-refresh-20261005.md).
+
+All 24 original ancestral comparison roles and their independent reader now
+close against actual original tool terminals, whole invocation journals and
+20,090 source/output bindings. All native exits are zero; 22 roles pass finite
+integrity checks. Two retain eight infinite ASRV alpha values and have no
+accepted ancestral arrays. Neither all-role integrity nor posterior adequacy
+is accepted. A fresh installed-formatter probe still reproduces five bad
+constants; the replacement passes twelve fixed roundtrips.
+[Comparison closure](baliphy-joint-fasta-v7-20261004.md).
+
+At 15:19 UTC, the original full timing job has 1,028 producer checkpoints,
+sixteen workers and no failure files. Full weighted biological fits remain
+zero and gated behind its complete independent closure. Historical covariance
+mutation, accepted frameworks, uncertainty calibration, atlas completion,
+all eight evolutionary aims and large-data public release remain unfinished.
+
+## October 4, 16:45 UTC: direct coordinate controls and tree linkage closed
 
 All 643 pairs/12 masks retain 7,716 rows: 5,171 geometry comparisons,2,545 coverage
 exclusions and no rejected models. Full independent raw-coordinate/mask/geometry
@@ -12,11 +40,11 @@ Six original waits/whole wrapper/manager journals and 6,070 bindings close.
 No new fits, sampler, GPU work, charge or production restart occurred.
 [Methods, figure and reproduction](predictor-coordinate-and-phylogeny-controls-20261004.md).
 
-At 16: 44 UTC, original full timing has 68 producer checkpoints/16 workers and no
+At 16:44 UTC, original full timing has 68 producer checkpoints/16 workers and no
 failure files; full biological fits remain zero. The all 24 ancestral comparison
 has 16 native-zero exits: 15 finite-output checks and one special-value review,
 with four original native workers active. Full grid closure/posteriors remain
-unqualified. The fresh 16: 20 installed numeric probe still reproduces five wrong
+unqualified. The fresh 16:20 installed numeric probe still reproduces five wrong
 constants; the corrected twelve-value probe passes. Historical formatter/SVD
 errors, accepted frameworks, calibration, full atlas and all eight aims remain
 unfinished. The full 501 fungi+25 outgroup objective stays active.

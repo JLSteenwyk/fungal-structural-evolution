@@ -1,0 +1,17 @@
+{
+  "pid": 169326,
+  "created": 1791213171.91,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=8589934592",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/freeze_completed_afdb_inventory_v1.py",
+    "--output",
+    "results/structures/afdb-completed-inventory-20261005-v1",
+    "--receipt",
+    "metadata/completed_afdb_inventory_freeze_20261005_v1.json"
+  ]
+}

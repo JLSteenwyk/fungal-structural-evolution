@@ -1,5 +1,29 @@
 # Decisions and unresolved questions
 
+## October 5: preserve complete retrieval scope and unavailable exit evidence
+
+Freeze the entire completed retrieval log while holding its original exclusive
+lock, checking exact original wrapper absence and no live retrieval scripts.
+Retain the queue receipt/log and matching original manager invocation. Missing
+transient systemd metadata cannot prove a zero native exit, and its success
+defaults are never used as that proof. Preserve the first failed snapshot
+adapter unchanged and use a new version/output namespace. Do not restart
+retrieval or reduce the snapshot to predictor-overlap controls.
+
+Refresh the complete 526-taxon/5,815,847-protein catalog with unchanged qualified
+matching/ranking and every selected coordinate hash. Queue a full independent
+reader with preserved arithmetic and exact original wrapper/native terminal
+payload gates. Keep every error, no-match taxon and missing protein in scope.
+GPU prediction stays paused. Updated coverage requires original execution
+closure and full independent readback.
+[Evidence and resources](completed-retrieval-catalog-refresh-20261005.md).
+
+The complete ancestral comparison has 22 finite integrity roles and two
+explicit review roles. Do not silently remove infinite alpha observations
+as burn-in, accept a uniform-rate limit without native evidence, or admit
+reviewed ancestral arrays. Twenty iterations and crash-free completion do
+not establish posterior adequacy or a global repair.
+
 ## October 3: correct diagnosed stack limits while preserving the full design
 
 After complete original sampler/resource closure, run fresh 20-iteration

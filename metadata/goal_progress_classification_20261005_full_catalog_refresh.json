@@ -1,0 +1,72 @@
+{
+  "checked_utc": "2026-10-05T15:36:00.739019+00:00",
+  "previous_goal_turn_classification": "progress",
+  "previous_goal_turn_evidence": {
+    "all24_original_comparison_closure": "metadata/baliphy_joint_fasta_v7_failure_grid_completed_20261005_v1.json",
+    "closure_sha256": "62d90eecf2f27fbe4744e4b1bac1d3a622191dd88f4f65c87cd88d53bf3f1c5d",
+    "source_output_bindings_verified": 20090,
+    "native_zero_exits": 24,
+    "finite_integrity_roles": 22,
+    "review_roles": 2
+  },
+  "intervening_user_error_recheck_classification": "verified_wait",
+  "intervening_user_evidence": "metadata/current_analysis_error_recheck_20261005_user_1521.json",
+  "current_goal_turn_classification": "progress",
+  "current_goal_turn_evidence": {
+    "failed_snapshot_v1_retained": true,
+    "full_completed_snapshot": "metadata/completed_afdb_inventory_freeze_20261005_v2.json",
+    "snapshot_bytes": 3538619125,
+    "complete_records": 3020697,
+    "snapshot_original_tool_terminal_verified": true,
+    "full_catalog_producer_launch": "metadata/completed_afdb_catalog_launch_20261005_v1.json",
+    "full_independent_reader_launch": "metadata/completed_afdb_catalog_readback_launch_20261005_v1.json",
+    "producer_original_tool_session": 20607,
+    "reader_original_tool_session": 32067,
+    "actual_coordinate_hash_progress": 330000,
+    "logged_selected_models": 2935733
+  },
+  "preserved_goal_scope": {
+    "approximately_500_fungi_plus_25_outgroups": true,
+    "actual_manifest_fungi": 501,
+    "actual_manifest_outgroups": 25,
+    "full_structural_atlas_required": true,
+    "all_eight_aims_required": true,
+    "accepted_species_gene_reconciliation_dating_framework_required": true,
+    "calibrated_inference_and_uncertainty_required": true,
+    "reproducible_public_repo_and_data_release_required": true
+  },
+  "outstanding": {
+    "full_weighted_biological_fits": 0,
+    "original_full_timing_live": true,
+    "timing_producer_checkpoints": 1038,
+    "all24_comparison_execution_custody_closed": true,
+    "all24_full_output_integrity_accepted": false,
+    "adequate_ancestral_posterior": false,
+    "installed_original_formatter_error_persists": true,
+    "historical_native_svd_mutation_repaired": false,
+    "full_catalog_update_running": true,
+    "updated_atlas_coverage_verified": false,
+    "atlas_complete": false,
+    "all_eight_aims_incomplete": true,
+    "large_data_public_release_complete": false
+  },
+  "live_evidence": [
+    "metadata/completed_afdb_catalog_checkpoint_20261005_goal_1535.json",
+    "metadata/full_weighted_timing_parallel_checkpoint_20261005_goal_1534.json"
+  ],
+  "objective_path": "/home/bizon/.codex/attachments/4c549555-8304-4df0-8e92-1d9d90b77a45/pasted-text-1.txt",
+  "objective_sha256": "e17e34f2c90f2e611f82f3c05bdaf629a80d4da6422b7cf0b76009ea47aa3502",
+  "goal_status": "active",
+  "narrow_control_not_substituted_for_full_goal": true,
+  "source_hashes": {
+    "metadata/baliphy_joint_fasta_v7_failure_grid_completed_20261005_v1.json": "62d90eecf2f27fbe4744e4b1bac1d3a622191dd88f4f65c87cd88d53bf3f1c5d",
+    "metadata/completed_afdb_inventory_freeze_20261005_v2.json": "7909cde60165403c0c1baf1a34c51c213d6e8306e12ea1a195e211683a8907db",
+    "metadata/completed_afdb_catalog_launch_20261005_v1.json": "cf66cddf127908f4c49f2a80b5da66329047170f9e68beb87926a5a3c1d4c0f0",
+    "metadata/completed_afdb_catalog_readback_launch_20261005_v1.json": "a46af976531c24cea35d0d480c15c0554218aab508433d92ec3233c0ab1a8e77",
+    "metadata/completed_afdb_catalog_checkpoint_20261005_goal_1535.json": "4274fd37654879de799667543c9f2fd93db69e5164b9dc92134b80b57dd3ef38",
+    "metadata/full_weighted_timing_parallel_checkpoint_20261005_goal_1534.json": "4d71413f679183d426a22685af522273a6869cdd82bab9900eb8fab3fea6210f"
+  },
+  "new_cost_usd": 0,
+  "gpu": false,
+  "existing_jobs_restarted": false
+}

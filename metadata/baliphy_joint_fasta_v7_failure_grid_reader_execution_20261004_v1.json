@@ -1,0 +1,82 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+    "--plan",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json",
+    "--reader"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_resources_20261004_v1.json": "dc181c48cb51d1fa157c89730c607eaf8fdd4f9f4501c6a99cb3aa9e56d2b37b",
+    "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py": "c5cfb15e5791712a5da69e693fe980a4fe6abd4209bc0153a6249a4e73c3b5b9",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "44a701e9737c45a480b6debd4c398c5d",
+  "wrapper": {
+    "pid": 170559,
+    "created": 1791135324.74,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_reader_resources_20261004_v1.json",
+      "--execution",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_reader_execution_20261004_v1.json",
+      "--receipt",
+      "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/readback.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json",
+      "--reader"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 10800,
+  "started_utc": "2026-10-04T17:35:25.849465+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-04T17:39:06.420963+00:00",
+  "child": {
+    "pid": 170561,
+    "created": 1791135325.15,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=7200",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_joint_fasta_v7_failure_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_joint_fasta_v7_failure_grid_plan_20261004_v1.json",
+      "--reader"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 220.57125450402964,
+  "child_cpu_seconds": 220.47839199999999,
+  "child_peak_rss_bytes": 244162560,
+  "receipt": "results/ancestral/baliphy-joint-fasta-v7-all-failed-roles-20261004-v1/readback.json",
+  "receipt_sha256": "fa465593227c4b3fa8b426ca013eabbde957ef037c88a32f3e7b303e6a89c2cd",
+  "artifacts": {
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_execution_20261004_v1/stderr.log": "070f3c7a0e793f98509edef13c038b718e3cdd9cdd177b5d8f5d472762b88b24",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_execution_20261004_v1/configuration.json": "c7a4733d402a706b2a0faa6e0dffce1cb53016bef85ac086e2982071490e7362",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_execution_20261004_v1/stdout.log": "9355835e4036231d84319c18186ced72aad0dbe4035300a0769f110fe0864635",
+    "metadata/baliphy_joint_fasta_v7_failure_grid_reader_execution_20261004_v1/process.json": "316874b274d38275003fb2cd41d7d82e6596b3d7244321877b992385cb1e94b2"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}
