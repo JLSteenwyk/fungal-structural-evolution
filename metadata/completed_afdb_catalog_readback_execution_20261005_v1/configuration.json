@@ -1,0 +1,48 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=94489280512",
+    "--cpu=172800",
+    "--fsize=17179869184",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_whole_proteome_catalog_v3.py",
+    "--plan",
+    "metadata/completed_afdb_catalog_readback_plan_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_afdb_catalog_readback_resources_20261005_v1.json": "c56645d02d604c2ade265679c6fa45a949c1c4747bd4c6f78c93be5816fd26d9",
+    "scripts/readback_whole_proteome_catalog_v3.py": "810c6f313ba059cbf6d9bca91398abb162754f6816aab8a7ca62ae6b2e0edcf2",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "b0650b67b6f145b3a9e6e17c8083d3b7",
+  "wrapper": {
+    "pid": 230643,
+    "created": 1791217188.06,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_afdb_catalog_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/completed_afdb_catalog_readback_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_catalog_readback_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_whole_proteome_catalog_v3.py",
+      "--plan",
+      "metadata/completed_afdb_catalog_readback_plan_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "103079215104",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 259200,
+  "started_utc": "2026-10-05T16:19:49.149270+00:00"
+}

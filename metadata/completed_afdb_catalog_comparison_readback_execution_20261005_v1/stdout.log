@@ -1,0 +1,20 @@
+{
+  "status": "passed_full_catalog_comparison_source_replay",
+  "source_receipt_sha256": "0791c52efdce6d88b3cfda0bb21ff109a170169f4e9ef69284fd307847ef6424",
+  "script_sha256": "83160a29e60755f8d4ffdcb87d8d61af8b74dac7933b05b81200a7ea299dd4ae",
+  "links_replayed": {
+    "old": 1955694,
+    "new": 2994868
+  },
+  "taxa": 526,
+  "dispositions": {
+    "changed_selected_model": 16470,
+    "unchanged_model": 1939224,
+    "new_catalog_link": 1039174
+  },
+  "unlinked_in_both": 2820979,
+  "scope": "Every old and new link field matched to source; sorted unique union, dispositions, all taxon counts and coverage fractions independently checked. No new structural confidence qualification.",
+  "scientific_eligibility": false,
+  "new_predictions": 0,
+  "gpu": false
+}

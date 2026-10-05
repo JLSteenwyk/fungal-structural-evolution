@@ -1,5 +1,19 @@
 # Decisions and unresolved questions
 
+## October 5: record latent alpha without changing the prior
+
+The full current trace audit and deterministic native grid demonstrate an
+overflow mechanism compatible with the observed infinite alpha values.
+Both original output formats agree; the sampled latent values were not saved.
+Do not reinterpret an infinity tag as a recovered finite latent value,
+change/truncate the prior to avoid the observation, infer a spike at infinity,
+or drop early reviewed rows after seeing them. Preserve every original failure
+and exclusion. A prospective logger must retain latent log-alpha and its
+derived alpha/rate state with unchanged prior and sampling semantics, then
+pass all generated-source and native controls before a longer full horizon.
+The installed original formatter and adequate posterior remain unqualified.
+[Full diagnostic and independent checks](ancestral-log-alpha-diagnostic-20261005.md).
+
 ## October 5: preserve complete retrieval scope and unavailable exit evidence
 
 Freeze the entire completed retrieval log while holding its original exclusive
@@ -15,7 +29,13 @@ matching/ranking and every selected coordinate hash. Queue a full independent
 reader with preserved arithmetic and exact original wrapper/native terminal
 payload gates. Keep every error, no-match taxon and missing protein in scope.
 GPU prediction stays paused. Updated coverage requires original execution
-closure and full independent readback.
+closure and full independent readback. These gates now pass for 2,994,868
+links and the full all-taxon catalog comparison. Interpret the 1,039,174
+gains as newly linked existing models and 16,470 replacements as changed
+catalog selections; neither is a new prediction or evolutionary change.
+Retain all 2,820,979 source-unlinked proteins and zero-coverage taxa for
+confidence/PAE and predictor integration. Complete catalog availability
+does not complete the atlas or eight evolutionary aims.
 [Evidence and resources](completed-retrieval-catalog-refresh-20261005.md).
 
 The complete ancestral comparison has 22 finite integrity roles and two

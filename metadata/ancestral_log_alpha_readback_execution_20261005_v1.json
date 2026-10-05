@@ -1,0 +1,79 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_ancestral_log_alpha_v1.py",
+    "--receipt",
+    "metadata/ancestral_log_alpha_readback_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/ancestral_log_alpha_readback_resources_20261005_v1.json": "84bcdf283d0910594a1473294cf116830add336ec6f615820d4dfffac0f9a5db",
+    "scripts/readback_ancestral_log_alpha_v1.py": "3dd29f01ab8424cc2c4ff0a8e117aec2243850bd58d5f3c7a04f8b6dd554ffd3",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "9851f10b51424148b2f8e1118ab85455",
+  "wrapper": {
+    "pid": 212736,
+    "created": 1791215865.7,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/ancestral_log_alpha_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/ancestral_log_alpha_readback_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/ancestral_log_alpha_readback_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_ancestral_log_alpha_v1.py",
+      "--receipt",
+      "metadata/ancestral_log_alpha_readback_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-05T15:57:46.803298+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T15:57:54.597940+00:00",
+  "child": {
+    "pid": 212772,
+    "created": 1791215866.11,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_ancestral_log_alpha_v1.py",
+      "--receipt",
+      "metadata/ancestral_log_alpha_readback_20261005_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 7.794421085971408,
+  "child_cpu_seconds": 7.756241999999999,
+  "child_peak_rss_bytes": 319213568,
+  "receipt": "metadata/ancestral_log_alpha_readback_20261005_v1.json",
+  "receipt_sha256": "c46ef587a696a0a3aba0a832128ddfd7e27fb05b6098e225e293ca1bde50413d",
+  "artifacts": {
+    "metadata/ancestral_log_alpha_readback_execution_20261005_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/ancestral_log_alpha_readback_execution_20261005_v1/configuration.json": "639cd211d81d4b819c8452d5dc6d89dc87285b67e9beba85cdc9945cd1e928a0",
+    "metadata/ancestral_log_alpha_readback_execution_20261005_v1/stdout.log": "f8f628b1a7afe73774dc11c0da62c3f30003a35a738a7075f8704f25fd166b33",
+    "metadata/ancestral_log_alpha_readback_execution_20261005_v1/process.json": "01b4dea15a9b1b8e65fc9102bd591f0a50c312553e9056a6133c93fe58d40fa4"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

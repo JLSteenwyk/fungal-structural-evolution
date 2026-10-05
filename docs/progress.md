@@ -1,5 +1,57 @@
 # Progress and evidence
 
+## October 5, 16:42 UTC: full catalog and all-taxon change replay closed
+
+The completed retrieval catalog now has full producer/independent-reader
+and actual original execution closure for all 526 taxa and 5,815,847
+representative proteins. All 2,935,733 selected coordinate hashes were
+checked over 1,098,056,403,371 bytes. There are 2,994,868 protein links in
+502 taxa and 2,820,979 source-unlinked proteins. Fungal availability is
+50.7%, outgroup availability 62.6%, and pooled availability 51.5%, before
+confidence/PAE or ESMFold integration. Both complete 526-row taxon tables
+are byte-identical source copies.
+
+The full old/new comparator and independent CSV reconstruction close with
+both actual original waits, whole wrapper journals and 88 bindings:
+1,039,174 gains, zero losses, 16,470 selected-model replacements and
+1,939,224 unchanged selections. Gains link existing predictions; catalog
+replacements are not evolutionary structural change. A complete taxon
+scatter and protein-weighted coverage figure use explicit denominators.
+[Evidence, tables, resources and reproduction](completed-retrieval-catalog-refresh-20261005.md).
+
+At 16:37 UTC, the original full timing producer is confirmed live with
+seventeen native processes, 1,081 checkpoints and no failure files. Full
+weighted biological fits remain zero and gated behind complete timing
+readback. The fresh user error check still reproduces five original
+numeric formatter errors; the corrected twelve-value probe passes.
+No MCMC or GPU inference was restarted and no new charge was incurred.
+Full atlas integration, accepted frameworks, adequate ancestral posterior,
+historical covariance failure, calibrated uncertainty, large-data public
+release and all eight evolutionary aims remain incomplete.
+
+The earlier October 5 observations below are retained as dated history.
+
+## October 5, 16:05 UTC: full current alpha diagnostic closed
+
+Every available scalar alpha/prior/likelihood/posterior row across all 1,620
+original V6 roles and 24 V7 comparisons has independent readback: 34,020
+rows, 411 actual generated prior programs and all original failures retained.
+Twenty-six infinite alpha observations occur in fourteen reviewed roles.
+A 57-case native probe and 90-digit Decimal checks demonstrate a compatible
+exponentiation overflow mechanism with finite latent prior density and unit
+rates. Original latent values were not saved, so historical cause is not proven.
+The first probe's separate literal JSON-null conversion fault is preserved
+with its original backtrace; a new tagged-string version passes the same grid.
+Four original transports/7,108 bindings close; all 126 diagnostic figure bins
+are independently replayed and PNG/PDF visually checked. No reviewed arrays
+are admitted, priors changed, MCMC restarted, GPU used or cost incurred.
+[Evidence, figure and next required logging work](ancestral-log-alpha-diagnostic-20261005.md).
+
+At 16:06 UTC, full catalog coordinate hashing reaches 2,210,000 of 2,935,733
+selected files; its independent reader remains queued. Full timing has 1,063
+producer checkpoints with sixteen workers and no failure files. Full biological
+fits remain zero and all eight scientific aims remain incomplete.
+
 ## October 5: full retrieval snapshot verified; catalog refresh running
 
 The entire 3.3 GiB retrieval log is frozen, source/target rehashed and all

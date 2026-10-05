@@ -1,0 +1,28 @@
+{
+  "status": "completed_full_current_alpha_trace_diagnostic_figure",
+  "checked_utc": "2026-10-05T16:01:50.283438+00:00",
+  "scalar_rows": 34020,
+  "summary_bins": 126,
+  "plot_full_v6_native_zero_roles": 1596,
+  "separate_v7_comparison_roles": 24,
+  "positive_infinity_observations": 26,
+  "outputs": [
+    "results/ancestral/full-current-log-alpha-figure-20261005-v1/ancestral_log_alpha_diagnostics_20261005.png",
+    "results/ancestral/full-current-log-alpha-figure-20261005-v1/ancestral_log_alpha_diagnostics_20261005.pdf"
+  ],
+  "table": "results/ancestral/full-current-log-alpha-figure-20261005-v1/alpha_trace_summary.tsv",
+  "source_hashes": {
+    "metadata/ancestral_log_alpha_diagnostic_20261005_v2.json": "446befe7aeec2b92c4d8116fb7dc323d343ad008015ddc1872704ead416519c7",
+    "metadata/ancestral_log_alpha_readback_20261005_v1.json": "c46ef587a696a0a3aba0a832128ddfd7e27fb05b6098e225e293ca1bde50413d",
+    "metadata/ancestral_log_alpha_readback_transport_20261005_v1.json": "29236be65eeb366a4947db5e6bb2a5f240ad9e6aee20b510a4dc69534f18d270",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/plot_ancestral_log_alpha_v1.py": "7182f82ac869bb2f6db8acbba33d14eef8c044ff38a58fdb923a38684b981cbc",
+    "results/ancestral/full-current-log-alpha-diagnostic-20261005-v2/all_current_alpha_traces.jsonl": "420f3dd9bfc30905f306130f26e5bda6d957fd338025ec6c3c3b7aa63d795998",
+    "results/ancestral/full-current-log-alpha-figure-20261005-v1/ancestral_log_alpha_diagnostics_20261005.png": "460bd4d0eaddbecadabeba0ac2ba759e9b955fc474c57bc4483034c99b8bea67",
+    "results/ancestral/full-current-log-alpha-figure-20261005-v1/ancestral_log_alpha_diagnostics_20261005.pdf": "3e81f33a3a7b5aa912906a99d02c3ceca34110a1d2e1332645ce68ec4fdaea6a",
+    "results/ancestral/full-current-log-alpha-figure-20261005-v1/alpha_trace_summary.tsv": "bcdcbb532fc1ae50e42fcd525fef7309201e0d7e3be8a0dc5a770677764ce03b"
+  },
+  "scientific_eligibility": false,
+  "new_mcmc_runs": 0,
+  "gpu": false,
+  "scope": "All34,020readback-verified rows summarized by original phase/prior/iteration.126bins retain every finite and infinite alpha observation. Finite q10/median/q90 describe532full-V6roles per prior; separate8-role V7comparison has its own denominator. Failed originals are not silently replaced. No pooled posterior, confidence interval, independent biological replicate, convergence diagnostic, review admission or biological effect claim."
+}

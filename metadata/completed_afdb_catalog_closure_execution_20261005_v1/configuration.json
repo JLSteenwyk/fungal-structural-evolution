@@ -1,0 +1,48 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_completed_afdb_catalog_v1.py",
+    "--receipt",
+    "metadata/completed_afdb_catalog_completed_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_afdb_catalog_closure_resources_20261005_v1.json": "91a94b8c5996e86a96cd700108b06660987a9de1b221741265b324bb1a6cacef",
+    "scripts/close_completed_afdb_catalog_v1.py": "3f3c9af7534760d9c3165b4a8673484a2be6336178a1af5f9a1b0ab995ad2d4d",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "e661992ea748409ea2cd14af4816b927",
+  "wrapper": {
+    "pid": 234852,
+    "created": 1791217613.05,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_afdb_catalog_closure_resources_20261005_v1.json",
+      "--execution",
+      "metadata/completed_afdb_catalog_closure_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_catalog_completed_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/close_completed_afdb_catalog_v1.py",
+      "--receipt",
+      "metadata/completed_afdb_catalog_completed_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-05T16:26:54.151638+00:00"
+}

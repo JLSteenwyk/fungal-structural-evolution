@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=6442450944",
+    "--cpu=300",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/plot_completed_afdb_catalog_coverage_v1.py",
+    "--output",
+    "results/structures/full-afdb-catalog-coverage-figure-20261005-v1",
+    "--receipt",
+    "metadata/completed_afdb_catalog_figure_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_afdb_catalog_figure_resources_20261005_v1.json": "b9189087995715081f4c5c94dedb807f35d1f6947e282ba0676fb7f716c15d41",
+    "scripts/plot_completed_afdb_catalog_coverage_v1.py": "7cd34f4b90d68ce842d0c24d2b0f1979ea23922fcd92d56957510123200a4f4e",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "e2b4672a7a76464fae24297084cc753a",
+  "wrapper": {
+    "pid": 244913,
+    "created": 1791218640.89,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_afdb_catalog_figure_resources_20261005_v1.json",
+      "--execution",
+      "metadata/completed_afdb_catalog_figure_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_catalog_figure_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/plot_completed_afdb_catalog_coverage_v1.py",
+      "--output",
+      "results/structures/full-afdb-catalog-coverage-figure-20261005-v1",
+      "--receipt",
+      "metadata/completed_afdb_catalog_figure_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 600,
+  "started_utc": "2026-10-05T16:44:01.988533+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T16:44:03.136478+00:00",
+  "child": {
+    "pid": 244915,
+    "created": 1791218641.29,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=6442450944",
+      "--cpu=300",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/plot_completed_afdb_catalog_coverage_v1.py",
+      "--output",
+      "results/structures/full-afdb-catalog-coverage-figure-20261005-v1",
+      "--receipt",
+      "metadata/completed_afdb_catalog_figure_20261005_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 1.14770279196091,
+  "child_cpu_seconds": 1.1149779999999998,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/completed_afdb_catalog_figure_20261005_v1.json",
+  "receipt_sha256": "f3a7ef84dc3946cfefdf22e85fdfe97621be3134b6e327e1e0f8e4188aff296e",
+  "artifacts": {
+    "metadata/completed_afdb_catalog_figure_execution_20261005_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/completed_afdb_catalog_figure_execution_20261005_v1/configuration.json": "1614c3e3eb324de43951c4fcfb8bf721eed511a0beb45255a72bd4459cc9a6a8",
+    "metadata/completed_afdb_catalog_figure_execution_20261005_v1/stdout.log": "6c03b327f2e5dbf998980d290dc3900bca8abc3dd8591567cc0d0bf50fa06751",
+    "metadata/completed_afdb_catalog_figure_execution_20261005_v1/process.json": "18ec36fb4538d910a462e5c26ffcfcc4df550534b45ad62b4af4d6ebf11aa8b8"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

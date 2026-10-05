@@ -1,0 +1,15 @@
+{
+  "status": "prepared_unchanged_full_catalog_comparison_arithmetic_and_original_transport_gates",
+  "checked_utc": "2026-10-05T16:22:38.142301+00:00",
+  "producer_algorithm_unchanged": true,
+  "independent_full_csv_arithmetic_preserved": true,
+  "independent_arithmetic_body_sha256": "8e3e4317eeedd7dc957a8afafdae0edd6bb435473b84cba4717bab7b6ceca85f",
+  "source_hashes": {
+    "scripts/run_completed_afdb_catalog_comparison_v1.py": "0948df8b9a7f223fd5e9025ee9d5cbfd5620e75d3bea8be30a739da19ff66697",
+    "scripts/compare_whole_proteome_catalogs.py": "5e2cf189e24814fae37b6cd92e6ef583a59d734c0906c7a03f15980cf6d50c00",
+    "scripts/readback_whole_proteome_catalog_comparison.py": "9dcdc2cfed01fc332928fa09facb28cb5d8d912a61150b6e1bfb7507f9535f27",
+    "scripts/readback_whole_proteome_catalog_comparison_v2.py": "83160a29e60755f8d4ffdcb87d8d61af8b74dac7933b05b81200a7ea299dd4ae"
+  },
+  "scientific_eligibility": false,
+  "scope": "Exact previous qualified complete CSVreadback arithmetic preserved and syntaxchecked. New driver requires completed full atlas original producer/reader closure; reader requires actual original comparison transport. This is source equivalence review; no full new comparison or reader outcome claimed."
+}

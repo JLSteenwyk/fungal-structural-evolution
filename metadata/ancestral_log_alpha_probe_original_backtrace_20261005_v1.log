@@ -1,0 +1,36 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+process 206198 is executing new program: /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000555555f6ce74 in OperationArgs::reg_for_code(Runtime::Exp const&) const ()
+#0  0x0000555555f6ce74 in OperationArgs::reg_for_code(Runtime::Exp const&) const ()
+#1  0x0000555555f6d0da in OperationArgs::evaluate_slot_to_value(int) ()
+#2  0x00007ffff77bcd11 in builtin_function_ejson_null () from /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/Foreign.so
+#3  0x0000555555fca2dc in reg_heap::incremental_evaluate_unchangeable_(int) ()
+#4  0x0000555555fca42e in reg_heap::incremental_evaluate_unchangeable(int) ()
+#5  0x0000555555fca42e in reg_heap::incremental_evaluate_unchangeable(int) ()
+#6  0x0000555555fcb921 in RegOperationArgsUnchangeable::evaluate_reg_use_with_contingency(int) ()
+#7  0x0000555555f6cf3e in OperationArgs::evaluate_reg_to_closure(int) ()
+#8  0x0000555555fc571d in evaluate_e_op(OperationArgs&, Runtime::Exp const&) ()
+#9  0x0000555555fc5a7c in evaluate_e_op_to_c(OperationArgs&) ()
+#10 0x0000555555fca2dc in reg_heap::incremental_evaluate_unchangeable_(int) ()
+#11 0x0000555555fca42e in reg_heap::incremental_evaluate_unchangeable(int) ()
+#12 0x0000555555fcb921 in RegOperationArgsUnchangeable::evaluate_reg_use_with_contingency(int) ()
+#13 0x00007ffff7af9204 in builtin_function_list_to_vector () from /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/Vector.so
+#14 0x0000555555fca2dc in reg_heap::incremental_evaluate_unchangeable_(int) ()
+#15 0x0000555555fca42e in reg_heap::incremental_evaluate_unchangeable(int) ()
+#16 0x0000555555fcb921 in RegOperationArgsUnchangeable::evaluate_reg_use_with_contingency(int) ()
+#17 0x0000555555f6cf3e in OperationArgs::evaluate_reg_to_closure(int) ()
+#18 0x0000555555f6d0f6 in OperationArgs::evaluate_slot_to_value(int) ()
+#19 0x00007ffff77bbd88 in builtin_function_ejson_object () from /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/lib/bali-phy/Foreign.so
+#20 0x0000555555fca2dc in reg_heap::incremental_evaluate_unchangeable_(int) ()
+#21 0x0000555555fca42e in reg_heap::incremental_evaluate_unchangeable(int) ()
+#22 0x0000555555fcb921 in RegOperationArgsUnchangeable::evaluate_reg_use_with_contingency(int) ()
+#23 0x0000555555f6cf3e in OperationArgs::evaluate_reg_to_closure(int) ()
+#24 0x0000555555f6d0f6 in OperationArgs::evaluate_slot_to_value(int) ()
+rip            0x555555f6ce74      0x555555f6ce74 <OperationArgs::reg_for_code(Runtime::Exp const&) const+4>
+rsp            0x7fffffff7d08      0x7fffffff7d08
+rbp            0x7fffffff7dc0      0x7fffffff7dc0

@@ -1,0 +1,55 @@
+{
+  "status": "complete_verified_full_completed_retrieval_catalog_refresh",
+  "checked_utc": "2026-10-05T16:27:00.804137+00:00",
+  "taxa": 526,
+  "proteins_screened": 5815847,
+  "proteins_linked": 2994868,
+  "unique_models": 2935733,
+  "proteins_without_catalog_model": 2820979,
+  "taxa_with_models": 502,
+  "coordinate_bytes_verified": 1098056403371,
+  "inventory_records": 3020697,
+  "study_role_coverage": {
+    "ingroup": {
+      "taxa": 501,
+      "taxa_with_models": 478,
+      "representative_proteins": 5431687,
+      "proteins_with_model": 2754249,
+      "proteins_without_catalog_model": 2677438
+    },
+    "outgroup": {
+      "taxa": 25,
+      "taxa_with_models": 24,
+      "representative_proteins": 384160,
+      "proteins_with_model": 240619,
+      "proteins_without_catalog_model": 143541
+    }
+  },
+  "original_transports": [
+    {
+      "unit": "fungal-completed-afdb-catalog-20261005-v1.service",
+      "invocation_id": "d7e9f4b8b9564af199fa395c97ea6447",
+      "original_tool_session_id": 20607,
+      "native_exit_code": 0,
+      "wrapper_exit_code": 0,
+      "queued_outer_controller_verified": false,
+      "full_original_payloads_verified": true
+    },
+    {
+      "unit": "fungal-completed-afdb-catalog-readback-20261005-v1.service",
+      "invocation_id": "b0650b67b6f145b3a9e6e17c8083d3b7",
+      "original_tool_session_id": 32067,
+      "native_exit_code": 0,
+      "wrapper_exit_code": 0,
+      "queued_outer_controller_verified": true,
+      "full_original_payloads_verified": true
+    }
+  ],
+  "complete_bound_files": 49,
+  "scientific_eligibility": false,
+  "confidence_qualified_atlas_complete": false,
+  "all_eight_aims_incomplete": true,
+  "new_predictions": 0,
+  "gpu": false,
+  "scope": "Full526taxon/5,815,847representative-protein catalog and independent complete source/link/model readback closed against both actual original waits, whole wrapper/native/outer-queue/manager journals and all bindings. Every selected coordinate byte hash was checked by producer; reader independently reconstructs latest status, source-specific ranking, all links/models/taxon counts without rehashing every coordinate. Coverage is snapshot/source availability before confidence/PAE, not public-database absence, experimental validation, ESMFold union, clustering, homology or completed structural/evolutionary atlas. Missing models remain explicit for every original taxon."
+}

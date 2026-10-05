@@ -1,5 +1,26 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5: full alpha trace and native overflow controls
+
+Independently reconstruct all 34,020 available current scalar rows across
+1,644 original/comparison slots, keeping the 24 original native failures
+explicit. Check alpha and finite prior/likelihood/posterior in both TSV and
+tagged JSON with unchanged tolerances. Verify every one of 411 generated
+continuous LogLaplace prior programs. Probe nineteen fixed log-alpha values
+under all three priors in the native executable; check exponentiation,
+finite-double boundary, analytic latent/transformed densities and large-shape
+unit-rate behavior with independent 90-digit Decimal calculations.
+
+Keep first native literal JSON-null fault and captured backtrace; change only
+diagnostic transport to tagged strings in a new version. Close four original
+stage waits and full journals with 7,108 source/output bindings. Independently
+replay all 126 figure bins by sorted linear interpolation. The compatible
+overflow mechanism is not historical causal proof because latent values are
+unavailable. Reviewed arrays remain excluded; no posterior or biological
+effect is accepted. Future native outputs must record latent log-alpha without
+changing the existing prior before longer inference can be qualified.
+[Evidence and reproducible figure](ancestral-log-alpha-diagnostic-20261005.md).
+
 ## October 5: complete retrieval snapshot and ancestral comparison custody
 
 Freeze every complete retrieval-log line under the original exclusive lock,
@@ -17,7 +38,16 @@ coordinate bytes are rehashed by the producer; the separate reader reconstructs
 every emitted link, selected model and per-taxon count. Replace unsafe transient
 service defaults with original PID/create/command, matching invocation, complete
 wrapper payloads, native exit, receipt hash and source binding gates. Catalog
-refresh is running; its new coverage is unverified.
+refresh and full independent readback are complete: 2,994,868 links to
+2,935,733 models after hashing 1,098,056,403,371 coordinate bytes. All 526 taxa
+and missing links remain included. A separate full old/new outer join and
+independent CSV source replay check each sequence/model field, unique union,
+disposition and taxon count: 1,039,174 gains, zero losses, 16,470 replacements
+and 1,939,224 unchanged selections. Original producer/reader execution
+transports and complete source/output pins are closed. Publish byte-identical
+526-row coverage/change tables and a descriptive pooled/per-taxon figure.
+Model availability is evaluated before confidence/PAE, ESMFold integration
+or structural clustering; catalog replacements are not evolutionary change.
 [Full snapshot and execution design](completed-retrieval-catalog-refresh-20261005.md).
 
 Close all 24 ancestral comparison dispositions against their independent reader,

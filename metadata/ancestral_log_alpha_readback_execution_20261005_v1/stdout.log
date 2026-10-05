@@ -1,0 +1,21 @@
+{
+  "status": "passed_independent_full_current_alpha_trace_and_native_decimal_readback",
+  "checked_utc": "2026-10-05T15:57:54.488695+00:00",
+  "scalar_rows": 34020,
+  "role_slots": 1644,
+  "retained_original_native_failures": 24,
+  "positive_infinity_alpha_observations": 26,
+  "review_roles": 14,
+  "continuous_generated_priors_checked": 411,
+  "native_deterministic_cases": 57,
+  "native_overflow_cases": 15,
+  "independent_decimal_precision_digits": 90,
+  "maximum_reconstructed_log_alpha_difference": 2.220446049250313e-16,
+  "producer_receipt_sha256": "446befe7aeec2b92c4d8116fb7dc323d343ad008015ddc1872704ead416519c7",
+  "scientific_eligibility": false,
+  "reviewed_arrays_admitted": false,
+  "original_chain_cause_proven": false,
+  "new_mcmc_runs": 0,
+  "gpu": false,
+  "scope": "Independent standard JSON/TSV parser reconstructs every available alpha and finite prior/likelihood/posterior field across all1644role slots, retains24original failures and checks full emitted rows/role summaries/review identities. Decimal90digit logarithms, exponentiation, finite-double boundary and analytic Laplace/pushforward densities verify all57native cases; rate normalization and large-shape/overflow unit behavior checked. General finite-shape Gamma category accuracy is not newly qualified. Original latent values unavailable: no historical causal proof, review admission or adequate posterior."
+}

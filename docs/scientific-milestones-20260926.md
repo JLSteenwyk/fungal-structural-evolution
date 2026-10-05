@@ -1,12 +1,27 @@
 # Open scientific milestones — updated October 5, 2026
 
+The full current alpha diagnostic closes 34,020 scalar rows/411 generated
+prior programs and 57 native controls, with independent Decimal readback,
+four original execution closures, 7,108 bindings and a complete diagnostic
+figure. Twenty-six infinity observations in fourteen review roles stay
+excluded. A compatible overflow mechanism is demonstrated; latent values
+were not saved and historical chain cause is unproven. Record latent alpha
+in a qualified future logger before longer sampling; adequate posterior,
+all accepted biological frameworks and all eight aims remain incomplete.
+[Full evidence and next action](ancestral-log-alpha-diagnostic-20261005.md).
+
 The full 3.3 GiB retrieval log is frozen and record-validated. A full updated
-catalog retains all 526 taxa and 5,815,847 proteins; its producer is running
-and independent reader is queued. Updated coverage is not accepted yet.
+catalog retains all 526 taxa and 5,815,847 proteins. Full producer/independent
+reader and original execution closure are complete: 2,994,868 links,
+2,935,733 models and 1.10 TB of verified coordinate bytes. All 526 taxon rows
+and a descriptive figure are published. Full old/new independent replay
+checks 1,039,174 gains, zero losses and 16,470 model replacements. This is
+51.5% source availability before confidence/PAE and ESMFold integration;
+2,820,979 proteins remain unlinked. Atlas completion remains outstanding.
 All 24 ancestral comparison roles and the independent reader are closed,
 with 22 finite integrity checks and two explicit reviews containing eight
-infinite alpha values. The full timing stage has 1,028 producer checkpoints
-at 15:19 UTC and no failure files. Full biological fits remain zero; adequate
+infinite alpha values. The full timing stage has 1,081 producer checkpoints
+at 16:37 UTC and no failure files. Full biological fits remain zero; adequate
 posteriors, accepted phylogenetic/reconciliation/dating frameworks, full atlas,
 calibrated uncertainty and all eight scientific aims remain incomplete.
 [Catalog work](completed-retrieval-catalog-refresh-20261005.md) and

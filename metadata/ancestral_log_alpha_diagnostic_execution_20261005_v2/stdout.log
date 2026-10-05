@@ -1,0 +1,23 @@
+{
+  "status": "completed_full_current_alpha_trace_and_native_overflow_diagnostic_v2",
+  "checked_utc": "2026-10-05T15:53:57.729176+00:00",
+  "counts": {
+    "v6_roles": 1620,
+    "native_zero_roles": 1620,
+    "scalar_rows": 34020,
+    "positive_infinity_alpha_observations": 26,
+    "retained_native_failures": 24,
+    "v7_comparison_roles": 24
+  },
+  "native_deterministic_cases": 57,
+  "native_exp_overflow_cases": 15,
+  "continuous_generated_priors_checked": 411,
+  "scientific_eligibility": false,
+  "latent_log_alpha_recorded_in_original_samples": false,
+  "original_chain_overflow_cause_proven": false,
+  "model_or_prior_changed": false,
+  "reviewed_arrays_admitted": false,
+  "new_mcmc_runs": 0,
+  "gpu": false,
+  "scope": "All1620V6roles and24V7comparison roles retained, including24original native failures. Every available scalar trace and actual generated prior bound; JSON/TSV alpha and finite prior/likelihood/posterior checks preserve original tolerances.57deterministic native cases show finite latent Laplace density can coexist with exp overflow and unit GammaMean rates. Original latent log-alpha was not saved: this identifies a compatible mechanism, not its historical causal proof, a point mass at infinity, an installed formatter repair, posterior adequacy, scalar review admission or completed biological aim."
+}

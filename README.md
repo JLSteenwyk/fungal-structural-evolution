@@ -15,15 +15,26 @@ attempts; individual errors and no-match outcomes remain explicit.
 
 The [completed retrieval snapshot and full catalog refresh](docs/completed-retrieval-catalog-refresh-20261005.md)
 preserve all **526 taxa and 5,815,847 representative proteins**. The entire
-3.3 GiB retrieval log is frozen and validated. Full sequence/model matching
-and selected coordinate hashing are running, with an independent full reader
-queued behind the original producer. Updated coverage remains unverified.
+3.3 GiB retrieval log is frozen and validated. Full matching, coordinate hashing
+and independent reconstruction are complete: **2,994,868 linked proteins**,
+**2,935,733 selected models**, **51.5% availability** before confidence/PAE
+filtering and ESMFold integration. The complete old/new comparison verifies
+1,039,174 new links, no losses and 16,470 replacements. Both 526-row taxon
+tables and a descriptive PNG/PDF figure are available; 2,820,979 proteins
+remain unlinked in this AFDB snapshot. The structural atlas is unfinished.
 
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite
 integrity checks and two excluded special-value reviews**. This does not
 qualify an adequate ancestral posterior or repair the installed formatter.
 [Completed comparison and remaining issues](docs/baliphy-joint-fasta-v7-20261004.md).
+
+A [full alpha diagnostic](docs/ancestral-log-alpha-diagnostic-20261005.md)
+independently checks all 34,020 current scalar rows and demonstrates a native
+log-scale exponentiation overflow mechanism in 57 deterministic cases.
+This explains a possible source of infinite parameters without proving the
+historical cause: latent log-alpha was not saved. Reviewed arrays remain
+excluded. Reproducible diagnostic PNG/PDF figures retain nonfinite counts.
 
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,

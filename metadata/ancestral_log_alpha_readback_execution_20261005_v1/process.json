@@ -1,0 +1,15 @@
+{
+  "pid": 212772,
+  "created": 1791215866.11,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_ancestral_log_alpha_v1.py",
+    "--receipt",
+    "metadata/ancestral_log_alpha_readback_20261005_v1.json"
+  ]
+}

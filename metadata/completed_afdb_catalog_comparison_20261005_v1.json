@@ -1,0 +1,37 @@
+{
+  "status": "completed_full_afdb_catalog_comparison_pending_readback",
+  "checked_utc": "2026-10-05T16:30:51.539228+00:00",
+  "raw_comparison_receipt": "results/structures/whole-proteome-catalog-change-20261005-v1/receipt.json",
+  "raw_comparison_receipt_sha256": "0791c52efdce6d88b3cfda0bb21ff109a170169f4e9ef69284fd307847ef6424",
+  "source_plan_sha256": "7a2653f13a40a0b7fb0d4ac9f2c89d1b7ccc5aab0d6d83e45ca67ccba834e4fc",
+  "old_links": 1955694,
+  "new_links": 2994868,
+  "net_link_change": 1039174,
+  "dispositions": {
+    "unchanged_model": 1939224,
+    "new_catalog_link": 1039174,
+    "changed_selected_model": 16470
+  },
+  "unlinked_in_both": 2820979,
+  "source_hashes": {
+    "scripts/compare_whole_proteome_catalogs.py": "5e2cf189e24814fae37b6cd92e6ef583a59d734c0906c7a03f15980cf6d50c00",
+    "scripts/run_completed_afdb_catalog_comparison_v1.py": "0948df8b9a7f223fd5e9025ee9d5cbfd5620e75d3bea8be30a739da19ff66697",
+    "metadata/completed_afdb_catalog_comparison_source_equivalence_20261005_v1.json": "67708c63b75f82f1390bf99f03517ab938f2d3cd0897dcfc03cf3f5365b7ade5",
+    "metadata/completed_afdb_catalog_comparison_resources_20261005_v1.json": "97be14e7096a6ad3d230e6a0875a4df09356509c2f9d2bdf3e41ffe4f0f0fabc",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1-readback.json": "87ceca9b6bfb452c1fbb65aed55e68847009c9e71588dd1d9b3d0562b474bdbd",
+    "metadata/completed_afdb_catalog_readback_20261005_v1.json": "3f4dd0eff80ba7161aafa0d09626e967bd273a9d10ccdbe52364e16a3bd61628",
+    "results/structures/whole-proteome-afdb-catalog-20260928-v1/receipt.json": "e048fd5b87cb9d10c968ea8faa8d045dea56149e1d495e6aabfcfbe887f5d793",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/receipt.json": "16951e33aeda65d16bbfb7d28be45e222f1c2362d9b3e29499838475e1666068",
+    "metadata/completed_afdb_catalog_completed_20261005_v1.json": "6119bb0b8a3466168b29bcf1ea88cec424843da05166f8d74164e409d8e4c302",
+    "metadata/completed_afdb_catalog_closure_transport_20261005_v1.json": "3f5e4c3c4c5ae824411c817e340bb5944ba1d83d15280a4caaccb94cd80a7f17",
+    "results/structures/whole-proteome-catalog-change-20261005-v1/protein_link_dispositions.tsv": "27e4cfdc32a1baf4239b21f25e54b04dfaf54ad100e6aaf2aa98b4f61a49f214",
+    "results/structures/whole-proteome-catalog-change-20261005-v1/taxon_coverage_change.tsv": "68519fc96f814cd669a818bcddf39a44bcfb122287b8f1b028d5f9359a2e994c",
+    "metadata/completed_afdb_catalog_comparison_plan_20261005_v1.json": "7a2653f13a40a0b7fb0d4ac9f2c89d1b7ccc5aab0d6d83e45ca67ccba834e4fc",
+    "results/structures/whole-proteome-catalog-change-20261005-v1/receipt.json": "0791c52efdce6d88b3cfda0bb21ff109a170169f4e9ef69284fd307847ef6424",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_completed_afdb_catalog_comparison_v1.py": "0948df8b9a7f223fd5e9025ee9d5cbfd5620e75d3bea8be30a739da19ff66697"
+  },
+  "scientific_eligibility": false,
+  "new_predictions": 0,
+  "gpu": false,
+  "scope": "Unchanged qualified full catalog comparison joins every old/new taxon-protein link, checks fixed526taxon/5,815,847protein universe and retains gains/losses/replacements/unchanged models. New catalog actual original producer/reader closure mandatory. Independent full comparison replay and original stage transport closure remain required; no confidence/PAE qualification, new inference, clustering, homology or biological result."
+}

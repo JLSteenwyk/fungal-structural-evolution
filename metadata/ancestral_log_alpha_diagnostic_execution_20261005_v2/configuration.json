@@ -1,0 +1,52 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_ancestral_log_alpha_v2.py",
+    "--output",
+    "results/ancestral/full-current-log-alpha-diagnostic-20261005-v2",
+    "--receipt",
+    "metadata/ancestral_log_alpha_diagnostic_20261005_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/ancestral_log_alpha_diagnostic_resources_20261005_v2.json": "3dce4d2a9ec354a2f2623eb9b551cfaeb47432bba3c7c7d4a59b7209015e3152",
+    "scripts/diagnose_ancestral_log_alpha_v2.py": "a2c62240a6eceb35bff4c76fbe95d895bfa3db96ec543cda3646cae1b97e84d8",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "52834025ab2046b287fb1525f402fcfa",
+  "wrapper": {
+    "pid": 208705,
+    "created": 1791215626.21,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/ancestral_log_alpha_diagnostic_resources_20261005_v2.json",
+      "--execution",
+      "metadata/ancestral_log_alpha_diagnostic_execution_20261005_v2.json",
+      "--receipt",
+      "metadata/ancestral_log_alpha_diagnostic_20261005_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_ancestral_log_alpha_v2.py",
+      "--output",
+      "results/ancestral/full-current-log-alpha-diagnostic-20261005-v2",
+      "--receipt",
+      "metadata/ancestral_log_alpha_diagnostic_20261005_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-05T15:53:47.289419+00:00"
+}

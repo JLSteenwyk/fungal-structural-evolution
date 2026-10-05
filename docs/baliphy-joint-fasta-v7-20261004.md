@@ -1,5 +1,11 @@
 # Joint ancestral alignment serialization, October 4
 
+The [October 5 full alpha diagnostic](ancestral-log-alpha-diagnostic-20261005.md)
+confirms the nonfinite values in both native output formats and demonstrates
+a compatible log-scale exponentiation overflow mechanism. Original latent
+values remain unavailable; neither review case is admitted and no historical
+cause or adequate posterior is proven.
+
 ## October 5: all original failed-role comparisons closed
 
 All 24 original comparison roles finished with native exit zero. Independent
