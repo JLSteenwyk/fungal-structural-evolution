@@ -1,5 +1,29 @@
 # Decisions and unresolved questions
 
+## October 5: retain full PAE scope and recover missing monitoring evidence honestly
+
+Freeze and independently reconstruct the entire source/cache/missing queue before
+retrieval; validate every available original directional matrix. Retain both
+predictors, original dtypes/configurations and explicit missing/unlinked models.
+Descriptive PAE thresholds do not establish physical domains or calibrated
+accuracy. Full independent decoding/statistic reconstruction follows source/body
+validation, with unchanged source bounds and evolutionary fit tolerances.
+
+When an API handle is lost, inspect the exact original native configuration,
+receipt and whole invocation journal without re-running the original command.
+Record native completion and unavailable API terminal separately; never invent
+an original tool exit. The available-matrix stage has native zero evidence but
+does not satisfy the original API-wait transport contract.
+
+Stop the identified systematic cache-path failure after verifying exact original
+identity. Preserve its sources, interrupted archive, complete recoverable rows
+and unreceipted bytes, admitting none. Resolve the cache directory in a new V2
+adapter, qualify the path contract offline, then retrieve the entire unchanged
+queue under the same caps in separate roots. Keep launch failures and actual
+original controls. This explicit corrected run is not an automatic retry or a
+pilot. Full cache/body/queue readback remains required before atlas integration.
+[Evidence and outstanding requirements](full-atlas-pae-20261005.md).
+
 ## October 5: extend confidence preparation across the complete model universe
 
 Audit every source model rather than treating marker controls as full atlas

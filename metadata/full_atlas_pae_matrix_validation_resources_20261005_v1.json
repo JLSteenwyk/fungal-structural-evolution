@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-10-05T19:03:29.827336+00:00",
+  "cpus": 4,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 28,
+  "cpu_seconds_per_stage": 86400,
+  "wall_seconds_per_stage": 172800,
+  "per_file_limit_mib": 32768,
+  "minimum_available_ram_gib": 32,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 32,
+  "estimated_wall_hours": [
+    0.2,
+    24
+  ],
+  "runtime_is_uncalibrated": true,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_downloads": 0,
+  "new_cost_usd": 0,
+  "source_matrices": 55959,
+  "directional_entries": 18290462939,
+  "source_bytes_about": 29954450712,
+  "scope": "Full2.96m-source inventory/queue replay then all30,637AFDB/25,322ESMFold matrices original provenance, bytehash, shape, finite/nonnegative/max-bound, directionalnumeric SHA and descriptiveentry-count checks. Cache-sized dictionary plus streaming jobs; fourworkers, 32GiB/no swap/oneBLAS. Inputabout30GBcompressed and billions of entries; JSONdecode/NPZdecompress/boolean statistics uncalibrated. No outputmatrixcopy or scientific effect inference. Literal asymmetric matrix/mean/5-10-20threshold/negative/shape controls checked offline."
+}

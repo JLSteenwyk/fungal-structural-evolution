@@ -1,0 +1,70 @@
+{
+  "checked_utc": "2026-10-05T20:15:27.241708+00:00",
+  "launch": {
+    "unit": "fungal-full-atlas-missing-pae-20261005-v1.service",
+    "pid": 366621,
+    "created": 1791227003.06,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_atlas_missing_pae_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_atlas_missing_pae_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_atlas_missing_pae_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/retrieve_full_atlas_missing_pae_v1.py",
+      "--plan",
+      "metadata/full_atlas_missing_pae_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_atlas_missing_pae_20261005_v1.json"
+    ],
+    "plan": "metadata/full_atlas_missing_pae_plan_20261005_v1.json",
+    "plan_sha256": "10685fc0fc555c396c94d12eb98d2e7f091cca11982182dddd9af9049a254cfa",
+    "checked_utc": "2026-10-05T19:04:47.861648+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "200000 100000",
+      "memory.max": "17179869184",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "f002364f0fa542d5bc085cc952ca9772",
+    "original_tool_session_id": 20937,
+    "source_hashes": {
+      "metadata/full_atlas_missing_pae_execution_20261005_v1/configuration.json": "b2d6856955c00c206d6047e1d5a1bb029af8cd8c80c844155bc86b630f98f102",
+      "metadata/full_atlas_missing_pae_plan_20261005_v1.json": "10685fc0fc555c396c94d12eb98d2e7f091cca11982182dddd9af9049a254cfa"
+    },
+    "scientific_eligibility": false
+  },
+  "before_systemd": "MainPID=366621\nResult=success\nExecMainCode=0\nExecMainStatus=0\nActiveState=active\nSubState=running\nInvocationID=f002364f0fa542d5bc085cc952ca9772\n",
+  "before_state": {
+    "stage": "retrieving_complete_missing_queue",
+    "counts": {
+      "attempted": 8400,
+      "verified": 0,
+      "failed": 8400,
+      "compressed_bytes": 0,
+      "json_bytes": 0
+    },
+    "error_types": {
+      "ValueError": 8400
+    },
+    "expected_models": 2905096,
+    "elapsed_seconds": 4282.310813850956,
+    "http_workers": 2,
+    "future_window": 64
+  },
+  "action": "stop_exact_faulty_original_unit",
+  "reason": "All completed retrievals fail relative Path.relative_to(absolute ROOT) after matrix write before receipt write; immutable V1 retained; no automatic restart",
+  "scientific_eligibility": false,
+  "stop_returncode": 0,
+  "stop_stdout": "",
+  "stop_stderr": "",
+  "journal_path": "metadata/full_atlas_missing_pae_execution_20261005_v1/stopped-original-invocation-journal.jsonl",
+  "journal_sha256": "079eb5fe296449bbf99a084fa190dc1b9013240c081c024dd97eab70276706eb",
+  "journal_rows": 5,
+  "original_wrapper_still_live": false,
+  "after_systemd": "MainPID=0\nResult=success\nExecMainCode=0\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\nInvocationID=\n",
+  "checked_after_stop_utc": "2026-10-05T20:15:27.295111+00:00"
+}

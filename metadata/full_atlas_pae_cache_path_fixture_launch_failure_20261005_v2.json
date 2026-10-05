@@ -1,0 +1,11 @@
+{
+  "original_tool_result": {
+    "chunk_id": "e18da3",
+    "wall_time_seconds": 0.000017627,
+    "exit_code": 2,
+    "original_token_count": 72,
+    "output": "Running as unit: fungal-pae-cache-path-fixture-20261005-v2.service; invocation ID: 6ba758393353435d8993bdbd190d8112\nFinished with result: exit-code\nMain processes terminated with: code=exited/status=2\nService runtime: 30ms\nCPU time consumed: 30ms\nMemory peak: 512.0K\nMemory swap peak: 0B\n"
+  },
+  "scientific_eligibility": false,
+  "reason": "Initial systemd-run omitted WorkingDirectory; native wrapper did not start. Original failure retained; follow-up uses explicit workspace directory and distinct execution paths."
+}

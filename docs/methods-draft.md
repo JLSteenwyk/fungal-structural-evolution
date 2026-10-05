@@ -1,5 +1,36 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5: complete PAE inventory, body validation and uncertainty preparation
+
+Freeze the original AFDB cache under its exclusive retrieval mutex and bind
+every receipt/matrix pair. Classify all original source models by exact model,
+version, sequence, length and advertised URL; independently reconstruct all
+dispositions and the ordered missing queue. Retain outside-selection cached
+models, predictor overlaps/settings and the source-unlinked alternative product.
+Both full inventory/reconstruction original executions and journals close.
+
+Validate every available original matrix body and provenance, preserving
+directional values, diagonal, dtype and numeric digest. Keep the existing AFDB
++0.51 and ESMFold +1e-4 export bounds. All 55,959 matrices/18,290,462,939 entries
+pass. Original native completion is recovered from exact immutable configuration,
+process/receipt and full original journal; its lost API terminal is unavailable.
+Independent original-body decoding, sorted count reconstruction and extended
+precision means are running across every matrix, with literal corruption checks
+and a declared positive-sum roundoff bound. No evolutionary tolerance changes.
+PAE thresholds remain descriptive, not independent observations or accuracy
+calibration, domain acceptance, homology or evolutionary effect estimates.
+
+Preserve the stopped first missing-queue run's cache-path error, incomplete gzip,
+complete recoverable JSON prefix and unreceipted byte inventory; accept no files
+without receipts. Qualify cache-directory resolution with synthetic offline HTTP
+responses, preserving the unchanged original retriever and all provenance/matrix
+checks. A failed fixture launch is retained and a separate corrected launch closes.
+Run the entire original 2,905,096 queue with two HTTP workers/fixed64futures,
+separate immutable output/cache roots and retained success/error dispositions.
+Full independent retrieval/cache/queue/body closure and fresh atlas union remain
+pending. No new predictions or GPU use occurs.
+[Sources, resource estimates and limits](full-atlas-pae-20261005.md).
+
 ## October 5: complete-source coordinate and residue profiles
 
 Attempt all AFDB/ESMFold source models under unchanged qualified atom validation.

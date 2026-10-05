@@ -1,0 +1,19 @@
+{
+  "models": "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl",
+  "atlas_closure": "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+  "cache": "data/structures/pae",
+  "output": "results/structures/full-atlas-pae-inventory-20261005-v1",
+  "expected_models_by_source": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "scope": "All 2,961,055 source models and entire existing AFDB cache; exact source identities, missing states and unlinked ESMFold model retained. No subset pilot, source winner, matrix acceptance or inference.",
+  "pins": {
+    "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl": "a6813149ccc76928b85572327c9824a5c30b7236b20133249e3aaf2b9ff8f2d0",
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+    "scripts/freeze_full_atlas_pae_inventory_v1.py": "acc2ed0685a9f917c9e6db8072f073ee520a13e4db9bcbb08fd6ac4fb0a2887b",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "metadata/full_prediction_atlas_union_closure_transport_20261005_v1.json": "4226abcca0abf744577fd39934ad47fdc43d053c6e4a10ba7838b1752b797e55"
+  }
+}

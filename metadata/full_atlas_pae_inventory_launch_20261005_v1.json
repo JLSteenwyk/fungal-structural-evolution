@@ -1,0 +1,36 @@
+{
+  "unit": "fungal-full-atlas-pae-inventory-20261005-v1.service",
+  "pid": 344637,
+  "created": 1791225421.8,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_atlas_pae_inventory_resources_20261005_v1.json",
+    "--execution",
+    "metadata/full_atlas_pae_inventory_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_inventory_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/freeze_full_atlas_pae_inventory_v1.py",
+    "--plan",
+    "metadata/full_atlas_pae_inventory_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_inventory_20261005_v1.json"
+  ],
+  "plan": "metadata/full_atlas_pae_inventory_plan_20261005_v1.json",
+  "plan_sha256": "4af18691ca5b99b88b835462052ea1b1846308066002d8aee0d49e6ca4943fdc",
+  "checked_utc": "2026-10-05T18:37:03.716704+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "7c3a921121aa4aabac1b627f4807dfe9",
+  "source_hashes": {
+    "metadata/full_atlas_pae_inventory_execution_20261005_v1/configuration.json": "15a551cbfb02fdd9a2ec1f4e4a6e8801202906ec6441f02128c6333eb784fd89",
+    "metadata/full_atlas_pae_inventory_plan_20261005_v1.json": "4af18691ca5b99b88b835462052ea1b1846308066002d8aee0d49e6ca4943fdc"
+  },
+  "scientific_eligibility": false
+}

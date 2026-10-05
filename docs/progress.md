@@ -1,5 +1,38 @@
 # Progress and evidence
 
+## October 5, 20:22 UTC: full PAE body validation; corrected missing-queue retrieval
+
+The preceding goal turn was no progress: executor setup failed before commands,
+the required objective could not be read and original API monitoring handles were
+unavailable. After repeated failures the goal was blocked. Local access is now
+restored, the full objective was reread and the resumed goal remains active.
+No native job was restarted solely because its API handle was missing.
+
+The complete cache/model snapshot and independent every-row missing-queue replay
+close across all 2,961,055 source models. All 55,959 existing available matrices
+pass original body/provenance checks. The original native execution and full
+journal are recovered and matched; its API terminal is unavailable, not invented.
+A separate full independent decoder/statistic reader now runs with four workers,
+with 7,000 matrices reconstructed at 20:22 UTC and full closure pending.
+
+The first missing-matrix downloader produced only relative/absolute cache-path
+receipt failures. Its exact original unit was stopped; all 8,400 recoverable error
+rows and 8,464 unreceipted files/548,209,214 bytes are preserved, with zero matrices
+admitted and no original native success claimed. Offline literal regression
+controls prove the corrected path contract with unchanged retrieval checks.
+An initial fixture launch working-directory failure is retained. The corrected
+full V2 runs all 2,905,096 queue entries in separate roots with two HTTP workers;
+1,100 have verified receipts and zero failures at 20:22 UTC. Full independent
+retrieval/cache/matrix readback remains required. This adds PAE, not structures.
+
+The original coordinate and domain jobs are freshly verified live: 562,000 models
+and 214,165,994 residue positions audited; 610,020 intervals exported. Original
+full timing has sixteen workers/1,231 producer checkpoints, no failure files;
+full biological fits remain zero. GPU prediction remains paused. Full context
+qualification/calibration, accepted frameworks, adequate uncertainty, large-data
+release, all eight evolutionary aims and final deliverables remain incomplete.
+[Scope, resources, failures and evidence](full-atlas-pae-20261005.md).
+
 ## October 5, 18:21 UTC: complete-source coordinate and residue audit running
 
 The previous goal turn is progress: it independently verified all 2,454,565

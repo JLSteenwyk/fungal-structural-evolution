@@ -1,0 +1,38 @@
+{
+  "unit": "fungal-full-atlas-pae-statistics-readback-20261005-v1.service",
+  "pid": 418177,
+  "created": 1791231649.16,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_atlas_pae_statistics_readback_resources_20261005_v1.json",
+    "--execution",
+    "metadata/full_atlas_pae_statistics_readback_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_statistics_readback_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_atlas_pae_matrix_statistics_v1.py",
+    "--plan",
+    "metadata/full_atlas_pae_statistics_readback_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_statistics_readback_20261005_v1.json"
+  ],
+  "plan": "metadata/full_atlas_pae_statistics_readback_plan_20261005_v1.json",
+  "plan_sha256": "e2a1236d4e627688d6f7776ef7121737226f6e8a5eeea7e66f7c754c259a07dc",
+  "checked_utc": "2026-10-05T20:22:41.700870+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "a7ac91ea260a4608a5af49427655375f",
+  "original_tool_session_id": 81310,
+  "source_hashes": {
+    "metadata/full_atlas_pae_statistics_readback_execution_20261005_v1/configuration.json": "b4f3e4491fdcfec493af624a11f2f6f9797e79faddb46b2c63b542182ef86f48",
+    "metadata/full_atlas_pae_statistics_readback_plan_20261005_v1.json": "e2a1236d4e627688d6f7776ef7121737226f6e8a5eeea7e66f7c754c259a07dc",
+    "metadata/full_atlas_pae_statistics_readback_original_initial_tool_20261005_v1.json": "3dca449470df7161df823e30f539b0cc78fcce20c2f7a86feac68169089f2bd0"
+  },
+  "scientific_eligibility": false
+}

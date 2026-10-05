@@ -1,0 +1,27 @@
+{
+  "status": "passed_offline_literal_pae_cache_path_regression",
+  "checks": [
+    "original_relative_path_receipt_failure_reproduced",
+    "original_failure_occurs_after_matrix_write_before_receipt",
+    "resolved_cache_preserves_exact_original_relative_receipt_and_identity",
+    "verified_cache_readback_avoids_additional_http",
+    "changed_sequence_provenance_rejected",
+    "directional_values_and_original_float64_preserved",
+    "wrong_dimensions_rejected",
+    "negative_values_rejected",
+    "declared_maximum_bound_unchanged"
+  ],
+  "fixture_http_calls": 2,
+  "live_http_calls": 0,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_atlas_pae_cache_paths_v2.py": "8e6a5ea8002f75d24798882131c57f57e5ca72eb6d73d6e007a72e55045d060f",
+    "scripts/retrieve_full_atlas_missing_pae_v1.py": "02ddd9ce94b39616f5ca6b26d97c33323af2bb317b9ba1f38e56e1112627e0b3",
+    "scripts/retrieve_full_atlas_missing_pae_v2.py": "cbce35ade54b5923de13ffd86d338d55583f02f9ba9fb56d7e3b9c938eeefe06",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal synthetic response only. Reproduces V1 path error and verifies resolved-cache receipt writing, cached readback and unchanged provenance/shape/directional/max-bound checks. No corpus pilot or live download."
+}

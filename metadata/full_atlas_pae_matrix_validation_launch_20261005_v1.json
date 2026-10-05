@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-full-atlas-pae-matrix-validation-20261005-v1.service",
+  "pid": 368259,
+  "created": 1791227085.95,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_atlas_pae_matrix_validation_resources_20261005_v1.json",
+    "--execution",
+    "metadata/full_atlas_pae_matrix_validation_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_matrix_validation_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_atlas_pae_inventory_v1.py",
+    "--plan",
+    "metadata/full_atlas_pae_matrix_validation_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_matrix_validation_20261005_v1.json"
+  ],
+  "plan": "metadata/full_atlas_pae_matrix_validation_plan_20261005_v1.json",
+  "plan_sha256": "f1edf01ac82a684e18067ce2cf12720ebb5556be3c7241c4e73fbf44c750b1ab",
+  "checked_utc": "2026-10-05T19:04:47.871774+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "90f1ec580ff4428686d5a0a692442874",
+  "original_tool_session_id": null,
+  "source_hashes": {
+    "metadata/full_atlas_pae_matrix_validation_execution_20261005_v1/configuration.json": "45803e6aff87a1dfe61d30106f460cd6d503d11e32c0ebda42fa15efad7b1dbd",
+    "metadata/full_atlas_pae_matrix_validation_plan_20261005_v1.json": "f1edf01ac82a684e18067ce2cf12720ebb5556be3c7241c4e73fbf44c750b1ab"
+  },
+  "scientific_eligibility": false
+}

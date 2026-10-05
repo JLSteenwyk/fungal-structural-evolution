@@ -1,0 +1,25 @@
+{
+  "status": "passed_full_atlas_pae_model_and_missing_queue_reconstruction",
+  "checked_utc": "2026-10-05T18:51:22.862438+00:00",
+  "source_models": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "dispositions": {
+    "AFDB:missing_cached_matrix_retrievable": 2905096,
+    "AFDB:exact_cached_candidate_pending_matrix_validation": 30637,
+    "ESMFold:local_prediction_candidate_pending_matrix_validation": 25322
+  },
+  "candidate_directional_matrix_cells": {
+    "AFDB": 10872748823,
+    "ESMFold": 7417714116
+  },
+  "missing_retrievable_afdb_models": 2905096,
+  "missing_retrievable_matrix_cells": 642222712921,
+  "cache_entries": 30694,
+  "cache_entries_outside_current_model_inventory": 57,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Complete independent every-source-model/cache identity/URL and ordered missing-queue reconstruction, all availability and matrix-size totals. No producer classifier imported. Matrix content, native context confidence, accuracy calibration and biological inference remain unqualified."
+}

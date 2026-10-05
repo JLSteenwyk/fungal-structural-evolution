@@ -1,0 +1,28 @@
+{
+  "status": "complete_full_atlas_pae_cache_and_exact_model_availability_snapshot",
+  "sources": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "dispositions": {
+    "AFDB:missing_cached_matrix_retrievable": 2905096,
+    "AFDB:exact_cached_candidate_pending_matrix_validation": 30637,
+    "ESMFold:local_prediction_candidate_pending_matrix_validation": 25322
+  },
+  "cache_entries": 30694,
+  "cache_matrix_bytes": 4107821752,
+  "cache_entries_matching_any_selected_model": 30637,
+  "cache_entries_outside_current_model_inventory": 57,
+  "candidate_directional_matrix_cells": {
+    "AFDB": 10872748823,
+    "ESMFold": 7417714116
+  },
+  "missing_retrievable_matrix_cells": 642222712921,
+  "plan_sha256": "4af18691ca5b99b88b835462052ea1b1846308066002d8aee0d49e6ca4943fdc",
+  "scope": "Entire original AFDB cache receipt/matrix census and byte bindings under original exclusive retrieval mutex; every atlas source model classified by exact model/version/sequence/length/URL. All local ESMFold candidates and missing/unmatched/conflicting records retained. Matrix content, full independent availability readback, confidence calibration and evolutionary inference are not qualified by this snapshot.",
+  "checked_utc": "2026-10-05T18:41:01.462275+00:00",
+  "raw_receipt_sha256": "3a3468dc74bd3c38f838b84c35a14cc0c81d7ccb5b7d2cfe2975977696f6cecd",
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0
+}

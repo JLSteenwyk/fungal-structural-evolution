@@ -1,5 +1,22 @@
 # Open scientific milestones — updated October 5, 2026
 
+The complete PAE source/cache inventory and every-row independent missing-queue
+reconstruction are closed. All 55,959 existing available original matrices pass
+source/body validation; original native completion is journal-proven, while its
+lost API terminal stays unavailable. Full independent decoder/statistic
+reconstruction is running (7,000 matrices at 20:22 UTC), not complete.
+The systematic initial relative-cache receipt error was stopped and fully
+preserved; unreceipted files are excluded. A qualified corrected full V2 has
+1,100 verified PAE retrievals/zero failures, across the entire 2,905,096 queue.
+Full independent retrieval/cache/body closure, context confidence and calibration
+remain required. This stage adds PAE data, not predicted structures.
+
+Fresh exact runtime checkpoints show 562,000 coordinate-audited models,
+610,020 exported domain intervals and 1,231 full timing checkpoints with 16
+workers. Whole-stage independent closure is pending; full biological fits remain
+zero and all eight aims remain incomplete. GPU prediction remains paused.
+[Complete PAE scope, resources and failure evidence](full-atlas-pae-20261005.md).
+
 Complete-source coordinate/residue auditing has started across all 2,961,055
 models/1,164,928,002 inventory positions under eight workers/64 GiB/no swap.
 Both literal producer and independent-reader controls pass. At 18:21 UTC the

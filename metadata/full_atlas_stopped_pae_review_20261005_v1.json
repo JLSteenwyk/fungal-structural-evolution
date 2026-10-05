@@ -1,0 +1,40 @@
+{
+  "status": "preserved_stopped_original_pae_error_prefix_and_unreceipted_inventory",
+  "checked_utc": "2026-10-05T20:22:02.069150+00:00",
+  "original_invocation": "f002364f0fa542d5bc085cc952ca9772",
+  "original_tool_session_id": 20937,
+  "original_tool_terminal_exit_code": null,
+  "native_success_claimed": false,
+  "recovered_complete_error_rows": 8400,
+  "error_types": {
+    "ValueError": 8400
+  },
+  "gzip_end_of_stream_present": false,
+  "trailing_decompressed_bytes": 0,
+  "trailing_decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "unreceipted_files": 8464,
+  "unreceipted_bytes": 548209214,
+  "partial_files": 0,
+  "accepted_cached_matrices": 0,
+  "source_hashes": {
+    "results/structures/full-atlas-pae-inventory-20261005-v1/missing_afdb_models.jsonl": "55cb85ff4998a8eec51a9f23157e22b30ce372158defbe608d2af17ad9c8e302",
+    "metadata/full_atlas_pae_availability_readback_20261005_v1.json": "e330bcf7de78b81a6feebd85a7a5484dd2c10530ac93483d6ed3cb2bf3cf66e1",
+    "metadata/full_atlas_pae_availability_readback_transport_20261005_v1.json": "14eea5a1b44d043fa060f95888b8d5b4a814c69046955884fed984575c7e73af",
+    "metadata/full_atlas_pae_inventory_20261005_v1.json": "a16a73405ce05791c8ddb2c789e3ae9f9a445705b8865e4d51125fc90230b045",
+    "scripts/retrieve_full_atlas_missing_pae_v1.py": "02ddd9ce94b39616f5ca6b26d97c33323af2bb317b9ba1f38e56e1112627e0b3",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+    "results/structures/full-atlas-missing-pae-retrieval-20261005-v1/retrieval_dispositions.jsonl.gz": "d705e11f6a8c38d8a17fb481ea16332d41c8b4c2245f045536ecafc9ebb1f290",
+    "results/structures/full-atlas-stopped-pae-failure-review-20261005-v1/complete_original_error_prefix.jsonl": "42e2d78415aa026ebde0542bb700839d4528b055ebfc96b5a204cd54a68afedb",
+    "results/structures/full-atlas-stopped-pae-failure-review-20261005-v1/unreceipted_byte_inventory.jsonl": "077b877a77fb9089ba55b430b39701f16506e5fa6d93ef1a31d6f2c56ffac03a",
+    "metadata/full_atlas_missing_pae_stop_review_20261005_v1.json": "8320701f3b48c77de5bba8d75109ff542e852f58523dfca71a9893a541932b91",
+    "metadata/full_atlas_missing_pae_plan_20261005_v1.json": "10685fc0fc555c396c94d12eb98d2e7f091cca11982182dddd9af9049a254cfa",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/freeze_stopped_pae_download_failure_v1.py": "560d4af8e21a8c1583afad9e275d5735c9c576f331b7e39a6e4cc45bce97f49b",
+    "metadata/full_atlas_missing_pae_execution_20261005_v1/stopped-original-invocation-journal.jsonl": "079eb5fe296449bbf99a084fa190dc1b9013240c081c024dd97eab70276706eb"
+  },
+  "scientific_eligibility": false,
+  "scope": "Stopped exact original V1; original gzip remains unchanged, including any missing trailer. Only complete original JSON lines are recovered into a new artifact and matched to original bounded queue prefix; all unreceipted files are byte-inventoried. No file is accepted as a matrix, no HTTP provenance or native zero exit is invented, no original command is repeated. V2 retrieves full original queue in a separate cache."
+}

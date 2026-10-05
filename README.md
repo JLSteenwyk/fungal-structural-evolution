@@ -48,6 +48,17 @@ reader controls pass; full producer completion and independent readback are
 pending. Original coordinates, predictor identities and every exclusion remain
 explicit. PAE/context qualification and accuracy calibration are still required.
 
+The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now retain
+every source model and independently reconstruct the entire missing queue.
+All **55,959 previously available matrices** pass source/body validation; full
+independent statistic reconstruction is running. The corrected complete-queue
+downloader has verified **1,100 new PAE matrices** at 20:22 UTC, with no failures.
+Its initial cache-path failure, stopped output and unreceipted bytes are retained
+and excluded. PAE retrieval adds uncertainty data for existing structures;
+it does not add predicted structures or complete scientific atlas qualification.
+Native completion of the available-matrix validation is journal-proven; its
+lost original API terminal remains explicit.
+
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite
 integrity checks and two excluded special-value reviews**. This does not

@@ -1,0 +1,20 @@
+{
+  "producer_receipt": "metadata/full_atlas_pae_matrix_validation_20261005_v1.json",
+  "recovered_native_evidence": "metadata/full_atlas_pae_matrix_validation_recovered_native_evidence_20261005_v1.json",
+  "output": "results/structures/full-atlas-pae-independent-statistics-20261005-v1",
+  "cpu": 4,
+  "expected_matrices": {
+    "AFDB": 30637,
+    "ESMFold": 25322
+  },
+  "expected_directional_entries": {
+    "AFDB": 10872748823,
+    "ESMFold": 7417714116
+  },
+  "pins": {
+    "metadata/full_atlas_pae_matrix_validation_20261005_v1.json": "a58f9165bc05a7f4c45a772dfb133488d700e9ab997797df6ccb6c5637d0269d",
+    "metadata/full_atlas_pae_matrix_validation_recovered_native_evidence_20261005_v1.json": "cee0b6f5a193c930a5faecf0030d1eee3bf1a9a575acc1dab082a7d55696fee4",
+    "scripts/readback_full_atlas_pae_matrix_statistics_v1.py": "f9243ace09a121559ae2f251d9a683c0876b7082ade7ec1434076fed66d22311",
+    "metadata/full_atlas_pae_statistics_fixture_20261005_v1.json": "b56de9bd8675b0c5d5e9bbcbd484b40788412c7dcb67c6ea1975006a7d153a0c"
+  }
+}

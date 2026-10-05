@@ -1,0 +1,25 @@
+{
+  "producer_receipt": "metadata/full_atlas_pae_inventory_20261005_v1.json",
+  "producer_transport": "metadata/full_atlas_pae_inventory_transport_20261005_v1.json",
+  "inventory": "results/structures/full-atlas-pae-inventory-20261005-v1",
+  "models": "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl",
+  "output": "results/structures/full-atlas-pae-inventory-validation-20261005-v1",
+  "models_per_job": 500,
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048
+  },
+  "scope": "Complete all-source availability replay and all55,959available exact-source/version candidates, all18,290,462,939directional matrix entries; unchanged qualifiedAFDBmax+0.51/localmax+1e-4 bounds. No symmetrization or missing-matrix imputation, structural confidence/context calibration or biological inference.",
+  "pins": {
+    "metadata/full_atlas_pae_inventory_20261005_v1.json": "a16a73405ce05791c8ddb2c789e3ae9f9a445705b8865e4d51125fc90230b045",
+    "metadata/full_atlas_pae_inventory_transport_20261005_v1.json": "130e89dea9652c3dd8f3decb33225ab4d06064622b446c05337f37f7591cdecd",
+    "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl": "a6813149ccc76928b85572327c9824a5c30b7236b20133249e3aaf2b9ff8f2d0",
+    "scripts/readback_full_atlas_pae_inventory_v1.py": "3c9d614ca48e35f8075af20a81dca01c3ed8f1348aa350382d8fa2b672874c0e",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/export_local_marker_pae.py": "e8b9290996144fa1a45b6c066def764b17c7653a4065265dfe97615b4dce1072",
+    "metadata/full_atlas_pae_availability_readback_20261005_v1.json": "e330bcf7de78b81a6feebd85a7a5484dd2c10530ac93483d6ed3cb2bf3cf66e1",
+    "metadata/full_atlas_pae_availability_readback_transport_20261005_v1.json": "14eea5a1b44d043fa060f95888b8d5b4a814c69046955884fed984575c7e73af"
+  }
+}

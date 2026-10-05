@@ -1,0 +1,31 @@
+{
+  "status": "passed_full_atlas_pae_availability_replay_and_all_available_matrix_validation",
+  "checked_utc": "2026-10-05T19:16:09.812462+00:00",
+  "source_models": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "dispositions": {
+    "AFDB:missing_cached_matrix_retrievable": 2905096,
+    "AFDB:exact_cached_candidate_pending_matrix_validation": 30637,
+    "ESMFold:local_prediction_candidate_pending_matrix_validation": 25322
+  },
+  "matrices_validated": {
+    "AFDB": 30637,
+    "ESMFold": 25322
+  },
+  "directional_entries": {
+    "AFDB": 10872748823,
+    "ESMFold": 7417714116
+  },
+  "source_matrix_bytes": {
+    "AFDB": 4103784373,
+    "ESMFold": 25846628960
+  },
+  "missing_retrievable_afdb_models": 2905096,
+  "jobs": 112,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Every full source-model disposition and missing queue row independently replayed; all available exact-version AFDB and original ESMFold matrices byte/provenance/shape/finite/max-bound validated with all directional values retained and hashed, no symmetrization. AFDB monomer validator shared with original retrieval. Missing matrices, independent matrix-statistic reconstruction, native context confidence, accuracy calibration and biological inference remain separate requirements."
+}

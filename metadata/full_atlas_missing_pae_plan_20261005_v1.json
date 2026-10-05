@@ -1,0 +1,41 @@
+{
+  "queue": "results/structures/full-atlas-pae-inventory-20261005-v1/missing_afdb_models.jsonl",
+  "availability_readback": "metadata/full_atlas_pae_availability_readback_20261005_v1.json",
+  "availability_transport": "metadata/full_atlas_pae_availability_readback_transport_20261005_v1.json",
+  "output": "results/structures/full-atlas-missing-pae-retrieval-20261005-v1",
+  "cache": "data/structures/pae-completed-source-20261005-v1",
+  "expected_models": 2905096,
+  "future_window": 64,
+  "resources": {
+    "http_workers": 2,
+    "cpu": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048,
+    "emergency_free_disk_gib": 1024,
+    "maximum_cache_bytes": 2199023255552,
+    "minimum_free_inodes": 10000000,
+    "estimated_compressed_bytes": 242399420046.70255,
+    "estimated_json_network_bytes": 1701806356425.21,
+    "estimated_wall_days": [
+      4,
+      120
+    ],
+    "runtime_is_uncalibrated": true,
+    "new_paid_resources": false,
+    "basis": "Full2,905,096missing model queue/642,222,712,921directional entries. Entire existing cache10,883,427,152cells/4,107,821,752compressed bytes/28,839,661,280JSONbytes impliesabout242GBcache and1.70TBJSONtransfer; lengths/confidence/compression differ, estimate uncalibrated. Two HTTPworkers, fixed64future window and original four bounded HTTPattempts. Rough0.24-7.14sec average wall/request implies4-120days; latency/rate limits/transient failures/network and parsing uncertain, not finish ETA.2TiBcache ceiling/1TiBreserve and over409millionfree inodes observed. No new paid service, prediction or GPU."
+  },
+  "scope": "Entire independently reconstructed missing exact-versionAFDBmatrix queue; existing cache and ESMFold sources retained separately, newcache physically separate. Every success/error preserved; no native rerun, corpuspilot, paid infrastructure, new prediction, uncertainty calibration or scientific effect inference.",
+  "pins": {
+    "results/structures/full-atlas-pae-inventory-20261005-v1/missing_afdb_models.jsonl": "55cb85ff4998a8eec51a9f23157e22b30ce372158defbe608d2af17ad9c8e302",
+    "metadata/full_atlas_pae_availability_readback_20261005_v1.json": "e330bcf7de78b81a6feebd85a7a5484dd2c10530ac93483d6ed3cb2bf3cf66e1",
+    "metadata/full_atlas_pae_availability_readback_transport_20261005_v1.json": "14eea5a1b44d043fa060f95888b8d5b4a814c69046955884fed984575c7e73af",
+    "metadata/full_atlas_pae_inventory_20261005_v1.json": "a16a73405ce05791c8ddb2c789e3ae9f9a445705b8865e4d51125fc90230b045",
+    "scripts/retrieve_full_atlas_missing_pae_v1.py": "02ddd9ce94b39616f5ca6b26d97c33323af2bb317b9ba1f38e56e1112627e0b3",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/retrieve_matched_models.py": "2171d24bd3db3de26ba6880fcd7c4baa7df350ed0652206595baa7da75d0c88a",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365"
+  }
+}
