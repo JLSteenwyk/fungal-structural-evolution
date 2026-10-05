@@ -1,5 +1,15 @@
 # Open scientific milestones — updated October 5, 2026
 
+Complete-source coordinate/residue auditing has started across all 2,961,055
+models/1,164,928,002 inventory positions under eight workers/64 GiB/no swap.
+Both literal producer and independent-reader controls pass. At 18:21 UTC the
+original audit has 8/1,481 shards and 16,000 AFDB models, with no rejections;
+full completion and independent readback remain pending. PAE/context confidence
+and source calibration remain separate requirements. Domain extraction has
+98,487 intervals in 40/977 shards; original timing has 1,149 checkpoints. All
+biological fits remain zero and all eight scientific aims remain incomplete.
+[Full source audit and gates](full-atlas-coordinate-confidence-20261005.md).
+
 The expanded full domain manifest now passes independent SQL union across
 2,454,565 candidate intervals/976,357 source models, about 56% interval growth.
 The initial wrapper reporting failure and unavailable native exit remain

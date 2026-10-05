@@ -1,0 +1,25 @@
+{
+  "status": "passed_literal_full_atlas_coordinate_confidence_profile_checks",
+  "checked_utc": "2026-10-05T18:09:03.340847+00:00",
+  "checks": [
+    "literal_C_alpha_geometry_exact_float64_without_PDB_rounding",
+    "literal_sequence_and_inclusive50_70_90_confidence_boundaries",
+    "missing_backbone_retained_without_silent_drop",
+    "nonfinite_coordinate_rejected",
+    "out_of_bounds_confidence_rejected",
+    "residue_sequence_mismatch_rejected",
+    "incomplete_C_alpha_rejected",
+    "multiple_chains_rejected",
+    "source_bound_tar_member_roundtrip_and_full_shard_dispositions",
+    "immutable_source_corruption_fails_stage_without_completed_shard"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_atlas_coordinate_profiles_v1.py": "e6f5595f2f10a76932f550d666afc766adcad684a8ffb87f797cc14cc0284040",
+    "scripts/audit_full_atlas_coordinates_v1.py": "b75bd0b14b543ebc033b3ac90724ede439762f7fd6278bd51a872330e0f05662",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal coordinate/confidence/sequence expectations and controlled rejection/corruption tests; no corpus subset pilot, source-accuracy calibration or biological qualification. Full source-model native audit and independent readback remain required."
+}

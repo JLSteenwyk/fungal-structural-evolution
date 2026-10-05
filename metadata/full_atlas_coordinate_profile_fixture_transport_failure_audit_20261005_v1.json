@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-05T18:10:35.992280+00:00",
+  "status": "retained_observational_single_call_review_v1_assertion_failure",
+  "failed_reader_source": "scripts/record_software_single_call_transport_v1.py",
+  "failed_reader_sha256": "645b69c196fef8b371d77b55ceb97c7801da4b561eb15029cc96945f83f39d02",
+  "original_observational_tool_chunk_id": "295f7d",
+  "original_observational_tool_exit_code": 1,
+  "original_observational_error": "AssertionError at len(starts)==len(ends)==1; fast fixture unit journal has exact wrapper initial/native-zero terminal and manager start, but no manager resource-completion message.",
+  "fixture_native_actual_original_tool_exit_code": 0,
+  "fixture_native_work_repeated": false,
+  "native_corpus_started": false,
+  "scientific_eligibility": false,
+  "scope": "First observational review incorrectly required an optional resource message for a subsecond original call. Original fixture succeeded; actual original tool result and exact complete wrapper terminal are retained. V1 source unchanged, new V2 read-only review records missing manager completion explicitly without inventing success defaults or a tool session."
+}

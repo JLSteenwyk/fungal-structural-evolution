@@ -1,5 +1,27 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5: complete-source coordinate and residue profiles
+
+Attempt all AFDB/ESMFold source models under unchanged qualified atom validation.
+Rehash original coordinates; retain every unsupported-representation rejection,
+while changed immutable bytes fail the stage. Export exact sequence, float64
+C-alpha geometry/confidence and missing-backbone arrays in bounded tar shards.
+Inclusive 50/70/90 score counts describe sensitivity masks; they do not choose
+predictors, admit proteins or calibrate accuracy. Keep source/configuration
+identity and coordinate-vs-catalog score differences; mark PAE unevaluated.
+
+Literal producer and independent-reader controls pass exact geometry, score
+boundaries, full shard membership and deliberate corruption/count rejection.
+Original fast native results and full wrapper payloads are closed without
+inventing sessions or optional missing manager messages. A first observational
+checker failure is retained and its new V2 review changes no scientific code.
+Full 2,961,055-model/1.165 billion-residue inventory audit is running with eight
+workers. The independent reader has separate original-CIF reconstruction,
+scalar counts and full source/job/array/rejection checks but shares the lexical
+parser and canonical mapping. Full producer closure and full readback are
+pending; PAE/context qualification and biological interpretation remain required.
+[Scope, evidence and resources](full-atlas-coordinate-confidence-20261005.md).
+
 ## October 5: expanded full domain coordinate preparation
 
 Use the unchanged eligibility union across all four annotation policies and

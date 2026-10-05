@@ -1,0 +1,29 @@
+{
+  "prepared_utc": "2026-10-05T18:13:26.986039+00:00",
+  "cpus": 8,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 56,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 8192,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 2048,
+  "available_ram_gib": 774.1405792236328,
+  "free_disk_gib": 10112.878917694092,
+  "output_allowance_gib": 750,
+  "estimated_wall_hours": [
+    8,
+    168
+  ],
+  "runtime_is_uncalibrated": true,
+  "benchmark_model_cpu_scaled_hours": 14.632727343260958,
+  "input_coordinate_bytes_previously_verified": 1105396373092,
+  "minimum_uncompressed_profile_array_bytes": 39607552068,
+  "expected_shards": 1481,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Full 2,961,055 model atom audit and exact C-alpha profile tar output. Eight workers plus parent, 64 GiB/no swap/one BLAS thread. Literal fixtures qualify profile semantics; full independent readback remains pending. 750 GiB output, 2 TiB initial free disk and 1 TiB emergency reserve. No corpus pilot, GPU, new prediction or native production restart."
+}

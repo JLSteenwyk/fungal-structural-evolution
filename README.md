@@ -41,6 +41,13 @@ has started with four CPU workers. Its completion and full independent atom
 readback remain pending. The first wrapper reporting failure is preserved;
 the saved manifest passed a separate full independent check without regeneration.
 
+The [full source coordinate/confidence audit](docs/full-atlas-coordinate-confidence-20261005.md)
+is also running across **all 2,961,055 models and 1.165 billion inventory
+residue positions**, with eight CPU workers. Literal producer and independent
+reader controls pass; full producer completion and independent readback are
+pending. Original coordinates, predictor identities and every exclusion remain
+explicit. PAE/context qualification and accuracy calibration are still required.
+
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite
 integrity checks and two excluded special-value reviews**. This does not

@@ -1,0 +1,61 @@
+{
+  "models": "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl",
+  "atlas_closure": "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+  "output": "results/structures/full-atlas-coordinate-profiles-20261005-v1",
+  "models_per_shard": 2000,
+  "expected_models_by_source": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "expected_residues_by_source": {
+    "AFDB": 1152706482,
+    "ESMFold": 12221520
+  },
+  "maximum_length_by_source": {
+    "AFDB": 2699,
+    "ESMFold": 1024
+  },
+  "environment": {
+    "python": "3.10.13",
+    "biopython": "1.86",
+    "numpy": "2.2.6"
+  },
+  "resources": {
+    "cpu": 8,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048,
+    "emergency_free_disk_gib": 1024,
+    "output_planning_gib": 750,
+    "runtime_planning_hours": [
+      8,
+      168
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "prior_elapsed_seconds": 15201.920474805,
+    "prior_models": 427255,
+    "prior_cpu": 4,
+    "model_and_cpu_scaled_benchmark_hours": 14.632727343260958,
+    "minimum_uncompressed_profile_array_bytes": 39607552068,
+    "basis": "All 2,961,055 source models and all residues with explicit invalid dispositions. Prior full all-atom domain extraction at four CPUs extrapolates approximately 14.6 h at eight CPUs by model counts; whole coordinate parse vs domain serialization/compression and filesystem/system load are uncalibrated. 8-168 h/750 GiB allowance; no quadratic PAE arrays or downloads. 34 bytes per residue for float64 xyz/confidence, sequence byte and backbone bool before archive/compression/metadata."
+  },
+  "scope": "Complete AFDB/ESMFold universe including the unlinked alternative model and both predictors. Unchanged qualified atom validation, every source byte hash, exact float64 C-alpha geometry/score profiles and inclusive 50/70/90 descriptive counts. No model dropping, cross-source choice, precision change, accuracy calibration, PAE/context feature or event acceptance. Full independent raw source/array/rejection/archive readback required.",
+  "pins": {
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+    "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl": "a6813149ccc76928b85572327c9824a5c30b7236b20133249e3aaf2b9ff8f2d0",
+    "metadata/full_atlas_coordinate_profile_fixture_20261005_v1.json": "5f81b290e187f43af6f0bfd74851c24debf36eccc58bb50cff9d134eadfa3343",
+    "metadata/full_atlas_coordinate_profile_fixture_transport_20261005_v2.json": "2d71bca0260771cb649e4aa7ebd035c0332d82441199b8d93a797ab4f73e9649",
+    "scripts/audit_full_atlas_coordinates_v1.py": "b75bd0b14b543ebc033b3ac90724ede439762f7fd6278bd51a872330e0f05662",
+    "scripts/check_full_atlas_coordinate_profiles_v1.py": "e6f5595f2f10a76932f550d666afc766adcad684a8ffb87f797cc14cc0284040",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/domain_coordinate_extraction_plan_20260928.json": "91a7b0d1ec4db5fd7e080edc30a483e9ac308e48463879d08033434209a4e6b6",
+    "metadata/full_prediction_atlas_union_transport_20261005_v1.json": "868c5cbfbb132edf21137f96f93b2dd8ad499acd0bdea92801cb96c005f6e7f8",
+    "metadata/full_prediction_atlas_union_readback_transport_20261005_v1.json": "32a52a1e18698e19f448043097e92915a49864863f79441969848542273b22e0",
+    "metadata/full_prediction_atlas_union_closure_transport_20261005_v1.json": "4226abcca0abf744577fd39934ad47fdc43d053c6e4a10ba7838b1752b797e55"
+  }
+}

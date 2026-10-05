@@ -1,5 +1,24 @@
 # Decisions and unresolved questions
 
+## October 5: extend confidence preparation across the complete model universe
+
+Audit every source model rather than treating marker controls as full atlas
+qualification. Preserve both predictors/configurations and the source-unlinked
+annotated alternative. Reuse unchanged qualified source atom rules, retain every
+rejection and missing-backbone position, and treat changed source bytes as failure.
+Preserve exact float64 C-alpha coordinates/scores and report confidence masks
+descriptively. Do not choose predictors by score, calibrate accuracy from masks,
+or label unevaluated PAE as acceptable. A full separately reconstructed reader
+must follow actual producer completion and original transport closure; literal
+checks alone do not accept the atlas or evolutionary effects.
+
+For subsecond checks, require actual original tool exit and complete matching
+native wrapper payloads. Keep an absent optional manager resource message
+explicit; invent neither a session nor a manager terminal. Preserve the first
+observational checker failure and qualified new review without repeating native
+checks or changing scientific semantics.
+[Full evidence](full-atlas-coordinate-confidence-20261005.md).
+
 ## October 5: verify saved full domain output after a reporting failure
 
 Preserve the actual failed original wrapper wait and complete source/output

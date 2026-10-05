@@ -1,0 +1,21 @@
+{
+  "status": "passed_independent_literal_full_atlas_profile_readback_checks",
+  "checked_utc": "2026-10-05T18:20:58.356859+00:00",
+  "checks": [
+    "independent_literal_source_coordinates_sequence_and_backbone",
+    "exact50_and90_inclusive_counts_with_independent_scalar_recount",
+    "wrong_threshold_count_rejected",
+    "self_consistent_modified_array_rejected_against_original_source",
+    "immutable_source_corruption_is_hard_failure",
+    "complete_literal_shard_identity_membership_and_counts"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_atlas_profile_readback_v1.py": "71e3e5555a00cf8b22f2c0a8d3db369653e14ec4ce0567f09ceab1909e0df039",
+    "scripts/readback_full_atlas_coordinate_profiles_v1.py": "30c64cf79bd051f1e82c6b42cf100057eec99f4255db7660b0b8b9f89b98ad18",
+    "scripts/check_full_atlas_coordinate_profiles_v1.py": "e6f5595f2f10a76932f550d666afc766adcad684a8ffb87f797cc14cc0284040"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal-source reader controls, exact50/90 boundaries, full tar/job/profile readback and self-consistent geometry/count/source-corruption rejection. No corpus pilot or full native audit/readback completion. Shared CIF lexical parser; independent source reconstruction and scalar counts."
+}

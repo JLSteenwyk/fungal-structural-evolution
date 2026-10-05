@@ -1,5 +1,33 @@
 # Progress and evidence
 
+## October 5, 18:21 UTC: complete-source coordinate and residue audit running
+
+The previous goal turn is progress: it independently verified all 2,454,565
+domain intervals, preserved the original reporting failure, closed new review
+and reader executions, and launched full unchanged extraction. This continuation
+starts coordinate-content and residue-confidence auditing across all 2,961,055
+source models/1,164,928,002 inventory residue positions with eight CPU workers,
+64 GiB/no swap, original wait 23529. Both predictors/settings and the unlinked
+annotated product remain in scope; no corpus pilot, GPU or new prediction occurs.
+
+Bounded producer and independent-reader literal controls have actual zero exits.
+They test exact float64 geometry/sequence, score boundaries, backbone exclusions,
+full tar/job identity and deliberate source/array/count corruption. A first
+read-only evidence checker failed an overstrict optional manager-message rule;
+the actual native fixtures passed and were not repeated. New V2 evidence records
+the absent manager completion explicitly and verifies original tool/native exits
+and full wrapper payloads without inventing a session or completion record.
+
+At 18:21 UTC, eight audit workers have completed 8/1,481 shards, 16,000 AFDB
+models/6,525,637 positions with no rejections. ESMFold appears later in source
+order. The full independent reader is prepared and fixture-checked, not launched.
+Domain extraction has 40/977 shards, 40,000 models/98,487 exported intervals with
+four workers and no rejections. Original timing has 1,149 checkpoints and sixteen
+workers, no failures; full biological fits remain zero. Full audit/readbacks,
+confidence/PAE calibration, accepted frameworks, adequate ancestral uncertainty,
+all eight aims and large-data public release remain unfinished.
+[Full scope, resources, controls and reproducibility](full-atlas-coordinate-confidence-20261005.md).
+
 ## October 5, 17:57 UTC: full expanded domain manifest verified; extraction started
 
 The full all-policy/alignment-envelope union contains 2,454,565 distinct
