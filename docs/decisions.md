@@ -1,5 +1,17 @@
 # Decisions and unresolved questions
 
+## 2026-10-05: genomic CDS agreement requires unmodified, source-bound comparisons
+
+The full annotation index and independent source replay are closed across
+all 526 entries and5,927,745 source products. Proceed with the prepared full
+assembly-to-coordinate/CDS software only after independently closed genomic
+DNA. Preserve phase, overlaps, exceptions, ambiguous loci/orders and all
+alternatives. Compare all original 519 NCBI and four external publisher CDS
+files; mark the two ORF-derived targets as dependent consistency evidence.
+Creolimax transcript data are not a qualified CDS target. Nineteen literal
+controls pass; full source freezing/comparison and its independent reader
+remain pending. [Method/resources/limitations](full-genome-annotation-cds-20261005.md).
+
 ## 2026-10-05: retain every annotation coordinate and source protein product
 
 Build the full 526-taxon indexed registry before genomic CDS reconstruction.

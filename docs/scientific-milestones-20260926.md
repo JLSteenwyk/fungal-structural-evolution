@@ -1,5 +1,20 @@
 # Open scientific milestones — updated October 5, 2026
 
+## October 5, 21:45 UTC: full annotation source replay closed
+
+All 526 entry annotation/product databases and independent every-row source
+replay are complete:60,917,860 features,5,927,745 source products and5,815,847
+unchanged representatives. Original producer/reader API/native zero and whole
+journals/source bindings close. The next full assembly-to-CDS software passes
+19 offline controls, but its source freezing/full comparison await independent
+assembly-DNA closure; its full independent comparison reader remains to be
+prepared. Phases, exceptions, overlaps, uncertain joins, alternatives and
+missing qualified CDS targets remain explicit. No gene-copy, contamination,
+selection or evolutionary acceptance follows from an index or exact DNA match.
+All eight aims and final release remain unfinished.
+[Closed registry](full-annotation-coordinate-registry-20261005.md) and
+[full CDS scope/gates](full-genome-annotation-cds-20261005.md).
+
 ## October 5: full annotation-coordinate stage running
 
 The full 526-entry registry preserves all 5,927,745 source protein products,

@@ -8,13 +8,15 @@ and their associations with duplication, domain architecture and ecology.
 ## Current checkpoint — 5 October 2026
 
 The [full annotation-coordinate registry](docs/full-annotation-coordinate-registry-20261005.md)
-is now running across all 526 entries and **5,927,745 source protein products**,
+producer has completed across all 526 entries and **5,927,745 source protein products**,
 retaining all alternatives and the unchanged 5,815,847 representatives.
 The original NCBI annotations contain **60,434,823 features/23,306,261 CDS
 segments**. All coordinates, phases, exceptions, Parent links and unresolved
 candidate associations are retained for later assembly-to-CDS checks. Sixteen
-offline controls pass; full independent replay and genomic agreement remain
-pending. This adds annotation controls, not new structures or inferred events.
+offline controls pass; full independent replay and original execution closure
+are complete. Genomic agreement remains pending. The [genome-to-CDS software](docs/full-genome-annotation-cds-20261005.md)
+also passes 19 offline controls; its full run remains gated on both source
+readbacks. These stages add annotation controls, not structures or inferred events.
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the

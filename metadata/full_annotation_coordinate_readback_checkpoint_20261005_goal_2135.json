@@ -1,0 +1,235 @@
+{
+  "status": "verified_original_full_annotation_coordinate_runtime",
+  "checked_utc": "2026-10-05T21:34:55.845007+00:00",
+  "original_handle": {
+    "unit": "fungal-full-annotation-coordinate-readback-20261005-v1.service",
+    "pid": 464399,
+    "created": 1791235524.12,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_annotation_coordinate_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_annotation_coordinate_readback_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_annotation_coordinate_readback_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_annotation_coordinate_registry_v1.py",
+      "--plan",
+      "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+    ],
+    "plan": "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+    "plan_sha256": "235c324c8cd89d1d048d0ae1e89f89d14d4e78ca87f10941fa133db84c6d6350",
+    "checked_utc": "2026-10-05T21:25:41.118992+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "34359738368",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "b6dfaaa68b7b42e893c031be4bc2fd2e",
+    "original_tool_session_id": 29353,
+    "source_hashes": {
+      "metadata/full_annotation_coordinate_readback_execution_20261005_v1/configuration.json": "b1fa54bad2413dfc11e55d958ed9aea1a17f9c9cad63730e269027716fa1f24f",
+      "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json": "235c324c8cd89d1d048d0ae1e89f89d14d4e78ca87f10941fa133db84c6d6350"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_annotation_coordinate_readback_launch_20261005_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.9600000000000001,
+    "children": [
+      {
+        "pid": 464401,
+        "created": 1791235524.64,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 83.77000000000001
+      },
+      {
+        "pid": 465105,
+        "created": 1791235608.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 480.81
+      },
+      {
+        "pid": 465106,
+        "created": 1791235608.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 480.09000000000003
+      },
+      {
+        "pid": 465107,
+        "created": 1791235608.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 479.95000000000005
+      },
+      {
+        "pid": 465108,
+        "created": 1791235608.88,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 480.35999999999996
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "4a2eaa9139a3200d4d832fc2a1398b448d973e998bcce5dcb13e4c80caa345ef",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "34359738368",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 3227668480,
+      "memory.peak": 3244261376,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 464401,
+        "created": 1791235524.64,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 58716160,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 465105,
+        "created": 1791235608.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 47898624,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 465106,
+        "created": 1791235608.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 36708352,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 465107,
+        "created": 1791235608.87,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 51032064,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 465108,
+        "created": 1791235608.88,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_full_annotation_coordinate_registry_v1.py",
+          "--plan",
+          "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_annotation_coordinate_readback_20261005_v1.json"
+        ],
+        "rss_bytes": 8925184,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 29353,
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "9f9371448a2a2f6bc1a48075c7fa3aba80e2f091ea4a68621f6320c4daf94455",
+    "value": {
+      "stage": "independently_replaying_full_annotations",
+      "checked_taxa": 504,
+      "expected_taxa": 526,
+      "feature_rows": 53757685,
+      "elapsed_seconds": 486.2709839360323
+    }
+  },
+  "source_hashes": {
+    "metadata/full_annotation_coordinate_plan_20261005_v2.json": "c47d164010ae05533207bf5ab781ff5573314fbd9814f9afba305c450af36890",
+    "scripts/readback_full_annotation_coordinate_registry_v1.py": "fb8edfdc61460bcb10589ad63af9280fd9e5271afa0c101d83948b222e9b5677",
+    "metadata/full_annotation_coordinate_fixture_20261005_v2.json": "a6e061650230357490b5c0409b04ff1dc2e0d2853d476040cf94ec89ad240248",
+    "metadata/full_annotation_coordinate_fixture_transport_20261005_v2.json": "fa7826da3835063f9c6b303360107d6785854648ee039d4b8ee8ffb5b6cf6aee",
+    "metadata/full_annotation_coordinate_readback_launch_20261005_v1.json": "4a2eaa9139a3200d4d832fc2a1398b448d973e998bcce5dcb13e4c80caa345ef",
+    "metadata/full_annotation_coordinate_readback_original_initial_tool_20261005_v1.json": "02cfac74d3f0bb2f1c5e170d3d392b2e11c6be488e7768cdbbc6a613c6f927bd",
+    "metadata/full_annotation_coordinate_readback_plan_20261005_v1.json": "235c324c8cd89d1d048d0ae1e89f89d14d4e78ca87f10941fa133db84c6d6350",
+    "metadata/full_annotation_coordinate_readback_resources_20261005_v1.json": "e597338f10472a7c40224826c9d3f36209c9edd6ea0c965338e83c5bf573a810",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_annotation_coordinate_checkpoint_v1.py": "6c181a56f8476ad72076d58aaf81da351f35989003563d1cf2308a3511400b40"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original API initial identity, immutable plan/configuration sources and current native process/cgroup; producer state is a partial observation. No original API terminal, full independent annotation replay, genome/CDS agreement or biology inferred. This observation does not restart jobs or modify original publisher sources."
+}

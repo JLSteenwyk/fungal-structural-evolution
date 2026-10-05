@@ -1,0 +1,31 @@
+{
+  "status": "passed_offline_literal_genome_annotation_cds_controls",
+  "checked_utc": "2026-10-05T21:24:10.332573+00:00",
+  "checks": [
+    "plus_join_and_nonzero_phase_preserved",
+    "minus_join_has_biological_coordinate_order",
+    "overlapping_bases_retained_without_merging",
+    "documented_single_circular_virtual_interval_both_strands",
+    "circular_multipart_without_explicit_order_not_guessed",
+    "complete_explicit_part_order_preserved",
+    "duplicate_explicit_part_rank_rejected",
+    "incomplete_explicit_part_order_retained_for_review",
+    "mixed_strand_unordered_join_retained_for_review",
+    "missing_sequence_non_circular_bounds_and_excess_circular_span",
+    "exact_sequence_with_annotation_exception_keeps_review_status",
+    "multiple_matching_loci_not_silently_selected",
+    "multiple_original_cds_records_not_silently_selected",
+    "target_mismatch_not_repaired",
+    "ncbi_protein_gff:complete_literal_genome_source_cds_and_product_accounting",
+    "transcript_gff:complete_literal_genome_source_cds_and_product_accounting",
+    "creolimax_gtf:complete_literal_genome_source_cds_and_product_accounting",
+    "creolimax_transcript_not_substituted_for_cds_target",
+    "verified_orf_coordinates:complete_literal_genome_source_cds_and_product_accounting"
+  ],
+  "count": 19,
+  "scientific_eligibility": false,
+  "corpus_pilot": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Hand-calculated plus/minus/overlap/circular/order/exception/multiplicity joins and every literal source product in four source modes. No source-corpus comparison, gene-copy, CDS selection or biological acceptance."
+}

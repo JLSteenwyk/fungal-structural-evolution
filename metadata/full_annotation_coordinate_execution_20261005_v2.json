@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=30064771072",
+    "--cpu=604800",
+    "--fsize=17179869184",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_annotation_coordinate_registry_v2.py",
+    "--plan",
+    "metadata/full_annotation_coordinate_plan_20261005_v2.json",
+    "--receipt",
+    "metadata/full_annotation_coordinate_20261005_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_annotation_coordinate_resources_20261005_v2.json": "3c34fa3d472245d756f2c6dd19ac48bc6598d80818eb9caacbcbcb7dce4a7d84",
+    "scripts/build_full_annotation_coordinate_registry_v2.py": "eefc243a639ef7c59d9144930c656c70f7318c81df84248a0c0cf36f9d5f00b9",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "efca3a4c4c804e949e1b21876340e7c4",
+  "wrapper": {
+    "pid": 446987,
+    "created": 1791234432.73,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_annotation_coordinate_resources_20261005_v2.json",
+      "--execution",
+      "metadata/full_annotation_coordinate_execution_20261005_v2.json",
+      "--receipt",
+      "metadata/full_annotation_coordinate_20261005_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_annotation_coordinate_registry_v2.py",
+      "--plan",
+      "metadata/full_annotation_coordinate_plan_20261005_v2.json",
+      "--receipt",
+      "metadata/full_annotation_coordinate_20261005_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 604800,
+  "started_utc": "2026-10-05T21:07:13.820621+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T21:21:07.559821+00:00",
+  "child": {
+    "pid": 446999,
+    "created": 1791234433.12,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=30064771072",
+      "--cpu=604800",
+      "--fsize=17179869184",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_annotation_coordinate_registry_v2.py",
+      "--plan",
+      "metadata/full_annotation_coordinate_plan_20261005_v2.json",
+      "--receipt",
+      "metadata/full_annotation_coordinate_20261005_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 833.7390003580367,
+  "child_cpu_seconds": 2767.3201649999996,
+  "child_peak_rss_bytes": 149602304,
+  "receipt": "metadata/full_annotation_coordinate_20261005_v2.json",
+  "receipt_sha256": "c18fe7bfc2e2438da130232c263a48d1eae0313d42b2dea13d23f021f1d440b2",
+  "artifacts": {
+    "metadata/full_annotation_coordinate_execution_20261005_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_annotation_coordinate_execution_20261005_v2/configuration.json": "af41cd7136edd0b1ca433f5f920b86d9f1bd87a540f5853677544ad02a5d1ad6",
+    "metadata/full_annotation_coordinate_execution_20261005_v2/stdout.log": "9ffa4e392d58bd6ef6b05ad8fa1e46163832efec5a04c7fc7ce2518512394c6b",
+    "metadata/full_annotation_coordinate_execution_20261005_v2/process.json": "4dddbe79b1d4168faa02df5738c025a051f4e1fff3e4527e5995bb4ee103f05e"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

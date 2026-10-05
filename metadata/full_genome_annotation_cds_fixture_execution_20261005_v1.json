@@ -1,0 +1,79 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=3221225472",
+    "--cpu=600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_genome_annotation_cds_cases_v1.py",
+    "--receipt",
+    "metadata/full_genome_annotation_cds_fixture_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_genome_annotation_cds_fixture_resources_20261005_v1.json": "2285e2cc1058b379f1f84f7417bb88600be46137cf35a454bf7dde9ed3c9302c",
+    "scripts/check_full_genome_annotation_cds_cases_v1.py": "2352911e41b7d61955e807d10541143caa20367b0421e16564727d1cd97db604",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "31afddd2f65b4c14b72cfe08d63beddd",
+  "wrapper": {
+    "pid": 463745,
+    "created": 1791235448.87,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_genome_annotation_cds_fixture_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_genome_annotation_cds_fixture_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_genome_annotation_cds_fixture_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_genome_annotation_cds_cases_v1.py",
+      "--receipt",
+      "metadata/full_genome_annotation_cds_fixture_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "4294967296",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 600,
+  "started_utc": "2026-10-05T21:24:10.042866+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T21:24:10.389158+00:00",
+  "child": {
+    "pid": 463747,
+    "created": 1791235449.35,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=3221225472",
+      "--cpu=600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_genome_annotation_cds_cases_v1.py",
+      "--receipt",
+      "metadata/full_genome_annotation_cds_fixture_20261005_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.346070250030607,
+  "child_cpu_seconds": 0.282839,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/full_genome_annotation_cds_fixture_20261005_v1.json",
+  "receipt_sha256": "f8f4c789adf5daaead5f170d6ba90388d41e946dc71332e3316c57b195ca06b4",
+  "artifacts": {
+    "metadata/full_genome_annotation_cds_fixture_execution_20261005_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_genome_annotation_cds_fixture_execution_20261005_v1/configuration.json": "442c825af25e65096f62128691f60e836c0931ac0d2d6dbc97b1f6876b68ed6d",
+    "metadata/full_genome_annotation_cds_fixture_execution_20261005_v1/stdout.log": "84b8671a94b8cf6e9896223746d815b395c203549e23627358a9efb977f41f09",
+    "metadata/full_genome_annotation_cds_fixture_execution_20261005_v1/process.json": "6e4c61ab6fcf24be475be88f057ace7f4b3015c21be98b3e844ab7b3f9e89072"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

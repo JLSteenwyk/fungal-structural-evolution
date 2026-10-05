@@ -1,5 +1,41 @@
 # Progress and evidence
 
+## October 5, 21:45 UTC: full annotation registry independently closed; CDS software prepared
+
+The preceding goal turn was progress: it froze the complete 526-entry
+annotation/product scope, qualified the offline controls, launched the full
+registry and published all 50 owned files at 20189 b 13.
+
+Both original registry producer 9848 and reader 29353 now have actual tool/
+native zero exits and full original journals/source closure. Every one of
+60,917,860 features and all 5,927,745 source/5,815,847 representative products
+replays, with 111,898 alternatives and 16,588 provisional ORF rows retained.
+The 64,512,704,512 byte databases remain outside Git; the compact handoff binds
+3,721 files. This is full index/source verification, not genome agreement,
+accepted gene copies or an evolutionary result.
+
+The full genome/annotation/CDS producer and source freezer are prepared;
+19 offline checks pass with actual original tool/native execution closure.
+All 526 entries/products/features remain in scope, including all 519 NCBI CDS
+files, four deposited external CDS files and two earlier provisional ORF
+extracts. Creolimax transcript data are not substituted for a CDS target.
+Strand/explicit-part order, overlaps, circular intervals, phases, exceptions,
+multiple loci/records and unresolved products remain explicit. The full
+comparison is not frozen, launched or queued; it awaits original full
+assembly-DNA readback and execution closure. The independent full comparison
+reader is still to be prepared.
+
+At 21:34, DNA 418/526 taxa had verified source records and matching deposited
+lengths; original 63351 remains live, including a large downloaded assembly
+actively writing contig metadata. PAE 11,400 new matrices/zero failures were
+verified. At 21:43, original coordinate auditing has 904,000 models/
+354,600,358 positions, domain extraction 944,225 intervals, all without rejection;
+full timing has 16 workers/1,286 checkpoints, no failure files and zero full
+biological fits. GPU prediction remains paused. Full atlas qualification,
+accepted frameworks, adequate uncertainty, all eight aims and final release
+remain unfinished. [Closed registry](full-annotation-coordinate-registry-20261005.md)
+and [full CDS design/gates](full-genome-annotation-cds-20261005.md).
+
 ## October 5, 21:08 UTC: full annotation-coordinate/product registry launched
 
 The preceding goal continuation was a verified wait: original DNA 63351 and

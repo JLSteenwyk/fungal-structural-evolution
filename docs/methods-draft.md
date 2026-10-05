@@ -1,5 +1,25 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## Independently closed full annotation index and genomic CDS design
+
+The complete index producer and separate every-source-line/product reader
+close across 526 entries,60,917,860 features,5,927,745 source products and the
+unchanged5,815,847 representatives. All alternatives and provisional ORF
+exceptions remain; actual original tool/native zero exits, full journals and
+3,721 merged bindings verify source custody. This does not establish genomic
+CDS concordance or biological gene-copy assignment.
+
+Prepared assembly comparisons preserve every feature/product and available
+original CDS record, use exact genomic sequence IDs and unmodified strand/
+explicit-part joins, and retain overlaps/phase/exception/circular/ambiguity
+flags. Multiple exact loci/targets are not silently selected; no sequence
+repair or transcript-for-CDS substitution occurs. Nineteen offline literal
+checks pass. Full comparison/resource freezing awaits closed assembly DNA;
+its independent full comparison reader remains to be prepared. Four external
+CDS files are publisher targets; two ORF-derived targets share genome evidence;
+Creolimax original CDS boundaries require separate qualification.
+[Full design and resource gates](full-genome-annotation-cds-20261005.md).
+
 ## Full annotation-coordinate inventory, October 5
 
 The full annotation registry indexes every original feature and Parent/product

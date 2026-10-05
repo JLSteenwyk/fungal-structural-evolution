@@ -6,12 +6,25 @@ and controls for annotation artifacts in duplication, domain architecture and
 sequence–structure analyses. The registry does not establish gene correctness,
 assembly quality, expression, gene-copy counts or evolutionary events.
 
-The full producer is running from its original session **9848**, unit
-`fungal-full-annotation-coordinate-registry-20261005-v2.service`, invocation
-`efca3a4c4c804e949e1b21876340e7c4`. At **21:08 UTC on October 5**, 59 taxa,
-4,469,257 feature rows and 609,462 source products had been indexed. This
-checkpoint is partial; full producer completion and independent replay remain
-required. The independent reader is prepared, not launched or queued.
+The full producer and independent reader have completed across all **526
+entries, 60,917,860 features, 5,927,745 source products** and the unchanged
+5,815,847 representatives. All 111,898 alternatives and 16,588 provisional ORF
+rows remain available. The databases total **64,512,704,512 bytes**.
+
+Original producer session **9848** and reader session **29353** returned zero.
+Every source feature/nonfeature line, Parent/candidate reference, original
+mapping/selection row, protein sequence digest and representative record was
+replayed. Complete native/manager journals and all declared bindings closed;
+the compact handoff merges **3,721 bindings**. This verifies the index and its
+source custody, not annotation correctness or assembly-to-CDS agreement.
+[Completed registry handoff](../metadata/full_annotation_coordinate_completed_20261005_v2.json),
+[full independent replay](../metadata/full_annotation_coordinate_readback_20261005_v1.json)
+and [original reader execution closure](../metadata/full_annotation_coordinate_readback_transport_20261005_v1.json).
+
+Producer completion was at 21:21 UTC; reader completion was at 21:37 UTC and
+reader execution closure at 21:42 UTC on October 5. Earlier 21:08/21:34 partial
+checkpoints remain unchanged. The reader's prepared plan still records its
+prelaunch state; actual launch/completion are separate immutable evidence.
 
 ## Complete scope and unchanged baseline
 
@@ -103,9 +116,9 @@ planning range is 1–48 hours; seven-day CPU/wall caps are safety limits, not
 ETAs. No GPU, new structure prediction, paid provisioning or charge is used.
 
 The full independent reader requires the actual original producer API/native
-zero, complete original journal and all source/output bindings. It is prepared
-for all 526 taxa with four CPUs and 32 GiB/no swap. The subsequent assembly-to-CDS
-stage also requires independently qualified full assembly DNA. Existing
+zero, complete original journal and all source/output bindings. Those producer
+gates closed before its full launch with four CPUs and 32 GiB/no swap. The [subsequent assembly-to-CDS stage](full-genome-annotation-cds-20261005.md)
+also requires independently qualified full assembly DNA. Existing
 519-taxon CDS-to-protein comparisons are retained; they do not replace genomic
 DNA reconstruction. Annotation exceptions, circular joins, alternative
 products and uncertain matches must remain explicit in that stage.
@@ -122,7 +135,7 @@ unfinished.
   and [runtime checkpoint](../metadata/full_annotation_coordinate_checkpoint_20261005_goal_2109.json).
 - [Source freezer](../scripts/prepare_full_annotation_coordinate_registry_20261005_v2.py)
   and [full producer](../scripts/build_full_annotation_coordinate_registry_v2.py).
-- [Prepared full reader](../scripts/readback_full_annotation_coordinate_registry_v1.py),
+- [Full reader](../scripts/readback_full_annotation_coordinate_registry_v1.py),
   [reader plan](../metadata/full_annotation_coordinate_readback_plan_20261005_v1.json)
   and [reader resources](../metadata/full_annotation_coordinate_readback_resources_20261005_v1.json).
 - [Literal controls](../scripts/check_full_annotation_coordinate_registry_cases_v2.py),

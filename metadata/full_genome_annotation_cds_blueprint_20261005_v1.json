@@ -1,0 +1,68 @@
+{
+  "prepared_utc": "2026-10-05T21:31:55.573606+00:00",
+  "status": "full_genome_annotation_cds_software_prepared_source_freeze_gated",
+  "expected_taxa": 526,
+  "expected_source_products": 5927745,
+  "expected_representatives": 5815847,
+  "ncbi_original_cds_records": 5847336,
+  "ncbi_original_cds_bases": 7954834617,
+  "source_cds_scope": {
+    "ncbi_publisher_files": 519,
+    "external_publisher_cds_files": 4,
+    "previously_extracted_provisional_orf_cds_files": 2,
+    "creolimax_original_cds_target_unqualified": 1
+  },
+  "required_future_closures": {
+    "assembly_readback": "metadata/full_assembly_dna_readback_20261005_v1.json",
+    "assembly_readback_transport": "metadata/full_assembly_dna_readback_transport_20261005_v1.json",
+    "annotation_readback": "metadata/full_annotation_coordinate_readback_20261005_v1.json",
+    "annotation_readback_transport": "metadata/full_annotation_coordinate_readback_transport_20261005_v1.json"
+  },
+  "missing_full_closures_at_preparation": [
+    "metadata/full_assembly_dna_readback_20261005_v1.json",
+    "metadata/full_assembly_dna_readback_transport_20261005_v1.json",
+    "metadata/full_annotation_coordinate_readback_20261005_v1.json",
+    "metadata/full_annotation_coordinate_readback_transport_20261005_v1.json"
+  ],
+  "source_freeze_script": "scripts/prepare_full_genome_annotation_cds_v1.py",
+  "launch_state": "not_launched_or_queued",
+  "full_native_comparisons": 0,
+  "independent_full_comparison_reader": "not_prepared_or_launched",
+  "resource_design": {
+    "cpus": 4,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "address_space_gib": 56,
+    "blas_threads": 1,
+    "estimated_output_gib": [
+      2,
+      32
+    ],
+    "output_allowance_gib": 128,
+    "estimated_wall_hours": [
+      2,
+      72
+    ],
+    "runtime_is_uncalibrated": true,
+    "cost_usd": 0,
+    "basis": "Known full source counts and26.33Gb NCBI deposited assembly sizes; exact actual genome/target totals and resource estimates will be recorded by the freezer after both original full source readers close, before any expensive full comparison launch"
+  },
+  "source_hashes": {
+    "scripts/genomic_cds_join_v1.py": "c9e9dbedcf0b26261df270a1d43c526848b4a8f53c904660c1b84a2c868e83be",
+    "scripts/audit_full_genome_annotation_cds_v1.py": "3272d6f5f6e9c734dabef17c6812034f0c0b5d8cb50b295630ff0c032baedc3e",
+    "scripts/check_full_genome_annotation_cds_cases_v1.py": "2352911e41b7d61955e807d10541143caa20367b0421e16564727d1cd97db604",
+    "scripts/prepare_full_genome_annotation_cds_v1.py": "00ece66288cbd861f0ff33e7e8e2528842008b89d4ccffe71936d7a2f64121ea",
+    "metadata/full_genome_annotation_cds_fixture_20261005_v1.json": "f8f4c789adf5daaead5f170d6ba90388d41e946dc71332e3316c57b195ca06b4",
+    "metadata/full_genome_annotation_cds_fixture_transport_20261005_v1.json": "d8bf2dc7022843e5fcc36422b1c34459b2ed6b1b8d7c50c0592b225973f9849d",
+    "metadata/full_assembly_dna_plan_20261005_v1.json": "50a873c07aacfc48c44f854d26b7a5effb19ba55398075fc7736be7e2892bf99",
+    "metadata/full_annotation_coordinate_plan_20261005_v2.json": "c47d164010ae05533207bf5ab781ff5573314fbd9814f9afba305c450af36890",
+    "metadata/cds_download_receipts.json": "c0cfbdac90e95b778a2f869c1408430432301cbee2443de38d8f1bc968558bfc",
+    "metadata/external_genome_receipts.json": "ef4f46dd5f3c003ccf414eca3662f3b92cbf3dea0d98b3b8047cd3d550388fac",
+    "metadata/sanchytrid_coordinate_audit.json": "0c9afb8731f80adcb0ff4cc8eb3e9fbbf4f56feb5fe24b9adca17c869da53343"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "all_eight_aims_incomplete": true,
+  "scope": "Complete526entry software/source design with19offline literal controls; source freeze and full native comparison are not done. Every feature, CDS target and source/alternative product remains in scope. No transcript substituted for CDS or correction of phase/overlaps/exceptions; no biological admission."
+}
