@@ -1,0 +1,40 @@
+{
+  "unit": "fungal-baliphy-log-alpha-v10-full-grid-20261005-v1.service",
+  "pid": 572913,
+  "created": 1791243765.89,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/baliphy_log_alpha_v10_full_grid_resources_20261005_v1.json",
+    "--execution",
+    "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py",
+    "--plan",
+    "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json"
+  ],
+  "plan": "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+  "plan_sha256": "a7fe91d3f8c6dce6dda661f891701813d17b955f2d5c630ea36804116bebf186",
+  "invocation_id": "4a8ea38d790d4b7b969c0f11f1b34770",
+  "original_tool_session_id": 59687,
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "214748364800",
+    "memory.swap.max": "0"
+  },
+  "checked_utc": "2026-10-05T23:42:47.844336+00:00",
+  "source_hashes": {
+    "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json": "a7fe91d3f8c6dce6dda661f891701813d17b955f2d5c630ea36804116bebf186",
+    "metadata/baliphy_log_alpha_v10_full_grid_resources_20261005_v1.json": "db84b8c37012c224990e5da960d9685004a7c46f9c0d124900a20b6915aa6345",
+    "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1/configuration.json": "3e543e860a7f0a8a2a40789b1adf7c9f1bb0a920df70c6396346f53cef03c74b"
+  },
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false
+}

@@ -1,0 +1,17 @@
+{
+  "pid": 570072,
+  "created": 1791243552.6,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_log_alpha_v10_full_reader_v1.py",
+    "--output",
+    "data/software_audits/baliphy-log-alpha-v10-full-reader-20261005-v1",
+    "--receipt",
+    "metadata/baliphy_log_alpha_v10_full_reader_software_validation_20261005_v1.json"
+  ]
+}

@@ -102,8 +102,10 @@ The [V10 latent log-alpha logger](docs/baliphy-latent-log-alpha-v10-20261005.md)
 now passes all 405 source checks, three paired native prior controls and
 independent reconstruction of 120 diagnostic rows. All 18 original scientific
 files stay byte identical in those controls. Earlier failed candidates are
-retained. Full-input V10 comparisons and adequate posterior sampling remain
-unlaunched; historical latent values remain unavailable.
+retained. The [complete 24-role full-input comparison](docs/baliphy-latent-log-alpha-full-grid-20261005.md)
+is now running with four CPU workers after construction and reader-software
+qualification. Adequate posterior sampling remains unlaunched; historical
+latent values remain unavailable.
 
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,

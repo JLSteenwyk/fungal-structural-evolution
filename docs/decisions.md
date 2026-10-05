@@ -1,5 +1,17 @@
 # Decisions and unresolved questions
 
+## 2026-10-05: compare V10 on the entire original full-input matrix
+
+Run all 24 source-bound roles with unchanged inputs, seeds, priors and native
+caps after complete job-construction and reader-software qualification. Keep
+all original failures and review arrays separate. Preserve every native
+outcome and all six scientific-file pairs per role; do not stop the matrix
+merely because a diagnostic or output comparison requires review. Full
+original producer API/native/journal/source completion gates the prepared
+independent reader. New latent captures can explain newly observed states;
+they do not recover unsaved historical values or qualify an adequate posterior.
+[Complete method, estimates and launch](baliphy-latent-log-alpha-full-grid-20261005.md).
+
 ## 2026-10-05: retain the latent random draw without changing scientific output
 
 Use V10's nested functor operation and existing scalar logger action to retain

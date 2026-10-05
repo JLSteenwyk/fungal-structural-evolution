@@ -1,5 +1,30 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5, 23:43 UTC: complete V10 full-input matrix running
+
+The V10 latent-alpha logger now runs against all 24 original full-input
+comparison roles: two complete 622-protein-tip inputs, all three priors and
+four chains per prior. Original inputs, seeds, priors, 20 iterations and
+native CPU/wall/48 GiB AS/8 MiB stack/file caps are preserved. Actual original
+session 59687 and the exact native/cgroup checkpoint confirm four live native
+samplers under four CPUs, 200 GiB RAM and no swap. No role is complete yet.
+
+Complete job construction passes all 24 source roles and 20 mutation checks;
+full-reader integration checks all 63 closed native control rows and four
+review/partial/error cases. Both actual original software executions and full
+source/journal closures pass. The full source plan binds 20,210 files and
+records resources before native launch. The separate reader is prepared and
+not queued before full original producer API/native/journal/source closure.
+[Full scope, evidence, resources and remaining gates](baliphy-latent-log-alpha-full-grid-20261005.md).
+
+The previous full V7 matrix used 10.443 worker-hours. The new four-worker
+2–12 hour planning range is uncalibrated for V10. All native outcomes, all
+144 scientific-file comparisons and every available diagnostic row remain
+in scope. Failed/nonfinite/changed states retain review status without
+admission, retries or changed tolerances. A successful short comparison is
+not adequate ancestral posterior uncertainty. GPU prediction remains paused;
+full weighted biological fits remain zero and all eight aims remain unfinished.
+
 ## October 5: complete genomic-CDS producer and qualified latent-alpha logging
 
 The genomic-CDS producer completed all 526 entries, 5,927,745 source products

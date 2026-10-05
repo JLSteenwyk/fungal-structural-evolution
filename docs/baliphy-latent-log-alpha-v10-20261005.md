@@ -11,8 +11,10 @@ invocation-journal evidence closes for both qualification and readback.
 
 This is software qualification for the existing inference workflow. It does
 not establish the cause of the historical infinite-alpha observations or an
-adequate ancestral posterior. No full-input V10 comparison or new full MCMC
-horizon has launched. Existing reviewed ancestral arrays remain excluded.
+adequate ancestral posterior. The [complete 24-role full-input V10 comparison](baliphy-latent-log-alpha-full-grid-20261005.md)
+has now launched after construction and reader-software qualification. A new
+full MCMC horizon has not launched. Existing reviewed ancestral arrays remain
+excluded.
 
 ## Preserving the random operation and scientific outputs
 
@@ -93,7 +95,7 @@ reader resources, original tool payloads, source hashes, execution receipts
 and complete journals are tracked in metadata. A reproduction needs the
 pinned original native software and source fixtures, and fresh output paths.
 
-Next check V10 against all 24 original full-input V7 comparison roles,
+The complete check against all 24 original full-input V7 comparison roles is now running,
 preserving inputs, seeds, priors and caps and retaining every disposition.
 Then resource-estimate full ancestral sampling and establish convergence and
 adequate posterior uncertainty before biological admission. The installed

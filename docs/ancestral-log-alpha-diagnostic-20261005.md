@@ -126,8 +126,8 @@ The [V10 latent logger](baliphy-latent-log-alpha-v10-20261005.md) now passes
 all 405 generated-source reversibility checks, all three paired prior controls
 and separate reconstruction of 120 diagnostic rows. All 18 original scientific
 files remain byte identical in these controls. Two earlier candidates failed
-that strict test and are retained. The next native stage must check all 24
-full-input comparison roles before a new full inference horizon. Original
+that strict test and are retained. The [complete 24-role native stage](baliphy-latent-log-alpha-full-grid-20261005.md)
+is now running before any new full inference horizon. Original
 historical latent values remain unavailable. Existing chains are not restarted
 or concatenated. Longer sampling still requires resource estimates, convergence
 and adequate ancestral uncertainty checks. The installed original formatter,
