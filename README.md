@@ -34,6 +34,13 @@ annotated alternative-product exception are retained; no predictor is chosen
 by confidence score. Full confidence/PAE, structural comparisons and
 evolutionary event inference remain separate requirements.
 
+The [expanded domain manifest](docs/completed-domain-extraction-20261005.md)
+now independently verifies **2,454,565 candidate intervals from 976,357 models**,
+about 56% more intervals than the previous manifest. Full coordinate extraction
+has started with four CPU workers. Its completion and full independent atom
+readback remain pending. The first wrapper reporting failure is preserved;
+the saved manifest passed a separate full independent check without regeneration.
+
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite
 integrity checks and two excluded special-value reviews**. This does not

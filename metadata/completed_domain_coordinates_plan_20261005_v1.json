@@ -1,0 +1,57 @@
+{
+  "intervals": "results/domains/domain-extraction-manifest-20261005-v1/intervals.tsv",
+  "catalog_models": "results/structures/whole-proteome-afdb-catalog-20261005-v1/models.jsonl",
+  "output": "results/domains/domain-coordinates-20261005-v1",
+  "models_per_shard": 1000,
+  "expected_models": 976357,
+  "expected_intervals": 2454565,
+  "environment": {
+    "python": "3.10.13",
+    "biopython": "1.86"
+  },
+  "resources": {
+    "cpu": 4,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048,
+    "emergency_free_disk_gib": 1024,
+    "output_planning_gib": 750,
+    "runtime_planning_hours": [
+      8,
+      96
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false,
+    "observed_free_disk_bytes": 10866247507968,
+    "prior_elapsed_seconds": 15201.920474805,
+    "prior_models": 427255,
+    "prior_intervals": 1078592,
+    "prior_tar_bytes": 107822858240,
+    "model_scaled_runtime_hours": 9.649780750904146,
+    "interval_scaled_runtime_hours": 9.60977674037586,
+    "interval_scaled_tar_bytes": 245373796612.49628,
+    "basis": "Full unchanged four-worker extraction over closed full refreshed manifest. Prior actual full-stage extraction implies approximately9.6h and245GB tar;8-96h/750GiB allowances cover load, annotation/model-size and source/readback/hash I/O variation. This is a benchmark extrapolation, not calibrated finish ETA. Full original reporting failure retained; subsequent review and full independent SQL union have actual original wait0."
+  },
+  "manifest_reporting_review_transport": "metadata/completed_domain_manifest_reporting_review_transport_20261005_v1.json",
+  "manifest_reporting_review_receipt": "metadata/completed_domain_manifest_reporting_review_20261005_v1.json",
+  "manifest_readback_transport": "metadata/completed_domain_manifest_readback_transport_20261005_v1.json",
+  "manifest_readback_receipt": "metadata/completed_domain_manifest_readback_20261005_v1.json",
+  "pins": {
+    "results/domains/domain-extraction-manifest-20261005-v1/intervals.tsv": "afa37cca60883b362781a138279d83b6e20ac5bbe9fb92c9d6157d7709e2eed8",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/models.jsonl": "e0ca5699d9e1553ddfade8e24a26404f1cc45e8e5618a96e41be75719be9a1af",
+    "results/domains/domain-extraction-manifest-20261005-v1/receipt.json": "3c871274c770e19fe1c70cb99cd07757ec132446bd1e27bd582c21d2a8550c1e",
+    "metadata/completed_afdb_domain_registry_completed_20261005_v1.json": "42619f4e170a85f3cd698fc9f0303bdcc831cd159dbffcac77f4a33ce9574495",
+    "metadata/completed_afdb_catalog_completed_20261005_v1.json": "6119bb0b8a3466168b29bcf1ea88cec424843da05166f8d74164e409d8e4c302",
+    "metadata/domain_coordinate_extraction_plan_20260928.json": "91a7b0d1ec4db5fd7e080edc30a483e9ac308e48463879d08033434209a4e6b6",
+    "scripts/run_completed_domain_coordinates_v1.py": "80b5b8e7b43a67b49241718cf1cc59ba7c1e8c08a30d56c38db98eef7018675f",
+    "scripts/extract_domain_coordinates.py": "7683c529a7a9c77ae7101747030b40bda6d0c7c72a989c22ed56a190175145cc",
+    "scripts/check_domain_coordinate_extraction.py": "93370d0cde737e42cbffa13a421339bb40b961f2121351fa3a5613407ec2495b",
+    "scripts/readback_domain_coordinate_archives.py": "9e703dd752e958281103739b27cd20666c7b2156ee994a0fd0bf017efdd220d1",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "metadata/completed_domain_manifest_reporting_review_transport_20261005_v1.json": "31c8bfd80c0d077e7be147a43389c7f8be9a71bfa86fffb4d1b408def173ccac",
+    "metadata/completed_domain_manifest_readback_transport_20261005_v1.json": "af2d2b4cbe1985189733de9aa93834719b6f689f7af01640a2e4559ba9e3db10",
+    "metadata/completed_domain_manifest_reporting_review_20261005_v1.json": "067f42df1e69716fa335bad0e1896afd47da8cdc6b861295b8bb9bbd63d9ee73",
+    "metadata/completed_domain_manifest_readback_20261005_v1.json": "414612f16fae8d74ee0d02748e526acb8c79a0cc7256d276e6ce5cefe0a25031"
+  }
+}

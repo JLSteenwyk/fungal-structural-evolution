@@ -1,5 +1,16 @@
 # Open scientific milestones — updated October 5, 2026
 
+The expanded full domain manifest now passes independent SQL union across
+2,454,565 candidate intervals/976,357 source models, about 56% interval growth.
+The initial wrapper reporting failure and unavailable native exit remain
+explicit; actual original retained-output review and full reader close.
+Full unchanged coordinate extraction has started with four workers/32 GiB,
+but extraction completion and independent atom/archive readback are pending.
+This AFDB candidate subset does not substitute for full atlas confidence/PAE
+and source-aware comparisons. At 17:56 UTC the original full timing has 1,131
+checkpoints; full weighted biological fits remain zero and all eight aims
+remain incomplete. [Full interval/extraction evidence](completed-domain-extraction-20261005.md).
+
 The full AFDB domain registry and every-row independent reconstruction now
 close across 2,935,733 models/2,994,868 links. All four policy alternatives
 and complete taxon denominators are retained. The whole representative

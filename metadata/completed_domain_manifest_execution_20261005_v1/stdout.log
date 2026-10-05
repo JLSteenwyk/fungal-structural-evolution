@@ -1,0 +1,32 @@
+{
+  "status": "complete_all_candidate_domain_extraction_manifest",
+  "source_models": 976357,
+  "candidate_model_hit_pairs": 1352782,
+  "boundary_links": 2705564,
+  "unique_intervals": 2454565,
+  "unique_interval_residues": 383162558,
+  "maximum_interval_residues": 1103,
+  "registry_receipt_sha256": "d6b57eed9b48e35960c754840d39ade29ebfd1fdec5c7a6bfc7444fe96130c3b",
+  "registry_readback_sha256": "d9a1dc558fe6d15ba6203d9564fa0bd49d8d0ea0989b9a7af3a12de4084a22cb",
+  "registry_database_sha256": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0",
+  "script_sha256": "f9ab5639ee81b8c1bde7d52249890b07562ebbd901783a6729488fed79b4ccb5",
+  "artifacts": {
+    "intervals.tsv": "afa37cca60883b362781a138279d83b6e20ac5bbe9fb92c9d6157d7709e2eed8",
+    "boundary_links.tsv.gz": "87e725cf186057c3ff6943641bb6d8d812a3a5ab432174683f94ec8424e4f8d8"
+  },
+  "scope": "Union of all four policy-qualified Domain hits, retaining alignment and envelope boundaries and exact model/hit associations. Identical source-sequence intervals deduplicated reversibly. Full boundary-link round trip checked. Coordinate extraction, residue confidence, PAE and independent structural validation not performed."
+}
+{
+  "status": "completed_full_refreshed_domain_manifest_pending_independent_readback",
+  "checked_utc": "2026-10-05T17:50:15.123642+00:00",
+  "source_models": 976357,
+  "unique_intervals": 2454565,
+  "boundary_links": 2705564,
+  "candidate_model_hit_pairs": 1352782,
+  "unique_interval_residues": 383162558,
+  "raw_receipt_sha256": "3c871274c770e19fe1c70cb99cd07757ec132446bd1e27bd582c21d2a8550c1e",
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Unchanged union of all four qualified Domain policy hits and both alignment/envelope boundaries over the complete closed current AFDB registry. Every association retained with reversible sequence/span deduplication. Whole independent SQL union and actual original completion required before extraction. No validated boundaries, residue confidence/PAE or evolutionary event acceptance."
+}

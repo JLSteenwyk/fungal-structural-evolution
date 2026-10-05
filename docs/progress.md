@@ -1,5 +1,29 @@
 # Progress and evidence
 
+## October 5, 17:57 UTC: full expanded domain manifest verified; extraction started
+
+The full all-policy/alignment-envelope union contains 2,454,565 distinct
+intervals from 976,357 source models, retaining 2,705,564 reversible boundary
+associations. This is approximately 56% more intervals than September 28.
+The unchanged full independent SQL union passes every interval and dimension.
+Original producer wrapper wait 70086 failed only at the reporting path collision;
+its whole failure and saved outputs are retained, and no original native exit
+is inferred. Separate original retained-output review 39729 and full reader 89364
+both have actual zero exits and full journal/manager/source closure. No native
+manifest generation was repeated.
+
+Full unchanged all-atom extraction now runs under original wait 64749 with
+four CPU workers/32 GiB/no swap across all eligible models and 977 shards.
+Prior complete four-worker execution gives a roughly 9.6 h/245 GB proportional
+estimate; broader 8–96 h/750 GiB planning allowances cover variation and hashing.
+Extraction and full independent archive/atom readback remain pending, with
+rejections, missing backbone and unannotated models retained. No GPU or new
+prediction is used. Full source availability remains 3,019,669/5,815,847 (51.9%).
+At 17:56 UTC the original full timing has 1,131 checkpoints, sixteen workers
+and no failures; full biological fits remain zero. Confidence/PAE, accepted
+frameworks, uncertainty, all eight aims and large-data release are unfinished.
+[Full sources, failure evidence and reproducibility](completed-domain-extraction-20261005.md).
+
 ## October 5, 17:30 UTC: full domain registry and predictor availability union closed
 
 The complete AFDB annotation registry and independent every-row reconstruction

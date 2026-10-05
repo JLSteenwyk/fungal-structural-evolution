@@ -1,0 +1,15 @@
+{
+  "producer_receipt": "metadata/completed_domain_manifest_reporting_review_20261005_v1.json",
+  "producer_transport": "metadata/completed_domain_manifest_reporting_review_transport_20261005_v1.json",
+  "manifest": "results/domains/domain-extraction-manifest-20261005-v1",
+  "database": "results/domains/whole-proteome-structure-domain-registry-20261005-v1/structure_domains.sqlite",
+  "raw_readback": "metadata/completed_domain_manifest_raw_readback_20261005_v1.json",
+  "pins": {
+    "metadata/completed_domain_manifest_reporting_review_20261005_v1.json": "067f42df1e69716fa335bad0e1896afd47da8cdc6b861295b8bb9bbd63d9ee73",
+    "metadata/completed_domain_manifest_reporting_review_transport_20261005_v1.json": "31c8bfd80c0d077e7be147a43389c7f8be9a71bfa86fffb4d1b408def173ccac",
+    "scripts/readback_completed_domain_manifest_v1.py": "0e8fb30e0a5c3890d0cf7107e749e0c3de499c9caec1ddc704d421a26b43c9d6",
+    "scripts/readback_domain_extraction_manifest_v2.py": "0354196f220fa7a2455494401550a8fa1e2f1e421aae50a8b12462861a0203bb",
+    "metadata/completed_domain_manifest_plan_20261005_v1.json": "77b453b474cc784ed7889b46ae793988595577b7ce6d9993870b30362c37a61f"
+  },
+  "scope": "Full unchanged independent SQL union. Reporting review has actual original wait0; initial producer wrapper wait1 remains preserved and no original native exit is assumed."
+}

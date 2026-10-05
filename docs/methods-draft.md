@@ -1,5 +1,25 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5: expanded full domain coordinate preparation
+
+Use the unchanged eligibility union across all four annotation policies and
+both alignment/envelope bounds; deduplicate exact sequence/spans reversibly.
+The producer round-trips every 2,705,564 boundary association. Independent SQL
+reconstruction checks all 2,454,565 intervals/976,357 models and inclusive bounds.
+Preserve the initial wrapper reporting failure and unavailable native exit;
+a separate retained-output review and full independent reader close with
+actual original zero waits/full journals without native regeneration.
+
+Attempt all intervals with the unchanged four-worker all-atom exporter,
+exact source bytes, canonical sequence/residue identities, complete C-alpha
+coverage and original PDB serialization tolerances. Retain all rejection and
+missing-backbone dispositions. The full 977-shard extraction is running;
+independent archive/atom readback remains required before acceptance. Neither
+annotation eligibility nor extraction qualifies physical boundaries, full
+confidence/PAE, homology, function or evolutionary change. GPU prediction
+remains paused; all source models and missing proteins stay in atlas scope.
+[Full resources, provenance and limitations](completed-domain-extraction-20261005.md).
+
 ## October 5: complete predictor union and source-aware domain accounting
 
 Match all 5,815,847 representatives against the complete selected AFDB and

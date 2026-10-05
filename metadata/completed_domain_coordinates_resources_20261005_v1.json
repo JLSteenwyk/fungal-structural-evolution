@@ -1,0 +1,28 @@
+{
+  "prepared_utc": "2026-10-05T17:56:38.318088+00:00",
+  "cpus": 4,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 28,
+  "cpu_seconds_per_stage": 345600,
+  "wall_seconds_per_stage": 345600,
+  "per_file_limit_mib": 8192,
+  "minimum_available_ram_gib": 32,
+  "minimum_free_disk_gib": 2048,
+  "available_ram_gib": 759.5847015380859,
+  "free_disk_gib": 10119.980613708496,
+  "output_allowance_gib": 750,
+  "estimated_wall_hours": [
+    8,
+    96
+  ],
+  "runtime_is_uncalibrated": true,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "benchmark_model_scaled_hours": 9.649780750904146,
+  "benchmark_interval_scaled_hours": 9.60977674037586,
+  "benchmark_interval_scaled_tar_bytes": 245373796612.49628,
+  "scope": "Full976,357source models/2,454,565intervals,977immutable1000-model-or-fewer shards, four workers plus parent. Original extractor unchanged; original policy eligibility/both boundaries and every rejection preserved. Entire output additionally rehashed by adapter. No GPU/prediction/PAE/biological inference; readback not yet queued."
+}

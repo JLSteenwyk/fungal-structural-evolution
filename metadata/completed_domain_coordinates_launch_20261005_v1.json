@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-completed-domain-coordinates-20261005-v1.service",
+  "pid": 314168,
+  "created": 1791223009.43,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/completed_domain_coordinates_resources_20261005_v1.json",
+    "--execution",
+    "metadata/completed_domain_coordinates_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/completed_domain_coordinates_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_completed_domain_coordinates_v1.py",
+    "--plan",
+    "metadata/completed_domain_coordinates_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/completed_domain_coordinates_20261005_v1.json"
+  ],
+  "plan": "metadata/completed_domain_coordinates_plan_20261005_v1.json",
+  "plan_sha256": "2f6f50e9db140355372d376cda5124766f36d7b1a927cff6b9f2117f1bd8b780",
+  "checked_utc": "2026-10-05T17:57:13.012900+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "5ded6cb02d854946ab9215ae72d2f9e4",
+  "original_tool_session_id": 64749,
+  "source_hashes": {
+    "metadata/completed_domain_coordinates_execution_20261005_v1/configuration.json": "7553039f1e000e360ef844e67685b8c875e83c816e5dfd724903c4ff77d2127b",
+    "metadata/completed_domain_coordinates_plan_20261005_v1.json": "2f6f50e9db140355372d376cda5124766f36d7b1a927cff6b9f2117f1bd8b780"
+  },
+  "scientific_eligibility": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "completed_full_refreshed_domain_manifest_pending_independent_readback",
+  "checked_utc": "2026-10-05T17:50:15.123642+00:00",
+  "source_models": 976357,
+  "unique_intervals": 2454565,
+  "boundary_links": 2705564,
+  "candidate_model_hit_pairs": 1352782,
+  "unique_interval_residues": 383162558,
+  "raw_receipt_sha256": "3c871274c770e19fe1c70cb99cd07757ec132446bd1e27bd582c21d2a8550c1e",
+  "source_hashes": {
+    "metadata/completed_afdb_domain_registry_completed_20261005_v1.json": "42619f4e170a85f3cd698fc9f0303bdcc831cd159dbffcac77f4a33ce9574495",
+    "metadata/completed_afdb_domain_registry_readback_20261005_v1.json": "d9a1dc558fe6d15ba6203d9564fa0bd49d8d0ea0989b9a7af3a12de4084a22cb",
+    "results/domains/whole-proteome-structure-domain-registry-20261005-v1/receipt.json": "d6b57eed9b48e35960c754840d39ade29ebfd1fdec5c7a6bfc7444fe96130c3b",
+    "results/domains/whole-proteome-structure-domain-registry-20261005-v1/structure_domains.sqlite": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0",
+    "metadata/completed_afdb_domain_registry_closure_transport_20261005_v1.json": "39c969a84fe079785f53c9147ff328dd3f393322300f0f9d770fdac5f7e21e03",
+    "scripts/run_completed_domain_manifest_v1.py": "70f0ed15d3b92c72e1acb00c95be81b1bf8b4056cd36d536d20f1e34f6d04e0f",
+    "scripts/prepare_domain_extraction_manifest_v2.py": "f9ab5639ee81b8c1bde7d52249890b07562ebbd901783a6729488fed79b4ccb5",
+    "scripts/readback_domain_extraction_manifest_v2.py": "0354196f220fa7a2455494401550a8fa1e2f1e421aae50a8b12462861a0203bb",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "results/domains/domain-extraction-manifest-20261005-v1/intervals.tsv": "afa37cca60883b362781a138279d83b6e20ac5bbe9fb92c9d6157d7709e2eed8",
+    "results/domains/domain-extraction-manifest-20261005-v1/boundary_links.tsv.gz": "87e725cf186057c3ff6943641bb6d8d812a3a5ab432174683f94ec8424e4f8d8",
+    "metadata/completed_domain_manifest_plan_20261005_v1.json": "77b453b474cc784ed7889b46ae793988595577b7ce6d9993870b30362c37a61f",
+    "results/domains/domain-extraction-manifest-20261005-v1/receipt.json": "3c871274c770e19fe1c70cb99cd07757ec132446bd1e27bd582c21d2a8550c1e",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_completed_domain_manifest_v1.py": "70f0ed15d3b92c72e1acb00c95be81b1bf8b4056cd36d536d20f1e34f6d04e0f"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Unchanged union of all four qualified Domain policy hits and both alignment/envelope boundaries over the complete closed current AFDB registry. Every association retained with reversible sequence/span deduplication. Whole independent SQL union and actual original completion required before extraction. No validated boundaries, residue confidence/PAE or evolutionary event acceptance."
+}

@@ -1,5 +1,20 @@
 # Decisions and unresolved questions
 
+## October 5: verify saved full domain output after a reporting failure
+
+Preserve the actual failed original wrapper wait and complete source/output
+evidence. The reporting receipt path collided with its log directory; the
+original native exit code was not saved and is not assumed to be zero.
+Do not repeat native generation or overwrite its valid saved manifest. Require
+a separate bounded retained-output review and full independent SQL union,
+both with actual original terminal/journal closure, before coordinate extraction.
+Both checks now pass for all 2,454,565 intervals. Future execution receipts use
+`.json` paths distinct from log directories. Extract the entire eligible union
+with unchanged atom checks and retain all exclusions; require subsequent full
+independent atom/archive readback before structural use. ESMFold integration,
+full confidence/PAE and evolutionary events remain separate outstanding work.
+[Evidence and scope](completed-domain-extraction-20261005.md).
+
 ## October 5: integrate full sources while retaining predictor and gene-product identity
 
 Keep AFDB and ESMFold separate in the complete representative universe;
