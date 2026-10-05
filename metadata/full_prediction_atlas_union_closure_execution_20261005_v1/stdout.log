@@ -1,0 +1,68 @@
+{
+  "status": "complete_verified_full_prediction_atlas_availability_union",
+  "checked_utc": "2026-10-05T17:29:52.261652+00:00",
+  "taxa": 526,
+  "representative_proteins": 5815847,
+  "model_counts": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "availability": {
+    "afdb_only": 2994146,
+    "esmfold_only": 24801,
+    "both": 722,
+    "neither": 2796178
+  },
+  "proteins_with_any_model": 3019669,
+  "any_source_coverage_fraction": 0.5192139683179423,
+  "study_role_coverage": {
+    "ingroup": {
+      "taxa": 501,
+      "taxa_with_model": 501,
+      "representative_proteins": 5431687,
+      "proteins_with_any_model": 2778412,
+      "afdb_only": 2753527,
+      "esmfold_only": 24163,
+      "both": 722,
+      "neither": 2653275
+    },
+    "outgroup": {
+      "taxa": 25,
+      "taxa_with_model": 25,
+      "representative_proteins": 384160,
+      "proteins_with_any_model": 241257,
+      "afdb_only": 240619,
+      "esmfold_only": 638,
+      "both": 0,
+      "neither": 142903
+    }
+  },
+  "esmfold_models_with_representative_links": 25321,
+  "esmfold_models_without_representative_links": 1,
+  "esmfold_coordinate_bytes_rehashed": 7339969721,
+  "esmfold_pae_bytes_rehashed": 25846628960,
+  "public_taxon_table": "metadata/full_prediction_atlas_union_taxon_coverage_20261005_v1.tsv",
+  "original_transports": [
+    {
+      "unit": "fungal-full-prediction-atlas-union-20261005-v1.service",
+      "invocation_id": "a5a50d567f04455e92532c675346a9f5",
+      "original_tool_session_id": 58078,
+      "actual_terminal_exit_code": 0,
+      "whole_original_payloads_verified": true
+    },
+    {
+      "unit": "fungal-full-prediction-atlas-union-readback-20261005-v1.service",
+      "invocation_id": "abb209c575c24e43b679559fce71c6c8",
+      "original_tool_session_id": 4670,
+      "actual_terminal_exit_code": 0,
+      "whole_original_payloads_verified": true
+    }
+  ],
+  "complete_bound_files": 606,
+  "scientific_eligibility": false,
+  "confidence_qualified_atlas_complete": false,
+  "all_eight_aims_incomplete": true,
+  "new_predictions": 0,
+  "gpu": false,
+  "scope": "Complete AFDB/ESMFold source model/metadata and every5,815,847representative-protein record independently reconstructed with actual original producer/reader waits/full wrapper/manager transports and all source/output bindings. Public526row coverage table is a byte-identical source copy. Predictor overlaps and source-unlinked alternative models retained without cross-source choice. Availability before residue confidence/PAE qualification, domain/structural comparisons, homology and all evolutionary aims."
+}

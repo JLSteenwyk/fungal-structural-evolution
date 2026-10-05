@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=34359738368",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_structure_domain_registry_v2.py",
+    "--plan",
+    "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/completed_afdb_domain_registry_readback_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_afdb_domain_registry_readback_resources_20261005_v1.json": "9c88e15cd0b9a64d2c12c82148e7a2b856ba249c9e778c478b4247faf5d6fc10",
+    "scripts/readback_structure_domain_registry_v2.py": "62942a115471e7a67c154b8d9ab0347043b9d1aca8ba7f8ed18c8e44270534c0",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "26048f47b78a46c3a788f4ea0f68705f",
+  "wrapper": {
+    "pid": 259702,
+    "created": 1791220021.93,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_afdb_domain_registry_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_domain_registry_readback_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_structure_domain_registry_v2.py",
+      "--plan",
+      "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_domain_registry_readback_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-05T17:07:03.031818+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T17:17:24.196299+00:00",
+  "child": {
+    "pid": 259704,
+    "created": 1791220022.33,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=7200",
+      "--fsize=34359738368",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_structure_domain_registry_v2.py",
+      "--plan",
+      "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/completed_afdb_domain_registry_readback_20261005_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 621.1642275790218,
+  "child_cpu_seconds": 621.0150699999999,
+  "child_peak_rss_bytes": 1145110528,
+  "receipt": "metadata/completed_afdb_domain_registry_readback_20261005_v1.json",
+  "receipt_sha256": "d9a1dc558fe6d15ba6203d9564fa0bd49d8d0ea0989b9a7af3a12de4084a22cb",
+  "artifacts": {
+    "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1/configuration.json": "93d6e8dc70a273b26a57dea1fe1cbbf5199f6fdb5e0f6675e1d558fb54f23d48",
+    "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1/stdout.log": "cafc40c218cd3e01c768e1c14cd796f9197a621a34b4ee4e1536f71c6cd51ef8",
+    "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1/process.json": "d19af10623d663bb4cedcfa4b9e51ae917c8ed60ebb4fa2a68af97c34d87d4a0"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

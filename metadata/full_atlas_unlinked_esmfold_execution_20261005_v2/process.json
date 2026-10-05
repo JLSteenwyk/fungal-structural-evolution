@@ -1,0 +1,15 @@
+{
+  "pid": 272004,
+  "created": 1791221201.14,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=6442450944",
+    "--cpu=300",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_full_atlas_unlinked_esmfold_v2.py",
+    "--receipt",
+    "metadata/full_atlas_unlinked_esmfold_20261005_v2.json"
+  ]
+}

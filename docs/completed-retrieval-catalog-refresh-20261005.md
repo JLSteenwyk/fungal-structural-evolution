@@ -157,7 +157,11 @@ and releases byte-identical small taxon tables. The figure script is
 scatter legend out of the occupied upper-left region; the first version
 and its execution remain preserved. Source rows and arithmetic are unchanged.
 
-Next refresh confidence/PAE accounting, explicitly integrate ESMFold,
+The [full AFDB/ESMFold availability union](full-prediction-atlas-union-20261005.md)
+has now independently reconstructed every representative and source record.
+The [updated AFDB annotation registry](completed-retrieval-domain-registry-20261005.md)
+has full interval/policy/protein readback. Next refresh confidence/PAE accounting,
+extend domain comparisons to both sources,
 and build domain/structural-family analyses with orthology and sequence
 controls. Snapshot availability is not confidence-qualified atlas
 completion, homology, an accepted phylogeny or an evolutionary result.

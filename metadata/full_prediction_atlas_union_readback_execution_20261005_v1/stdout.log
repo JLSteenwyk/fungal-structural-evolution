@@ -1,0 +1,23 @@
+{
+  "status": "passed_full_prediction_atlas_union_independent_source_replay",
+  "checked_utc": "2026-10-05T17:25:38.017909+00:00",
+  "producer_receipt_sha256": "1fd6a4a30a4e2f0059901c5dd65384be12485fd32c2c40f5d11ba5bd5aa3383f",
+  "taxa": 526,
+  "representative_proteins": 5815847,
+  "model_counts": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "availability": {
+    "afdb_only": 2994146,
+    "esmfold_only": 24801,
+    "both": 722,
+    "neither": 2796178
+  },
+  "esmfold_models_with_representative_links": 25321,
+  "esmfold_models_without_representative_links": 1,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Every original full source model and SQLite model field, every AFDB source link, every representative FASTA sequence/hash/length/source disposition and emitted TSV/SQLite row independently reconstructed without producer imports. All526taxon rows/zeros and source unlinked ESMFold models checked. Shares SQLite and SHA helpers, uses separate FASTA parser. Does not repeat producer coordinate/PAE byte hashes, confidence qualification or inference."
+}

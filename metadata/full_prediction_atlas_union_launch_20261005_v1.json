@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-full-prediction-atlas-union-20261005-v1.service",
+  "pid": 259706,
+  "created": 1791220023.1,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_prediction_atlas_union_resources_20261005_v1.json",
+    "--execution",
+    "metadata/full_prediction_atlas_union_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/full_prediction_atlas_union_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_prediction_atlas_union_v1.py",
+    "--plan",
+    "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_prediction_atlas_union_20261005_v1.json"
+  ],
+  "plan": "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+  "plan_sha256": "e08e1d18ab2b6edd05bf08885ce5f24d16ea479ca6cb1839aa78ee8269c88ac0",
+  "checked_utc": "2026-10-05T17:10:31.044172+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "a5a50d567f04455e92532c675346a9f5",
+  "original_tool_session_id": 58078,
+  "source_hashes": {
+    "metadata/full_prediction_atlas_union_execution_20261005_v1/configuration.json": "60ecdad1b2fc1358197c672f7a9b75f109c8af123774c3b35188188fc31d8cef",
+    "metadata/full_prediction_atlas_union_plan_20261005_v1.json": "e08e1d18ab2b6edd05bf08885ce5f24d16ea479ca6cb1839aa78ee8269c88ac0"
+  },
+  "scientific_eligibility": false
+}

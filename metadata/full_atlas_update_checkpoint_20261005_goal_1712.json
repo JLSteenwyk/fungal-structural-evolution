@@ -1,0 +1,235 @@
+{
+  "status": "verified_original_full_atlas_update_runtime",
+  "checked_utc": "2026-10-05T17:11:51.912477+00:00",
+  "original_handles": [
+    {
+      "unit": "fungal-completed-afdb-domain-registry-readback-20261005-v1.service",
+      "pid": 259702,
+      "created": 1791220021.93,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_weighted_fit_controller_software_stage.py",
+        "--resources",
+        "metadata/completed_afdb_domain_registry_readback_resources_20261005_v1.json",
+        "--execution",
+        "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1.json",
+        "--receipt",
+        "metadata/completed_afdb_domain_registry_readback_20261005_v1.json",
+        "--",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/readback_structure_domain_registry_v2.py",
+        "--plan",
+        "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+        "--receipt",
+        "metadata/completed_afdb_domain_registry_readback_20261005_v1.json"
+      ],
+      "plan": "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+      "plan_sha256": "0626df2f996becf4faa9c9f51d65190769f2bcca27d33a272b5cf57284a52544",
+      "checked_utc": "2026-10-05T17:10:31.034723+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "26048f47b78a46c3a788f4ea0f68705f",
+      "original_tool_session_id": 49632,
+      "source_hashes": {
+        "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1/configuration.json": "93d6e8dc70a273b26a57dea1fe1cbbf5199f6fdb5e0f6675e1d558fb54f23d48",
+        "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json": "0626df2f996becf4faa9c9f51d65190769f2bcca27d33a272b5cf57284a52544"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/completed_afdb_domain_registry_readback_launch_20261005_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.75,
+      "children": [
+        {
+          "pid": 259704,
+          "created": 1791220022.33,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_structure_domain_registry_v2.py",
+            "--plan",
+            "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+            "--receipt",
+            "metadata/completed_afdb_domain_registry_readback_20261005_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 288.66999999999996
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "72bd1945ae61b9b10262fbdca0f9e361ddee88952bb84a4ce60a4f9fb49b2098",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "17179869184",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 309940224,
+        "memory.peak": 309940224,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 259704,
+          "created": 1791220022.33,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/readback_structure_domain_registry_v2.py",
+            "--plan",
+            "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+            "--receipt",
+            "metadata/completed_afdb_domain_registry_readback_20261005_v1.json"
+          ],
+          "rss_bytes": 272093184,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              7200                 7200                 seconds   \nMax file size             34359738368          34359738368          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         12884901888          12884901888          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    },
+    {
+      "unit": "fungal-full-prediction-atlas-union-20261005-v1.service",
+      "pid": 259706,
+      "created": 1791220023.1,
+      "cmdline": [
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/run_weighted_fit_controller_software_stage.py",
+        "--resources",
+        "metadata/full_prediction_atlas_union_resources_20261005_v1.json",
+        "--execution",
+        "metadata/full_prediction_atlas_union_execution_20261005_v1.json",
+        "--receipt",
+        "metadata/full_prediction_atlas_union_20261005_v1.json",
+        "--",
+        "/home/bizon/anaconda3/bin/python",
+        "scripts/build_full_prediction_atlas_union_v1.py",
+        "--plan",
+        "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+        "--receipt",
+        "metadata/full_prediction_atlas_union_20261005_v1.json"
+      ],
+      "plan": "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+      "plan_sha256": "e08e1d18ab2b6edd05bf08885ce5f24d16ea479ca6cb1839aa78ee8269c88ac0",
+      "checked_utc": "2026-10-05T17:10:31.044172+00:00",
+      "actual_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "invocation_id": "a5a50d567f04455e92532c675346a9f5",
+      "original_tool_session_id": 58078,
+      "source_hashes": {
+        "metadata/full_prediction_atlas_union_execution_20261005_v1/configuration.json": "60ecdad1b2fc1358197c672f7a9b75f109c8af123774c3b35188188fc31d8cef",
+        "metadata/full_prediction_atlas_union_plan_20261005_v1.json": "e08e1d18ab2b6edd05bf08885ce5f24d16ea479ca6cb1839aa78ee8269c88ac0"
+      },
+      "scientific_eligibility": false,
+      "launch": "metadata/full_prediction_atlas_union_launch_20261005_v1.json",
+      "status": "sleeping",
+      "cpu_seconds_at_observation": 0.74,
+      "children": [
+        {
+          "pid": 259708,
+          "created": 1791220023.51,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/build_full_prediction_atlas_union_v1.py",
+            "--plan",
+            "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+            "--receipt",
+            "metadata/full_prediction_atlas_union_20261005_v1.json"
+          ],
+          "status": "running",
+          "cpu_seconds_at_observation": 237.51
+        }
+      ],
+      "children_unavailable_during_observation": [],
+      "launch_sha256": "217c43c87c9a4c4040d2379ab01cf53eeb7d1342e1a795a2d454da6702ba6f7b",
+      "current_cgroup_limits": {
+        "cpu.max": "200000 100000",
+        "memory.max": "34359738368",
+        "memory.swap.max": "0"
+      },
+      "current_cgroup_memory_bytes": {
+        "memory.current": 34356531200,
+        "memory.peak": 34359738368,
+        "memory.swap.current": 0
+      },
+      "current_cgroup_memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 484,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "child_resource_observations": [
+        {
+          "pid": 259708,
+          "created": 1791220023.51,
+          "cmdline": [
+            "/home/bizon/anaconda3/bin/python",
+            "scripts/build_full_prediction_atlas_union_v1.py",
+            "--plan",
+            "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+            "--receipt",
+            "metadata/full_prediction_atlas_union_20261005_v1.json"
+          ],
+          "rss_bytes": 126906368,
+          "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              14400                14400                seconds   \nMax file size             68719476736          68719476736          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         30064771072          30064771072          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+        }
+      ]
+    }
+  ],
+  "states": {
+    "completed_afdb_domain_registry_readback": {
+      "output_root_present": true,
+      "own_final_receipt_present": false,
+      "checkpoint": {
+        "stage": "checking_all_models",
+        "counts": {
+          "models": 1860000,
+          "models_without_hits": 670778,
+          "segments": 1854269,
+          "policy_hits": 7380610
+        },
+        "elapsed_seconds": 228.37780735793058
+      }
+    },
+    "full_prediction_atlas_union": {
+      "output_root_present": true,
+      "own_final_receipt_present": false,
+      "checkpoint": {
+        "stage": "importing_all_afdb_protein_links",
+        "counts": {
+          "afdb_source_links": 300000
+        },
+        "model_counts": {
+          "AFDB": 2935733,
+          "ESMFold": 25322
+        },
+        "elapsed_seconds": 284.1750405129278
+      }
+    }
+  },
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_atlas_update_checkpoint_v1.py": "ec907295b2c5608ebd81f177cc758266a8c0364591bdc6e92757630cebc00c65",
+    "metadata/completed_afdb_domain_registry_readback_launch_20261005_v1.json": "72bd1945ae61b9b10262fbdca0f9e361ddee88952bb84a4ce60a4f9fb49b2098",
+    "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json": "0626df2f996becf4faa9c9f51d65190769f2bcca27d33a272b5cf57284a52544",
+    "metadata/full_prediction_atlas_union_launch_20261005_v1.json": "217c43c87c9a4c4040d2379ab01cf53eeb7d1342e1a795a2d454da6702ba6f7b",
+    "metadata/full_prediction_atlas_union_plan_20261005_v1.json": "e08e1d18ab2b6edd05bf08885ce5f24d16ea479ca6cb1839aa78ee8269c88ac0"
+  },
+  "full_taxa": 526,
+  "full_representative_proteins": 5815847,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "all_eight_aims_incomplete": true,
+  "scope": "Exact original PID/create/command/cgroup or invocation-linked terminal journal and immutable launch/plan hashes. Live output counts are checkpoints only; this does not qualify full domain arithmetic, atlas union, confidence or biological aims."
+}

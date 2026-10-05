@@ -24,10 +24,15 @@ tables and a descriptive PNG/PDF figure are available; 2,820,979 proteins
 remain unlinked in this AFDB snapshot. The structural atlas is unfinished.
 
 The [full refreshed domain registry](docs/completed-retrieval-domain-registry-20261005.md)
-is now running across all 2.94 million models with unchanged annotation
-policies. Complete independent interval/protein-link readback is prepared;
-confidence, predictor integration and evolutionary event inference remain
-separate requirements.
+is complete across all 2.94 million AFDB models with unchanged annotation
+policies and full independent interval/protein-link readback. A
+[full AFDB/ESMFold availability union](docs/full-prediction-atlas-union-20261005.md)
+now independently verifies every representative protein: **3,019,669 have
+at least one model (51.9%)**, **2,796,178 have neither source**. All 501 fungi
+and 25 outgroups have at least one model. Overlapping predictors and an
+annotated alternative-product exception are retained; no predictor is chosen
+by confidence score. Full confidence/PAE, structural comparisons and
+evolutionary event inference remain separate requirements.
 
 All **24 ancestral failed-role comparisons** now finish without native crashes.
 Independent readback and original execution closure pass, with **22 finite

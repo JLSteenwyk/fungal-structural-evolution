@@ -1,5 +1,37 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 5: complete predictor union and source-aware domain accounting
+
+Match all 5,815,847 representatives against the complete selected AFDB and
+all 25,322 completed ESMFold models by exact sequence hash and length.
+Retain each source model, configuration and original confidence/PAE metadata;
+do not rank across predictors by their confidence values. Export every
+representative with AFDB-only, ESMFold-only, both or neither dispositions.
+Freshly hash every ESMFold coordinate, PAE NPZ and prediction receipt;
+bind the prior full AFDB coordinate audit. Independently reconstruct every
+source model/SQLite field, source link, full representative sequence and
+TSV/SQLite row using a separate FASTA parser without producer imports.
+Close both actual original tool waits/full execution transports and all
+606 bindings; release a byte-identical 526-row source table. Coverage is
+51.9% availability before residue-confidence/PAE qualification.
+
+Trace the single source-unlinked ESMFold sequence to frozen annotation
+decisions and directly verify both products' source sequences. Preserve
+the annotated alternative-product model without changing the longest-product
+baseline or inferring expressed isoforms or duplication. The failed first
+provenance assertion and corrected distinct-file contract are retained.
+[Full sources, execution and limitations](full-prediction-atlas-union-20261005.md).
+
+The unchanged complete AFDB model/annotation registry preserves all four
+architecture policies and interval rules. Every model, interval, membership,
+candidate flag and protein link is independently reconstructed. Close both
+original waits/whole journals and 56 bindings. The all-taxon table retains
+missing-source denominators and counts annotation interval occurrences per
+linked protein; shared exact models can recur. Policies are alternative
+annotations, not independent replicates. Raw Pfam absence is not lack of
+function; candidate Domain intervals are not validated structural boundaries.
+[Complete domain accounting](completed-retrieval-domain-registry-20261005.md).
+
 ## October 5: full alpha trace and native overflow controls
 
 Independently reconstruct all 34,020 available current scalar rows across

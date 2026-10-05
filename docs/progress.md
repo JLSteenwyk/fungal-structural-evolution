@@ -1,5 +1,44 @@
 # Progress and evidence
 
+## October 5, 17:30 UTC: full domain registry and predictor availability union closed
+
+The complete AFDB annotation registry and independent every-row reconstruction
+close across 2,935,733 models and 2,994,868 protein links: 2,944,169 retained
+annotation intervals and 11,718,744 policy memberships. Both actual original
+tool terminals/full journals and 56 bindings pass. All 526 taxon denominators
+are published; four alternative domain policies remain separate. Alignment
+E-value yields 1,351,926 model intervals and 1,384,603 protein occurrences in
+1,000,200 linked proteins. No structural boundaries or events are inferred.
+[Full registry and complete taxon table](completed-retrieval-domain-registry-20261005.md).
+
+The full AFDB/ESMFold union and independent source/model/FASTA/TSV/SQLite
+reconstruction close across all 5,815,847 representatives and 2,961,055
+source models. Actual original producer58078/reader4670 waits and whole
+transports pass, with 606 source/output bindings. There are 2,994,146
+AFDB-only, 24,801 ESMFold-only, 722 both-source and 2,796,178 neither-source
+proteins. All 501 fungi and 25 outgroups have at least one model; pooled
+availability is 51.9%, before confidence/PAE qualification. Both predictors
+and all seven ESMFold configurations remain explicit. Every existing ESMFold
+coordinate/PAE/prediction receipt was rehashed, including 7.34 GB coordinates
+and 25.85 GB PAE. No new prediction, GPU use, download or charge occurred.
+[Full availability, taxon table and reproduction](full-prediction-atlas-union-20261005.md).
+
+The one ESMFold sequence outside the fixed representative baseline is an
+annotated 769-residue alternative product of the Amanita brunnescens gene
+whose selected product is 1,072 residues. Both source sequences and hashes
+are checked and the model retained; gene duplication or isoform expression
+is not inferred. A first diagnostic failed an invalid comparison between
+a single-marker FASTA hash and a full-proteome hash. That failure remains
+preserved; the new version binds the distinct files and directly compares
+protein sequences without changing data or baseline selection.
+
+At 17:32 UTC, the original full timing job is verified live with sixteen
+workers and 1,118 producer checkpoints, with no failure files. Full weighted
+biological fits remain zero. Confidence/PAE, source-aware domain/structural
+comparisons, accepted frameworks, adequate ancestral uncertainty, historical
+covariance failure, calibrated effects, large-data public release and all
+eight evolutionary aims remain required and incomplete.
+
 ## October 5, 16:55 UTC: full refreshed domain registry launched
 
 The expanded catalog now feeds the unchanged full annotation registry:

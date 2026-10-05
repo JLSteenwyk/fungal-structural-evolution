@@ -1,0 +1,27 @@
+{
+  "status": "completed_full_prediction_atlas_union_pending_independent_readback",
+  "checked_utc": "2026-10-05T17:15:44.941710+00:00",
+  "taxa": 526,
+  "representative_proteins": 5815847,
+  "model_counts": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "availability": {
+    "afdb_only": 2994146,
+    "esmfold_only": 24801,
+    "both": 722,
+    "neither": 2796178
+  },
+  "esmfold_models_with_representative_links": 25321,
+  "esmfold_models_without_representative_links": 1,
+  "esmfold_coordinate_bytes_rehashed": 7339969721,
+  "esmfold_pae_bytes_rehashed": 25846628960,
+  "esmfold_prediction_receipts_rehashed": 25322,
+  "afdb_coordinate_rehash_repeated": false,
+  "elapsed_seconds": 517.3585813959362,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "All 526taxa and5,815,847representatives matched to both full source inventories by exact sequence and length. Predictor identities and all original model metadata/configurations retained; both and neither explicit, no cross-predictor ranking. Every existing ESMFold coordinate/PAE and prediction receipt freshly hashed; AFDB coordinates rely on the bound completed full catalog hash run. Whole independent source/FASTA/link/model/coverage replay and original execution closure required. No residue-confidence qualification, inferred homology, prediction accuracy, missing-at-random assumption or completed evolutionary aim."
+}

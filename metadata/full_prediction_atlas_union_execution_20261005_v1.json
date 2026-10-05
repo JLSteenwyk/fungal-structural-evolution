@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=30064771072",
+    "--cpu=14400",
+    "--fsize=68719476736",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_prediction_atlas_union_v1.py",
+    "--plan",
+    "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_prediction_atlas_union_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_prediction_atlas_union_resources_20261005_v1.json": "08f335edca778cc3ca67b768c11c76a4ad929a732ad624a3647b63c802a26bae",
+    "scripts/build_full_prediction_atlas_union_v1.py": "246b97f355c6fb2a442b6c6e09b25a9fa5a17562e86004c62de8220a321c133d",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "a5a50d567f04455e92532c675346a9f5",
+  "wrapper": {
+    "pid": 259706,
+    "created": 1791220023.1,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_prediction_atlas_union_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_prediction_atlas_union_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_prediction_atlas_union_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_prediction_atlas_union_v1.py",
+      "--plan",
+      "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_prediction_atlas_union_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 21600,
+  "started_utc": "2026-10-05T17:07:04.203546+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T17:15:45.269925+00:00",
+  "child": {
+    "pid": 259708,
+    "created": 1791220023.51,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=30064771072",
+      "--cpu=14400",
+      "--fsize=68719476736",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_prediction_atlas_union_v1.py",
+      "--plan",
+      "metadata/full_prediction_atlas_union_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_prediction_atlas_union_20261005_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 521.0661464289296,
+  "child_cpu_seconds": 464.58203000000003,
+  "child_peak_rss_bytes": 664023040,
+  "receipt": "metadata/full_prediction_atlas_union_20261005_v1.json",
+  "receipt_sha256": "1fd6a4a30a4e2f0059901c5dd65384be12485fd32c2c40f5d11ba5bd5aa3383f",
+  "artifacts": {
+    "metadata/full_prediction_atlas_union_execution_20261005_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_prediction_atlas_union_execution_20261005_v1/configuration.json": "60ecdad1b2fc1358197c672f7a9b75f109c8af123774c3b35188188fc31d8cef",
+    "metadata/full_prediction_atlas_union_execution_20261005_v1/stdout.log": "b1000c60a74edf6c57dfbd9da87e99a352d4856ded66da1ff99c28efbd00db7a",
+    "metadata/full_prediction_atlas_union_execution_20261005_v1/process.json": "601cc541d02131890ed1e1fffea67535b19daaf1fc7817dc1f89bf92b463201f"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

@@ -1,5 +1,24 @@
 # Decisions and unresolved questions
 
+## October 5: integrate full sources while retaining predictor and gene-product identity
+
+Keep AFDB and ESMFold separate in the complete representative universe;
+do not choose a predictor by raw confidence score. Retain all both-source
+and neither-source records, every original configuration and unused alternative
+model. Full independent reconstruction and original execution closure now
+pass for the 526-taxon union and AFDB domain registry. Preserve the existing
+four annotation policies and report per-protein occurrences separately from
+per-model intervals. Require confidence/PAE and source-aware structural
+comparisons before evolutionary interpretation.
+
+For the one unlinked ESMFold sequence, preserve the annotated 769-residue
+product and the selected 1,072-residue product of the same annotated gene.
+Exact source sequences are verified. Do not swap the baseline to gain
+structural coverage or equate two annotated products with duplication.
+Keep the first provenance diagnostic failure and corrected distinct-file
+binding; the full availability result does not validate expressed isoforms.
+[Evidence and full scope](full-prediction-atlas-union-20261005.md).
+
 ## October 5: record latent alpha without changing the prior
 
 The full current trace audit and deterministic native grid demonstrate an

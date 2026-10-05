@@ -1,0 +1,46 @@
+{
+  "status": "completed_full_refreshed_afdb_domain_registry_pending_independent_readback",
+  "checked_utc": "2026-10-05T17:03:41.227021+00:00",
+  "counts": {
+    "models": 2935733,
+    "models_without_hits": 1049030,
+    "segments": 2944169,
+    "policy_hits": 11718744,
+    "protein_links": 2994868
+  },
+  "candidate_domain_intervals_by_policy": {
+    "alignment_bitscore": 1351205,
+    "alignment_evalue": 1351926,
+    "envelope_bitscore": 1347031,
+    "envelope_evalue": 1347757
+  },
+  "original_taxa": 526,
+  "original_representative_proteins": 5815847,
+  "source_unlinked_proteins": 2820979,
+  "raw_registry_receipt_sha256": "d6b57eed9b48e35960c754840d39ade29ebfd1fdec5c7a6bfc7444fe96130c3b",
+  "database_sha256": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0",
+  "source_hashes": {
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/models.jsonl": "e0ca5699d9e1553ddfade8e24a26404f1cc45e8e5618a96e41be75719be9a1af",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/protein_model_links.tsv": "282c05b73c63657e4bbf3c36d5a4a693f03bae2db9cefc581f3dd83a29bb7ea4",
+    "results/domains/full-candidate-architectures-v1/candidate_architectures.sqlite": "890503f9b24385c8bd8e367169f49185bce3d0efbf8f32871688aba3d977ecf0",
+    "scripts/build_structure_domain_registry.py": "f5806dea8e4a8a0a0561c7c04c5b882a3a1bcca99523c02dbdd98053ff092160",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/run_completed_afdb_domain_registry_v1.py": "5ec521fd802ecdc9c41f42bc1bf5e759a781dd65791b4a6bdbc33a71ebb12237",
+    "metadata/family_domain_bridge_completed_readback.json": "fa26af286e775909cd1b85584e326a45901b2d6f93db11bad338f76ffb6f082b",
+    "metadata/family_domain_bridge_completed_receipt.json": "bc09cc0692e8444fa58cd6cb9aacd0956f41c06466676c306406e3ea7deeaa47",
+    "metadata/completed_afdb_catalog_completed_20261005_v1.json": "6119bb0b8a3466168b29bcf1ea88cec424843da05166f8d74164e409d8e4c302",
+    "metadata/completed_afdb_catalog_comparison_completed_20261005_v1.json": "b1e1b0ea22555144112ca8d7679cf0e83bc05e17788526766368c5eb31116a8b",
+    "metadata/completed_afdb_catalog_closure_transport_20261005_v1.json": "3f5e4c3c4c5ae824411c817e340bb5944ba1d83d15280a4caaccb94cd80a7f17",
+    "metadata/completed_afdb_catalog_comparison_readback_transport_20261005_v1.json": "88b22b0fe14b7e7d3d0d4ca0b02be440fdbcde4b1b995cef45e43e110d2553e7",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/receipt.json": "16951e33aeda65d16bbfb7d28be45e222f1c2362d9b3e29499838475e1666068",
+    "results/domains/whole-proteome-structure-domain-registry-20261005-v1/structure_domains.sqlite": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0",
+    "metadata/completed_afdb_domain_registry_plan_20261005_v1.json": "a91a87a06e641d63bd273d67d78ac096778cbbde5340128446d4f4b59c522939",
+    "results/domains/whole-proteome-structure-domain-registry-20261005-v1/receipt.json": "d6b57eed9b48e35960c754840d39ade29ebfd1fdec5c7a6bfc7444fe96130c3b",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_completed_afdb_domain_registry_v1.py": "5ec521fd802ecdc9c41f42bc1bf5e759a781dd65791b4a6bdbc33a71ebb12237",
+    "results/domains/whole-proteome-structure-domain-registry-20261005-v1/state.json": "3fa06646c9090d913307795f5cdbde088da7615db11c583e1367f0ca5cd325be"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Unchanged qualified whole catalog model/annotation interval join over every selected model and all protein links. Existing four architecture policy alternatives and HMM/type/length rules retained. Catalog missingness remains explicit outside model registry. Full independent interval/protein reconstruction and original actual execution closure required. No residue confidence/PAE, structural domain validation, homology or evolutionary event acceptance."
+}

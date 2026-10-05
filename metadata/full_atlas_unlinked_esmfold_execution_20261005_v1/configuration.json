@@ -1,0 +1,48 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=6442450944",
+    "--cpu=300",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/diagnose_full_atlas_unlinked_esmfold_v1.py",
+    "--receipt",
+    "metadata/full_atlas_unlinked_esmfold_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_atlas_unlinked_esmfold_resources_20261005_v1.json": "32f1265cdc73b9648469cb279f2d22b3041db37ec659302fbee9a4a8fdb09174",
+    "scripts/diagnose_full_atlas_unlinked_esmfold_v1.py": "d5728a915b0b8479a5dc379f89a92fe7bec699835a83afe77b9bd2b1521f9000",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "4e62fd0efaee49d59be992db55001da8",
+  "wrapper": {
+    "pid": 269151,
+    "created": 1791220915.52,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_atlas_unlinked_esmfold_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_atlas_unlinked_esmfold_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_atlas_unlinked_esmfold_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/diagnose_full_atlas_unlinked_esmfold_v1.py",
+      "--receipt",
+      "metadata/full_atlas_unlinked_esmfold_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 600,
+  "started_utc": "2026-10-05T17:21:56.609980+00:00"
+}

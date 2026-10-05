@@ -1,0 +1,30 @@
+{
+  "prepared_utc": "2026-10-05T17:06:16.090472+00:00",
+  "cpus": 2,
+  "memory_gib": 32,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 28,
+  "cpu_seconds_per_stage": 14400,
+  "wall_seconds_per_stage": 21600,
+  "per_file_limit_mib": 65536,
+  "minimum_available_ram_gib": 32,
+  "minimum_free_disk_gib": 256,
+  "available_ram_gib": 639.4444236755371,
+  "free_disk_gib": 10129.55959701538,
+  "output_allowance_gib": 64,
+  "estimated_wall_hours": [
+    0.25,
+    3
+  ],
+  "runtime_is_uncalibrated": true,
+  "expected_taxa": 526,
+  "expected_proteins": 5815847,
+  "expected_models": 2961055,
+  "expected_afdb_links": 2994868,
+  "expected_esmfold_models": 25322,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Full3mAFDB/25kESMmodel ingestion and all5.815mFASTA/link matches into SQLite plus complete TSV/JSONL. No1.10TB AFDB coordinate rehash or coordinate copying. All25,322ESMFold coordinate/PAE/predictionreceipts freshly rehashed, with full original provenance. Raw output remains outsideGit. SQLite/Fasta CPU and disk cost is uncalibrated; no reduced-scope pilot, prediction or paid resources."
+}

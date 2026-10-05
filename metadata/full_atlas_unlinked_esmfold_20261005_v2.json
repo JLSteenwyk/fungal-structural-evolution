@@ -1,0 +1,70 @@
+{
+  "status": "completed_all_source_unlinked_esmfold_gene_product_diagnostic_pending_union_readback",
+  "checked_utc": "2026-10-05T17:26:45.549231+00:00",
+  "unlinked_model_sequences": 1,
+  "original_marker_links": 1,
+  "diagnostics": [
+    {
+      "original_marker_identity": {
+        "marker": "5006412at2759",
+        "taxon_id": "F87326",
+        "protein_id": "KAF8745614.1",
+        "sequence_sha256": "9b523f1381b10387a4ac06e062a5114eff1ede28cca924c8cc67f95005beab28",
+        "source_fasta_sha256": "a0b2ef7a11b97680a85aca81ad3acea790f68eb18fd7ec7bd72fa8778c8b67f7"
+      },
+      "full_source_proteome_sha256": "c7682ed6da89aea76b68b236151da9e3e028a40222e64fe3ee2ae184799fec71",
+      "single_marker_fasta_sha256": "a0b2ef7a11b97680a85aca81ad3acea790f68eb18fd7ec7bd72fa8778c8b67f7",
+      "gene_ids": [
+        "gene-AX14_006929"
+      ],
+      "original_gene_product_decision": {
+        "taxon_id": "F87326",
+        "protein_id": "KAF8745614.1",
+        "gene_ids_json": "[\"gene-AX14_006929\"]",
+        "status": "unique_gene",
+        "partial_cds": "False",
+        "protein_length": "769",
+        "decision": "alternative_product_retained_in_source"
+      },
+      "selected_gene_product_decision": {
+        "taxon_id": "F87326",
+        "protein_id": "KAF8745613.1",
+        "gene_ids_json": "[\"gene-AX14_006929\"]",
+        "status": "unique_gene",
+        "partial_cds": "False",
+        "protein_length": "1072",
+        "decision": "longest_per_gene_lexical_tiebreak"
+      },
+      "baseline_sequence_sha256": "369be870ec18edb109bcbfd8627a646ecf7da8f889d805659bfccecf36ef9a78",
+      "baseline_has_afdb": false,
+      "baseline_has_esmfold": false,
+      "retained_esmfold_model_id": "ESM-S9b523f1381b10387a4ac06e062a5114eff1ede28cca924c8cc67f95005beab28-b2d0fc04f944",
+      "retained_esmfold_path": "results/structures/esmfold-extended-gpu1-20260922-v1/models/ESM-S9b523f1381b10387a4ac06e062a5114eff1ede28cca924c8cc67f95005beab28-b2d0fc04f944-v1.cif",
+      "prediction_config_sha256": "b2d0fc04f9442161f9a3dc3976e361a45b8a55024187b1f1162ddac9be2c8d9c",
+      "disposition": "annotated_alternative_product_excluded_by_fixed_longest_product_baseline",
+      "biological_isoform_expression_validated": false,
+      "gene_duplication_inferred": false
+    }
+  ],
+  "source_hashes": {
+    "results/structures/full-prediction-atlas-union-20261005-v1/prediction_atlas.sqlite": "fadd9ace6fb98aa13d78bea5ed6bc5864a886b16d6ea46841dd2cf04ba7db74b",
+    "metadata/qc_input_receipts.json": "0d025c7190e9595dd73436f6226a31f3ebe4cd8bd357a42fbdaa9252fdbb03f4",
+    "data/qc_proteomes/F87326.faa": "c7682ed6da89aea76b68b236151da9e3e028a40222e64fe3ee2ae184799fec71",
+    "results/busco/F87326/run_eukaryota_odb12.2/busco_sequences/single_copy_busco_sequences/5006412at2759.faa": "a0b2ef7a11b97680a85aca81ad3acea790f68eb18fd7ec7bd72fa8778c8b67f7",
+    "results/gene_representatives/full-v2/F87326.decisions.tsv": "ad99e05f70949a1b11a63e7c98ae6536b57a46c120131f3da68b630e6fee74ce",
+    "results/gene_representatives/full-v2/F87326.faa": "31ac09d75fe2a057e72b240d31bac0bbaa0fab5e48fa512da23fcb0ac9aab85f",
+    "metadata/full_prediction_atlas_union_plan_20261005_v1.json": "e08e1d18ab2b6edd05bf08885ce5f24d16ea479ca6cb1839aa78ee8269c88ac0",
+    "metadata/full_prediction_atlas_union_20261005_v1.json": "1fd6a4a30a4e2f0059901c5dd65384be12485fd32c2c40f5d11ba5bd5aa3383f",
+    "metadata/full_prediction_atlas_union_transport_20261005_v1.json": "868c5cbfbb132edf21137f96f93b2dd8ad499acd0bdea92801cb96c005f6e7f8",
+    "results/phylogeny/markers-full-v1/protein_mapping.tsv": "46af9cc88e58758b43071272de9eba8ac7748237fbd6d23e6ebda81386501952",
+    "metadata/gene_representatives_receipt.json": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/diagnose_full_atlas_unlinked_esmfold_v2.py": "12df594d7badd5518fc71062a1ad1a205175976b51f2aa0ec2f722793629ec4e"
+  },
+  "scientific_eligibility": false,
+  "whole_union_independent_readback_complete": false,
+  "baseline_policy_changed": false,
+  "models_discarded": false,
+  "new_predictions": 0,
+  "gpu": false,
+  "scope": "Every producer-reported source-unlinked ESMFold sequence traced to original marker identity and frozen gene-product decisions. A longer annotated product explains fixed baseline exclusion; alternative model/source annotation retained. Neither true isoform expression nor duplication/annotation accuracy inferred. Full independent union readback remains required."
+}

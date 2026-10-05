@@ -1,5 +1,19 @@
 # Open scientific milestones — updated October 5, 2026
 
+The full AFDB domain registry and every-row independent reconstruction now
+close across 2,935,733 models/2,994,868 links. All four policy alternatives
+and complete taxon denominators are retained. The whole representative
+AFDB/ESMFold union and independent source/FASTA/TSV/SQLite replay also close:
+3,019,669 proteins have a model (51.9%), 2,796,178 have neither source, and
+all 526 taxa have at least one link. Predictor overlaps, original settings
+and one annotated alternative product remain explicit. This completes
+availability integration and annotation joins; residue-confidence/PAE,
+source-aware structural comparisons, accepted frameworks and all eight
+scientific aims remain incomplete. Full timing is live with 1,118 checkpoints
+at 17:32 UTC; full weighted biological fits remain zero.
+[Full union](full-prediction-atlas-union-20261005.md) and
+[domain registry](completed-retrieval-domain-registry-20261005.md).
+
 The full current alpha diagnostic closes 34,020 scalar rows/411 generated
 prior programs and 57 native controls, with independent Decimal readback,
 four original execution closures, 7,108 bindings and a complete diagnostic

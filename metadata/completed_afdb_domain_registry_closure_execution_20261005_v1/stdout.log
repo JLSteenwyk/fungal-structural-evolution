@@ -1,0 +1,57 @@
+{
+  "status": "complete_verified_full_refreshed_afdb_domain_registry",
+  "checked_utc": "2026-10-05T17:20:32.235639+00:00",
+  "taxa": 526,
+  "representative_proteins": 5815847,
+  "counts": {
+    "models": 2935733,
+    "models_without_hits": 1049030,
+    "segments": 2944169,
+    "policy_hits": 11718744,
+    "protein_links": 2994868
+  },
+  "candidate_domain_intervals_by_policy": {
+    "alignment_bitscore": 1351205,
+    "alignment_evalue": 1351926,
+    "envelope_bitscore": 1347031,
+    "envelope_evalue": 1347757
+  },
+  "public_taxon_table": "metadata/completed_afdb_domain_registry_taxon_coverage_20261005_v1.tsv",
+  "protein_occurrence_totals": {
+    "representative_proteins": 5815847,
+    "afdb_linked_proteins": 2994868,
+    "afdb_unlinked_proteins": 2820979,
+    "linked_proteins_with_raw_pfam_hits": 1930398,
+    "linked_proteins_without_raw_pfam_hits": 1064470,
+    "alignment_bitscore_candidate_interval_occurrences": 1383863,
+    "alignment_bitscore_proteins_with_candidate_interval": 999669,
+    "alignment_evalue_candidate_interval_occurrences": 1384603,
+    "alignment_evalue_proteins_with_candidate_interval": 1000200,
+    "envelope_bitscore_candidate_interval_occurrences": 1379636,
+    "envelope_bitscore_proteins_with_candidate_interval": 997887,
+    "envelope_evalue_candidate_interval_occurrences": 1380379,
+    "envelope_evalue_proteins_with_candidate_interval": 998420
+  },
+  "original_transports": [
+    {
+      "unit": "fungal-completed-afdb-domain-registry-20261005-v1.service",
+      "invocation_id": "544cc1e796ce41658556ca4aca061ef7",
+      "original_tool_session_id": 93892,
+      "actual_terminal_exit_code": 0,
+      "whole_original_payloads_verified": true
+    },
+    {
+      "unit": "fungal-completed-afdb-domain-registry-readback-20261005-v1.service",
+      "invocation_id": "26048f47b78a46c3a788f4ea0f68705f",
+      "original_tool_session_id": 49632,
+      "actual_terminal_exit_code": 0,
+      "whole_original_payloads_verified": true
+    }
+  ],
+  "complete_bound_files": 56,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "all_eight_aims_incomplete": true,
+  "scope": "Complete2,935,733model/2,994,868protein domain registry and every independent interval/policy and protein-link reconstruction close against actual original tool waits/whole journals/pins. All526taxon denominators and source-unlinked proteins retained. Taxon table counts candidate interval occurrences per linked protein; identical shared models can recur across proteins. Four policies are alternatives, not independent replicates or counts to sum. Raw Pfam absence is not lack of function. No residue-confidence/PAE, structural boundary, homology or evolutionary domain event acceptance; ESMFold integration remains separate."
+}

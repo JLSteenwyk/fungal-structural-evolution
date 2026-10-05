@@ -1,0 +1,24 @@
+{
+  "status": "retained_original_failed_unlinked_model_provenance_check",
+  "checked_utc": "2026-10-05T17:26:41.374692+00:00",
+  "original_tool_session_id": 72444,
+  "original_terminal_exit_code": 1,
+  "whole_wrapper_payloads_matched": true,
+  "failure": "Invalid assertion equated single-marker FASTA hash with complete proteome hash. Marker source contract in prepare_phylogenetic_markers.py records each BUSCO single-marker FASTA; representatives source records full QCproteome. Neither biological sequence mismatch nor failure of main union/domain analysis.",
+  "installed_software_changed": false,
+  "scientific_eligibility": false,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_atlas_unlinked_esmfold_resources_20261005_v1.json": "32f1265cdc73b9648469cb279f2d22b3041db37ec659302fbee9a4a8fdb09174",
+    "scripts/diagnose_full_atlas_unlinked_esmfold_v1.py": "d5728a915b0b8479a5dc379f89a92fe7bec699835a83afe77b9bd2b1521f9000",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08",
+    "metadata/full_atlas_unlinked_esmfold_execution_20261005_v1/stderr.log": "6930df4d68bdfaff7ea66271c3c3e994a3091fbf86a1ee5c1c2319da1d3c17ef",
+    "metadata/full_atlas_unlinked_esmfold_execution_20261005_v1/configuration.json": "4e61a7ebe8eb5b7399dcf0c2688d8bff6e21cf6cd7a07e7747140e41571935f1",
+    "metadata/full_atlas_unlinked_esmfold_execution_20261005_v1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_atlas_unlinked_esmfold_execution_20261005_v1/process.json": "3068cdf69500676fd5fa9aea4820fca4e22e3fba022d4d721243eb00799e22d7",
+    "metadata/full_atlas_unlinked_esmfold_execution_20261005_v1.json": "0cb201788ebdd9946f8a896430b58312f68b12e7f79ff282d72a0c8c99a2a16e",
+    "metadata/full_atlas_unlinked_esmfold_original_tool_payloads_20261005_v1.json": "8fbd99d7e81b117ae6a7074a78c2888d3f7f0c340126a89000c2e3eb958c8643",
+    "metadata/full_atlas_unlinked_esmfold_execution_20261005_v1/original-invocation-journal.jsonl": "bc84bd4204aa04a9b08013cf7680ae5a04dc170434a518d4a1eeee92b87efb64"
+  }
+}

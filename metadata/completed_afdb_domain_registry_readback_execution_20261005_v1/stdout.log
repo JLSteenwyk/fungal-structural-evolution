@@ -1,0 +1,25 @@
+{
+  "status": "passed_full_structure_domain_registry_readback",
+  "counts": {
+    "models": 2935733,
+    "models_without_hits": 1049030,
+    "segments": 2944169,
+    "policy_hits": 11718744,
+    "protein_links": 2994868
+  },
+  "candidate_domain_intervals_by_policy": {
+    "envelope_bitscore": 1347031,
+    "alignment_evalue": 1351926,
+    "alignment_bitscore": 1351205,
+    "envelope_evalue": 1347757
+  },
+  "producer_receipt_sha256": "d6b57eed9b48e35960c754840d39ade29ebfd1fdec5c7a6bfc7444fe96130c3b",
+  "database_sha256": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0",
+  "plan_sha256": "0626df2f996becf4faa9c9f51d65190769f2bcca27d33a272b5cf57284a52544",
+  "elapsed_seconds": 543.1225139709422,
+  "scope": "Every model, retained interval, policy membership, candidate flag and protein link reconstructed from source data without importing producer interval logic. Overlap and partial-hit exclusions recomputed from intervals and HMM coverage. Shared SQLite sources and SHA helper; does not repeat annotation searches, coordinate validation or establish structural boundaries.",
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "original_producer_transport_sha256": "7675cf87c197b1035c8995ea984e28b2335f5722652ce5165c3178aabc82bb93"
+}

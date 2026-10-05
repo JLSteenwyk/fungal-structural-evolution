@@ -1,0 +1,27 @@
+{"status": "complete_structure_domain_interval_registry_pending_independent_readback", "counts": {"models": 2935733, "models_without_hits": 1049030, "segments": 2944169, "policy_hits": 11718744, "protein_links": 2994868}, "candidate_domain_intervals_by_policy": {"alignment_bitscore": 1351205, "alignment_evalue": 1351926, "envelope_bitscore": 1347031, "envelope_evalue": 1347757}, "plan_sha256": "a91a87a06e641d63bd273d67d78ac096778cbbde5340128446d4f4b59c522939", "database_sha256": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0", "elapsed_seconds": 499.72728155797813, "coordinate_convention": "1-based inclusive source protein positions; alignment and envelope boundaries retained separately", "scope": "Full exact-sequence model/annotation and protein-link join with all policy alternatives and Pfam types. Candidate Domain intervals require conservative architecture, HMM coverage>=0.70 and alignment length>=30. No residue confidence or PAE qualification, coordinate extraction, validated structural boundaries, homology or evolutionary events."}
+{
+  "status": "completed_full_refreshed_afdb_domain_registry_pending_independent_readback",
+  "checked_utc": "2026-10-05T17:03:41.227021+00:00",
+  "counts": {
+    "models": 2935733,
+    "models_without_hits": 1049030,
+    "segments": 2944169,
+    "policy_hits": 11718744,
+    "protein_links": 2994868
+  },
+  "candidate_domain_intervals_by_policy": {
+    "alignment_bitscore": 1351205,
+    "alignment_evalue": 1351926,
+    "envelope_bitscore": 1347031,
+    "envelope_evalue": 1347757
+  },
+  "original_taxa": 526,
+  "original_representative_proteins": 5815847,
+  "source_unlinked_proteins": 2820979,
+  "raw_registry_receipt_sha256": "d6b57eed9b48e35960c754840d39ade29ebfd1fdec5c7a6bfc7444fe96130c3b",
+  "database_sha256": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0",
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Unchanged qualified whole catalog model/annotation interval join over every selected model and all protein links. Existing four architecture policy alternatives and HMM/type/length rules retained. Catalog missingness remains explicit outside model registry. Full independent interval/protein reconstruction and original actual execution closure required. No residue confidence/PAE, structural domain validation, homology or evolutionary event acceptance."
+}

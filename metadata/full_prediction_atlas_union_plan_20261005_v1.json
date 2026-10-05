@@ -1,0 +1,31 @@
+{
+  "output": "results/structures/full-prediction-atlas-union-20261005-v1",
+  "afdb_catalog": "results/structures/whole-proteome-afdb-catalog-20261005-v1",
+  "afdb_closure": "metadata/completed_afdb_catalog_completed_20261005_v1.json",
+  "esmfold_inventory": "results/structures/esmfold-all-completed-20260922-v1/inventory.jsonl",
+  "esmfold_readback": "metadata/esmfold_all_completed_inventory_readback.json",
+  "representatives": "metadata/gene_representatives_receipt.json",
+  "manifest": "metadata/analysis_manifest.tsv",
+  "expected_taxa": 526,
+  "expected_proteins": 5815847,
+  "expected_afdb_models": 2935733,
+  "expected_afdb_links": 2994868,
+  "expected_esmfold_models": 25322,
+  "scope": "Full representative universe, both original predictor inventories including ESMFold models with no representative links. Preserve AFDBonly/ESMFoldonly/both/neither and all source model/configuration provenance; no cross-source choice or mean-confidence acceptance.",
+  "pins": {
+    "metadata/completed_afdb_catalog_completed_20261005_v1.json": "6119bb0b8a3466168b29bcf1ea88cec424843da05166f8d74164e409d8e4c302",
+    "results/structures/esmfold-all-completed-20260922-v1/inventory.jsonl": "0c44c08ce1cc8fabbecf867e4ca4164e6ba37f0f6390acd7df04bf5cceac9681",
+    "metadata/esmfold_all_completed_inventory_readback.json": "6d45696e39c43626f65a1d725246d7911f1ab92323dbb90216750a1f177062bb",
+    "metadata/gene_representatives_receipt.json": "0d3aab4eec702764ea520496a96fe62a06297ed335023fa760cc6770064201c7",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/receipt.json": "16951e33aeda65d16bbfb7d28be45e222f1c2362d9b3e29499838475e1666068",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/models.jsonl": "e0ca5699d9e1553ddfade8e24a26404f1cc45e8e5618a96e41be75719be9a1af",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/protein_model_links.tsv": "282c05b73c63657e4bbf3c36d5a4a693f03bae2db9cefc581f3dd83a29bb7ea4",
+    "scripts/build_full_prediction_atlas_union_v1.py": "246b97f355c6fb2a442b6c6e09b25a9fa5a17562e86004c62de8220a321c133d",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "metadata/esmfold_all_completed_inventory_receipt.json": "c8ae8a279d88d37c53b482547fb4e6cc5539f24f256410324c0140091ab8d363",
+    "metadata/esmfold_all_completed_mapping_controller_receipt.json": "1102d8a08572af6e71ece76867423c8f38420431bab952d08f8e069fd6969a09",
+    "metadata/esmfold_all_completed_residue_readback.json": "e59780e6a76f4e9173a8fafc3bb3b722f6f19b3c6374bce092b3e8b4b5190354"
+  }
+}

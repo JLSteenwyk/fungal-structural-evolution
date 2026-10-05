@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=1800",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/close_full_prediction_atlas_union_v1.py",
+    "--receipt",
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+    "--taxon-table",
+    "metadata/full_prediction_atlas_union_taxon_coverage_20261005_v1.tsv"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_prediction_atlas_union_closure_resources_20261005_v1.json": "55bd7c3d456936ebdbaff111ae2898210fb9bf0e5e918d05558080dbe2df6d1b",
+    "scripts/close_full_prediction_atlas_union_v1.py": "fba4bdc6bd9c0dd8ab247cf87888d9d49c03d0096f47f334b018c630f548f705",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "7e5e4f3f6d2347f99d6926da85575015",
+  "wrapper": {
+    "pid": 273809,
+    "created": 1791221378.39,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_prediction_atlas_union_closure_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_prediction_atlas_union_closure_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/close_full_prediction_atlas_union_v1.py",
+      "--receipt",
+      "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+      "--taxon-table",
+      "metadata/full_prediction_atlas_union_taxon_coverage_20261005_v1.tsv"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 3600,
+  "started_utc": "2026-10-05T17:29:39.480903+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-05T17:29:52.303811+00:00",
+  "child": {
+    "pid": 273818,
+    "created": 1791221378.78,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=1800",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/close_full_prediction_atlas_union_v1.py",
+      "--receipt",
+      "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+      "--taxon-table",
+      "metadata/full_prediction_atlas_union_taxon_coverage_20261005_v1.tsv"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 12.822689238935709,
+  "child_cpu_seconds": 12.791165,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+  "receipt_sha256": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+  "artifacts": {
+    "metadata/full_prediction_atlas_union_closure_execution_20261005_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_prediction_atlas_union_closure_execution_20261005_v1/configuration.json": "58a9d4f5e850339729b835d54636b87d7c8f0e298feb211dd93778501692d8b6",
+    "metadata/full_prediction_atlas_union_closure_execution_20261005_v1/stdout.log": "bc137a30ff123b2396582369b6766a2824aa90d7e18e7bd4cc4058c36a9f81a8",
+    "metadata/full_prediction_atlas_union_closure_execution_20261005_v1/process.json": "02c2a2dd47f884612026f41f31b9b2d19c30c9d60db398e4ee91e6c38de32786"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

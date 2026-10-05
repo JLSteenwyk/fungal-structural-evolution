@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-completed-afdb-domain-registry-readback-20261005-v1.service",
+  "pid": 259702,
+  "created": 1791220021.93,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/completed_afdb_domain_registry_readback_resources_20261005_v1.json",
+    "--execution",
+    "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/completed_afdb_domain_registry_readback_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_structure_domain_registry_v2.py",
+    "--plan",
+    "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/completed_afdb_domain_registry_readback_20261005_v1.json"
+  ],
+  "plan": "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json",
+  "plan_sha256": "0626df2f996becf4faa9c9f51d65190769f2bcca27d33a272b5cf57284a52544",
+  "checked_utc": "2026-10-05T17:10:31.034723+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "26048f47b78a46c3a788f4ea0f68705f",
+  "original_tool_session_id": 49632,
+  "source_hashes": {
+    "metadata/completed_afdb_domain_registry_readback_execution_20261005_v1/configuration.json": "93d6e8dc70a273b26a57dea1fe1cbbf5199f6fdb5e0f6675e1d558fb54f23d48",
+    "metadata/completed_afdb_domain_registry_readback_plan_20261005_v1.json": "0626df2f996becf4faa9c9f51d65190769f2bcca27d33a272b5cf57284a52544"
+  },
+  "scientific_eligibility": false
+}
