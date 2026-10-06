@@ -1,0 +1,23 @@
+{
+  "prepared_utc": "2026-10-06T18:05:00+00:00",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 259200,
+  "wall_seconds_per_stage": 259200,
+  "per_file_limit_mib": 512,
+  "minimum_available_ram_gib": 20,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 1,
+  "estimated_wall_hours": [
+    4,
+    72
+  ],
+  "runtime_is_uncalibrated": true,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Independent sequential readback of the completed 2,905,096-row missing-AFDB PAE retrieval queue. It validates every retained disposition, successful receipt, compressed body, decompressed JSON and PAE matrix shape/value contract, while retaining failures explicitly. It writes only a compact receipt/state and does not retrieve, predict, alter cache files, symmetrize PAE, cluster structures, or make biological inferences."
+}

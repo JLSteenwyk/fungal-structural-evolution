@@ -1,0 +1,39 @@
+{
+  "unit": "fungal-full-atlas-missing-pae-readback-20261006-v1.service",
+  "pid": 681126,
+  "created": 1791309780.33,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_atlas_missing_pae_readback_wait_plan_20261006_v1.json"
+  ],
+  "plan": "metadata/full_atlas_missing_pae_readback_wait_plan_20261006_v1.json",
+  "plan_sha256": "5885dcd6a7f9190295bab6982ac29c40365453de02a009e47e8fac9d93c50601",
+  "checked_utc": "2026-10-06T18:03:01.066787+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-atlas-missing-pae-readback-20261006-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_atlas_missing_pae_readback_wait_plan_20261006_v1.json"
+  ],
+  "scientific_eligibility": false,
+  "scope": "Bounded dependency waiter for independent full missing-PAE retrieval integrity readback; not a biological analysis."
+}
