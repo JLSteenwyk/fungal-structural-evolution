@@ -31,9 +31,14 @@ its explicit, 351-package Linux lock is
 The installed MCScanX binary reports its normal usage and JCVI imports as 1.6.7.
 No genome has been analyzed by either tool.
 
-The repeat environment has not been installed. Before the full, non-pilot
-526-taxon run, the remaining gate is repeat-environment installation together
-with repeat-library provenance, all-taxon resource bounds, restart behavior, and
-an independent input readback. EDTA remains an optional third repeat-method
-sensitivity rather than the default fungal repeat call, pending a
-fungal-appropriate configuration and resource plan.
+The repeat environment also solved and installed successfully in the project
+cache on October 6. Its explicit, 206-package Linux lock is
+[`genome-architecture-repeat-linux-64.lock.txt`](../environments/genome-architecture-repeat-linux-64.lock.txt).
+RepeatMasker reports version 4.2.4, RepeatModeler reports version 2.0.9, and
+RMBlast is available; RepeatModeler correctly reports that no sequence database
+has been supplied. Before the full, non-pilot 526-taxon run, the remaining gate
+is therefore repeat-library provenance and acquisition together with all-taxon
+resource bounds, restart behavior, and an independent input readback. EDTA
+remains an optional third repeat-method sensitivity rather than the default
+fungal repeat call, pending a fungal-appropriate configuration and resource
+plan.
