@@ -189,6 +189,23 @@ uncalibrated. This check does not symmetrize PAE, determine confidence or
 domain-context eligibility, assess predictive accuracy, add structures, or
 support biological inference.
 
+### Live completed-prefix checkpoint
+
+Before the complete downloader finishes, a separate read-only checkpoint
+validated its first 1,000 completed records. Completion order differs from
+source-queue order because two HTTP workers finish asynchronously, so the reader
+maps every observed prefix model back to its unique original queue record before
+checking it. All 1,000 records passed source identity, retained receipt,
+compressed/decompressed SHA-256 and byte-count checks. The checkpoint also
+decoded **56,250,382 compressed bytes**, **419,607,757 JSON bytes** and
+**169,326,412 directional PAE values**, requiring square dimensions and finite,
+nonnegative values within the established AFDB export bound.
+
+The [checkpoint](../metadata/full_atlas_missing_pae_prefix_checkpoint_20261006_v1.json)
+and its [independent reader](../scripts/check_live_missing_pae_prefix_v1.py)
+do not read the changing end of the live gzip stream, accept the remaining
+queue, or replace the required whole-queue post-completion reader.
+
 Whole-source coordinate auditing and full domain extraction remain running:
 at 20:20 UTC, 562,000 models/214,165,994 residues are audited and 610,020 domain
 intervals exported. Full timing has 1,231 producer checkpoints and 16 actual

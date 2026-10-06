@@ -1,5 +1,22 @@
 # Progress and evidence
 
+## October 6 UTC: live missing-PAE prefix independently validated
+
+The active full missing-AFDB PAE downloader emits completion-order records from
+its two HTTP workers, so its live gzip stream is not assumed to preserve source
+queue order. A new read-only checkpoint maps each of its first 1,000 completed
+records back to the unique frozen queue model before verifying source identity,
+receipt JSON, compressed/decompressed SHA-256 and byte counts, matrix dimensions,
+and finite nonnegative PAE values. All 1,000 records passed, covering 56,250,382
+compressed bytes, 419,607,757 decoded JSON bytes and 169,326,412 directional
+values. The check does not consume the live stream's trailing end marker, mutate
+the cache, accept the unobserved queue, add structures, or establish confidence
+or evolutionary inference. The complete post-download independent reader remains
+queued and required.
+
+The [checkpoint](../metadata/full_atlas_missing_pae_prefix_checkpoint_20261006_v1.json)
+and [reader](../scripts/check_live_missing_pae_prefix_v1.py) are versioned.
+
 ## October 6 UTC: full missing-PAE queue reader queued behind active downloader
 
 The complete missing-AFDB PAE downloader remained live at the handoff checkpoint
