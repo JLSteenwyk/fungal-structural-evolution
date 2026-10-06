@@ -134,6 +134,11 @@ def main():
                 while child.poll() is None:
                     if shutil.disk_usage(output).free < resource['emergency_free_disk_gib'] * 2**30:
                         os.killpg(child.pid, signal.SIGTERM)
+                        try:
+                            child.wait(timeout=30)
+                        except subprocess.TimeoutExpired:
+                            os.killpg(child.pid, signal.SIGKILL)
+                            child.wait()
                         raise RuntimeError('Emergency disk reserve reached')
                     time.sleep(10)
                 if child.returncode:
