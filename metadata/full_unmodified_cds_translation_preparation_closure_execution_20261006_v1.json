@@ -1,0 +1,103 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_unmodified_cds_preparation_transport_v1.py",
+    "--execution",
+    "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1.json",
+    "--validation",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+    "--payloads",
+    "metadata/full_unmodified_cds_translation_preparation_original_payloads_20261006_v1.json",
+    "--unit",
+    "fungal-full-unmodified-cds-preparation-20261006-v1.service",
+    "--output",
+    "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_unmodified_cds_translation_preparation_resources_20261006_v1.json": "834b6a8cc79368b35396f190c24f9dd87dd43aadbcffb1e1e466b0cbf2422144",
+    "scripts/record_unmodified_cds_preparation_transport_v1.py": "5fdfca5fd7a3170869583db5608f846fa70fe9e1ba420304eb65ac17bb36241b",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "13aab4d969d0412c92c01bb9694c70b6",
+  "wrapper": {
+    "pid": 650841,
+    "created": 1791250515.64,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_unmodified_cds_translation_preparation_resources_20261006_v1.json",
+      "--execution",
+      "metadata/full_unmodified_cds_translation_preparation_closure_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/record_unmodified_cds_preparation_transport_v1.py",
+      "--execution",
+      "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1.json",
+      "--validation",
+      "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+      "--payloads",
+      "metadata/full_unmodified_cds_translation_preparation_original_payloads_20261006_v1.json",
+      "--unit",
+      "fungal-full-unmodified-cds-preparation-20261006-v1.service",
+      "--output",
+      "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-06T01:35:16.766611+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T01:35:25.465563+00:00",
+  "child": {
+    "pid": 650843,
+    "created": 1791250516.07,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=7200",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/record_unmodified_cds_preparation_transport_v1.py",
+      "--execution",
+      "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1.json",
+      "--validation",
+      "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+      "--payloads",
+      "metadata/full_unmodified_cds_translation_preparation_original_payloads_20261006_v1.json",
+      "--unit",
+      "fungal-full-unmodified-cds-preparation-20261006-v1.service",
+      "--output",
+      "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 8.698702367953956,
+  "child_cpu_seconds": 8.662404,
+  "child_peak_rss_bytes": 130875392,
+  "receipt": "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json",
+  "receipt_sha256": "a1dfa37512e1d911f72d744447a747667ec1bd5eb0ef8cb3674a159e7c5831f2",
+  "artifacts": {
+    "metadata/full_unmodified_cds_translation_preparation_closure_execution_20261006_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_unmodified_cds_translation_preparation_closure_execution_20261006_v1/configuration.json": "749f7e250c27b6660b76ff6ae417cdd2700c4a65949494b2b7f2b8ef39340dd9",
+    "metadata/full_unmodified_cds_translation_preparation_closure_execution_20261006_v1/stdout.log": "33dd874d19d9413f3999ed5d9f752a1391604c24ed4755ed39fc769b975efb64",
+    "metadata/full_unmodified_cds_translation_preparation_closure_execution_20261006_v1/process.json": "01d8547d38d694f90b9b36753c2d4fd2d261c601d17d3b0c76fc3ae233df2f26"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

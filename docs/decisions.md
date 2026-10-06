@@ -1,5 +1,17 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: full fixed-code translation retains the original source baseline
+
+Retranslate every original target under its saved code and pinned nuclear/
+mitochondrial choices, preserving roles even when codes coincide. Never choose
+a code from translation fit, edit DNA/proteins, repair starts/frames/phases or
+substitute separate derived CDSs. Nontriplet and unlinked targets remain
+explicit. Changed codon rows are fixed-code diagnostics, not evolutionary events.
+Require full independent codebook/FASTA replay and actual original execution
+closure before final counts. Literature and source-strain labels add review
+evidence without silently adopting a code or equating different depositions.
+[Method, resources, qualified software and live full launch](full-unmodified-cds-translation-20261006.md).
+
 ## October 6 UTC: code-context agreement is not translation or compartment admission
 
 Compare all original CDS/product test codes to pinned nuclear and mitochondrial

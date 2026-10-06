@@ -1,0 +1,53 @@
+{
+  "status": "reviewed_primary_fungal_codon_reassignment_evidence_not_code_admission",
+  "checked_utc": "2026-10-06T01:42:03.388589+00:00",
+  "sources": [
+    {
+      "doi": "10.1038/s41467-018-04374-7",
+      "url": "https://www.nature.com/articles/s41467-018-04374-7",
+      "year": 2018,
+      "reviewed": "Abstract, phylogeny/genetic-code results and mass-spectrometry methods",
+      "evidence": "Phylogenomics and proteomics support three independent nuclear CUG reassignment histories, including Ascoidea rubescens serine decoding. tRNA presence does not alone show translational activity."
+    },
+    {
+      "doi": "10.1016/j.cub.2018.04.085",
+      "url": "https://pure.mpg.de/pubman/item/item_2604505_6/component/file_2619780/2604505_Suppl_4.pdf",
+      "year": 2018,
+      "reviewed": "Author full-paper PDF results/Table1 and methods sections",
+      "evidence": "Mass spectrometry supports serine decoding in Ascoidea rubescens DSM1968, whereas Ascoidea asiatica exhibits competing serine/leucine decoding. The latter finding must not be transferred to the former.",
+      "study_species": "Ascoidea rubescens",
+      "study_strain": "DSM1968=NRRLY17699",
+      "study_assembly_contig_accession_range": "LYBR01000001-LYBR01000326"
+    },
+    {
+      "doi": "10.1093/gbe/evae166",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39081261/",
+      "year": 2024,
+      "reviewed": "Primary article abstract/indexed introduction; publisher and PMC full HTML unavailable during this check",
+      "evidence": "Saccharomycopsis tRNA-Leu(CAG) gene retention is not sufficient evidence that it contributes leucine incorporation under the measured conditions."
+    }
+  ],
+  "selected_strain_applicability": {
+    "taxon_id": "F54195",
+    "selected_assembly": "GCF_001661345.1",
+    "selected_annotation_source": "DOE Joint Genome Institute | Annotation submitted by DOE Joint Genome Institute | 2025-07-15",
+    "selected_contigs": 63,
+    "all_selected_contig_descriptions_match_study_strain_label": true,
+    "selected_contig_accession_range": "NW_017962913.1-NW_017962975.1",
+    "same_genome_or_annotation_as_study_not_proven": true,
+    "strain_label_match_is_not_sequence_identity": true,
+    "pending": "Crosswalk study assembly/annotation and selected deposition, review CDS compartment and annotation, and inspect full independently translated diagnostics. Do not substitute study sequences or silently recode the selected proteins."
+  },
+  "other_flagged_taxa": {
+    "F241526": "Direct selected-strain Candida africana primary translation evidence remains to be qualified",
+    "F5486": "Direct selected-strain Candida viswanathii primary translation evidence remains to be qualified"
+  },
+  "source_hashes": {
+    "metadata/full_genome_annotation_cds_plan_20261005_v1.json": "ccb2438386557ffe8abf79969aba1ce87c23bfd7ce602f6de659dcd13ef2de35",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/assembly-dna-20261005-v1/F54195/contig_metadata.jsonl": "443a5007a24e26d1b1aef30fa8fdb9e11288dc2c7e2a24c3545d9b356bd725e4"
+  },
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "biological_codon_eligibility": false,
+  "scope": "Primary literature and complete63-row selected contig description check add external code-review evidence. Source strain labels match for Ascoidea rubescens; assembly accession sets differ. No experimental reanalysis, sequence identity proof, code correction, target replacement or biological admission."
+}

@@ -1,0 +1,283 @@
+{
+  "status": "verified_original_V10_full_input_comparison_runtime",
+  "checked_utc": "2026-10-06T01:25:11.454699+00:00",
+  "original_handle": {
+    "unit": "fungal-baliphy-log-alpha-v10-full-grid-20261005-v1.service",
+    "pid": 572913,
+    "created": 1791243765.89,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_log_alpha_v10_full_grid_resources_20261005_v1.json",
+      "--execution",
+      "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json"
+    ],
+    "plan": "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+    "plan_sha256": "a7fe91d3f8c6dce6dda661f891701813d17b955f2d5c630ea36804116bebf186",
+    "invocation_id": "4a8ea38d790d4b7b969c0f11f1b34770",
+    "original_tool_session_id": 59687,
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "214748364800",
+      "memory.swap.max": "0"
+    },
+    "checked_utc": "2026-10-05T23:42:47.844336+00:00",
+    "source_hashes": {
+      "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json": "a7fe91d3f8c6dce6dda661f891701813d17b955f2d5c630ea36804116bebf186",
+      "metadata/baliphy_log_alpha_v10_full_grid_resources_20261005_v1.json": "db84b8c37012c224990e5da960d9685004a7c46f9c0d124900a20b6915aa6345",
+      "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1/configuration.json": "3e543e860a7f0a8a2a40789b1adf7c9f1bb0a920df70c6396346f53cef03c74b"
+    },
+    "scientific_eligibility": false,
+    "posterior_qualified": false,
+    "gpu": false,
+    "launch": "metadata/baliphy_log_alpha_v10_full_grid_launch_20261005_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 6.74,
+    "children": [
+      {
+        "pid": 572915,
+        "created": 1791243766.28,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py",
+          "--plan",
+          "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 158.73999999999998
+      },
+      {
+        "pid": 625924,
+        "created": 1791248323.77,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "789971114",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 1583.4199999999998
+      },
+      {
+        "pid": 626395,
+        "created": 1791248373.99,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1827299857",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 1533.5100000000002
+      },
+      {
+        "pid": 628979,
+        "created": 1791248579.0,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1220814694",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 1329.05
+      },
+      {
+        "pid": 628980,
+        "created": 1791248579.06,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "2822890",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 1328.99
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "4f3b93524c3f620f769f8129ef07653e2ed0260ff6d5bb6b04d6fbf5b74be74b",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "214748364800",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 12700344320,
+      "memory.peak": 73787969536,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 572915,
+        "created": 1791243766.28,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py",
+          "--plan",
+          "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json"
+        ],
+        "rss_bytes": 454373376,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              43200                43200                seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         8589934592           206158430208         bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 625924,
+        "created": 1791248323.77,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "789971114",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "rss_bytes": 2760744960,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              6080                 6080                 seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 626395,
+        "created": 1791248373.99,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1827299857",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "rss_bytes": 2791022592,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              6412                 6412                 seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 628979,
+        "created": 1791248579.0,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "1220814694",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "rss_bytes": 2767990784,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              6599                 6599                 seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 628980,
+        "created": 1791248579.06,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-4.3-20260927/install/bali-phy-4.3/bin/bali-phy",
+          "--seed",
+          "2822890",
+          "run",
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/data/software_audits/baliphy-log-alpha-v10-full-jobs-20261005-v1/models/f9afda0ec2543df1e855aaf3048fa302b415440ce828b14ec71d8e686cb6b0f0-broad.hs",
+          "--iterations",
+          "20",
+          "--log-format",
+          "json,tsv",
+          "--name",
+          "independent-chain"
+        ],
+        "rss_bytes": 2768318464,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              5795                 5795                 seconds   \nMax file size             2147483648           2147483648           bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         51539607552          51539607552          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 59687,
+  "output_root_present": true,
+  "recorded_roles": 12,
+  "expected_roles": 24,
+  "recorded_native_zero_roles": 12,
+  "recorded_native_failure_roles": 0,
+  "producer_receipt_present": false,
+  "reader_receipt_present": false,
+  "source_hashes": {
+    "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json": "a7fe91d3f8c6dce6dda661f891701813d17b955f2d5c630ea36804116bebf186",
+    "metadata/baliphy_log_alpha_v10_full_grid_resources_20261005_v1.json": "db84b8c37012c224990e5da960d9685004a7c46f9c0d124900a20b6915aa6345",
+    "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1/configuration.json": "3e543e860a7f0a8a2a40789b1adf7c9f1bb0a920df70c6396346f53cef03c74b",
+    "metadata/baliphy_log_alpha_v10_full_grid_launch_20261005_v1.json": "4f3b93524c3f620f769f8129ef07653e2ed0260ff6d5bb6b04d6fbf5b74be74b",
+    "metadata/baliphy_log_alpha_v10_full_grid_original_initial_tool_20261005_v1.json": "d556d7a35c751d66260f189602e08bed11b528dd019c02a5a862290adb496c07",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_baliphy_log_alpha_v10_full_grid_checkpoint_v1.py": "db1a0a446b928390a35b452dce6db716a112b13836d30c240dda93d213436a5b",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain4-latent-log-alpha-v10-full-comparison.json": "29820eed06a100c2851ac434ebcd8cb70e6d57a4c3214285f2f8f014d11efe98",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain2-latent-log-alpha-v10-full-comparison.json": "a0488a529838c30cfc98a46c24f7fae7ea39894ae11d00f0d2de1640dca3d17b",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain4-latent-log-alpha-v10-full-comparison.json": "95debd8be7b761e53dc1b0d71032867e58749bb4ac7b02f1c84026c00c45c97e",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain3-latent-log-alpha-v10-full-comparison.json": "b737b009aa31162040897034e95c81cc6fad26fc9568000990c02b71353fb9cc",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain1-latent-log-alpha-v10-full-comparison.json": "8983bfdfc4852d83f81dbaae941025af344d9ce3a350f186d08ed4d397c878ac",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain2-latent-log-alpha-v10-full-comparison.json": "fe7487704b5e8232a649f9848acd40b721727134d8b6d52942a8cd298c9b4ae0",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain4-latent-log-alpha-v10-full-comparison.json": "c399760a8324caf91555e4e6996ed8650fe0f22d127f9dad73c4a38e070b5c0c",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain1-latent-log-alpha-v10-full-comparison.json": "cbf61c38d00130992ef8237a63c7c144ed93ed64b14688f1df48dac2e1e37e59",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-package-scalar-cjson-v6-chain3-latent-log-alpha-v10-full-comparison.json": "30528c25c2d6b3bdac16666e2547b1e70564bdf573ef50a861cb4fc849d65417",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1-latent-log-alpha-v10-full-comparison.json": "966d27175614655cc3cc8d08b811a2d5bbe2d5d1f41481781377611600e352a9",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain3-latent-log-alpha-v10-full-comparison.json": "c6a4181351a7aa9b044daf106237396b0adb507e5f839aea353b68adc67a60a9",
+    "results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/chains/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-centered-scalar-cjson-v6-chain2-latent-log-alpha-v10-full-comparison.json": "54e822c3e2850404f7739ba993a762171b4bd3c86abff34e5623b5560c7e66a4"
+  },
+  "scientific_eligibility": false,
+  "posterior_qualified": false,
+  "gpu": false,
+  "scope": "Exact original API identity, wrapper PID/create/command/invocation and current native/cgroup observations. Recorded chain census is partial producer state, not final paired-output or latent-value qualification. Does not repeat original source scan, restart attempts, use GPUs or admit posterior arrays."
+}

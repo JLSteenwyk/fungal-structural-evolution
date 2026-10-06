@@ -1,0 +1,27 @@
+{
+  "status": "passed_literal_unmodified_cds_writer_independent_reader_integration",
+  "checked_utc": "2026-10-06T01:31:29.765714+00:00",
+  "literal_taxa": 3,
+  "literal_source_products": 11,
+  "literal_target_records": 11,
+  "literal_representatives": 10,
+  "literal_changed_codon_rows": 3,
+  "semantic_rejection_controls": [
+    "reject_best_code_selection",
+    "reject_code_relabeling",
+    "reject_wrong_translation_digest",
+    "reject_original_dna_digest_replacement",
+    "reject_nontriplet_translation",
+    "reject_changed_codon_position",
+    "reject_changed_codon_biological_admission",
+    "reject_removed_alternative_product",
+    "reject_separate_derived_target_substitution",
+    "reject_taxon_aggregate_disagreement"
+  ],
+  "semantic_rejection_count": 10,
+  "scientific_eligibility": false,
+  "biological_codon_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Synthetic full writer/independent reader integration covers original target/protein identity, ambiguity, lowercase, one-terminal-stop-only, no initiation/frame repair, alternatives, multiple targets, unlinked/no-code targets, no original CDS/separate derived evidence and terminal code differences outside protein bounds. Ten rehashed semantic corruptions rejected. No real taxon pilot."
+}

@@ -1,0 +1,43 @@
+{
+  "unit": "fungal-full-unmodified-cds-translation-20261006-v1.service",
+  "phase": "producer",
+  "pid": 651277,
+  "created": 1791250557.18,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_unmodified_cds_translation_resources_20261006_v1.json",
+    "--execution",
+    "metadata/full_unmodified_cds_translation_execution_20261006_v1.json",
+    "--receipt",
+    "metadata/full_unmodified_cds_translation_20261006_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_unmodified_cds_translation_v1.py",
+    "--plan",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+    "--receipt",
+    "metadata/full_unmodified_cds_translation_20261006_v1.json"
+  ],
+  "plan": "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+  "plan_sha256": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+  "checked_utc": "2026-10-06T01:36:55.133350+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "ab722831bf4b45589350c040e65cf483",
+  "original_tool_session_id": 43153,
+  "execution_root": "metadata/full_unmodified_cds_translation_execution_20261006_v1",
+  "receipt": "metadata/full_unmodified_cds_translation_20261006_v1.json",
+  "source_hashes": {
+    "metadata/full_unmodified_cds_translation_execution_20261006_v1/configuration.json": "2a0a1a12bb8719c5206cbc008157c4b04e3a8a16773e5451431239a013b0da55",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+    "metadata/full_unmodified_cds_translation_original_initial_tool_20261006_v1.json": "533f075eff9ac69b455cb3e51df4e27fd51c2eeacdca18d369788685efe3d7a1",
+    "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json": "a1dfa37512e1d911f72d744447a747667ec1bd5eb0ef8cb3674a159e7c5831f2",
+    "metadata/full_unmodified_cds_translation_resources_20261006_v1.json": "2d0f52edc511db6e23a85e34d871543c0c2c4c7978faba300d51bc11a2a7f68a"
+  },
+  "scientific_eligibility": false
+}

@@ -1,0 +1,33 @@
+{
+  "status": "passed_exhaustive_fixed_code_translation_and_unmodified_source_controls",
+  "checked_utc": "2026-10-06T01:24:31.233234+00:00",
+  "exhaustive_IUPAC_codon_code_checks": 27000,
+  "fixed_codes": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    12,
+    16,
+    26
+  ],
+  "controls": [
+    "ATGCTGTAA:translated_exact_match_to_normalized_protein",
+    "ATGCTGTAA:translated_mismatch_to_normalized_protein",
+    "GTGTAA:translated_mismatch_to_normalized_protein",
+    "ATGTAATAA:translated_mismatch_to_normalized_protein",
+    "ATGT:not_translated_non_triplet_length",
+    "ATGTAA:translated_no_linked_normalized_protein",
+    "fixed_code_comparison_preserves_original_exact_without_selecting_best_code",
+    "terminal_codon_difference_not_mapped_to_nonexistent_protein_residue",
+    "reject_changed_original_dna"
+  ],
+  "control_count": 9,
+  "biopython_version": "1.86",
+  "scientific_eligibility": false,
+  "biological_codon_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "All3375IUPAC codons in eight fixed source/taxonomic codes compared between installed Biopython and independent pinned-codebook expansion. Literal source/hash/terminal/partial and no-code-selection controls. Shared original codebook/library dependencies explicit; no real taxon pilot or biological code/compartment/selection admission."
+}

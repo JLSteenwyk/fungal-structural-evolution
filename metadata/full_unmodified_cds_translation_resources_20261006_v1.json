@@ -1,0 +1,26 @@
+{
+  "cpus": 4,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 56,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 16384,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 256,
+  "output_allowance_gib": 128,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "planned_wall_hours_uncalibrated": [
+    0.5,
+    24
+  ],
+  "planned_output_gib_uncalibrated": [
+    0.5,
+    32
+  ],
+  "safety_caps_are_not_ETA": true,
+  "scope": "All526 entries/all5923039 original CDS targets/all5927745 original products. CPU-only fixed-code translations; no pilot, paid infrastructure or biological code adoption. Four CPU workers; 64GiB aggregate cgroup, per-process 56GiB address-space bound. 128GiB output allowance is a planning reserve, not enforced aggregate byte accounting; per-file limits and aggregate memory/swap are enforced."
+}

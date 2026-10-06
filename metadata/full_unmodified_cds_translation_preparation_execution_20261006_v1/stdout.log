@@ -1,0 +1,40 @@
+{
+  "status": "prepared_full526_unmodified_original_cds_fixed_code_translation",
+  "prepared_utc": "2026-10-06T01:34:12.005549+00:00",
+  "cpu": 4,
+  "expected_taxa": 526,
+  "source_products": 5927745,
+  "selected_representatives": 5815847,
+  "target_records": 5923039,
+  "context_receipt": "metadata/full_taxonomic_genetic_code_context_20261006_v1.json",
+  "source_input_bytes": 7569318023,
+  "output": "results/cds/full-unmodified-cds-translation-20261006-v1",
+  "reader_output": "results/cds/full-unmodified-cds-translation-readback-20261006-v1",
+  "resources": "metadata/full_unmodified_cds_translation_resources_20261006_v1.json",
+  "reader_resources": "metadata/full_unmodified_cds_translation_readback_resources_20261006_v1.json",
+  "planned_wall_hours_uncalibrated": [
+    0.5,
+    24
+  ],
+  "planned_output_gib_uncalibrated": [
+    0.5,
+    32
+  ],
+  "new_cost_usd": 0,
+  "fixed_possible_positive_codes": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    12,
+    16,
+    26
+  ],
+  "unspecified_code_zero_tested": false,
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "biological_codon_eligibility": false,
+  "reader_launch_gate": "Actual original producer terminal zero, complete receipt, immutable hashes and whole original wrapper/invocation transport closure; no reader is launched or queued by preparation.",
+  "scope": "Full original source FASTA/target/product/protein-order/hash and fixed code diagnostics. 519 NCBI, four original publisher CDS and two dependent original ORF target sources; Creolimax has no qualified original target and all8694products retained. Preserve all 111898alternatives, no-target and separate-derived cases. No original DNA/protein edits, frame/phase/initiation/boundary correction, best-code search, code/compartment adoption, family codon alignment or selection. Taxonomic code snapshot and source library dependencies are explicit; uncertain biological species identities and all eight aims remain unresolved."
+}

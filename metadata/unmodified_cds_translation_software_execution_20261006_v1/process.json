@@ -1,0 +1,15 @@
+{
+  "pid": 643927,
+  "created": 1791249869.87,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_unmodified_cds_translation_v1.py",
+    "--receipt",
+    "metadata/unmodified_cds_translation_software_validation_20261006_v1.json"
+  ]
+}

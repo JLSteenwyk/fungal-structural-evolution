@@ -5,7 +5,7 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
-## Current checkpoint — 5 October 2026
+## Current checkpoint — 5–6 October 2026 UTC
 
 The [full annotation-coordinate registry](docs/full-annotation-coordinate-registry-20261005.md)
 producer has completed across all 526 entries and **5,927,745 source protein products**,
@@ -44,6 +44,17 @@ Another 235 original-exact modeled representatives match only the mitochondrial
 assignment and need compartment verification. All 526 taxon rows and 2,179
 bindings are published with actual original producer/reader closure.
 These are source discrepancies requiring review, not established annotation errors.
+
+The [full original-CDS translation audit](docs/full-unmodified-cds-translation-20261006.md)
+is now running across all 526 entries and 5,923,039 original targets. It tests
+fixed inherited/nuclear/mitochondrial code choices without changing DNA,
+proteins, frames or boundaries, or choosing a best-matching code. All 111,898
+alternatives and separate derived evidence remain explicit. All 27,000
+ambiguous-codon/code checks, nine helper controls and ten writer/independent-
+reader semantic rejection controls pass. Full source preparation closed with
+2,169 bindings; the qualified full independent reader awaits actual producer
+completion and source/execution closure. These diagnostics prepare codon and
+sequence–structure controls; they do not grant selection eligibility.
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
@@ -90,8 +101,8 @@ The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now ret
 every source model and independently reconstruct the entire missing queue.
 All **55,959 previously available matrices** pass source/body validation and
 full independent decoding/statistic reconstruction across all 112 jobs. The
-corrected complete-queue downloader has verified **15,700 new PAE matrices**
-at 22:29 UTC, with no failures.
+corrected complete-queue downloader has verified **35,600 new PAE matrices**
+at October 6, 01:38 UTC, with no failures in that partial checkpoint.
 Its initial cache-path failure, stopped output and unreceipted bytes are retained
 and excluded. PAE retrieval adds uncertainty data for existing structures;
 it does not add predicted structures or complete scientific atlas qualification.

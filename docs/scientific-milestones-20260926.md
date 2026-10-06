@@ -1,5 +1,40 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: full unmodified CDS translations launched
+
+The fixed-code translation audit now runs across all 526 entries, 5,923,039
+original CDS targets and 5,927,745 original products. Its 2,169 source bindings
+cover 7,569,318,023 bytes and preserve all 111,898 alternatives and separate
+derived evidence. All 27,000 IUPAC/codon-code checks, nine helper controls and
+ten writer/independent-reader corruption checks pass under actual original
+software zero and whole source/execution closure. Full source preparation and
+its separate closure have actual original zero. The producer is live under
+original session 43153; the 01:44 UTC checkpoint records 280/526 entries and
+3,051,158 original targets. These partial counts are not full completion.
+The qualified full independent reader awaits original producer zero and full
+source/wrapper/invocation closure; it is not launched or queued.
+
+Code choices are fixed inherited/nuclear/mitochondrial comparisons. DNA and
+proteins are unchanged, partial targets are not translated, at most one
+terminal stop is removed, and no best code, phase/frame/start repair or
+separate-derived replacement is allowed. Changed codon rows are diagnostics,
+not phylogenetic events or accepted selection sites. Primary code-reassignment
+literature adds external review evidence, with selected-strain labels and
+assembly differences explicit. No biological code/compartment is adopted.
+
+Concurrent identity-checked partial observations record 1,882,000 coordinate-
+audited AFDB models, 759,000 domain-extracted models/1,898,098 intervals,
+35,600 newly verified PAE matrices and 1,454/4,340 timing producer checkpoints.
+The original V10 full matrix remains live with 12/24 native-zero outcomes and
+no recorded failures; independent full closure remains pending. Existing native
+reconciliation and large-family installation records are historical completed
+computations, not accepted biological orthology/framework evidence.
+No fungal GPU prediction is resumed and no structures are added by this stage.
+All eight evolutionary aims, full biological weighted fits, genetic-code/
+compartment/codon eligibility and adequate ancestral uncertainty remain open.
+
+[Full method, resources, evidence and reproduction](full-unmodified-cds-translation-20261006.md).
+
 ## October 6, 01:03 UTC: full genetic-code context and source disagreements verified
 
 All 526 entries, 5,927,745 original protein products and 5,923,039 original

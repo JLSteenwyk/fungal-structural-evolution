@@ -1,0 +1,79 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_full_unmodified_cds_translation_v1.py",
+    "--plan",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_unmodified_cds_translation_preparation_resources_20261006_v1.json": "834b6a8cc79368b35396f190c24f9dd87dd43aadbcffb1e1e466b0cbf2422144",
+    "scripts/prepare_full_unmodified_cds_translation_v1.py": "73e53c0d0d33e2d05cd22f975e4b35362185dcbdda7da37dd045bab051e16e15",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "16306c95fd9243e389d6b287d0d50c4e",
+  "wrapper": {
+    "pid": 650012,
+    "created": 1791250442.25,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_unmodified_cds_translation_preparation_resources_20261006_v1.json",
+      "--execution",
+      "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_full_unmodified_cds_translation_v1.py",
+      "--plan",
+      "metadata/full_unmodified_cds_translation_plan_20261006_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-06T01:34:03.383798+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T01:34:12.443252+00:00",
+  "child": {
+    "pid": 650014,
+    "created": 1791250442.69,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=7200",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_full_unmodified_cds_translation_v1.py",
+      "--plan",
+      "metadata/full_unmodified_cds_translation_plan_20261006_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 9.059211849002168,
+  "child_cpu_seconds": 8.992602999999999,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+  "receipt_sha256": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+  "artifacts": {
+    "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1/configuration.json": "78a4521e056011c02ff0c4920efdeda2f2d47297bdfff01554e76a8d1c9d98c0",
+    "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1/stdout.log": "2fabc69cc3c44cd3ee523e0195b8a92359639c7bcc3b709cc5e4cbc5de8eb881",
+    "metadata/full_unmodified_cds_translation_preparation_execution_20261006_v1/process.json": "2ad6e75275c6800fb6ceb8ed5ec09b0d32319bf1f6fbede120594cf2e3463a04"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

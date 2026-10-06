@@ -1,0 +1,43 @@
+{
+  "status": "passed_exhaustive_fixed_code_translation_and_unmodified_source_controls",
+  "checked_utc": "2026-10-06T01:24:31.233234+00:00",
+  "exhaustive_IUPAC_codon_code_checks": 27000,
+  "fixed_codes": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    12,
+    16,
+    26
+  ],
+  "controls": [
+    "ATGCTGTAA:translated_exact_match_to_normalized_protein",
+    "ATGCTGTAA:translated_mismatch_to_normalized_protein",
+    "GTGTAA:translated_mismatch_to_normalized_protein",
+    "ATGTAATAA:translated_mismatch_to_normalized_protein",
+    "ATGT:not_translated_non_triplet_length",
+    "ATGTAA:translated_no_linked_normalized_protein",
+    "fixed_code_comparison_preserves_original_exact_without_selecting_best_code",
+    "terminal_codon_difference_not_mapped_to_nonexistent_protein_residue",
+    "reject_changed_original_dna"
+  ],
+  "control_count": 9,
+  "biopython_version": "1.86",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_unmodified_cds_translation_v1.py": "94adceb1985b1793c826d7128c5895a0f1ece269057511dd593e3fa550180fed",
+    "scripts/unmodified_cds_translation_v1.py": "0c733930c20a7647f2ba2d737ae9463006b419f527169788998ca371bcd8e40d",
+    "scripts/independent_codon_translation_v1.py": "2330517ec3a91879fd685fc5591fc69d7e1428f430ebf1012eaac60e7539ad43",
+    "metadata/full_taxonomic_genetic_code_context_20261006_v1.json": "0b0c2a6f4cd57cb8f7cb6856f28a9dac0d17c76d697f384e18c11156f84d5058",
+    "/home/bizon/anaconda3/lib/python3.10/site-packages/Bio/__init__.py": "ab472bf3c4a19d6231003a749ddd02a1c7a0aae99efb8fcdc50e372d3321c9bd",
+    "/home/bizon/anaconda3/lib/python3.10/site-packages/Bio/Seq.py": "9ddffb7ff65569a2b798fbaa8bd0ca559cbb3b139e041a5e35290a24f0d4858e",
+    "/home/bizon/anaconda3/lib/python3.10/site-packages/Bio/Data/CodonTable.py": "810286c0fc96df0a853dd1178814595cff1f39cb096029f9546463746f1492b4",
+    "/home/bizon/anaconda3/lib/python3.10/site-packages/Bio/Data/IUPACData.py": "897fb42f1bd6e3f837be6918ae6c54e77e61013b284cbabd4e7dfc01723e1a91"
+  },
+  "scientific_eligibility": false,
+  "biological_codon_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "All3375IUPAC codons in eight fixed source/taxonomic codes compared between installed Biopython and independent pinned-codebook expansion. Literal source/hash/terminal/partial and no-code-selection controls. Shared original codebook/library dependencies explicit; no real taxon pilot or biological code/compartment/selection admission."
+}
