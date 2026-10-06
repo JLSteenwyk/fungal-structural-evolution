@@ -215,3 +215,9 @@ parser is relaunched with a 32-GiB cgroup / 28-GiB address-space envelope, still
 with two CPUs and zero swap. This capacity change is data-supported and limited
 to the fresh v3 reader; it does not alter the producer, input database, native
 record checks or any scientific method.
+
+The compact [v1 execution record](../metadata/full_atlas_foldseek_readback_execution_20261006_v1.json)
+and [v2 execution record](../metadata/full_atlas_foldseek_readback_execution_20261006_v2.json)
+retain the exact commands, cgroup limits, source hashes, exit dispositions and
+hashes of the locally retained logs. They are failure evidence only, not
+successful reader receipts.
