@@ -54,15 +54,15 @@ def main() -> None:
                          and result.get("gene_order_table_sha256") == expected["table_sha256"]
                          and {path.name for path in outputs} == OUTPUT_NAMES and len(outputs) == len(OUTPUT_NAMES)
                          and all(path.is_file() and path.stat().st_size > 0 and hashes.get(str(path)) == sha256(path) for path in outputs)
-                         and result.get("counts", {}).get("gene_coordinate_rows") == expected["rows"]
-                         and result.get("counts", {}).get("selected_product_anchors") == expected["selected_product_links"])
+                         and result.get("counts", {}).get("gene_coordinate_rows", 0) == expected["rows"]
+                         and result.get("counts", {}).get("selected_product_anchors", 0) == expected["selected_product_links"])
                 status = "completed_verified_gene_product_anchors" if valid else "invalid_receipt_or_output"
             except (OSError, json.JSONDecodeError):
                 status, result = "unreadable_receipt", {}
         statuses[status] += 1
         if status == "completed_verified_gene_product_anchors":
-            totals["gene_coordinate_rows"] += result["counts"]["gene_coordinate_rows"]
-            totals["selected_product_anchors"] += result["counts"]["selected_product_anchors"]
+            totals["gene_coordinate_rows"] += result["counts"].get("gene_coordinate_rows", 0)
+            totals["selected_product_anchors"] += result["counts"].get("selected_product_anchors", 0)
         details.append({"taxon_id": taxon, "status": status})
     complete = statuses.get("completed_verified_gene_product_anchors", 0) == len(manifest) and len(statuses) == 1
     result = {
