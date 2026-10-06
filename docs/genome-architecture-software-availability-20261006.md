@@ -1,16 +1,10 @@
 # Genome-architecture software availability
 
-The full-panel repeat and synteny stage is not launched because the local
-[software availability receipt](../metadata/genome_architecture_software_availability_20261006_v1.json)
-reports no installed RepeatMasker, RepeatModeler, EDTA, MCScanX, i-ADHoRe or
-JCVI executable. This is a concrete launch dependency, not a biological result.
-
-`minimap2`, BLAST+, DIAMOND and MMseqs2 are installed and version-pinned in the
-receipt, but general sequence alignment/search does not replace repeat annotation
-or orthology-anchored collinearity inference. The workflow will select a
-versioned repeat/collinearity implementation, record its database provenance and
-resource/restart plan, and confirm no paid infrastructure before a full 526-taxon
-launch. No substitute or reduced-scope analysis has been started.
+The original [software availability receipt](../metadata/genome_architecture_software_availability_20261006_v1.json)
+records the pre-installation state. It is retained as historical evidence; the
+isolated environments below now provide the required repeat and collinearity
+software. No full-panel repeat or synteny analysis has started, so this is still
+a launch-preparation record and not a biological result.
 
 ## Isolated environment specifications prepared October 6
 
@@ -35,10 +29,15 @@ The repeat environment also solved and installed successfully in the project
 cache on October 6. Its explicit, 206-package Linux lock is
 [`genome-architecture-repeat-linux-64.lock.txt`](../environments/genome-architecture-repeat-linux-64.lock.txt).
 RepeatMasker reports version 4.2.4, RepeatModeler reports version 2.0.9, and
-RMBlast is available; RepeatModeler correctly reports that no sequence database
-has been supplied. Before the full, non-pilot 526-taxon run, the remaining gate
-is therefore repeat-library provenance and acquisition together with all-taxon
-resource bounds, restart behavior, and an independent input readback. EDTA
-remains an optional third repeat-method sensitivity rather than the default
-fungal repeat call, pending a fungal-appropriate configuration and resource
-plan.
+RMBlast is available. The [Dfam source audit](../metadata/dfam_fungal_library_20261006_v1.json)
+records Dfam 4.0 (FamDB format 3.0.0), including curated consensus and the
+root/Fungi uncurated-HMM sensitivity partitions. Its source files remain outside
+Git and are checksum-recorded in that receipt. The
+[full-panel DNA input readback](../metadata/full_panel_repeat_input_readback_20261006_v1.json)
+also independently re-read the source-bound compressed FASTA for all 526 taxa.
+
+Before the full, non-pilot 526-taxon run, the remaining gate is a defensible
+all-taxon resource/restart plan and an execution controller that preserves each
+taxon's provenance and failure disposition. EDTA remains an optional third
+repeat-method sensitivity rather than the default fungal repeat call, pending a
+fungal-appropriate configuration and resource plan.

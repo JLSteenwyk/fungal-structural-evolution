@@ -92,11 +92,12 @@ without reopening the large registry. It supplies gene-order and immediate-neigh
 storage bounds, while explicitly leaving repeat/block software resource bounds,
 execution design and the other launch gates open.
 
-The [local software availability audit](genome-architecture-software-availability-20261006.md)
-records that no repeat-annotation or collinearity implementation is currently
-installed. General sequence-search executables are not treated as substitutes;
-the dependency must be resolved with version/database/resource provenance before
-the full discovery stage can begin.
+The [local software and Dfam provenance record](genome-architecture-software-availability-20261006.md)
+now documents separately locked repeat and collinearity environments, the
+source-bound Dfam library, and an independent all-526-genome DNA readback.
+General sequence-search executables are not treated as substitutes. The remaining
+pre-launch requirements are resource bounds and a restartable all-taxon execution
+controller; no discovery result exists yet.
 
 The extension is motivated by fungal genome-organization literature already
 recorded in the [annotated bibliography](bibliography.md), especially the need
