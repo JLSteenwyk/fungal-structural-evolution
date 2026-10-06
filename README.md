@@ -123,15 +123,15 @@ pending. Original coordinates, predictor identities and every exclusion remain
 explicit. PAE/context qualification and accuracy calibration are still required.
 
 The [full protein-level structural-search database](docs/full-atlas-foldseek-database-20261006.md)
-is being rebuilt across all **2,961,055 AFDB/ESMFold models**, preserving both
-sources and the unlinked alternative. At the current checkpoint, native
-coordinate validation has reached 2,906 of 2,962 shards (2,906,000 AFDB models)
-with zero missing backbone residues. Mixed-source native software controls and
-eleven corruption checks pass. The actual full build uses eight CPU workers and
-96 GiB memory; remaining AFDB/ESMFold checks, independent full database readback
-and execution closure remain pending. Existing protein clusters still refer to
-their older 1.29-million-model database. The new index does not establish
-homology, predictor accuracy or evolutionary change.
+has completed across all **2,961,055 AFDB/ESMFold models**, preserving both
+sources and the unlinked alternative. All 2,962 native-coordinate validation
+shards passed, with zero missing backbone residues. The full independent
+native-record reader then validated every alias, amino-acid hash, 3Di
+length/alphabet and float32 coordinate record across 1,164,928,002 residues.
+Mixed-source native software controls and eleven corruption checks also pass.
+Existing protein clusters still refer to their older 1.29-million-model database.
+The new index does not establish homology, predictor accuracy or evolutionary
+change.
 
 The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now retain
 every source model and independently reconstruct the entire missing queue.
