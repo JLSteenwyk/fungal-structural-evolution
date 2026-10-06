@@ -38,7 +38,7 @@ None of the eight evolutionary aims is complete.
 | 5. Ecology/morphology associations | Curated species traits, replicated supported transitions, phylogenetic model, trait/missingness sensitivity and multiplicity control | Trait evidence and same-method structural coverage are insufficient for inference. |
 | 6. Functional localization | Core/surface/site/pocket/interface annotations, mapped structural changes and localization uncertainty | Requires eligible structural comparisons and independently supported feature annotations. |
 | 7. Selection hypotheses | Eligible codon alignments/divergence, genetic-code and copy controls, selection model diagnostics and structural mapping | Source and translation evidence is ready; family-level eligibility and inference remain open. |
-| 8. Ancestral reconstruction/case studies | Supported focal families, ancestral sequence ensembles, structure predictions, propagated uncertainty and proposed experiments | Computational diagnostics do not establish adequate ancestral posterior inference; focal cases remain to be selected after discovery safeguards. |
+| 8. Ancestral reconstruction/case studies | Supported focal families, ancestral sequence ensembles, structure predictions, propagated uncertainty and proposed experiments | [Promotion protocol](case-study-prioritization-20261006.md) prevents novelty-driven case selection and specifies evidence/validation gates. Computational diagnostics do not establish adequate ancestral posterior inference; focal cases remain to be selected after discovery safeguards. |
 
 ## Decision and completion rules
 
