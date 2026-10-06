@@ -59,6 +59,10 @@ The [gated clustering runner](../scripts/cluster_full_prediction_atlas_v1.py)
 is self-tested for complete partition membership and duplicate-member rejection.
 It refuses to run without launch-specific hashes for every completed prerequisite
 receipt and every protected database artifact.
+The separate [independent cluster reader](../scripts/readback_full_prediction_atlas_clusters_v1.py)
+uses its own lookup and membership parser, rechecks the protected database after
+native execution, and refuses to accept a partial partition or a producer-summary
+disagreement.
 
 The immediate result will be a *candidate structural partition*. An independent
 reader must verify exact partition membership, representative self-membership,
