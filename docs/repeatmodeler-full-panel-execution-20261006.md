@@ -11,11 +11,10 @@ most twelve concurrent taxa (96 threads and 384 GB reserved). It targets the
 This leaves capacity for the currently active structural-atlas readers and keeps
 the run within locally available, no-cost resources. The seven-day task limit bounds
 individual large assemblies. Failed tasks retain their work directory. The
-controller uses RepeatModeler's recovery function after more than one completed
-round; because the software itself rejects early-round recovery, earlier
-attempts are retained under an `interrupted_` directory and restarted from the
-same checksum-verified source rather than silently restarted from another
-source.
+packaged RepeatModeler recovery mode is incompatible with its required pinned
+configuration overrides, so interrupted attempts are retained under an
+`interrupted_` directory and restarted from the same checksum-verified source
+rather than silently restarted from another source.
 
 Before any tool invocation, the controller performs a fresh SHA-256 check of
 the compressed publisher-bound FASTA, decompresses it, and checks its record

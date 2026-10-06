@@ -98,7 +98,6 @@ def main() -> None:
     if not any(work.glob(database + ".*")):
         run([str(build_database), "-name", database, str(fasta)], work, log)
     recover_dirs = sorted(path for path in work.glob("RM_*") if path.is_dir())
-    recover_dir = None
     completed_unclassified = None
     if recover_dirs:
         if len(recover_dirs) != 1:
@@ -113,8 +112,6 @@ def main() -> None:
         if ((candidate / "consensi.fa").is_file() and run_log.is_file()
                 and "Program Time:" in run_log.read_text(errors="replace")):
             completed_unclassified = candidate
-        elif completed_rounds and max(completed_rounds) > 1:
-            recover_dir = candidate
         else:
             archive = work / f"interrupted_{candidate.name}"
             suffix = 1
@@ -126,8 +123,6 @@ def main() -> None:
     seed = str((int(hashlib.sha256(row["taxon_id"].encode()).hexdigest()[:8], 16) % 2147483646) + 1)
     if completed_unclassified:
         command = None
-    elif recover_dir:
-        command = [str(repeatmodeler), "-recoverDir", str(recover_dir), "-threads", threads, "-srand", seed, "-famdb_dir", str(famdb_dir)]
     else:
         command = [str(repeatmodeler), "-database", database, "-threads", threads, "-srand", seed, "-famdb_dir", str(famdb_dir)]
     if command:
