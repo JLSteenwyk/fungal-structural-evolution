@@ -26,13 +26,14 @@ def parse_index(path):
     return result
 
 
-def native_record(handle, location):
+def native_record(handle, location, text=False):
     offset, size = location
     handle.seek(offset)
     value = handle.read(size)
     if len(value) != size or not value.endswith(b'\0'):
         raise ValueError('Invalid native record boundary')
-    return value[:-1].rstrip(b'\n')
+    payload = value[:-1]
+    return payload.rstrip(b'\n') if text else payload
 
 
 def main():
@@ -79,8 +80,8 @@ def main():
     args.output.mkdir(parents=True)
     with prefix.open('rb') as amino, Path(str(prefix)+'_ss').open('rb') as states, Path(str(prefix)+'_ca').open('rb') as coords:
         for i, (key, name) in enumerate(lookup.items(), 1):
-            source, model = expected[name]; sequence = native_record(amino, aa[key]).upper()
-            alphabet = native_record(states, ss[key]).upper(); coordinate = native_record(coords, ca[key])
+            source, model = expected[name]; sequence = native_record(amino, aa[key], text=True).upper()
+            alphabet = native_record(states, ss[key], text=True).upper(); coordinate = native_record(coords, ca[key])
             length = model['length']
             if len(sequence) != length or hashlib.sha256(sequence).hexdigest() != model['sequence_sha256']:
                 raise ValueError('Native amino-acid identity differs')
