@@ -51,17 +51,23 @@ def main() -> None:
     parser.add_argument("--build-database", type=Path, required=True)
     parser.add_argument("--repeatmodeler", type=Path, required=True)
     args = parser.parse_args()
-    config = json.loads(args.config.read_text())
-    with Path(config["input_manifest"]).open(newline="") as handle:
+    config_path = args.config.resolve()
+    config = json.loads(config_path.read_text())
+    project_root = config_path.parent.parent
+    input_manifest = (project_root / config["input_manifest"]).resolve()
+    output_root = (project_root / config["output_root"]).resolve()
+    build_database = args.build_database.resolve()
+    repeatmodeler = args.repeatmodeler.resolve()
+    with input_manifest.open(newline="") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
     if len(rows) != config["taxa"] or not 0 <= args.task_index < len(rows):
         raise ValueError("task index or complete-panel manifest is invalid")
     row = rows[args.task_index]
-    source = Path(row["genome_fasta_gz"])
+    source = Path(row["genome_fasta_gz"]).resolve()
     if not source.is_file() or digest(source) != row["sha256"]:
         raise ValueError(f"source FASTA verification failed for {row['taxon_id']}")
 
-    work = Path(config["output_root"]) / row["taxon_id"]
+    work = output_root / row["taxon_id"]
     work.mkdir(parents=True, exist_ok=True)
     receipt = work / "receipt.json"
     if receipt.exists():
@@ -84,16 +90,16 @@ def main() -> None:
 
     database = "repeatmodeler_db"
     if not any(work.glob(database + ".*")):
-        run([str(args.build_database), "-name", database, "-engine", "rmblast", str(fasta)], work, log)
+        run([str(build_database), "-name", database, "-engine", "rmblast", str(fasta)], work, log)
     recover_dirs = sorted(path for path in work.glob("RM_*") if path.is_dir())
     threads = str(config["threads_per_taxon"])
     seed = str((int(hashlib.sha256(row["taxon_id"].encode()).hexdigest()[:8], 16) % 2147483646) + 1)
     if recover_dirs:
         if len(recover_dirs) != 1:
             raise RuntimeError(f"ambiguous recovery directories for {row['taxon_id']}")
-        command = [str(args.repeatmodeler), "-recoverDir", str(recover_dirs[0]), "-threads", threads, "-srand", seed]
+        command = [str(repeatmodeler), "-recoverDir", str(recover_dirs[0]), "-threads", threads, "-srand", seed]
     else:
-        command = [str(args.repeatmodeler), "-database", database, "-threads", threads, "-srand", seed]
+        command = [str(repeatmodeler), "-database", database, "-threads", threads, "-srand", seed]
     run(command, work, log)
     candidates = sorted(work.glob("RM_*/consensi.fa.classified"))
     if len(candidates) != 1 or candidates[0].stat().st_size == 0:
