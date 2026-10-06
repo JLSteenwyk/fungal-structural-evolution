@@ -95,9 +95,15 @@ execution design and the other launch gates open.
 The [local software and Dfam provenance record](genome-architecture-software-availability-20261006.md)
 now documents separately locked repeat and collinearity environments, the
 source-bound Dfam library, and an independent all-526-genome DNA readback.
-General sequence-search executables are not treated as substitutes. The remaining
-pre-launch requirements are resource bounds and a restartable all-taxon execution
-controller; no discovery result exists yet.
+General sequence-search executables are not treated as substitutes. The
+restartable full-panel RepeatModeler controller and array are now active under
+the documented resource bounds. Its source checks, deterministic seeds,
+classified-library requirements and independent full-panel audit are described
+in [the execution record](repeatmodeler-full-panel-execution-20261006.md).
+RepeatMasker and the repeat-to-gene tables remain explicitly gated on that
+complete audit; full collinearity execution still requires its own all-taxon
+resource/restart design. No discovery result is interpreted before its relevant
+full-panel audit passes.
 
 The extension is motivated by fungal genome-organization literature already
 recorded in the [annotated bibliography](bibliography.md), especially the need
