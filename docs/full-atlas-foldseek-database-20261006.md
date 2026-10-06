@@ -207,8 +207,11 @@ the imported digest helper attempted to read a large bound database artifact in
 one allocation under the reader's 12-GiB address-space cap. No model disposition,
 native record, or output receipt from that failed run is accepted.
 
-The corrected reader streams every bound artifact in 1-MiB blocks and otherwise
-retains the same independent native-record checks and 2-CPU/16-GiB/no-swap
-contract. It uses fresh v2 resources, execution, output and receipt paths. The
-failed execution remains source evidence; the corrected run is not a retry of
-the producer and does not alter its completed database.
+V2 streamed every bound artifact successfully, but then reached `MemoryError`
+while constructing the declared 2,961,055-entry lookup/index grid under its
+12-GiB address-space cap (observed child peak RSS: 12,794,757,120 bytes). Its
+execution record is retained and no output from it is accepted. The unchanged
+parser is relaunched with a 32-GiB cgroup / 28-GiB address-space envelope, still
+with two CPUs and zero swap. This capacity change is data-supported and limited
+to the fresh v3 reader; it does not alter the producer, input database, native
+record checks or any scientific method.
