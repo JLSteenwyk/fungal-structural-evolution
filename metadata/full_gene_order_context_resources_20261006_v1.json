@@ -1,0 +1,20 @@
+{
+  "prepared_utc": "2026-10-06T20:05:00Z",
+  "cpus": 2,
+  "memory_gib": 4,
+  "swap_gib": 0,
+  "address_space_gib": 3,
+  "cpu_seconds_per_stage": 86400,
+  "wall_seconds_per_stage": 86400,
+  "per_file_limit_mib": 128,
+  "minimum_available_ram_gib": 8,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 1,
+  "estimated_wall_hours": [0.25, 12],
+  "runtime_is_uncalibrated": true,
+  "basis": "Sequential gzip-table reader over 6,000,510 already validated coordinate/ORF rows. It retains per-taxon gap vectors only, so memory is bounded by the largest individual taxon's table; the final TSV has 526 rows.",
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Full-panel source-bound coordinate-order context summary. It does not discover repeats, synteny, rearrangement, duplication, orthology or structural-evolution effects."
+}
