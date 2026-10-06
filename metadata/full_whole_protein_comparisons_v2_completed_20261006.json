@@ -1,0 +1,53 @@
+{
+  "status": "complete_verified_full_whole_protein_comparisons",
+  "fit_summaries": 375350,
+  "parameter_records": 375350,
+  "comparisons": 4147200,
+  "trees": [
+    "mafft_guide",
+    "pmsf_mafft_profile",
+    "pmsf_profile_mafft",
+    "pmsf_profile_profile",
+    "profile_guide"
+  ],
+  "original_fit_status_counts": {
+    "ml_candidate_passed_numerical_optimization_checks": 373677,
+    "ml_candidate_requires_optimization_review": 1673
+  },
+  "effective_fit_status_counts": {
+    "ml_candidate_passed_numerical_optimization_checks": 373677,
+    "ml_refinement_passed_numerical_checks": 1636,
+    "ml_full_grid_followup_requires_review": 37
+  },
+  "followup_status_counts": {
+    "numerical_followup_passed_pending_independent_readback": 1636,
+    "numerical_followup_requires_review": 37
+  },
+  "selected_source_kind_counts": {
+    "original_production": 373677,
+    "full_grid_refinement": 1520,
+    "full_grid_recovery": 153
+  },
+  "comparison_status_counts": {
+    "numerically_checked_comparison_not_inferential_acceptance": 3524103,
+    "different_observations_no_direct_comparison": 622080,
+    "optimization_review_required": 1017
+  },
+  "relation_counts": {
+    "left_named_columns_nested_in_right": 1244160,
+    "different_observations_no_direct_comparison": 622080,
+    "same_observations_no_named_column_nesting": 2280960
+  },
+  "followup_cases_integrated": 1673,
+  "full_hash_archive": "results/structural_comparisons/full-whole-protein-comparisons-20261006-v2/completion_archive.json",
+  "full_hash_archive_sha256": "821d9c4f492f8251550199537b720d1103073b35fee9c2750de010c73d5ea855",
+  "bound_source_hashes": 527416,
+  "exact_process_journals_checked": 2,
+  "producer_receipt": "results/structural_comparisons/full-whole-protein-comparisons-20261006-v2/receipt.json",
+  "producer_receipt_sha256": "ea7e427e4415d065cb58dc9b7f436482a9d4df0fbfbd15d9b8b62259a8237fae",
+  "independent_readback": "results/structural_comparisons/full-whole-protein-comparisons-20261006-v2/readback.json",
+  "independent_readback_sha256": "03d4488393045fedff82364d7e5f9f3dbe670236f3ff872bd183503af177457e",
+  "completion_plan_sha256": "3ae8653a55f4938e1f27ca6673b9a6f171ac0c3115f9237d4fd99db08c652905",
+  "scientific_eligibility": false,
+  "scope": "Complete verified 375,350 fit dispositions across the frozen 75,070-input cohort and five tree alternatives, integrating all 1,673 numerical follow-ups into 4,147,200 immutable within-setting comparisons. The completed v2 optimization closure preserves three original producer journals and two historical checker hashes; those historical hashes are archived rather than reasserted against modified working-tree scripts. Review statuses remain explicit. This stage produces numerical comparison records only and makes no model-adequacy, calibrated uncertainty, or biological-effect claim."
+}
