@@ -1,0 +1,23 @@
+{
+  "status": "preserved_short_review_cpu_accounting_transport_failure",
+  "checked_utc": "2026-10-06T04:03:16.432227+00:00",
+  "original_tool_session_id": 40520,
+  "actual_original_exit_code": 1,
+  "original_native_review_session_id": 92757,
+  "actual_original_native_review_exit_code": 0,
+  "failure": "The generic closure required a manager CPU_USAGE_NSEC end record, which systemd omitted for this successful818ms review. Exact original API zero and whole wrapper terminal remain available.",
+  "correction": "Fresh review-transport version verifies actual manager success/zero/runtime from the original wait and exact wrapper messages, retaining optional CPU-accounting count0. No terminal or journal record is invented.",
+  "source_hashes": {
+    "metadata/completed_domain_native_closure_transport_execution_20261006_v1.json": "7d944c61698bdcda5ae406abfa87a62797cc284003ae92c10ef3d0684fbdf910",
+    "metadata/completed_domain_native_closure_transport_execution_20261006_v1/original-invocation-journal.jsonl": "a06deb51ac98ebfbe883dc4c18750fccabcd41a7348ed4132a5f9a146514ea9a",
+    "metadata/completed_domain_native_closure_transport_failed_original_payloads_20261006_v1.json": "61edd3fda34d93e7e048dfc773ff3d075400d4c613b08c89627f446aaf509307",
+    "metadata/completed_domain_native_closure_transport_execution_20261006_v1/stderr.log": "f02ba8b8405984ddc0442f51c9d4a2537b0f8871a2c7341ba797cf60c54cad0f",
+    "metadata/completed_domain_native_closure_transport_execution_20261006_v1/configuration.json": "e3e6ae95e507fb9cd187f48234a7a25dae845abd46ad5649766f477cf095c35f",
+    "metadata/completed_domain_native_closure_transport_execution_20261006_v1/process.json": "05f0fe85687b5eb055cb26d5f32f25fe74d7fb68f0de7a10a097bd7cfddb86fb",
+    "metadata/completed_domain_native_closure_transport_execution_20261006_v1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/record_short_native_review_transport_v1.py": "b6a3fed9c82c4b517fdee4554c18d7287cac821e81cbd4d4b330d7dceb9bd19a"
+  },
+  "native_extraction_repeated": false,
+  "original_domain_api_terminal_exit_code": null,
+  "scientific_eligibility": false
+}

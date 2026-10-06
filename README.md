@@ -87,8 +87,12 @@ evolutionary event inference remain separate requirements.
 The [expanded domain manifest](docs/completed-domain-extraction-20261005.md)
 now independently verifies **2,454,565 candidate intervals from 976,357 models**,
 about 56% more intervals than the previous manifest. Full coordinate extraction
-has started with four CPU workers. Its completion and full independent atom
-readback remain pending. The first wrapper reporting failure is preserved;
+has completed all intervals with four CPU workers, taking 9 h 55 min and
+producing 245.54 GB of tar archives. The original native execution and journal
+confirm success; its unavailable original API terminal remains explicit.
+The [independent full atom reader](docs/completed-domain-atom-readback-20261006.md)
+has started with eight CPU workers and 64 GiB memory. Its completion remains
+pending. The first manifest wrapper reporting failure is preserved;
 the saved manifest passed a separate full independent check without regeneration.
 
 The [full source coordinate/confidence audit](docs/full-atlas-coordinate-confidence-20261005.md)

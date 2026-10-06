@@ -1,5 +1,35 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 6 UTC: full refreshed domain atom readback
+
+Retain all four annotation-policy alternatives, alignment/envelope boundaries,
+2,705,564 boundary links and 2,454,565 distinct intervals from 976,357 source models.
+The complete four-worker extraction exported every interval in 977 shards and
+245,539,491,840 tar bytes. Verify the original saved execution, exact whole
+wrapper messages and original manager records; retain unavailable API session 64749 as
+null. Actual-record closure and eleven corruption controls pass. Preserve the
+first short-review transport failure and verify the successful replacement
+against actual original manager waits without fabricating optional CPU records.
+
+Run the unchanged separate atom reader across the complete manifest after this
+native closure. Independently join all jobs/model records/intervals, freshly
+hash every extraction artifact and used original CIF, then verify every archive
+member and atom/sequence/identity/coordinate/occupancy/confidence/summary.
+Absolute tolerances remain 0.000501 for coordinates, 0.005001 for occupancy/confidence
+and 1e-10 for summaries. Shared CIF lexical parsing and recorded rejection reasons
+remain explicit dependencies. Original reader session 5441 runs with 8 CPUs, 64 GiB memory and zero swap;
+full completion and original execution closure remain pending. No biological
+boundary/homology acceptance or calibrated predictor accuracy is inferred.
+
+The original adapter expects an explicit zero rejection key that the reader's
+Counter omits. Preserve the running source and its eventual original terminal.
+A prepared retained-output review requires a completed full raw receipt and
+the exact reporting failure, filling only a missing producer-zero rejection
+counter. All 977 producer count records and eleven negative controls pass.
+No atom checks or scientific tolerances change; the review is not yet launched.
+
+[Full procedure and source evidence](completed-domain-atom-readback-20261006.md).
+
 ## October 6 UTC: horizon-aware streaming ancestral readback
 
 Declare the scalar horizon and saved-frame interval explicitly. Stream strict

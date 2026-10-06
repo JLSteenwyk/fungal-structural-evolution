@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=67108864",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_completed_domain_coordinate_native_closure_v1.py",
+    "--qualification",
+    "metadata/completed_domain_native_closure_software_20261006_v1.json",
+    "--output",
+    "metadata/completed_domain_native_closure_20261006_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_domain_native_closure_resources_20261006_v1.json": "960c355ac5b962400198a8fcf6fe57ee8a0df649fdec5ee18c0d0226edbc82b2",
+    "scripts/record_completed_domain_coordinate_native_closure_v1.py": "a4c66a5f3847d3073634604690b6802080697cb677c8ecfab71eecc5c0d7e9f2",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "0a4daceda9f54c55b3845901f45bf8dc",
+  "wrapper": {
+    "pid": 742082,
+    "created": 1791259160.87,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_domain_native_closure_resources_20261006_v1.json",
+      "--execution",
+      "metadata/completed_domain_native_closure_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/completed_domain_native_closure_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/record_completed_domain_coordinate_native_closure_v1.py",
+      "--qualification",
+      "metadata/completed_domain_native_closure_software_20261006_v1.json",
+      "--output",
+      "metadata/completed_domain_native_closure_20261006_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-06T03:59:22.075515+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T03:59:22.324818+00:00",
+  "child": {
+    "pid": 742085,
+    "created": 1791259161.38,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=7200",
+      "--fsize=67108864",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/record_completed_domain_coordinate_native_closure_v1.py",
+      "--qualification",
+      "metadata/completed_domain_native_closure_software_20261006_v1.json",
+      "--output",
+      "metadata/completed_domain_native_closure_20261006_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.24901611998211592,
+  "child_cpu_seconds": 0.202202,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/completed_domain_native_closure_20261006_v1.json",
+  "receipt_sha256": "1cc8c109931ee0e8331c248e22160f3a1ea04121c8db3f02f3b1b40343cf42b5",
+  "artifacts": {
+    "metadata/completed_domain_native_closure_execution_20261006_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/completed_domain_native_closure_execution_20261006_v1/configuration.json": "329c67f696fc0d230ef6902ffb02dfdf304a74b9be7e2ac84c702deb39555e82",
+    "metadata/completed_domain_native_closure_execution_20261006_v1/stdout.log": "d20f8c0ca27741118c8c5fb65ace33dae8495b3070bee758239e122677944463",
+    "metadata/completed_domain_native_closure_execution_20261006_v1/process.json": "f7d144f07b385c4998f54be87b94e2037c05dd13f059f7df29fc4e39514549b8"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

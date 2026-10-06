@@ -1,5 +1,44 @@
 # Progress and evidence
 
+## October 6 UTC: full domain extraction complete; independent atom reader launched
+
+The original refreshed extraction exported all 2,454,565 intervals from
+976,357 models in 977 shards, with zero producer rejections or missing-backbone
+intervals. It took 9 h 55 min and produced 245,539,491,840 tar bytes. Its exact
+original wrapper, saved execution and manager journal prove native exit zero.
+Original API session 64749 is unavailable; its terminal remains null and no extraction
+was repeated. Actual-record closure checks and eleven mutation controls pass.
+
+The native review's actual original API session 92757 closes successfully. Its first
+transport check 40520 failed on an omitted optional short-unit CPU-accounting
+record; the full failure is preserved. New transport 7626 verifies the actual
+original manager wait and complete wrapper messages while recording zero
+optional CPU-accounting records. No native or API terminal is invented.
+
+Full independent all-atom readback started as original session 5441, with eight
+CPU workers/64 GiB/no swap and all original 976,357 models and 2,454,565 intervals. Exact
+original processes and kernel limits are confirmed live. Complete source/job/
+manifest membership precedes parallel atom checks; full reader completion and
+original execution closure remain pending. At 04:15 UTC its first eight shards
+checked 8,000 models and 19,776 intervals. No numerical tolerance changed.
+
+The live reader omits a zero rejection counter that the original completion
+adapter expects explicitly. The atom checks continue unchanged; a prepared
+retained-output review handles only that producer-zero key after full native
+completion, preserving any original reporting failure. Its count software
+passes all 977 producer records and eleven rejection controls. No atom checks
+are repeated, and no reader failure or full completion is yet claimed.
+
+The preceding goal work made progress and published 42 owned paths / 19,328,550 bytes
+at c4bf2bb0bafbae575bc693e236f0d2346c4cacfa with exact remote/committed-byte
+verification. The intervening user status check verified a live atlas audit.
+At 04:11 UTC, existing original CPU jobs report 2,600,000 coordinate-audited models,
+52,400 new verified PAE matrices and 1,561/4,340 timing producer cohorts. Weighted
+biological fits remain zero. The full 501 fungal entries plus 25 outgroups and all eight
+aims remain unfinished; fungal GPU prediction stays paused.
+
+[Completion evidence, resources, readback contracts and reproduction](completed-domain-atom-readback-20261006.md).
+
 ## October 6 UTC: dynamic ancestral readers checked across the full current corpus
 
 The new V2 streaming readers pass all 1,644 current native attempts, preserving

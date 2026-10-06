@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_software_original_wait_transport_v1.py", line 61, in <module>
+    a=p.parse_args();run(a.execution,a.validation,a.payloads,a.unit,a.output)
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_software_original_wait_transport_v1.py", line 34, in run
+    assert len(starts)==len(ends)==1
+AssertionError

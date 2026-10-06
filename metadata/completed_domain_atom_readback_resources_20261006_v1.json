@@ -1,0 +1,30 @@
+{
+  "prepared_utc": "2026-10-06T04:10:01.300480+00:00",
+  "cpus": 8,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 56,
+  "cpu_seconds_per_stage": 432000,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 256,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 1024,
+  "available_ram_gib": 631.5924301147461,
+  "free_disk_gib": 9758.713188171387,
+  "output_allowance_gib": 1,
+  "estimated_wall_hours": [
+    4,
+    168
+  ],
+  "runtime_is_uncalibrated": true,
+  "source_shards": 977,
+  "source_tar_bytes": 245539491840,
+  "source_cif_io_bytes_unestimated": true,
+  "producer_wall_seconds": 35718.939458218054,
+  "producer_cpus": 4,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "new_predictions": 0,
+  "scope": "Full independent all-atom readback of all976357models/2454565intervals/977shards. Eight CPU workers, unchanged CIF/PDB validation and tolerances; each tar artifact and used original CIF freshly hashed by qualified reader. Full global job/catalog/manifest membership before parallel atom checks. Existing producer9.92h is context, not reader ETA;4-168h uncalibrated planning. Reader emits only metadata, no coordinates or predictions. Original producer API terminal remains unknown; native closure gates run."
+}

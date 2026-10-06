@@ -4,8 +4,11 @@ The current AFDB catalog supplies **2,454,565 distinct candidate intervals from
 976,357 source models**, up from 1,575,294 intervals/627,567 models in the
 September 28 manifest. This is approximately 56% growth in candidate intervals.
 The complete independent SQL-union check passes. Coordinate extraction has
-started across the entire new manifest; it is not yet complete or independently
-verified. These are annotation-defined candidates, not accepted structural
+completed across the entire new manifest. Its original native execution and
+journal confirm success while the missing original API terminal remains null.
+The separate full atom reader has started; independent completion is pending.
+[October 6 completion evidence and reader scope](completed-domain-atom-readback-20261006.md).
+These are annotation-defined candidates, not accepted structural
 boundaries, homologous families or evolutionary events.
 
 The predecessor retains all 2,935,733 AFDB models and 2,994,868 protein links.
@@ -59,8 +62,9 @@ Coordinate extraction uses the unchanged qualified all-atom exporter, with
 four workers, 32 GiB memory, no swap and one BLAS thread. It attempts every
 interval in 977 shards containing at most 1,000 source models each. Original
 wait **64749**, unit `fungal-completed-domain-coordinates-20261005-v1.service`,
-is retained and must be polled to actual terminal completion; a transient unit's
-absence or partial state file is not completion evidence. The exact launch and
+was retained but is now unavailable; its terminal is not reconstructed from
+native completion. The exact original journal and saved execution independently
+confirm native exit zero. The exact launch and
 actual CPU/memory/swap limits are recorded in the
 [launch descriptor](../metadata/completed_domain_coordinates_launch_20261005_v1.json).
 
@@ -82,8 +86,8 @@ all atoms within each interval, retains sequence correspondence and confidence,
 and verifies PDB rounding at the unchanged coordinate/confidence tolerances.
 Every rejection and missing-backbone position remains explicit. A wrapper binds
 the complete output only after native completion. Full independent archive,
-atom and disposition readback is still required; it has not been queued before
-the original extraction closes. Extraction is not predictor calibration,
+atom and disposition readback is still required; it started after the original
+native extraction closed. Extraction is not predictor calibration,
 confidence acceptance, PAE qualification or structural clustering.
 
 Reproduce the full saved-output check with the recorded plans:

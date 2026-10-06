@@ -1,0 +1,79 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=67108864",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_completed_domain_coordinate_native_closure_v1.py",
+    "--receipt",
+    "metadata/completed_domain_native_closure_software_20261006_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/completed_domain_native_closure_resources_20261006_v1.json": "960c355ac5b962400198a8fcf6fe57ee8a0df649fdec5ee18c0d0226edbc82b2",
+    "scripts/check_completed_domain_coordinate_native_closure_v1.py": "148aac26ff031b7abef7bceb7204e3148741529253809635b8a0647242717a0b",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "9293845fc1034e4ba45836ea868dd518",
+  "wrapper": {
+    "pid": 741569,
+    "created": 1791259103.06,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_domain_native_closure_resources_20261006_v1.json",
+      "--execution",
+      "metadata/completed_domain_native_closure_software_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/completed_domain_native_closure_software_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_completed_domain_coordinate_native_closure_v1.py",
+      "--receipt",
+      "metadata/completed_domain_native_closure_software_20261006_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 14400,
+  "started_utc": "2026-10-06T03:58:24.323152+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T03:58:24.778133+00:00",
+  "child": {
+    "pid": 741571,
+    "created": 1791259103.63,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=7200",
+      "--fsize=67108864",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_completed_domain_coordinate_native_closure_v1.py",
+      "--receipt",
+      "metadata/completed_domain_native_closure_software_20261006_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.4538612609030679,
+  "child_cpu_seconds": 0.39178599999999997,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/completed_domain_native_closure_software_20261006_v1.json",
+  "receipt_sha256": "13b4c09859b27bacf292f805266751922d81b4617019b992c47d1a7d7f9caf06",
+  "artifacts": {
+    "metadata/completed_domain_native_closure_software_execution_20261006_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/completed_domain_native_closure_software_execution_20261006_v1/configuration.json": "ed2c861a125f26e1c6168105afa209a06398ccaf907f46aab8b19629d6ec294a",
+    "metadata/completed_domain_native_closure_software_execution_20261006_v1/stdout.log": "ac36f1b893a91613ec5045acc4edef3b8cd23f1f7dd1c3ef1894c0563c63105b",
+    "metadata/completed_domain_native_closure_software_execution_20261006_v1/process.json": "a08f609c14ef9eced6d1a0b9879ad8e7ad495e3ec378300ce5c4b50651362deb"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

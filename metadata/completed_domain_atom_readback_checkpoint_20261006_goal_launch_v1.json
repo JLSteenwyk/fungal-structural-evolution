@@ -1,0 +1,378 @@
+{
+  "status": "verified_original_full_domain_atom_readback_runtime",
+  "checked_utc": "2026-10-06T04:11:54.193922+00:00",
+  "original_handle": {
+    "unit": "fungal-full-domain-atom-readback-20261006-v1.service",
+    "pid": 749172,
+    "created": 1791259825.33,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/completed_domain_atom_readback_resources_20261006_v1.json",
+      "--execution",
+      "metadata/completed_domain_atom_readback_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/completed_domain_atom_readback_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_completed_domain_coordinate_atom_readback_v1.py",
+      "--plan",
+      "metadata/completed_domain_atom_readback_plan_20261006_v1.json",
+      "--receipt",
+      "metadata/completed_domain_atom_readback_20261006_v1.json"
+    ],
+    "plan": "metadata/completed_domain_atom_readback_plan_20261006_v1.json",
+    "plan_sha256": "c252c996d579b7ca2772835c4a6ef99f1c8a81d947168d7addb676ef1a661918",
+    "checked_utc": "2026-10-06T04:11:30.532892+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "800000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "07c83fa9e4b54a50800c1aebc9a6c2d8",
+    "source_hashes": {
+      "metadata/completed_domain_atom_readback_execution_20261006_v1/configuration.json": "7c555a0d6aaca11409cb643fdf8dcf5352920faa0c9dc95d59fc077d51721309",
+      "metadata/completed_domain_atom_readback_plan_20261006_v1.json": "c252c996d579b7ca2772835c4a6ef99f1c8a81d947168d7addb676ef1a661918"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/completed_domain_atom_readback_launch_20261006_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.51,
+    "children": [
+      {
+        "pid": 749174,
+        "created": 1791259825.75,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_completed_domain_coordinate_atom_readback_v1.py",
+          "--plan",
+          "metadata/completed_domain_atom_readback_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/completed_domain_atom_readback_20261006_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 6.550000000000001
+      },
+      {
+        "pid": 749254,
+        "created": 1791259832.31,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_domain_coordinate_archives.py",
+          "--plan",
+          "metadata/completed_domain_atom_readback_plan_20261006_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 67.79
+      },
+      {
+        "pid": 750945,
+        "created": 1791259900.02,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(7)"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 0.03
+      },
+      {
+        "pid": 750946,
+        "created": 1791259900.02,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.18
+      },
+      {
+        "pid": 750949,
+        "created": 1791259900.02,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.24
+      },
+      {
+        "pid": 750950,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=16)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.24
+      },
+      {
+        "pid": 750951,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=18)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.26
+      },
+      {
+        "pid": 750952,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=20)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.27
+      },
+      {
+        "pid": 750953,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.27
+      },
+      {
+        "pid": 750954,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=24)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.17
+      },
+      {
+        "pid": 750955,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=26)",
+          "--multiprocessing-fork"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 13.219999999999999
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "72a7344bfca1316ba24995123d52478105bb3a8f4065781ff5d1bd20c64cb72a",
+    "current_cgroup_limits": {
+      "cpu.max": "800000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 3135737856,
+      "memory.peak": 3831250944,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 749174,
+        "created": 1791259825.75,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/run_completed_domain_coordinate_atom_readback_v1.py",
+          "--plan",
+          "metadata/completed_domain_atom_readback_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/completed_domain_atom_readback_20261006_v1.json"
+        ],
+        "rss_bytes": 16936960,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 749254,
+        "created": 1791259832.31,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/readback_domain_coordinate_archives.py",
+          "--plan",
+          "metadata/completed_domain_atom_readback_plan_20261006_v1.json"
+        ],
+        "rss_bytes": 258416640,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750945,
+        "created": 1791259900.02,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(7)"
+        ],
+        "rss_bytes": 9437184,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750946,
+        "created": 1791259900.02,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 74072064,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750949,
+        "created": 1791259900.02,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 78741504,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750950,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=16)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 72601600,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750951,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=18)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 74014720,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750952,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=20)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 73740288,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750953,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=22)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 75812864,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750954,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=24)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 77373440,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 750955,
+        "created": 1791259900.03,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "-c",
+          "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=26)",
+          "--multiprocessing-fork"
+        ],
+        "rss_bytes": 82444288,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              432000               432000               seconds   \nMax file size             268435456            268435456            bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 5441,
+  "expected_models": 976357,
+  "expected_intervals": 2454565,
+  "expected_shards": 977,
+  "reader_state": {
+    "present": true,
+    "observed_bytes_sha256": "f4740cfccbbb901e366480bba39ccf050fb1b28259bf81922ccb81279fb865c6",
+    "value": {
+      "stage": "waiting_for_coordinate_extraction"
+    }
+  },
+  "reader_receipt_present": false,
+  "source_hashes": {
+    "metadata/completed_domain_coordinates_plan_20261005_v1.json": "2f6f50e9db140355372d376cda5124766f36d7b1a927cff6b9f2117f1bd8b780",
+    "metadata/completed_domain_atom_readback_resources_20261006_v1.json": "977102dfd4664732d3e4b5b87c411f2bdc76ee5beac9bfb0b33a94c481e1ca38",
+    "metadata/completed_domain_native_closure_20261006_v1.json": "1cc8c109931ee0e8331c248e22160f3a1ea04121c8db3f02f3b1b40343cf42b5",
+    "metadata/completed_domain_native_closure_transport_20261006_v2.json": "e691398ad2e87dd81df6811c7544fe252678e56916a1fe029c40a72bdbacd850",
+    "metadata/completed_domain_coordinates_execution_20261005_v1.json": "c43f9418baab9456269fc1c4b021cf0f208e38ad29eeb1cdd061920c922bd5e2",
+    "metadata/completed_domain_coordinates_20261005_v1.json": "2e67b53192132fec0e5dbe0925e5f7f2a5fa327a590cb995fc60f4ba7fc9beb9",
+    "metadata/completed_domain_coordinates_launch_20261005_v1.json": "101e530f9edc26343285e0286752bc473e90222c334a45c0d95e1f761e35976e",
+    "metadata/completed_domain_coordinates_original_initial_tool_20261005_v1.json": "9958e5d26d73fdcedec8194938eb8bbfe61f1642c283ef3bc7b572dd3cbd7278",
+    "metadata/completed_domain_coordinates_original_api_unavailable_20261006_v1.json": "1fe6ba4c6a4571bac3179bfe47b8bbacb03b162cb790a99bd3a25cda816b914d",
+    "metadata/completed_domain_native_closure_software_original_tool_return_20261006_v1.json": "d7121ed12f7451ae0def5cc1a3569d38efbb1dbfe2671b7f9bd934555e38ee99",
+    "metadata/completed_domain_native_closure_software_execution_20261006_v1.json": "98e9ea9e0f5c3dd6d81f644f8f56aa814dda11e856d58ccef11779097ac85d05",
+    "metadata/completed_domain_native_closure_transport_original_payloads_20261006_v2.json": "f7f0ee17c157e679d7c69d3ca88d488bea4be4f740f3b7a6d53c993cf86fc7f0",
+    "metadata/domain_coordinate_archive_readback_fixture_checks.json": "5219f28fdf73cbed6c868686bbdf9528cc8893d7c2edf68ffc80d82d55f4b9aa",
+    "scripts/readback_domain_coordinate_archives.py": "9e703dd752e958281103739b27cd20666c7b2156ee994a0fd0bf017efdd220d1",
+    "scripts/run_completed_domain_coordinate_atom_readback_v1.py": "c99890925276e4089f88275f0b65732d03709b24c1a888c59e0dfcece89f0e5b",
+    "scripts/catalog_whole_proteome_structures.py": "5ffbd4a33b1a79bea4344d637a044d483ba3ba3b4f1a470e3143464f1aa5b441",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "results/domains/domain-extraction-manifest-20261005-v1/intervals.tsv": "afa37cca60883b362781a138279d83b6e20ac5bbe9fb92c9d6157d7709e2eed8",
+    "results/structures/whole-proteome-afdb-catalog-20261005-v1/models.jsonl": "e0ca5699d9e1553ddfade8e24a26404f1cc45e8e5618a96e41be75719be9a1af",
+    "results/domains/domain-coordinates-20261005-v1/receipt.json": "55c8e0faa087efacd8f3e7020b6023a8e640ff4f75600815ffe61e1a6902d2a7",
+    "metadata/completed_domain_atom_readback_launch_20261006_v1.json": "72a7344bfca1316ba24995123d52478105bb3a8f4065781ff5d1bd20c64cb72a",
+    "metadata/completed_domain_atom_readback_original_initial_tool_20261006_v1.json": "1fbd64076861911b312de4e5296911a1729bdc420d1d990f9f699cb75dadf91e",
+    "metadata/completed_domain_atom_readback_plan_20261006_v1.json": "c252c996d579b7ca2772835c4a6ef99f1c8a81d947168d7addb676ef1a661918",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_completed_domain_atom_readback_checkpoint_v1.py": "5ea6c2089907946ac0f88daf5b11e9a2709dd663e3d889a28fb7020ae6976dbe"
+  },
+  "original_producer_api_terminal_unknown_preserved": true,
+  "independent_atom_readback_complete": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original wrapper/tool/plan identity and current resources or invocation-linked native terminal only. Mutable state is a partial observation, not terminal or full all-atom completion. Original producer API terminal remains unknown. No restart, prediction, boundary/homology acceptance or evolutionary event admission."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "passed_full_producer_count_scope_and_eleven_rejection_controls",
+  "checked_utc": "2026-10-06T04:18:58.217656+00:00",
+  "producer_shards_checked": 977,
+  "global_counts": {
+    "models": 976357,
+    "intervals": 2454565,
+    "exported": 2454565,
+    "rejected": 0,
+    "missing_backbone_intervals": 0
+  },
+  "allowed_missing_counter": "rejected",
+  "allowed_missing_value": 0,
+  "rejection_controls": [
+    "missing_models",
+    "missing_backbone_counter",
+    "changed_intervals",
+    "changed_exports",
+    "foreign_counter",
+    "boolean_counter",
+    "negative_counter",
+    "float_counter",
+    "missing_nonzero_rejections",
+    "changed_explicit_rejections",
+    "invalid_producer_counter"
+  ],
+  "source_hashes": {
+    "results/domains/domain-coordinates-20261005-v1/receipt.json": "55c8e0faa087efacd8f3e7020b6023a8e640ff4f75600815ffe61e1a6902d2a7",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_domain_atom_readback_count_scope_v2.py": "a7fdd89e68ce9c7f100f7418bd288e67da35677792996621478626c69b32bd65",
+    "scripts/review_domain_atom_readback_count_scope_v2.py": "575394756c998369bb52f1eb6283229f00c204ae5add762121898f81daf99b9f"
+  },
+  "full_original_atom_reader_complete": false,
+  "native_atom_readback_repeated": false,
+  "scientific_eligibility": false,
+  "scope": "Reporting software checks across all977actual producer shard count records and global counts. This is not independent atom-readback completion or native execution closure. Original full reader remains live and unchanged."
+}

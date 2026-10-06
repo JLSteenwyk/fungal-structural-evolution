@@ -1,5 +1,23 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: close native extraction without reconstructing a missing API terminal
+
+Original domain extraction session 64749 is native-complete across the entire refreshed
+manifest, but its tool session is unavailable. Retain the unknown API terminal
+and use the complete original execution and journal to gate independent full
+atom readback. Eleven identity/scope/terminal rejection controls qualify this
+closure. Do not repeat extraction because the original API handle disappeared.
+
+For short successful review units, optional CPU-accounting journal records can
+be absent. Preserve the failed generic transport and close the fresh review
+using its actual original manager wait and exact wrapper messages, with the
+observed optional record count zero. Do not modify the original qualified generic
+checker or invent records. The full reader uses unchanged atom tolerances,
+eight CPU workers and 64 GiB/no swap; biological boundary/homology and predictor
+calibration remain separate from serialization integrity.
+
+[Exact original evidence and full reader launch](completed-domain-atom-readback-20261006.md).
+
 ## October 6 UTC: stream long traces and require complete export transactions
 
 Keep qualified short-run reader sources immutable. Add horizon-aware versions

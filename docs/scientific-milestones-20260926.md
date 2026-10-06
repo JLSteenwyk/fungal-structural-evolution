@@ -1,5 +1,18 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: complete domain coordinates; full atom integrity check running
+
+The full refreshed extraction exported 2,454,565 intervals from 976,357 models,
+with native completion proven from the original execution/journal. The missing
+original API terminal remains null. A separately launched complete atom reader
+checks every interval at unchanged tolerances, using 8 CPUs, 64 GiB memory and no swap. Full
+readback and its original execution closure remain pending. Annotation-defined
+intervals still need biological boundary/homology acceptance; PAE calibration,
+full structural comparisons and all eight evolutionary aims remain unfinished.
+GPU prediction remains paused.
+
+[Extraction completion and independent full reader](completed-domain-atom-readback-20261006.md).
+
 ## October 6 UTC: horizon-aware readers qualified, long sampling still pending
 
 The streaming reader qualification passes the full current 1,644-attempt corpus

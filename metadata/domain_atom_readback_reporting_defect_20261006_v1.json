@@ -1,0 +1,38 @@
+{
+  "status": "verified_live_atom_reader_zero_count_reporting_mismatch_correction_prepared",
+  "checked_utc": "2026-10-06T04:19:51.779572+00:00",
+  "original_reader_session_id": 5441,
+  "original_reader_invocation_id": "07c83fa9e4b54a50800c1aebc9a6c2d8",
+  "original_reader_exit_code": null,
+  "original_reader_terminal_not_yet_observed": true,
+  "original_reader_sources_unchanged": true,
+  "omitted_counter": "rejected",
+  "producer_expected_value": 0,
+  "observed_partial_counts": {
+    "models": 8000,
+    "intervals": 19776,
+    "exported": 19776,
+    "missing_backbone_intervals": 0
+  },
+  "reported_completion_dictionary_comparison_will_fail_if_zero_remains_omitted": true,
+  "full_atom_readback_complete": false,
+  "reporting_review_script": "scripts/review_domain_atom_readback_count_scope_v2.py",
+  "reporting_review_launched_or_queued": false,
+  "count_correction_controls_passed": 11,
+  "full_producer_shard_count_records_checked": 977,
+  "native_atom_readback_restart_required": false,
+  "raw_outputs_or_original_receipts_modified": false,
+  "source_hashes": {
+    "metadata/completed_domain_atom_readback_checkpoint_20261006_goal_progress_v2.json": "1d1031ae15482c26cdb2d5c0815ece94760e28e7506afe20008e9fd4b7152b68",
+    "metadata/domain_atom_readback_count_scope_software_20261006_v2.json": "e1ccbd3a0b4083c511bcd7dba2ac175aae32666d4d1eb22dd21426eaabdcbf6d",
+    "metadata/domain_atom_readback_count_scope_execution_20261006_v2.json": "52dffc6062bdd668cdc0f01c1f284dc4a1904fdefc65986a50193ce7d9b3bf53",
+    "metadata/domain_atom_readback_count_scope_execution_20261006_v2/original-invocation-journal.jsonl": "1ac62158f5230b538dc5d32aae90ec8db9312b1f0ff4b25bca84633d0ab38bc6",
+    "metadata/domain_atom_readback_count_scope_original_tool_20261006_v2.json": "f13e5c8ad84dc3def40433392ed193f7ef10b73735014247d5428aa571b0a732",
+    "scripts/run_completed_domain_coordinate_atom_readback_v1.py": "c99890925276e4089f88275f0b65732d03709b24c1a888c59e0dfcece89f0e5b",
+    "scripts/readback_domain_coordinate_archives.py": "9e703dd752e958281103739b27cd20666c7b2156ee994a0fd0bf017efdd220d1",
+    "scripts/review_domain_atom_readback_count_scope_v2.py": "575394756c998369bb52f1eb6283229f00c204ae5add762121898f81daf99b9f"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Known completion-adapter dictionary equality omits Counter zero key rejected. Existing qualified all-atom checks continue unchanged. Prepared retained-output review accepts only missing producer-zero rejected; every other missing/foreign/changed/typed counter fails. Await original full reader terminal and complete raw receipt before any review. No actual reader failure or completion claimed yet."
+}
