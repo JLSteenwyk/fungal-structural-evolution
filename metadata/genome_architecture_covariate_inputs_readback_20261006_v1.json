@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "passed_full_panel_genome_architecture_covariate_input_readback",
+  "taxa": 526,
+  "missing_assembly_statistics_taxa": 7,
+  "provisional_orf_coordinate_taxa": 2,
+  "producer_receipt_sha256": "c78fb35e66af3aa65a0891eb04ab51986ec15d202da3c4497e33ef0817a2c8f8",
+  "table_sha256": "0db3950490a13baa1aa214b62436a0bb4508411c0a650ff13cb51ec56cb1a4e0",
+  "source_hashes": {
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/genome_architecture_resource_census_20261006_v1.json": "1bc7ec627686d6919be1fa7d0e6d34e8d2005801729c287593cfeb74ae95e524",
+    "metadata/full_gene_order_context_20261006_v1.tsv": "26167644057aa2dd60a56260ba2a458e90ca05abffd782d89c3dd2f7834587b9"
+  },
+  "script_sha256": "c5934220080f67f53ee662c03bff1cd8639dc6e6be2d7c19c881a78a5b0236f9",
+  "checked_utc": "2026-10-06T20:04:32.469806+00:00",
+  "interpretation": "Independent exact join readback passed. It confirms covariate provenance and explicit missing/provisional dispositions, not biological genome-architecture or structure-evolution conclusions."
+}
