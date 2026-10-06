@@ -55,6 +55,10 @@ workflow, with CPU-only execution and a newly pinned command. Its plan must
 declare coverage, E-value, sensitivity, hit-cap, clustering mode, reassignment,
 and confidence-seeding settings; retain native logs and temporary-path
 provenance; and fail if any full-database lookup member is omitted or repeated.
+The [gated clustering runner](../scripts/cluster_full_prediction_atlas_v1.py)
+is self-tested for complete partition membership and duplicate-member rejection.
+It refuses to run without launch-specific hashes for every completed prerequisite
+receipt and every protected database artifact.
 
 The immediate result will be a *candidate structural partition*. An independent
 reader must verify exact partition membership, representative self-membership,
