@@ -21,12 +21,8 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--receipt", type=Path, required=True)
-    parser.add_argument("--output", type=Path, required=True)
-    args = parser.parse_args()
-    receipt = json.loads(args.receipt.read_text())
+def validate(receipt_path: Path, output: Path) -> dict:
+    receipt = json.loads(receipt_path.read_text())
     if receipt.get("status") != "complete_full_panel_immutable_gene_order_export":
         raise ValueError("unexpected receipt status")
     rows = receipt.get("taxon_dispositions", [])
@@ -34,7 +30,7 @@ def main() -> None:
         raise ValueError("receipt taxon disposition mismatch")
     totals: Counter[str] = Counter()
     for item in rows:
-        path = args.output / f'{item["taxon_id"]}.gene_order.tsv.gz'
+        path = output / f'{item["taxon_id"]}.gene_order.tsv.gz'
         if not path.is_file() or sha256(path) != item["table_sha256"]:
             raise ValueError(f"table hash mismatch: {item['taxon_id']}")
         prior_by_seqid = {}
@@ -78,8 +74,16 @@ def main() -> None:
         totals.update(counts)
     if dict(sorted(totals.items())) != receipt["totals"]:
         raise ValueError("receipt totals mismatch")
-    print(json.dumps({"status": "passed_full_panel_gene_order_readback", "taxa": receipt["taxa"],
-                      "totals": dict(sorted(totals.items()))}, indent=2))
+    return {"status": "passed_full_panel_gene_order_readback", "taxa": receipt["taxa"],
+            "totals": dict(sorted(totals.items()))}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--receipt", type=Path, required=True)
+    parser.add_argument("--output", type=Path, required=True)
+    args = parser.parse_args()
+    print(json.dumps(validate(args.receipt, args.output), indent=2))
 
 
 if __name__ == "__main__":
