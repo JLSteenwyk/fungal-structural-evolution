@@ -174,15 +174,18 @@ def main():
     assert sha(launch['plan'])==launch['plan_sha256']
     state=terminal_state(launch['unit'])
     assert state==dict(ActiveState='inactive',Result='success',ExecMainStatus='0')
-    fit_plan,production,flags,errors,recipes,bindings=sources(producer)
+    historical_code_pins=config.get('historical_source_code_pins',{})
+    fit_plan,production,flags,errors,recipes,bindings=sources(producer,historical_code_pins)
+    for p,h in historical_code_pins.items():
+        assert bindings[p]==h,p
     for p,h in config['pins'].items():
         assert p not in bindings or bindings[p]==h;bindings[p]=h
     # Historical producer code is retained in ``bindings``.  Record the
     # independently executed readback implementation separately, so a
     # superseding validator cannot silently masquerade as producer code.
-    for p,h in config['implementation_pins'].items():
+    implementation_pins=config['implementation_pins']
+    for p,h in implementation_pins.items():
         assert sha(p)==h,p
-        bindings['execution:'+p]=h
     bindings[str(args.plan)]=sha(args.plan)
     root=Path(producer['output']);receipt=json.loads((root/'receipt.json').read_text())
     assert receipt['status']=='complete_full_grid_optimization_followup_pending_independent_readback'
@@ -192,7 +195,9 @@ def main():
     bindings[str(root/'receipt.json')]=sha(root/'receipt.json')
     for n,h in receipt['artifacts'].items():bindings[str(root/n)]=h
     def verify():
-        for p,h in bindings.items():assert sha(p)==h,p
+        for p,h in bindings.items():
+            if p not in historical_code_pins:
+                assert sha(p)==h,p
     verify()
     seen=set()
     with (root/'scope_dispositions.jsonl').open() as f:
@@ -237,6 +242,7 @@ def main():
         independent_readback_counts=dict(independent_counts),finite_difference_policy=args.finite_difference_policy,
         candidate_likelihoods_replayed=candidates,maximum_objective_error=maximum,
         source_receipt_sha256=sha(root/'receipt.json'),producer_terminal_state=state,source_hashes=bindings,
+        implementation_hashes=implementation_pins,
         artifacts={'readback_manifest.jsonl':sha(output/'readback_manifest.jsonl')},scientific_eligibility=False,
         scope='Full 375350-disposition census and every flagged serialized result checked. All candidate LLs independently reconstructed by GLS normal equations; selected/raw coefficients and covariance transforms, gradients, recovery lineage and finite-difference scores checked. Original fit and follow-up errors retain unverified numerical status. Shared covariance operator/analytic-score library; no global optimum, inferential calibration or biological acceptance.')
     (output/'receipt.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

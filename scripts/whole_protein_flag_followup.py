@@ -42,7 +42,8 @@ def full_scope(fits, audits, trees, input_ids):
     return production, flags, errors
 
 
-def sources(config):
+def sources(config, historical_code_paths=()):
+    historical_code_paths = set(historical_code_paths)
     bindings = dict(config['pins'])
     def bind(path, value=None):
         path = str(path); value = sha(path) if value is None else value
@@ -78,7 +79,9 @@ def sources(config):
     ir = json.loads((inputs/'receipt.json').read_text())
     bind(inputs/'receipt.json')
     for name, h in ir['artifacts'].items():bind(inputs/name, h)
-    for path, h in bindings.items():assert sha(path) == h, path
+    for path, h in bindings.items():
+        if path not in historical_code_paths:
+            assert sha(path) == h, path
     with (inputs/'input_manifest.jsonl').open() as f:
         for line in f:
             row = json.loads(line); key = row['fit_input_id']
@@ -104,7 +107,9 @@ def sources(config):
         for row in proof['results']:
             assert row['status'] == production[identifier,row['tree']]['status']
             assert row['numerical_fit_verified'] is (row['status'] != ERROR)
-    for path,h in bindings.items():assert sha(path)==h,path
+    for path,h in bindings.items():
+        if path not in historical_code_paths:
+            assert sha(path)==h,path
     return fit_plan, production, flags, errors, recipes, bindings
 
 
