@@ -1,0 +1,23 @@
+{
+  "pid": 700719,
+  "created": 1791255378.17,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_software_original_wait_transport_v1.py",
+    "--execution",
+    "metadata/current_ancestral_horizon_cost_readback_execution_20261006_v1.json",
+    "--validation",
+    "metadata/current_ancestral_horizon_cost_readback_20261006_v1.json",
+    "--payloads",
+    "metadata/current_ancestral_horizon_cost_readback_original_payloads_20261006_v1.json",
+    "--unit",
+    "fungal-current-ancestral-horizon-cost-readback-20261006-v1.service",
+    "--output",
+    "metadata/current_ancestral_horizon_cost_readback_transport_20261006_v1.json"
+  ]
+}

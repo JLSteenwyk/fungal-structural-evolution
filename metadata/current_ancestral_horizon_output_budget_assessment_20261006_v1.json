@@ -1,0 +1,22 @@
+{
+  "status": "complete_verified_linear_native_file_cap_assessment",
+  "checked_utc": "2026-10-06T02:59:14.183308+00:00",
+  "original_roles": 1620,
+  "proposed_iterations": 10000,
+  "current_per_file_cap_bytes": 2147483648,
+  "projected_files_above_current_cap": 96,
+  "largest_linear_projected_file_bytes": 12955334726,
+  "next_power_of_two_file_cap_bytes": 17179869184,
+  "linear_projected_native_bytes_including_latent_allowance": 945474558095,
+  "scope": "All 16440 verified native file rows retained. This assessment exposes the old 2GiB cap incompatibility under the declared linear scenario; a prospective 16GiB cap covers that scenario only. No file limit or live process is changed. Derived projection arrays, longer-chain memory/scaling, full-horizon readers, aggregate disk monitoring, model adequacy and convergence must be included before admitting a long native horizon.",
+  "production_launch_allowed": false,
+  "scalar_review_roles_retained": 14,
+  "gpu": false,
+  "new_native_runs": 0,
+  "source_hashes": {
+    "metadata/current_ancestral_horizon_cost_20261006_v1.json": "3bcbee7178e6f1ea0d02765a5fb9e4b3c22aa142ccd4b2376dc1db464339de66",
+    "metadata/current_ancestral_horizon_cost_readback_20261006_v1.json": "c3279e29a417611a5cee9da7646d096c18d0faf7ab55058a3aa7d6c9d2bd81f7",
+    "metadata/current_ancestral_horizon_cost_readback_transport_20261006_v1.json": "55148f252020c70ced8ac24653ce02cbe34e5a95dc23b6993466d5fa3bc3f6fa",
+    "results/ancestral/current-full-horizon-costs-20261006-v1/native_files.tsv": "ccaabcbbf35c46897963594b0aaf80a6c3e1384efad146c4ce6c58656115680a"
+  }
+}

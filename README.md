@@ -145,6 +145,16 @@ special-value reviews remain excluded. Full 24-run/504-row tables and a PNG/PDF
 figure are published. Adequate posterior sampling remains unlaunched;
 historical latent values remain unavailable.
 
+The [current full ancestral cost census](docs/current-ancestral-horizon-costs-20261006.md)
+now independently checks all 1,644 native attempts and 16,440 files. Its
+10,000-iteration linear scenario projects about 0.945 TB of native outputs
+and identifies 96 files above the old 2 GiB limit. The full attempt table,
+file ledger, exact arithmetic and original producer/reader closure are retained.
+These uncalibrated scenarios do not establish a finish time, long-run memory
+safety or adequate posterior. Full-horizon construction/readers, derived-output
+costs and safe aggregate disk limits remain required; no long sampler is
+launched or queued here.
+
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,
 5,171 geometry comparisons and 2,545 coverage exclusions. Independent geometry,

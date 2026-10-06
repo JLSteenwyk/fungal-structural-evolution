@@ -1,5 +1,37 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 6 UTC: current full ancestral cost census independently verified
+
+The new census and separate reader check all 1,644 native attempts and 16,440
+files / 2,784,481,010 bytes: all 1,620 original V6 roles plus 24 separate V10
+comparisons. Every original failure remains explicit. The computational cost
+baseline has one native-zero outcome per original role, with 14 special-value
+reviews retained and scientific/posterior eligibility false. Actual original
+producer 87251 and reader 13397 exit zero; complete source/output/wrapper and
+invocation closure is verified. The full public attempt table is source-identical.
+
+The explicit 10,000-iteration scenario uses distinct scalar-state and saved-frame
+multipliers. It gives 945,474,558,095 native bytes including latent-output
+allowance, and 18,246 aggregate worker-wall hours. These are uncalibrated
+planning calculations, not bounds or finish/convergence estimates. Ninety-six
+projected files exceed the old 2 GiB limit; the maximum is 12.07 GiB. A
+prospective 16 GiB cap covers that scenario, but no live cap is changed.
+Derived-array costs, full-horizon construction/readers, long-chain memory and
+safe aggregate disk monitoring remain required before launch. No new MCMC,
+GPU inference or paid resource is used; no long sampler is launched or queued.
+
+The preceding goal turn made progress and published 58 owned files / 36,019,890
+bytes at a831048da0b70136d39d0b1a05b331d119fa12b0, with exact remote/committed
+bytes verified. At 03:02 UTC the exact original jobs remain live: 2,306,000
+coordinate-audited models, 2,268,057 domain intervals, 45,400 newly verified PAE
+matrices and 1,511/4,340 timing producer checkpoints, with no recorded failures.
+Full independent atlas/domain/timing closure remains pending. Full biological
+weighted fits remain zero, and accepted frameworks, adequate ancestral
+uncertainty, calibration and all eight evolutionary aims remain incomplete.
+Fungal GPU prediction stays paused and this stage adds no structures.
+
+[Complete costs, assumptions, launch requirements and reproduction](current-ancestral-horizon-costs-20261006.md).
+
 ## October 6 UTC: full latent-alpha comparison and independent replay completed
 
 All 24 full-input V10 comparison runs finish with native zero. The independent

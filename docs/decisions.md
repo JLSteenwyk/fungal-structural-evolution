@@ -1,5 +1,17 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: update long-horizon output limits from the full current census
+
+Retain all original failed attempts and separate diagnostic comparisons in the
+resource ledger. Use exactly one native-zero outcome per original role for the
+computational scenario, while keeping every numeric review excluded from
+scientific/posterior admission. Scale scalar states and saved frames separately.
+The existing 2 GiB per-file limit conflicts with 96 projected files under the
+explicit 10,000-iteration scenario. Plan for a prospective 16 GiB limit, with
+full-horizon readers, derived-output costs, memory/CPU bounds and aggregate disk
+monitoring before any long native launch. No current process or cap is changed.
+[Complete census and requirements](current-ancestral-horizon-costs-20261006.md).
+
 ## October 6 UTC: retain diagnosed alpha-overflow reviews
 
 The complete V10 comparison and independent replay explain eight newly

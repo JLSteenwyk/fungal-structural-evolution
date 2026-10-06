@@ -1,0 +1,19 @@
+{
+  "pid": 696856,
+  "created": 1791254978.11,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/inventory_current_ancestral_horizon_costs_v1.py",
+    "--output",
+    "results/ancestral/current-full-horizon-costs-20261006-v1",
+    "--receipt",
+    "metadata/current_ancestral_horizon_cost_20261006_v1.json",
+    "--iterations",
+    "10000"
+  ]
+}
