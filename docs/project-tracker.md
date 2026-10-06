@@ -15,6 +15,7 @@ None of the eight evolutionary aims is complete.
 | Protein/domain structural-search infrastructure | [Full database workflow](full-atlas-foldseek-database-20261006.md), [independent native-record receipt](../metadata/full_atlas_foldseek_readback_20261006_v3.json) | The complete 2,961,055-model producer and independent native-record reader pass. The separate coordinate-profile reader, PAE qualification, 3Di reconstruction, clustering/homology and evolutionary analyses remain open. |
 | PAE uncertainty data | [Full PAE workflow](full-atlas-pae-20261005.md) | Full missing-AFDB retrieval is running; independent whole-queue reader is queued behind it. |
 | Domain intervals and atoms | [Completed domain extraction](completed-domain-extraction-20261005.md), [atom readback](completed-domain-atom-readback-20261006.md) | Full export and retained-output integrity review are complete; biological domain boundary, confidence and homology checks remain. |
+| Whole-protein numerical validation | [Full readback](whole-protein-full-grid-readback-20261006.md), [receipt](../results/model_validation/whole-protein-full-flag-readback-20261006-v2/receipt.json) | Every one of 1,673 flagged numerical-followup fits from the complete 375,350-disposition grid independently replayed under the recorded `1e-6` finite-difference policy. This resolves the reader's fixed-step numerical issue while retaining source review statuses; model adequacy, calibration and biological inference remain open. |
 
 ## Comparative framework
 
