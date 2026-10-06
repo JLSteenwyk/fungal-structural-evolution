@@ -12,6 +12,7 @@ set -euo pipefail
 cd /mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS
 mkdir -p logs/repeatmodeler-full-panel-20261006-v1
 ENV=.cache/envs/fungal-genome-architecture-repeat/bin
+export PATH="$PWD/$ENV:$PATH"
 "$ENV/python" scripts/run_repeatmodeler_taxon_v1.py \
   --config config/repeatmodeler-full-panel-20261006-v1.json \
   --task-index "$SLURM_ARRAY_TASK_ID" \
