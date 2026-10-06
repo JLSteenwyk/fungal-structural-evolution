@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "audit": "frozen_outgroup_selection_membership_and_provenance",
+  "manifest_outgroup_count": 25,
+  "configured_outgroup_count": 25,
+  "selection_group_counts": {
+    "animal_lineage_coverage": 9,
+    "broader_rooting_sensitivity": 6,
+    "close_holomycotan_anchor": 1,
+    "unicellular_holozoan_comparisons": 9
+  },
+  "top_level_lineage_counts": {
+    "Amoebozoa": 5,
+    "Apusomonadida": 1,
+    "Choanoflagellatea": 2,
+    "Corallochytrea": 1,
+    "Filasterea": 1,
+    "Ichthyosporea": 5,
+    "Metazoa": 9,
+    "Nucleariida": 1
+  },
+  "membership": [
+    {
+      "taxon_id": "OFS5426458",
+      "species_name": "Abeoforma whisleri",
+      "top_level_lineage": "Ichthyosporea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "figshare:5426458.v1",
+      "inclusion_reason": "Genome-derived unicellular holozoan annotation; publisher genome/proteome bundle"
+    },
+    {
+      "taxon_id": "O5755",
+      "species_name": "Acanthamoeba castellanii",
+      "top_level_lineage": "Amoebozoa",
+      "selection_group": "broader_rooting_sensitivity",
+      "assembly_accession": "GCF_000313135.1",
+      "inclusion_reason": "Broader rooting sensitivity"
+    },
+    {
+      "taxon_id": "O400682",
+      "species_name": "Amphimedon queenslandica",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCF_000090795.2",
+      "inclusion_reason": "Animal lineage coverage"
+    },
+    {
+      "taxon_id": "O2700040",
+      "species_name": "Branchiostoma floridae",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCF_019207075.1",
+      "inclusion_reason": "Animal lineage coverage"
+    },
+    {
+      "taxon_id": "O6239",
+      "species_name": "Caenorhabditis elegans",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCF_000002985.6",
+      "inclusion_reason": "Annotated animal reference"
+    },
+    {
+      "taxon_id": "O283909",
+      "species_name": "Capitella teleta",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCA_000328365.1",
+      "inclusion_reason": "Animal lineage coverage"
+    },
+    {
+      "taxon_id": "O192875",
+      "species_name": "Capsaspora owczarzaki",
+      "top_level_lineage": "Filasterea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "GCF_000151315.2",
+      "inclusion_reason": "Unicellular holozoan comparison"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "species_name": "Chromosphaera perkinsii",
+      "top_level_lineage": "Ichthyosporea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "figshare:5426494.v1",
+      "inclusion_reason": "Genome-derived unicellular holozoan annotation; publisher genome/proteome bundle"
+    },
+    {
+      "taxon_id": "OFS5426470",
+      "species_name": "Corallochytrium limacisporum",
+      "top_level_lineage": "Corallochytrea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "figshare:5426470.v1",
+      "inclusion_reason": "Genome-derived unicellular holozoan annotation; publisher genome/proteome bundle"
+    },
+    {
+      "taxon_id": "OFS1403592",
+      "species_name": "Creolimax fragrantissima",
+      "top_level_lineage": "Ichthyosporea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "figshare:1403592.v1",
+      "inclusion_reason": "Genome-derived unicellular holozoan annotation; publisher genome/proteome bundle"
+    },
+    {
+      "taxon_id": "O44689",
+      "species_name": "Dictyostelium discoideum",
+      "top_level_lineage": "Amoebozoa",
+      "selection_group": "broader_rooting_sensitivity",
+      "assembly_accession": "GCF_000004695.1",
+      "inclusion_reason": "Broader rooting sensitivity"
+    },
+    {
+      "taxon_id": "O5786",
+      "species_name": "Dictyostelium purpureum",
+      "top_level_lineage": "Amoebozoa",
+      "selection_group": "broader_rooting_sensitivity",
+      "assembly_accession": "GCF_000190715.1",
+      "inclusion_reason": "Broader rooting sensitivity"
+    },
+    {
+      "taxon_id": "O7227",
+      "species_name": "Drosophila melanogaster",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCF_000001215.4",
+      "inclusion_reason": "Annotated animal reference"
+    },
+    {
+      "taxon_id": "O691883",
+      "species_name": "Fonticula alba",
+      "top_level_lineage": "Nucleariida",
+      "selection_group": "close_holomycotan_anchor",
+      "assembly_accession": "GCF_000388065.1",
+      "inclusion_reason": "Close non-fungal holomycotan rooting anchor"
+    },
+    {
+      "taxon_id": "O225164",
+      "species_name": "Lottia gigantea",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCF_000327385.1",
+      "inclusion_reason": "Animal lineage coverage"
+    },
+    {
+      "taxon_id": "O27923",
+      "species_name": "Mnemiopsis leidyi",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCA_048537945.1",
+      "inclusion_reason": "Animal lineage coverage"
+    },
+    {
+      "taxon_id": "O81824",
+      "species_name": "Monosiga brevicollis",
+      "top_level_lineage": "Choanoflagellatea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "GCF_000002865.3",
+      "inclusion_reason": "Unicellular holozoan comparison"
+    },
+    {
+      "taxon_id": "O45351",
+      "species_name": "Nematostella vectensis",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCF_932526225.1",
+      "inclusion_reason": "Animal lineage coverage"
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "species_name": "Pirum gemmata",
+      "top_level_lineage": "Ichthyosporea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "figshare:5426506.v2",
+      "inclusion_reason": "Genome-derived unicellular holozoan annotation; publisher genome/proteome bundle"
+    },
+    {
+      "taxon_id": "O1890364",
+      "species_name": "Planoprotostelium fungivorum",
+      "top_level_lineage": "Amoebozoa",
+      "selection_group": "broader_rooting_sensitivity",
+      "assembly_accession": "GCA_003024175.1",
+      "inclusion_reason": "Broader rooting sensitivity"
+    },
+    {
+      "taxon_id": "O133409",
+      "species_name": "Polysphondylium violaceum",
+      "top_level_lineage": "Amoebozoa",
+      "selection_group": "broader_rooting_sensitivity",
+      "assembly_accession": "GCA_000277445.1",
+      "inclusion_reason": "Broader rooting sensitivity"
+    },
+    {
+      "taxon_id": "O946362",
+      "species_name": "Salpingoeca rosetta",
+      "top_level_lineage": "Choanoflagellatea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "GCF_000188695.1",
+      "inclusion_reason": "Unicellular holozoan comparison"
+    },
+    {
+      "taxon_id": "O72019",
+      "species_name": "Sphaeroforma arctica",
+      "top_level_lineage": "Ichthyosporea",
+      "selection_group": "unicellular_holozoan_comparisons",
+      "assembly_accession": "GCF_001186125.1",
+      "inclusion_reason": "Unicellular holozoan comparison"
+    },
+    {
+      "taxon_id": "O529818",
+      "species_name": "Thecamonas trahens",
+      "top_level_lineage": "Apusomonadida",
+      "selection_group": "broader_rooting_sensitivity",
+      "assembly_accession": "GCF_000142905.1",
+      "inclusion_reason": "Broader rooting sensitivity"
+    },
+    {
+      "taxon_id": "O10228",
+      "species_name": "Trichoplax adhaerens",
+      "top_level_lineage": "Metazoa",
+      "selection_group": "animal_lineage_coverage",
+      "assembly_accession": "GCF_000150275.1",
+      "inclusion_reason": "Animal lineage coverage"
+    }
+  ],
+  "evidence_urls": [
+    "https://doi.org/10.1038/s41559-025-02851-z",
+    "https://doi.org/10.7554/eLife.26036"
+  ],
+  "source_hashes": {
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "config/outgroups.json": "686eaffa648d7471cf9dfcb49bd90955e488f9e24004fb4d6c50d693bf92454c"
+  },
+  "script_sha256": "2eaa41352ab2c0c5e960d3c90001bbd13b5d94a39f9b873fa3889fc5d99ae73e",
+  "interpretation": "This receipt validates the exact frozen outgroup membership, configured lineage labels, role balance, and cited-source URLs. It does not independently establish taxonomy, assembly/annotation quality, phylogenetic topology, root placement, divergence times, or suitability of every outgroup for every protein family."
+}

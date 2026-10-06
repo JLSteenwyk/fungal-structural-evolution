@@ -159,3 +159,23 @@ the observed finite encoder, nonstandard Infinity/NaN output, ejson_null
 crash site and native decoder/zero-test limitations. These software findings
 do not establish model/likelihood correctness, mixing, crash repair in larger
 families or biological inference. [Artifacts and exact limitations](baliphy-scalar-json-v6-20261004.md).
+
+## Outgroup selection evidence
+
+- Brown MW et al. (2009). [Phylogeny of the "forgotten" cellular slime mold,
+  *Fonticula alba*, reveals a key evolutionary branch within
+  Opisthokonta](https://doi.org/10.1093/molbev/msp185). Primary molecular
+  phylogeny placing *Fonticula* plus *Nuclearia* sister to Fungi. It supports
+  retaining *Fonticula* as a close non-fungal comparison; it does not validate
+  a root or the topology inferred from this project's markers.
+- Grau-Bové X et al. (2017). [Dynamics of genomic innovation in the
+  unicellular ancestry of animals](https://doi.org/10.7554/eLife.26036).
+  Comparative genomic/phylogenomic study including ichthyosporeans and
+  *Corallochytrium*. It supports their deliberate representation as
+  unicellular holozoan comparators, without asserting their placement in this
+  study.
+- Szánthó LL et al. (2025). [A timetree of Fungi dated with fossils and
+  horizontal gene transfers](https://doi.org/10.1038/s41559-025-02851-z).
+  Broad fungal/non-fungal phylogenomic and dating design. It motivates
+  occupancy-aware markers and explicit calibration uncertainty; it is not a
+  substitute for this project's own species tree or dates.
