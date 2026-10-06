@@ -1,0 +1,22 @@
+{
+  "status": "required_og0000017_aggregate_sensitivity_policy",
+  "checked_utc": "2026-10-06T17:41:53.557453+00:00",
+  "family": "OG0000017",
+  "focal_taxon": "F181123",
+  "audit_sha256": "e5b44ca5113bae8834b645a50b6c2fdc599f0c8c68f62450f76a907de49baa21",
+  "audit_check_sha256": "1115761906e11bd3999823742805194a30fa8429de26a20960a9bb8e35c24641",
+  "complete_source_products_retained": 133973,
+  "family_products_retained": 46787,
+  "paired_aggregate_analyses": [
+    "complete eligible family universe",
+    "same eligible universe with OG0000017 contributions withheld only from aggregate summary"
+  ],
+  "invariants": [
+    "Do not alter OG0000017 membership, sequences, annotations, family tree, or reconciliation inputs.",
+    "Use identical eligibility, branch, confidence, missing-data, multiplicity, and phylogenetic controls in both aggregates.",
+    "Report the family-withheld change as a dependency sensitivity, not as repeat classification or a biological duplication conclusion.",
+    "Do not make family-specific duplication, homology, or structural-evolution claims without separate validated gene-tree and annotation evidence."
+  ],
+  "scientific_eligibility": false,
+  "scope": "Binds the validated complete source-context audit to a predeclared downstream aggregate sensitivity. It creates no family exclusion, no tree/reconciliation change, and no biological classification."
+}

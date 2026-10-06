@@ -118,6 +118,27 @@ A flat directed-pair table at 64/128/256 bytes per pair would occupy approximate
 
 The workload inventory also flags a material interpretation issue: OG0000017 has 46,787 genes from Austropuccinia psidii (F181123; GCA_000469055.2), 83.58% of that family and 34.92% of its 133,973 representative proteins. Native species IDs, manifest mapping and source receipts agree. This requires annotation/repeat/homology review before treating these memberships as biological duplications; it is not evidence of a lineage-specific expansion by itself. The existing repair continues unchanged. Counts and provenance are recorded in `metadata/orthology_OG0000017_taxon_concentration.json`.
 
+The complete source-context audit retains all 133,973 focal-assembly products
+and all 46,787 OG0000017 members. It finds 19,764 family products with a
+descriptive repeat-keyword Pfam flag, compared with 6,046 among the other
+87,186 focal-assembly products. The largest family Pfam annotations include
+reverse-transcriptase/RNase-H and integrase-associated domains. These signals
+are annotation and repeat-risk evidence, not transposable-element
+classification, a deletion rule, or a duplication inference. The audit table,
+its receipt, and an independent full-table readback are recorded in
+`results/orthology/OG0000017-annotation-repeat-context-20261006-v3` and
+`metadata/orthology_OG0000017_annotation_repeat_context_20261006_v3.json`.
+
+Accordingly, all later results that aggregate gene-family turnover, duplication,
+or structural divergence must retain a predeclared paired sensitivity: the
+complete universe and the same analysis with OG0000017 contributions withheld
+from the aggregate summary. The original membership, sequences, trees and
+reconciliation inputs must remain intact in both analyses. A material change
+between the two summaries is evidence that the aggregate result depends on this
+annotation-sensitive family; it does not resolve whether its individual members
+are repeats, duplications, or homologs. Family-specific claims require an
+independent gene-tree/reconciliation and annotation review.
+
 The full per-family workload table remains outside Git at `results/orthology/full-reconciliation-workload-v1/family_workload.tsv`; its checksum, compact top-family summary, resource estimate and export readback are versioned under `metadata/full_reconciliation_workload_*`.
 
 
