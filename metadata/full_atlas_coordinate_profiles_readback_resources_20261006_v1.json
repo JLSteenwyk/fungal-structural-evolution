@@ -1,0 +1,23 @@
+{
+  "prepared_utc": "2026-10-06T18:55:00+00:00",
+  "cpus": 8,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 56,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 604800,
+  "per_file_limit_mib": 1024,
+  "minimum_available_ram_gib": 64,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 1,
+  "estimated_wall_hours": [
+    12,
+    168
+  ],
+  "runtime_is_uncalibrated": true,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Independent full readback of all 2,961,055 source-model coordinate profiles after the active Foldseek producer releases its competing full-CIF scan. It independently reparses every source CIF, verifies every archive member and profile array, and writes only a compact receipt/state. It does not predict structures, retrieve PAE, alter source/archive files, cluster structures, or make biological inferences."
+}

@@ -118,12 +118,18 @@ output and exact totals; independent reconstruction of source atoms, arrays,
 archive membership and dispositions remains pending.
 
 The independent reader is prepared and its literal control passes. It has
-**not been launched**; its full immutable input plan must bind the completed
-producer and actual original transport first. It will check every original
+been queued behind the active full-atlas Foldseek producer, so the two jobs do
+not compete for a complete scan of the same source CIF files. Its immutable
+input and wait plans are
+[`metadata/full_atlas_coordinate_profiles_readback_plan_20261006_v1.json`](../metadata/full_atlas_coordinate_profiles_readback_plan_20261006_v1.json)
+and
+[`metadata/full_atlas_coordinate_profiles_readback_wait_plan_20261006_v1.json`](../metadata/full_atlas_coordinate_profiles_readback_wait_plan_20261006_v1.json).
+It will check every original
 source/job record, all original atom identities, exact exported sequence and
 coordinate/confidence arrays, dtypes/shapes/digests, scalar threshold totals,
 archive members and rejection eligibility. This requires another full source
-read and separately estimated resources before launch.
+read under eight CPUs, 64 GiB and zero swap; it has a separately recorded
+12--168 hour uncalibrated range.
 
 The recorded execution configuration gives the complete bounded launch command.
 Its native stage is:

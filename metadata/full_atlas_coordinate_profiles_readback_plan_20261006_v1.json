@@ -1,0 +1,19 @@
+{
+  "prepared_utc": "2026-10-06T18:55:09.432080+00:00",
+  "output": "results/structures/full-atlas-coordinate-profiles-readback-20261006-v1",
+  "producer_plan": "metadata/full_atlas_coordinate_profiles_plan_20261005_v1.json",
+  "producer_receipt": "metadata/full_atlas_coordinate_profiles_20261005_v1.json",
+  "producer_transport": "metadata/full_atlas_coordinate_profiles_transport_20261006_v1.json",
+  "resources": {
+    "cpu": 8
+  },
+  "pins": {
+    "metadata/full_atlas_coordinate_profiles_plan_20261005_v1.json": "a57e10cfb1d43a51abda9327fc5b4518bb32b6cc18877c5785d710f921826638",
+    "metadata/full_atlas_coordinate_profiles_20261005_v1.json": "950ff1d20bb668c4dd411635d79584ec45499e0576ed2d03f313b72bea88d9bf",
+    "metadata/full_atlas_coordinate_profiles_transport_20261006_v1.json": "c4088ca8d1c60034f1e2d3376dd3a813d0c88525121b870872d31175225799ca",
+    "metadata/full_atlas_coordinate_profiles_readback_resources_20261006_v1.json": "2acdf809b711cfe4fae508a72ea336af6277550c1550fe5c43e5731f6b5fc1de",
+    "scripts/readback_full_atlas_coordinate_profiles_v1.py": "30c64cf79bd051f1e82c6b42cf100057eec99f4255db7660b0b8b9f89b98ad18",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/launch_full_atlas_coordinate_profiles_readback_v1.py": "df49accf8352d17420def43fe4a74a64e92bb2808c2a3721d2667bf47278577f"
+  },
+  "scope": "Independent complete coordinate-profile readback. The job starts only after the active full Foldseek producer exits, avoiding two simultaneous complete scans of the source CIF atlas."
+}
