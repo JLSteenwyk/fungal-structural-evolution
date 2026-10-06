@@ -7,6 +7,15 @@ import json
 from collections import Counter
 from pathlib import Path
 
+FUNGAL_LINEAGES = {
+    "Aphelidiomycota", "Ascomycota", "Basidiobolomycota", "Basidiomycota",
+    "Blastocladiomycota", "Calcarisporiellomycota", "Chytridiomycota",
+    "Entomophthoromycota", "Glomeromycota", "Kickxellomycota", "Microsporidia",
+    "Monoblepharomycota", "Mortierellomycota", "Mucoromycota",
+    "Neocallimastigomycota", "Olpidiomycota", "Rozellomycota",
+    "Sanchytriomycota", "Zoopagomycota",
+}
+
 
 def sha256(path):
     digest = hashlib.sha256()
@@ -55,8 +64,9 @@ def main():
     if set(roles) != {"ingroup", "outgroup"}:
         raise ValueError("Unexpected study role")
     fungal_paths = [row["lineage"].split(";", 1)[0] for row in analysis_rows if row["study_role"] == "ingroup"]
-    if any(not value or value in {"Animalia", "Opisthokonta"} for value in fungal_paths):
-        raise ValueError("An ingroup row lacks a fungal lineage prefix")
+    unknown_lineages = sorted(set(fungal_paths) - FUNGAL_LINEAGES)
+    if unknown_lineages:
+        raise ValueError(f"Unexpected ingroup lineage prefixes: {unknown_lineages}")
 
     exclusions = json.loads(args.exclusions.read_text())
     if not isinstance(exclusions, list):
@@ -88,6 +98,7 @@ def main():
             "evidence": exclusion["evidence"],
         },
         "ingroup_top_level_lineage_counts": dict(sorted(Counter(fungal_paths).items())),
+        "allowed_fungal_top_level_lineages": sorted(FUNGAL_LINEAGES),
         "source_hashes": {
             str(args.candidate): sha256(args.candidate),
             str(args.analysis): sha256(args.analysis),
