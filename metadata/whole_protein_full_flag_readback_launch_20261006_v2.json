@@ -1,0 +1,40 @@
+{
+  "unit": "fungal-whole-protein-full-flag-readback-20261006-v2c.service",
+  "created_utc": "2026-10-06T22:17:53.494111+00:00",
+  "pid": 1806906,
+  "initial_state": {
+    "MainPID": "1806906",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_whole_protein_flag_followup.py",
+    "--plan",
+    "metadata/whole_protein_full_flag_readback_plan_20261006_v2.json",
+    "--finite-difference-policy",
+    "adaptive_v2"
+  ],
+  "plan": "metadata/whole_protein_full_flag_readback_plan_20261006_v2.json",
+  "plan_sha256": "840947c8fd72d44e77735c209f15b67692c0078f778fb587676861a842494ef8",
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "superseded_setup_attempts": [
+    {
+      "unit": "fungal-whole-protein-full-flag-readback-20261006-v2.service",
+      "result": "failed_before_analysis",
+      "reason": "missing transient working directory"
+    },
+    {
+      "unit": "fungal-whole-protein-full-flag-readback-20261006-v2b.service",
+      "result": "failed_before_analysis",
+      "reason": "historical checker-code hash was validated against an intentionally newer independent validator"
+    }
+  ]
+}
