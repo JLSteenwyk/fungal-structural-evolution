@@ -92,12 +92,29 @@ def main() -> None:
     if not any(work.glob(database + ".*")):
         run([str(build_database), "-name", database, str(fasta)], work, log)
     recover_dirs = sorted(path for path in work.glob("RM_*") if path.is_dir())
-    threads = str(config["threads_per_taxon"])
-    seed = str((int(hashlib.sha256(row["taxon_id"].encode()).hexdigest()[:8], 16) % 2147483646) + 1)
+    recover_dir = None
     if recover_dirs:
         if len(recover_dirs) != 1:
             raise RuntimeError(f"ambiguous recovery directories for {row['taxon_id']}")
-        command = [str(repeatmodeler), "-recoverDir", str(recover_dirs[0]), "-threads", threads, "-srand", seed]
+        candidate = recover_dirs[0]
+        completed_rounds = [
+            number for number in range(1, 101)
+            if (candidate / f"round-{number}" / "consensi.fa").is_file()
+            and (candidate / f"round-{number}" / "consensi.fa").stat().st_size > 0
+        ]
+        if completed_rounds and max(completed_rounds) > 1:
+            recover_dir = candidate
+        else:
+            archive = work / f"interrupted_{candidate.name}"
+            suffix = 1
+            while archive.exists():
+                archive = work / f"interrupted_{candidate.name}_{suffix}"
+                suffix += 1
+            os.replace(candidate, archive)
+    threads = str(config["threads_per_taxon"])
+    seed = str((int(hashlib.sha256(row["taxon_id"].encode()).hexdigest()[:8], 16) % 2147483646) + 1)
+    if recover_dir:
+        command = [str(repeatmodeler), "-recoverDir", str(recover_dir), "-threads", threads, "-srand", seed]
     else:
         command = [str(repeatmodeler), "-database", database, "-threads", threads, "-srand", seed]
     run(command, work, log)

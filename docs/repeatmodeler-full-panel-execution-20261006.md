@@ -9,8 +9,11 @@ The Slurm array reserves eight CPU threads and 32 GB RAM per taxon, with at
 most twelve concurrent taxa (96 threads and 384 GB reserved). This leaves
 capacity for the currently active structural-atlas readers and keeps the run
 within locally available, no-cost resources. The seven-day task limit bounds
-individual large assemblies; failed tasks retain their work directory and are
-recovered by the same controller rather than silently restarted from another
+individual large assemblies. Failed tasks retain their work directory. The
+controller uses RepeatModeler's recovery function after more than one completed
+round; because the software itself rejects early-round recovery, earlier
+attempts are retained under an `interrupted_` directory and restarted from the
+same checksum-verified source rather than silently restarted from another
 source.
 
 Before any tool invocation, the controller performs a fresh SHA-256 check of
