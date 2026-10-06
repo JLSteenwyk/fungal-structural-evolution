@@ -46,6 +46,9 @@ before the taxon/marker/model sensitivity collection is evaluated.
    position, intergenic distance, alternative-product and missing-coordinate
    status. Stratify every later result by assembly level/contiguity and FCS
    context rather than excluding difficult taxa by default.
+
+   The [full immutable export specification](full-gene-order-export-20261006.md)
+   defines this all-taxon source-bound table and its independent readback.
 2. **Repeat-context evidence.** Obtain repeat annotations with a versioned,
    taxon-consistent method and report library/model provenance, masked fraction,
    repeat class and distance-to-gene. A repeat annotation is context evidence,

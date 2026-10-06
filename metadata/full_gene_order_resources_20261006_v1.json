@@ -1,0 +1,24 @@
+{
+  "prepared_utc": "2026-10-06T18:20:00Z",
+  "cpus": 2,
+  "memory_gib": 8,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 6,
+  "cpu_seconds_per_stage": 259200,
+  "wall_seconds_per_stage": 259200,
+  "per_file_limit_mib": 1024,
+  "minimum_available_ram_gib": 16,
+  "minimum_free_disk_gib": 2048,
+  "output_allowance_gib": 32,
+  "estimated_wall_hours": [
+    1,
+    48
+  ],
+  "runtime_is_uncalibrated": true,
+  "basis": "The completed 526-taxon registry contains 60,917,860 feature rows, 5,983,922 gene rows, 5,815,847 representatives and 64,512,704,512 bytes of SQLite inputs. The receipt-level census bounds a 512-byte-per-row gene-order table at 2,977,713,664 bytes and a 384-byte-per-row immediate-neighbor table at 4,466,570,496 bytes. This exporter streams one read-only SQLite registry at a time and writes one gzip table per taxon; 32 GiB allows source-product JSON, compression, receipts and conservative temporary overhead. The 1-48 h range is an uncalibrated planning range, not an ETA.",
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Full immutable source-coordinate export across all 526 manifest taxa. It preserves native gene ordering and records the two ORF-coordinate taxa as provisional rather than gene order. It does not infer assemblies, repeats, orthology, synteny, duplication, rearrangements or structural evolution."
+}
