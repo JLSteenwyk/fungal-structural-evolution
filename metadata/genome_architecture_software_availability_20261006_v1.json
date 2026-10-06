@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "completed_genome_architecture_software_availability_audit",
+  "checked_utc": "2026-10-06T20:08:26.605913+00:00",
+  "tools": {
+    "RepeatMasker": {
+      "status": "not_found"
+    },
+    "RepeatModeler": {
+      "status": "not_found"
+    },
+    "BuildDatabase": {
+      "status": "not_found"
+    },
+    "EDTA": {
+      "status": "not_found"
+    },
+    "TEsorter": {
+      "status": "not_found"
+    },
+    "Red": {
+      "status": "not_found"
+    },
+    "MCScanX": {
+      "status": "not_found"
+    },
+    "McScanX": {
+      "status": "not_found"
+    },
+    "i-adhore": {
+      "status": "not_found"
+    },
+    "jcvi": {
+      "status": "not_found"
+    },
+    "minimap2": {
+      "status": "available",
+      "path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux/minimap2",
+      "sha256": "176de991772f37d1ecc7701d60354c3856bd487bdd927824f8c76e02018d1225",
+      "version_command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/minimap2-2.30_x64-linux/minimap2",
+        "--version"
+      ],
+      "version_first_line": "2.30-r1287",
+      "version_exit_code": 0
+    },
+    "blastp": {
+      "status": "available",
+      "path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin/blastp",
+      "sha256": "5ce267c04e4988c265357bfbedc64e809545b6fcfae7ff6775266fabbee8ba0e",
+      "version_command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/ncbi-blast-2.17.0+/bin/blastp",
+        "-version"
+      ],
+      "version_first_line": "blastp: 2.17.0+",
+      "version_exit_code": 0
+    },
+    "diamond": {
+      "status": "available",
+      "path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64/diamond",
+      "sha256": "c7f86801666886519d62175863af95eb4d34dc6486043f3e9f9b81e94a491978",
+      "version_command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/diamond-linux64/diamond",
+        "--version"
+      ],
+      "version_first_line": "diamond version 2.1.11",
+      "version_exit_code": 0
+    },
+    "mmseqs": {
+      "status": "available",
+      "path": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin/mmseqs",
+      "sha256": "8ccbedfd1714194a8034f71f31c2e9fc1a186c04ecbae42f6cdaccef0b6295d1",
+      "version_command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/mmseqs/bin/mmseqs",
+        "version"
+      ],
+      "version_first_line": "6e3c640418f9cde4b246f430322e17be7b96a3b9",
+      "version_exit_code": 0
+    }
+  },
+  "required_repeat_and_synteny_tools_not_found": [
+    "RepeatMasker",
+    "RepeatModeler",
+    "EDTA",
+    "MCScanX",
+    "i-adhore",
+    "jcvi"
+  ],
+  "script_sha256": "d948443785bcd60f6f7dee7ae08ac57eda5c08047e7157b59d3710c5eb27da66",
+  "interpretation": "This audits local executable availability only. Missing repeat/synteny software prevents a full discovery launch until a versioned, no-paid-resource installation or container plan is reviewed; available general aligners do not substitute for repeat annotation or collinearity inference."
+}

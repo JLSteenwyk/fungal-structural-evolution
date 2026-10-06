@@ -92,6 +92,12 @@ without reopening the large registry. It supplies gene-order and immediate-neigh
 storage bounds, while explicitly leaving repeat/block software resource bounds,
 execution design and the other launch gates open.
 
+The [local software availability audit](genome-architecture-software-availability-20261006.md)
+records that no repeat-annotation or collinearity implementation is currently
+installed. General sequence-search executables are not treated as substitutes;
+the dependency must be resolved with version/database/resource provenance before
+the full discovery stage can begin.
+
 The extension is motivated by fungal genome-organization literature already
 recorded in the [annotated bibliography](bibliography.md), especially the need
 to distinguish transposable-element-rich compartments and structural variation
