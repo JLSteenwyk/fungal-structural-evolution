@@ -16,6 +16,8 @@ def main():
     args = parser.parse_args()
     plan = json.loads(args.plan.read_text())
     bindings = {str(args.plan): sha(args.plan), **plan['pins']}
+    historical = plan.get('historical_source_hashes', {})
+    historical_seen = {}
 
     def verify():
         for path, digest in bindings.items():
@@ -39,6 +41,11 @@ def main():
             bindings[artifact] = digest
         for field in ['source_hashes', 'source_pins', 'pins']:
             for source, digest in record.get(field, {}).items():
+                if source in historical:
+                    if historical[source] != digest:
+                        raise ValueError('Historical source hash differs: ' + source)
+                    historical_seen[source] = digest
+                    continue
                 if source in bindings and bindings[source] != digest:
                     raise ValueError('Inconsistent binding: ' + source)
                 bindings[source] = digest
@@ -87,9 +94,12 @@ def main():
                              'LoadState=not-found means a collected transient unit: its default success/0 fields alone do not prove exit status.'))
     verify()
     output = Path(plan['output'])
+    if set(historical_seen) != set(historical):
+        raise ValueError('Historical source hash was not encountered')
     result = dict(status=plan['completed_status'], checked_utc=datetime.now(timezone.utc).isoformat(),
                   summary=plan['summary'], scientific_eligibility=False,
-                  services=services, source_hashes=bindings, scope=plan['scope'])
+                  services=services, source_hashes=bindings,
+                  historical_source_hashes=historical_seen, scope=plan['scope'])
     with output.open('x') as handle:
         handle.write(json.dumps(result, indent=2) + '\n')
     print(json.dumps(dict(status=result['status'], output=str(output),

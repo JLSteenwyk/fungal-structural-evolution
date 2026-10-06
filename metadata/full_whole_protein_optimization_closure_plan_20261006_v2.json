@@ -1,0 +1,35 @@
+{
+  "fit_plan": "metadata/whole_protein_ml_plan_20260929.json",
+  "audit_plan": "metadata/whole_protein_ml_output_audit_plan_20260929.json",
+  "followup_plan": "metadata/whole_protein_full_flag_followup_plan_20260930.json",
+  "readback_plan": "metadata/whole_protein_full_flag_readback_plan_20261006_v2.json",
+  "launches": [
+    "metadata/whole_protein_ml_launch_20260929.json",
+    "metadata/whole_protein_ml_output_audit_launch_20260929.json",
+    "metadata/whole_protein_full_flag_followup_launch_20260930.json"
+  ],
+  "historical_source_hashes": {
+    "scripts/whole_protein_flag_followup.py": "8c494d52c0233775a51ec92dd106ddd5bec59c333e13e6868ed6fd13ca0470bf",
+    "scripts/readback_whole_protein_flag_followup.py": "7dbefbce5c151f8411aa0c70158ff391442a6ceeec9bf083008078d3d04e5bf0"
+  },
+  "archive_directory": "results/model_validation/full-whole-protein-optimization-closure-20261006-v2",
+  "output": "metadata/full_whole_protein_optimization_completed_20261006_v2.json",
+  "resources": {
+    "minimum_free_disk_gib": 100,
+    "maximum_output_gib": 4,
+    "cpu": 2,
+    "memory_gib": 32,
+    "swap_gib": 0,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "pins": {
+    "scripts/close_full_whole_protein_optimization.py": "69d6571cf7cf93317a8819e20ff1a4ed480c0f5aab92cfaaa6491789f1a44278",
+    "scripts/record_completed_process_handoffs_v2.py": "8b2714c64210800273fbf599e314d4dca7c6c2495c00dd60ae731b5964f7cabb",
+    "metadata/whole_protein_ml_plan_20260929.json": "027339d4f7e571b82fd3ba79fe0bed7f132677835176d020966d54a8023efd5e",
+    "metadata/whole_protein_ml_output_audit_plan_20260929.json": "3c51aaf9cfe3b710223c790c8c65a72ee529dcb914ec8dbb1ad0e8a1d046c574",
+    "metadata/whole_protein_full_flag_followup_plan_20260930.json": "24d053749b3593719b1557190731a4d19aa40403eb555728bbe1831aab2bf9c8",
+    "metadata/whole_protein_full_flag_readback_plan_20261006_v2.json": "840947c8fd72d44e77735c209f15b67692c0078f778fb587676861a842494ef8"
+  },
+  "scope": "Complete 75,070-input, 375,350-disposition whole-protein fit/audit census and all 1,673 numerical follow-ups. The v2 readback receipt is immutable completion evidence; three original producer journals remain independently archived. Historical checker hashes are retained without asserting their changed working-tree paths. No global optimum, model adequacy, calibration or biological inference is accepted."
+}

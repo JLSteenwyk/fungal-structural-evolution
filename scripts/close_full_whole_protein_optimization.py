@@ -68,6 +68,12 @@ def followup_proofs(production,flags,recipes,root,checked_root,plan_hash,binding
 
 def run(path):
     plan=json.loads(Path(path).read_text());bindings=dict(plan['pins']);bind(bindings,path)
+    historical=plan.get('historical_source_hashes',{});historical_seen={}
+    def bind_source(source,digest):
+        source=str(source)
+        if source in historical:
+            assert historical[source]==digest,source;historical_seen[source]=digest
+        else:bind(bindings,source,digest)
     assert shutil.disk_usage('.').free>=plan['resources']['minimum_free_disk_gib']*2**30
     fp,ap,pp,vp=[json.loads(Path(plan[k]).read_text()) for k in ['fit_plan','audit_plan','followup_plan','readback_plan']]
     assert pp['fit_plan']==plan['fit_plan'] and pp['audit_plan']==plan['audit_plan'] and vp['source_plan']==plan['followup_plan']
@@ -75,7 +81,7 @@ def run(path):
     for root in roots:
         p=root/'receipt.json';bind(bindings,p);r=json.loads(p.read_text());receipts.append(r)
         for key in ['source_hashes']:
-            for p,h in r.get(key,{}).items():bind(bindings,p,h)
+            for p,h in r.get(key,{}).items():bind_source(p,h)
         for n,h in r['artifacts'].items():bind(bindings,root/n,h)
     fit,audit,producer,reader=receipts
     assert fit['status']=='complete_whole_protein_ml_dispositions_pending_full_audit' and fit['plan_sha256']==sha(plan['fit_plan'])
@@ -88,7 +94,7 @@ def run(path):
     assert reader['source_receipt_sha256']==sha(roots[2]/'receipt.json')
     assert producer['scientific_eligibility'] is reader['scientific_eligibility'] is False
     for root in [roots[0],roots[2]]:
-        for p,h in json.loads((root/'source_bindings.json').read_text()).items():bind(bindings,p,h)
+        for p,h in json.loads((root/'source_bindings.json').read_text()).items():bind_source(p,h)
     ip=Path(fp['inputs']);ir=json.loads((ip/'receipt.json').read_text());bind(bindings,ip/'receipt.json')
     assert ir['inputs']==75070 and ir['tree_fits']==375350
     for p,h in ir['source_hashes'].items():bind(bindings,p,h)
@@ -107,6 +113,14 @@ def run(path):
     assert nf==len(flags)==producer['flagged_fits']==reader['flagged_fits']
     assert len(errors)==producer['original_fit_errors_retained']==reader['original_fit_errors_retained']
     assert counts==producer['followup_status_counts']==reader['counts']
+    # Historical producer/checker code is bound by immutable hashes in the
+    # receipts, but is intentionally not re-hashed at its now-updated path.
+    for root in roots:
+        receipt=json.loads((root/'receipt.json').read_text())
+        for p,h in receipt.get('source_hashes',{}).items():
+            if p in historical:
+                assert historical[p]==h,p;historical_seen[p]=h
+    assert set(historical_seen)==set(historical)
     verify(bindings)
     summary=dict(unique_inputs=inputs,full_dispositions=total,original_fit_status_counts=fit['status_counts'],flagged_fits=nf,
         original_fit_errors_retained=len(errors),followup_status_counts=counts,candidate_likelihoods_replayed=reader['candidate_likelihoods_replayed'],
@@ -115,13 +129,14 @@ def run(path):
     labels=['fit','audit','followup','readback'];evidence={label:dict(path=str(root/'receipt.json'),expected=dict(status=r['status'])) for label,root,r in zip(labels,roots,receipts)}
     spec=dict(output=str(archive),completed_status='complete_verified_full_whole_protein_optimization_archive',evidence=evidence,
         links=[dict(**{'from':'audit'},field='source_receipt_sha256',to=str(roots[0]/'receipt.json')),dict(**{'from':'readback'},field='source_receipt_sha256',to=str(roots[2]/'receipt.json'))],
-        launches=plan['launches'],pins=bindings,summary=summary,scope=plan['scope'])
+        launches=plan['launches'],pins=bindings,historical_source_hashes=historical,
+        summary=summary,scope=plan['scope'])
     with inner.open('x') as f:f.write(json.dumps(spec,indent=2)+'\n')
     subprocess.run([sys.executable,'scripts/record_completed_process_handoffs_v2.py','--plan',str(inner)],check=True)
-    proof=json.loads(archive.read_text());assert len(proof['services'])==4
+    proof=json.loads(archive.read_text());assert len(proof['services'])==len(plan['launches'])
     assert sum(p.stat().st_size for p in out.iterdir() if p.is_file())<=plan['resources']['maximum_output_gib']*2**30
     result=dict(status='complete_verified_full_whole_protein_optimization',**summary,full_hash_archive=str(archive),full_hash_archive_sha256=sha(archive),
-        bound_source_hashes=len(proof['source_hashes']),exact_process_journals_checked=4,producer_receipt=str(roots[2]/'receipt.json'),producer_receipt_sha256=sha(roots[2]/'receipt.json'),
+        bound_source_hashes=len(proof['source_hashes']),historical_source_hashes=len(proof['historical_source_hashes']),exact_process_journals_checked=len(plan['launches']),producer_receipt=str(roots[2]/'receipt.json'),producer_receipt_sha256=sha(roots[2]/'receipt.json'),
         independent_readback=str(roots[3]/'receipt.json'),independent_readback_sha256=sha(roots[3]/'receipt.json'),completion_plan_sha256=sha(path),scientific_eligibility=False,scope=plan['scope'])
     with Path(plan['output']).open('x') as f:f.write(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result),flush=True)
