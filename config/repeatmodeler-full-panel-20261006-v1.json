@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "stage": "full_panel_repeatmodeler_discovery",
+  "input_manifest": "results/genome-architecture/repeat-inputs-20261006-v1/manifest.tsv",
+  "output_root": "results/genome-architecture/repeatmodeler-20261006-v1",
+  "taxa": 526,
+  "threads_per_taxon": 8,
+  "maximum_concurrent_taxa": 12,
+  "memory_per_taxon_gb": 32,
+  "repeatmodeler": {
+    "version": "2.0.9",
+    "engine": "rmblast",
+    "seed_policy": "deterministic SHA-256-derived positive 31-bit integer",
+    "ltrstruct": false,
+    "reason_ltrstruct_false": "The installed environment has not qualified the optional LTR structural dependency chain across the full panel. Core RepeatModeler discovery remains the complete primary full-panel run; any LTR structural sensitivity requires its own source-bound, resource-qualified execution."
+  },
+  "restart_policy": "A completed receipt with matching source SHA-256 is reused. An incomplete existing RM_* directory is recovered with RepeatModeler -recoverDir. Source FASTA remains in an incomplete work directory and is recreated from the verified compressed source when absent.",
+  "scope": "All 526 manifest taxa are retained. This configuration prepares de-novo repeat-library discovery and produces no biological association result."
+}
