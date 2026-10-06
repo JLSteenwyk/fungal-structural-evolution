@@ -1,0 +1,21 @@
+{
+  "producer_output": "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v2",
+  "input_manifest_sha256": "2858277a9a2e74e06bbb6f293475d0f4623a422e4368507e66742b2e8c421011",
+  "output": "results/orthology/expanded-reconciliation-mafft-recovery-readback-20261006-v2",
+  "pins": {
+    "scripts/readback_expanded_reconciliation_mafft_recovery_v1.py": "fd992651b3ef3cbf09504cd61e3b22e035a48ca7b0919ce4ffdeb256c1446fb1",
+    "scripts/audit_hog_output_identities.py": "1428e8eb891f4efe2a362f59da9617b8fa006330301a818702251fc52e8f135f",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_plan.json": "a28e471eb98a3379e8ad73cff0767c708efb71782a1bd44559e02ef9038b7c03"
+  },
+  "resources": {
+    "cpu_threads": 4,
+    "memory_max_gib": 64,
+    "swap_max_gib": 0,
+    "minimum_available_memory_gib": 96,
+    "minimum_free_disk_gib": 1024,
+    "planning_wall_hours": [0.25, 8],
+    "cost": "Existing local host only; no paid infrastructure"
+  },
+  "scope": "Independent source-family, species-clade, HOG-table-universe, mandatory-artifact and native-statistics replay after a completed fresh MAFFT reconciliation producer. It does not establish biological orthology, HOG ancestral completeness, duplication-event accuracy or guide robustness."
+}

@@ -18,8 +18,6 @@ def main():
     parser.add_argument('--plan', type=Path, required=True)
     args = parser.parse_args()
     plan = read(args.plan)
-    if sha(args.plan) != plan['plan_sha256']:
-        raise ValueError('Readback plan changed')
     for name, digest in plan['pins'].items():
         if sha(ROOT / name) != digest:
             raise ValueError('Pinned source changed: ' + name)

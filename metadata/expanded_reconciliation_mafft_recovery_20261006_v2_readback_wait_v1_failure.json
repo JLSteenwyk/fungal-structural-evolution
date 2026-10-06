@@ -1,0 +1,8 @@
+{
+  "status": "failed_waiter_metadata_contract_preserved",
+  "unit": "fungal-expanded-reconciliation-mafft-recovery-readback-20261006-v2.service",
+  "failure": "KeyError: 'created' while the generic dependency verifier checked the active producer launch record",
+  "producer_unchanged": true,
+  "remedy": "Add the producer PID creation timestamp and exact cmdline to its launch record, update the pinned waiter plan, and launch a fresh v2 waiter unit.",
+  "scope": "The reader command did not run and created no output. This records orchestration metadata only."
+}

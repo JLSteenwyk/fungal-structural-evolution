@@ -2,12 +2,19 @@
   "status": "launched_fresh_isolated_mafft_reconciliation_recovery_with_verified_open_file_limit",
   "unit": "fungal-expanded-reconciliation-mafft-recovery-20261006-v2.service",
   "pid": 1079509,
+  "created": 1791318319.47,
   "invocation_id": "a410bf76a9564140b4fab6292b23f2b0",
   "started_local": "2026-10-06T16:25:20-04:00",
   "plan": "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_plan.json",
   "plan_sha256": "a28e471eb98a3379e8ad73cff0767c708efb71782a1bd44559e02ef9038b7c03",
   "output": "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v2",
   "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_expanded_reconciliation_mafft_recovery_v1.py",
+    "--plan",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_plan.json"
+  ],
+  "cmdline": [
     "/home/bizon/anaconda3/bin/python",
     "scripts/run_expanded_reconciliation_mafft_recovery_v1.py",
     "--plan",

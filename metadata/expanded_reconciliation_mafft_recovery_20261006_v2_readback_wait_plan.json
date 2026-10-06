@@ -1,0 +1,21 @@
+{
+  "dependencies": [
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_launch.json"
+  ],
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+    "scripts/readback_expanded_reconciliation_mafft_recovery_v1.py",
+    "--plan",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_plan.json"
+  ],
+  "pins": {
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_launch.json": "b61323376813fa77244c938669b47f2527688879fa05b967ac948d253aa60dc2",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_plan.json": "a28e471eb98a3379e8ad73cff0767c708efb71782a1bd44559e02ef9038b7c03",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_plan.json": "57fcf94ee8ca4e878d3b310dcede1204ad0a6e67cc57ff9b73a48206d7fb21a8",
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/readback_expanded_reconciliation_mafft_recovery_v1.py": "fd992651b3ef3cbf09504cd61e3b22e035a48ca7b0919ce4ffdeb256c1446fb1",
+    "scripts/audit_hog_output_identities.py": "1428e8eb891f4efe2a362f59da9617b8fa006330301a818702251fc52e8f135f",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4"
+  },
+  "scope": "Wait for the exact fresh v2 MAFFT reconciliation service and its journal-verified successful completion, then run one independent output readback. The dependent reader refuses an incomplete producer receipt. No source or producer output is modified, and no biological reconciliation conclusion is accepted by this handoff."
+}
