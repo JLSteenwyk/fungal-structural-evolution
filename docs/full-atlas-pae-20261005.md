@@ -161,6 +161,34 @@ Execution configuration records the exact reproducible bounded command; scripts
 reject existing output roots. Re-execution requires separate versioned plans and
 roots, rather than overwriting retained evidence.
 
+## Queued full missing-queue independent readback
+
+The corrected complete-queue downloader remains the only process that can add
+new PAE cache files. Its subsequent independent reader is already queued as
+`fungal-full-atlas-missing-pae-readback-20261006-v1.service`, with an immutable
+[wait plan](../metadata/full_atlas_missing_pae_readback_wait_plan_20261006_v1.json)
+and [launch record](../metadata/full_atlas_missing_pae_readback_launch_20261006_v1.json).
+The waiter pins the exact live downloader launch, producer plan, resource
+contract, reader and controller sources. It checks the downloader's original
+PID/creation time/command while live, then requires original systemd completion
+resource evidence and a successful terminal state before the readback begins.
+
+The reader independently replays all 2,905,096 ordered queue rows. For every
+successful retrieval it compares the queued source identity with the retained
+receipt, verifies receipt/compressed/decompressed SHA-256 values and byte counts,
+then checks the JSON container, square dimensions, finite/nonnegative entries
+and the established AFDB export bound. Retrieval failures remain explicit and
+their error-type census must match the producer. It does not call the downloader
+or import its PAE validator. Literal malformed-container/shape/value/hash
+controls and a real retrieved receipt/matrix check pass before queueing.
+
+The waiting and reader stage is limited to **2 CPU equivalents, 16 GiB memory,
+zero swap and no GPU**. It has a 12 GiB address-space cap, three-day CPU/wall
+limits and a fresh compact output root. The 4--72-hour readback range is
+uncalibrated. This check does not symmetrize PAE, determine confidence or
+domain-context eligibility, assess predictive accuracy, add structures, or
+support biological inference.
+
 Whole-source coordinate auditing and full domain extraction remain running:
 at 20:20 UTC, 562,000 models/214,165,994 residues are audited and 610,020 domain
 intervals exported. Full timing has 1,231 producer checkpoints and 16 actual

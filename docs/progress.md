@@ -1,5 +1,24 @@
 # Progress and evidence
 
+## October 6 UTC: full missing-PAE queue reader queued behind active downloader
+
+The complete missing-AFDB PAE downloader remained live at the handoff checkpoint
+and had verified 144,000 queue rows with zero recorded failures. A separate
+independent reader is now waiting for the exact downloader's original successful
+completion evidence. It will replay all 2,905,096 queue rows, validate every
+successful receipt, compressed/decompressed digest and matrix shape/value
+contract, and retain any failure rows as explicit outcomes. The reader passed
+literal corruption controls and an independent real-matrix/receipt verification
+before queueing.
+
+The [launch record](../metadata/full_atlas_missing_pae_readback_launch_20261006_v1.json)
+and [wait plan](../metadata/full_atlas_missing_pae_readback_wait_plan_20261006_v1.json)
+bind the active producer identity and cap the dependent stage at 2 CPUs, 16 GiB
+memory, no swap and no GPU. The downloader remains the sole cache writer;
+neither process adds protein structures. Complete retrieval/readback, confidence
+and context calibration, downstream structural clustering, phylogenetic models
+and all eight biological aims remain unfinished.
+
 ## October 6 UTC: full-atlas database independent reader queued behind live producer
 
 The complete mixed-source atlas database producer remains live and continues its
