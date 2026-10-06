@@ -85,6 +85,12 @@ The original full audit, invocation `3406863b6435439a92f2abb25d21947d`,
 completed with actual exit zero in 40,963.44 seconds. Its immutable execution
 closure is
 [`metadata/full_atlas_coordinate_profiles_execution_20261005_v1.json`](../metadata/full_atlas_coordinate_profiles_execution_20261005_v1.json).
+The original wrapper start and terminal records, plus the recorded external
+tool-session identity, are independently bound in
+[`metadata/full_atlas_coordinate_profiles_transport_20261006_v1.json`](../metadata/full_atlas_coordinate_profiles_transport_20261006_v1.json).
+The external wait terminal itself was not retained; the closure uses the
+original bounded execution receipt and matching systemd terminal instead of
+inventing one.
 The
 [immutable plan](../metadata/full_atlas_coordinate_profiles_plan_20261005_v1.json),
 [bounded resources](../metadata/full_atlas_coordinate_profiles_resources_20261005_v1.json),
