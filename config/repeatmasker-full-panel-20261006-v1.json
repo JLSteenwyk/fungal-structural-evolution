@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "stage": "full_panel_repeatmasker_annotation",
+  "repeatmodeler_config": "config/repeatmodeler-full-panel-20261006-v1.json",
+  "output_root": "results/genome-architecture/repeatmasker-20261006-v1",
+  "taxa": 526,
+  "threads_per_taxon": 8,
+  "maximum_concurrent_taxa": 12,
+  "memory_per_taxon_gb": 32,
+  "dfam_fungal_consensus": {
+    "path": "data/references/dfam-4.0-curated-consensus-20261006/derived/dfam40_fungi_ancestors_curated.fasta",
+    "sha256": "7a319010dbc2079023d43cfca71f4e218a74a3ba3bf22af54a1c633a7ae48e0f",
+    "families": 9,
+    "source_audit": "metadata/dfam_fungal_library_20261006_v1.json"
+  },
+  "repeatmasker": {
+    "version": "4.2.4",
+    "engine": "RMBlast",
+    "options": ["-pa", "8", "-s", "-xsmall", "-gff", "-a", "-no_is"]
+  },
+  "launch_gate": "Do not submit before the independent RepeatModeler full-panel audit verifies one completed classified library for each of the 526 manifest taxa.",
+  "scope": "All manifest taxa remain eligible. The per-taxon library combines its completed RepeatModeler 2.0.9 classified consensus with Dfam 4.0 fungi/ancestor curated consensus. Output is repeat-instance evidence, not evidence of rearrangement, causality, or protein structural change."
+}
