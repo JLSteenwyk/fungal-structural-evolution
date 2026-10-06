@@ -1,0 +1,31 @@
+{
+  "status": "passed_independent_hydrophobin_profile_inventory_readback",
+  "counts": {
+    "profile_hits": 1292,
+    "candidate_rows": 1318,
+    "unique_sequences": 1290,
+    "taxa": 220
+  },
+  "profile_row_counts": {
+    "PF01185.24": 1064,
+    "PF06766.17": 253,
+    "PF29785.1": 1
+  },
+  "model_status_counts": {
+    "no_source_model": 515,
+    "source_model_present": 803
+  },
+  "source_hashes": {
+    "results/domains/full-annotation-catalog-v1/annotation_shards.tsv": "f40cc425d70e6bfe130d59d1a5c94d90764e8a4ed08ba7d8b29882f4d5f58fc8",
+    "results/domains/full-domain-database-v1/domains.sqlite": "ec509a6fce0f18446011d086280e839dcb116b269c729c6dcae1143c8faf5919",
+    "results/domains/whole-proteome-structure-domain-registry-20261005-v1/structure_domains.sqlite": "f371b80ef3da2847f5f5223a22a4922561f1fa9d891828650ed6dd7c583716b0",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/domains/hydrophobin-profile-inventory-20261006-v1/hydrophobin_candidates.tsv": "c3122f765fe4fd02042db988e66e041445c1cf2e8d10fbb9c5aba56c48b8fede",
+    "metadata/hydrophobin_profile_inventory_20261006_v1.json": "700a02d168aa9418b558cbb7f44acde763d0f5c64e4bc767d298d0e716491743",
+    "results/domains/full-annotation-snapshot-v1/chunk-036.annotated.tsv.gz": "ae88663be42e422ae063fdf62edc0b4908a2c63d29a977df9dc9ef6d5b62117a",
+    "results/domains/full-annotation-snapshot-v1/chunk-035.annotated.tsv.gz": "f37f5d7dc6c4107b63b5b6cd571ba4fe4b2ed31bb00a2c3823e00a9a982c4e0f",
+    "results/domains/full-annotation-snapshot-v1/chunk-049.annotated.tsv.gz": "18669a39adfbddbf12f1ed28a1d28693b3f3d1954496764e33842a25cef5cd9e"
+  },
+  "script_sha256": "355a6e4138939a46ae7aa44b0faf0ba75235b0046c167cafa672b610e841fe9a",
+  "scope": "Every exact hit to the three named profiles was independently rescanned from the catalog shards and every candidate row rebuilt from the frozen manifest, full-domain protein links and source-structure registry. This checks inventory provenance, not homology, structure quality, functional annotation, gene-copy number or evolutionary interpretation."
+}
