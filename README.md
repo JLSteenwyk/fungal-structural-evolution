@@ -151,9 +151,13 @@ now independently checks all 1,644 native attempts and 16,440 files. Its
 and identifies 96 files above the old 2 GiB limit. The full attempt table,
 file ledger, exact arithmetic and original producer/reader closure are retained.
 These uncalibrated scenarios do not establish a finish time, long-run memory
-safety or adequate posterior. Full-horizon construction/readers, derived-output
-costs and safe aggregate disk limits remain required; no long sampler is
-launched or queued here.
+safety or adequate posterior. The [full derived-output census](docs/ancestral-derived-horizon-costs-20261006.md)
+now checks all 6,477 non-native files and 48,180 array members. Arrays add about
+0.495 TB under explicit observed-role and labelled missing-export resource
+scenarios, bringing native plus arrays to about 1.44 TB before metadata growth
+and temporary products. The 14 numeric reviews remain excluded. Full-horizon
+construction/readers and safe aggregate disk limits remain required; no long
+sampler is launched or queued here.
 
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,

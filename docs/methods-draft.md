@@ -1,5 +1,28 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 6 UTC: complete derived-output storage census
+
+Hash and measure every non-native leaf in the original V6 and separate V10
+run trees, preserving original native failures and numeric-review exclusions.
+Check 4,818 projection files / 48,180 members against closed per-frame shapes,
+dtypes and raw-data digests. The producer streams NPY member bytes; a separate
+reader loads NumPy values and reads NPY header lengths directly. Shared NumPy
+serialization and prior native-frame integrity proofs remain dependencies.
+All 6,477 derived files / 1,813,085,268 bytes pass. Both successful original
+API/source/invocation closures and the first reader's retained label failure
+are documented.
+
+Scale observed-role array bytes by 1,001/3 with exact integer ceilings. For the
+14 baselines without exports, record the largest observed single-frame size
+from an integrity-checked same-input/prior peer as a resource-only proxy.
+Keep donor identity explicit and scientific imputation false. These scenarios
+add 494,825,481,221 array bytes to the existing 945,474,558,095 native-byte
+scenario: 1,440,300,039,316 bytes before metadata growth, temporary products and
+filesystem overhead. No upper bound, biological admission, posterior adequacy
+or long-run launch is inferred.
+
+[Complete procedure and original evidence](ancestral-derived-horizon-costs-20261006.md).
+
 ## October 6 UTC: current full ancestral cost census independently verified
 
 The new census and separate reader check all 1,644 native attempts and 16,440

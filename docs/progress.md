@@ -1,5 +1,34 @@
 # Progress and evidence
 
+## October 6 UTC: full derived ancestral storage independently checked
+
+Completed the derived storage census across all 1,644 current attempts and
+6,477 non-native files / 1,813,085,268 bytes. The independent V2 reader verifies
+all 4,818 NPZ files and 48,180 array members, with exact original producer and
+reader API/source/invocation closure. The first reader's provenance-label error
+is preserved; its one-line V2 correction leaves all array and numeric checks
+unchanged. The public 1,644-attempt table is source-identical.
+
+For 10,000 iterations at the ten-iteration frame interval, measured-role arrays
+project to 478,061,155,643 bytes. Fourteen labelled same-input/prior peer resource
+proxies add 16,764,325,578 bytes without admitting excluded draws. Native plus
+arrays project to 1,440,300,039,316 bytes before growing metadata, temporary
+products and filesystem overhead. These scenarios are not bounds or launch
+admission. Full-horizon streaming readers, memory/CPU/file bounds and aggregate
+disk monitoring remain required; no long sampler is launched or queued.
+
+The preceding full native census made progress and published 47 owned files /
+27,752,315 bytes at ac68f9e9e62fa2997efd1ae195f9d1e3f14bc1aa, with exact
+remote/committed-byte verification. The intervening user status check verified
+live original jobs. At 03:22 UTC, original CPU work reports 2,396,000 coordinate-
+audited models, 2,357,234 exported domain intervals, 47,500 newly verified PAE
+matrices and 1,524/4,340 timing producer cohorts, with no reported failures.
+Independent full atlas/domain/timing closure is pending. Weighted biological
+fits remain zero. The full 501-fungal-entry plus 25-outgroup project and all
+eight aims remain unfinished; GPU prediction remains paused.
+
+[Full derived census, assumptions and reproduction](ancestral-derived-horizon-costs-20261006.md).
+
 ## October 6 UTC: current full ancestral cost census independently verified
 
 The new census and separate reader check all 1,644 native attempts and 16,440

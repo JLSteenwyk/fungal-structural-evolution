@@ -1,0 +1,49 @@
+{
+  "status": "retained_original_reader_provenance_label_failure",
+  "checked_utc": "2026-10-06T03:23:48.493455+00:00",
+  "original_tool_session_id": 17168,
+  "actual_original_terminal_exit_code": 1,
+  "unit": "fungal-ancestral-derived-horizon-cost-readback-20261006-v1",
+  "invocation_id": "132f2cacef8b47d0948f4a0a282d4842",
+  "wrapper": {
+    "pid": 718082,
+    "created": 1791256940.1,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/ancestral_derived_horizon_cost_resources_20261006_v1.json",
+      "--execution",
+      "metadata/ancestral_derived_horizon_cost_readback_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/ancestral_derived_horizon_cost_readback_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_ancestral_derived_horizon_costs_v1.py",
+      "--producer",
+      "metadata/ancestral_derived_horizon_cost_20261006_v1.json",
+      "--producer-transport",
+      "metadata/ancestral_derived_horizon_cost_transport_20261006_v1.json",
+      "--receipt",
+      "metadata/ancestral_derived_horizon_cost_readback_20261006_v1.json"
+    ]
+  },
+  "failure": "Reader expected direct completion-archive custody label; producer correctly found that archive already hash-bound in prior cost transport and labelled it closed_original_source.",
+  "correction": "Fresh V2 reader accepts either valid closed archive lineage while independently requiring the exact completion-archive hash. All byte/value/arithmetic/eligibility checks unchanged.",
+  "source_hashes": {
+    "metadata/ancestral_derived_horizon_cost_readback_execution_20261006_v1.json": "1e6789ee0f1776047e8317634183ce5775f0268cad7d9a73bf1108ca7ed66201",
+    "metadata/ancestral_derived_horizon_cost_readback_execution_20261006_v1/original-invocation-journal.jsonl": "bd94ec6d1a850a0d0ec380bb0fadc786e94fd190f70a91756d723cba879c9e46",
+    "scripts/readback_ancestral_derived_horizon_costs_v1.py": "06895f36ebda71d784a537b0048bbd0f81f2ea44f085e69077dafd2736030d67",
+    "scripts/readback_ancestral_derived_horizon_costs_v2.py": "5074a4f882e0c3ca710f52333662f51fd31ff4d88e2315901dc14ac503185416",
+    "metadata/ancestral_derived_horizon_cost_readback_failed_original_payloads_20261006_v1.json": "d5d951ab9fc778374de7edce47411e6b12fa49db1530a8cdb5d27e89bc5d4c1e",
+    "metadata/ancestral_derived_horizon_cost_readback_execution_20261006_v1/stderr.log": "a0462bf7b497fe4fc8af6a730a436a0d16a625f93da3482986581aadcb4bee1d",
+    "metadata/ancestral_derived_horizon_cost_readback_execution_20261006_v1/configuration.json": "24a73e99cb2e001e42b2840641e216e748f26cf628a482a050e1b24afaf76d02",
+    "metadata/ancestral_derived_horizon_cost_readback_execution_20261006_v1/process.json": "2a73399603e12403ec7757866426613dcff1de7a8a203ac6951c8a553fe3bbc4",
+    "metadata/ancestral_derived_horizon_cost_readback_execution_20261006_v1/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "producer_rerun": false,
+  "native_sampler_restarted": false,
+  "numeric_tolerances_changed": false,
+  "scientific_eligibility": false,
+  "posterior_qualified": false
+}

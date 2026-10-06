@@ -1,5 +1,19 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: derived-output resource requirement measured
+
+The full ancestral derived census and independent readback now cover 1,644
+attempts, 6,477 non-native files and 48,180 array members. The 10,000-iteration
+native-plus-array scenario is approximately 1.44 TB, with explicitly labelled
+resource proxies for 14 excluded numeric-review roles. Current metadata bytes
+are measured; future metadata growth and temporary products remain unestimated.
+Full-horizon streaming readers, memory/CPU/file limits, aggregate disk monitoring,
+posterior adequacy and biological framework acceptance remain open. All eight
+aims and complete prediction coverage remain unfinished; no long sampler or
+GPU prediction is launched by this census.
+
+[Verified full census and limitations](ancestral-derived-horizon-costs-20261006.md).
+
 ## October 6 UTC: current full ancestral cost census independently verified
 
 The new census and separate reader check all 1,644 native attempts and 16,440

@@ -1,5 +1,18 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: missing ancestral exports get resource proxies only
+
+Use the full derived census to supplement native-output disk estimates.
+Preserve all original failures and every numeric-review exclusion. Estimate
+resource needs for 14 missing-export roles from the largest observed frame of
+an integrity-checked peer with the same effective input and prior. Record the
+donor and label this a resource proxy, never a reconstructed draw or biological
+imputation. The native-plus-array scenario is about 1.44 TB before future
+metadata and temporary products. Full-horizon readers and aggregate disk
+safeguards remain required; no live cap, sampler or GPU configuration changes.
+
+[Full evidence and reproduction](ancestral-derived-horizon-costs-20261006.md).
+
 ## October 6 UTC: update long-horizon output limits from the full current census
 
 Retain all original failed attempts and separate diagnostic comparisons in the
