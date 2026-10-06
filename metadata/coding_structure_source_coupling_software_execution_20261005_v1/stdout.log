@@ -1,0 +1,28 @@
+{
+  "status": "passed_literal_coding_structure_source_coupling_contracts",
+  "checked_utc": "2026-10-06T00:00:15.787044+00:00",
+  "controls": [
+    "one_source_bound_exact_pair_preserves_code_and_no_admission",
+    "default_code_assumption_retained_without_admission",
+    "retained_no_exact_unmodified_genomic_cds_match",
+    "retained_exact_genomic_candidate_with_annotation_exception_requires_review",
+    "retained_multiple_exact_genomic_candidates_require_review",
+    "exact_genomic_dna_does_not_override_translation_mismatch",
+    "reject_product_identity",
+    "reject_header",
+    "reject_dna_digest",
+    "both_predictors_and_unresolved_gene_preserved_without_copy_admission",
+    "derived_span_does_not_replace_missing_original_target",
+    "missing_original_and_derived_sources_retained",
+    "alternative_not_assigned_is_not_a_claim_of_no_model",
+    "reject_model_sequence",
+    "reject_model_length",
+    "reject_model_identity",
+    "multiple_targets_preserved_as_product_review"
+  ],
+  "control_count": 17,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal source identity/header/hash/model binding, multiple/missing/derived evidence and no-admission controls. No real taxon subset, sequence translation, model prediction or biological inference."
+}

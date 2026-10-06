@@ -1,0 +1,19 @@
+{
+  "status": "passed_separate_coding_structure_full_reader_literal_source_integration",
+  "checked_utc": "2026-10-06T00:06:56.565287+00:00",
+  "literal_target_records": 2,
+  "literal_products": 2,
+  "selected_representatives": 1,
+  "preserved_unlinked_target_records": 1,
+  "preserved_alternatives": 1,
+  "separate_model_TSV_vs_SQLite": true,
+  "rejected_semantic_changes": [
+    "reject_self_consistent_hash_joined_status",
+    "reject_self_consistent_hash_original_mapping",
+    "reject_model_state_inconsistent_with_source_ids"
+  ],
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal synthetic complete source join plus three semantic source/output corruptions; every real526entry corpus record still requires full replay. No real taxon pilot, sequence translation, model inference or biological admission. CSV/JSON/gzip libraries and original evidence remain shared dependencies."
+}

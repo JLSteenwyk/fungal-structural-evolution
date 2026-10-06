@@ -1,0 +1,38 @@
+{
+  "unit": "fungal-full-coding-structure-source-coupling-20261005-v1.service",
+  "pid": 599251,
+  "created": 1791245949.55,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_coding_structure_source_coupling_resources_20261005_v1.json",
+    "--execution",
+    "metadata/full_coding_structure_source_coupling_execution_20261005_v1.json",
+    "--receipt",
+    "metadata/full_coding_structure_source_coupling_20261005_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_coding_structure_source_coupling_v1.py",
+    "--plan",
+    "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+  ],
+  "plan": "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+  "plan_sha256": "a57ffb8418be9ab1cc65e67ef90480d859239c396a3caa9b8e3a4e9d4b6386df",
+  "checked_utc": "2026-10-06T00:20:13.896068+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "a61cd225676f47339e5e06573a5ecf6c",
+  "original_tool_session_id": 21137,
+  "source_hashes": {
+    "metadata/full_coding_structure_source_coupling_execution_20261005_v1/configuration.json": "19cf68093a1723881154548e25c3753b8d5bc976b272738830e400ebd4197b0d",
+    "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json": "a57ffb8418be9ab1cc65e67ef90480d859239c396a3caa9b8e3a4e9d4b6386df",
+    "metadata/full_coding_structure_source_coupling_resources_20261005_v1.json": "26db3c03b25091672c3f884a66a31628356e57159466cc62f5edc96987c7d95b"
+  },
+  "scientific_eligibility": false
+}

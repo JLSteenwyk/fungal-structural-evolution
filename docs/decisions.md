@@ -1,5 +1,22 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: join original coding evidence to structures without replacing source targets
+
+Retain all 526 entries, all original CDS targets, every original product and
+all 111,898 alternatives when joining genomic comparison, inherited strict
+translation and representative model availability. Exact annotation-derived
+codon spans are separate evidence; they cannot overwrite failed or missing
+original-target classifications. Genetic-code assumptions and gene/isoform
+ambiguities remain attached and no source agreement grants selection eligibility.
+
+Use the closed atlas SQLite database for production and its complete TSV for
+the independent reader, with exact protein identity, length and sequence-hash
+checks. Inherited translation and original genomic evidence remain shared
+dependencies, not new independent translation. Require actual original
+producer and reader API/native/source/journal closure before final linkage
+counts. No fungal GPU prediction is resumed.
+[Complete scope and evidence](full-coding-structure-source-coupling-20261005.md).
+
 ## 2026-10-05: compare V10 on the entire original full-input matrix
 
 Run all 24 source-bound roles with unchanged inputs, seeds, priors and native

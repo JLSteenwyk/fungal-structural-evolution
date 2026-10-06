@@ -1,0 +1,240 @@
+{
+  "status": "verified_original_full_coding_structure_source_coupling_runtime",
+  "checked_utc": "2026-10-06T00:20:14.128455+00:00",
+  "original_handle": {
+    "unit": "fungal-full-coding-structure-source-coupling-20261005-v1.service",
+    "pid": 599251,
+    "created": 1791245949.55,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_coding_structure_source_coupling_resources_20261005_v1.json",
+      "--execution",
+      "metadata/full_coding_structure_source_coupling_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/full_coding_structure_source_coupling_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_coding_structure_source_coupling_v1.py",
+      "--plan",
+      "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+    ],
+    "plan": "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+    "plan_sha256": "a57ffb8418be9ab1cc65e67ef90480d859239c396a3caa9b8e3a4e9d4b6386df",
+    "checked_utc": "2026-10-06T00:20:13.896068+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "a61cd225676f47339e5e06573a5ecf6c",
+    "original_tool_session_id": 21137,
+    "source_hashes": {
+      "metadata/full_coding_structure_source_coupling_execution_20261005_v1/configuration.json": "19cf68093a1723881154548e25c3753b8d5bc976b272738830e400ebd4197b0d",
+      "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json": "a57ffb8418be9ab1cc65e67ef90480d859239c396a3caa9b8e3a4e9d4b6386df",
+      "metadata/full_coding_structure_source_coupling_resources_20261005_v1.json": "26db3c03b25091672c3f884a66a31628356e57159466cc62f5edc96987c7d95b"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_coding_structure_source_coupling_launch_20261005_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.48,
+    "children": [
+      {
+        "pid": 599253,
+        "created": 1791245950.0,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 8.29
+      },
+      {
+        "pid": 599362,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 55.45
+      },
+      {
+        "pid": 599363,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 55.440000000000005
+      },
+      {
+        "pid": 599364,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 55.44
+      },
+      {
+        "pid": 599365,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 55.410000000000004
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "d552c32bca0e314848ecb8048ea203626984ae42330a331d2c494e7898693da9",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 858312704,
+      "memory.peak": 858550272,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 599253,
+        "created": 1791245950.0,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "rss_bytes": 22966272,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 599362,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "rss_bytes": 73146368,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 599363,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "rss_bytes": 94437376,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 599364,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "rss_bytes": 88375296,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 599365,
+        "created": 1791245957.63,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_coding_structure_source_coupling_v1.py",
+          "--plan",
+          "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json",
+          "--receipt",
+          "metadata/full_coding_structure_source_coupling_20261005_v1.json"
+        ],
+        "rss_bytes": 84901888,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 21137,
+  "expected_taxa": 526,
+  "source_products": 5927745,
+  "selected_representatives": 5815847,
+  "target_records": 5923039,
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "e71a459f5337f98bb20bf96c0d74d9edf2837cbec413625e65e696051502d7d5",
+    "value": {
+      "stage": "full_coding_structure_source_coupling",
+      "completed_taxa": 133,
+      "expected_taxa": 526,
+      "source_products": 1420048,
+      "elapsed_seconds": 55.77614802494645
+    }
+  },
+  "output_root_present": true,
+  "source_hashes": {
+    "metadata/full_coding_structure_source_coupling_execution_20261005_v1/configuration.json": "19cf68093a1723881154548e25c3753b8d5bc976b272738830e400ebd4197b0d",
+    "metadata/full_coding_structure_source_coupling_plan_20261005_v1.json": "a57ffb8418be9ab1cc65e67ef90480d859239c396a3caa9b8e3a4e9d4b6386df",
+    "metadata/full_coding_structure_source_coupling_resources_20261005_v1.json": "26db3c03b25091672c3f884a66a31628356e57159466cc62f5edc96987c7d95b",
+    "metadata/full_coding_structure_source_coupling_launch_20261005_v1.json": "d552c32bca0e314848ecb8048ea203626984ae42330a331d2c494e7898693da9",
+    "metadata/full_coding_structure_source_coupling_original_initial_tool_20261005_v1.json": "ae324693085f71e0d1553bfe92ddd0c04fc94ef8858704ed87daff8ba45a7338",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_coding_structure_source_checkpoint_v1.py": "6ac79e08a3cc72a2e67d0c9be1fe70033abca8809a4c7b0ad69738709b2c8325"
+  },
+  "scientific_eligibility": false,
+  "inherited_translation_independently_recomputed": false,
+  "biological_codon_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Original API/wrapper/native identity and cgroup resources, immutable launch and configuration bindings, partial source-join progress only. The full source plan is bound here, not independently replayed by this observer. No original API terminal, full source/output closure, independent every-record join replay, translation, confidence, homology, taxonomy, copy or evolutionary admission. No restart or mutation of original work."
+}

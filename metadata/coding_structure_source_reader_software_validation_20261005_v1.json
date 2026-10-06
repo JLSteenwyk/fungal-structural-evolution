@@ -1,0 +1,32 @@
+{
+  "status": "passed_separate_coding_structure_full_reader_literal_source_integration",
+  "checked_utc": "2026-10-06T00:06:56.565287+00:00",
+  "literal_target_records": 2,
+  "literal_products": 2,
+  "selected_representatives": 1,
+  "preserved_unlinked_target_records": 1,
+  "preserved_alternatives": 1,
+  "separate_model_TSV_vs_SQLite": true,
+  "rejected_semantic_changes": [
+    "reject_self_consistent_hash_joined_status",
+    "reject_self_consistent_hash_original_mapping",
+    "reject_model_state_inconsistent_with_source_ids"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_coding_structure_source_reader_v1.py": "239fdbb87ab3cd37541fc2080954f59d5112d193da6671565cbbeaa8a57f20a4",
+    "scripts/readback_full_coding_structure_source_coupling_v1.py": "84471e517585b7483453f2303a7058bc07fb84d39eb41ee072e5e6e6aeb238c1",
+    "scripts/coding_structure_source_coupling_v1.py": "59561e906e467009e41bf60405c4ecbbeafde1d705d765b3c0a63aa459d9e667",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/translation.tsv": "30a2199c2ff6c654ee994153a2494d79d997f8d9d7bcdab8d3226a6e99e10f2d",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/source_models.sqlite": "71e4c6fe24560c4f270389ed8037dcc5d1bbe8211f90ca4f9a77d505d091f5a0",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/original_products.jsonl.gz": "6c8cb090034f5043f9c6df10aa6193166ae8d58032198321034927602adfede7",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/source_models.tsv": "d0efc2e8a02df0236407bbd1f357d0449a607125b6844302e8ef73de9c239116",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/original_targets.jsonl.gz": "c640c12402067126a2ef21ebd816614c2e5f43086bda1a35b68b470c41ec3af9",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/changed_models.tsv": "2f6344ceeacc0e6e7ccf6e2d0e50c81f79745984020c74654052e311ac417004",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/coupled/literal/target_evidence.jsonl.gz": "ae8e8470cb30e0e5d81a380fcde686d82c6ddf33ecf23d48dd5de0711ab01afa",
+    "data/software_audits/coding-structure-source-reader-20261005-v1/coupled/literal/product_evidence.jsonl.gz": "8ffb817e6500a497eb10de7538fc687d218dd9c120cb4e15406b06d1d4148b61"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal synthetic complete source join plus three semantic source/output corruptions; every real526entry corpus record still requires full replay. No real taxon pilot, sequence translation, model inference or biological admission. CSV/JSON/gzip libraries and original evidence remain shared dependencies."
+}

@@ -1,5 +1,44 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 6, 00:29 UTC: complete coding-sequence and structure source linkage
+
+All 526 entries, 5,927,745 original products and 5,923,039 original CDS targets
+now join the completed genomic comparison, inherited strict-translation audits
+and the full structural availability atlas. Actual original producer 21137
+and independent reader 40401 exit zero; whole wrapper messages, native/source
+bindings and invocation start/end close. The reader replays every original
+record and uses the complete model TSV instead of producer SQLite. Seventeen
+producer controls and three separate-reader semantic controls pass. The
+synthetic controls do not conduct a real taxon pilot or independent translation.
+
+The final handoff merges 3,227 bindings and publishes all 526 taxon rows.
+**2,952,711 representatives have an available model plus original genomic and
+inherited strict-translation agreement**; 66,837 modeled representatives need
+original-CDS review and 121 have only separate derived translation evidence.
+All 111,898 alternative products, genetic-code assumptions, missing sources
+and gene/isoform ambiguities remain explicit. Derived codon spans never replace
+original publisher targets. Existing translation audits are inherited, not
+independently retranslated here. The descriptive PNG/PDF figure recounts every
+taxon/status/model cell; protein-weighted coverage is not an evolutionary effect.
+[Complete method, counts and evidence](full-coding-structure-source-coupling-20261005.md).
+
+The previous goal work made progress through source/software qualification and
+complete source-plan freezing. The intervening inventory check was a verified
+wait on original coordinate/PAE processes. At 00:18 UTC, coordinate profiling
+reaches 1,540,000 models and new PAE retrieval 26,800 matrices without recorded
+failures. At 00:29 UTC, the original V10 comparison has four of 24 native roles
+completed with zero exits; the full weighted timing run reports 1,408 cohort
+checkpoints and 17 live native processes, with no recorded failure files.
+These remain running, and neither observation establishes full completion.
+
+Family-specific codon alignment/divergence, genetic-code review, homology and
+copy checks, confidence/predictor calibration, accepted phylogenetic/dating
+frameworks and adequate ancestral uncertainty remain required. Full weighted
+biological fits remain zero, all eight aims are incomplete and GPU prediction
+stays paused. This completes a source-linkage dependency, not selection tests
+or the full comparative structural-genomics project.
+
+
 ## October 5, 23:43 UTC: complete V10 full-input matrix running
 
 The V10 latent-alpha logger now runs against all 24 original full-input

@@ -22,6 +22,19 @@ original API/native/journal closure. All 526 taxon dispositions are published;
 66,481 CDS targets without an exact genomic match remain explicit. Software retains 19 producer and 18
 independent-reader offline controls. These stages add annotation controls, not structures or inferred events.
 
+The [full coding-sequence/structure source join](docs/full-coding-structure-source-coupling-20261005.md)
+has completed across all 526 entries and all original products/CDS targets.
+It connects genomic comparison outcomes, inherited strict-translation evidence
+and representative model availability while retaining all 111,898 alternatives.
+Original publisher CDSs and separate annotation-derived codon evidence remain
+distinct. Seventeen producer controls, separate reader integration and full
+independent replay pass, with actual original producer/reader execution and
+source/journal closure. The handoff binds 3,227 files and publishes all 526
+taxon rows: 2,952,711 representatives have a model plus original genomic/strict-
+translation agreement; another 66,837 modeled representatives require review.
+This is source linkage for later codon/structure analyses, not selection
+eligibility or an independent retranslation of the existing audits.
+
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized
@@ -679,7 +692,9 @@ and independent parental purity remain unverified.
 |---|---|---|
 | Completed local predictions | 25,322 ESMFold models across five cohorts, preserving seven prediction configurations | Remaining marker gaps and broader proteome coverage |
 | Combined marker availability | September 28 frozen-cache refresh and full reverse-log check leave 3,639 marker/protein records without cached models, representing 3,626 unique sequences; unchanged from September 25 | Availability precedes confidence filtering and is not proteome-wide coverage |
-| Whole-proteome AlphaFold catalog | 1,910,138 models linked to 1,955,694 of 5,815,847 representative proteins (33.63%); full catalog and old/new comparison readbacks passed | Source-specific coverage excludes local ESMFold; confidence qualification and comparative atlas analyses remain incomplete |
+| Whole-proteome AlphaFold catalog | Refreshed full catalog: 2,935,733 models linked to 2,994,868 of 5,815,847 representative proteins (51.5%); full catalog and old/new comparison readbacks passed | Source-specific coverage excludes local ESMFold; confidence qualification and comparative atlas analyses remain incomplete |
+| Combined structural availability | Full independent union: 2,961,055 AFDB/ESMFold models, 3,019,669 modeled representatives (51.9%), all 526 entries retained | 2,796,178 representatives lack either source; confidence/PAE and predictor accuracy qualification remain pending |
+| Coding and structure source agreement | Full original producer/reader closure, all 526 taxon rows; 2,952,711 representatives have a model plus original genomic/inherited strict-translation agreement | Genetic-code review, orthology/copy checks, codon alignment/divergence and selection inference remain pending |
 | Complete ESMFold paired inputs | Full input readback passed for 122 markers, 294 taxa and 6,758,598 observed paired AA/3Di cells; all 488 fits and their audit completed | Resampling and evolutionary integration |
 | Refreshed AlphaFold marker fits | Verified 125-marker collection: 500 fits from 95 unchanged and 30 refitted markers; 61,893 paired branch rows | Full 75,000-draw resampling, native audit and [warning census](docs/afdb-paired-resampling-review-20260928.md) completed; branch-information checks and calibrated evolutionary tests remain |
 | Direct geometry and fitted tree paths | 2,527,033 pairs across 122 markers; all 10,108,132 tree-path values and 1,464 descriptive rank rows checked | Geometry numerically sampled one pair per marker; phylogenetic dependence, uncertainty and biological acceleration tests remain |

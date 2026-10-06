@@ -1,5 +1,18 @@
 # Coding-sequence acquisition and validation
 
+The [full coding/structure source join](full-coding-structure-source-coupling-20261005.md)
+has completed across all 526 entries, all 5,927,745 original products and all
+5,923,039 original CDS targets. It joins the completed genome-to-CDS comparison,
+existing strict-translation classifications and full representative model
+availability. All 111,898 alternative products and separate derived codon
+evidence remain explicit. Full reader preparation and 17 producer/three
+reader semantic controls pass. Every-row independent replay and actual original
+producer/reader API/native/source/journal closure are complete. All 526 taxon
+rows and 3,227 bindings are published; 2,952,711 modeled representatives have
+original genomic/inherited strict-translation agreement. These joins do not retranslate the inherited
+audits or grant codon-selection eligibility. Earlier acquisition checkpoints
+below describe their original observation times.
+
 The selection analyses require coding sequences tied to the same assembly, annotation and protein identifiers as the structural and orthology inputs. Acquisition has started for all **519 NCBI-backed taxa** in the 526-taxon working manifest. Every CDS URL must have the same assembly directory and prefix as its recorded protein FASTA. The prelaunch plan permits two download/validation workers, 50 GB additional disk and approximately 0.5–8 hours on the existing host; these are planning allowances, not measured completion costs. No paid resources are used.
 
 ```bash

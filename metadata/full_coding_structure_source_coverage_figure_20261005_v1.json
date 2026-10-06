@@ -1,0 +1,38 @@
+{
+  "status": "complete_descriptive_full_coding_structure_source_coverage_figure",
+  "checked_utc": "2026-10-06T00:29:16.217767+00:00",
+  "taxa": 526,
+  "representative_proteins": 5815847,
+  "grouped_counts": {
+    "ingroup": {
+      "original_target_genome_agrees_and_inherited_strict_translation_exact": 2720188,
+      "original_target_review_or_no_strict_translation_agreement": 58224,
+      "no_original_target_with_separate_derived_translation_evidence": 0,
+      "no_available_model": 2653275,
+      "representatives": 5431687,
+      "entries": 501
+    },
+    "outgroup": {
+      "original_target_genome_agrees_and_inherited_strict_translation_exact": 232523,
+      "original_target_review_or_no_strict_translation_agreement": 8613,
+      "no_original_target_with_separate_derived_translation_evidence": 121,
+      "no_available_model": 142903,
+      "representatives": 384160,
+      "entries": 25
+    }
+  },
+  "source_hashes": {
+    "metadata/full_coding_structure_source_completed_20261005_v1.json": "9ea17f72fa1c161c6c9159bada102170e91898b1fa2c52ada6eac86295c3fdbe",
+    "metadata/full_coding_structure_source_taxon_dispositions_20261005_v1.tsv": "cc947de163aa72b2e3a71077ac0fc91357979a0e2ddef9af08ed1d9393b80013",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/plot_full_coding_structure_source_coverage_v1.py": "49da9ce73bce6f58a2058a13c65f34bff0b2283eab036a975fd3fa8d9c735dab"
+  },
+  "output_hashes": {
+    "docs/figures/full_coding_structure_source_coverage_20261005_v1.png": "e8cd116b0bc2cf2fa4f45949e087e0442de2829bd7d106cc16ddebc6cb0c1b78",
+    "docs/figures/full_coding_structure_source_coverage_20261005_v1.pdf": "092e108412d0a23ff887f1215059a565603d306bd9c645b274082a3e2d164d17"
+  },
+  "scientific_eligibility": false,
+  "matplotlib_version": "3.10.8",
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "All526taxon rows and every source cross-count independently recounted for a descriptive protein-weighted figure. No taxon-balanced estimate, biological replication, phylogenetic effect, independent translation, selection or predictor confidence/accuracy qualification."
+}
