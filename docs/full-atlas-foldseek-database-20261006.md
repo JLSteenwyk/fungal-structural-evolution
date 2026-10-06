@@ -221,3 +221,10 @@ and [v2 execution record](../metadata/full_atlas_foldseek_readback_execution_202
 retain the exact commands, cgroup limits, source hashes, exit dispositions and
 hashes of the locally retained logs. They are failure evidence only, not
 successful reader receipts.
+
+The v3 reader completed successfully in 148.99 seconds of wall time (15.15 GB
+observed child peak RSS). Its [receipt](../metadata/full_atlas_foldseek_readback_20261006_v3.json)
+matches the producer's 2,935,733 AFDB and 25,322 ESMFold models and their
+1,164,928,002 total residues. This is an infrastructure-integrity result; it
+does not independently reconstruct 3Di values or qualify structural homology,
+confidence, PAE, clustering or evolutionary inference.

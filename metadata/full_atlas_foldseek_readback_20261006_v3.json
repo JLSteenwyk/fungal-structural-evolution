@@ -1,0 +1,20 @@
+{
+  "status": "passed_independent_full_prediction_atlas_foldseek_native_record_readback",
+  "checked_utc": "2026-10-06T19:58:49.766981+00:00",
+  "counts_by_source": {
+    "AFDB": {
+      "models": 2935733,
+      "residues": 1152706482
+    },
+    "ESMFold": {
+      "models": 25322,
+      "residues": 12221520
+    }
+  },
+  "producer_receipt_sha256": "da1d4b6d2bcc8ed7ae38a5e7abd43468d0ea6a8752b8287710f1f60884fddcc5",
+  "producer_plan_sha256": "d0df422d54cb929eecc617fc779f4b0b8c866b1f91f09c682e7118cae2da133c",
+  "independent_parser_sha256": "b9055b84b70f68b587b0b6988a65b4835a091c585558e8a20d3df4b34d15b854",
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Independent native index/record parser checks every full-atlas lookup identity, amino-acid hash, 3Di record length/alphabet, and float32 coordinate dimensions/finiteness. Original-CIF geometry and 3Di reconstruction remain producer-validated dependencies; no clustering, homology, confidence calibration or evolutionary inference."
+}

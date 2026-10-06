@@ -1,0 +1,97 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=30064771072",
+    "--cpu=259200",
+    "--fsize=536870912",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_atlas_foldseek_database_v1.py",
+    "--producer-receipt",
+    "metadata/full_atlas_foldseek_database_20261006_v2.json",
+    "--producer-plan",
+    "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+    "--output",
+    "results/structural_clusters/full-prediction-atlas-database-readback-20261006-v3",
+    "--receipt",
+    "metadata/full_atlas_foldseek_readback_20261006_v3.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_atlas_foldseek_readback_resources_20261006_v3.json": "e316fd86ced74c0871abd822ff5503247124e0b7f7e6baa314ae71db80ca735b",
+    "scripts/readback_full_atlas_foldseek_database_v1.py": "b9055b84b70f68b587b0b6988a65b4835a091c585558e8a20d3df4b34d15b854",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "0f46805289574b60a63c2470a1d6c705",
+  "wrapper": {
+    "pid": 1006244,
+    "created": 1791316584.27,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_atlas_foldseek_readback_resources_20261006_v3.json",
+      "--execution",
+      "metadata/full_atlas_foldseek_readback_execution_20261006_v3.json",
+      "--receipt",
+      "metadata/full_atlas_foldseek_readback_20261006_v3.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_atlas_foldseek_database_v1.py",
+      "--producer-receipt",
+      "metadata/full_atlas_foldseek_database_20261006_v2.json",
+      "--producer-plan",
+      "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+      "--output",
+      "results/structural_clusters/full-prediction-atlas-database-readback-20261006-v3",
+      "--receipt",
+      "metadata/full_atlas_foldseek_readback_20261006_v3.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 259200,
+  "started_utc": "2026-10-06T19:56:25.356510+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T19:58:54.345028+00:00",
+  "child": {
+    "pid": 1006247,
+    "created": 1791316584.66,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=30064771072",
+      "--cpu=259200",
+      "--fsize=536870912",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_full_atlas_foldseek_database_v1.py",
+      "--producer-receipt",
+      "metadata/full_atlas_foldseek_database_20261006_v2.json",
+      "--producer-plan",
+      "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+      "--output",
+      "results/structural_clusters/full-prediction-atlas-database-readback-20261006-v3",
+      "--receipt",
+      "metadata/full_atlas_foldseek_readback_20261006_v3.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 148.9883000520058,
+  "child_cpu_seconds": 148.934459,
+  "child_peak_rss_bytes": 15148523520,
+  "receipt": "metadata/full_atlas_foldseek_readback_20261006_v3.json",
+  "receipt_sha256": "179da34eea6290b91a16a4476d5b944ef0d62a45cbc2dfbe8a35d6b596729bf5",
+  "artifacts": {
+    "metadata/full_atlas_foldseek_readback_execution_20261006_v3/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_atlas_foldseek_readback_execution_20261006_v3/configuration.json": "1b94dccf583b1e0532be156850e8b574fd9eab82fe476e0f5da7a96b6e220674",
+    "metadata/full_atlas_foldseek_readback_execution_20261006_v3/stdout.log": "179da34eea6290b91a16a4476d5b944ef0d62a45cbc2dfbe8a35d6b596729bf5",
+    "metadata/full_atlas_foldseek_readback_execution_20261006_v3/process.json": "0cfba5801daca5f3e23ec548ef7fe75887cb067bdf77bbf26735766b3cc401b4"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}
