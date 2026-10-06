@@ -13,6 +13,11 @@ checksum and original FamDB audit are pinned in the configuration. Distinct
 
 RepeatMasker 4.2.4 will use RMBlast with eight threads, sensitive mode,
 lowercase masking, GFF, alignment, and no bacterial insertion-sequence check.
+The installed FamDB version reads its data-directory setting from local
+`famdb.conf`, not an environment variable. The versioned configuration helper
+sets that path to the audited Dfam directory and writes a checksum receipt
+([`famdb_local_configuration_20261006_v1.json`](../metadata/famdb_local_configuration_20261006_v1.json))
+before RepeatMasker is eligible to launch.
 Each output will retain the original source FASTA linkage, combined-library
 hash, full command, `.out`, `.tbl`, `.gff`, and alignment outputs. Twelve
 concurrent tasks reserve 96 CPU threads and 384 GB RAM on the 192-core CPU

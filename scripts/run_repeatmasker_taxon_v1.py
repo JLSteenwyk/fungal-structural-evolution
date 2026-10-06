@@ -102,7 +102,7 @@ def main() -> None:
         subprocess.run(command, stdout=handle, stderr=subprocess.STDOUT, check=True)
     expected = [
         output_dir / "source.fasta.out", output_dir / "source.fasta.tbl",
-        output_dir / "source.fasta.gff", output_dir / "source.fasta.align",
+        output_dir / "source.fasta.out.gff", output_dir / "source.fasta.align",
     ]
     missing = [str(path) for path in expected if not path.is_file() or path.stat().st_size == 0]
     if missing:
