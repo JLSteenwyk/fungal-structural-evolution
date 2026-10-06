@@ -21,3 +21,15 @@ This validates the serialized follow-up arithmetic, candidate likelihoods,
 score checks, coefficient/covariance transforms and recovery lineage. It does
 not establish a global likelihood optimum, calibration, structural homology,
 or a biological sequence--structure conclusion. Those gates remain separate.
+
+## Complete fit/audit/follow-up closure
+
+The receipt-based closure subsequently bound the complete 75,070-input,
+375,350-disposition fit and audit census plus every 1,673 follow-up. Its
+[completion receipt](../metadata/full_whole_protein_optimization_completed_20261006_v2.json)
+records 527,371 bound source hashes, 41,835 independently replayed candidate
+likelihoods, and a maximum objective reconstruction error of
+`7.639755494892597e-11`. The hash archive is stored outside Git at
+`results/model_validation/full-whole-protein-optimization-closure-20261006-v2/`.
+Three original producer-service journals were verified; the collected v2
+reader is established by its immutable receipt and hash-checked manifest.

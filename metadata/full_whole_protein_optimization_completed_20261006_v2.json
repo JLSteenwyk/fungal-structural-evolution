@@ -1,0 +1,30 @@
+{
+  "status": "complete_verified_full_whole_protein_optimization",
+  "unique_inputs": 75070,
+  "full_dispositions": 375350,
+  "original_fit_status_counts": {
+    "ml_candidate_passed_numerical_optimization_checks": 373677,
+    "ml_candidate_requires_optimization_review": 1673
+  },
+  "flagged_fits": 1673,
+  "original_fit_errors_retained": 0,
+  "followup_status_counts": {
+    "numerical_followup_passed_pending_independent_readback": 1636,
+    "numerical_followup_requires_review": 37
+  },
+  "candidate_likelihoods_replayed": 41835,
+  "original_candidate_likelihoods_checked": 8257700,
+  "maximum_objective_error": 7.639755494892597e-11,
+  "full_hash_archive": "results/model_validation/full-whole-protein-optimization-closure-20261006-v2/completion_archive.json",
+  "full_hash_archive_sha256": "2fcaaa79884152975c6912927f5b5095607b9fd433b6215f96918182a548e4e9",
+  "bound_source_hashes": 527371,
+  "historical_source_hashes": 2,
+  "exact_process_journals_checked": 3,
+  "producer_receipt": "results/model_validation/whole-protein-full-flag-followup-20260930-v1/receipt.json",
+  "producer_receipt_sha256": "f0223d51a43764a850ce31394f0e850b4a4efb209261c62f61082a8ec8f6cdea",
+  "independent_readback": "results/model_validation/whole-protein-full-flag-readback-20261006-v2/receipt.json",
+  "independent_readback_sha256": "bbc4d2abc148843ed19f1b83249de7d0122307c4458ab22603c617b9c02d0ba1",
+  "completion_plan_sha256": "57dd48bc0dee245b513f381b3d13529607dee8d6f72d9141dbdf62acd6fc4e99",
+  "scientific_eligibility": false,
+  "scope": "Complete 75,070-input, 375,350-disposition whole-protein fit/audit census and all 1,673 numerical follow-ups. The v2 readback receipt is immutable completion evidence; three original producer journals remain independently archived. Historical checker hashes are retained without asserting their changed working-tree paths. No global optimum, model adequacy, calibration or biological inference is accepted."
+}
