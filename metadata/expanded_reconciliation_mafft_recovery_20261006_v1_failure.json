@@ -1,0 +1,20 @@
+{
+  "status": "failed_preflight_open_file_limit_preserved",
+  "failed_unit": "fungal-expanded-reconciliation-mafft-recovery-20261006-v1.service",
+  "producer_plan": "metadata/expanded_reconciliation_mafft_recovery_20261006_v1_plan.json",
+  "producer_plan_sha256": "7987b76a0d021eda8ae53dd2a72721f981f803ac5a895173c8da9ab9fc5a82f7",
+  "output": "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v1",
+  "terminal_state_sha256": "76c5ba168ea864965ecb42cee5591d2963b11cf5ffd5915c6c59e2cfafcf14d2",
+  "native_log_sha256": "7f613691e6357ab16ca664d622aab764449e49089b2f31096a4f45c6c6506732",
+  "observed": {
+    "native_exit_code": 0,
+    "controller_exit_code": 1,
+    "native_elapsed_seconds": 55.055237,
+    "required_open_files": 626,
+    "default_service_soft_open_file_limit": 1024,
+    "default_service_hard_open_file_limit": 1048576
+  },
+  "cause": "OrthoFinder returned zero after its own open-file preflight failed and emitted no mandatory final output. The recovery controller correctly rejected that zero exit.",
+  "verified_remedy": "A disposable user service with LimitNOFILE=4096:4096 reported resource.getrlimit(RLIMIT_NOFILE) as (4096, 4096). A fresh v2 output will use that per-service setting; no host-wide limit is changed.",
+  "scope": "This is an execution-environment correction. It does not validate reconciliation, HOGs, duplications, orthology or any biological conclusion."
+}

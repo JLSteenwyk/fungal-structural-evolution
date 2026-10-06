@@ -1,0 +1,31 @@
+{
+  "inputs": "results/orthology/expanded-reconciliation-inputs-complete-v2",
+  "output": "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v2",
+  "executable": ".cache/envs/orthofinder/bin/python",
+  "fixture_readback": "results/orthology/native-restart-traced-six-hour-fixture-v1/readback.json",
+  "result_name": "expanded_mafft_recovery_20261006_v2",
+  "task_stall_allowance_seconds": 21600,
+  "pins": {
+    "scripts/run_expanded_reconciliation_mafft_recovery_v1.py": "da51b1963fd91b85968d8865cc93b1e0eaaa4861b03ba390b6a7b75b9853165f",
+    "scripts/audit_busco_gene_copies.py": "215a511c68c9ebf10426cd535a6bf67ed923414cf0b480dcfefd73ac99a4ded4",
+    "scripts/run_orthofinder_with_progress.py": "8ac0384f63d70b0d04dbcdae84adbfd3acb64e8647920d5e13bd185fc8394210",
+    ".cache/envs/orthofinder/bin/python": "db59e0b50cc7507b5e976831935afaca74974699ed6389bc67aa49b923846387",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/receipt.json": "c502b9ebc25ff05b6395cb2fc7e41a325eed814a267624a938d4d2c32884fea2",
+    "results/orthology/expanded-reconciliation-inputs-complete-v2/readback.json": "7321da0448f5ca32c46f2ef945f4070bb05a4e1f55a52ecc02ccb465bf355000",
+    "results/orthology/native-restart-traced-six-hour-fixture-v1/readback.json": "20573dae3822c5263c239312dbcf87b2b05b18fc94cd911be32f378bc56cc3fa"
+  },
+  "resources": {
+    "search_threads": 8,
+    "analysis_workers": 4,
+    "cpu_quota_cores": 8,
+    "memory_max_gib": 128,
+    "open_file_soft_and_hard_limit": 4096,
+    "minimum_available_memory_gib": 192,
+    "minimum_free_disk_gib": 3072,
+    "emergency_free_disk_gib": 1024,
+    "output_planning_gib": [100, 2560],
+    "planning_wall_days": [0.5, 21],
+    "cost": "Existing local host only; no paid infrastructure"
+  },
+  "scope": "Fresh MAFFT-guide-only recovery after the preserved v1 output exposed a service-local open-file preflight failure. The v2 service sets LimitNOFILE=4096:4096, as verified in a disposable matching user service. It does not modify system-wide limits or the preserved v1/v2 prior outputs. Independent output readback and reconciliation sensitivity review remain required."
+}
