@@ -6,8 +6,9 @@ It identifies the historical amphioxus label as inconsistent with its deposited
 *B. belcheri* principal haplotype. This hybrid-derived outgroup provenance is
 separate from the two fungal hybrids below and does not prove a mixed-parental
 assembly. A versioned overlay and all 125 marker provenance slots are available,
-with every original input and all 25 outgroups retained. No unique fungal
-species count is accepted.
+with every original input and all 25 outgroups retained. The frozen analysis
+manifest has 501 distinct literal fungal species names, but that name-level
+screen does not establish formal species delimitation.
 
 The working dataset contains 501 fungal entries and 25 outgroups. Distinct labels
 or taxonomy IDs do not establish distinct biological species. The original

@@ -67,6 +67,12 @@ def main():
     unknown_lineages = sorted(set(fungal_paths) - FUNGAL_LINEAGES)
     if unknown_lineages:
         raise ValueError(f"Unexpected ingroup lineage prefixes: {unknown_lineages}")
+    fungal_species = [row["species_name"].strip() for row in analysis_rows if row["study_role"] == "ingroup"]
+    if any(not name for name in fungal_species):
+        raise ValueError("An ingroup entry lacks a literal species name")
+    duplicated_fungal_species = sorted(name for name, count in Counter(fungal_species).items() if count > 1)
+    if duplicated_fungal_species:
+        raise ValueError(f"Duplicated literal fungal species names: {duplicated_fungal_species[:5]}")
 
     exclusions = json.loads(args.exclusions.read_text())
     if not isinstance(exclusions, list):
@@ -91,6 +97,8 @@ def main():
         "candidate_rows": len(candidate_rows),
         "candidate_role_counts": dict(sorted(Counter(row["study_role"] for row in candidate_rows).items())),
         "analysis_identity_matches_candidate_rows": True,
+        "ingroup_literal_species_names": len(fungal_species),
+        "ingroup_literal_species_names_unique": True,
         "excluded_candidate": {
             "taxon_id": excluded_id,
             "species_name": candidate[excluded_id]["species_name"],

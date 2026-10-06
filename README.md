@@ -738,10 +738,12 @@ coefficients and conditional covariance with their exact source identities.
 Production awaits full optimization closure; numerical reviews and errors stay
 explicit, and inferential calibration remains required.
 
-The analyzed cohort contains **501 fungal entries and 25 outgroups** (526
-entries). The candidate manifest has 527 entries; *Saccharomyces jurei* is
-excluded from analysis because no usable annotated proteome was acquired. Twenty-one uncertain fungal labels and two curated hybrids remain
-explicit; these entries are not yet established as 501 unique fungal species.
+The analyzed cohort contains **501 fungal entries with 501 distinct literal
+species names and 25 outgroups** (526 entries). The candidate manifest has 527
+entries; *Saccharomyces jurei* is excluded from analysis because no usable
+annotated proteome was acquired. Twenty-one uncertain fungal labels and two
+curated hybrids remain explicit; literal-name uniqueness does not establish
+formal species delimitation, strain identity or nonhybrid ancestry.
 See the [taxon identity review](docs/taxon-identity-sensitivities.md).
 The [full assembly/taxonomy identity audit](docs/selected-taxon-identity-audit-20261003.md)
 checks all 526 entries against frozen primary records. It identifies a mislabeled
