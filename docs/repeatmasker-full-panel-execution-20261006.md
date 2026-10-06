@@ -33,3 +33,12 @@ The annotations will quantify repeat classes and gene proximity only after
 independent output readback and explicit assembly/annotation sensitivity
 handling. Repeat annotation alone does not establish repeat-mediated genome
 rearrangement or structural-protein evolution.
+
+The independent audit command is
+`scripts/audit_repeatmasker_full_panel_v1.py`. It reads the frozen 526-taxon
+manifest and, for each taxon, requires a completed receipt with matching source
+checksum, a checksum-valid combined library, and exactly the expected nonempty
+`.out`, `.tbl`, `.out.gff`, and alignment outputs with matching recorded
+checksums. The audit writes a progress disposition until every taxon passes;
+only `passed_full_panel_repeatmasker_output_audit` opens the parsing and
+gene-repeat-proximity stage.
