@@ -73,6 +73,19 @@ def main():
     duplicated_fungal_species = sorted(name for name, count in Counter(fungal_species).items() if count > 1)
     if duplicated_fungal_species:
         raise ValueError(f"Duplicated literal fungal species names: {duplicated_fungal_species[:5]}")
+    outgroup_rows = [row for row in analysis_rows if row["study_role"] == "outgroup"]
+    outgroup_species = [row["species_name"].strip() for row in outgroup_rows]
+    if any(not name for name in outgroup_species):
+        raise ValueError("An outgroup entry lacks a literal species name")
+    duplicated_outgroup_species = sorted(name for name, count in Counter(outgroup_species).items() if count > 1)
+    if duplicated_outgroup_species:
+        raise ValueError(f"Duplicated literal outgroup species names: {duplicated_outgroup_species[:5]}")
+    overlap = sorted(set(fungal_species) & set(outgroup_species))
+    if overlap:
+        raise ValueError(f"Fungal/outgroup literal species-name overlap: {overlap[:5]}")
+    outgroup_top_level_lineages = [row["lineage"].split(";", 1)[0] for row in outgroup_rows]
+    if set(outgroup_top_level_lineages) & FUNGAL_LINEAGES:
+        raise ValueError("A designated outgroup has a selected fungal top-level lineage")
 
     exclusions = json.loads(args.exclusions.read_text())
     if not isinstance(exclusions, list):
@@ -99,6 +112,10 @@ def main():
         "analysis_identity_matches_candidate_rows": True,
         "ingroup_literal_species_names": len(fungal_species),
         "ingroup_literal_species_names_unique": True,
+        "outgroup_literal_species_names": len(outgroup_species),
+        "outgroup_literal_species_names_unique": True,
+        "fungal_outgroup_literal_species_name_overlap": [],
+        "outgroup_top_level_lineage_counts": dict(sorted(Counter(outgroup_top_level_lineages).items())),
         "excluded_candidate": {
             "taxon_id": excluded_id,
             "species_name": candidate[excluded_id]["species_name"],
