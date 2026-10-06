@@ -90,7 +90,7 @@ def main() -> None:
 
     database = "repeatmodeler_db"
     if not any(work.glob(database + ".*")):
-        run([str(build_database), "-name", database, "-engine", "rmblast", str(fasta)], work, log)
+        run([str(build_database), "-name", database, str(fasta)], work, log)
     recover_dirs = sorted(path for path in work.glob("RM_*") if path.is_dir())
     threads = str(config["threads_per_taxon"])
     seed = str((int(hashlib.sha256(row["taxon_id"].encode()).hexdigest()[:8], 16) % 2147483646) + 1)
