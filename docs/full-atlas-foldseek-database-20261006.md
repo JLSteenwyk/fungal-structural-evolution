@@ -174,3 +174,27 @@ float32 coordinate record. It runs only against a completed producer receipt
 and fresh output paths. This native-record readback is separate from the
 producer's original-CIF geometry validation; neither establishes structural
 homology, confidence calibration or evolutionary change.
+
+## Queued independent native-record readback
+
+The reader is queued as
+`fungal-full-atlas-foldseek-readback-20261006-v1.service` through the immutable
+[wait plan](../metadata/full_atlas_foldseek_readback_wait_plan_20261006_v1.json)
+and [launch record](../metadata/full_atlas_foldseek_readback_launch_20261006_v1.json).
+At queue creation, it bound the live original producer launch record, its
+immutable full-atlas plan, the reader/controller sources, and the declared
+resource contract by SHA-256. The wait process verifies the original producer's
+PID/creation time/command while it remains live. Once it terminates, the V2
+dependency runner also requires that same systemd invocation to have an original
+completion-resource journal record and a successful terminal state before
+running the reader. A failed, replaced, or altered producer therefore cannot
+trigger this readback.
+
+The queued unit is capped at **2 CPU equivalents, 16 GiB memory and zero swap**;
+it has no GPU access. The reader itself is sequential and read-only with respect
+to source structures and the native database. It has a 12 GiB address-space cap,
+three-day CPU/wall limits, a 512 MiB per-file cap, and fresh output/receipt paths.
+It checks all 2,961,055 aliases and native records only after the producer has
+created its completed receipt. Its planned 4--72-hour range is uncalibrated.
+The handoff does not start conversion, structural searches, clustering, model
+prediction, or any biological inference while the producer remains active.

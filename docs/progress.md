@@ -1,5 +1,29 @@
 # Progress and evidence
 
+## October 6 UTC: full-atlas database independent reader queued behind live producer
+
+The complete mixed-source atlas database producer remains live and continues its
+original-CIF/native-coordinate checks. At the queue checkpoint it had completed
+2,469 of 2,962 geometry shards, covering 2,469,000 AFDB models and
+959,942,283 residue positions with zero missing-backbone residues. These are
+partial source-coordinate checks, not a complete database or a new prediction
+set. The separate missing-PAE retrieval process was also live, with 143,500
+verified matrices and zero recorded failures; PAE data qualify uncertainty for
+existing predictions and do not add structures.
+
+An independent native-record reader is now waiting on the exact original
+producer PID, creation time, command, plan digest and systemd journal. It is
+bounded to two CPU equivalents and 16 GiB/no swap, with GPU disabled. It will
+run only after the producer exits successfully with original completion-resource
+evidence; then it will verify every native lookup/AA/3Di/coordinate record
+against the completed full-atlas receipt. The [queue record](../metadata/full_atlas_foldseek_readback_launch_20261006_v1.json),
+[wait plan](../metadata/full_atlas_foldseek_readback_wait_plan_20261006_v1.json)
+and [database workflow](full-atlas-foldseek-database-20261006.md) record exact
+inputs, resource limits, scope and limitations. Full atlas construction,
+independent readback, confidence/PAE completion, clustering, reconciled
+gene-tree analyses, calibrated branch tests and all eight scientific aims remain
+unfinished.
+
 ## October 6 UTC: full expanded protein database actually launched
 
 The new full search-database stage preserves all 2,961,055 current AFDB/ESMFold
