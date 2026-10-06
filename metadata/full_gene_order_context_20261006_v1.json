@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "complete_full_panel_gene_order_context_summary",
+  "taxa": 526,
+  "totals": {
+    "adjacent_pairs": 5523689,
+    "native_gene_feature": 5983922,
+    "overlapping_adjacent_pairs": 275130,
+    "provisional_orf_coordinates_not_gene_order": 16588,
+    "rows": 6000510,
+    "selected_product_links": 5835228,
+    "seqids": 476821,
+    "singleton_seqids": 228951,
+    "source_product_links": 5963834,
+    "taxa": 526
+  },
+  "table": "metadata/full_gene_order_context_20261006_v1.tsv",
+  "table_sha256": "26167644057aa2dd60a56260ba2a458e90ca05abffd782d89c3dd2f7834587b9",
+  "producer_receipt_sha256": "e7d95cb0fd299d540cef701f156683933489b0eb524e0e3cf802a428f6934059",
+  "readback_receipt_sha256": "d9be7bc7a01db14317b378b3600988aa7e62f54db98be7cd9081f1c86c5fa898",
+  "script_sha256": "d50ad70a44b095816fd0fe88b4a453b687a3543e61be59b2be25c392423332e6",
+  "interpretation": "Source-bound coordinate order and adjacent-gap summary only. Scaffold fragmentation, overlap and gene density are retained as later covariates; they do not establish repeats, synteny, rearrangements, annotation errors, duplication, orthology or structural evolution."
+}

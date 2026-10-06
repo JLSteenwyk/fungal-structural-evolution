@@ -24,3 +24,10 @@ The output is a coordinate/context table only. Product links are native source
 mappings, not reconciled orthology or synteny anchors. No repeat, collinear
 block, rearrangement, copy-number or structural-evolution result follows from
 this export.
+
+The completed [context table](../metadata/full_gene_order_context_20261006_v1.tsv)
+and [receipt](../metadata/full_gene_order_context_20261006_v1.json) summarize all
+526 exports: 5,983,922 native gene-feature rows, 16,588 provisional ORF rows,
+476,821 sequence IDs and 5,523,689 adjacent pairs. Fragmentation, overlapping
+adjacent coordinates and gap quantiles are retained as future sensitivity
+covariates; they are not annotation-error or rearrangement calls.
