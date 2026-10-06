@@ -198,3 +198,17 @@ It checks all 2,961,055 aliases and native records only after the producer has
 created its completed receipt. Its planned 4--72-hour range is uncalibrated.
 The handoff does not start conversion, structural searches, clustering, model
 prediction, or any biological inference while the producer remains active.
+
+## Preserved readback failure and corrected fresh reader
+
+After the producer's successful completion, the queued v1 native-record reader
+stopped before producing a receipt. Its retained stderr records a `MemoryError`:
+the imported digest helper attempted to read a large bound database artifact in
+one allocation under the reader's 12-GiB address-space cap. No model disposition,
+native record, or output receipt from that failed run is accepted.
+
+The corrected reader streams every bound artifact in 1-MiB blocks and otherwise
+retains the same independent native-record checks and 2-CPU/16-GiB/no-swap
+contract. It uses fresh v2 resources, execution, output and receipt paths. The
+failed execution remains source evidence; the corrected run is not a retry of
+the producer and does not alter its completed database.

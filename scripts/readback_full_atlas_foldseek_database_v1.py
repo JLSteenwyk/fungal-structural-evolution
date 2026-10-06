@@ -9,7 +9,14 @@ from pathlib import Path
 
 import numpy as np
 
-from ancestral_chain_attempt import sha
+
+def sha(path):
+    """Hash arbitrarily large producer artifacts without whole-file allocation."""
+    digest = hashlib.sha256()
+    with Path(path).open('rb') as handle:
+        for block in iter(lambda: handle.read(1 << 20), b''):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def parse_index(path):
