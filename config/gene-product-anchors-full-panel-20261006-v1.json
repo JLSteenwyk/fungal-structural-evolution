@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "stage": "full_panel_selected_product_coordinate_anchors",
+  "analysis_manifest": "metadata/analysis_manifest.tsv",
+  "gene_order_receipt": "metadata/full_gene_order_20261006_v1.json",
+  "gene_order_readback": "metadata/full_gene_order_readback_20261006_v1.json",
+  "output_root": "results/genome-architecture/gene-product-anchors-20261006-v1",
+  "taxa": 526,
+  "maximum_concurrent_taxa": 12,
+  "cpus_per_taxon": 2,
+  "memory_per_taxon_gb": 8,
+  "scope": "For every frozen manifest taxon, export every immutable gene-coordinate row as a disposition and every selected representative product link as a coordinate anchor. Product links remain source annotation mappings, not orthology, HOG membership, synteny, duplication, or evolutionary-event calls."
+}

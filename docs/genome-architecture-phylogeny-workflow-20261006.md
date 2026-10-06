@@ -105,6 +105,15 @@ complete audit; full collinearity execution still requires its own all-taxon
 resource/restart design. No discovery result is interpreted before its relevant
 full-panel audit passes.
 
+Before reconciliation is eligible to join to genomic coordinates, the
+full-panel selected-product anchor export records every coordinate-row
+disposition and every selected annotation-product-to-coordinate link. Its
+source and audit gates are in `gene-product-anchors-full-panel-20261006-v1.json`
+and `audit_gene_product_anchors_full_panel_v1.py`. This mapping is deliberately
+not called orthology or synteny: it only preserves the complete coordinate
+universe needed to classify later HOG/reconciliation joins, including absent or
+ambiguous anchors.
+
 The extension is motivated by fungal genome-organization literature already
 recorded in the [annotated bibliography](bibliography.md), especially the need
 to distinguish transposable-element-rich compartments and structural variation
