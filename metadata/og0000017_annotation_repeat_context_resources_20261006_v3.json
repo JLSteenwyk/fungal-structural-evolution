@@ -1,0 +1,26 @@
+{
+  "prepared_utc": "2026-10-06T05:51:00+00:00",
+  "supersedes_failed_executions": [
+    "metadata/og0000017_annotation_repeat_context_execution_20261006_v1.json",
+    "metadata/og0000017_annotation_repeat_context_execution_20261006_v2.json"
+  ],
+  "correction": "Write only the declared protein-context table columns; internal parsed annotation and Pfam fields remain in memory for summaries and are not passed to the strict TSV writer.",
+  "cpus": 2,
+  "memory_gib": 16,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 12,
+  "cpu_seconds_per_stage": 14400,
+  "wall_seconds_per_stage": 14400,
+  "per_file_limit_mib": 512,
+  "minimum_available_ram_gib": 20,
+  "minimum_free_disk_gib": 256,
+  "output_allowance_gib": 1,
+  "estimated_wall_hours": [0.25, 4],
+  "runtime_is_uncalibrated": true,
+  "input_compressed_pfam_gib": 0.446,
+  "gpu": false,
+  "new_predictions": 0,
+  "new_cost_usd": 0,
+  "scope": "Read-only audit of the existing 133,973 selected proteins from F181123, all 64 completed Pfam chunks, original coordinates and exact UniProt sequence matches. It creates a source-context table and descriptive cohort summaries only; it does not change sequences, assemblies, annotations, orthogroups, phylogenies or structural predictions."
+}

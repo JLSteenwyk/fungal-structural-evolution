@@ -1,0 +1,24 @@
+{
+  "status": "passed_og0000017_annotation_repeat_context_output_check",
+  "receipt": "metadata/orthology_OG0000017_annotation_repeat_context_20261006_v3.json",
+  "receipt_sha256": "e5b44ca5113bae8834b645a50b6c2fdc599f0c8c68f62450f76a907de49baa21",
+  "table": "results/orthology/OG0000017-annotation-repeat-context-20261006-v3/protein_context.tsv",
+  "table_sha256": "9ef63e848de577bf414403ac6aeb90abdc16ccb2f50eacb513eb587ef634aa4c",
+  "checker": "scripts/check_og0000017_annotation_repeat_context_v1.py",
+  "checker_sha256": "06fc880922a8e9b154d46ce953b35b58697e46db6e49fce8059b161077af46ed",
+  "source_products": 133973,
+  "cohorts": {
+    "family": 46787,
+    "other": 87186
+  },
+  "checks": [
+    "receipt status and referenced table path",
+    "full table SHA-256 against receipt",
+    "exact 21-column schema",
+    "unique protein and native identifiers",
+    "focal native identifier namespace",
+    "non-negative numeric context fields",
+    "complete 133973-product and 46787/87186 cohort censuses"
+  ],
+  "scope": "Independent readback of the complete local audit table. It validates table integrity and coverage, not the biological interpretation of the descriptive repeat-risk flags."
+}

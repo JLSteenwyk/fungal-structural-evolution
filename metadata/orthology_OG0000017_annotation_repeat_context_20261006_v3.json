@@ -1,0 +1,996 @@
+{
+  "status": "complete_og0000017_source_annotation_repeat_risk_audit",
+  "checked_utc": "2026-10-06T17:31:09.733919+00:00",
+  "family": "OG0000017",
+  "focal_taxon": "F181123",
+  "focal_assembly": "GCA_000469055.2",
+  "focal_assembly_metrics": {
+    "total-length": 648992365.0,
+    "spanned-gaps": 5084.0,
+    "unspanned-gaps": 0.0,
+    "region-count": 0.0,
+    "scaffold-count": 159332.0,
+    "scaffold-N50": 5597.0,
+    "scaffold-L50": 30587.0,
+    "scaffold-N75": 3011.0,
+    "scaffold-N90": 1776.0,
+    "contig-count": 164416.0,
+    "contig-N50": 5463.0,
+    "contig-L50": 32072.0,
+    "total-gap-length": 152885.0,
+    "molecule-count": 0.0,
+    "top-level-count": 159332.0,
+    "component-count": 159332.0,
+    "gc-perc": 33.5
+  },
+  "source_products": 133973,
+  "focal_family_products": 46787,
+  "other_focal_products": 87186,
+  "unique_source_sequence_hashes": 133953,
+  "source_products_in_nonunique_sequence_groups": 39,
+  "nonunique_source_sequence_groups": 19,
+  "source_scaffolds": 159332,
+  "cohorts": {
+    "family": {
+      "proteins": 46787,
+      "protein_length": {
+        "count": 46787,
+        "minimum": 50,
+        "q25": 127,
+        "median": 172,
+        "q75": 246,
+        "maximum": 1566
+      },
+      "span": {
+        "count": 46787,
+        "minimum": 150,
+        "q25": 387,
+        "median": 534,
+        "q75": 795,
+        "maximum": 4905
+      },
+      "coding_bases": {
+        "count": 46787,
+        "minimum": 150,
+        "q25": 384,
+        "median": 519,
+        "q75": 741,
+        "maximum": 4701
+      },
+      "segments": {
+        "count": 46787,
+        "minimum": 1,
+        "q25": 1,
+        "median": 1,
+        "q75": 1,
+        "maximum": 8
+      },
+      "scaffold_gene_count": {
+        "count": 46787,
+        "minimum": 1,
+        "q25": 2,
+        "median": 3,
+        "q75": 4,
+        "maximum": 21
+      },
+      "contig_length": {
+        "count": 46787,
+        "minimum": 1001,
+        "q25": 2954,
+        "median": 5036,
+        "q75": 8209,
+        "maximum": 107790
+      },
+      "hypothetical_products": 46787,
+      "uniprot_exact_sequence_matches": 46516,
+      "pfam_detected_proteins": 25651,
+      "repeat_keyword_pfam_proteins": 19764,
+      "singleton_gene_scaffolds": 10016,
+      "neighbor_overlaps": 0,
+      "neighbor_gap": {
+        "count": 50618,
+        "minimum": 1,
+        "q25": 114,
+        "median": 345,
+        "q75": 868,
+        "maximum": 43523
+      }
+    },
+    "other": {
+      "proteins": 87186,
+      "protein_length": {
+        "count": 87186,
+        "minimum": 49,
+        "q25": 114,
+        "median": 152,
+        "q75": 224,
+        "maximum": 5245
+      },
+      "span": {
+        "count": 87186,
+        "minimum": 150,
+        "q25": 354,
+        "median": 483,
+        "q75": 766,
+        "maximum": 16705
+      },
+      "coding_bases": {
+        "count": 87186,
+        "minimum": 150,
+        "q25": 345,
+        "median": 459,
+        "q75": 675,
+        "maximum": 15738
+      },
+      "segments": {
+        "count": 87186,
+        "minimum": 1,
+        "q25": 1,
+        "median": 1,
+        "q75": 2,
+        "maximum": 40
+      },
+      "scaffold_gene_count": {
+        "count": 87186,
+        "minimum": 1,
+        "q25": 1,
+        "median": 2,
+        "q75": 4,
+        "maximum": 21
+      },
+      "contig_length": {
+        "count": 87186,
+        "minimum": 998,
+        "q25": 3053,
+        "median": 5473,
+        "q75": 9679,
+        "maximum": 140277
+      },
+      "hypothetical_products": 87186,
+      "uniprot_exact_sequence_matches": 86406,
+      "pfam_detected_proteins": 16039,
+      "repeat_keyword_pfam_proteins": 6046,
+      "singleton_gene_scaffolds": 26472,
+      "neighbor_overlaps": 0,
+      "neighbor_gap": {
+        "count": 79914,
+        "minimum": 1,
+        "q25": 174,
+        "median": 531,
+        "q75": 1331,
+        "maximum": 47784
+      }
+    }
+  },
+  "top_pfam_hits": {
+    "family": [
+      {
+        "pfam_accession": "PF17917.8",
+        "pfam_name": "RT_RNaseH",
+        "description": "RNase H-like domain found in reverse transcriptase",
+        "hit_rows": 8113
+      },
+      {
+        "pfam_accession": "PF17919.8",
+        "pfam_name": "RT_RNaseH_2",
+        "description": "RNase H-like domain found in reverse transcriptase",
+        "hit_rows": 8009
+      },
+      {
+        "pfam_accession": "PF00078.33",
+        "pfam_name": "RVT_1",
+        "description": "Reverse transcriptase (RNA-dependent DNA polymerase)",
+        "hit_rows": 6498
+      },
+      {
+        "pfam_accession": "PF17921.8",
+        "pfam_name": "Integrase_H2C2",
+        "description": "Integrase zinc binding domain",
+        "hit_rows": 6276
+      },
+      {
+        "pfam_accession": "PF24626.2",
+        "pfam_name": "SH3_Tf2-1",
+        "description": "Tf2-1-like, SH3 domain",
+        "hit_rows": 5614
+      },
+      {
+        "pfam_accession": "PF00665.33",
+        "pfam_name": "rve",
+        "description": "Integrase core domain",
+        "hit_rows": 1613
+      },
+      {
+        "pfam_accession": "PF00385.31",
+        "pfam_name": "Chromo",
+        "description": "Chromo (CHRromatin Organisation MOdifier) domain",
+        "hit_rows": 1082
+      },
+      {
+        "pfam_accession": "PF16297.12",
+        "pfam_name": "RTL1-8_LDOC",
+        "description": "RTL1/3-8/LDOC, capsid-like domain",
+        "hit_rows": 439
+      },
+      {
+        "pfam_accession": "PF30901.1",
+        "pfam_name": "PEG10-RTL1_C-capsid",
+        "description": "PEG10/RTL1, C-terminal capsid-like domain",
+        "hit_rows": 210
+      },
+      {
+        "pfam_accession": "PF19259.5",
+        "pfam_name": "Ty3_capsid",
+        "description": "Ty3 transposon capsid-like protein",
+        "hit_rows": 156
+      },
+      {
+        "pfam_accession": "PF09337.17",
+        "pfam_name": "zf-H2C2",
+        "description": "H2C2 zinc finger",
+        "hit_rows": 104
+      },
+      {
+        "pfam_accession": "PF31073.1",
+        "pfam_name": "DUF8803",
+        "description": "Domain of unknown function (DUF8803)",
+        "hit_rows": 97
+      },
+      {
+        "pfam_accession": "PF00098.29",
+        "pfam_name": "zf-CCHC",
+        "description": "Zinc knuckle",
+        "hit_rows": 96
+      },
+      {
+        "pfam_accession": "PF30863.1",
+        "pfam_name": "PRO_PEG10-RTL1",
+        "description": "PEG10/RTL1 protease domain",
+        "hit_rows": 53
+      },
+      {
+        "pfam_accession": "PF08284.17",
+        "pfam_name": "RVP_2",
+        "description": "Retroviral aspartyl protease",
+        "hit_rows": 41
+      },
+      {
+        "pfam_accession": "PF13650.12",
+        "pfam_name": "Asp_protease_2",
+        "description": "Aspartyl protease",
+        "hit_rows": 5
+      },
+      {
+        "pfam_accession": "PF03732.25",
+        "pfam_name": "PEG10_N-capsid",
+        "description": "Retrotransposon-derived protein PEG10, N-terminal capsid-like domain",
+        "hit_rows": 4
+      },
+      {
+        "pfam_accession": "PF29688.1",
+        "pfam_name": "TnsB_C",
+        "description": "TnsB C-terminal domain",
+        "hit_rows": 3
+      },
+      {
+        "pfam_accession": "PF27605.1",
+        "pfam_name": "ODF2_C",
+        "description": "ODF2 C-terminal coiled coil domain",
+        "hit_rows": 3
+      },
+      {
+        "pfam_accession": "PF00077.26",
+        "pfam_name": "RVP",
+        "description": "Retroviral aspartyl protease",
+        "hit_rows": 2
+      },
+      {
+        "pfam_accession": "PF08882.17",
+        "pfam_name": "Acetone_carb_G",
+        "description": "Acetone carboxylase gamma subunit",
+        "hit_rows": 1
+      },
+      {
+        "pfam_accession": "PF10844.14",
+        "pfam_name": "DUF2577",
+        "description": "Protein of unknown function (DUF2577)",
+        "hit_rows": 1
+      },
+      {
+        "pfam_accession": "PF11717.15",
+        "pfam_name": "Tudor-knot",
+        "description": "RNA binding activity-knot of a chromodomain",
+        "hit_rows": 1
+      },
+      {
+        "pfam_accession": "PF02121.26",
+        "pfam_name": "IP_trans",
+        "description": "Phosphatidylinositol transfer protein",
+        "hit_rows": 1
+      }
+    ],
+    "other": [
+      {
+        "pfam_accession": "PF07727.20",
+        "pfam_name": "RVT_2",
+        "description": "Reverse transcriptase (RNA-dependent DNA polymerase)",
+        "hit_rows": 2289
+      },
+      {
+        "pfam_accession": "PF00098.29",
+        "pfam_name": "zf-CCHC",
+        "description": "Zinc knuckle",
+        "hit_rows": 1229
+      },
+      {
+        "pfam_accession": "PF25597.2",
+        "pfam_name": "SH3_retrovirus",
+        "description": "Retroviral polymerase SH3-like domain",
+        "hit_rows": 1086
+      },
+      {
+        "pfam_accession": "PF22936.2",
+        "pfam_name": "Pol_BBD",
+        "description": "Pol polyprotein, beta-barrel domain",
+        "hit_rows": 1075
+      },
+      {
+        "pfam_accession": "PF30901.1",
+        "pfam_name": "PEG10-RTL1_C-capsid",
+        "description": "PEG10/RTL1, C-terminal capsid-like domain",
+        "hit_rows": 938
+      },
+      {
+        "pfam_accession": "PF20515.5",
+        "pfam_name": "2OG-FeII_Oxy_6",
+        "description": "Tet-like 2OG-Fe(II) oxygenase superfamily",
+        "hit_rows": 777
+      },
+      {
+        "pfam_accession": "PF00665.33",
+        "pfam_name": "rve",
+        "description": "Integrase core domain",
+        "hit_rows": 624
+      },
+      {
+        "pfam_accession": "PF02992.21",
+        "pfam_name": "Transposase_21",
+        "description": "Transposase family tnp2",
+        "hit_rows": 479
+      },
+      {
+        "pfam_accession": "PF16297.12",
+        "pfam_name": "RTL1-8_LDOC",
+        "description": "RTL1/3-8/LDOC, capsid-like domain",
+        "hit_rows": 449
+      },
+      {
+        "pfam_accession": "PF26792.1",
+        "pfam_name": "DUF8263",
+        "description": "Domain of unknown function (DUF8263)",
+        "hit_rows": 418
+      },
+      {
+        "pfam_accession": "PF17921.8",
+        "pfam_name": "Integrase_H2C2",
+        "description": "Integrase zinc binding domain",
+        "hit_rows": 391
+      },
+      {
+        "pfam_accession": "PF00176.30",
+        "pfam_name": "SNF2-rel_dom",
+        "description": "SNF2-related domain",
+        "hit_rows": 384
+      },
+      {
+        "pfam_accession": "PF13976.12",
+        "pfam_name": "gag_pre-integrs",
+        "description": "GAG-pre-integrase domain",
+        "hit_rows": 328
+      },
+      {
+        "pfam_accession": "PF13358.13",
+        "pfam_name": "DDE_3",
+        "description": "DDE superfamily endonuclease",
+        "hit_rows": 318
+      },
+      {
+        "pfam_accession": "PF00400.39",
+        "pfam_name": "WD40",
+        "description": "WD domain, G-beta repeat",
+        "hit_rows": 308
+      },
+      {
+        "pfam_accession": "PF00077.26",
+        "pfam_name": "RVP",
+        "description": "Retroviral aspartyl protease",
+        "hit_rows": 248
+      },
+      {
+        "pfam_accession": "PF27605.1",
+        "pfam_name": "ODF2_C",
+        "description": "ODF2 C-terminal coiled coil domain",
+        "hit_rows": 243
+      },
+      {
+        "pfam_accession": "PF19259.5",
+        "pfam_name": "Ty3_capsid",
+        "description": "Ty3 transposon capsid-like protein",
+        "hit_rows": 228
+      },
+      {
+        "pfam_accession": "PF14223.15",
+        "pfam_name": "Retrotran_gag_2",
+        "description": "gag-polypeptide of LTR copia-type",
+        "hit_rows": 220
+      },
+      {
+        "pfam_accession": "PF00271.38",
+        "pfam_name": "Helicase_C",
+        "description": "Helicase conserved C-terminal domain",
+        "hit_rows": 200
+      },
+      {
+        "pfam_accession": "PF05699.20",
+        "pfam_name": "Dimer_Tnp_hAT",
+        "description": "hAT family C-terminal dimerisation region",
+        "hit_rows": 177
+      },
+      {
+        "pfam_accession": "PF13359.13",
+        "pfam_name": "DDE_Tnp_4",
+        "description": "DDE superfamily endonuclease",
+        "hit_rows": 175
+      },
+      {
+        "pfam_accession": "PF27041.1",
+        "pfam_name": "ZBED1_RNase-like",
+        "description": "ZBED1 RNase-like domain",
+        "hit_rows": 166
+      },
+      {
+        "pfam_accession": "PF17919.8",
+        "pfam_name": "RT_RNaseH_2",
+        "description": "RNase H-like domain found in reverse transcriptase",
+        "hit_rows": 148
+      },
+      {
+        "pfam_accession": "PF31073.1",
+        "pfam_name": "DUF8803",
+        "description": "Domain of unknown function (DUF8803)",
+        "hit_rows": 141
+      },
+      {
+        "pfam_accession": "PF24626.2",
+        "pfam_name": "SH3_Tf2-1",
+        "description": "Tf2-1-like, SH3 domain",
+        "hit_rows": 131
+      },
+      {
+        "pfam_accession": "PF17917.8",
+        "pfam_name": "RT_RNaseH",
+        "description": "RNase H-like domain found in reverse transcriptase",
+        "hit_rows": 130
+      },
+      {
+        "pfam_accession": "PF27039.1",
+        "pfam_name": "ZBED1_RNase-like_helical",
+        "description": "ZBED1 RNase-like helical domain",
+        "hit_rows": 126
+      },
+      {
+        "pfam_accession": "PF10551.16",
+        "pfam_name": "MULE",
+        "description": "MULE transposase domain",
+        "hit_rows": 122
+      },
+      {
+        "pfam_accession": "PF00069.32",
+        "pfam_name": "Pkinase",
+        "description": "Protein kinase domain",
+        "hit_rows": 107
+      },
+      {
+        "pfam_accession": "PF00078.33",
+        "pfam_name": "RVT_1",
+        "description": "Reverse transcriptase (RNA-dependent DNA polymerase)",
+        "hit_rows": 103
+      },
+      {
+        "pfam_accession": "PF30863.1",
+        "pfam_name": "PRO_PEG10-RTL1",
+        "description": "PEG10/RTL1 protease domain",
+        "hit_rows": 102
+      },
+      {
+        "pfam_accession": "PF00076.29",
+        "pfam_name": "RRM_1",
+        "description": "RNA recognition motif",
+        "hit_rows": 99
+      },
+      {
+        "pfam_accession": "PF07714.24",
+        "pfam_name": "PK_Tyr_Ser-Thr",
+        "description": "Protein tyrosine and serine/threonine kinase",
+        "hit_rows": 97
+      },
+      {
+        "pfam_accession": "PF08731.18",
+        "pfam_name": "AFT",
+        "description": "Transcription factor AFT",
+        "hit_rows": 96
+      },
+      {
+        "pfam_accession": "PF13961.13",
+        "pfam_name": "DUF4219",
+        "description": "Domain of unknown function (DUF4219)",
+        "hit_rows": 94
+      },
+      {
+        "pfam_accession": "PF00153.33",
+        "pfam_name": "Mito_carr",
+        "description": "Mitochondrial carrier protein",
+        "hit_rows": 93
+      },
+      {
+        "pfam_accession": "PF14529.13",
+        "pfam_name": "Exo_endo_phos_2",
+        "description": "Endonuclease-reverse transcriptase",
+        "hit_rows": 91
+      },
+      {
+        "pfam_accession": "PF00075.31",
+        "pfam_name": "RNase_H",
+        "description": "RNase H",
+        "hit_rows": 72
+      },
+      {
+        "pfam_accession": "PF21056.4",
+        "pfam_name": "ZSWIM1-3_RNaseH-like",
+        "description": "Zinc finger SWIM domain-containing protein 1/3, RNaseH-like domain",
+        "hit_rows": 70
+      },
+      {
+        "pfam_accession": "PF13650.12",
+        "pfam_name": "Asp_protease_2",
+        "description": "Aspartyl protease",
+        "hit_rows": 68
+      },
+      {
+        "pfam_accession": "PF08284.17",
+        "pfam_name": "RVP_2",
+        "description": "Retroviral aspartyl protease",
+        "hit_rows": 61
+      },
+      {
+        "pfam_accession": "PF04851.22",
+        "pfam_name": "ResIII",
+        "description": "Type III restriction enzyme, res subunit",
+        "hit_rows": 58
+      },
+      {
+        "pfam_accession": "PF07690.22",
+        "pfam_name": "MFS_1",
+        "description": "Major Facilitator Superfamily",
+        "hit_rows": 53
+      },
+      {
+        "pfam_accession": "PF00270.36",
+        "pfam_name": "DEAD",
+        "description": "DEAD/DEAH box helicase",
+        "hit_rows": 49
+      },
+      {
+        "pfam_accession": "PF00096.33",
+        "pfam_name": "zf-C2H2",
+        "description": "Zinc finger, C2H2 type",
+        "hit_rows": 48
+      },
+      {
+        "pfam_accession": "PF01498.25",
+        "pfam_name": "HTH_Tnp_Tc3_2",
+        "description": "Transposase",
+        "hit_rows": 47
+      },
+      {
+        "pfam_accession": "PF00004.36",
+        "pfam_name": "AAA",
+        "description": "ATPase family associated with various cellular activities (AAA)",
+        "hit_rows": 45
+      },
+      {
+        "pfam_accession": "PF00005.34",
+        "pfam_name": "ABC_tran",
+        "description": "ABC transporter",
+        "hit_rows": 41
+      },
+      {
+        "pfam_accession": "PF01609.28",
+        "pfam_name": "DDE_Tnp_1",
+        "description": "Transposase DDE domain",
+        "hit_rows": 39
+      },
+      {
+        "pfam_accession": "PF25278.2",
+        "pfam_name": "DUF7872",
+        "description": "Domain of unknown function (DUF7872)",
+        "hit_rows": 38
+      },
+      {
+        "pfam_accession": "PF13384.13",
+        "pfam_name": "HTH_23",
+        "description": "Homeodomain-like domain",
+        "hit_rows": 37
+      },
+      {
+        "pfam_accession": "PF00083.31",
+        "pfam_name": "Sugar_tr",
+        "description": "Sugar (and other) transporter",
+        "hit_rows": 35
+      },
+      {
+        "pfam_accession": "PF08238.19",
+        "pfam_name": "Sel1",
+        "description": "Sel1 repeat",
+        "hit_rows": 33
+      },
+      {
+        "pfam_accession": "PF13181.13",
+        "pfam_name": "TPR_8",
+        "description": "Tetratricopeptide repeat",
+        "hit_rows": 32
+      },
+      {
+        "pfam_accession": "PF00025.28",
+        "pfam_name": "Arf",
+        "description": "ADP-ribosylation factor family",
+        "hit_rows": 31
+      },
+      {
+        "pfam_accession": "PF00071.29",
+        "pfam_name": "Ras",
+        "description": "Ras family",
+        "hit_rows": 30
+      },
+      {
+        "pfam_accession": "PF08477.20",
+        "pfam_name": "Roc",
+        "description": "Ras of Complex, Roc, domain of DAPkinase",
+        "hit_rows": 30
+      },
+      {
+        "pfam_accession": "PF14214.12",
+        "pfam_name": "Helitron_like_N",
+        "description": "Helitron helicase-like domain at N-terminus",
+        "hit_rows": 30
+      },
+      {
+        "pfam_accession": "PF00023.37",
+        "pfam_name": "Ank",
+        "description": "Ankyrin repeat",
+        "hit_rows": 30
+      },
+      {
+        "pfam_accession": "PF04827.21",
+        "pfam_name": "Plant_tran",
+        "description": "Plant transposon protein",
+        "hit_rows": 30
+      },
+      {
+        "pfam_accession": "PF00226.37",
+        "pfam_name": "DnaJ",
+        "description": "DnaJ domain",
+        "hit_rows": 28
+      },
+      {
+        "pfam_accession": "PF00018.35",
+        "pfam_name": "SH3_1",
+        "description": "SH3 domain",
+        "hit_rows": 28
+      },
+      {
+        "pfam_accession": "PF13561.13",
+        "pfam_name": "adh_short_C2",
+        "description": "Enoyl-(Acyl carrier protein) reductase",
+        "hit_rows": 27
+      },
+      {
+        "pfam_accession": "PF00106.32",
+        "pfam_name": "adh_short",
+        "description": "short chain dehydrogenase",
+        "hit_rows": 27
+      },
+      {
+        "pfam_accession": "PF00240.30",
+        "pfam_name": "ubiquitin",
+        "description": "Ubiquitin family",
+        "hit_rows": 27
+      },
+      {
+        "pfam_accession": "PF01926.30",
+        "pfam_name": "MMR_HSR1",
+        "description": "50S ribosome-binding GTPase",
+        "hit_rows": 26
+      },
+      {
+        "pfam_accession": "PF07728.21",
+        "pfam_name": "AAA_5",
+        "description": "AAA domain (dynein-related subfamily)",
+        "hit_rows": 25
+      },
+      {
+        "pfam_accession": "PF00168.37",
+        "pfam_name": "C2",
+        "description": "C2 domain",
+        "hit_rows": 25
+      },
+      {
+        "pfam_accession": "PF05970.21",
+        "pfam_name": "PIF1",
+        "description": "PIF1-like helicase",
+        "hit_rows": 25
+      },
+      {
+        "pfam_accession": "PF13975.12",
+        "pfam_name": "gag-asp_proteas",
+        "description": "gag-polyprotein putative aspartyl protease",
+        "hit_rows": 25
+      },
+      {
+        "pfam_accession": "PF21530.4",
+        "pfam_name": "Pif1_2B_dom",
+        "description": "DNA helicase Pif1, 2B domain",
+        "hit_rows": 23
+      },
+      {
+        "pfam_accession": "PF11976.15",
+        "pfam_name": "Rad60-SLD",
+        "description": "Ubiquitin-2 like Rad60 SUMO-like",
+        "hit_rows": 22
+      },
+      {
+        "pfam_accession": "PF08241.19",
+        "pfam_name": "Methyltransf_11",
+        "description": "Methyltransferase domain",
+        "hit_rows": 22
+      },
+      {
+        "pfam_accession": "PF13649.13",
+        "pfam_name": "Methyltransf_25",
+        "description": "Methyltransferase domain",
+        "hit_rows": 22
+      },
+      {
+        "pfam_accession": "PF08659.17",
+        "pfam_name": "KR",
+        "description": "KR domain",
+        "hit_rows": 21
+      },
+      {
+        "pfam_accession": "PF13847.13",
+        "pfam_name": "Methyltransf_31",
+        "description": "Methyltransferase domain",
+        "hit_rows": 21
+      },
+      {
+        "pfam_accession": "PF25036.3",
+        "pfam_name": "VPS13_VAB",
+        "description": "Vacuolar-sorting associated protein 13, adaptor binding domain",
+        "hit_rows": 21
+      },
+      {
+        "pfam_accession": "PF00806.26",
+        "pfam_name": "PUF",
+        "description": "Pumilio-family RNA binding repeat",
+        "hit_rows": 21
+      },
+      {
+        "pfam_accession": "PF12796.14",
+        "pfam_name": "Ank_2",
+        "description": "Ankyrin repeats (3 copies)",
+        "hit_rows": 20
+      },
+      {
+        "pfam_accession": "PF01061.30",
+        "pfam_name": "ABC2_membrane",
+        "description": "ABC-2 type transporter",
+        "hit_rows": 18
+      },
+      {
+        "pfam_accession": "PF00172.24",
+        "pfam_name": "Zn_clus",
+        "description": "Fungal Zn(2)-Cys(6) binuclear cluster domain",
+        "hit_rows": 18
+      },
+      {
+        "pfam_accession": "PF21300.3",
+        "pfam_name": "LbR_Ice_bind",
+        "description": "Grass antifreeze beta roll",
+        "hit_rows": 18
+      },
+      {
+        "pfam_accession": "PF00097.32",
+        "pfam_name": "zf-C3HC4",
+        "description": "Zinc finger, C3HC4 type (RING finger)",
+        "hit_rows": 18
+      },
+      {
+        "pfam_accession": "PF01735.24",
+        "pfam_name": "PLA2_B",
+        "description": "Lysophospholipase catalytic domain",
+        "hit_rows": 18
+      },
+      {
+        "pfam_accession": "PF00385.31",
+        "pfam_name": "Chromo",
+        "description": "Chromo (CHRromatin Organisation MOdifier) domain",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF00702.33",
+        "pfam_name": "Hydrolase",
+        "description": "haloacid dehalogenase-like hydrolase",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF00561.27",
+        "pfam_name": "Abhydrolase_1",
+        "description": "alpha/beta hydrolase fold",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF01370.28",
+        "pfam_name": "Epimerase",
+        "description": "NAD dependent epimerase/dehydratase family",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF13637.13",
+        "pfam_name": "Ank_4",
+        "description": "Ankyrin repeats (many copies)",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF13432.13",
+        "pfam_name": "TPR_16",
+        "description": "Tetratricopeptide repeat",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF07653.24",
+        "pfam_name": "SH3_2",
+        "description": "Variant SH3 domain",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF13202.13",
+        "pfam_name": "EF-hand_5",
+        "description": "EF hand",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF18759.8",
+        "pfam_name": "Plavaka",
+        "description": "Plavaka transposase",
+        "hit_rows": 17
+      },
+      {
+        "pfam_accession": "PF17862.8",
+        "pfam_name": "AAA_lid_3",
+        "description": "AAA+ lid domain",
+        "hit_rows": 16
+      },
+      {
+        "pfam_accession": "PF03169.21",
+        "pfam_name": "OPT",
+        "description": "OPT oligopeptide transporter protein",
+        "hit_rows": 16
+      },
+      {
+        "pfam_accession": "PF00149.34",
+        "pfam_name": "Metallophos",
+        "description": "Calcineurin-like phosphoesterase",
+        "hit_rows": 16
+      },
+      {
+        "pfam_accession": "PF13450.13",
+        "pfam_name": "NAD_binding_8",
+        "description": "NAD(P)-binding Rossmann-like domain",
+        "hit_rows": 16
+      },
+      {
+        "pfam_accession": "PF07992.21",
+        "pfam_name": "Pyr_redox_2",
+        "description": "Pyridine nucleotide-disulphide oxidoreductase",
+        "hit_rows": 16
+      },
+      {
+        "pfam_accession": "PF13813.12",
+        "pfam_name": "MBOAT_2",
+        "description": "Membrane bound O-acyl transferase family",
+        "hit_rows": 16
+      }
+    ]
+  },
+  "protein_context_table": "results/orthology/OG0000017-annotation-repeat-context-20261006-v3/protein_context.tsv",
+  "protein_context_table_sha256": "9ef63e848de577bf414403ac6aeb90abdc16ccb2f50eacb513eb587ef634aa4c",
+  "source_hashes": {
+    "results/orthology/OG0000017-quality-v1/protein_quality.tsv": "0e69fa0e98714f8c7a379f38b7484ad80d42cc0e202e96e0d3777420b3138e3b",
+    "results/orthology/core-v1/Results_full526v2/WorkingDirectory/SequenceIDs.txt": "80c5f7bdace0beccf35024d3c9ada41e5c00cf91834f8d4e7c7cea5d2b44e09a",
+    "results/annotation-coordinate-registry-20261005-v2/F181123.sqlite": "73b86106e657aa00983cb70041b27ebd8b1ee54b62f2857e3c68dfb8dc525e07",
+    "data/uniprot/F181123.matches.tsv": "fdc7ba1ee00be9b5832a4f83ad765d6dba68c02fe518d24553cdeceeb4214b0b",
+    "data/assembly_statistics/GCA_000469055.2.receipt.json": "44130c37ecabde5a6e0ec186e82d1ea522dbafc4e5e316b3b93d7f09c07a3b99",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/audit_og0000017_annotation_repeat_context_v1.py": "d63ed1a7788cbb985f2d910324799d9bb2229f73b0aa418655f26cdf6dd84f17",
+    "results/domains/full-annotation-snapshot-v1/chunk-000.annotated.tsv.gz": "d2e6c3abeaccfc3ca05d13aaff118e28feab06b8cd9937f176b85efa4c0db7cf",
+    "results/domains/full-annotation-snapshot-v1/chunk-001.annotated.tsv.gz": "c5657664954d06b92b1655f7c669b98d56cd3fe09c4832ea0f9d0d58c76b36b0",
+    "results/domains/full-annotation-snapshot-v1/chunk-002.annotated.tsv.gz": "0fc7f036900ccf1f652e4805d18e1d9b2e753f12cddf34d942893d3d80f9d784",
+    "results/domains/full-annotation-snapshot-v1/chunk-003.annotated.tsv.gz": "cf9d4ae018f0b53a55566078969eda8fbedec56c1f4b23ae460ff46e31bc883e",
+    "results/domains/full-annotation-snapshot-v1/chunk-004.annotated.tsv.gz": "0d9b2ee1f7c4df0aab7d57418ec2de29214b3bc7c757eccaed0929ea5c386f8a",
+    "results/domains/full-annotation-snapshot-v1/chunk-005.annotated.tsv.gz": "eaae48c7a5e705a927855a61f4d28163c4bf9401c317b5d68eeb39f971aebea5",
+    "results/domains/full-annotation-snapshot-v1/chunk-006.annotated.tsv.gz": "e10a8eac00248349c51a16d488f0faf66cdbc869d7d91e2d5ad9518087c29e7d",
+    "results/domains/full-annotation-snapshot-v1/chunk-007.annotated.tsv.gz": "a978b777b8f3acd054eb6a50666eaf3ba8a14fe80c22534e8467626f4204b060",
+    "results/domains/full-annotation-snapshot-v1/chunk-008.annotated.tsv.gz": "661571ba0fbc4b3a791e40fad45487299f62ba3c582b0476602c34dabc96adee",
+    "results/domains/full-annotation-snapshot-v1/chunk-009.annotated.tsv.gz": "3e6ec29785907110c4d1b45d9a785b17708e3c5cbb62741cf7738b06be257663",
+    "results/domains/full-annotation-snapshot-v1/chunk-010.annotated.tsv.gz": "ed980344fef6bcdeb274a212b7e75ae6d164f3c11f59d822830a6facf45cc4de",
+    "results/domains/full-annotation-snapshot-v1/chunk-011.annotated.tsv.gz": "ba7fb4b950accf1ab86bda3ddae3839874ffdc923f49484dd3e362ca09369aec",
+    "results/domains/full-annotation-snapshot-v1/chunk-012.annotated.tsv.gz": "f9aa2822998b333ca932e48b220458cadd4c0f51d1b35f5be9f9e977f2ee852e",
+    "results/domains/full-annotation-snapshot-v1/chunk-013.annotated.tsv.gz": "891c931790b0ef04fb7d0a45a3e454d41648e7e6a06f3fcc9b6dbfc2d85de63c",
+    "results/domains/full-annotation-snapshot-v1/chunk-014.annotated.tsv.gz": "71a5c0954155483732a778d32ff9264983a5b52cac47c41097583af678b29f54",
+    "results/domains/full-annotation-snapshot-v1/chunk-015.annotated.tsv.gz": "2531e2838eabf7a3fb4ad062eee859d93b6090c8a4f2406b4bb5fb2755a073bb",
+    "results/domains/full-annotation-snapshot-v1/chunk-016.annotated.tsv.gz": "2cb05c56bce719e676629246069b3be021efd5d693b129c7e86c39b4cd03fb85",
+    "results/domains/full-annotation-snapshot-v1/chunk-017.annotated.tsv.gz": "39629867426687bda7050b32ca9df761fa19caa3fc50c7e436799736fe441000",
+    "results/domains/full-annotation-snapshot-v1/chunk-018.annotated.tsv.gz": "be1ac3e80ebd33785ec5f8e240e2da59be5f066d4a63ee37000120eeb0064290",
+    "results/domains/full-annotation-snapshot-v1/chunk-019.annotated.tsv.gz": "31bedac58b396cc8493cc243c55df9c4f7f8e2948a420426b133081ab7052680",
+    "results/domains/full-annotation-snapshot-v1/chunk-020.annotated.tsv.gz": "f39461a1d6dc9ccc72bef73d83767fd563367a018c07509833c897478ee32c41",
+    "results/domains/full-annotation-snapshot-v1/chunk-021.annotated.tsv.gz": "c274d720df5647b7156657ff0cbf05619c0e7b21b00fce05ee1923049a7d602a",
+    "results/domains/full-annotation-snapshot-v1/chunk-022.annotated.tsv.gz": "d2ad3eb43a72b7c98a67520d668dfce521a6be076fa2a38ae87a7f6f835fcd78",
+    "results/domains/full-annotation-snapshot-v1/chunk-023.annotated.tsv.gz": "5ef11448ca30088788ab8efc789e8397c283f65d550fe4919e72a8c3792d85a7",
+    "results/domains/full-annotation-snapshot-v1/chunk-024.annotated.tsv.gz": "126942f2814a2f0ea25c38892f2db9e7835d5dc37464cd00379b5d955091af79",
+    "results/domains/full-annotation-snapshot-v1/chunk-025.annotated.tsv.gz": "1662b713bb0c46e358f25b23268c47968bb2c96973c351c5c60534f826808dd6",
+    "results/domains/full-annotation-snapshot-v1/chunk-026.annotated.tsv.gz": "76b366c9473d180b8d0b2de53debcfd80cbfca5bb3831acc883207702bf0dca1",
+    "results/domains/full-annotation-snapshot-v1/chunk-027.annotated.tsv.gz": "e241fff5164d66b6704639b7b299af43ef42c4225355532b26cbebb041652ca6",
+    "results/domains/full-annotation-snapshot-v1/chunk-028.annotated.tsv.gz": "731dd5f50a882ad87b91c502df4afe05f48f3cf7fa09d74024c7d059c1ed8580",
+    "results/domains/full-annotation-snapshot-v1/chunk-029.annotated.tsv.gz": "9350a0899d3ea7e20875696b0dae54857add3352e2415bda5a876be016f29087",
+    "results/domains/full-annotation-snapshot-v1/chunk-030.annotated.tsv.gz": "2418b74a6f5c705e4a1ea2d9e6340cce442a703bcd94e1fa31d55551fb1b2db3",
+    "results/domains/full-annotation-snapshot-v1/chunk-031.annotated.tsv.gz": "f6fd0d57306050b1ee8a222c637f0f06f78bc389aff3036dde39deaffa859e55",
+    "results/domains/full-annotation-snapshot-v1/chunk-032.annotated.tsv.gz": "ddb3f75a408ad658a7d5fdd51862cbce449b275bde3f3a18ba9744f99fd5a8e8",
+    "results/domains/full-annotation-snapshot-v1/chunk-033.annotated.tsv.gz": "d63357ca619681d4f0b83739df9ace0049ebf27d99c812fe692a75c5d144f2db",
+    "results/domains/full-annotation-snapshot-v1/chunk-034.annotated.tsv.gz": "e326da79241c59414f1f241f18560df95ec79a33fc8e1988ceea8d2a8cf8934b",
+    "results/domains/full-annotation-snapshot-v1/chunk-035.annotated.tsv.gz": "f37f5d7dc6c4107b63b5b6cd571ba4fe4b2ed31bb00a2c3823e00a9a982c4e0f",
+    "results/domains/full-annotation-snapshot-v1/chunk-036.annotated.tsv.gz": "ae88663be42e422ae063fdf62edc0b4908a2c63d29a977df9dc9ef6d5b62117a",
+    "results/domains/full-annotation-snapshot-v1/chunk-037.annotated.tsv.gz": "56c65639b5ea021e8e70a95d97b8b994029bc035eda47c990e522ca5c8f5be06",
+    "results/domains/full-annotation-snapshot-v1/chunk-038.annotated.tsv.gz": "33f4df0a4cd9f9620699c37ab662f7e3acc93a414b4156e48902aaa0dd4caf1b",
+    "results/domains/full-annotation-snapshot-v1/chunk-039.annotated.tsv.gz": "59f98840466907ef4c6d070e00c243798bdf4ad79c1d249808a805f3928db5fc",
+    "results/domains/full-annotation-snapshot-v1/chunk-040.annotated.tsv.gz": "a34cd37b17e9477eda865516357cee2032e68bb84dff0026d0af8cae731408eb",
+    "results/domains/full-annotation-snapshot-v1/chunk-041.annotated.tsv.gz": "57b746d9efe76a33a081b893f1fbc9686f9e7fdac47f8d80d9215b3798450c5d",
+    "results/domains/full-annotation-snapshot-v1/chunk-042.annotated.tsv.gz": "a964a4be78f79e5d1fdd1ac5f84d4ba5d22a81dcbad70d897ed5ba3bf852b670",
+    "results/domains/full-annotation-snapshot-v1/chunk-043.annotated.tsv.gz": "345edea5167b94c7bf7a23bec85975102f269bd13b1f62f17c41dd4e9de3e631",
+    "results/domains/full-annotation-snapshot-v1/chunk-044.annotated.tsv.gz": "9ef24f0af7abe790ada08f9ce026c7457afb4884659c96e950f272bcb7937ea9",
+    "results/domains/full-annotation-snapshot-v1/chunk-045.annotated.tsv.gz": "3690d11278bb63dde05540baf926e92ec6c5a3c383bba06c587fd122b7fd7db0",
+    "results/domains/full-annotation-snapshot-v1/chunk-046.annotated.tsv.gz": "15b80f22877a49faf257ed58c8a374c96539a5f008ad2d41434e354e3589d085",
+    "results/domains/full-annotation-snapshot-v1/chunk-047.annotated.tsv.gz": "7a8b0156390c1bd24759cbe2ca342949462e6ae7cddb6231cf0c7bb4e3789a07",
+    "results/domains/full-annotation-snapshot-v1/chunk-048.annotated.tsv.gz": "13e5f7189b8d174639fa11badba02ba82b1bdb583f5f9cee95bf229be125a3dd",
+    "results/domains/full-annotation-snapshot-v1/chunk-049.annotated.tsv.gz": "18669a39adfbddbf12f1ed28a1d28693b3f3d1954496764e33842a25cef5cd9e",
+    "results/domains/full-annotation-snapshot-v1/chunk-050.annotated.tsv.gz": "95ba57635a9902d92435d3a748c3d566c3eb0f29f84ce6b56ed26212d8d9254e",
+    "results/domains/full-annotation-snapshot-v1/chunk-051.annotated.tsv.gz": "ec76bc18259e408924c2480ee3bdb7362e58852aaba3a0f1fb67d093231990e4",
+    "results/domains/full-annotation-remaining-v1/chunk-052.annotated.tsv.gz": "d1ba4ff2ef37686de8476828c21ed910746bb46750fb1c1bdf22493d3a1f0896",
+    "results/domains/full-annotation-remaining-v1/chunk-053.annotated.tsv.gz": "045fdfcaaf3886d6b03a3e376c910da09039ec62beb5fe5176916d93abf96b55",
+    "results/domains/full-annotation-remaining-v1/chunk-054.annotated.tsv.gz": "597c86c28b0b1e7f3dba963a48faf453faf671247944d05c00b9e527a3d3e22d",
+    "results/domains/full-annotation-remaining-v1/chunk-055.annotated.tsv.gz": "291a871f6b18d0d7857212cdad2f53176711a49f4139a7f2c0952a89c527ae24",
+    "results/domains/full-annotation-remaining-v1/chunk-056.annotated.tsv.gz": "8005071e9ccc4660172d5a5632accef33f6bdd3ac2b71e4dbec23ebc1887376f",
+    "results/domains/full-annotation-remaining-v1/chunk-057.annotated.tsv.gz": "8fd40c3df2b12fcf7900dc74c4d45b7fd3e37df2ca7723cdbb05a3f4596d4437",
+    "results/domains/full-annotation-remaining-v1/chunk-058.annotated.tsv.gz": "34187d61cf6c345af73b9480d65baa4d27b8a9f61345a26d4a173973e8ac03f1",
+    "results/domains/full-annotation-remaining-v1/chunk-059.annotated.tsv.gz": "52c61b05cb882879db5f9bf707ecb45a471d22d62a3c67116d6ee3e7cfdfc260",
+    "results/domains/full-annotation-remaining-v1/chunk-060.annotated.tsv.gz": "a18323f2e1a44a3fe9f2703aed3a0da7eddccc25d62bbd641aeb73dba6f007d5",
+    "results/domains/full-annotation-remaining-v1/chunk-061.annotated.tsv.gz": "de391ba5a97c12110a873f41297a77c72146a8541f0ee552cd7ac73475d5d157",
+    "results/domains/full-annotation-remaining-v1/chunk-062.annotated.tsv.gz": "5f06677644e69e041d112065c817058684400d2ca715d2f14ada5cdf3d5670c2",
+    "results/domains/full-annotation-remaining-v1/chunk-063.annotated.tsv.gz": "9095138c71a3899d41005b7e4ada553230a8650b535f54f5035b58e0902e2e5f"
+  },
+  "all_source_products_retained": true,
+  "family_members_excluded": 0,
+  "repeat_assignment_inferred": false,
+  "duplication_inferred": false,
+  "homology_accepted": false,
+  "scientific_eligibility": false,
+  "scope": "All133973 original selected source products from the focal assembly joined to every OG0000017 member through native IDs, original annotation coordinates, exact UniProt matches and all64 completed Pfam annotation chunks. Repeat-keyword annotations are descriptive flags, not TE classification. Fragmentation, gene density, short proteins, hypothetical labels and repeat-associated Pfam terms are annotation-risk evidence, not grounds for exclusion or biological duplication claims. No sequences, trees, memberships or reconciliation inputs are changed."
+}
