@@ -1,0 +1,11 @@
+{
+  "status": "queued_full_whole_protein_comparison_integration_from_verified_v2_closure",
+  "source_plan": "metadata/full_whole_protein_comparisons_plan_20261006_v2.json",
+  "source_plan_sha256": "d6bbf34d415dd038a6ec3d363a2177b12a73584dc56feba3f65384ca289b336b",
+  "launches": [
+    "metadata/full_whole_protein_comparisons_v2_launch_20261002.json",
+    "metadata/full_whole_protein_comparisons_v2_readback_launch_20261002.json",
+    "metadata/full_whole_protein_comparisons_v2_closure_launch_20261002.json"
+  ],
+  "scope": "Complete verified 375,350 fit dispositions across the frozen 75,070-input cohort and five tree alternatives, integrating all 1,673 numerical follow-ups into 4,147,200 immutable within-setting comparisons. The completed v2 optimization closure preserves three original producer journals and two historical checker hashes; those historical hashes are archived rather than reasserted against modified working-tree scripts. Review statuses remain explicit. This stage produces numerical comparison records only and makes no model-adequacy, calibrated uncertainty, or biological-effect claim."
+}

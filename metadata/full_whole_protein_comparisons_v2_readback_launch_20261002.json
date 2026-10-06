@@ -1,0 +1,37 @@
+{
+  "unit": "fungal-full-whole-protein-comparisons-v2-readback-20261002-v1.service",
+  "pid": 2051314,
+  "created": 1791327801.93,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_whole_protein_comparisons_v2_readback_wait_plan_20261006.json"
+  ],
+  "plan": "metadata/full_whole_protein_comparisons_v2_readback_wait_plan_20261006.json",
+  "plan_sha256": "e0bc99b8ed3473eec752d337dc041cbe94aa789110d78e5a72b82b2e56fe6d30",
+  "checked_utc": "2026-10-06T23:03:22.675250+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-whole-protein-comparisons-v2-readback-20261002-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=32G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_whole_protein_comparisons_v2_readback_wait_plan_20261006.json"
+  ]
+}
