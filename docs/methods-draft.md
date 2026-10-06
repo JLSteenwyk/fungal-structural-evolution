@@ -552,11 +552,12 @@ boundaries, full shard membership and deliberate corruption/count rejection.
 Original fast native results and full wrapper payloads are closed without
 inventing sessions or optional missing manager messages. A first observational
 checker failure is retained and its new V2 review changes no scientific code.
-Full 2,961,055-model/1.165 billion-residue inventory audit is running with eight
-workers. The independent reader has separate original-CIF reconstruction,
-scalar counts and full source/job/array/rejection checks but shares the lexical
-parser and canonical mapping. Full producer closure and full readback are
-pending; PAE/context qualification and biological interpretation remain required.
+The complete 2,961,055-model/1.165 billion-residue inventory audit finished
+with eight workers and actual zero exit; it exported all planned 1,481 shards,
+with zero source-validation rejections. The independent reader has separate
+original-CIF reconstruction, scalar counts and full source/job/array/rejection
+checks but shares the lexical parser and canonical mapping. Its full readback,
+PAE/context qualification and biological interpretation remain required.
 [Scope, evidence and resources](full-atlas-coordinate-confidence-20261005.md).
 
 ## October 5: expanded full domain coordinate preparation

@@ -81,15 +81,16 @@ fixtures were not repeated. See the
 [its exact execution evidence](../metadata/full_atlas_profile_readback_fixture_transport_20261005_v1.json)
 and [preserved observational failure](../metadata/full_atlas_coordinate_profile_fixture_transport_failure_audit_20261005_v1.json).
 
-The original full audit wait **23529** is live, unit
-`fungal-full-atlas-coordinate-profiles-20261005-v1.service`, invocation
-`3406863b6435439a92f2abb25d21947d`. The
+The original full audit, invocation `3406863b6435439a92f2abb25d21947d`,
+completed with actual exit zero in 40,963.44 seconds. Its immutable execution
+closure is
+[`metadata/full_atlas_coordinate_profiles_execution_20261005_v1.json`](../metadata/full_atlas_coordinate_profiles_execution_20261005_v1.json).
+The
 [immutable plan](../metadata/full_atlas_coordinate_profiles_plan_20261005_v1.json),
 [bounded resources](../metadata/full_atlas_coordinate_profiles_resources_20261005_v1.json),
 [exact launch](../metadata/full_atlas_coordinate_profiles_launch_20261005_v1.json)
 and [original initial tool payload](../metadata/full_atlas_coordinate_profiles_original_initial_tool_20261005_v1.json)
-preserve the source and execution identities. Poll that same handle to actual
-completion; process observation or a state file is not terminal proof.
+preserve the source and execution identities.
 
 Before launch, resource estimates specify eight CPUs, 64 GiB memory, no swap,
 one BLAS thread and 56 GiB per-process address-space limits. Input coordinates
@@ -102,13 +103,13 @@ Scaling the prior full four-worker all-atom extraction gives approximately
 I/O differences are uncalibrated. The planning range is 8–168 hours; the
 168-hour hard cap is not a finish ETA.
 
-At **18:21 UTC**, the exact original controller, eight workers and cgroup limits
-are verified. Eight of 1,481 shards record 16,000 AFDB models/6,525,637 residue
-positions, no rejections and 6.23 GB of source coordinates hashed. ESMFold
-records occur later in the full source order and have not yet been processed.
-These are partial producer counts; they do not qualify the full atlas, provide
-accuracy estimates or replace independent readback. Full original completion,
-output binding, actual transport closure and full independent readback are pending.
+The completed producer emitted all 1,481 planned shards. It reports 2,935,733
+valid AFDB models and 25,322 valid ESMFold models, with no rejected model or
+missing-backbone residue. This covers 1,164,928,002 source-model residues and
+does not qualify the atlas for structural biology, provide a prediction-accuracy
+estimate, or replace independent readback. Its final receipt binds the saved
+output and exact totals; independent reconstruction of source atoms, arrays,
+archive membership and dispositions remains pending.
 
 The independent reader is prepared and its literal control passes. It has
 **not been launched**; its full immutable input plan must bind the completed
@@ -131,12 +132,8 @@ The data and exact pinned inputs must be available; existing outputs are refused
 Use the recorded wrapper/cgroup limits for a fresh reproduction. Coordinates,
 jobs, tar profiles and per-model dispositions remain outside Git history.
 
-At the same checkpoint, the separate full
-[domain extraction](completed-domain-extraction-20261005.md) has 40/977 shards,
-40,000 source models and 98,487 exported intervals, with no recorded rejections.
-Four workers remain live; full original completion and atom/archive readback
-are pending. Original weighted timing retains sixteen workers and 1,149 producer
-checkpoints with no failure files. Full biological fits remain zero. Accepted
-phylogenetic/reconciliation/dating frameworks, calibrated sequence–structure
+The separate full [domain extraction](completed-domain-extraction-20261005.md)
+and its atom/archive readback have also completed. Full biological fits remain
+zero. Accepted phylogenetic/reconciliation/dating frameworks, calibrated sequence–structure
 effects, adequate ancestral uncertainty, all eight evolutionary aims and
 publication deliverables remain required and unfinished.
