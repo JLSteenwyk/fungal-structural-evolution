@@ -1,0 +1,11 @@
+{
+  "status": "passed_live_missing_pae_prefix_integrity_checkpoint",
+  "records": 1000,
+  "queue_sha256": "55cb85ff4998a8eec51a9f23157e22b30ce372158defbe608d2af17ad9c8e302",
+  "disposition_stream_bytes": 47605194,
+  "verified_compressed_bytes": 56250382,
+  "verified_json_bytes": 419607757,
+  "verified_directional_entries": 169326412,
+  "script_sha256": "ff9b19a2d0101804a2f40f0091f8334236d22ebbb556c466cfef1fe0ddbda7b7",
+  "scope": "Read-only validation of a completed prefix while the gzip disposition stream remains live. Each completion-order row is matched back to its unique original queue record, then its receipt, compressed/decompressed bytes, matrix dimensions and finite nonnegative values are checked. This checkpoint does not read the trailing stream end, establish whole-queue completion, alter cache files, or make confidence/biological inferences."
+}
