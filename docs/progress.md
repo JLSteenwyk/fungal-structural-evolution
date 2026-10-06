@@ -55,19 +55,24 @@ record; the full failure is preserved. New transport 7626 verifies the actual
 original manager wait and complete wrapper messages while recording zero
 optional CPU-accounting records. No native or API terminal is invented.
 
-Full independent all-atom readback started as original session 5441, with eight
-CPU workers/64 GiB/no swap and all original 976,357 models and 2,454,565 intervals. Exact
-original processes and kernel limits are confirmed live. Complete source/job/
-manifest membership precedes parallel atom checks; full reader completion and
-original execution closure remain pending. At 04:15 UTC its first eight shards
-checked 8,000 models and 19,776 intervals. No numerical tolerance changed.
+Full independent all-atom readback completed as original session 5441, with
+eight CPU workers/64 GiB/no swap and all original 976,357 models and 2,454,565
+intervals. It checked all 977 shards and its raw receipt reports every interval
+exported, with zero rejections and zero missing-backbone intervals. Every
+exported atom, sequence, identity, coordinate, occupancy and confidence value
+was compared with the original source CIF arrays at the unchanged tolerances.
 
-The live reader omits a zero rejection counter that the original completion
-adapter expects explicitly. The atom checks continue unchanged; a prepared
-retained-output review handles only that producer-zero key after full native
-completion, preserving any original reporting failure. Its count software
-passes all 977 producer records and eleven rejection controls. No atom checks
-are repeated, and no reader failure or full completion is yet claimed.
+The original completion adapter then exited one because its `Counter` omitted
+the zero-valued `rejected` key required by a strict dictionary comparison. The
+raw completed atom checks and original failed adapter remain unchanged. A
+retained-output review verifies that this is the only allowed omitted count:
+it accepts an omitted `rejected` key only when the producer explicitly reports
+zero, and rejects all other missing, changed or foreign counters across 977
+producer records and eleven negative controls. No atom checks were repeated.
+This verifies representation integrity, not confidence/PAE calibration,
+biological domain boundaries, homology, or evolutionary effects.
+
+[Completed atom-readback procedure and evidence](completed-domain-atom-readback-20261006.md).
 
 The preceding goal work made progress and published 42 owned paths / 19,328,550 bytes
 at c4bf2bb0bafbae575bc693e236f0d2346c4cacfa with exact remote/committed-byte
