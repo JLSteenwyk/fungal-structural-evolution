@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_genetic_code_context_reader_v1.py", line 126, in <module>
+    main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_genetic_code_context_reader_v1.py", line 79, in main
+    report = audit_taxon(entry, args.output / 'joined')
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/genetic_code_context_v1.py", line 139, in audit_taxon
+    root.mkdir(exist_ok=False)
+  File "/home/bizon/anaconda3/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/software_audits/genetic-code-context-reader-20261006-v1/joined/literal'

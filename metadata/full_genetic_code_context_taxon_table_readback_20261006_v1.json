@@ -1,0 +1,15 @@
+{
+  "status": "passed_all526_taxon_code_disposition_rows_against_independent_source_replay",
+  "checked_utc": "2026-10-06T01:04:55.110991+00:00",
+  "taxa": 526,
+  "original_exact_modeled_code_disagreements": 17211,
+  "source_hashes": {
+    "metadata/full_genetic_code_context_completed_20261006_v1.json": "3d530808a8b58edf1ab8fcfaf49f6b9d6591ac674f560520b985b51091d07380",
+    "metadata/full_genetic_code_context_taxon_dispositions_20261006_v1.tsv": "d1e6f5c8f78ce6cd5e5800e2187b72ad5760f0c7c3f5487f6816930b0dd8d147",
+    "metadata/full_genetic_code_context_readback_20261006_v1.json": "3961ced78d1bd1364b2c359ab9c16d1048e5f0afb6a432742d0ed77fd049462e",
+    "results/cds/full-genetic-code-context-readback-20261006-v1/independent_taxonomic_code_context.json": "a3ebc9c5807efe5b1c7841f8940d957494b5608d3b767da6db727afd570956a8"
+  },
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "scope": "Every public table source identity/code/ancestor/status/model count checked against independent full-corpus replay and independent taxonomy reconstruction; no new biological code or compartment qualification."
+}

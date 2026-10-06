@@ -35,6 +35,16 @@ translation agreement; another 66,837 modeled representatives require review.
 This is source linkage for later codon/structure analyses, not selection
 eligibility or an independent retranslation of the existing audits.
 
+The [full genetic-code context audit](docs/full-genetic-code-context-20261006.md)
+now independently verifies every original CDS/product against the frozen
+taxonomic nuclear and mitochondrial assignments. It retains 20,478 products
+with code disagreement across Candida africana, Ascoidea rubescens and
+Candida viswanathii, including **17,211 original-exact modeled representatives**.
+Another 235 original-exact modeled representatives match only the mitochondrial
+assignment and need compartment verification. All 526 taxon rows and 2,179
+bindings are published with actual original producer/reader closure.
+These are source discrepancies requiring review, not established annotation errors.
+
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the
 evolutionary analyses have finished. GPU prediction remains paused. Authorized

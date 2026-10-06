@@ -1,0 +1,247 @@
+{
+  "status": "verified_original_full_genetic_code_context_runtime",
+  "checked_utc": "2026-10-06T00:54:50.319244+00:00",
+  "phase": "producer",
+  "original_handle": {
+    "unit": "fungal-full-genetic-code-context-20261006-v1.service",
+    "phase": "producer",
+    "pid": 622398,
+    "created": 1791248023.44,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_genetic_code_context_resources_20261006_v1.json",
+      "--execution",
+      "metadata/full_genetic_code_context_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/full_genetic_code_context_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_genetic_code_context_v1.py",
+      "--plan",
+      "metadata/full_genetic_code_context_plan_20261006_v1.json",
+      "--receipt",
+      "metadata/full_genetic_code_context_20261006_v1.json"
+    ],
+    "plan": "metadata/full_genetic_code_context_plan_20261006_v1.json",
+    "plan_sha256": "b0821d2b7ac943f29539f91da1421b10fa39eb35c0517d35eabe20b6231bbe11",
+    "checked_utc": "2026-10-06T00:54:50.046560+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "6674bd452133455980013b4271d26a39",
+    "original_tool_session_id": 3496,
+    "execution_root": "metadata/full_genetic_code_context_execution_20261006_v1",
+    "receipt": "metadata/full_genetic_code_context_20261006_v1.json",
+    "source_hashes": {
+      "metadata/full_genetic_code_context_execution_20261006_v1/configuration.json": "7620d4b76e1bc5088882b82c5c3ecc00bd53fede75363733c15eb4d908b40beb",
+      "metadata/full_genetic_code_context_plan_20261006_v1.json": "b0821d2b7ac943f29539f91da1421b10fa39eb35c0517d35eabe20b6231bbe11",
+      "metadata/full_genetic_code_context_preparation_transport_20261006_v1.json": "c513ac077a238bfc4a495a9f3ec35388ef31866bf3d129bbbfc47cde2bd1b4f6",
+      "metadata/full_genetic_code_context_resources_20261006_v1.json": "ab7a6ed1154be9a03ebcda63a6c3d97f3adcbdadca7d256b1cc223f0fd702894"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_genetic_code_context_launch_20261006_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.47,
+    "children": [
+      {
+        "pid": 622401,
+        "created": 1791248023.86,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 3.1399999999999997
+      },
+      {
+        "pid": 622413,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 63.14
+      },
+      {
+        "pid": 622414,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 63.11
+      },
+      {
+        "pid": 622415,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 63.16
+      },
+      {
+        "pid": 622416,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 63.17
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "a8bcf91336886ebf061fb72016a408bc3d5fa5dd9deb190ed4fb80240e2f2d31",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 584499200,
+      "memory.peak": 584499200,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 622401,
+        "created": 1791248023.86,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "rss_bytes": 27504640,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 622413,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "rss_bytes": 25661440,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 622414,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "rss_bytes": 25661440,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 622415,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "rss_bytes": 24092672,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 622416,
+        "created": 1791248026.15,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_genetic_code_context_v1.py",
+          "--plan",
+          "metadata/full_genetic_code_context_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_genetic_code_context_20261006_v1.json"
+        ],
+        "rss_bytes": 25665536,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 3496,
+  "expected_taxa": 526,
+  "expected_source_products": 5927745,
+  "expected_target_records": 5923039,
+  "output_root_present": true,
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "448d1dcb4b81f63116d40e5d636a3f4dbe2ac4ccb8aec4c4830f25af810f2dbe",
+    "value": {
+      "completed_taxa": 270,
+      "expected_taxa": 526,
+      "source_products": 2976425,
+      "elapsed_seconds": 63.46044909500051
+    }
+  },
+  "reported_reader_taxa": 0,
+  "final_receipt_present": false,
+  "source_hashes": {
+    "metadata/full_genetic_code_context_execution_20261006_v1/configuration.json": "7620d4b76e1bc5088882b82c5c3ecc00bd53fede75363733c15eb4d908b40beb",
+    "metadata/full_genetic_code_context_plan_20261006_v1.json": "b0821d2b7ac943f29539f91da1421b10fa39eb35c0517d35eabe20b6231bbe11",
+    "metadata/full_genetic_code_context_preparation_transport_20261006_v1.json": "c513ac077a238bfc4a495a9f3ec35388ef31866bf3d129bbbfc47cde2bd1b4f6",
+    "metadata/full_genetic_code_context_resources_20261006_v1.json": "ab7a6ed1154be9a03ebcda63a6c3d97f3adcbdadca7d256b1cc223f0fd702894",
+    "metadata/full_genetic_code_context_launch_20261006_v1.json": "a8bcf91336886ebf061fb72016a408bc3d5fa5dd9deb190ed4fb80240e2f2d31",
+    "metadata/full_genetic_code_context_original_initial_tool_20261006_v1.json": "946374aa65ecbc1dbb6976fe7bd3339342a9f2c8896fbb62546ef9d34fef9744",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_genetic_code_context_checkpoint_v1.py": "39b8afb270c33c6bbee568c7c287cc7072697f3d64d9ab3d92e4593f9847b6f3"
+  },
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "biological_codon_eligibility": false,
+  "translations_recomputed": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original API/wrapper/native identity and cgroup; immutable launch/configuration bindings and partial state/log observations. No full source replay by this observer, original API terminal, source/output closure, compartment inference, translation or genetic-code/selection/biological admission. No restart or mutation."
+}

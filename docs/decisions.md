@@ -1,5 +1,22 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: code-context agreement is not translation or compartment admission
+
+Compare all original CDS/product test codes to pinned nuclear and mitochondrial
+assignments with complete ancestor inheritance and source identity. Retain
+20,478 source-code discrepancies, including 17,211 original-exact modeled
+representatives, for explicit review. A disagreement does not prove an annotation
+error; agreement does not determine sequence compartment or biological code.
+Never choose a new code because it improves translation, replace publisher CDSs
+with derived spans, discard alternatives or grant selection eligibility.
+
+Keep the failed reader fixture setup/source/actual exit/journal separate from
+V2's directory correction. Require complete full-source replay and actual original
+producer/reader API/native/source/journal closure before publishing final counts.
+The next translation diagnostics must retain the unmodified source baseline and
+predeclare code comparisons. No fungal GPU prediction is resumed.
+[Full source context and evidence](full-genetic-code-context-20261006.md).
+
 ## October 6 UTC: join original coding evidence to structures without replacing source targets
 
 Retain all 526 entries, all original CDS targets, every original product and

@@ -1,0 +1,42 @@
+{
+  "unit": "fungal-full-genetic-code-context-20261006-v1.service",
+  "phase": "producer",
+  "pid": 622398,
+  "created": 1791248023.44,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_genetic_code_context_resources_20261006_v1.json",
+    "--execution",
+    "metadata/full_genetic_code_context_execution_20261006_v1.json",
+    "--receipt",
+    "metadata/full_genetic_code_context_20261006_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_genetic_code_context_v1.py",
+    "--plan",
+    "metadata/full_genetic_code_context_plan_20261006_v1.json",
+    "--receipt",
+    "metadata/full_genetic_code_context_20261006_v1.json"
+  ],
+  "plan": "metadata/full_genetic_code_context_plan_20261006_v1.json",
+  "plan_sha256": "b0821d2b7ac943f29539f91da1421b10fa39eb35c0517d35eabe20b6231bbe11",
+  "checked_utc": "2026-10-06T00:54:50.046560+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "6674bd452133455980013b4271d26a39",
+  "original_tool_session_id": 3496,
+  "execution_root": "metadata/full_genetic_code_context_execution_20261006_v1",
+  "receipt": "metadata/full_genetic_code_context_20261006_v1.json",
+  "source_hashes": {
+    "metadata/full_genetic_code_context_execution_20261006_v1/configuration.json": "7620d4b76e1bc5088882b82c5c3ecc00bd53fede75363733c15eb4d908b40beb",
+    "metadata/full_genetic_code_context_plan_20261006_v1.json": "b0821d2b7ac943f29539f91da1421b10fa39eb35c0517d35eabe20b6231bbe11",
+    "metadata/full_genetic_code_context_preparation_transport_20261006_v1.json": "c513ac077a238bfc4a495a9f3ec35388ef31866bf3d129bbbfc47cde2bd1b4f6",
+    "metadata/full_genetic_code_context_resources_20261006_v1.json": "ab7a6ed1154be9a03ebcda63a6c3d97f3adcbdadca7d256b1cc223f0fd702894"
+  },
+  "scientific_eligibility": false
+}

@@ -1,5 +1,45 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 6, 01:03 UTC: full genetic-code context and source disagreements verified
+
+All 526 entries, 5,927,745 original protein products and 5,923,039 original
+CDS targets now have pinned nuclear/mitochondrial code context. The raw taxonomy
+inheritance is independently reconstructed, with all prior identity/hybrid flags
+retained. Twenty literal controls and full reader integration pass; the initial
+fixture-parent directory failure remains retained and only its setup is corrected
+in V2. Actual original preparation 58837, full producer 3496 and independent
+reader 98890 exit zero, with complete wrapper/source/invocation closures.
+
+The final handoff merges 2,179 bindings and publishes all 526 taxon rows. Every
+public table identity/code/ancestor and status/model count matches the independent
+source replay. **20,478 original products have test codes different from both
+snapshot assignments**, including **17,211 original-exact modeled representatives**
+across Candida africana, Ascoidea rubescens and Candida viswanathii. Another
+235 original-exact modeled representatives match only the mitochondrial code.
+These are source discrepancies and compartment-review cases, not proved annotation
+errors. Exact genomic/translation source agreement and structural availability
+remain unchanged; no code or protein sequence is replaced and no translation
+is rerun. Matching codes do not establish biological code or compartment.
+[Complete method, scopes and counts](full-genetic-code-context-20261006.md).
+
+The preceding goal turn made progress and published the full coding/structure
+join, all taxon rows and descriptive figure at `0694834e` (82 owned files,
+6,991,371 bytes). Its actual original producer/reader closure remains intact.
+At 00:51 UTC, the original coordinate audit reports 1,696,000 models and domain
+extraction 690,000 models/1,722,579 intervals, with no recorded rejections.
+At 00:37 UTC, the original V10 full-input matrix has seven native zero roles
+of 24; full paired-output/diagnostic readback and posterior qualification remain
+pending. Existing original CPU handles are preserved without restart.
+
+Next requirements include explicit DNA/protein retranslation diagnostics under
+predeclared source codes, code/compartment adjudication, family codon alignment
+and divergence, copy/homology controls, calibrated structural comparisons,
+accepted phylogenetic/reconciliation/dating frameworks and adequate ancestral
+uncertainty. Full weighted biological fits remain zero, all eight aims remain
+unfinished and fungal GPU prediction stays paused. No pilot or narrower project
+objective replaces the approximately 500 fungi plus 25 outgroups design.
+
+
 ## October 6, 00:29 UTC: complete coding-sequence and structure source linkage
 
 All 526 entries, 5,927,745 original products and 5,923,039 original CDS targets

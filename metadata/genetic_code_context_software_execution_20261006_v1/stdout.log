@@ -1,0 +1,36 @@
+{
+  "status": "passed_literal_genetic_code_context_inheritance_controls",
+  "checked_utc": "2026-10-06T00:49:01.622228+00:00",
+  "controls": [
+    "complete_source_parent_path",
+    "merged_taxid_chain",
+    "separate_compartment_inheritance",
+    "inherited_record_value_disagreement_retained",
+    "inherited_test_code_not_recorded",
+    "inherited_test_code_unspecified",
+    "matches_snapshot_nuclear_code_compartment_unverified",
+    "matches_snapshot_mitochondrial_code_requires_compartment_verification",
+    "differs_from_snapshot_nuclear_and_mitochondrial_codes_requires_review",
+    "same_code_does_not_resolve_compartment",
+    "original_exact_and_code_assumption_retained_under_taxonomic_disagreement",
+    "both_predictors_preserved_without_codon_admission",
+    "multiple_original_target_code_relations_retained",
+    "separate_derived_test_does_not_become_original_target",
+    "alternative_baseline_scope_retained",
+    "missing_code_source_retained",
+    "reject_merged_cycle",
+    "reject_parent_cycle",
+    "reject_inheritance_cycle",
+    "reject_missing_parent"
+  ],
+  "control_count": 20,
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_genetic_code_context_v1.py": "a11c75e898e087012085415ee4d101788d8d4200238245a2dc02b3b147bab16a",
+    "scripts/genetic_code_context_v1.py": "86b7607eda433be90e14bb35f165c1ad23b1bef21c914641d7d56d22b928d8f3"
+  },
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal taxonomy/code inheritance and distinct nuclear/mitochondrial source relationship tests; no biological species/code/compartment admission, translation or taxon pilot."
+}

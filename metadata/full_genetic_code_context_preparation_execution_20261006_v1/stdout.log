@@ -1,0 +1,37 @@
+{
+  "status": "prepared_full526_coding_structure_genetic_code_context_audit",
+  "prepared_utc": "2026-10-06T00:51:32.608037+00:00",
+  "cpu": 4,
+  "expected_taxa": 526,
+  "output": "results/cds/full-genetic-code-context-20261006-v1",
+  "reader_output": "results/cds/full-genetic-code-context-readback-20261006-v1",
+  "source_products": 5927745,
+  "selected_representatives": 5815847,
+  "target_records": 5923039,
+  "context_receipt": "metadata/full_taxonomic_genetic_code_context_20261006_v1.json",
+  "taxonomy_archive": "data/raw/new_taxdump.tar.gz",
+  "identity_table": "results/taxonomy/selected-identity-snapshot-20261003-v2/taxon_identity.tsv",
+  "source_input_bytes": 2119231430,
+  "resources": "metadata/full_genetic_code_context_resources_20261006_v1.json",
+  "reader_resources": "metadata/full_genetic_code_context_readback_resources_20261006_v1.json",
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "biological_codon_eligibility": false,
+  "scope": "All original products/targets and separate derived code tests compared to pinned taxonomy context without replacing codes or translations. Nuclear versus mitochondrial relationship does not determine sequence compartment or actual genetic code. Additional new-taxdump plastid/hydrogenosome fields are not interpreted. Shared source evidence and parser libraries remain explicit; no codon alignment, selection or evolutionary admission."
+}
+{
+  "selected_nuclear_code_counts": {
+    "1": 516,
+    "6": 1,
+    "26": 1,
+    "12": 8
+  },
+  "selected_mitochondrial_code_counts": {
+    "4": 474,
+    "3": 15,
+    "16": 2,
+    "1": 24,
+    "0": 6,
+    "5": 5
+  }
+}

@@ -1,5 +1,16 @@
 # Coding-sequence acquisition and validation
 
+The [full genetic-code context audit](full-genetic-code-context-20261006.md)
+has completed all 526 entries, every original target/product and the raw pinned
+taxonomy inheritance, with separate full replay and actual original source/
+wrapper/journal closure. Twenty literal controls and separate reader integration
+pass; the first fixture-directory failure is retained and corrected only in V2.
+All 526 taxon rows are published. Among the original-exact modeled representatives,
+17,211 have an inherited test-code discrepancy with both snapshot assignments,
+and 235 match only the mitochondrial assignment. The audit does not change codes
+or translations or resolve compartments. These cases require review before
+family codon inference; matching codes also do not confer selection eligibility.
+
 The [full coding/structure source join](full-coding-structure-source-coupling-20261005.md)
 has completed across all 526 entries, all 5,927,745 original products and all
 5,923,039 original CDS targets. It joins the completed genome-to-CDS comparison,

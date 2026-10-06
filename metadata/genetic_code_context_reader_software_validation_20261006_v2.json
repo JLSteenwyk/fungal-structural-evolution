@@ -1,0 +1,34 @@
+{
+  "status": "passed_independent_genetic_code_context_reader_literal_integration",
+  "checked_utc": "2026-10-06T00:50:31.484640+00:00",
+  "literal_targets": 2,
+  "literal_products": 2,
+  "unlinked_targets_retained": 1,
+  "alternatives_retained": 1,
+  "separate_derived_products_retained": 1,
+  "independent_taxonomy_inheritance": true,
+  "rejected_semantic_mutations": [
+    "reject_changed_code_relationship",
+    "reject_false_code_admission",
+    "reject_changed_original_code_provenance"
+  ],
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_full_genetic_code_context_reader_v2.py": "05d59a3da4a380b327a14fce722f81477b341133fccbd8827baf4f8208b40343",
+    "scripts/genetic_code_context_v1.py": "86b7607eda433be90e14bb35f165c1ad23b1bef21c914641d7d56d22b928d8f3",
+    "scripts/readback_full_genetic_code_context_v1.py": "28494e04d771dc69ca96fdaccbe1c92c318b62b3ad00d994faded984731218c7",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/source_targets.jsonl.gz": "73a50707c17aa8eeae5b5e00c1897e41d1a067656294199c7afeeddc7cd7c09f",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/source_products.jsonl.gz": "70655781be24711f3647a9849fb537da3b4bc31c47cd16fd4986ce5cd6ac83c6",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/reject_false_code_admission.jsonl.gz": "f4fbac756a90a7e463963f11461be3f47201dd75aa55b14fe249e2375abf0049",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/reject_changed_code_relationship.jsonl.gz": "efe7acb2d16470715b7f5fd13c581b982c40fa43ec20858fd4a31127104d60e7",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/reject_changed_original_code_provenance.jsonl.gz": "0b8d31fd4c590f9e2594065ac7b035212c1565ea927cc92a01309659411fa297",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/literal_identity.tsv": "39300c552e8330df4bc76595a37222074813d53b0b72c89f4866ab574a6daff8",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/literal_taxdump.tar.gz": "2122470a68b350220ac7c0a9af86fcf50df44954bfde14d5a458dc71900cfe39",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/joined/literal/product_code_context.jsonl.gz": "08f41879ce953fa9d7794f9becf6c9ae17800bd4be641d79699677f49586d172",
+    "data/software_audits/genetic-code-context-reader-20261006-v2/joined/literal/target_code_context.jsonl.gz": "b430f0fd633a8bc0a1cfb972ed2afc17aecbdef52bb7819c69c6892f77613665"
+  },
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Literal source archive/identity/target/product integration and three semantic mutations invoked directly without a hash gate or hash-rebinding exercise. No real taxon pilot, current taxonomy, code/compartment admission, translation or biological inference."
+}

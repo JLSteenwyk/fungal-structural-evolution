@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=3600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/prepare_full_genetic_code_context_v1.py",
+    "--plan",
+    "metadata/full_genetic_code_context_plan_20261006_v1.json",
+    "--context-output",
+    "metadata/full_taxonomic_genetic_code_context_20261006_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/full_genetic_code_context_preparation_resources_20261006_v1.json": "5cb511e2f77a358148ff919b8806ce58ede5d9d1ce74ac8e5f762329a0eca530",
+    "scripts/prepare_full_genetic_code_context_v1.py": "9eca115255c5bc0e002cad30c54314e7b1fedb378c3a0c632179785dcce88146",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "b93418131ac84281b3a730e88ca0b764",
+  "wrapper": {
+    "pid": 620812,
+    "created": 1791247868.37,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_genetic_code_context_preparation_resources_20261006_v1.json",
+      "--execution",
+      "metadata/full_genetic_code_context_preparation_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/full_genetic_code_context_plan_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_full_genetic_code_context_v1.py",
+      "--plan",
+      "metadata/full_genetic_code_context_plan_20261006_v1.json",
+      "--context-output",
+      "metadata/full_taxonomic_genetic_code_context_20261006_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "100000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 7200,
+  "started_utc": "2026-10-06T00:51:09.491809+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T00:51:33.094073+00:00",
+  "child": {
+    "pid": 620814,
+    "created": 1791247868.79,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=3600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/prepare_full_genetic_code_context_v1.py",
+      "--plan",
+      "metadata/full_genetic_code_context_plan_20261006_v1.json",
+      "--context-output",
+      "metadata/full_taxonomic_genetic_code_context_20261006_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 23.601996049983427,
+  "child_cpu_seconds": 23.463296,
+  "child_peak_rss_bytes": 671412224,
+  "receipt": "metadata/full_genetic_code_context_plan_20261006_v1.json",
+  "receipt_sha256": "b0821d2b7ac943f29539f91da1421b10fa39eb35c0517d35eabe20b6231bbe11",
+  "artifacts": {
+    "metadata/full_genetic_code_context_preparation_execution_20261006_v1/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/full_genetic_code_context_preparation_execution_20261006_v1/configuration.json": "8601fad50615070f5d964d70dd71a907dd9ff7b37bc92322776794f4a36b69f4",
+    "metadata/full_genetic_code_context_preparation_execution_20261006_v1/stdout.log": "a3e015272cfb986816bd2e3de7d8a8b8cde3f350b7ff9a122720cdc966becdb9",
+    "metadata/full_genetic_code_context_preparation_execution_20261006_v1/process.json": "a0db62eadb4645ae6b3d1d21e9fc51675c262289c45b40b45ad8b2bf03dc4097"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

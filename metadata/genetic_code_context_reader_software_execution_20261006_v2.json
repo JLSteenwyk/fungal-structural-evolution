@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=600",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_full_genetic_code_context_reader_v2.py",
+    "--output",
+    "data/software_audits/genetic-code-context-reader-20261006-v2",
+    "--receipt",
+    "metadata/genetic_code_context_reader_software_validation_20261006_v2.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/genetic_code_context_reader_software_resources_20261006_v2.json": "78927981409fce1835fe331edb87edea0ab684182aa112e7e58914923bb169dc",
+    "scripts/check_full_genetic_code_context_reader_v2.py": "05d59a3da4a380b327a14fce722f81477b341133fccbd8827baf4f8208b40343",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "1e097f2f78954b39a702dabe92ee31ff",
+  "wrapper": {
+    "pid": 620522,
+    "created": 1791247830.31,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/genetic_code_context_reader_software_resources_20261006_v2.json",
+      "--execution",
+      "metadata/genetic_code_context_reader_software_execution_20261006_v2.json",
+      "--receipt",
+      "metadata/genetic_code_context_reader_software_validation_20261006_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_genetic_code_context_reader_v2.py",
+      "--output",
+      "data/software_audits/genetic-code-context-reader-20261006-v2",
+      "--receipt",
+      "metadata/genetic_code_context_reader_software_validation_20261006_v2.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 900,
+  "started_utc": "2026-10-06T00:50:31.401272+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T00:50:31.545351+00:00",
+  "child": {
+    "pid": 620524,
+    "created": 1791247830.7,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=12884901888",
+      "--cpu=600",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_full_genetic_code_context_reader_v2.py",
+      "--output",
+      "data/software_audits/genetic-code-context-reader-20261006-v2",
+      "--receipt",
+      "metadata/genetic_code_context_reader_software_validation_20261006_v2.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.14385088498238474,
+  "child_cpu_seconds": 0.09409299999999998,
+  "child_peak_rss_bytes": 122683392,
+  "receipt": "metadata/genetic_code_context_reader_software_validation_20261006_v2.json",
+  "receipt_sha256": "0fe4f0b05d53d238ad174a06c2fec63b616a06ab20f9aa298b9ed80adaff5156",
+  "artifacts": {
+    "metadata/genetic_code_context_reader_software_execution_20261006_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/genetic_code_context_reader_software_execution_20261006_v2/configuration.json": "86a077e74fa54ff9c1853a53253d1e10f19714ab95f25c26a600ab6a012f4c90",
+    "metadata/genetic_code_context_reader_software_execution_20261006_v2/stdout.log": "28508cba57cec59fababf5ee20d94be5061c60ea380de76d55fd00baf38709dd",
+    "metadata/genetic_code_context_reader_software_execution_20261006_v2/process.json": "fdb522879daa7d9e8095ad593191d3d360d03c2df145722766166e987837b35d"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}
