@@ -17,6 +17,18 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
+def classified_fasta_status(path: Path) -> tuple[int, int]:
+    """Return total FASTA records and records bearing a RepeatMasker class."""
+    records = classified = 0
+    with path.open() as handle:
+        for line in handle:
+            if line.startswith(">"):
+                records += 1
+                if "#" in line[1:].split(maxsplit=1)[0]:
+                    classified += 1
+    return records, classified
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, required=True)
@@ -40,10 +52,14 @@ def main() -> None:
         if receipt_path.is_file():
             result = json.loads(receipt_path.read_text())
             library = Path(result.get("classified_library", ""))
-            if (result.get("status") == "completed" and result.get("taxon_id") == row["taxon_id"]
-                    and result.get("source_sha256") == row["sha256"] and library.is_file()
-                    and sha256(library) == result.get("classified_library_sha256")):
-                status = "completed_verified"
+            valid_receipt = (result.get("status") == "completed" and result.get("taxon_id") == row["taxon_id"]
+                             and result.get("source_sha256") == row["sha256"] and library.is_file()
+                             and sha256(library) == result.get("classified_library_sha256"))
+            records, classified = classified_fasta_status(library) if valid_receipt else (0, 0)
+            if valid_receipt and records > 0 and records == classified:
+                status = "completed_verified_classified_library"
+            elif valid_receipt:
+                status = "invalid_classified_library_format"
             else:
                 status = "invalid_completed_receipt"
         elif work.is_dir():
@@ -51,7 +67,9 @@ def main() -> None:
         else:
             status = "not_started"
         statuses[status] += 1
-        details.append({"taxon_id": row["taxon_id"], "status": status})
+        details.append({"taxon_id": row["taxon_id"], "status": status,
+                        "classified_library_records": records if receipt_path.is_file() else 0,
+                        "class_bearing_records": classified if receipt_path.is_file() else 0})
     payload = {
         "schema_version": 1,
         "status": "full_panel_repeatmodeler_progress_audit",

@@ -35,9 +35,11 @@ failure from being interpreted as biological absence of repeats.
 
 [`audit_repeatmodeler_full_panel_v1.py`](../scripts/audit_repeatmodeler_full_panel_v1.py)
 independently audits all 526 expected receipt locations and verifies the source
-and classified-library SHA-256 values of every completed task. It reports
-completed, incomplete, absent, or invalid-receipt dispositions without changing
-worker output; this provides the full-scope completion gate before RepeatMasker
+and classified-library SHA-256 values of every completed task. It also requires
+each FASTA record to retain a RepeatMasker `#class` header, preserving explicit
+`Unknown` labels where classification remains unresolved. It reports completed,
+incomplete, absent, or invalid-receipt dispositions without changing worker
+output; this provides the full-scope completion gate before RepeatMasker
 instance annotation begins.
 
 The optional LTR structural module is not enabled here because its complete
