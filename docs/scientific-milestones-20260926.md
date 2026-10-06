@@ -1,5 +1,22 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: full whole-protein comparison integration independently closed
+
+The frozen 75,070-input, five-tree whole-protein grid now has a complete
+numerical comparison handoff. The producer exported 375,350 selected-fit
+summaries and parameter records and 4,147,200 immutable within-setting
+comparisons. A fresh reader reconstructed every selected source and parameter,
+checked every comparison, and retained all 1,673 numerical-follow-up outcomes:
+1,636 passed follow-ups and 37 explicit review statuses. The completion archive
+binds 527,416 source hashes and both original process journals.
+
+This is a source-selection and arithmetic validation result only. It does not
+establish model adequacy, calibrated uncertainty, a structural effect, or any
+biological conclusion; all eight evolutionary aims remain open.
+
+[Immutable comparison plan](../metadata/full_whole_protein_comparisons_plan_20261006_v2.json)
+and [completion receipt](../metadata/full_whole_protein_comparisons_v2_completed_20261006.json).
+
 ## October 6 UTC: full current protein database conversion launched
 
 The complete 2,961,055-model AFDB/ESMFold universe is now being encoded with
