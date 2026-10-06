@@ -56,12 +56,12 @@ Evidence:
 - [Preserved transport failure](../metadata/completed_domain_native_closure_transport_failure_20261006_v1.json)
   and [successful review transport](../metadata/completed_domain_native_closure_transport_20261006_v2.json).
 
-## Full independent reader now running
+## Full independent reader complete; retained reporting review
 
 The unchanged, previously qualified
-`scripts/readback_domain_coordinate_archives.py` now runs across the **entire
+`scripts/readback_domain_coordinate_archives.py` ran across the **entire
 manifest**, behind an adapter requiring the closed original native execution
-and the actual completed review transport. The original reader tool session is
+and the actual completed review transport. The original reader tool session was
 **5441**; unit `fungal-full-domain-atom-readback-20261006-v1.service`, invocation
 `07c83fa9e4b54a50800c1aebc9a6c2d8`, wrapper PID **749172**, creation time
 **1791259825.33**. Its command, plan hash and actual kernel limits are recorded
@@ -87,36 +87,32 @@ range is uncalibrated, not a finish ETA. The producer's runtime is context for
 planning; reading and atom comparison have different costs. Source CIF I/O
 volume is not yet estimated. No GPU, new prediction or paid resource is used.
 
-At **04:11 UTC**, the exact original reader wrapper and two native descendants
-were confirmed live. Its state label remained `waiting_for_coordinate_extraction`
-during the full membership checks; this label is written before those checks
-and is not evidence that extraction is still running. At **04:15 UTC**, the
-reader had completed eight shards containing **8,000 models and 19,776 intervals**.
-This is partial producer evidence; full reader completion is not claimed.
-Full readback, its original API/native/source closure,
-confidence/PAE calibration, biological boundary/homology acceptance and subsequent
-structural comparisons remain required.
+The reader completed all **977 shards**, checking **976,357 models** and
+**2,454,565 intervals**. Its retained raw receipt reports 2,454,565 exported
+intervals, zero rejected intervals and zero intervals with missing backbone
+atoms. The raw atom checks freshly hashed every source artifact and used CIF,
+then checked every exported atom and its sequence, identity, coordinate,
+occupancy, confidence and confidence summary against source arrays.
 
-The live reader exposed a **completion-reporting mismatch**: its `Counter`
-omits the zero-valued `rejected` key, while the launched adapter compares the
-entire count dictionary with the producer's explicit zero. The atom checks
-continue unchanged. If this remains the only mismatch, the adapter will fail
-after the complete raw reader receipt has been saved. That failure must be
-retained with its actual exit; the original script and output are not edited.
+The original adapter then failed with its actual exit code one because its
+strict dictionary equality check expected an explicit zero-valued `rejected`
+key, while Python's `Counter` omitted it. This did not invalidate or rerun the
+saved raw atom checks. The failed adapter execution, raw receipt and source
+files remain unchanged.
 
-A separate retained-output reporting review is prepared for that eventual
-receipt. Its count handling passes every one of the 977 original producer
-shard records and eleven rejection controls. It accepts an omitted `rejected`
-only when the producer explicitly recorded zero, rejecting every other missing,
-foreign, changed, noninteger or negative counter. This does not substitute for
-the full atom readback. The review is **not launched or queued**; it requires
-the original terminal execution, the exact reporting assertion failure and
-the complete raw readback receipt. It repeats no atom checks. Actual original
-API/native/journal closure will still be required.
+A separate retained-output review completed against that exact terminal
+execution and raw receipt. Its count handling passes every one of the 977
+original producer shard records and eleven rejection controls. It accepts the
+omitted `rejected` key only when the producer explicitly recorded zero, and
+rejects every other missing, foreign, changed, noninteger or negative counter.
+It repeats no atom checks. The review verifies the raw full-readback result;
+it does not provide confidence/PAE calibration, biological boundary or homology
+acceptance, or evolutionary inference.
 
 [Observed reporting mismatch](../metadata/domain_atom_readback_reporting_defect_20261006_v1.json)
 and [full count-scope software controls](../metadata/domain_atom_readback_count_scope_software_20261006_v2.json)
-preserve this distinction. No reader failure has yet been observed.
+preserve this distinction. The [retained-output review](../metadata/completed_domain_atom_readback_count_review_20261006_v2.json)
+records the accepted zero-counter scope.
 
 The [reader plan](../metadata/completed_domain_atom_readback_plan_20261006_v1.json),
 [resource estimate](../metadata/completed_domain_atom_readback_resources_20261006_v1.json)
