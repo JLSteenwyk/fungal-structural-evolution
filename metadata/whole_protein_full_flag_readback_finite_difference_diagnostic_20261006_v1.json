@@ -1,0 +1,146 @@
+{
+  "case": "results/model_validation/whole-protein-full-flag-followup-20260930-v1/cases/13/137e40a92c6e438840651d401233a910aebf077f6bd81dcce7ea89d4ad42af5c-profile_guide.json",
+  "case_sha256": "1246a9daac6841ef65e94f8e5dfd9989f3acd2d41c3dad573303506142821c61",
+  "fit_plan": "metadata/whole_protein_ml_plan_20260929.json",
+  "fit_plan_sha256": "027339d4f7e571b82fd3ba79fe0bed7f132677835176d020966d54a8023efd5e",
+  "identity": {
+    "fit_input_id": "137e40a92c6e438840651d401233a910aebf077f6bd81dcce7ea89d4ad42af5c",
+    "input_sha256": "6366a69d7075f8462f23e722b45646a8a2bd5fb5b7ac2f5016ae93e03a8b99ef",
+    "original_fit": "results/structural_comparisons/whole-protein-ml-20260929-v1/fits/13/137e40a92c6e438840651d401233a910aebf077f6bd81dcce7ea89d4ad42af5c/profile_guide.json",
+    "original_fit_sha256": "0a33b62e8c6f6f1901fc254cd3659400ef964e48cd8c325de3c46bed9db7186a",
+    "plan_sha256": "24d053749b3593719b1557190731a4d19aa40403eb555728bbe1831aab2bf9c8",
+    "tree": "profile_guide"
+  },
+  "input_manifest": "results/structural_comparisons/whole-protein-materialized-inputs-20260929-v1/input_manifest.jsonl",
+  "input_manifest_sha256": "adf412149284b7957662ef42cb9a4b058751758c6e2ebe80f096ea6c82995d8e",
+  "saved_analytic_gradient": [
+    5.163512656511725e-07,
+    3.363716773823221e-06,
+    -1.2530517918077498e-05
+  ],
+  "schema_version": 1,
+  "scope": "One saved numerical-review case only. It records finite-difference sensitivity without replacing the saved fit, accepting the follow-up result, changing a tolerance, or making any sequence-structure inference.",
+  "selected_theta": [
+    0.7044328131994407,
+    0.008245514154016356,
+    0.004943492638052687
+  ],
+  "status": "complete_single_case_finite_difference_diagnostic",
+  "step_diagnostics": [
+    {
+      "difference_from_saved_analytic_gradient": [
+        -0.00032274668612499255,
+        -0.18845665403724102,
+        -17.296865479283813
+      ],
+      "finite_difference_gradient": [
+        -0.0003222303348593414,
+        -0.1884532903204672,
+        -17.29687800980173
+      ],
+      "maximum_absolute_difference": 17.296865479283813,
+      "scheme_by_axis": [
+        "central_two_point",
+        "central_two_point",
+        "central_two_point"
+      ],
+      "step": 0.001
+    },
+    {
+      "difference_from_saved_analytic_gradient": [
+        -3.263025265005416e-06,
+        -0.0018824525302128347,
+        -0.16806945727680342
+      ],
+      "finite_difference_gradient": [
+        -2.7466739993542433e-06,
+        -0.0018790888134390116,
+        -0.1680819877947215
+      ],
+      "maximum_absolute_difference": 0.16806945727680342,
+      "scheme_by_axis": [
+        "central_two_point",
+        "central_two_point",
+        "central_two_point"
+      ],
+      "step": 0.0001
+    },
+    {
+      "difference_from_saved_analytic_gradient": [
+        2.9345555412584406e-08,
+        -1.9007025644317588e-05,
+        -0.0016802210210216963
+      ],
+      "finite_difference_gradient": [
+        5.456968210637569e-07,
+        -1.5643308870494366e-05,
+        -0.0016927515389397738
+      ],
+      "maximum_absolute_difference": 0.0016802210210216963,
+      "scheme_by_axis": [
+        "central_two_point",
+        "central_two_point",
+        "central_two_point"
+      ],
+      "step": 1e-05
+    },
+    {
+      "difference_from_saved_analytic_gradient": [
+        3.1216275414405403e-06,
+        -1.5447273702773645e-06,
+        -1.4754323135110349e-05
+      ],
+      "finite_difference_gradient": [
+        3.637978807091713e-06,
+        1.8189894035458565e-06,
+        -2.7284841053187847e-05
+      ],
+      "maximum_absolute_difference": 1.4754323135110349e-05,
+      "scheme_by_axis": [
+        "central_two_point",
+        "central_two_point",
+        "central_two_point"
+      ],
+      "step": 1e-06
+    },
+    {
+      "difference_from_saved_analytic_gradient": [
+        -1.8706245301109737e-05,
+        1.4826177261635344e-05,
+        1.2530517918077498e-05
+      ],
+      "finite_difference_gradient": [
+        -1.8189894035458565e-05,
+        1.8189894035458565e-05,
+        0.0
+      ],
+      "maximum_absolute_difference": 1.8706245301109737e-05,
+      "scheme_by_axis": [
+        "central_two_point",
+        "central_two_point",
+        "central_two_point"
+      ],
+      "step": 1e-07
+    },
+    {
+      "difference_from_saved_analytic_gradient": [
+        -0.00036431423197482246,
+        0.00036043416393534807,
+        0.00019442945827266315
+      ],
+      "finite_difference_gradient": [
+        -0.0003637978807091713,
+        0.0003637978807091713,
+        0.00018189894035458565
+      ],
+      "maximum_absolute_difference": 0.00036431423197482246,
+      "scheme_by_axis": [
+        "central_two_point",
+        "central_two_point",
+        "central_two_point"
+      ],
+      "step": 1e-08
+    }
+  ],
+  "upper_log1p_ratio": 9.210440366976517
+}
