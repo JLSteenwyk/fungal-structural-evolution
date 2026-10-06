@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_horizon_streaming_readers_v1.py", line 341, in <module>
+    main()
+  File "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/check_baliphy_horizon_streaming_readers_v1.py", line 283, in main
+    assert expected[str(Path(name).resolve())] == h
+KeyError: '/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/attempts/acfc837699b7ad7b47bda478356d778fa35864ba0a2af4bfe55096cf9e8b65a5-broad-scalar-cjson-v6-chain1-latent-log-alpha-v10-full-comparison/configuration.json'

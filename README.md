@@ -159,6 +159,13 @@ and temporary products. The 14 numeric reviews remain excluded. Full-horizon
 construction/readers and safe aggregate disk limits remain required; no long
 sampler is launched or queued here.
 
+The [horizon-aware streaming readers](docs/baliphy-horizon-streaming-readers-20261006.md)
+now replay all 1,644 current native attempts, 34,020 scalar rows and 4,818
+existing joint exports. Synthetic 10,000-iteration file controls pass
+transactional export and streamed ledger readback; no new ancestors are
+sampled. All 24 original native failures and 14 numeric reviews remain
+explicit. Long native construction/custody and resource admission are pending.
+
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,
 5,171 geometry comparisons and 2,545 coverage exclusions. Independent geometry,

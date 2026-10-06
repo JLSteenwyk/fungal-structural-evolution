@@ -1,0 +1,91 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=10800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_horizon_streaming_readers_v2.py",
+    "--output",
+    "data/software_audits/baliphy-horizon-streaming-readers-20261006-v2",
+    "--receipt",
+    "metadata/baliphy_horizon_streaming_reader_qualification_20261006_v2.json",
+    "--workers",
+    "4"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_horizon_streaming_reader_resources_20261006_v1.json": "277c9b16bb417a2441b5588a73ecf852de2a55ac0f689cff566d1db9e885c874",
+    "scripts/check_baliphy_horizon_streaming_readers_v2.py": "94f3e03198c6222fe9334df72df873b2021e74daa2c2b904957fbb4740c8e8cd",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "aa887ce1869747bf99cc96370eb26856",
+  "wrapper": {
+    "pid": 732277,
+    "created": 1791258206.62,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_horizon_streaming_reader_resources_20261006_v1.json",
+      "--execution",
+      "metadata/baliphy_horizon_streaming_reader_execution_20261006_v2.json",
+      "--receipt",
+      "metadata/baliphy_horizon_streaming_reader_qualification_20261006_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_horizon_streaming_readers_v2.py",
+      "--output",
+      "data/software_audits/baliphy-horizon-streaming-readers-20261006-v2",
+      "--receipt",
+      "metadata/baliphy_horizon_streaming_reader_qualification_20261006_v2.json",
+      "--workers",
+      "4"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 21600,
+  "started_utc": "2026-10-06T03:43:27.720420+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T03:45:38.079574+00:00",
+  "child": {
+    "pid": 732279,
+    "created": 1791258207.02,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=25769803776",
+      "--cpu=10800",
+      "--fsize=268435456",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/check_baliphy_horizon_streaming_readers_v2.py",
+      "--output",
+      "data/software_audits/baliphy-horizon-streaming-readers-20261006-v2",
+      "--receipt",
+      "metadata/baliphy_horizon_streaming_reader_qualification_20261006_v2.json",
+      "--workers",
+      "4"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 130.35892563103698,
+  "child_cpu_seconds": 450.177365,
+  "child_peak_rss_bytes": 513384448,
+  "receipt": "metadata/baliphy_horizon_streaming_reader_qualification_20261006_v2.json",
+  "receipt_sha256": "e87063a053e36e216693ce72e744b49bdeab38656331752f89e9254db714b012",
+  "artifacts": {
+    "metadata/baliphy_horizon_streaming_reader_execution_20261006_v2/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metadata/baliphy_horizon_streaming_reader_execution_20261006_v2/configuration.json": "b3b0e4381d81a74096ce6f8296543b729662a185907070826f0b9a906ea0fd71",
+    "metadata/baliphy_horizon_streaming_reader_execution_20261006_v2/stdout.log": "58eebbe4bbb7dabd746c9729bf79d2ffffd757a0df4f991404a3c380574b0aac",
+    "metadata/baliphy_horizon_streaming_reader_execution_20261006_v2/process.json": "5053e4b113bfb373d107a0b1b1e5628b28790481bd1728adce3a904eab9bf5ab"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

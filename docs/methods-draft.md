@@ -1,5 +1,32 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 6 UTC: horizon-aware streaming ancestral readback
+
+Declare the scalar horizon and saved-frame interval explicitly. Stream strict
+scalar JSON, preserving explicit nonfinite/literal-null tags and the complete
+zero-through-horizon iteration sequence. Compare finite roles to mapped TSV at
+the existing 2e-13 relative/zero-absolute tolerance; retain the native 1e-7 score
+sum check. Pair latent/scalar rows through the existing 90-digit Decimal checks.
+Map source/runtime rooted clades at the unchanged strict 1e-10 branch tolerance.
+Stream separate FASTA frames and all-node joint sequence/category records,
+checking every existing array against the qualified joint decoder.
+
+Write prospective arrays and their per-frame ledger in a fresh pending
+namespace. Require every frame and unchanged source hashes before sealing.
+Read the sealed reference ledger incrementally, re-decoding native records and
+checking every serialized value/shape/dtype and exact file membership. Retain
+partial failed namespaces without a completed export. Scalar reviews create
+no arrays. Native custody and biological/posterior admission remain external
+requirements; the readers do not establish long-run peak-memory bounds.
+
+Full current-corpus qualification covers 1,644 attempts/34,020 scalar rows/
+504 latent rows/4,860 FASTA frames/4,818 joint exports; original failure/review
+outcomes remain unchanged. Synthetic 10,000-iteration control files exercise
+10,001 states/1,001 frames with transactional and streamed readback, alongside
+29 negative controls. No new native sampler or prediction is run.
+
+[Full procedure and original execution evidence](baliphy-horizon-streaming-readers-20261006.md).
+
 ## October 6 UTC: complete derived-output storage census
 
 Hash and measure every non-native leaf in the original V6 and separate V10

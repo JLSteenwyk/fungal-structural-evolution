@@ -1,5 +1,18 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: horizon-aware readers qualified, long sampling still pending
+
+The streaming reader qualification passes the full current 1,644-attempt corpus
+and all4,818 joint exports, retaining 24 native failures and 14 numeric reviews.
+Synthetic 10,000-iteration export/readback controls and29 negative controls pass;
+no long native horizon or adequate posterior is established. Future native
+construction/custody, CPU/memory/file bounds, aggregate disk safeguards,
+convergence/model adequacy and biological framework acceptance remain open.
+The full 501 fungal entries +25 outgroups and all eight aims remain unfinished.
+GPU prediction remains paused; current CPU atlas/domain/timing work continues.
+
+[Full reader checks and remaining requirements](baliphy-horizon-streaming-readers-20261006.md).
+
 ## October 6 UTC: derived-output resource requirement measured
 
 The full ancestral derived census and independent readback now cover 1,644

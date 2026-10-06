@@ -1,5 +1,17 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: stream long traces and require complete export transactions
+
+Keep qualified short-run reader sources immutable. Add horizon-aware versions
+that stream raw traces and reference ledgers. Preserve numeric-review exclusions
+and require all frames plus unchanged source hashes before a prospective
+pending array namespace can become complete. A late failure retains its pending
+files and explicit error; existing namespaces are never reused. Long synthetic
+controls qualify software behavior only. Full current-corpus replay does not
+prove native long-run resources, convergence or biological uncertainty.
+
+[Full contracts, retained failure and source proof](baliphy-horizon-streaming-readers-20261006.md).
+
 ## October 6 UTC: missing ancestral exports get resource proxies only
 
 Use the full derived census to supplement native-output disk estimates.

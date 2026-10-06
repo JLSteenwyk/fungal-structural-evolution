@@ -1,0 +1,23 @@
+{
+  "pid": 734486,
+  "created": 1791258431.74,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=10800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_software_original_wait_transport_v1.py",
+    "--execution",
+    "metadata/baliphy_horizon_streaming_reader_execution_20261006_v2.json",
+    "--validation",
+    "metadata/baliphy_horizon_streaming_reader_qualification_20261006_v2.json",
+    "--payloads",
+    "metadata/baliphy_horizon_streaming_reader_original_payloads_20261006_v2.json",
+    "--unit",
+    "fungal-baliphy-horizon-streaming-readers-20261006-v2",
+    "--output",
+    "metadata/baliphy_horizon_streaming_reader_transport_20261006_v2.json"
+  ]
+}

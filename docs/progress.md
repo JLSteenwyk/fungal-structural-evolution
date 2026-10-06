@@ -1,5 +1,38 @@
 # Progress and evidence
 
+## October 6 UTC: dynamic ancestral readers checked across the full current corpus
+
+The new V2 streaming readers pass all 1,644 current native attempts, preserving
+24 original native failures and 14 numeric reviews. They replay 34,020 scalar
+rows, 1,450,218 mapped scalar values, 504 latent diagnostics, eight retained
+overflow rows, 4,860 separate FASTA frames and all 4,818 existing joint exports.
+Ancestral/category pairs remain conditional draws, not independent biological
+replication. Original short-reader sources and native data remain unchanged.
+
+Synthetic 17- and 10,000-iteration controls verify dynamic frame/state counts,
+transactional export and streamed reference-ledger readback. The long control
+has 10,001 states/1,001 frames; it is software data, not a native sampling pilot.
+All 29 malformed/partial/semantic/namespace controls are rejected, and a tagged
+numeric review creates no arrays. The V1 source-map failure is retained; fresh
+V2 qualification imports the existing V10 provenance and extends streaming
+ledger handling without changing any numerical tolerance. Original successful
+wait 20222 and complete source/wrapper/invocation closure are retained.
+
+The preceding goal turn made progress:56 owned paths/10,974,423 bytes were
+published at 375b1e7521e535908d92e39d957d913c5cde5870 and exact remote/committed
+bytes checked. This turn removes short-horizon reader constants; long native
+construction/custody, CPU/memory/file bounds and aggregate disk monitoring
+remain required. No long sampler is launched or queued. All eight aims,
+adequate ancestral posterior uncertainty and accepted biological frameworks
+remain incomplete; fungal GPU prediction remains paused.
+
+At 03:44 UTC original CPU jobs remain live: 2,484,000 coordinate-audited models,
+2,452,106 exported domain intervals, 49,600 newly verified PAE matrices and
+1,542/4,340 timing producer cohorts. These partial observations do not close
+full independent atlas/domain/timing readback. Biological weighted fits remain zero.
+
+[Full streaming contracts, checks and limitations](baliphy-horizon-streaming-readers-20261006.md).
+
 ## October 6 UTC: full derived ancestral storage independently checked
 
 Completed the derived storage census across all 1,644 current attempts and

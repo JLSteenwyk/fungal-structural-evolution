@@ -1,0 +1,19 @@
+{
+  "pid": 732279,
+  "created": 1791258207.02,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=10800",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/check_baliphy_horizon_streaming_readers_v2.py",
+    "--output",
+    "data/software_audits/baliphy-horizon-streaming-readers-20261006-v2",
+    "--receipt",
+    "metadata/baliphy_horizon_streaming_reader_qualification_20261006_v2.json",
+    "--workers",
+    "4"
+  ]
+}
