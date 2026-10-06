@@ -8,7 +8,7 @@ None of the eight evolutionary aims is complete.
 
 | Requirement | Current evidence | Status and next gate |
 | --- | --- | --- |
-| 501 fungal entries plus 25 outgroups | [Sampling manifest](../metadata/sampling_manifest.tsv), [analysis manifest](../metadata/analysis_manifest.tsv) | Frozen 526-entry design; taxon quality, nomenclature and ecology remain explicit review variables. |
+| 501 fungal entries plus 25 outgroups | [Sampling manifest](../metadata/sampling_manifest.tsv), [analysis manifest](../metadata/analysis_manifest.tsv), [composition audit](../metadata/analysis_manifest_audit_20261006_v1.json) | The frozen analysis manifest has exactly 501 fungal entries and 25 outgroups. One additional fungal candidate is retained only in the candidate manifest with its documented no-proteome exclusion; taxon quality, nomenclature and ecology remain explicit review variables. |
 | Assemblies, annotations, proteins and coding sequence | [Original CDS audit](full-unmodified-cds-translation-20261006.md), [coding–structure source join](full-coding-structure-source-coupling-20261005.md) | Complete source custody and readback; annotation/code/compartment review still gates codon analyses. |
 | Existing predicted structures | [Prediction-atlas union](full-prediction-atlas-union-20261005.md) | 2,961,055 source models inventoried; models are not automatically accepted for every downstream analysis. |
 | Protein/domain structural-search infrastructure | [Full database workflow](full-atlas-foldseek-database-20261006.md) | Running original-CIF/native-coordinate verification; independent reader is queued behind it. |
