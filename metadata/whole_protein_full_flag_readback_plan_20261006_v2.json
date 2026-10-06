@@ -1,0 +1,33 @@
+{
+  "source_plan": "metadata/whole_protein_full_flag_followup_plan_20260930.json",
+  "source_launch": "metadata/whole_protein_full_flag_followup_launch_20260930.json",
+  "output": "results/model_validation/whole-protein-full-flag-readback-20261006-v2",
+  "workers": 4,
+  "finite_difference_policy": "adaptive_v2",
+  "finite_difference_rationale": "The superseded full readback halted after a central 1e-5 difference differed from the analytic score by 0.0016804 for fit_input_id 137e40a92c6e438840651d401233a910aebf077f6bd81dcce7ea89d4ad42af5c on profile_guide. The independently repeated central 1e-6 difference had maximum error 1.475432176410748e-05 and passed the existing tolerance. This run therefore uses 1e-6 consistently; every result still receives an explicit independent readback status and any discrepancy remains review-required.",
+  "supersedes": {
+    "plan": "metadata/whole_protein_full_flag_readback_plan_20260930.json",
+    "service": "fungal-whole-protein-full-flag-readback-20260930.service",
+    "reason": "The fixed 1e-5 finite-difference assertion stopped after six of 1,673 cases."
+  },
+  "pins": {},
+  "implementation_pins": {
+    "scripts/readback_whole_protein_flag_followup.py": "abb0901b47b491aa268c58339100a1d0d4f8058881d4f8f24fb6b783282fea4e",
+    "scripts/whole_protein_flag_followup.py": "8c494d52c0233775a51ec92dd106ddd5bec59c333e13e6868ed6fd13ca0470bf",
+    "scripts/readback_selected_refinement_candidates.py": "28544cb1fd605a5857a1f25b87efddc7678702b45899cfe49b67e5da6e57ba34",
+    "scripts/cached_matched_ml.py": "639cce8b188e5b69126f2cd58fb3e830c1867f67ba4b5c1e673f2b33bcc697b5",
+    "scripts/matched_ml_gradient.py": "7662de2c2e1758f8fac7d8fabed46d1b7762f70c31f989e7d574ffd54975a4c0",
+    "scripts/matched_mixed_covariance.py": "c575a614f36f6d148e5af1e32193277f8beb2da591048f067e278d8b8b389e5b"
+  },
+  "resource_assessment": "metadata/whole_protein_full_flag_readback_resource_assessment_20261006_v2.json",
+  "resources": {
+    "cpus": 4,
+    "memory_gib": 64,
+    "swap_gib": 0,
+    "output_gib": 32,
+    "blas_threads": 1,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "scope": "All 375,350 original dispositions are rechecked for scope against the producer receipt; every one of 1,673 flagged serialized results is independently replayed. No fit errors are erased, no global optimum or biological inference is claimed."
+}

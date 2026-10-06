@@ -1,0 +1,18 @@
+{
+  "status": "full_grid_adaptive_readback_resources_assessed",
+  "checked_utc": "2026-10-06T00:00:00+00:00",
+  "flagged_fits": 1673,
+  "workers": 4,
+  "cpus": 4,
+  "memory_gib": 64,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "gpu": false,
+  "paid_resources": false,
+  "observed_legacy_readback": {
+    "completed_cases_before_stop": 6,
+    "elapsed_cpu_seconds": 313.254,
+    "terminal_cause": "one fixed 1e-5 finite-difference check failed"
+  },
+  "scope": "Replay every one of the 1,673 serialized numerical-followup results with four single-threaded CPU workers. Reconstruct candidate likelihoods, selected coefficients, covariances, gradients and recovery lineage. Use the documented 1e-6 finite-difference step; preserve any remaining discrepancies as review statuses. The historical failed service is not reused."
+}

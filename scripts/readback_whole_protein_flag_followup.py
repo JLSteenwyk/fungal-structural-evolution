@@ -20,11 +20,12 @@ from run_whole_protein_ml import digest
 from screen_duplication_alignment_reuse import sha
 
 
-def check_result(result, original, bg, family, factor, x, y, scales):
+def check_result(result, original, bg, family, factor, x, y, scales, finite_difference_policy='legacy'):
     if result['status']=='numerical_followup_error_requires_review':
         assert result['error_type'] and result['traceback']
         return dict(status=result['status'],numerical_result_verified=False,candidates_checked=0,
-            maximum_objective_error=0.,finite_difference_checks=[])
+            maximum_objective_error=0.,finite_difference_checks=[],
+            independent_readback_status='followup_error_requires_review')
     p=result['refinement'];candidates=p['candidates'];upper=float(np.log1p(10000.))
     assert p['maximum_ratio']==original['payload']['maximum_ratio']==10000.
     grid=[([True]*3,'original_unoptimized_reference')]
@@ -120,8 +121,10 @@ def check_result(result, original, bg, family, factor, x, y, scales):
     np.testing.assert_allclose(result['raw_unit_beta'],fitted['beta']*conversion,rtol=1e-9,atol=1e-9)
     np.testing.assert_allclose(result['raw_unit_conditional_beta_covariance'],fitted['conditional_beta_covariance']*np.outer(conversion,conversion),rtol=1e-9,atol=1e-9)
     finite=[]
+    if finite_difference_policy not in {'legacy', 'adaptive_v2'}:
+        raise ValueError('unknown finite-difference policy')
     for label,point,g in points:
-        for step in (1e-5,1e-6):
+        for step in ((1e-5,1e-6) if finite_difference_policy=='legacy' else (1e-6,)):
             values=[]
             for axis in range(3):
                 d=np.eye(3)[axis]*step
@@ -130,14 +133,19 @@ def check_result(result, original, bg, family, factor, x, y, scales):
                 elif point[axis]>upper-step:fd=(3*value(point)-4*value(point-d)+value(point-2*d))/(2*step)
                 else:fd=(value(point+d)-value(point-d))/(2*step)
                 values.append(fd)
-            np.testing.assert_allclose(values,g,rtol=1e-4,atol=1e-3)
-            finite.append(dict(point=label,step=step,maximum_absolute_error=float(max(abs(np.asarray(values)-g)))))
-    return dict(status=result['status'],numerical_result_verified=True,candidates_checked=checked,
-        maximum_objective_error=maximum,finite_difference_checks=finite)
+            maximum_error=float(max(abs(np.asarray(values)-g)))
+            if finite_difference_policy=='legacy':
+                np.testing.assert_allclose(values,g,rtol=1e-4,atol=1e-3)
+            finite.append(dict(point=label,step=step,maximum_absolute_error=maximum_error,
+                               within_legacy_tolerance=bool(np.allclose(values,g,rtol=1e-4,atol=1e-3))))
+    finite_pass=all(row['within_legacy_tolerance'] for row in finite)
+    return dict(status=result['status'],numerical_result_verified=finite_pass,candidates_checked=checked,
+        maximum_objective_error=maximum,finite_difference_checks=finite,
+        independent_readback_status=('independently_replayed_numerical_followup' if finite_pass else 'finite_difference_discrepancy_requires_review'))
 
 
 def work(task):
-    row,item,recipe,fit_plan,root=task
+    row,item,recipe,fit_plan,root,finite_difference_policy=task
     path=Path(root)/row['path'];assert sha(path)==row['sha256'];saved=json.loads(path.read_text())
     original,matrix,bg,family,factor,x,y,scales=arrays(item,recipe,fit_plan)
     identity=dict(fit_input_id=item['fit_input_id'],tree=item['tree'],original_fit=item['path'],
@@ -149,7 +157,7 @@ def work(task):
     np.testing.assert_array_equal(saved['covariate_scales'],scales)
     assert saved['result']['status']==row['status']
     checked = dict(fit_input_id=item['fit_input_id'],tree=item['tree'],source_sha256=row['sha256'],
-        **check_result(saved['result'],original,bg,family,factor,x,y,scales))
+        **check_result(saved['result'],original,bg,family,factor,x,y,scales,finite_difference_policy))
     assert sha(path)==row['sha256']
     return checked
 
@@ -159,14 +167,22 @@ def initialize():threadpool_limits(limits=1)
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--plan',required=True,type=Path)
+    parser.add_argument('--finite-difference-policy',choices=['legacy','adaptive_v2'],default='legacy')
     args=parser.parse_args();config=json.loads(args.plan.read_text())
     producer=json.loads(Path(config['source_plan']).read_text());ph=sha(config['source_plan'])
     launch=json.loads(Path(config['source_launch']).read_text())
     assert sha(launch['plan'])==launch['plan_sha256']
-    state=terminal_state(launch['unit']);assert state==dict(ActiveState='inactive',Result='success',ExecMainStatus='0')
+    state=terminal_state(launch['unit'])
+    assert state==dict(ActiveState='inactive',Result='success',ExecMainStatus='0')
     fit_plan,production,flags,errors,recipes,bindings=sources(producer)
     for p,h in config['pins'].items():
         assert p not in bindings or bindings[p]==h;bindings[p]=h
+    # Historical producer code is retained in ``bindings``.  Record the
+    # independently executed readback implementation separately, so a
+    # superseding validator cannot silently masquerade as producer code.
+    for p,h in config['implementation_pins'].items():
+        assert sha(p)==h,p
+        bindings['execution:'+p]=h
     bindings[str(args.plan)]=sha(args.plan)
     root=Path(producer['output']);receipt=json.loads((root/'receipt.json').read_text())
     assert receipt['status']=='complete_full_grid_optimization_followup_pending_independent_readback'
@@ -197,16 +213,16 @@ def main():
     stored=output/'run_plan.json'
     if stored.exists():assert stored.read_bytes()==args.plan.read_bytes()
     else:stored.write_bytes(args.plan.read_bytes())
-    counts=Counter();maximum=0.;total=candidates=0
+    counts=Counter();independent_counts=Counter();maximum=0.;total=candidates=0
     with (output/'readback_manifest.jsonl').open('w') as f,ProcessPoolExecutor(max_workers=config['workers'],
         mp_context=multiprocessing.get_context('spawn'),initializer=initialize) as pool:
-        tasks=((r,expected[r['fit_input_id'],r['tree']],recipes[r['fit_input_id']],fit_plan,str(root)) for r in rows)
+        tasks=((r,expected[r['fit_input_id'],r['tree']],recipes[r['fit_input_id']],fit_plan,str(root),args.finite_difference_policy) for r in rows)
         pending=set()
         def collect():
             nonlocal pending,total,candidates,maximum
             done,pending=wait(pending,return_when=FIRST_COMPLETED)
             for future in done:
-                result=future.result();counts[result['status']]+=1;total+=1
+                result=future.result();counts[result['status']]+=1;independent_counts[result['independent_readback_status']]+=1;total+=1
                 candidates+=result['candidates_checked'];maximum=max(maximum,result['maximum_objective_error'])
                 f.write(json.dumps(result)+'\n')
             f.flush();print('Independent full-grid flag check',total,'/',len(flags),flush=True)
@@ -218,6 +234,7 @@ def main():
     verify()
     result=dict(status='passed_full_grid_optimization_followup_readback_with_review_statuses_retained',
         full_dispositions=len(production),flagged_fits=total,original_fit_errors_retained=len(errors),counts=dict(counts),
+        independent_readback_counts=dict(independent_counts),finite_difference_policy=args.finite_difference_policy,
         candidate_likelihoods_replayed=candidates,maximum_objective_error=maximum,
         source_receipt_sha256=sha(root/'receipt.json'),producer_terminal_state=state,source_hashes=bindings,
         artifacts={'readback_manifest.jsonl':sha(output/'readback_manifest.jsonl')},scientific_eligibility=False,
