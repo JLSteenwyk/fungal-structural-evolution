@@ -50,6 +50,8 @@ def main() -> None:
     parser.add_argument("--task-index", type=int, required=True)
     parser.add_argument("--build-database", type=Path, required=True)
     parser.add_argument("--repeatmodeler", type=Path, required=True)
+    parser.add_argument("--repeatclassifier", type=Path, required=True)
+    parser.add_argument("--famdb-dir", type=Path, required=True)
     args = parser.parse_args()
     config_path = args.config.resolve()
     config = json.loads(config_path.read_text())
@@ -58,6 +60,10 @@ def main() -> None:
     output_root = (project_root / config["output_root"]).resolve()
     build_database = args.build_database.resolve()
     repeatmodeler = args.repeatmodeler.resolve()
+    repeatclassifier = args.repeatclassifier.resolve()
+    famdb_dir = args.famdb_dir.resolve()
+    if not (famdb_dir / "famdb.py").is_file():
+        raise FileNotFoundError(f"FamDB installation unavailable: {famdb_dir}")
     with input_manifest.open(newline="") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
     if len(rows) != config["taxa"] or not 0 <= args.task_index < len(rows):
@@ -93,6 +99,7 @@ def main() -> None:
         run([str(build_database), "-name", database, str(fasta)], work, log)
     recover_dirs = sorted(path for path in work.glob("RM_*") if path.is_dir())
     recover_dir = None
+    completed_unclassified = None
     if recover_dirs:
         if len(recover_dirs) != 1:
             raise RuntimeError(f"ambiguous recovery directories for {row['taxon_id']}")
@@ -102,7 +109,11 @@ def main() -> None:
             if (candidate / f"round-{number}" / "consensi.fa").is_file()
             and (candidate / f"round-{number}" / "consensi.fa").stat().st_size > 0
         ]
-        if completed_rounds and max(completed_rounds) > 1:
+        run_log = candidate / "rmod.log"
+        if ((candidate / "consensi.fa").is_file() and run_log.is_file()
+                and "Program Time:" in run_log.read_text(errors="replace")):
+            completed_unclassified = candidate
+        elif completed_rounds and max(completed_rounds) > 1:
             recover_dir = candidate
         else:
             archive = work / f"interrupted_{candidate.name}"
@@ -113,12 +124,26 @@ def main() -> None:
             os.replace(candidate, archive)
     threads = str(config["threads_per_taxon"])
     seed = str((int(hashlib.sha256(row["taxon_id"].encode()).hexdigest()[:8], 16) % 2147483646) + 1)
-    if recover_dir:
-        command = [str(repeatmodeler), "-recoverDir", str(recover_dir), "-threads", threads, "-srand", seed]
+    if completed_unclassified:
+        command = None
+    elif recover_dir:
+        command = [str(repeatmodeler), "-recoverDir", str(recover_dir), "-threads", threads, "-srand", seed, "-famdb_dir", str(famdb_dir)]
     else:
-        command = [str(repeatmodeler), "-database", database, "-threads", threads, "-srand", seed]
-    run(command, work, log)
+        command = [str(repeatmodeler), "-database", database, "-threads", threads, "-srand", seed, "-famdb_dir", str(famdb_dir)]
+    if command:
+        run(command, work, log)
     candidates = sorted(work.glob("RM_*/consensi.fa.classified"))
+    if not candidates:
+        raw_candidates = sorted(work.glob("RM_*/consensi.fa"))
+        if len(raw_candidates) != 1:
+            raise RuntimeError(f"missing completed raw consensus for {row['taxon_id']}")
+        classify = [str(repeatclassifier), "-consensi", str(raw_candidates[0]), "-threads", threads, "-famdb_dir", str(famdb_dir)]
+        classifier_env = dict(os.environ, FAMDB_DIR=str(famdb_dir))
+        with log.open("a") as log_handle:
+            log_handle.write("$ " + " ".join(classify) + "\n")
+            log_handle.flush()
+            subprocess.run(classify, cwd=work, stdout=log_handle, stderr=subprocess.STDOUT, check=True, env=classifier_env)
+        candidates = sorted(work.glob("RM_*/consensi.fa.classified"))
     if len(candidates) != 1 or candidates[0].stat().st_size == 0:
         raise RuntimeError(f"missing classified library for {row['taxon_id']}")
     library = candidates[0].resolve()

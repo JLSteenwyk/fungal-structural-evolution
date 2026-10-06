@@ -26,6 +26,14 @@ and its SHA-256. RepeatModeler discovery is not a genome-wide repeat annotation
 and therefore cannot by itself support a claim about repeat content, synteny or
 structural evolution.
 
+The worker pins both layers of FamDB configuration: `FAMDB_DIR` identifies the
+FamDB program installation for RepeatModeler, and its local `famdb.conf` points
+to the audited Dfam data directory. If discovery has completed but embedded
+classification did not create a classified library, the worker runs
+RepeatClassifier directly on the completed consensus under that same
+configuration. This preserves discovery output and prevents a configuration
+failure from being interpreted as biological absence of repeats.
+
 [`audit_repeatmodeler_full_panel_v1.py`](../scripts/audit_repeatmodeler_full_panel_v1.py)
 independently audits all 526 expected receipt locations and verifies the source
 and classified-library SHA-256 values of every completed task. It reports
