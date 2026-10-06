@@ -473,6 +473,27 @@ Shared Python/SQLite/Biopython dependencies remain. Full producer/reader
 closure and independently qualified assembly-to-CDS reconstruction are
 pending. [Detailed method and limitations](full-annotation-coordinate-registry-20261005.md).
 
+## Full-panel gene-order and assembly-context inputs
+
+For each of the 526 frozen taxa, source-order records were exported directly
+from the completed coordinate registry. Native annotation gene features retain
+their sequence identifier, start/end/strand, ordinal position, adjacent-gap
+values and linked source/selected products. The two taxa represented by
+verified ORF coordinates remain explicitly provisional and are not promoted to
+gene anchors. An independent reader verified all 6,000,510 coordinate/ORF rows,
+table hashes, schemas, taxon identities, coordinate order and bidirectional
+adjacent-gap arithmetic. A second source-bound join combines the resulting
+526-row context summary with assembly-statistics dispositions, retaining seven
+unavailable assembly-statistics records rather than imputing them. The covariate
+input table and independent readback are
+`metadata/genome_architecture_covariate_inputs_20261006_v1.json` and
+`metadata/genome_architecture_covariate_inputs_readback_20261006_v1.json`.
+
+These are planned adjustment/sensitivity inputs for future genome-context and
+joint structural models. They do not identify repeats, synteny blocks,
+rearrangements, orthology, duplications, selection, structural change or an
+association between them.
+
 ## October 5: complete original PAE reconstruction and full genomic DNA inputs
 
 The independent available-matrix reader reconstructs all 55,959 original AFDB/
