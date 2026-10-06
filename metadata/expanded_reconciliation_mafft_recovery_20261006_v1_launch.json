@@ -1,0 +1,23 @@
+{
+  "status": "launched_fresh_isolated_mafft_reconciliation_recovery",
+  "unit": "fungal-expanded-reconciliation-mafft-recovery-20261006-v1.service",
+  "pid": 1069557,
+  "invocation_id": "9901715f90ac4e9cb08856d16537fbc3",
+  "started_local": "2026-10-06T16:21:16-04:00",
+  "plan": "metadata/expanded_reconciliation_mafft_recovery_20261006_v1_plan.json",
+  "plan_sha256": "7987b76a0d021eda8ae53dd2a72721f981f803ac5a895173c8da9ab9fc5a82f7",
+  "output": "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v1",
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_expanded_reconciliation_mafft_recovery_v1.py",
+    "--plan",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v1_plan.json"
+  ],
+  "resource_limit": {
+    "cpu_quota_cores": 8,
+    "memory_max_gib": 128,
+    "memory_swap_max_gib": 0,
+    "nice": 10
+  },
+  "recovery_scope": "Fresh MAFFT-only recovery after the September 22 attempt was interrupted immediately after native reconciliation began. The new run uses a fresh output path and does not alter the preserved v2 partial output."
+}
