@@ -1,5 +1,28 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: retain an evidence-linked, role-stratified 25-taxon outgroup panel
+
+Freeze the exact 25 non-fungal entries already present in the analysis manifest
+and bind them to `config/outgroups.json` with a reproducible membership audit.
+The panel contains one close Nucleariida anchor (*Fonticula alba*), nine
+unicellular holozoan comparators, nine metazoans, and six broader
+rooting-sensitivity taxa from Apusomonadida and Amoebozoa. The close-anchor and
+unicellular-holozoan roles are supported as sampling rationale by published
+phylogenetic/comparative-genomic literature; they are not adopted as this
+project's resolved topology or root.
+
+Do not require every outgroup in each protein-family analysis. Record the
+actual retained outgroups per family, retain missingness as missing data, and
+evaluate taxon/marker/model sensitivity before accepting a rooted species
+framework. The frozen role partition cannot establish taxonomy, assembly or
+annotation quality, branch times, root position along a separating edge, or
+gene-family eligibility. Preserve the broad NCBI fungal ingroup circumscription
+and test narrower circumscription only through explicit sensitivity analyses.
+
+[Selection rationale and citations](outgroup-selection-20261006.md) and the
+[machine-readable audit](../metadata/outgroup_selection_audit_20261006_v1.json)
+are the authoritative record.
+
 ## October 6 UTC: rebuild the protein database across every current predictor model
 
 The current 2.96-million-model atlas exceeds the existing 1.29-million-model
