@@ -35,6 +35,11 @@ confirms one completed registry receipt for each of the 526 manifest taxa and
 records coordinate-anchor modes without reopening the 64-GB registry. Direct
 source-product anchors in that audit are not orthology or synteny anchors.
 
+The completed [covariate-input receipt](../metadata/genome_architecture_covariate_inputs_20261006_v1.json)
+binds the all-taxon assembly-statistics dispositions to the independently read
+gene-order context table. It retains seven unavailable assembly-statistics rows
+and two provisional ORF-coordinate rows rather than imputing or excluding them.
+
 No family may receive a genome-context score before its gene/protein mapping
 and reconciliation are qualified. No species-tree branch rate may be accepted
 before the taxon/marker/model sensitivity collection is evaluated.
