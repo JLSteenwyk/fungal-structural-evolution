@@ -1,0 +1,13 @@
+name: fungal-genome-architecture-synteny
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.10
+  - mcscanx=1.0.0
+  - jcvi=1.6.7
+
+# The two tools provide independent collinearity implementations. Input anchor
+# construction remains gated on completed reconciliation and accepted species
+# tree alternatives; this file does not authorize a reduced-scope run.

@@ -1,0 +1,13 @@
+name: fungal-genome-architecture-repeat
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.10
+  - repeatmasker=4.2.4
+  - repeatmodeler=2.0.9
+
+# This environment is intentionally separate from the collinearity environment.
+# Database/library acquisition, executable versions after solving, and the
+# full-panel resource plan must be recorded before any 526-taxon execution.
