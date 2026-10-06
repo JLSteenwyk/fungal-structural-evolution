@@ -14,11 +14,18 @@ SUMMARY_FIELDS=['fit_summaries','parameter_records','comparisons','trees','origi
 def load_sources(plan,path):
     bindings=dict(plan['pins']);bind(bindings,path)
     cp=Path(plan['optimization_completion']);c=json.loads(cp.read_text());bind(bindings,cp)
-    assert c['status']=='complete_verified_full_whole_protein_optimization' and c['scientific_eligibility'] is False and c['exact_process_journals_checked']==4
+    expected_journals=plan['expected_process_journals']
+    historical=plan.get('historical_source_hashes',{})
+    assert type(expected_journals) is int and expected_journals>0
+    assert c['status']=='complete_verified_full_whole_protein_optimization' and c['scientific_eligibility'] is False and c['exact_process_journals_checked']==expected_journals
+    assert c['historical_source_hashes']==len(historical)
     bind(bindings,c['full_hash_archive'],c['full_hash_archive_sha256']);a=json.loads(Path(c['full_hash_archive']).read_text())
-    assert a['status']==c['status']+'_archive' and len(a['services'])==4 and len(a['source_hashes'])==c['bound_source_hashes']
+    assert a['status']==c['status']+'_archive' and len(a['services'])==expected_journals and len(a['source_hashes'])==c['bound_source_hashes']
+    assert a.get('historical_source_hashes',{})==historical
     for k,v in a['summary'].items():assert c[k]==v
-    for p,h in a['source_hashes'].items():bind(bindings,p,h)
+    for p,h in a['source_hashes'].items():
+        assert p not in historical
+        bind(bindings,p,h)
     assert c['unique_inputs']==75070 and c['full_dispositions']==375350
     op=json.loads(Path(plan['optimization_plan']).read_text());assert c['completion_plan_sha256']==sha(plan['optimization_plan'])
     assert op['fit_plan']==plan['fit_plan'] and op['followup_plan']==plan['followup_plan']
