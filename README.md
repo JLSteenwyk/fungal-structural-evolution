@@ -13,7 +13,7 @@ and all eight evolutionary aims to current evidence and remaining gates.
 The [full annotation-coordinate registry](docs/full-annotation-coordinate-registry-20261005.md)
 producer has completed across all 526 entries and **5,927,745 source protein products**,
 retaining all alternatives and the unchanged 5,815,847 representatives.
-The original NCBI annotations contain **60,434,823 features/23,306,261 CDS
+The completed registry records **60,917,860 features/23,456,867 CDS
 segments**. All coordinates, phases, exceptions, Parent links and unresolved
 candidate associations are retained for later assembly-to-CDS checks. Sixteen
 offline controls pass; full independent replay and original execution closure
@@ -37,6 +37,15 @@ taxon rows: 2,952,711 representatives have a model plus original genomic/strict-
 translation agreement; another 66,837 modeled representatives require review.
 This is source linkage for later codon/structure analyses, not selection
 eligibility or an independent retranslation of the existing audits.
+
+A [full-panel genome-architecture resource census](docs/genome-architecture-resource-census-20261006.md)
+now checks compact receipts for all 526 taxa. It records 5,815,847 retained
+representatives and matched verified assembly-statistics receipts for 519 taxa;
+seven unavailable assembly-statistics records remain explicit. Stated planning
+bounds cover the immutable gene-order (2.98 GB) and immediate-neighbor (4.47 GB)
+flat-text tables only. Repeat/block software bounds, reconciled anchors, species
+tree sensitivity and structural qualification still gate any genome-context
+analysis.
 
 The [full genetic-code context audit](docs/full-genetic-code-context-20261006.md)
 now independently verifies every original CDS/product against the frozen
@@ -106,20 +115,22 @@ pending. Original coordinates, predictor identities and every exclusion remain
 explicit. PAE/context qualification and accuracy calibration are still required.
 
 The [full protein-level structural-search database](docs/full-atlas-foldseek-database-20261006.md)
-is now being rebuilt across all **2,961,055 AFDB/ESMFold models**, preserving both
-sources and the unlinked alternative. Mixed-source native software controls and
+is being rebuilt across all **2,961,055 AFDB/ESMFold models**, preserving both
+sources and the unlinked alternative. At the current checkpoint, native
+coordinate validation has reached 2,906 of 2,962 shards (2,906,000 AFDB models)
+with zero missing backbone residues. Mixed-source native software controls and
 eleven corruption checks pass. The actual full build uses eight CPU workers and
-96 GiB memory; native conversion, every original-CIF/native-coordinate check,
-independent full database readback and execution closure remain pending. Existing
-protein clusters still refer to their older 1.29-million-model database. The new
-index does not establish homology, predictor accuracy or evolutionary change.
+96 GiB memory; remaining AFDB/ESMFold checks, independent full database readback
+and execution closure remain pending. Existing protein clusters still refer to
+their older 1.29-million-model database. The new index does not establish
+homology, predictor accuracy or evolutionary change.
 
 The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now retain
 every source model and independently reconstruct the entire missing queue.
 All **55,959 previously available matrices** pass source/body validation and
 full independent decoding/statistic reconstruction across all 112 jobs. The
-corrected complete-queue downloader has verified **35,600 new PAE matrices**
-at October 6, 01:38 UTC, with no failures in that partial checkpoint.
+corrected complete-queue downloader has verified **155,000 new PAE matrices**
+at the current October 6 checkpoint, with no failures in that partial checkpoint.
 Its initial cache-path failure, stopped output and unreceipted bytes are retained
 and excluded. PAE retrieval adds uncertainty data for existing structures;
 it does not add predicted structures or complete scientific atlas qualification.
