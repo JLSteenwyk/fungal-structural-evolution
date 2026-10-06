@@ -6,9 +6,10 @@ source-verified genomes. It is an all-taxon array, not a pilot: task indices
 26,645,610,508 bases and 1,070,884 records.
 
 The Slurm array reserves eight CPU threads and 32 GB RAM per taxon, with at
-most twelve concurrent taxa (96 threads and 384 GB reserved). This leaves
-capacity for the currently active structural-atlas readers and keeps the run
-within locally available, no-cost resources. The seven-day task limit bounds
+most twelve concurrent taxa (96 threads and 384 GB reserved). It targets the
+192-core `gpu` partition for CPU capacity; no GPU is requested by this stage.
+This leaves capacity for the currently active structural-atlas readers and keeps
+the run within locally available, no-cost resources. The seven-day task limit bounds
 individual large assemblies. Failed tasks retain their work directory. The
 controller uses RepeatModeler's recovery function after more than one completed
 round; because the software itself rejects early-round recovery, earlier

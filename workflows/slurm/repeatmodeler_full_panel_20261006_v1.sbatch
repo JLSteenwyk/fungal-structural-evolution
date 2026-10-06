@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=fungal-rm2-full
-#SBATCH --partition=all
+#SBATCH --partition=gpu
 #SBATCH --array=0-525%12
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
