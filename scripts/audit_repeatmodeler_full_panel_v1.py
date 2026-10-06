@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""Audit full-panel RepeatModeler receipts without altering any worker output."""
+import argparse
+import csv
+import hashlib
+import json
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1 << 20), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config", type=Path, required=True)
+    parser.add_argument("--receipt", type=Path, required=True)
+    args = parser.parse_args()
+    if args.receipt.exists():
+        raise FileExistsError(args.receipt)
+    config_path = args.config.resolve()
+    config = json.loads(config_path.read_text())
+    root = config_path.parent.parent
+    with (root / config["input_manifest"]).open(newline="") as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+    if len(rows) != config["taxa"]:
+        raise ValueError("manifest does not match configured full-panel taxon count")
+    output_root = (root / config["output_root"]).resolve()
+    details = []
+    statuses = Counter()
+    for row in rows:
+        work = output_root / row["taxon_id"]
+        receipt_path = work / "receipt.json"
+        if receipt_path.is_file():
+            result = json.loads(receipt_path.read_text())
+            library = Path(result.get("classified_library", ""))
+            if (result.get("status") == "completed" and result.get("taxon_id") == row["taxon_id"]
+                    and result.get("source_sha256") == row["sha256"] and library.is_file()
+                    and sha256(library) == result.get("classified_library_sha256")):
+                status = "completed_verified"
+            else:
+                status = "invalid_completed_receipt"
+        elif work.is_dir():
+            status = "incomplete_worker_output"
+        else:
+            status = "not_started"
+        statuses[status] += 1
+        details.append({"taxon_id": row["taxon_id"], "status": status})
+    payload = {
+        "schema_version": 1,
+        "status": "full_panel_repeatmodeler_progress_audit",
+        "checked_utc": datetime.now(timezone.utc).isoformat(),
+        "configuration": str(config_path),
+        "taxa_expected": len(rows),
+        "counts": dict(sorted(statuses.items())),
+        "taxa": details,
+        "scope": (
+            "Independent receipt/hash audit for the full 526-taxon RepeatModeler "
+            "stage. It reports execution disposition only and makes no repeat or "
+            "genome-architecture inference."
+        ),
+    }
+    args.receipt.parent.mkdir(parents=True, exist_ok=True)
+    args.receipt.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+
+
+if __name__ == "__main__":
+    main()

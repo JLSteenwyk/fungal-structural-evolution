@@ -26,6 +26,13 @@ and its SHA-256. RepeatModeler discovery is not a genome-wide repeat annotation
 and therefore cannot by itself support a claim about repeat content, synteny or
 structural evolution.
 
+[`audit_repeatmodeler_full_panel_v1.py`](../scripts/audit_repeatmodeler_full_panel_v1.py)
+independently audits all 526 expected receipt locations and verifies the source
+and classified-library SHA-256 values of every completed task. It reports
+completed, incomplete, absent, or invalid-receipt dispositions without changing
+worker output; this provides the full-scope completion gate before RepeatMasker
+instance annotation begins.
+
 The optional LTR structural module is not enabled here because its complete
 dependency chain was not qualified in the pinned environment. It remains a
 separate full-panel sensitivity stage, not a reason to exclude any taxon or to
