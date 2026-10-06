@@ -1,5 +1,34 @@
 # Methods draft: data preparation and exploratory structural comparisons
 
+## October 6 UTC: full mixed-source protein database and original-CIF geometry checks
+
+Enroll all 2,935,733 AFDB and 25,322 ESMFold source models, with explicit source
+labels, lengths, digests, CIF paths and unique aliases. Both predictors and the
+unlinked alternative remain separate models. Use the unchanged installed
+Foldseek createdb settings: GPU zero, seeding confidence threshold 70 and native
+float32 coordinates, with eight CPU threads. Full lookup/AA-hash/3Di alphabet/
+length/coordinate-dimension and finiteness checks use the qualified existing
+record checker. Seeding masks do not grant confidence or calibrated accuracy.
+
+Reconstruct every source CIF with the existing separate source-reader helper,
+freshly checking bytes and all atom/residue/chain/alternate-location/occupancy/
+confidence properties. Compare every native C-alpha exactly after float32
+conversion; no PDB rounding or numerical relaxation. Per-source counts include
+explicit zeros. Complete source/grid/digest closure is required before any
+complete stage receipt. Shared CIF lexical parsing and unreconstructed native
+3Di values remain dependencies. Independent whole-database readback and original
+execution closure are subsequent requirements; homology and evolutionary effect
+acceptance are separate from representation integrity.
+
+Four mixed-source native software controls and eleven corrupted identity/source/
+coordinate cases pass. The first import failure is preserved; the fresh version
+calls the original unchanged independent_arrays helper. Native full database
+session 33972 uses 8 CPUs/96 GiB/no swap, 64 GiB file caps and 250 GiB output
+planning. Prior model/residue scaling gives about 4.2 native hours before full
+source geometry checks, not a calibrated ETA; full planning is 8–72 hours.
+
+[Exact scope, resources and original execution evidence](full-atlas-foldseek-database-20261006.md).
+
 ## October 6 UTC: full refreshed domain atom readback
 
 Retain all four annotation-policy alternatives, alignment/envelope boundaries,

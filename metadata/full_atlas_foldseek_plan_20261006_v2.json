@@ -1,0 +1,58 @@
+{
+  "models": "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl",
+  "atlas_closure": "metadata/full_prediction_atlas_union_completed_20261005_v1.json",
+  "output": "results/structural_clusters/full-prediction-atlas-database-20261006-v2",
+  "fixture": "metadata/full_atlas_foldseek_fixture_20261006_v2.json",
+  "fixture_transport": "metadata/full_atlas_foldseek_fixture_transport_20261006_v2.json",
+  "foldseek": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+  "expected_models_by_source": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "expected_residues_by_source": {
+    "AFDB": 1152706482,
+    "ESMFold": 12221520
+  },
+  "models_per_geometry_shard": 1000,
+  "resources": {
+    "cpu": 8,
+    "memory_gib": 96,
+    "swap_gib": 0,
+    "minimum_free_disk_gib": 2048,
+    "output_planning_gib": 250,
+    "runtime_planning_hours": [
+      8,
+      72
+    ],
+    "runtime_is_uncalibrated": true,
+    "gpu": false,
+    "paid_resources": false
+  },
+  "native_seed_mask_threshold": 70,
+  "native_coordinate_store_mode": 1,
+  "preserve_both_sources": true,
+  "retain_unlinked_alternative_model": true,
+  "independent_whole_database_reader_required": true,
+  "pins": {
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+    "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl": "a6813149ccc76928b85572327c9824a5c30b7236b20133249e3aaf2b9ff8f2d0",
+    "metadata/full_atlas_coordinate_profiles_plan_20261005_v1.json": "a57e10cfb1d43a51abda9327fc5b4518bb32b6cc18877c5785d710f921826638",
+    "metadata/full_atlas_foldseek_resources_20261006_v2.json": "3ef5378dbde7005968c4c92f3d3aa49624dcee6eca5371c203b4fa1c53298364",
+    "metadata/full_atlas_foldseek_resource_cost_20261006_v2.json": "c36f2ce92454a19f9b46150c95447f4c861a90310335b2ce0ce087fc43531f88",
+    "metadata/full_atlas_foldseek_fixture_20261006_v2.json": "d3a2fc4701bdc1ca172f4cbca203fc00cfb64f627147784bdfa7794db9df723a",
+    "metadata/full_atlas_foldseek_fixture_transport_20261006_v2.json": "6c696e45ddcafde400c63f07a2ff5389d54f4df2c5ee538df1de167c134aa91d",
+    "metadata/full_atlas_foldseek_fixture_original_payloads_20261006_v2.json": "46a0abb25502f5dafb3b9e557f61068da36eb159439f9ecf48fe2cd7bea20452",
+    "metadata/full_atlas_foldseek_fixture_transport_original_payloads_20261006_v2.json": "c6f26e283120ee1e3e135ea05b10f39944e358dc6b1d5fafe94139a16dbd2c18",
+    "metadata/full_atlas_foldseek_fixture_failure_20261006_v1.json": "b5988d28862ab0983e4e49e30827033a4333b26abeddcf6ef3a8845e7cc9f0bb",
+    "scripts/build_full_atlas_foldseek_database_v2.py": "c29e0e3fbeab4459221d7dfeec4961e621f4092c3e6440cfb0bbd41689f1f058",
+    "scripts/check_full_atlas_foldseek_database_v2.py": "e633ac6ea4316cc59cf6564d7c4eba7f7711b688285b946040baa8126ee6472b",
+    "scripts/build_whole_proteome_foldseek_database.py": "612452b9ba6b35142a80039cfc342162485b02245436b5106b37ae74c27f13db",
+    "scripts/readback_full_atlas_coordinate_profiles_v1.py": "30c64cf79bd051f1e82c6b42cf100057eec99f4255db7660b0b8b9f89b98ad18",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "metadata/full_atlas_profile_readback_fixture_20261005_v1.json": "9f19b6dec956dd64618f8dfe5114c2b0719edc5efc28edd2e68940d966e9b532",
+    "metadata/whole_proteome_foldseek_fixture_checks.json": "7cb3acf8e143d36b2f4d235649e2294cc0e0224b8576ee531a8ae7f638e27e08",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc"
+  },
+  "scope": "Entire2,961,055current source-model atlas, including both predictors and unlinked alternative; no model selection by confidence or taxon. Native index and every original-CIF coordinate rechecked. All original old databases/failures and published source/coordinate helpers preserved. No PAE/homology/cluster/phylogenetic acceptance or GPU prediction."
+}

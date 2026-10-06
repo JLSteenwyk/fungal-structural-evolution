@@ -1,0 +1,51 @@
+{
+  "status": "measured_prior_native_and_full_current_atlas_database_resource_scenario",
+  "checked_utc": "2026-10-06T04:34:38.070399+00:00",
+  "models_by_source": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "residues_by_source": {
+    "AFDB": 1152706482,
+    "ESMFold": 12221520
+  },
+  "full_models": 2961055,
+  "full_residues": 1164928002,
+  "prior_root": "results/structural_clusters/whole-proteome-afdb-database-20260923-v1",
+  "prior_models": 1290278,
+  "prior_residues": 514418704,
+  "prior_native_threads": 4,
+  "prior_native_seconds": 13455.124,
+  "prior_native_database_bytes": 7422261481,
+  "prior_artifact_sizes_measured": true,
+  "prior_native_files_freshly_rehashed_here": false,
+  "current_native_threads": 8,
+  "current_coordinate_payload_bytes": 13982097079,
+  "current_aa_3di_coordinate_payload_bytes": 16323797303,
+  "model_and_cpu_scaled_native_hours": 4.288628130679762,
+  "residue_and_cpu_scaled_native_hours": 4.231920903067365,
+  "payload_excludes_headers_indices_source_mapping_and_temporaries": true,
+  "full_source_cif_geometry_readback_runtime_uncalibrated": true,
+  "full_source_cif_geometry_readback_extra_io_required": true,
+  "whole_stage_planning_hours": [
+    8,
+    72
+  ],
+  "output_planning_gib": 250,
+  "per_file_limit_gib": 64,
+  "minimum_free_disk_gib": 2048,
+  "memory_gib": 96,
+  "available_ram_gib": 642.846809387207,
+  "free_disk_gib": 9756.662155151367,
+  "estimates_are_not_bounds_or_finish_eta": true,
+  "source_hashes": {
+    "results/structural_clusters/whole-proteome-afdb-database-20260923-v1/receipt.json": "149f74a331adff85b128458e4ae08505f696318a0edc52f3f7fe67708a83f954",
+    "results/structural_clusters/whole-proteome-afdb-database-20260923-v1/createdb.log": "1aef7f00f531234af74420537c7392430c286a3a7b62418e8ef11a78fcdf4833",
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+    "metadata/full_atlas_coordinate_profiles_plan_20261005_v1.json": "a57e10cfb1d43a51abda9327fc5b4518bb32b6cc18877c5785d710f921826638"
+  },
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "scope": "Resource scenario for the complete current2.96m-model mixed-source database. Actual previous native4CPU conversion3h44m15.124s implies4.23-4.29h at8CPU by length/model scaling, before full source CIF geometry readback. Raw AA/3Di/float32 payload alone16.32GB and coordinate file13.98GB;64GiB file cap and250GiB storage allowance cover this scenario, not unknown bounds. No source reduction, alias collision acceptance or biological result."
+}

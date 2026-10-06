@@ -1,5 +1,45 @@
 # Progress and evidence
 
+## October 6 UTC: full expanded protein database actually launched
+
+The new full search-database stage preserves all 2,961,055 current AFDB/ESMFold
+models and 1,164,928,002 inventory residue positions, including both predictors
+and the unlinked alternative. Existing protein clusters remain tied to the
+older 1,290,278-model database. New mixed-source native compatibility checks pass
+four actual model records and every C-alpha coordinate, with eleven identity/
+source/coordinate corruptions rejected. The first helper-import failure and
+actual original exit one are preserved; fresh V2 uses the unchanged qualified
+source-reader helper. Original successful check 19668 and transport 97251 close
+with actual zero and complete original execution/source evidence.
+
+Resource estimates use the previous actual 3 h 44 min native conversion and
+measured 7.42 GB database. The current raw coordinate payload is 13.98 GB; raw
+AA/3Di/coordinate payloads total 16.32 GB before metadata/temporary products.
+Native encoding scales to about 4.2 hours at eight CPUs, before full original-
+CIF geometry checks; 8–72 hours is the uncalibrated full-stage planning range.
+Eight CPUs, 96 GiB/no swap, a 64 GiB file cap and 250 GiB output allowance were
+recorded before launch. Original session 33972, wrapper PID 765873 and invocation
+12cb88ce14b54334ac3f83b6a11848b0 are live with the declared actual kernel limits.
+At 04:42 UTC all 2,961,055 models passed input enrollment and native createdb
+was confirmed live as PID 768169, using eight threads with GPUs disabled.
+The full source-file census is 1,105,396,373,092 bytes; fresh source hashes and
+all coordinate comparisons follow native encoding.
+
+Native completion, every original-CIF/native-coordinate check, full independent
+database readback, source/execution closure, confidence/PAE calibration, cluster
+edge/parameter sensitivity and biological homology acceptance remain pending.
+No new structures, inferred orthogroups or evolutionary effects are claimed.
+The preceding goal turn made progress and published 74 paths / 2,637,837 bytes
+at 4ae7d54ce074571d7474d340f1f1248d09a9e380, with exact remote/committed-byte
+verification. All eight aims and accepted biological frameworks remain unfinished.
+
+At 04:38 UTC, the original domain reader had checked 228,536 intervals, the
+atlas audit 2,706,000 models, PAE retrieval 55,200 new matrices and timing
+1,582/4,340 producer cohorts. These are partial process-backed observations.
+Full biological weighted fits remain zero; GPU prediction remains paused.
+
+[Full scope, original software evidence, resources and actual database launch](full-atlas-foldseek-database-20261006.md).
+
 ## October 6 UTC: full domain extraction complete; independent atom reader launched
 
 The original refreshed extraction exported all 2,454,565 intervals from

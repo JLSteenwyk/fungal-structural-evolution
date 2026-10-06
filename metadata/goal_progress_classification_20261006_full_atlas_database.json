@@ -1,0 +1,66 @@
+{
+  "checked_utc": "2026-10-06T04:43:36.509367+00:00",
+  "objective_file": "/home/bizon/.codex/attachments/4c549555-8304-4df0-8e92-1d9d90b77a45/pasted-text-1.txt",
+  "objective_sha256": "e17e34f2c90f2e611f82f3c05bdaf629a80d4da6422b7cf0b76009ea47aa3502",
+  "previous_goal_turn_classification": "progress",
+  "previous_publication_commit": "4ae7d54ce074571d7474d340f1f1248d09a9e380",
+  "previous_owned_paths": 74,
+  "previous_owned_bytes": 2637837,
+  "current_goal_turn_classification": "progress",
+  "current_evidence": [
+    "metadata/full_atlas_foldseek_fixture_20261006_v2.json",
+    "metadata/full_atlas_foldseek_fixture_transport_20261006_v2.json",
+    "metadata/full_atlas_foldseek_resource_cost_20261006_v2.json",
+    "metadata/full_atlas_foldseek_launch_20261006_v2.json",
+    "metadata/full_atlas_foldseek_checkpoint_20261006_goal_native_v2.json"
+  ],
+  "actual_original_fixture_session_id": 19668,
+  "actual_original_fixture_exit_code": 0,
+  "actual_original_fixture_transport_session_id": 97251,
+  "actual_original_fixture_transport_exit_code": 0,
+  "preserved_first_fixture_actual_exit_code": 1,
+  "preserved_first_fixture_original_session_id": null,
+  "preserved_first_fixture_return_terminal_synchronous": true,
+  "fixture_models_by_source": {
+    "AFDB": 2,
+    "ESMFold": 2
+  },
+  "fixture_rejection_controls": 11,
+  "full_original_stage_session_id": 33972,
+  "full_original_stage_invocation_id": "12cb88ce14b54334ac3f83b6a11848b0",
+  "original_native_createdb_pid": 768169,
+  "original_native_createdb_create_time": 1791261606.94,
+  "original_native_createdb_live": true,
+  "full_enrollment_model_counts": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "full_enrollment_residue_counts": {
+    "AFDB": 1152706482,
+    "ESMFold": 12221520
+  },
+  "full_enrollment_source_coordinate_bytes": 1105396373092,
+  "full_native_conversion_complete": false,
+  "full_original_cif_geometry_check_complete": false,
+  "independent_full_database_reader_complete": false,
+  "source_reader_and_old_database_helpers_unchanged": true,
+  "retained_all_prediction_sources_and_alternative": true,
+  "evidence_changes_next_action": "Actual complete2.96m-source enrollment passes; full native database conversion is running, followed by all original-CIF geometry checks. This expands search coverage over the prior1.29m database. Full native/geometry completion and independent whole-database/execution closure are next.",
+  "preserved_sampling_entries": 526,
+  "fungal_entries": 501,
+  "outgroup_entries": 25,
+  "new_predictions": 0,
+  "gpu_prediction_state": "paused",
+  "biological_fit_count": 0,
+  "posterior_qualified": false,
+  "all_eight_aims_incomplete": true,
+  "goal_complete": false,
+  "live_evidence": [
+    "metadata/full_atlas_foldseek_checkpoint_20261006_goal_native_v2.json",
+    "metadata/completed_domain_atom_readback_checkpoint_20261006_goal_database_v1.json",
+    "metadata/full_atlas_coordinate_profiles_checkpoint_20261006_goal_database_v1.json",
+    "metadata/full_atlas_missing_pae_checkpoint_20261006_goal_database_v1.json",
+    "metadata/full_weighted_timing_parallel_checkpoint_20261006_goal_database_v1.json"
+  ],
+  "scope": "Full existing-model structural-search infrastructure advances the unchanged complete fungal/outgroup project. No source reduction, pilot, GPU restart, cluster/homology admission or completed evolutionary aim."
+}

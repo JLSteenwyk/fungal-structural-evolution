@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-10-06T04:34:38.070841+00:00",
+  "cpus": 8,
+  "memory_gib": 96,
+  "swap_gib": 0,
+  "blas_threads": 1,
+  "address_space_gib": 88,
+  "cpu_seconds_per_stage": 604800,
+  "wall_seconds_per_stage": 259200,
+  "per_file_limit_mib": 65536,
+  "minimum_available_ram_gib": 96,
+  "minimum_free_disk_gib": 2048,
+  "available_ram_gib": 642.846809387207,
+  "free_disk_gib": 9756.662155151367,
+  "output_allowance_gib": 250,
+  "estimated_wall_hours": [
+    8,
+    72
+  ],
+  "runtime_is_uncalibrated": true,
+  "gpu": false,
+  "new_cost_usd": 0,
+  "new_predictions": 0,
+  "cost_artifact": "metadata/full_atlas_foldseek_resource_cost_20261006_v2.json",
+  "cost_artifact_sha256": "c36f2ce92454a19f9b46150c95447f4c861a90310335b2ce0ce087fc43531f88",
+  "scope": "Whole current source-model Foldseek native conversion and all original-CIF coordinate checks.8CPU/96GiB/zero swap/88GiB per-process AS/1BLAS.72h wall and7day per-process CPU caps;64GiB per-file cap accommodates the13.98GB coordinate payload. Both sources and unlinked alternative retained. Native~4.2h is an uncalibrated old-dataset scaling; complete source readback is extra. No prediction, clustering/homology acceptance, paid infrastructure or GPU."
+}

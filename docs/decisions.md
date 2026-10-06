@@ -1,5 +1,26 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: rebuild the protein database across every current predictor model
+
+The current 2.96-million-model atlas exceeds the existing 1.29-million-model
+protein-search database. Encode every current model, retaining both predictors
+and the unlinked alternative, with unique source filename aliases and unchanged
+seeding/float32 storage settings. Fail on missing inputs or alias collisions;
+do not resolve them by dropping source models. Full raw-source links and taxon/
+protein denominators remain in the closed predictor availability union.
+
+Add exact original-CIF/native-coordinate comparison across every source model
+using the unchanged qualified source-reader helper. Retain shared lexical parsing
+and lack of independent 3Di-value reconstruction explicitly. Pass mixed-source
+native compatibility and eleven corruption controls before full launch. Preserve
+the first import failure and fresh correction without changing qualified sources.
+Budget the 13.98 GB coordinate file explicitly with a 64 GiB file cap; eight
+CPUs/96 GiB/no swap and 250 GiB output planning are local CPU-only resources.
+Database construction is distinct from confidence/PAE, homology and biological
+branch effects. Existing clusters retain their original older input universe.
+
+[Full conversion and source-coordinate contracts](full-atlas-foldseek-database-20261006.md).
+
 ## October 6 UTC: close native extraction without reconstructing a missing API terminal
 
 Original domain extraction session 64749 is native-complete across the entire refreshed

@@ -1,0 +1,36 @@
+{
+  "unit": "fungal-full-atlas-foldseek-database-20261006-v2.service",
+  "pid": 765873,
+  "created": 1791261371.56,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_atlas_foldseek_resources_20261006_v2.json",
+    "--execution",
+    "metadata/full_atlas_foldseek_execution_20261006_v2.json",
+    "--receipt",
+    "metadata/full_atlas_foldseek_database_20261006_v2.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/build_full_atlas_foldseek_database_v2.py",
+    "--plan",
+    "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+    "--receipt",
+    "metadata/full_atlas_foldseek_database_20261006_v2.json"
+  ],
+  "plan": "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+  "plan_sha256": "d0df422d54cb929eecc617fc779f4b0b8c866b1f91f09c682e7118cae2da133c",
+  "checked_utc": "2026-10-06T04:37:25.644764+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "800000 100000",
+    "memory.max": "103079215104",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "12cb88ce14b54334ac3f83b6a11848b0",
+  "source_hashes": {
+    "metadata/full_atlas_foldseek_execution_20261006_v2/configuration.json": "fdc47c60dcf867a39a0847147b72944f149687a15d645acbee4bd8a98e9c8b03",
+    "metadata/full_atlas_foldseek_plan_20261006_v2.json": "d0df422d54cb929eecc617fc779f4b0b8c866b1f91f09c682e7118cae2da133c"
+  },
+  "scientific_eligibility": false
+}

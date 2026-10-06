@@ -1,5 +1,20 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: full current protein database conversion launched
+
+The complete 2,961,055-model AFDB/ESMFold universe is now being encoded with
+all sources/alternatives retained, extending the older 1.29-million-model index.
+Mixed-source native compatibility and eleven corruption controls pass. The full
+stage is live at eight CPUs/96 GiB/no swap, with exact source-CIF/native C-alpha
+comparison required for every model. Native completion, full source-coordinate
+checks, independent database readback and execution closure remain pending.
+Native 3Di accuracy, confidence/PAE calibration, structural cluster sensitivity,
+homology and accepted phylogenetic effects remain open. All eight evolutionary
+aims and complete prediction coverage remain unfinished; GPU prediction stays
+paused. This stage adds search infrastructure for existing models.
+
+[Full database scope and remaining requirements](full-atlas-foldseek-database-20261006.md).
+
 ## October 6 UTC: complete domain coordinates; full atom integrity check running
 
 The full refreshed extraction exported 2,454,565 intervals from 976,357 models,

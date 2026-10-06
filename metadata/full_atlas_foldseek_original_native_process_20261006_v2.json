@@ -1,0 +1,18 @@
+{
+  "pid": 768169,
+  "created": 1791261606.94,
+  "command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+    "createdb",
+    "results/structural_clusters/full-prediction-atlas-database-20261006-v2/model_paths.tsv",
+    "results/structural_clusters/full-prediction-atlas-database-20261006-v2/structures",
+    "--threads",
+    "8",
+    "--gpu",
+    "0",
+    "--mask-bfactor-threshold",
+    "70",
+    "--coord-store-mode",
+    "1"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "preserved_full_atlas_foldseek_fixture_import_failure",
+  "checked_utc": "2026-10-06T04:31:34.333070+00:00",
+  "actual_original_api_exit_code": 1,
+  "original_tool_session_id": null,
+  "initial_and_terminal_in_one_return": true,
+  "invocation_id": "053e3495d1dd4fcf86ed2359d52200e3",
+  "native_full_atlas_conversion_started": false,
+  "native_fixture_conversion_started": false,
+  "failure": "V1 imported original_profile, but the qualified source-reader helper is named independent_arrays.",
+  "correction": "Fresh V2 imports/calls the existing independent_arrays implementation. Original reader, failed V1 source and original records are unchanged. No numeric or model-selection change.",
+  "source_hashes": {
+    "metadata/full_atlas_foldseek_fixture_execution_20261006_v1.json": "128fbd3272ecd9a88e8744aca08dc7c7b4f8f7a0c77640931f231fa96f72ff25",
+    "metadata/full_atlas_foldseek_fixture_execution_20261006_v1/original-invocation-journal.jsonl": "8bad4ccf538775366532114c570c9fa13035b41fc0a2fbf3abcb1338f14aaeed",
+    "metadata/full_atlas_foldseek_fixture_original_tool_20261006_v1.json": "e196d91277c78e71df760dc5c17503274190ad7ba9cfc6815155a206f524db6c",
+    "scripts/build_full_atlas_foldseek_database_v1.py": "9122097db70ca5d6fa834f3f7052a7c7fe382fe10e9d18b5086d4a6525954f5b",
+    "scripts/check_full_atlas_foldseek_database_v1.py": "14218337d865603716b8739c0557743d286c5c15db65a5b6f719f9fcaed44c51",
+    "metadata/full_atlas_foldseek_fixture_execution_20261006_v1/stderr.log": "39e4de7e675f768fd76264b3a59b7b9226b5d18cb6a0087581e3fe580498675f"
+  },
+  "scientific_eligibility": false,
+  "gpu": false
+}

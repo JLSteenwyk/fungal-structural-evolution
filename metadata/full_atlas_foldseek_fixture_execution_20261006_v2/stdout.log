@@ -1,0 +1,45 @@
+{
+  "status": "passed_mixed_source_native_database_and_geometry_controls",
+  "checked_utc": "2026-10-06T04:32:10.743371+00:00",
+  "models_by_source": {
+    "AFDB": 2,
+    "ESMFold": 2
+  },
+  "models": 4,
+  "residues": 1985,
+  "native_exit_code": 0,
+  "native_command": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+    "createdb",
+    "results/structural_clusters/full-atlas-foldseek-fixture-20261006-v2/model_paths.tsv",
+    "results/structural_clusters/full-atlas-foldseek-fixture-20261006-v2/structures",
+    "--threads",
+    "1",
+    "--gpu",
+    "0",
+    "--mask-bfactor-threshold",
+    "70",
+    "--coord-store-mode",
+    "1"
+  ],
+  "builder_sha256": "c29e0e3fbeab4459221d7dfeec4961e621f4092c3e6440cfb0bbd41689f1f058",
+  "foldseek_sha256": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+  "every_fixture_coordinate_exact_float32": true,
+  "rejection_controls": [
+    "duplicate_source_alias",
+    "unknown_prediction_source",
+    "boolean_model_length",
+    "invalid_source_digest",
+    "newline_path_list_injection",
+    "native_sequence_source_disagreement",
+    "changed_finite_native_coordinate",
+    "nonfinite_native_coordinate",
+    "truncated_native_coordinate_record",
+    "foreign_native_record_terminator",
+    "changed_original_cif_digest"
+  ],
+  "native_outputs_retained": true,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "scope": "Four native software compatibility controls covering both source representations. All original CIF atom validation and every native C-alpha/AA/3Di record contract checked; eleven corruption/identity controls rejected without altering original source or positive native output. This is not a sampling pilot, full atlas conversion, independent3Di reconstruction or biological qualification."
+}

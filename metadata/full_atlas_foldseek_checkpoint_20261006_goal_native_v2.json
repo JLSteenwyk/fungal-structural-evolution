@@ -1,0 +1,236 @@
+{
+  "status": "verified_original_full_atlas_foldseek_runtime",
+  "checked_utc": "2026-10-06T04:42:00.870207+00:00",
+  "original_handle": {
+    "unit": "fungal-full-atlas-foldseek-database-20261006-v2.service",
+    "pid": 765873,
+    "created": 1791261371.56,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_atlas_foldseek_resources_20261006_v2.json",
+      "--execution",
+      "metadata/full_atlas_foldseek_execution_20261006_v2.json",
+      "--receipt",
+      "metadata/full_atlas_foldseek_database_20261006_v2.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_atlas_foldseek_database_v2.py",
+      "--plan",
+      "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+      "--receipt",
+      "metadata/full_atlas_foldseek_database_20261006_v2.json"
+    ],
+    "plan": "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+    "plan_sha256": "d0df422d54cb929eecc617fc779f4b0b8c866b1f91f09c682e7118cae2da133c",
+    "checked_utc": "2026-10-06T04:37:25.644764+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "800000 100000",
+      "memory.max": "103079215104",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "12cb88ce14b54334ac3f83b6a11848b0",
+    "source_hashes": {
+      "metadata/full_atlas_foldseek_execution_20261006_v2/configuration.json": "fdc47c60dcf867a39a0847147b72944f149687a15d645acbee4bd8a98e9c8b03",
+      "metadata/full_atlas_foldseek_plan_20261006_v2.json": "d0df422d54cb929eecc617fc779f4b0b8c866b1f91f09c682e7118cae2da133c"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_atlas_foldseek_launch_20261006_v2.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 0.75,
+    "children": [
+      {
+        "pid": 765875,
+        "created": 1791261371.95,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_atlas_foldseek_database_v2.py",
+          "--plan",
+          "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+          "--receipt",
+          "metadata/full_atlas_foldseek_database_20261006_v2.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 234.95999999999998
+      },
+      {
+        "pid": 768169,
+        "created": 1791261606.94,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+          "createdb",
+          "results/structural_clusters/full-prediction-atlas-database-20261006-v2/model_paths.tsv",
+          "results/structural_clusters/full-prediction-atlas-database-20261006-v2/structures",
+          "--threads",
+          "8",
+          "--gpu",
+          "0",
+          "--mask-bfactor-threshold",
+          "70",
+          "--coord-store-mode",
+          "1"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 634.5600000000001
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "8be927cfa3a5edb6b6b4c1c935d5fcdc58a8bcfd73613a96bd79452c976614d6",
+    "current_cgroup_limits": {
+      "cpu.max": "800000 100000",
+      "memory.max": "103079215104",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 19084619776,
+      "memory.peak": 19084619776,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 765875,
+        "created": 1791261371.95,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_atlas_foldseek_database_v2.py",
+          "--plan",
+          "metadata/full_atlas_foldseek_plan_20261006_v2.json",
+          "--receipt",
+          "metadata/full_atlas_foldseek_database_20261006_v2.json"
+        ],
+        "rss_bytes": 3672424448,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             68719476736          68719476736          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         94489280512          94489280512          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 768169,
+        "created": 1791261606.94,
+        "cmdline": [
+          "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+          "createdb",
+          "results/structural_clusters/full-prediction-atlas-database-20261006-v2/model_paths.tsv",
+          "results/structural_clusters/full-prediction-atlas-database-20261006-v2/structures",
+          "--threads",
+          "8",
+          "--gpu",
+          "0",
+          "--mask-bfactor-threshold",
+          "70",
+          "--coord-store-mode",
+          "1"
+        ],
+        "rss_bytes": 923496448,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             68719476736          68719476736          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            8192                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         94489280512          94489280512          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 33972,
+  "native_createdb": {
+    "original_identity_present": true,
+    "original_identity": {
+      "pid": 768169,
+      "created": 1791261606.94,
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+        "createdb",
+        "results/structural_clusters/full-prediction-atlas-database-20261006-v2/model_paths.tsv",
+        "results/structural_clusters/full-prediction-atlas-database-20261006-v2/structures",
+        "--threads",
+        "8",
+        "--gpu",
+        "0",
+        "--mask-bfactor-threshold",
+        "70",
+        "--coord-store-mode",
+        "1"
+      ]
+    },
+    "original_process_live": true,
+    "pid": 768169,
+    "created": 1791261606.94,
+    "status": "running",
+    "cpu_seconds": 634.94
+  },
+  "expected_models_by_source": {
+    "AFDB": 2935733,
+    "ESMFold": 25322
+  },
+  "expected_residues_by_source": {
+    "AFDB": 1152706482,
+    "ESMFold": 12221520
+  },
+  "producer_state": {
+    "present": true,
+    "observed_bytes_sha256": "db7f34f01a35c2986ba0a4493b38ae5ab9a55e0115a12aaab44e66fc113357a4",
+    "value": {
+      "stage": "native_createdb_running",
+      "counts": {
+        "AFDB": {
+          "models": 2935733,
+          "residues": 1152706482,
+          "source_cif_bytes": 1098056403371
+        },
+        "ESMFold": {
+          "models": 25322,
+          "residues": 12221520,
+          "source_cif_bytes": 7339969721
+        }
+      },
+      "command": [
+        "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek",
+        "createdb",
+        "results/structural_clusters/full-prediction-atlas-database-20261006-v2/model_paths.tsv",
+        "results/structural_clusters/full-prediction-atlas-database-20261006-v2/structures",
+        "--threads",
+        "8",
+        "--gpu",
+        "0",
+        "--mask-bfactor-threshold",
+        "70",
+        "--coord-store-mode",
+        "1"
+      ]
+    }
+  },
+  "geometry_proof_files": 0,
+  "full_producer_receipt_present": false,
+  "source_hashes": {
+    "metadata/full_prediction_atlas_union_completed_20261005_v1.json": "4b3896211be506a7877fa649ec4725587de2cca3afe5e9b7c3584e2f13bfd365",
+    "results/structures/full-prediction-atlas-union-20261005-v1/model_metadata.jsonl": "a6813149ccc76928b85572327c9824a5c30b7236b20133249e3aaf2b9ff8f2d0",
+    "metadata/full_atlas_coordinate_profiles_plan_20261005_v1.json": "a57e10cfb1d43a51abda9327fc5b4518bb32b6cc18877c5785d710f921826638",
+    "metadata/full_atlas_foldseek_resources_20261006_v2.json": "3ef5378dbde7005968c4c92f3d3aa49624dcee6eca5371c203b4fa1c53298364",
+    "metadata/full_atlas_foldseek_resource_cost_20261006_v2.json": "c36f2ce92454a19f9b46150c95447f4c861a90310335b2ce0ce087fc43531f88",
+    "metadata/full_atlas_foldseek_fixture_20261006_v2.json": "d3a2fc4701bdc1ca172f4cbca203fc00cfb64f627147784bdfa7794db9df723a",
+    "metadata/full_atlas_foldseek_fixture_transport_20261006_v2.json": "6c696e45ddcafde400c63f07a2ff5389d54f4df2c5ee538df1de167c134aa91d",
+    "metadata/full_atlas_foldseek_fixture_original_payloads_20261006_v2.json": "46a0abb25502f5dafb3b9e557f61068da36eb159439f9ecf48fe2cd7bea20452",
+    "metadata/full_atlas_foldseek_fixture_transport_original_payloads_20261006_v2.json": "c6f26e283120ee1e3e135ea05b10f39944e358dc6b1d5fafe94139a16dbd2c18",
+    "metadata/full_atlas_foldseek_fixture_failure_20261006_v1.json": "b5988d28862ab0983e4e49e30827033a4333b26abeddcf6ef3a8845e7cc9f0bb",
+    "scripts/build_full_atlas_foldseek_database_v2.py": "c29e0e3fbeab4459221d7dfeec4961e621f4092c3e6440cfb0bbd41689f1f058",
+    "scripts/check_full_atlas_foldseek_database_v2.py": "e633ac6ea4316cc59cf6564d7c4eba7f7711b688285b946040baa8126ee6472b",
+    "scripts/build_whole_proteome_foldseek_database.py": "612452b9ba6b35142a80039cfc342162485b02245436b5106b37ae74c27f13db",
+    "scripts/readback_full_atlas_coordinate_profiles_v1.py": "30c64cf79bd051f1e82c6b42cf100057eec99f4255db7660b0b8b9f89b98ad18",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e",
+    "metadata/full_atlas_profile_readback_fixture_20261005_v1.json": "9f19b6dec956dd64618f8dfe5114c2b0719edc5efc28edd2e68940d966e9b532",
+    "metadata/whole_proteome_foldseek_fixture_checks.json": "7cb3acf8e143d36b2f4d235649e2294cc0e0224b8576ee531a8ae7f638e27e08",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/SOFTWARE/foldseek/bin/foldseek": "3093010bfec49cdb5863b11bf26e3de3ae10d3111a451a12e5f9d46139c8cccc",
+    "results/structural_clusters/full-prediction-atlas-database-20261006-v2/createdb-original-process.json": "ea32e7c191c55822a7f6a1218ef4b2ee592522312f5c82a7fc63511c5e5e3071",
+    "metadata/full_atlas_foldseek_launch_20261006_v2.json": "8be927cfa3a5edb6b6b4c1c935d5fcdc58a8bcfd73613a96bd79452c976614d6",
+    "metadata/full_atlas_foldseek_original_initial_tool_20261006_v2.json": "d7032d0c7d2a9979f349ce1eb3fe105bb868832fdef6b294266239cc3cd4b060",
+    "metadata/full_atlas_foldseek_plan_20261006_v2.json": "d0df422d54cb929eecc617fc779f4b0b8c866b1f91f09c682e7118cae2da133c",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_atlas_foldseek_checkpoint_v1.py": "9706591cbec30fb273a8570f6dcae03ec190b2df24b3abc408ab61c3805621a1"
+  },
+  "independent_whole_database_reader_complete": false,
+  "scientific_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original wrapper/tool/plan/current resources and native createdb identity or saved native execution observed. Mutable stage/counts and proof-file census are partial evidence. No full source-coordinate or native/database closure, 3Di accuracy, confidence/PAE calibration, clustering, homology or evolutionary admission inferred. No restart or mutation."
+}
