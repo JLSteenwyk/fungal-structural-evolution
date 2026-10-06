@@ -23,6 +23,12 @@ hash, full command, `.out`, `.tbl`, `.gff`, and alignment outputs. Twelve
 concurrent tasks reserve 96 CPU threads and 384 GB RAM on the 192-core CPU
 capacity partition.
 
+The parser retains every `.out` call, including score, divergence, deletion,
+insertion, query and repeat coordinates, strand, class/family, overlap marker,
+and `RM2__`/`DFAM40__` library provenance. It will not collapse overlapping
+intervals or calculate masked fraction until a separate coverage-union method
+has been independently qualified.
+
 The annotations will quantify repeat classes and gene proximity only after
 independent output readback and explicit assembly/annotation sensitivity
 handling. Repeat annotation alone does not establish repeat-mediated genome
