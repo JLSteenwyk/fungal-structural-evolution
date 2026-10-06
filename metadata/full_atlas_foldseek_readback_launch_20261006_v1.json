@@ -1,0 +1,39 @@
+{
+  "unit": "fungal-full-atlas-foldseek-readback-20261006-v1.service",
+  "pid": 661606,
+  "created": 1791309306.28,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_atlas_foldseek_readback_wait_plan_20261006_v1.json"
+  ],
+  "plan": "metadata/full_atlas_foldseek_readback_wait_plan_20261006_v1.json",
+  "plan_sha256": "f0323b76e6897114b8ff3d0859b4a6ad07910ea2f21a99476a91a67e840d397c",
+  "checked_utc": "2026-10-06T17:55:07.009343+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "17179869184",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-full-atlas-foldseek-readback-20261006-v1.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=200%",
+    "--property=MemoryMax=16G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_atlas_foldseek_readback_wait_plan_20261006_v1.json"
+  ],
+  "scientific_eligibility": false,
+  "scope": "Bounded dependency waiter for an independent database integrity readback; not a biological analysis."
+}
