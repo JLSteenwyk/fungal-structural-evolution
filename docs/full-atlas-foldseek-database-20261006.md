@@ -164,3 +164,13 @@ These are partial process-backed observations; full independent atlas/domain/
 timing closure remains pending. GPU prediction remains paused. Full missing
 prediction coverage, accepted biological frameworks, calibrated branch effects,
 adequate ancestral uncertainty and all eight evolutionary aims remain unfinished.
+# Full mixed-source Foldseek database
+
+After the producer completes, the required separate reader is
+`scripts/readback_full_atlas_foldseek_database_v1.py`. It opens the native
+lookup, amino-acid, 3Di and coordinate index files with an independent parser
+and checks every source-model alias, amino-acid hash, 3Di length/alphabet and
+float32 coordinate record. It runs only against a completed producer receipt
+and fresh output paths. This native-record readback is separate from the
+producer's original-CIF geometry validation; neither establishes structural
+homology, confidence calibration or evolutionary change.
