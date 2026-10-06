@@ -47,6 +47,14 @@ flat-text tables only. Repeat/block software bounds, reconciled anchors, species
 tree sensitivity and structural qualification still gate any genome-context
 analysis.
 
+The [full immutable gene-order export](docs/full-gene-order-export-20261006.md)
+has now completed and passed an independent whole-table readback. Across all
+526 taxa, it retains 6,000,510 coordinate/ORF rows, including 5,983,922 native
+gene features and 16,588 explicitly provisional ORF rows. Its 526-taxon context
+summary preserves scaffold order, gap distributions and 5,523,689 adjacency
+dispositions for later covariate/sensitivity work. These inputs do not establish
+synteny, repeats, rearrangements, orthology, duplications or structural effects.
+
 The [full genetic-code context audit](docs/full-genetic-code-context-20261006.md)
 now independently verifies every original CDS/product against the frozen
 taxonomic nuclear and mitochondrial assignments. It retains 20,478 products
