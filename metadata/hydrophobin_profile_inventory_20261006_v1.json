@@ -1,0 +1,35 @@
+{
+  "status": "complete_provisional_hydrophobin_profile_inventory",
+  "accepted_profile_hits": 1292,
+  "taxon_protein_profile_rows": 1318,
+  "unique_sequences": 1290,
+  "taxa": 220,
+  "profile_row_counts": {
+    "PF01185.24": 1064,
+    "PF06766.17": 253,
+    "PF29785.1": 1
+  },
+  "profile_taxon_counts": {
+    "PF01185.24": 147,
+    "PF06766.17": 103,
+    "PF29785.1": 1
+  },
+  "model_status_counts": {
+    "no_source_model": 515,
+    "source_model_present": 803
+  },
+  "source_hashes": {
+    "results/domains/full-annotation-catalog-v1/annotation_shards.tsv": "f40cc425d70e6bfe130d59d1a5c94d90764e8a4ed08ba7d8b29882f4d5f58fc8",
+    "metadata/full_domain_database_receipt.json": "43cd139974c2d9f32ad889a4fe093cc54ab07b6dc90399a5a2428688525245ac",
+    "results/domains/whole-proteome-structure-domain-registry-20261005-v1/receipt.json": "d6b57eed9b48e35960c754840d39ade29ebfd1fdec5c7a6bfc7444fe96130c3b",
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "results/domains/full-annotation-snapshot-v1/chunk-036.annotated.tsv.gz": "ae88663be42e422ae063fdf62edc0b4908a2c63d29a977df9dc9ef6d5b62117a",
+    "results/domains/full-annotation-snapshot-v1/chunk-035.annotated.tsv.gz": "f37f5d7dc6c4107b63b5b6cd571ba4fe4b2ed31bb00a2c3823e00a9a982c4e0f",
+    "results/domains/full-annotation-snapshot-v1/chunk-049.annotated.tsv.gz": "18669a39adfbddbf12f1ed28a1d28693b3f3d1954496764e33842a25cef5cd9e"
+  },
+  "script_sha256": "6f3f802e3dea43d8451b131f6e38feb17e1568562c1b800b835e3f570a908682",
+  "artifacts": {
+    "hydrophobin_candidates.tsv": "c3122f765fe4fd02042db988e66e041445c1cf2e8d10fbb9c5aba56c48b8fede"
+  },
+  "interpretation": "All accepted matches to the three named Pfam hydrophobin profiles in the completed full-Pfam catalog are retained with protein/taxon links and source-model availability. A Pfam Family hit, including one with a source model, is not an orthogroup, a structural clade, a confirmed hydrophobin function, a gene-copy call, a structural-change estimate, or a selected evolutionary case study. Reconciled family trees, coordinate/confidence qualification, structural comparison, prediction-source controls and biological validation remain required."
+}
