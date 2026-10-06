@@ -1,5 +1,15 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: retain diagnosed alpha-overflow reviews
+
+The complete V10 comparison and independent replay explain eight newly
+observed derived-alpha overflow states using finite saved latent values. The
+existing two special-value review dispositions and excluded arrays remain
+unchanged. All 24 native runs, 144 paired files and 504 diagnostic rows remain
+explicit. Do not recover historical latent values from infinity, choose
+burn-in from this short trace, or treat output integrity as posterior adequacy.
+[Completed comparison and evidence](baliphy-latent-log-alpha-full-grid-20261005.md).
+
 ## October 6 UTC: code-assignment flags and translation mismatches remain distinct
 
 Close every original CDS/product and every fixed-code codon row with the full

@@ -1,0 +1,60 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=25769803776",
+    "--cpu=7200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_baliphy_log_alpha_v10_full_grid_v1.py",
+    "--plan",
+    "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+    "--producer-receipt",
+    "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json",
+    "--producer-transport",
+    "metadata/baliphy_log_alpha_v10_full_grid_transport_20261006_v1.json",
+    "--receipt",
+    "metadata/baliphy_log_alpha_v10_full_grid_readback_20261006_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_log_alpha_v10_full_grid_readback_resources_20261005_v1.json": "e2b93e7d0135574d3dc8b097054773228d500008924de918dad5147b8730fb4a",
+    "scripts/readback_baliphy_log_alpha_v10_full_grid_v1.py": "77098bb7a418fab6cdc28f51211eb856739b24f0f5127e328053cf730833bf2b",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "a9c037ff155d4d6d95704292be64344b",
+  "wrapper": {
+    "pid": 684079,
+    "created": 1791253805.3,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_log_alpha_v10_full_grid_readback_resources_20261005_v1.json",
+      "--execution",
+      "metadata/baliphy_log_alpha_v10_full_grid_readback_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_readback_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/readback_baliphy_log_alpha_v10_full_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+      "--producer-receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json",
+      "--producer-transport",
+      "metadata/baliphy_log_alpha_v10_full_grid_transport_20261006_v1.json",
+      "--receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_readback_20261006_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "200000 100000",
+    "memory.max": "34359738368",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 10800,
+  "started_utc": "2026-10-06T02:30:06.392573+00:00"
+}

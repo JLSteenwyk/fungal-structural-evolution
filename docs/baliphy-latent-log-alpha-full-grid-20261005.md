@@ -1,13 +1,21 @@
 # Full-input latent-alpha logger comparison
 
-The complete **24-role V10 comparison** launched at **23:42 UTC on October 5**.
-Its original tool session is **59687**, and the exact wrapper/native/cgroup
-checkpoint confirms four live native samplers. No role has completed at the
-23:43 UTC checkpoint. Full native completion, paired scientific-file checks
-and independent latent-state reconstruction remain required.
+The complete **24-role V10 comparison and full independent readback have
+finished**. All 24 native runs exited zero. All **144 paired scientific files**
+are byte identical to their original V7 counterparts. The separate reader
+checked every one of **504 saved latent diagnostic states**, with no diagnostic
+errors. Twenty-two runs pass the existing finite-output integrity checks;
+two retain their special-value review classifications and excluded arrays.
+Original producer session **59687** and reader session **17026** have actual
+API/native zero, exact whole-wrapper/invocation closure and source bindings.
+The producer took 2 hours 43 minutes 34 seconds and the reader 4 minutes
+13 seconds. These are output diagnostics, not adequate posterior samples.
 [Frozen plan](../metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json),
 [original launch](../metadata/baliphy_log_alpha_v10_full_grid_launch_20261005_v1.json)
-and [exact runtime observation](../metadata/baliphy_log_alpha_v10_full_grid_checkpoint_20261005_goal_launch_v1.json).
+and [historical launch observation](../metadata/baliphy_log_alpha_v10_full_grid_checkpoint_20261005_goal_launch_v1.json).
+The [full independent result](../metadata/baliphy_log_alpha_v10_full_grid_readback_20261006_v1.json)
+and [closed reader execution](../metadata/baliphy_log_alpha_v10_full_grid_readback_transport_20261006_v1.json)
+provide the completed evidence.
 
 This covers both original 622-protein-tip effective inputs of OG0000972,
 all three priors and four chains per prior: six complete quartets. Protein
@@ -81,9 +89,9 @@ their original/current paths and hashes; missing or changed files produce
 review outcomes rather than dropped roles. The new diagnostic trace is kept
 separately in each native attempt.
 
-The separate reader is prepared, not launched or queued. Actual original full
-producer API/native zero, complete invocation-journal matching and all source
-bindings must close before its launch. It independently reconstructs every
+The separate reader launched after actual original full producer API/native
+zero, complete invocation-journal matching and source-binding closure. It
+completed the entire matrix and independently reconstructs every
 file comparison with a separate byte reader, then applies the qualified strict
 JSON/90-digit Decimal diagnostic reader to every available latent row. It
 checks the saved context, prior parameters/density, derived alpha, rate state,
@@ -105,13 +113,45 @@ the mechanism for newly observed states; they cannot recover unsaved historical
 values. Adequate inference still requires estimated full sampling resources,
 convergence, uncertainty propagation and calibrated biological interpretation.
 
+## Newly observed overflow states
+
+Eight saved states in two runs have finite latent log-alpha but a derived alpha
+above the finite-double representational range. Independent 90-digit Decimal
+exponentiation, latent prior-density calculations, category rates and quality
+tags all agree with the native trace. These newly captured states demonstrate
+the overflow mechanism directly, while the historical unsaved latent values
+remain unavailable. Neither run's original review disposition is changed.
+
+| Effective input | Prior / chain | Overflow iterations | Finite log-alpha at first overflow | Category rates in every overflow state |
+| --- | --- | --- | ---: | --- |
+| acfc8376 | Broad / 3 | 1–5 | 119793.66206287075 | 1, 1, 1, 1 |
+| f9afda0e | Centered / 4 | 1–3 | 20340.374288560004 | 1, 1, 1, 1 |
+
+Input labels abbreviate the full effective-input hashes; both sets have 622
+protein tips. The [24-row disposition table](figures/baliphy-log-alpha-v10-full-grid-20261006-v1/role_dispositions.tsv)
+and [all 504 diagnostic rows](figures/baliphy-log-alpha-v10-full-grid-20261006-v1/all_latent_rows.tsv)
+retain complete identities, all iterations, finite and overflow states, and
+original integrity classifications. No burn-in is chosen after observing these
+traces; the pooled rows are not biological replicates or posterior estimates.
+
+![All 24 latent-alpha diagnostic traces](figures/baliphy-log-alpha-v10-full-grid-20261006-v1/latent_alpha_diagnostics.png)
+
+[Standalone PDF](figures/baliphy-log-alpha-v10-full-grid-20261006-v1/latent_alpha_diagnostics.pdf).
+The symmetric log axis retains both ordinary and very large finite latent
+values. Red crosses mark derived-alpha overflow. All table rows are read back
+after writing; the PNG was visually inspected. Original reporting session
+70717 exited zero. Its [source-bound report](../metadata/baliphy_log_alpha_v10_full_grid_report_20261006_v1.json)
+records every input and output hash. Reporting uses two CPUs, 16 GiB/no-swap
+memory and a 12 GiB address-space cap, with no new native runs, GPU or charges.
+
 ## Reproduction
 
 Large outputs remain outside Git at
 `results/ancestral/baliphy-log-alpha-v10-all24-full-input-comparisons-20261005-v1/`.
 Versioned artifacts include scripts, resource plans, original tool payloads,
-software execution logs, launch identity and source hashes. Live native logs
-are not committed. Complete raw-input public release remains outstanding.
+software execution logs, launch identity and source hashes. The completed
+producer and reader logs are published; unrelated live logs remain outside
+the publication. Complete raw-input public release remains outstanding.
 
 Use fresh output/receipt namespaces with the pinned native installation and
 original inputs. The full constructor and reader software checks must close
@@ -127,3 +167,19 @@ python scripts/run_baliphy_log_alpha_v10_full_grid_v1.py \
 
 The command must run through the recorded bounded wrapper and exact cgroup
 resources. A clone alone does not include the large raw sources.
+
+The completed reader command is:
+
+```bash
+python scripts/readback_baliphy_log_alpha_v10_full_grid_v1.py \
+  --plan metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json \
+  --producer-receipt metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json \
+  --producer-transport metadata/baliphy_log_alpha_v10_full_grid_transport_20261006_v1.json \
+  --receipt metadata/baliphy_log_alpha_v10_full_grid_readback_20261006_v1.json
+```
+
+Use new receipt/output namespaces when reproducing completed work. The
+source-bound tables/figures are generated by
+`scripts/report_baliphy_log_alpha_v10_full_grid_v1.py` after reader closure.
+Full ancestral sampling resources, convergence and calibrated uncertainty are
+the next requirements; all eight evolutionary aims remain incomplete.

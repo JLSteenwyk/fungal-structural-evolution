@@ -1,5 +1,35 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: full latent-alpha comparison and independent replay completed
+
+All 24 full-input V10 comparison runs finish with native zero. The independent
+reader reproduces all 144 byte-identical scientific-file comparisons and all
+504 saved latent diagnostic states. Actual original sessions 59687 and 17026,
+whole wrapper/invocation journals and source/output bindings close. Measured
+runtimes are 2 hours 43 minutes 34 seconds and 4 minutes 13 seconds.
+
+Eight states across two runs contain finite latent log-alpha whose exponential
+exceeds the finite-double range. Their latent densities, four unit category
+rates and explicit quality tags pass independent 90-digit Decimal checks.
+This establishes the mechanism for these newly captured states; unsaved
+historical latent values remain unavailable. The 22 finite-integrity outcomes
+and two excluded special-value reviews retain their original dispositions.
+All 24 runs and 504 states are published in readable TSV tables and a PNG/PDF
+figure. Short diagnostic runs do not establish posterior convergence.
+
+The preceding goal turn made progress and published 65 owned files / 10,597,676
+bytes at d59be74dae96013fb1cf12a56681ff9727513210, with remote and committed bytes
+verified. The current turn completes the full ancestral diagnostic handoff.
+At 02:34 UTC, original live jobs report 2,190,000 coordinate-audited models,
+2,146,977 exported domain intervals and 42,300 newly verified PAE matrices,
+with no failures in those partial checkpoints. Full producer completion and
+independent atlas/domain readbacks remain pending. No new fungal structure
+prediction is launched; GPU prediction remains paused. Full biological weighted
+fits, accepted phylogenetic/reconciliation/dating frameworks, adequate ancestral
+uncertainty, structural calibration and all eight evolutionary aims remain open.
+
+[Full method, exact outcomes, tables, figure and reproduction](baliphy-latent-log-alpha-full-grid-20261005.md).
+
 ## October 6 UTC: full unmodified original-CDS translations independently verified
 
 The full producer and independent reader now close across all 526 entries,

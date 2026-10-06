@@ -138,9 +138,12 @@ now passes all 405 source checks, three paired native prior controls and
 independent reconstruction of 120 diagnostic rows. All 18 original scientific
 files stay byte identical in those controls. Earlier failed candidates are
 retained. The [complete 24-role full-input comparison](docs/baliphy-latent-log-alpha-full-grid-20261005.md)
-is now running with four CPU workers after construction and reader-software
-qualification. Adequate posterior sampling remains unlaunched; historical
-latent values remain unavailable.
+and its independent reader have completed. All 144 original scientific files
+are byte identical and all 504 latent diagnostic states pass. Eight states
+in two runs demonstrate finite-latent exponentiation overflow; the original
+special-value reviews remain excluded. Full 24-run/504-row tables and a PNG/PDF
+figure are published. Adequate posterior sampling remains unlaunched;
+historical latent values remain unavailable.
 
 The [direct coordinate benchmark and phylogenetic handoff](docs/predictor-coordinate-and-phylogeny-controls-20261004.md)
 verifies all 643 matched predictor pairs at 12 masks: 7,716 dispositions,

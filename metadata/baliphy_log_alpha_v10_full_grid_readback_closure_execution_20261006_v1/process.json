@@ -1,0 +1,23 @@
+{
+  "pid": 687163,
+  "created": 1791254102.16,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/record_software_original_wait_transport_v1.py",
+    "--execution",
+    "metadata/baliphy_log_alpha_v10_full_grid_readback_execution_20261006_v1.json",
+    "--validation",
+    "metadata/baliphy_log_alpha_v10_full_grid_readback_20261006_v1.json",
+    "--payloads",
+    "metadata/baliphy_log_alpha_v10_full_grid_readback_original_payloads_20261006_v1.json",
+    "--unit",
+    "fungal-baliphy-v10-full-grid-readback-20261006-v1.service",
+    "--output",
+    "metadata/baliphy_log_alpha_v10_full_grid_readback_transport_20261006_v1.json"
+  ]
+}

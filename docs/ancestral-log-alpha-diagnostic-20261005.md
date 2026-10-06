@@ -127,7 +127,10 @@ all 405 generated-source reversibility checks, all three paired prior controls
 and separate reconstruction of 120 diagnostic rows. All 18 original scientific
 files remain byte identical in these controls. Two earlier candidates failed
 that strict test and are retained. The [complete 24-role native stage](baliphy-latent-log-alpha-full-grid-20261005.md)
-is now running before any new full inference horizon. Original
+and its separate full reader have completed: all 144 scientific-file pairs
+are unchanged and all 504 latent states pass. Eight newly captured states in
+two runs establish finite-latent exponentiation overflow for those states.
+Original
 historical latent values remain unavailable. Existing chains are not restarted
 or concatenated. Longer sampling still requires resource estimates, convergence
 and adequate ancestral uncertainty checks. The installed original formatter,

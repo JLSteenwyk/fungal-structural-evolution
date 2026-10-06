@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=206158430208",
+    "--cpu=43200",
+    "--fsize=2147483648",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py",
+    "--plan",
+    "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+    "--receipt",
+    "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json"
+  ],
+  "working_directory": "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+  "source_hashes": {
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "metadata/baliphy_log_alpha_v10_full_grid_resources_20261005_v1.json": "db84b8c37012c224990e5da960d9685004a7c46f9c0d124900a20b6915aa6345",
+    "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py": "56881ece390142d9660429d24fcaa377e9d8c5ee4781d77d1f0ec5f8d9228c1f",
+    "/home/bizon/anaconda3/bin/python": "ddd8126d3a409c6ad46c718225d853214d0c9dba3657123514172951fa79058b",
+    "/usr/bin/prlimit": "c2ae0ace5a142624e1836b3b73edabf7b847e5fa5d1f7e4f8264c3b2314c7b08"
+  },
+  "invocation_id": "4a8ea38d790d4b7b969c0f11f1b34770",
+  "wrapper": {
+    "pid": 572913,
+    "created": 1791243765.89,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/baliphy_log_alpha_v10_full_grid_resources_20261005_v1.json",
+      "--execution",
+      "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1.json",
+      "--receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json"
+    ]
+  },
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "214748364800",
+    "memory.swap.max": "0"
+  },
+  "timeout_seconds": 86400,
+  "started_utc": "2026-10-05T23:42:46.979400+00:00",
+  "status": "exited_zero_with_receipt",
+  "checked_utc": "2026-10-06T02:26:20.389003+00:00",
+  "child": {
+    "pid": 572915,
+    "created": 1791243766.28,
+    "command": [
+      "/usr/bin/prlimit",
+      "--as=206158430208",
+      "--cpu=43200",
+      "--fsize=2147483648",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_baliphy_log_alpha_v10_full_grid_v1.py",
+      "--plan",
+      "metadata/baliphy_log_alpha_v10_full_grid_plan_20261005_v1.json",
+      "--receipt",
+      "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json"
+    ]
+  },
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 9813.409391693072,
+  "child_cpu_seconds": 38727.286488,
+  "child_peak_rss_bytes": 38278832128,
+  "receipt": "metadata/baliphy_log_alpha_v10_full_grid_20261005_v1.json",
+  "receipt_sha256": "50b574c371ca41e71d355bcd3bde287b1890d92ebb4869236f19fe731c0617a9",
+  "artifacts": {
+    "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1/stderr.log": "070f3c7a0e793f98509edef13c038b718e3cdd9cdd177b5d8f5d472762b88b24",
+    "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1/configuration.json": "3e543e860a7f0a8a2a40789b1adf7c9f1bb0a920df70c6396346f53cef03c74b",
+    "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1/stdout.log": "263dbfd15d664c2ebe6ba1daba0d435096d0fad4548adfb7b1eb3b039c79054d",
+    "metadata/baliphy_log_alpha_v10_full_grid_execution_20261005_v1/process.json": "021f4620fe8b53e5f23d03d61179106051051dfc48da25e3a1c709f85302d0f5"
+  },
+  "scope": "Original bounded complete declared positive-diagonal latent/raw/REML kernel checker, exact wrapper/native identities, exit, caps and logs. Native RSS is not a cgroup peak. No real full-source weighted qualification, fitting, restart, posterior acceptance or GPU use."
+}

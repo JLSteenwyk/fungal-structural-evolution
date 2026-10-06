@@ -1,0 +1,12 @@
+{
+  "status": "failed_closure_setup_no_sampler_restart",
+  "initial_closure_tool": {
+    "chunk_id": "82f2bb",
+    "wall_time_seconds": 0.290793113,
+    "exit_code": 1,
+    "original_token_count": 76,
+    "output": "Running as unit: fungal-baliphy-v10-full-producer-closure-20261006-v1.service; invocation ID: 69854cdd936e4f8ab0ce29fce50a961c\nFinished with result: exit-code\nMain processes terminated with: code=exited/status=1\nService runtime: 405ms\nCPU time consumed: 405ms\nMemory peak: 256.0K\nMemory swap peak: 0B\n"
+  },
+  "cause": "Terminal payload string was interpreted by Python and JSON decoding rejected a literal control character before writing resources. The attempted closure unit exited 1 because resources did not exist. No V10 native run was restarted and the original producer zero is preserved.",
+  "scientific_eligibility": false
+}
