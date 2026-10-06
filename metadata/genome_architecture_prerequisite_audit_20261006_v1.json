@@ -1,0 +1,4760 @@
+{
+  "schema_version": 1,
+  "status": "passed_full_panel_genome_architecture_prerequisite_audit",
+  "taxa": 526,
+  "mapping_mode_counts": {
+    "creolimax_gtf": 1,
+    "ncbi_protein_gff": 519,
+    "transcript_gff": 4,
+    "verified_orf_coordinates": 2
+  },
+  "anchor_status_counts": {
+    "direct_source_product_anchor_available": 524,
+    "provisional_orf_coordinates_not_gene_anchors": 2
+  },
+  "total_feature_rows": 60917860,
+  "total_cds_rows": 23456867,
+  "total_database_bytes": 64512704512,
+  "taxon_dispositions": [
+    {
+      "taxon_id": "F1498855",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 48663,
+      "cds_rows": 16235,
+      "receipt_sha256": "d8399590c7ecdc25b450d053e3bfeacbae06ef662885164e9176afc7bbf40484"
+    },
+    {
+      "taxon_id": "F1243177",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 65022,
+      "cds_rows": 19202,
+      "receipt_sha256": "1cf118d2497a89ca218b9158bb40e4f3be1c18f539fbdc5d8b6a0c589de0a743"
+    },
+    {
+      "taxon_id": "F2871812",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64930,
+      "cds_rows": 24260,
+      "receipt_sha256": "3e8906e9c7cd0760c5411d64dd88550fef99ace733e3e69296a5c896c1ee20e0"
+    },
+    {
+      "taxon_id": "F318763",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 84870,
+      "cds_rows": 29269,
+      "receipt_sha256": "267f412f4a0a7bb8211629476c7db90b0a266f653c5c8ffca1bb211973cb9c47"
+    },
+    {
+      "taxon_id": "F470096",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 83309,
+      "cds_rows": 29838,
+      "receipt_sha256": "09fc4da8bb52a4750dc00d8d3671174c9319c92c93041bb1c4a9c0f30d4620a8"
+    },
+    {
+      "taxon_id": "F4918",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 26908,
+      "cds_rows": 7470,
+      "receipt_sha256": "1a01483b3881c9fb2f54b4102868579104af546d3bf68ffdb496d51ee8f84ad3"
+    },
+    {
+      "taxon_id": "F1658444",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 106394,
+      "cds_rows": 39153,
+      "receipt_sha256": "21b70de69252881f21f1ab800f91932ba9475f5d1e57bd3ba3517f9b79357c44"
+    },
+    {
+      "taxon_id": "F393283",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 115905,
+      "cds_rows": 42520,
+      "receipt_sha256": "ba043ac11ca9b914156d910523d26888de7e341abaf970dddfd835dfae1c5891"
+    },
+    {
+      "taxon_id": "F1141098",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 95131,
+      "cds_rows": 34114,
+      "receipt_sha256": "9b1624577927db47b033ff70345ca2a29028fed3b633ab946803d2f1088348c7"
+    },
+    {
+      "taxon_id": "F91480",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 56680,
+      "cds_rows": 20650,
+      "receipt_sha256": "f96507e7c7ae9b5b417e1b260bc7e11a443637d9dd0599a1f1f9de6e4e48e120"
+    },
+    {
+      "taxon_id": "F2939400",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 54950,
+      "cds_rows": 19676,
+      "receipt_sha256": "644a10f3a665fa9d2021f682950ef5f89c2d3fba73de4a9718067525513a12e4"
+    },
+    {
+      "taxon_id": "F1542792",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 54988,
+      "cds_rows": 19349,
+      "receipt_sha256": "e0d2524fee48f96cdc97321303915de0ac2444ed68710bf7300198f416f5ba29"
+    },
+    {
+      "taxon_id": "F54195",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 32887,
+      "cds_rows": 9334,
+      "receipt_sha256": "2bfeb45e38bf292da073fe3b6baa1f3910b016340c0b59fa4178f71d1f46f2e4"
+    },
+    {
+      "taxon_id": "F43959",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 28348,
+      "cds_rows": 7738,
+      "receipt_sha256": "e86a9cc1d8485c2976f5dec8b9ca203099577cf5ab388571b1d3ecc24a74c167"
+    },
+    {
+      "taxon_id": "F1176130",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 88253,
+      "cds_rows": 31465,
+      "receipt_sha256": "3d8d1007ee12df5fd2404ce6a9320e4b581400cc372ad8276beef8b2e75d0fe8"
+    },
+    {
+      "taxon_id": "F1504668",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 98278,
+      "cds_rows": 36263,
+      "receipt_sha256": "8b7b2421b1c089410ad7c71042b0cccd834ccb9bb7d520a475c52fce8e429c4b"
+    },
+    {
+      "taxon_id": "F1397036",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 65357,
+      "cds_rows": 24047,
+      "receipt_sha256": "e2199430bc1bdff92d3e496c5c9c0d13a00e3f900ea9b81e7e2f37866d97a233"
+    },
+    {
+      "taxon_id": "F223409",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 59656,
+      "cds_rows": 21916,
+      "receipt_sha256": "dafcb679a027198e4e7603a03f99a46479aca43fb5bbc1e4a91374a198e3c0df"
+    },
+    {
+      "taxon_id": "F1590129",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 76402,
+      "cds_rows": 28267,
+      "receipt_sha256": "4598815c0782d927a06a6b5c62458897e627fc33d7527d145c656e86856468c9"
+    },
+    {
+      "taxon_id": "F462254",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 92353,
+      "cds_rows": 32838,
+      "receipt_sha256": "7e43d69f4275e4312ab467dce8f61c5b0a091014edbd40f93234691475cf1fe8"
+    },
+    {
+      "taxon_id": "F236234",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 86527,
+      "cds_rows": 32342,
+      "receipt_sha256": "16814fcbdd2da3013fab97932a2b9ce1ef42118af43562f85681b2e0f80ada68"
+    },
+    {
+      "taxon_id": "F121624",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 86999,
+      "cds_rows": 30926,
+      "receipt_sha256": "e8e2748b1629703ad30a1036cf4eedb0b17acb96d4fa4af94a9ac8fb6845f21e"
+    },
+    {
+      "taxon_id": "F3058885",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64339,
+      "cds_rows": 22003,
+      "receipt_sha256": "bd6df372421dbbe178b348e5ec4947aefe7f967ac629767078b8956544aea31f"
+    },
+    {
+      "taxon_id": "F116794",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85032,
+      "cds_rows": 31348,
+      "receipt_sha256": "7778159e009867292888b9c176e63b06e2ce4848c383aeccee503f502eb1292a"
+    },
+    {
+      "taxon_id": "F116821",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 88653,
+      "cds_rows": 34032,
+      "receipt_sha256": "39e84bf6a02445ed4f9ec2f32750dd0b74b4e29a2cdab854990b6d0317bc424c"
+    },
+    {
+      "taxon_id": "F41990",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 103494,
+      "cds_rows": 39083,
+      "receipt_sha256": "8ce1df761a72e53402ddcdc5ad0334845646afebd68de48a6d7b27c7fb27f5c1"
+    },
+    {
+      "taxon_id": "F460848",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 68287,
+      "cds_rows": 24826,
+      "receipt_sha256": "d594a0853b6b6a7f13b6877c6c6c0e910de16f074823e15402f3d1357b269f99"
+    },
+    {
+      "taxon_id": "F460854",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 68585,
+      "cds_rows": 24530,
+      "receipt_sha256": "9719a99fae06bc50e3c0836bcd1b0946e05dcc924e5fa7c633366529005956b3"
+    },
+    {
+      "taxon_id": "F1453791",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66250,
+      "cds_rows": 25290,
+      "receipt_sha256": "9361ce59f44c32d4f828f9c2ede7c1a66582c4f1a159227f68e7621820f282c6"
+    },
+    {
+      "taxon_id": "F147573",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 42989,
+      "cds_rows": 13530,
+      "receipt_sha256": "edea8a39d237f5cb236a58c42506c1307aae24832a8e99efd91196771a16b399"
+    },
+    {
+      "taxon_id": "F705562",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66199,
+      "cds_rows": 22026,
+      "receipt_sha256": "cba456684d7b906444b09363e9a86c4d832d53764028cd55fc5724d6c6bd3020"
+    },
+    {
+      "taxon_id": "F1093897",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 93692,
+      "cds_rows": 34931,
+      "receipt_sha256": "19debcbbcb64986d71f46d3c2e4f336035f7915b796557cd369335fd36730dee"
+    },
+    {
+      "taxon_id": "F223376",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 80902,
+      "cds_rows": 27955,
+      "receipt_sha256": "f38ea64caf0338771d8acc86def9dee70ba2e8f76d94b40e628b83ca26ddc26c"
+    },
+    {
+      "taxon_id": "F1506992",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 180534,
+      "cds_rows": 66413,
+      "receipt_sha256": "65e2873b4e8e30806ddaf5945f9f0b592502bbe70d24084b1cbf79ebdc003945"
+    },
+    {
+      "taxon_id": "F293227",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 67928,
+      "cds_rows": 22772,
+      "receipt_sha256": "fa170d868ca1b57f4f8076fb5192fe0419e907d31f39862236bfa107fca39184"
+    },
+    {
+      "taxon_id": "F2486360",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 78081,
+      "cds_rows": 27280,
+      "receipt_sha256": "fa62eb6100f8ad5292921667675f30a5902fcd919ba1fb86acbe06ee25bbcb6c"
+    },
+    {
+      "taxon_id": "F1690604",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 53077,
+      "cds_rows": 17646,
+      "receipt_sha256": "fff5a5934defe6278d6a886681835ed645e02781d46b3821f2e304e394b86aef"
+    },
+    {
+      "taxon_id": "F1052096",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64845,
+      "cds_rows": 22168,
+      "receipt_sha256": "ed4dad66c665706b499d81751b2d9478062ddda4ad79a7224da79bb0cd03c2a6"
+    },
+    {
+      "taxon_id": "F1507870",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 127009,
+      "cds_rows": 44476,
+      "receipt_sha256": "49b901e0ea28ce51958761ec9d52be6047e1fcd10bba1643cf2acaac0770116a"
+    },
+    {
+      "taxon_id": "F1507873",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 52126,
+      "cds_rows": 17347,
+      "receipt_sha256": "4077432562fa29befb729d0ca6703a4ef25642b6cdb26174715cd6703c372638"
+    },
+    {
+      "taxon_id": "F91930",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 89284,
+      "cds_rows": 32215,
+      "receipt_sha256": "58213822f9e4247af5cdcf5d8b1d54294aa436776b4e3d0b1d575e7942ad65b5"
+    },
+    {
+      "taxon_id": "F177197",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 99726,
+      "cds_rows": 35269,
+      "receipt_sha256": "2952b62f42a3b8740496840b4fcd8919e05b4a911cb85f7cd6c63c709b020007"
+    },
+    {
+      "taxon_id": "F177199",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 74653,
+      "cds_rows": 25993,
+      "receipt_sha256": "07b2569c0396c1d0ad34a636b674c27b40d09e24644b5fc96f548ec027dab05d"
+    },
+    {
+      "taxon_id": "F164576",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 68264,
+      "cds_rows": 25677,
+      "receipt_sha256": "49150b429891805f4486a5b3a1acdc0225c7597f9ce4e5b327f83f761510a9e3"
+    },
+    {
+      "taxon_id": "F2939403",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64893,
+      "cds_rows": 24711,
+      "receipt_sha256": "b1bf6c69abca999fee678eac6271b5fd62ad2d7355e27ce13cf38071ca0a48c3"
+    },
+    {
+      "taxon_id": "F5116",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 90558,
+      "cds_rows": 33212,
+      "receipt_sha256": "1b4cb5dbb7f6da50d1eab43a124a0d2403c7a42f162fb9496bf96f90fe3beb53"
+    },
+    {
+      "taxon_id": "F1214568",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 126880,
+      "cds_rows": 47669,
+      "receipt_sha256": "520016f4fde8ffa44a8e9fc12101adfa0270cd33d3e944adefec922e2415787f"
+    },
+    {
+      "taxon_id": "F148313",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81089,
+      "cds_rows": 29610,
+      "receipt_sha256": "f79028c97672c5a811a3690cdb3e45d8babe66270ce2ba5ec369598910152251"
+    },
+    {
+      "taxon_id": "F2268995",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 31289,
+      "cds_rows": 8796,
+      "receipt_sha256": "2bd7c7e79c5c43c7c55fc943d4722ffd3dc21164ee4180c8fef12d1589c7bcb3"
+    },
+    {
+      "taxon_id": "F2606893",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 35108,
+      "cds_rows": 11076,
+      "receipt_sha256": "36a697f81b18f56c55d80bd33f072c1bf02ab341742748c6352082a6e85dbb85"
+    },
+    {
+      "taxon_id": "F796027",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 21573,
+      "cds_rows": 5337,
+      "receipt_sha256": "feed2a820349072e4479cf25556fbd999a51a278611e5648f169f1cb88215d64"
+    },
+    {
+      "taxon_id": "F5580",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 82201,
+      "cds_rows": 28915,
+      "receipt_sha256": "c063e7da5d7d868afd9c5ede6e51a44efb2012bf1573ef7c8ca27c4ef201db68"
+    },
+    {
+      "taxon_id": "F2781224",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64521,
+      "cds_rows": 24283,
+      "receipt_sha256": "4f8492581a0c17ab056686b1b4f4b3c9fead0739bef10e8e07711682678dbc83"
+    },
+    {
+      "taxon_id": "F2024903",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 60618,
+      "cds_rows": 22305,
+      "receipt_sha256": "0abe4ac86762cc861a9cdc6001d597b20778de443bc7ee9914dac3a4a50d0029"
+    },
+    {
+      "taxon_id": "F1341166",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 75875,
+      "cds_rows": 27598,
+      "receipt_sha256": "30508605e901d36fb48b67001f5e5868104a03b3a5ad9ccf2a7681392e6cb478"
+    },
+    {
+      "taxon_id": "F182096",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 80133,
+      "cds_rows": 29427,
+      "receipt_sha256": "54afbdc04217a50cfc5bfdc8e1f3a44cb80b61c2c33f43b45f40c3d5f294fff8"
+    },
+    {
+      "taxon_id": "F5059",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 115428,
+      "cds_rows": 42906,
+      "receipt_sha256": "e1d6f0614155800632a36dceb9cad2df39583b7164c9e9274fecf34c955e7a94"
+    },
+    {
+      "taxon_id": "F746128",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 82036,
+      "cds_rows": 30114,
+      "receipt_sha256": "0ceaeeba737bf4ef23f90feaf35da291b143e08dbcfcec78ab34dc172df37488"
+    },
+    {
+      "taxon_id": "F1069201",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 100296,
+      "cds_rows": 37056,
+      "receipt_sha256": "ff336032758a767f74ae637d5fa258842a7f794fb6c9da6703eb548716bec1c9"
+    },
+    {
+      "taxon_id": "F41759",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 105922,
+      "cds_rows": 39388,
+      "receipt_sha256": "eb6b6e26bdc3896fa083be0627f89964663f4548583afa514346723c23f75a1c"
+    },
+    {
+      "taxon_id": "F162425",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 91796,
+      "cds_rows": 34960,
+      "receipt_sha256": "a9eaeaab083cd60818f03e54b2d7f171d77cb3c7a29bcda6f4033dbd5e9769d0"
+    },
+    {
+      "taxon_id": "F5062",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 95847,
+      "cds_rows": 35426,
+      "receipt_sha256": "a8b64169a1520730dc9e45ea626c2fe3d7d9419b896f64d39af20afd0852dea0"
+    },
+    {
+      "taxon_id": "F1220207",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 110637,
+      "cds_rows": 41485,
+      "receipt_sha256": "9da1907762b7edc5c975ab27dad20d166a7c0b82a9db7a6cbaab002970f36c8a"
+    },
+    {
+      "taxon_id": "F1810926",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 103523,
+      "cds_rows": 38539,
+      "receipt_sha256": "a91f13c70afdfb15833eb5e437964353d0176f9ec9e0e69a46ce8ba40aa26a4d"
+    },
+    {
+      "taxon_id": "F1810928",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 97442,
+      "cds_rows": 36161,
+      "receipt_sha256": "b0440bb66961b46688dfaa6b974239b6eac950d7daaa00275d1dd91964ce2d38"
+    },
+    {
+      "taxon_id": "F315204",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81916,
+      "cds_rows": 31091,
+      "receipt_sha256": "0b307831a8c8c9e704752f328641059378560fcbbaf41dae000a74e46b431e5e"
+    },
+    {
+      "taxon_id": "F1670608",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 67748,
+      "cds_rows": 25827,
+      "receipt_sha256": "ba7737f7c8b0dd475a6dffca46e8d25ce3b29e95e9fbeb17806bd75a3a206b32"
+    },
+    {
+      "taxon_id": "F265104",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 83994,
+      "cds_rows": 32035,
+      "receipt_sha256": "a28e63da3a601ba9492fd6343b35d6b49ae6a93e6ff2db423e4ff13d2a390bda"
+    },
+    {
+      "taxon_id": "F1671311",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 126754,
+      "cds_rows": 45843,
+      "receipt_sha256": "b713b09cd50d82d5d240cceda6c2a5aa6c5a0997b5d4d9935468cca4d7fee7ce"
+    },
+    {
+      "taxon_id": "F1209916",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 125214,
+      "cds_rows": 45474,
+      "receipt_sha256": "822c98ffc63cc4d852cab073d0eda6d9851c3cfa6d6fb726c5bc83696c735c4d"
+    },
+    {
+      "taxon_id": "F34406",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 117557,
+      "cds_rows": 42573,
+      "receipt_sha256": "17d9c56e74eabb33d49561349d1d4658df96f564ae207bf02e67c6cb8b69b132"
+    },
+    {
+      "taxon_id": "F710243",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 88790,
+      "cds_rows": 32020,
+      "receipt_sha256": "740d8481999f1efc16dcda27948b5c1d77ed0f07fa7b285712177011425e2852"
+    },
+    {
+      "taxon_id": "F474922",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 123934,
+      "cds_rows": 46232,
+      "receipt_sha256": "546757247b45ac631417ecb47b800e54aeea5b0afb04774f0f9b007d28956d3e"
+    },
+    {
+      "taxon_id": "F80884",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 109349,
+      "cds_rows": 40011,
+      "receipt_sha256": "8852ef417982647177819cfe2968312b05f1fdb1a3ae3502c1fa001468ab6056"
+    },
+    {
+      "taxon_id": "F2283408",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 102940,
+      "cds_rows": 38333,
+      "receipt_sha256": "4dceb525dbfd063349b871972493caf214d54dda56f49620872aeed04644574f"
+    },
+    {
+      "taxon_id": "F1095194",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 107049,
+      "cds_rows": 40133,
+      "receipt_sha256": "4532381910757845f5e74f6e93d0de01779d744e9a2986753d953fa287de1f67"
+    },
+    {
+      "taxon_id": "F145971",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 190015,
+      "cds_rows": 76073,
+      "receipt_sha256": "6bb23f823ca27d4c4f05d8768bb1dd622a5aef48de7b0aa4eaa4d19c5abb18bb"
+    },
+    {
+      "taxon_id": "F1209934",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 126177,
+      "cds_rows": 45421,
+      "receipt_sha256": "2fc5822ba1e2732fafc47300a6d2d38809397a177e49f4b10a28f4bb5e6588a1"
+    },
+    {
+      "taxon_id": "F5570",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 114564,
+      "cds_rows": 41709,
+      "receipt_sha256": "941674bcc21ef98e03b731def9e7c9ac5983a8972ba2126e67bb870059f59847"
+    },
+    {
+      "taxon_id": "F574774",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 120107,
+      "cds_rows": 43770,
+      "receipt_sha256": "1017353a8776112f21c266d1debcd494d846cecd873c771a04bccc05f416b927"
+    },
+    {
+      "taxon_id": "F5101",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 76049,
+      "cds_rows": 28118,
+      "receipt_sha256": "136f47a9ea87d42f95a1761bb04310c4eef839e8d6636c8326b23e70c90dd17a"
+    },
+    {
+      "taxon_id": "F40559",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 110057,
+      "cds_rows": 40830,
+      "receipt_sha256": "fd0be45a4080c1d0fa7db96024a779ef672eb49c5787165d3ecfefe681a09bb7"
+    },
+    {
+      "taxon_id": "F2656787",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 88176,
+      "cds_rows": 33365,
+      "receipt_sha256": "29e804c56010ae3e50db885a0f4b2c8e74559de7b32a09f3ea8d755d6d4944e1"
+    },
+    {
+      "taxon_id": "F195108",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 118723,
+      "cds_rows": 42924,
+      "receipt_sha256": "612337d91b60ffea3a6c425658c11d4ab0d4de427a5bc425f0eaace946b5a230"
+    },
+    {
+      "taxon_id": "F5127",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 178140,
+      "cds_rows": 41571,
+      "receipt_sha256": "ea5f5e2cf914f08386665d49c1fae5ad3e766e5ca8b595fa652bcb275cc88a3b"
+    },
+    {
+      "taxon_id": "F5518",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 102635,
+      "cds_rows": 37231,
+      "receipt_sha256": "5e0324a8d3f1a70cc7323ceaf9724bffd98daf6e3f3c16420d9ebd598127e078"
+    },
+    {
+      "taxon_id": "F1328300",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 117150,
+      "cds_rows": 42505,
+      "receipt_sha256": "6b2cc959ac0ec7a52268f64ad89a608d200b2e595170f6958f65659694c22132"
+    },
+    {
+      "taxon_id": "F1042133",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 98645,
+      "cds_rows": 35208,
+      "receipt_sha256": "869e5bcf949b6c0f4038e0fe19b2e517544c6dc6d57f99698cdfc3f3a8cf6fe3"
+    },
+    {
+      "taxon_id": "F5507",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 131961,
+      "cds_rows": 49117,
+      "receipt_sha256": "900417efa9f2a404578d272ccee27178c77f6b6d064a79026084e08d5a5d97ae"
+    },
+    {
+      "taxon_id": "F36050",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 105744,
+      "cds_rows": 38593,
+      "receipt_sha256": "a23e84f962131262d664bbd7d0c64cd9dac652c84c97c35bbd74c89ffa440a2f"
+    },
+    {
+      "taxon_id": "F101028",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 103404,
+      "cds_rows": 35631,
+      "receipt_sha256": "f7f8f5bb12be6db7472a606f6e82706bd451789431e478ab18191d27821a4bee"
+    },
+    {
+      "taxon_id": "F5128",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 98177,
+      "cds_rows": 36069,
+      "receipt_sha256": "cea10da8196f287913e3871ed8a8badee372456e05250afd0056147027464a4b"
+    },
+    {
+      "taxon_id": "F117187",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 156812,
+      "cds_rows": 56581,
+      "receipt_sha256": "7a869dcb801f09777df2912eac37cd7651dbe5027ab1e7f15939d17d7c540ad5"
+    },
+    {
+      "taxon_id": "F173216",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85467,
+      "cds_rows": 31586,
+      "receipt_sha256": "0e6f02c31db1a41f6f8bd27b8f61d5c043cbb41e85e7bca9addffab0a2f8108f"
+    },
+    {
+      "taxon_id": "F101201",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 93415,
+      "cds_rows": 33602,
+      "receipt_sha256": "a7d338a4f57a8af27c15afbc1e13ac8237a2990f0b9f2f6b36baa77531c1cb89"
+    },
+    {
+      "taxon_id": "F63577",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 97354,
+      "cds_rows": 34540,
+      "receipt_sha256": "06082dbd4219069ad066352585843d3f055bbc9d55caac5e2976a4808bbe8eb1"
+    },
+    {
+      "taxon_id": "F2034170",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 96978,
+      "cds_rows": 36885,
+      "receipt_sha256": "762ae3e94841b9d90842a6d3f1ea9011a377bafd08b002fd1a6e6139c92deec1"
+    },
+    {
+      "taxon_id": "F1738374",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 101255,
+      "cds_rows": 36709,
+      "receipt_sha256": "9588ead8a5fedeac5e60903d0e3996a4f9de64993484edd2e82e386be98e0dce"
+    },
+    {
+      "taxon_id": "F58853",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 79782,
+      "cds_rows": 28995,
+      "receipt_sha256": "97276ab1a24cfedfa376b9991750c0df48e7bf1c53277746ee965a50bb780a84"
+    },
+    {
+      "taxon_id": "F549676",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 91590,
+      "cds_rows": 33017,
+      "receipt_sha256": "80c854d8b791cea488f00f10a24da1367a61e2a3a3f7147e92e4533b5c167409"
+    },
+    {
+      "taxon_id": "F398673",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 84134,
+      "cds_rows": 30803,
+      "receipt_sha256": "ea4c16d26541e7a8343b51872b3dac982351af62548b1311ecfa2bacb6bbf463"
+    },
+    {
+      "taxon_id": "F65468",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 78579,
+      "cds_rows": 28828,
+      "receipt_sha256": "3c18a3c43e1b0e76d62dffc7b13cbd7ba2134a59fdea1564b6a227f7559aef14"
+    },
+    {
+      "taxon_id": "F5544",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 104973,
+      "cds_rows": 37565,
+      "receipt_sha256": "bce522a247114c2406b18b8dee0badede5cb810a7f791537571639b9e78e2045"
+    },
+    {
+      "taxon_id": "F2732470",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66731,
+      "cds_rows": 24046,
+      "receipt_sha256": "d5d2adbd17275b7b3fe20e7a6b79a08f4bd4af160f13909cb7b1e290f7379379"
+    },
+    {
+      "taxon_id": "F209136",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81237,
+      "cds_rows": 29694,
+      "receipt_sha256": "0093e4721b1660aab6e9bc7427a048f95e376593153b8b4c7a0a471a17d8fe30"
+    },
+    {
+      "taxon_id": "F560253",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 90570,
+      "cds_rows": 34165,
+      "receipt_sha256": "e727e2178e9c93ebba786001406f6a17d617fedd8fa0a8299dd99b1e5dd4cd9d"
+    },
+    {
+      "taxon_id": "F2939399",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 65106,
+      "cds_rows": 23946,
+      "receipt_sha256": "da600bd5229eb81f8c2d8c9fb3619d9d8de4a33d0d417f5fcbb7df1cdac139a1"
+    },
+    {
+      "taxon_id": "F3384825",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66842,
+      "cds_rows": 24909,
+      "receipt_sha256": "f50a982a3dce3fc9bcea9bc7eb3660dfecd4e7b75af0914c19c18d13d7c9ec03"
+    },
+    {
+      "taxon_id": "F174425",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 55477,
+      "cds_rows": 21112,
+      "receipt_sha256": "d98c244e683d9e69d1970748e652b4731f823d286ccae633220f2f4570a37aae"
+    },
+    {
+      "taxon_id": "F318774",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66366,
+      "cds_rows": 25144,
+      "receipt_sha256": "22928dc500be7973f86f01c4d9d63ce37cbc2fdba699b9302f9a294ad64bd591"
+    },
+    {
+      "taxon_id": "F2796175",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 72222,
+      "cds_rows": 24068,
+      "receipt_sha256": "b41894603fc1c86003d87f04211067e2d052b5b5387d84c5cdc0730c31e2060b"
+    },
+    {
+      "taxon_id": "F578093",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 79818,
+      "cds_rows": 29276,
+      "receipt_sha256": "5c3747fd224af5f4ebca84ba9e1e35df59476a81f16955499b3f052c2e1e4ec8"
+    },
+    {
+      "taxon_id": "F1125753",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 44706,
+      "cds_rows": 16035,
+      "receipt_sha256": "1f77c534de55f66cbc8eb2c04e34f3ba9bc6043a819b2c812027e6a63e9fe9aa"
+    },
+    {
+      "taxon_id": "F383834",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 60595,
+      "cds_rows": 22416,
+      "receipt_sha256": "7b7493444fbb28eef627f73e3122375f6a54a29b5d64b7fc879b73203aecf150"
+    },
+    {
+      "taxon_id": "F44089",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 39099,
+      "cds_rows": 13235,
+      "receipt_sha256": "8717dcd37de16f8b421e89673adbc9e26941268b8c4c1800fb48eaef3e591941"
+    },
+    {
+      "taxon_id": "F339359",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 79030,
+      "cds_rows": 27624,
+      "receipt_sha256": "5855deb366ad62a0a91748656f534fe54838cd4bd2ce07df14024b19afc8675c"
+    },
+    {
+      "taxon_id": "F36779",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 108344,
+      "cds_rows": 38364,
+      "receipt_sha256": "b58863966da6b18fd7beab57b1c2c069eba7a15da117ebc077b9b0bc23e87bcc"
+    },
+    {
+      "taxon_id": "F148304",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 92072,
+      "cds_rows": 32736,
+      "receipt_sha256": "b1a5f35463ae32cb003a5810d8d6f50bedce345d332881f3fc8323a4f027f0ca"
+    },
+    {
+      "taxon_id": "F148305",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 90555,
+      "cds_rows": 32202,
+      "receipt_sha256": "d5fcedcaa555eb0a79fd2cafc0ccff474b9bcbb7aba29b2272f01806c0f29508"
+    },
+    {
+      "taxon_id": "F2035830",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 55300,
+      "cds_rows": 19303,
+      "receipt_sha256": "74620c48c98ddb3d49ad8c6881169d42c3676bd8c2a5b7afd78e0e5b79be40e9"
+    },
+    {
+      "taxon_id": "F2019550",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 52759,
+      "cds_rows": 18865,
+      "receipt_sha256": "d8c801267364981e5a24f6a2f4545178c4dcff49e97715d14b257610f9886ed6"
+    },
+    {
+      "taxon_id": "F563466",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 80576,
+      "cds_rows": 30552,
+      "receipt_sha256": "b920e545a3abc95075a6610babb9387484429c5b66a25226c6cfac086f4a5742"
+    },
+    {
+      "taxon_id": "F703497",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 94771,
+      "cds_rows": 34370,
+      "receipt_sha256": "88b56c4df20fe96b1befcd2280e48b9e08c2db3da5a11d968e484af0f824ed2a"
+    },
+    {
+      "taxon_id": "F122368",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85058,
+      "cds_rows": 29278,
+      "receipt_sha256": "de6d3103eb955fb9bcc0a70532e9e2b7d185e1dee03e1d6e4928498f51222e74"
+    },
+    {
+      "taxon_id": "F574656",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 71179,
+      "cds_rows": 24303,
+      "receipt_sha256": "a98065054933f3ce8e6b7a81c7fbaf5db803433e7f8d1fbde53337c6b042cdbb"
+    },
+    {
+      "taxon_id": "F1690608",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 76326,
+      "cds_rows": 26856,
+      "receipt_sha256": "4e2e77c3b9788bebf754bea865966966db5b5a23338c6e832575c0ad8e4c40ee"
+    },
+    {
+      "taxon_id": "F2601811",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64728,
+      "cds_rows": 22714,
+      "receipt_sha256": "384bedd7051b1c307f28895cdd7306cd3bfdddbe57aa6f2e50222e842c6e1f19"
+    },
+    {
+      "taxon_id": "F147570",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 71888,
+      "cds_rows": 24959,
+      "receipt_sha256": "f4d42160010afb7e27f9c54723d4ebbf0bf409cc1374323fa324c053e2224740"
+    },
+    {
+      "taxon_id": "F2082308",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 56434,
+      "cds_rows": 19882,
+      "receipt_sha256": "f8c236ba07abb8686b3b21dcda9c430c899dbdf04665015257195b2766540fae"
+    },
+    {
+      "taxon_id": "F741139",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 113951,
+      "cds_rows": 40901,
+      "receipt_sha256": "17041251d7381ba0c0164c51bbb72c372e46ebb875e09842b4930c21d92059fb"
+    },
+    {
+      "taxon_id": "F390894",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 116933,
+      "cds_rows": 42689,
+      "receipt_sha256": "f6b31e8ed9a7d89f3c00f031ff135af3d51e362e784f0b19a4135341586bd020"
+    },
+    {
+      "taxon_id": "F574789",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 127354,
+      "cds_rows": 46136,
+      "receipt_sha256": "4ab167cf2a11eb7c0273d6b789e11c6d7b81342a326dd84db15d27729969ae58"
+    },
+    {
+      "taxon_id": "F48691",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 68319,
+      "cds_rows": 25655,
+      "receipt_sha256": "91800d9ab8e53be8f1eb6b3d719b0fa5e41544af9da38b6b5ebd33c7413606ba"
+    },
+    {
+      "taxon_id": "F92988",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 30603,
+      "cds_rows": 19922,
+      "receipt_sha256": "06cc516eb4c5495c4f7bea55f7d3e32f59c00341e111ad039454e52f384135d2"
+    },
+    {
+      "taxon_id": "F199306",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 70150,
+      "cds_rows": 26094,
+      "receipt_sha256": "3cf5fa3f90f771061fb8ad886ddf1ae6c16dc05c6281ffa01610cbbc45d950f5"
+    },
+    {
+      "taxon_id": "F63402",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 74374,
+      "cds_rows": 28088,
+      "receipt_sha256": "c67641a2d67a6c56bf2b19be4d8748b5e593cab761250aeeb583195307e18599"
+    },
+    {
+      "taxon_id": "F1048829",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 71897,
+      "cds_rows": 26877,
+      "receipt_sha256": "17ef804b28a4064dddd6afee0a41b8e6a127f79931188ef544b2a4b14e8c3dbb"
+    },
+    {
+      "taxon_id": "F226899",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64363,
+      "cds_rows": 23726,
+      "receipt_sha256": "f7546d1704ec82fb26095d5b45627f1f03d52074ecaf5b7d8ed00ae60b195bc9"
+    },
+    {
+      "taxon_id": "F61273",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 57876,
+      "cds_rows": 19991,
+      "receipt_sha256": "8d38c7e5c595f1fa1026afb2917b8503dcfa7de076a2633409c3387d50cec5c0"
+    },
+    {
+      "taxon_id": "F29908",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 62104,
+      "cds_rows": 20599,
+      "receipt_sha256": "ca311f0598536764a04f3b4eaaa6cea7c38799797dcd7fe154297a68591822b5"
+    },
+    {
+      "taxon_id": "F97331",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 95511,
+      "cds_rows": 37612,
+      "receipt_sha256": "1f90bd5ca4db59248b2aca49263a8fc794edded2f5405a897dffb8ff3e87e2c6"
+    },
+    {
+      "taxon_id": "F1814901",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81495,
+      "cds_rows": 29918,
+      "receipt_sha256": "b626b936df74052fcbd245120bfc865eb050b3586e1f1e32a68ca40f2a0a3f60"
+    },
+    {
+      "taxon_id": "F2813651",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 95923,
+      "cds_rows": 36375,
+      "receipt_sha256": "b0c9eb757f2f9dcf2776d87f8f1653b5d845866439ae598463e6ff78ed49f85b"
+    },
+    {
+      "taxon_id": "F1940652",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 60239,
+      "cds_rows": 21722,
+      "receipt_sha256": "a6f5cc8bfdd2c7949217453ebbf5af90d5096a57a03a5cff3f65e99a4aa58e21"
+    },
+    {
+      "taxon_id": "F2704026",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 73294,
+      "cds_rows": 26158,
+      "receipt_sha256": "d5ad6051b52c3fafc9626025919921efc19c68ad23470ef019a483e5ef5113e3"
+    },
+    {
+      "taxon_id": "F209281",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 87176,
+      "cds_rows": 31936,
+      "receipt_sha256": "7876cda75e2cef97bd431ea4ee04ffcd060695d6bd5caa52a45031a866b52e93"
+    },
+    {
+      "taxon_id": "F703506",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 77517,
+      "cds_rows": 28536,
+      "receipt_sha256": "d6af144d43636f2fb9dc7eaec57096e329b1b9d946dfd746b4ed271aa4ee240f"
+    },
+    {
+      "taxon_id": "F669869",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 95690,
+      "cds_rows": 35176,
+      "receipt_sha256": "cbbbe8d9bc333c454f8eaf3ec740439f7a1188e502bf1329cbdef889f6fa7da9"
+    },
+    {
+      "taxon_id": "F52883",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 67519,
+      "cds_rows": 23233,
+      "receipt_sha256": "1157475289010eeeefbe37b5905b01db933f54aa72e2bbe05cf2740c4563532c"
+    },
+    {
+      "taxon_id": "F169141",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 78107,
+      "cds_rows": 28530,
+      "receipt_sha256": "cd165ca8f5c4c55539852b612d6043eaa39c0742ff8348d4674a56894d5b4c7b"
+    },
+    {
+      "taxon_id": "F443868",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 62375,
+      "cds_rows": 22678,
+      "receipt_sha256": "d3cb92b4c47cfeeaac0c32441eabfde5c0fa9948dd3fcd63cb615c345980f056"
+    },
+    {
+      "taxon_id": "F1006475",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 75125,
+      "cds_rows": 25011,
+      "receipt_sha256": "aa130fbc552b069d1a718e28f45669062074c21d9578997ffb3d88b3aa31c379"
+    },
+    {
+      "taxon_id": "F90408",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85187,
+      "cds_rows": 31246,
+      "receipt_sha256": "71692cf7f46b56d60d15f0df1c3a3bbb0b8b6d3dd389285e3f9c0f7969245079"
+    },
+    {
+      "taxon_id": "F1174673",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 115407,
+      "cds_rows": 46009,
+      "receipt_sha256": "23b11361d92dd2db94c69df60e13b26fc5dfcae28808ca469e9a27871b93bad1"
+    },
+    {
+      "taxon_id": "F43433",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 89682,
+      "cds_rows": 33531,
+      "receipt_sha256": "c2266678437b03a476494df8761457fd6dd251385db697e02177900d1b1568fa"
+    },
+    {
+      "taxon_id": "F39416",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85786,
+      "cds_rows": 28885,
+      "receipt_sha256": "8622c1cfcd989239285d33380ce21bd2ddf2c7ee7cd1bc139c4effe83dfd9552"
+    },
+    {
+      "taxon_id": "F158046",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 53114,
+      "cds_rows": 19299,
+      "receipt_sha256": "3309bcca5b34450f31ec88c637c679ecd391ff59cc16e6e76da7969e71a05827"
+    },
+    {
+      "taxon_id": "F703511",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 77271,
+      "cds_rows": 27571,
+      "receipt_sha256": "98a4c5744ec1497d2e6ecce91735a3411285b8bed86f777b98d5955d25b519d4"
+    },
+    {
+      "taxon_id": "F4927",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 31568,
+      "cds_rows": 9083,
+      "receipt_sha256": "366fe21ea040cca3f46dc46b1660fca210ea4da0480f5d1a267177acd92e1ccb"
+    },
+    {
+      "taxon_id": "F599730",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 52814,
+      "cds_rows": 13290,
+      "receipt_sha256": "857ea70abf8306b33c30537dbfd733fee70da2dc099efc9761df3b3f07683c1a"
+    },
+    {
+      "taxon_id": "F4903",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 28686,
+      "cds_rows": 7980,
+      "receipt_sha256": "9b7d59e2c1759a61d935c23915c88f5f51e62a377c734bff4266cc5e3a7f7909"
+    },
+    {
+      "taxon_id": "F1825666",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 105025,
+      "cds_rows": 43508,
+      "receipt_sha256": "220c3539d7dfc95d795389a31c1ea66c24decaeeeac49f3f8b52eba4d60f3b10"
+    },
+    {
+      "taxon_id": "F1276059",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 68698,
+      "cds_rows": 25209,
+      "receipt_sha256": "462a55cbd7baa1084409d6cee22120d1eb3e7e28715b84c8fc062489b505b750"
+    },
+    {
+      "taxon_id": "F13502",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 21631,
+      "cds_rows": 5932,
+      "receipt_sha256": "3967e334c1e53b0e5806eefed85c527c13977215a24636238d60943e0f749cfa"
+    },
+    {
+      "taxon_id": "F1005962",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 22559,
+      "cds_rows": 5823,
+      "receipt_sha256": "5e7cd66c597cc548ebe8d0c5861132c0934c05dc3482d51edf3b1cca22622b3c"
+    },
+    {
+      "taxon_id": "F4909",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 21584,
+      "cds_rows": 5351,
+      "receipt_sha256": "02539c4406ed515ab630a77d25664ec9585b3a35d3f687886adbe6f7f4404f75"
+    },
+    {
+      "taxon_id": "F48095",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 78332,
+      "cds_rows": 28944,
+      "receipt_sha256": "46ca522acfbbd34019fcc0dda9425f5fda5e618e82ec5078344ba8024bb3a43c"
+    },
+    {
+      "taxon_id": "F5454",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 112041,
+      "cds_rows": 29694,
+      "receipt_sha256": "25cc88eebac6803ce8cf3f21ee0bf3d69d8a0d2e69d79d4666f1d201df2658fa"
+    },
+    {
+      "taxon_id": "F5022",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85928,
+      "cds_rows": 30718,
+      "receipt_sha256": "0741fa45922869be45e78fb1c212cb5269b28202b36c7c657af6b44768813a1b"
+    },
+    {
+      "taxon_id": "F4754",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 50688,
+      "cds_rows": 21428,
+      "receipt_sha256": "1429aad6dd43b5b6db3974c24154d30ddd0cd453882b1878ad4af4aca6f069e2"
+    },
+    {
+      "taxon_id": "F42068",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 51151,
+      "cds_rows": 21689,
+      "receipt_sha256": "6418d08675d3197817c58828d6025a894ddd946c930e9ccb057055e6291f55a0"
+    },
+    {
+      "taxon_id": "F263815",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 51190,
+      "cds_rows": 21735,
+      "receipt_sha256": "e582eb721ae02417d573aee4494f47514e74d9615efa730ba64c6fa94304273a"
+    },
+    {
+      "taxon_id": "F2977754",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 63411,
+      "cds_rows": 21983,
+      "receipt_sha256": "b2d945b2b9f93cdf69bfcbb2d86b248147b9ee1333835f90a5368de22b8024ab"
+    },
+    {
+      "taxon_id": "F3060298",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 61827,
+      "cds_rows": 21311,
+      "receipt_sha256": "cc6d0151e065eb70aea1cd74968ca60cd78ab9ec1ecf242df09be4023aca8595"
+    },
+    {
+      "taxon_id": "F1453789",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 70009,
+      "cds_rows": 26007,
+      "receipt_sha256": "4991deec6ade70c2ad93dec3eaa33da385929785aca47a72b3e327aa9f6af99d"
+    },
+    {
+      "taxon_id": "F706196",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 14914,
+      "cds_rows": 3659,
+      "receipt_sha256": "ab9e456a37f9180fc38ea37e2ac8157d74e2bd7a51201a01628afb6bc8813bd9"
+    },
+    {
+      "taxon_id": "F4932",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 27135,
+      "cds_rows": 6386,
+      "receipt_sha256": "d95ccf66654e9562d6b3ac44fc9833cefa6a32d5c4403742421e6944f62a7ed9"
+    },
+    {
+      "taxon_id": "F332112",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 73227,
+      "cds_rows": 9143,
+      "receipt_sha256": "f8bd8e6a4c98e39c38c7264e99879a85eddf6d2e6cd6e842174b1b100b1901fe"
+    },
+    {
+      "taxon_id": "F1080349",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 22867,
+      "cds_rows": 5486,
+      "receipt_sha256": "0b88f592bb3573ff66fb5cb7f420727d9c5c5317752cbcf99ab8b0cec18d5567"
+    },
+    {
+      "taxon_id": "F114524",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 23796,
+      "cds_rows": 5839,
+      "receipt_sha256": "1b1dd2c7b01fa77bc970d79c24047002074d627aaca5e73fcfeb9ae4d0749a68"
+    },
+    {
+      "taxon_id": "F114525",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 23635,
+      "cds_rows": 5791,
+      "receipt_sha256": "ff86b619ecab2ab4d62c43af511d663139304265f41ad955dfcb2c00f49f1e46"
+    },
+    {
+      "taxon_id": "F27291",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 23603,
+      "cds_rows": 5785,
+      "receipt_sha256": "73e04f696098de0e3fe86cd7a95ceec2b6031586d20efd6e06c324251af1479d"
+    },
+    {
+      "taxon_id": "F27292",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 46264,
+      "cds_rows": 11528,
+      "receipt_sha256": "df459742efd00db8aab5839f16a0a9930f755c2736a33c262db7293c37961171"
+    },
+    {
+      "taxon_id": "F230603",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 12342,
+      "cds_rows": 5776,
+      "receipt_sha256": "f718bdbb0e8f303bbd39600ddff02ba0ee62527251168fb54a6b75c1b5504b58"
+    },
+    {
+      "taxon_id": "F29833",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 17135,
+      "cds_rows": 4395,
+      "receipt_sha256": "f98a1dedcddabf246402ba380fdd0e0987c416b957b7fbe37a89c1a9fef96ddb"
+    },
+    {
+      "taxon_id": "F56409",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 20648,
+      "cds_rows": 5413,
+      "receipt_sha256": "955b32bb50aa2147aaab4b1fb546a4531ace85ed2070b95cb16c3222d8ca1e11"
+    },
+    {
+      "taxon_id": "F36035",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 21459,
+      "cds_rows": 5206,
+      "receipt_sha256": "f123b5e56b1fd709378558580a77147eca111eea5f151770e0335c91872f578e"
+    },
+    {
+      "taxon_id": "F1099800",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 21280,
+      "cds_rows": 14223,
+      "receipt_sha256": "83c5cd1c97d4c1a8e0035a0f1873c9bc497abdd7b1720b34fa121cbf398df278"
+    },
+    {
+      "taxon_id": "F5606",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 45659,
+      "cds_rows": 15350,
+      "receipt_sha256": "66f309b72ff05a51ffcb20dd89b6b76ad6e3605d76d7c61c7782b212ad1b6018"
+    },
+    {
+      "taxon_id": "F273283",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 63370,
+      "cds_rows": 24088,
+      "receipt_sha256": "035bfe4cc5afe2a178d658c904d67694f36d3d4c0090b500c9adfff0a6d6d4e4"
+    },
+    {
+      "taxon_id": "F400354",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64910,
+      "cds_rows": 24226,
+      "receipt_sha256": "0f236ad45c910e658d538a28b51fc1393e1b5798aa8552a43dc263d42efdf37a"
+    },
+    {
+      "taxon_id": "F1042397",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 57719,
+      "cds_rows": 21278,
+      "receipt_sha256": "f7f9bb9d7ceeffded5960c074f037fa5277a4acd3c3e74be1099e5ff6a2dc270"
+    },
+    {
+      "taxon_id": "F4897",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 31162,
+      "cds_rows": 10070,
+      "receipt_sha256": "65e60d248cb754b3e1e9c0171dcea8d0e15ff057f65b1906a9fffb9bcb756bf6"
+    },
+    {
+      "taxon_id": "F2545709",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 32564,
+      "cds_rows": 10432,
+      "receipt_sha256": "e264b57a1c8e66cd9b1ca579c2a7e50ef7e88f467bd5f9ec406e21a87b61187f"
+    },
+    {
+      "taxon_id": "F4896",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 53910,
+      "cds_rows": 10309,
+      "receipt_sha256": "aa2989e6e3d2a34f7790d8e4d975baf91c6e9f067bd7a0ea3742f980dd63926b"
+    },
+    {
+      "taxon_id": "F241526",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 12027,
+      "cds_rows": 3112,
+      "receipt_sha256": "bd9ab576143703bc782a690878935caa4b47b9e1cadcdf65fd102b57fc676eee"
+    },
+    {
+      "taxon_id": "F5476",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 25889,
+      "cds_rows": 6432,
+      "receipt_sha256": "034bb6dfe5f94048690a80600683cd5d0c4063984e5b75052a38ae9d05ba4f75"
+    },
+    {
+      "taxon_id": "F42374",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 25709,
+      "cds_rows": 6519,
+      "receipt_sha256": "7d3b8ad6722915074f37beebfe27b1896b686b9fb7db15d7cf32643a4462382e"
+    },
+    {
+      "taxon_id": "F5479",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 28139,
+      "cds_rows": 8530,
+      "receipt_sha256": "7e1138eab3d12b4536746fb4a0c4aa3f40330acf62048f0771102d339b7dcb2a"
+    },
+    {
+      "taxon_id": "F5482",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 25669,
+      "cds_rows": 6288,
+      "receipt_sha256": "94e4c34ecdee0bcd6247f98184da0e26f0f71421817340fff5edb60c39cdb592"
+    },
+    {
+      "taxon_id": "F5486",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 48816,
+      "cds_rows": 13546,
+      "receipt_sha256": "31295eedf137cfe5ee1fc35080f2e7d5b610ede1cc0918c36da138704fc99151"
+    },
+    {
+      "taxon_id": "F2609844",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81466,
+      "cds_rows": 28267,
+      "receipt_sha256": "3fbfb195c51d16417cf3434a13b0b0a1fe10683e6289426a3e343ce9b922839f"
+    },
+    {
+      "taxon_id": "F72144",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 59035,
+      "cds_rows": 21660,
+      "receipt_sha256": "4d0443631acaa06efdc2e28e4989bba6b70cbc4c6248f8e0c33597ca1e1df871"
+    },
+    {
+      "taxon_id": "F5147",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 73938,
+      "cds_rows": 25350,
+      "receipt_sha256": "dbe1002842fdee3e6b968063e07a787f68d42a862de5550669ea35058e0dbc18"
+    },
+    {
+      "taxon_id": "F2754530",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 35477,
+      "cds_rows": 10768,
+      "receipt_sha256": "81054fa7113abc0c44b82223f1682d012d2aca1460203ee3a20ac815c6c9ef0c"
+    },
+    {
+      "taxon_id": "F5011",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 12758,
+      "cds_rows": 7656,
+      "receipt_sha256": "5b839967ed73dacb06f60aa7ff3ea004eb1a4af63ccc4a0498c51dc53a18a370"
+    },
+    {
+      "taxon_id": "F1145299",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 60340,
+      "cds_rows": 21173,
+      "receipt_sha256": "cbf9efbdbc372af2fdd58594b975c3ae0b7c78edbfb9d6655d7932ad4bbd8566"
+    },
+    {
+      "taxon_id": "F1145321",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 60079,
+      "cds_rows": 21342,
+      "receipt_sha256": "b52b15afd28ce70b1fe3a66c4cf6ec786b33a0e4dee5d41f17e8fcc2e9e9f95a"
+    },
+    {
+      "taxon_id": "F116982",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 79551,
+      "cds_rows": 29139,
+      "receipt_sha256": "ecf090a6deb909ed458e2858668b80b4f9ea7d145654de20544b5009997e9d72"
+    },
+    {
+      "taxon_id": "F3342545",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 84636,
+      "cds_rows": 31346,
+      "receipt_sha256": "2d03dd1b763ade944632fbec11b7c410744b0f1a2d8d929b452e11466b6cf142"
+    },
+    {
+      "taxon_id": "F655981",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 70032,
+      "cds_rows": 24808,
+      "receipt_sha256": "e088b19f07ec6dc1a26a004ac4a469cf89e4bc6e54e00b77718f45d40e8b9876"
+    },
+    {
+      "taxon_id": "F342668",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 84769,
+      "cds_rows": 30808,
+      "receipt_sha256": "144e69f11dba452fe0398d612720006c96e6fb9200158a870063540cd1b34f45"
+    },
+    {
+      "taxon_id": "F1116844",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 53573,
+      "cds_rows": 20211,
+      "receipt_sha256": "06ee673a7d348b6d62fcc4f75a2331807f4eac49cd4d3dfc6b1aed03646fbea0"
+    },
+    {
+      "taxon_id": "F2939404",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 54598,
+      "cds_rows": 20596,
+      "receipt_sha256": "68b6fdebb8cc1834074af7596e1eecc86b6225f5976c150b40d96a1a55910f81"
+    },
+    {
+      "taxon_id": "F1093900",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 98003,
+      "cds_rows": 36371,
+      "receipt_sha256": "948db63208d0065b23d95652c8f4c380903a60a8228564914ad7577a76f8754d"
+    },
+    {
+      "taxon_id": "F223192",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 67414,
+      "cds_rows": 24561,
+      "receipt_sha256": "a60bc9c998fe44637995290d7982d298c2f4484be5f275f4fc57c78eb4438368"
+    },
+    {
+      "taxon_id": "F2918522",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66206,
+      "cds_rows": 24985,
+      "receipt_sha256": "24bf97c5d64cd7bf646b1083628c4ba7c3f6965af9c5fa1c2cbea0763e0e0755"
+    },
+    {
+      "taxon_id": "F129515",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 73075,
+      "cds_rows": 26925,
+      "receipt_sha256": "77944350b67ea0ea51cebb1daedf42993bd9047974ec1d3f25795035f5e865c7"
+    },
+    {
+      "taxon_id": "F51930",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 20590,
+      "cds_rows": 5531,
+      "receipt_sha256": "668c5fc70021d9043d5498f1d0e496c7ab6dc0a77a8953872314d937c5e2a8c8"
+    },
+    {
+      "taxon_id": "F2939406",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 79460,
+      "cds_rows": 28570,
+      "receipt_sha256": "59947e4e4230c7e37ff739a322dd1acc53529037da98a8495b4f7dcbdb52001e"
+    },
+    {
+      "taxon_id": "F364730",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 62817,
+      "cds_rows": 22309,
+      "receipt_sha256": "60e7a0f22b5dd2577303335b9b897bd20faa3b9e948f828b8d8143af1dd9b6d5"
+    },
+    {
+      "taxon_id": "F1048519",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 90849,
+      "cds_rows": 32673,
+      "receipt_sha256": "685e3347c167ee965bb1716822d676d18051488840ba6ce103a41e0b69af4422"
+    },
+    {
+      "taxon_id": "F318760",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 74486,
+      "cds_rows": 27361,
+      "receipt_sha256": "4a593113bd104e860587b7e58e27923c30e79d3f86343431f5894204f0799bd5"
+    },
+    {
+      "taxon_id": "F136370",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 84327,
+      "cds_rows": 32263,
+      "receipt_sha256": "cc586fca2c3317eb8e7d4bbf6c8848bcfc94ae340ab524c2fae934ea29176d25"
+    },
+    {
+      "taxon_id": "F87287",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 58607,
+      "cds_rows": 20582,
+      "receipt_sha256": "403fc5649c4575570183f0036ed11ff9a650bda5c951e23d098c314544a7c9d9"
+    },
+    {
+      "taxon_id": "F1048955",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 103327,
+      "cds_rows": 37108,
+      "receipt_sha256": "bdab59be1d95da755a7359773acd840dced3e88829c8b063366eaff03f665713"
+    },
+    {
+      "taxon_id": "F50376",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85000,
+      "cds_rows": 31554,
+      "receipt_sha256": "ef40977116386b01249371c4f41e8ebec00e0d3709884405c1ad706e84d9d8d3"
+    },
+    {
+      "taxon_id": "F253628",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 83849,
+      "cds_rows": 30075,
+      "receipt_sha256": "b56084c3e6452f811a10266c8f3feb3ab32517c2acbda4329d9244134debc286"
+    },
+    {
+      "taxon_id": "F364733",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66418,
+      "cds_rows": 23517,
+      "receipt_sha256": "33c70e06e821138c63f07e3632a95eac3de56e2793df410f529bfcf1f8ad5e4f"
+    },
+    {
+      "taxon_id": "F2939408",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 53442,
+      "cds_rows": 19888,
+      "receipt_sha256": "eb4feac2002e663ad8a46f7b13b72cfca47793222ea0c42d2f9f9a4516fa07d8"
+    },
+    {
+      "taxon_id": "F2939405",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 53559,
+      "cds_rows": 19739,
+      "receipt_sha256": "3791e4ea8a96f2e88d02aecc5ee44a121e891b4d81fefa18dc1d7bd489eba25a"
+    },
+    {
+      "taxon_id": "F326681",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 94653,
+      "cds_rows": 34456,
+      "receipt_sha256": "ecd6facee6ab648de1d3bd54cdc5d2355098ad99bc3ea267c49d9581f0a73d4b"
+    },
+    {
+      "taxon_id": "F1682393",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 116560,
+      "cds_rows": 41650,
+      "receipt_sha256": "3f25371aefe7d975561d569eceeffca77416fd5adb21fe91250a85dbebeb50ae"
+    },
+    {
+      "taxon_id": "F326684",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 99795,
+      "cds_rows": 36625,
+      "receipt_sha256": "4d23e6be0f0d3a942e00b58df775a4a86c1884bf0bf14736db59930be12b629e"
+    },
+    {
+      "taxon_id": "F1130053",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 78386,
+      "cds_rows": 29304,
+      "receipt_sha256": "32d9fdbebd6d6b4536c9c47a823b8f0d5a6b9d71cc2435ae949bd1cd55d74767"
+    },
+    {
+      "taxon_id": "F1217826",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 72314,
+      "cds_rows": 27461,
+      "receipt_sha256": "5dc75f36a2cd96eae662823b2919f392f75712c47f7d5d73caf7e56afbaabc5a"
+    },
+    {
+      "taxon_id": "F423460",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 158095,
+      "cds_rows": 60835,
+      "receipt_sha256": "51d088edabdde4975b56de5e93cb138bd854ff8f38a72afbb3ac9bdb344fb142"
+    },
+    {
+      "taxon_id": "F34480",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 206144,
+      "cds_rows": 75323,
+      "receipt_sha256": "bf2559c7b7cb64614b6daaa2e33f4dfbae8dbad4bb03dcdbdfc97787e96a1df3"
+    },
+    {
+      "taxon_id": "F87326",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 222691,
+      "cds_rows": 90725,
+      "receipt_sha256": "9baf7d03bcc209c0d1187c3c6b77f2a827bc99884b49e634349455e8ed8a007e"
+    },
+    {
+      "taxon_id": "F933333",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 121663,
+      "cds_rows": 52104,
+      "receipt_sha256": "0de0323e000e6239f7552451f653d014764778ef3e783b66106fedbae1ee5727"
+    },
+    {
+      "taxon_id": "F41956",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 206234,
+      "cds_rows": 85821,
+      "receipt_sha256": "2a1dad2bb964a4809de3407d47ec4e956cd64feb82e217996118bbe3b4510cb5"
+    },
+    {
+      "taxon_id": "F67723",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 131253,
+      "cds_rows": 56582,
+      "receipt_sha256": "eda60eabfbdf995f59f382ccbad6bd970262b1f4c655d2eb94cc863bedde4313"
+    },
+    {
+      "taxon_id": "F1004511",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 158312,
+      "cds_rows": 67809,
+      "receipt_sha256": "306c68a444bdb79128b3defc2f77efcec5ea71a19bd08279a35de173043918cc"
+    },
+    {
+      "taxon_id": "F71933",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 222403,
+      "cds_rows": 92712,
+      "receipt_sha256": "69c796003aeb58174fb032d0d973288b59f6faa4510d6f9ebd79e4806b0f6845"
+    },
+    {
+      "taxon_id": "F235537",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 145986,
+      "cds_rows": 61512,
+      "receipt_sha256": "fa3ce6fdcaebe71d1f0f771ef8697e95907c68631dc7d8372e78425f4b1a44f0"
+    },
+    {
+      "taxon_id": "F89243",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 212867,
+      "cds_rows": 86673,
+      "receipt_sha256": "d14fce43095f4b73da30d0d63d897f46b05830e0c178fe9b0280e19a7df8cac6"
+    },
+    {
+      "taxon_id": "F29883",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 237373,
+      "cds_rows": 99566,
+      "receipt_sha256": "c2e1f811486e30f04b8c32047ab1f7db0896bec1f7c95909e1b0fac9c87f82ee"
+    },
+    {
+      "taxon_id": "F44565",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 114175,
+      "cds_rows": 48723,
+      "receipt_sha256": "a6cccb6b65920629582c5315a444a3bf8dadc63b845f8dae7a710f1da282f7b5"
+    },
+    {
+      "taxon_id": "F2831993",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 184167,
+      "cds_rows": 76721,
+      "receipt_sha256": "372c976d17f5801fbd5870398a1cac4e7d84b096505b21001c9b43348d3326c9"
+    },
+    {
+      "taxon_id": "F1759441",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 368579,
+      "cds_rows": 147977,
+      "receipt_sha256": "8d798e1ce9ab64725361e999d3eb959a346edcff6c93b1f4a09af2d72d048452"
+    },
+    {
+      "taxon_id": "F2748771",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 297558,
+      "cds_rows": 124856,
+      "receipt_sha256": "f67e2e18d643a4ba902d0777512da59bd3a666765a4a2eb8db5684dff26e7580"
+    },
+    {
+      "taxon_id": "F80663",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 243874,
+      "cds_rows": 97599,
+      "receipt_sha256": "545dc2104085c4aae2d104e25c1367528f7b4ce7dd7b9661fac4b1e2942d2d77"
+    },
+    {
+      "taxon_id": "F1938712",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 220166,
+      "cds_rows": 89339,
+      "receipt_sha256": "583f675c756f1afa1234ddf3f4e3c1516c7ed8e7ed4fdb4b6e7cb699b0d161f6"
+    },
+    {
+      "taxon_id": "F1331295",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 283880,
+      "cds_rows": 114406,
+      "receipt_sha256": "e35de209ed498a98f15557648213f1916dfe159882d8eb79e7b561782d832e85"
+    },
+    {
+      "taxon_id": "F2829486",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 194619,
+      "cds_rows": 81126,
+      "receipt_sha256": "56dee6e9ec6e30ffc472dcf20389644d89bd6e417d834a7d5ced79e7857c84c0"
+    },
+    {
+      "taxon_id": "F5219",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 310211,
+      "cds_rows": 125675,
+      "receipt_sha256": "9c31e76282e4de41f71d49f04727ac47766fae024d7a4d3ed5ccc7669cec819e"
+    },
+    {
+      "taxon_id": "F48563",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 193588,
+      "cds_rows": 81688,
+      "receipt_sha256": "79e9de02355181379797706db0f8353b10c20389f51984848d64bd520b00af6c"
+    },
+    {
+      "taxon_id": "F48565",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 247569,
+      "cds_rows": 99723,
+      "receipt_sha256": "4d28b2fdd27b38a6d481f27d2866ec37ccbad085be7a4d2808ff4b799b4898f1"
+    },
+    {
+      "taxon_id": "F1904413",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 217816,
+      "cds_rows": 91718,
+      "receipt_sha256": "021b1c211286dedf221611acc5c96b603fbd6939b6abb7bf7753c0e23c6bde85"
+    },
+    {
+      "taxon_id": "F1912936",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 232809,
+      "cds_rows": 97934,
+      "receipt_sha256": "3949be678d1cc67877202b245fae2e16b73451c3ed54734fb29d9595aa80e364"
+    },
+    {
+      "taxon_id": "F1912939",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 254837,
+      "cds_rows": 106971,
+      "receipt_sha256": "47a58654ca2b65e61711b1969f4c6ee498d58ed5d72c5894ef0c76c0c272fd07"
+    },
+    {
+      "taxon_id": "F48578",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 229273,
+      "cds_rows": 95998,
+      "receipt_sha256": "403769734666711174e72e2834e0d01e61ef824015f4b07a66ed3b763f7b29de"
+    },
+    {
+      "taxon_id": "F116603",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 228092,
+      "cds_rows": 96165,
+      "receipt_sha256": "51e886eed9e04c514ddaa7c050a14af9ca81e81a6e99e1d0204bfa0ff2cff3da"
+    },
+    {
+      "taxon_id": "F48586",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 240777,
+      "cds_rows": 101222,
+      "receipt_sha256": "444ca53a608a7c6b2c65d5afba2446987309fcd84ec6e70e14545e778950fa3a"
+    },
+    {
+      "taxon_id": "F48587",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 206050,
+      "cds_rows": 85349,
+      "receipt_sha256": "2bfd50be3a8b315fb05567df7dd730c7290261f6bb0ccd26777744d72e130676"
+    },
+    {
+      "taxon_id": "F48593",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 205114,
+      "cds_rows": 84781,
+      "receipt_sha256": "e6c2b08b8092cb2f022f42041251af48ec4ed25d2d596ad001ae7cc516c82bf4"
+    },
+    {
+      "taxon_id": "F264124",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 215393,
+      "cds_rows": 89436,
+      "receipt_sha256": "4bbeaecf5913611422c7b57bbb6195f5e61eb40fae5e7e5de3822d59b93d7837"
+    },
+    {
+      "taxon_id": "F1750568",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 209822,
+      "cds_rows": 85129,
+      "receipt_sha256": "99a5c85dcbfa8193661045dcb46d686fa96b4f1a9768ce6122c0244b83ca8b21"
+    },
+    {
+      "taxon_id": "F170446",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 415176,
+      "cds_rows": 178229,
+      "receipt_sha256": "591d6ac49d1ad861fffb0f3c9b9c05b0ddc72ce65f6278614c597d4d96533692"
+    },
+    {
+      "taxon_id": "F139363",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 233361,
+      "cds_rows": 95406,
+      "receipt_sha256": "95b66a86ea064d52cbd35edf297312c916bac4c4fe28270373f0c95c0b6983a0"
+    },
+    {
+      "taxon_id": "F456999",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 196190,
+      "cds_rows": 85600,
+      "receipt_sha256": "12c3768ea3ab72d95d015e34c574aebb7ccbb828b334600e2604f23422529f10"
+    },
+    {
+      "taxon_id": "F156515",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 221218,
+      "cds_rows": 89632,
+      "receipt_sha256": "5809e82fe69cd6c05e57f5d4f94167727b0da6a53749936ea0c0d0362b2843d2"
+    },
+    {
+      "taxon_id": "F401625",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 56902,
+      "cds_rows": 32348,
+      "receipt_sha256": "9fb400ba2a7196eb5d7d036f85c78e2cac75bda157820f3a256a0339983099f2"
+    },
+    {
+      "taxon_id": "F1522189",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 76169,
+      "cds_rows": 29843,
+      "receipt_sha256": "58402ab4a15396f1b75df90b62ab1032cd1ecd228fd7b6fcc6d99eaee50ab6ef"
+    },
+    {
+      "taxon_id": "F203533",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 167477,
+      "cds_rows": 68735,
+      "receipt_sha256": "cbced41744c2201b77025f310887fa5f9b09829d55dd64de7498c933146294a4"
+    },
+    {
+      "taxon_id": "F202698",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 164445,
+      "cds_rows": 68996,
+      "receipt_sha256": "aad3e8485b74facd741790a9c6602ac90905b84e4ff3d970bb2867b8b9f97dd3"
+    },
+    {
+      "taxon_id": "F2778381",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 91170,
+      "cds_rows": 39164,
+      "receipt_sha256": "8e34e7bdebcec395eda33d6b10201658d817e4392880263aa9512590bfc7060e"
+    },
+    {
+      "taxon_id": "F29899",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 102810,
+      "cds_rows": 43127,
+      "receipt_sha256": "1efdb942178f61101b12031e3891ee0b07abf8b787e43f7c0b2e5c7b312470db"
+    },
+    {
+      "taxon_id": "F29902",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 170455,
+      "cds_rows": 74739,
+      "receipt_sha256": "6a66c63c25ef1ffb5f74a6d9f0d1a1c245f50ec5aabcefb67399ad3b9a4f7708"
+    },
+    {
+      "taxon_id": "F264483",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 65747,
+      "cds_rows": 52272,
+      "receipt_sha256": "de9596f28a0cfe757203f944814bcb3a78aa1bcbdee7dff9790374d64de08d91"
+    },
+    {
+      "taxon_id": "F29889",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 142707,
+      "cds_rows": 57243,
+      "receipt_sha256": "8385986ac6b34944273308522475ef9b5a401450131a0a8d812dcd1fe94aa6d6"
+    },
+    {
+      "taxon_id": "F63146",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 137409,
+      "cds_rows": 55535,
+      "receipt_sha256": "57e1717dde1c08c6619de93f28c43195dcac6da76c08b21d2f06efa3e0395191"
+    },
+    {
+      "taxon_id": "F1858805",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 117280,
+      "cds_rows": 47074,
+      "receipt_sha256": "5236dc650427bb5d8af4b344ab59055e941a57cee1b628aea5dd459e78452f69"
+    },
+    {
+      "taxon_id": "F58919",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 77102,
+      "cds_rows": 31263,
+      "receipt_sha256": "5c2a9bbd1e3e75cc0cf2aca969ed47da76ed1a83d698337183b34b4e631c7696"
+    },
+    {
+      "taxon_id": "F5414",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 117343,
+      "cds_rows": 48342,
+      "receipt_sha256": "42aea24522af59b6744e2884e60801b4b85e51f60e0a800ac4edf479bbccac2f"
+    },
+    {
+      "taxon_id": "F215250",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64492,
+      "cds_rows": 23952,
+      "receipt_sha256": "d245ee313bc8e67fe706f7ea9da3193e11dc587d3a3794e38426250b303486dd"
+    },
+    {
+      "taxon_id": "F63378",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 51811,
+      "cds_rows": 18941,
+      "receipt_sha256": "1890481d049b260ac339d57b74ab0e67291617c8dae15d1714b2d17b605a892d"
+    },
+    {
+      "taxon_id": "F1280837",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 39100,
+      "cds_rows": 11952,
+      "receipt_sha256": "7316a1ca968caa8afcc2584390f8279205f4115ca5622232abe1aa5eb556a928"
+    },
+    {
+      "taxon_id": "F5210",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 124045,
+      "cds_rows": 53154,
+      "receipt_sha256": "49c30cf51f2a5165fe8212d5b387a2ff4628b9543f46e34054575c2ca3ec8061"
+    },
+    {
+      "taxon_id": "F610337",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 80840,
+      "cds_rows": 30689,
+      "receipt_sha256": "1c130c552556b9a87a9c1b990a197e421def55c74c084aacdcdfe372fca1632c"
+    },
+    {
+      "taxon_id": "F89922",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 98950,
+      "cds_rows": 41949,
+      "receipt_sha256": "3b82e3230cf6db83bf53717bc47e08045d5add9271f66d466ad235464303ff32"
+    },
+    {
+      "taxon_id": "F104408",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 52571,
+      "cds_rows": 45629,
+      "receipt_sha256": "44b065c5c901eb48166aecb6a95f7390f4d4d7a3150a2ca910ea36d1853fb3b0"
+    },
+    {
+      "taxon_id": "F1424756",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81472,
+      "cds_rows": 33840,
+      "receipt_sha256": "854df08d163bcc3c1c5ddd41e56baa4e28377ac3e5925b5f622b272e4d2690d1"
+    },
+    {
+      "taxon_id": "F68786",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 399619,
+      "cds_rows": 161120,
+      "receipt_sha256": "c5c2ab090e83a1f036863a01bb7aa6295e8da88b178eceb8bc4b9ec2728995b5"
+    },
+    {
+      "taxon_id": "F1230402",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 202718,
+      "cds_rows": 89379,
+      "receipt_sha256": "b764def4eeebced9099fd875099d27b12c290c99591aeb2339c7000b7ba17b86"
+    },
+    {
+      "taxon_id": "F5281",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 58915,
+      "cds_rows": 22197,
+      "receipt_sha256": "4ad52922c9ea2ff74294cb96475a856fbdd0a4babf452fde7d6577a2837e8a23"
+    },
+    {
+      "taxon_id": "F104355",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 165039,
+      "cds_rows": 69514,
+      "receipt_sha256": "9da7c82a8e443e90f23277fde292a4e6b4a7bc250b108b7201229878008a3f1a"
+    },
+    {
+      "taxon_id": "F5364",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 172306,
+      "cds_rows": 71988,
+      "receipt_sha256": "4fcd319a46464cff55ea2eb823bac1d138a3f65ee55e2024413afcc1f88db2f7"
+    },
+    {
+      "taxon_id": "F38799",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 174694,
+      "cds_rows": 72402,
+      "receipt_sha256": "94f72c8b0676550ffed3b5544ab34392b15b73456dc95b1cb264cc5bd6c239ff"
+    },
+    {
+      "taxon_id": "F112417",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 263979,
+      "cds_rows": 108197,
+      "receipt_sha256": "6fae70816ac45e6cfeaf514c4430a1de263505cea2f7d55c05072f40fb66dae4"
+    },
+    {
+      "taxon_id": "F113071",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 255691,
+      "cds_rows": 104502,
+      "receipt_sha256": "f87eb77860b95666dfcf4c9f4040845b88f8c1b4fac9cf29a391ab3d7744c30d"
+    },
+    {
+      "taxon_id": "F45228",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 107504,
+      "cds_rows": 45516,
+      "receipt_sha256": "b65e015acf8b171e5c6c7012f7fb72ab7c845ff005bf1cb8ff5c1b6af2cb9a4a"
+    },
+    {
+      "taxon_id": "F257869",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 121386,
+      "cds_rows": 53396,
+      "receipt_sha256": "755beed9995c7785fe10d4049c4b343d1af78f835a3fa9db419e0cf066e96abd"
+    },
+    {
+      "taxon_id": "F135589",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 162903,
+      "cds_rows": 67958,
+      "receipt_sha256": "07f9609698a8e84ae97ac043c33955fef131746e508d1a65efa83f5c082e53f8"
+    },
+    {
+      "taxon_id": "F208960",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 161839,
+      "cds_rows": 66288,
+      "receipt_sha256": "af0d933a29bae49a47edeb8edf7a4ac1321bc65e4df6b05de4bd76342c1ab485"
+    },
+    {
+      "taxon_id": "F2282107",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 154892,
+      "cds_rows": 67460,
+      "receipt_sha256": "8ea9dd84246a2ef4e5b45b76643121eb5fa7cfeecd91adefb79785c47d22885d"
+    },
+    {
+      "taxon_id": "F50990",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 226836,
+      "cds_rows": 94080,
+      "receipt_sha256": "b77782917ee27f6cc25890aa31db4f415eb430d3657e22e21e7c8b7a0d127bb5"
+    },
+    {
+      "taxon_id": "F27342",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 228998,
+      "cds_rows": 94492,
+      "receipt_sha256": "834bc1a32fabbfde5bd701f793a0d2bdd26fdcb38eb7d85e11530dd9462069e4"
+    },
+    {
+      "taxon_id": "F150792",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 225075,
+      "cds_rows": 95389,
+      "receipt_sha256": "0682b076aaa39a49f7c51426be8c7ea544ec2599bad02c6fef09f883247b64c0"
+    },
+    {
+      "taxon_id": "F202697",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 212062,
+      "cds_rows": 87870,
+      "receipt_sha256": "4ec2b02b69bb162feaadd6c33bd76c3f1c87708dcbea33bc685c50dc2d544c01"
+    },
+    {
+      "taxon_id": "F1323573",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 183166,
+      "cds_rows": 79590,
+      "receipt_sha256": "278aed7609ab29920cd90e9e82f80ec72f0e9b81dd454ef92579f0ea6efbff08"
+    },
+    {
+      "taxon_id": "F418498",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 206826,
+      "cds_rows": 91837,
+      "receipt_sha256": "799aa7beed551b8b96ff25c0a783dd612ef2e44865623583888353a3d7e8072a"
+    },
+    {
+      "taxon_id": "F3038894",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 140521,
+      "cds_rows": 59121,
+      "receipt_sha256": "3a556be8bc6353f43243c99b810448507070f38e9a19d94334df7d7c3d3c89c9"
+    },
+    {
+      "taxon_id": "F106004",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 153560,
+      "cds_rows": 65815,
+      "receipt_sha256": "b8d5dc453828c5eabaabe2e8620afb9d2eefff5a1883ab48a66f27a6dc960cfd"
+    },
+    {
+      "taxon_id": "F223818",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 29209,
+      "cds_rows": 10198,
+      "receipt_sha256": "39fdd1498d7cd2d353c2d6454854a2532fab317608d2ec090d85e5a748c61426"
+    },
+    {
+      "taxon_id": "F77020",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 27179,
+      "cds_rows": 9342,
+      "receipt_sha256": "af9fcac75f86f4f13c8c30ac17a37584721189429256eb0f5578405d7795cc1b"
+    },
+    {
+      "taxon_id": "F76775",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 22356,
+      "cds_rows": 6559,
+      "receipt_sha256": "06f29b541212da8f4576a7285a10300ec32befe21627287eb1dcb3e920d1e10f"
+    },
+    {
+      "taxon_id": "F76777",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 21041,
+      "cds_rows": 6971,
+      "receipt_sha256": "e75e05a532964debb39e5fcc9dd457b5eecb1b6ae5ee943d98257f27f2ba3609"
+    },
+    {
+      "taxon_id": "F2020962",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 22899,
+      "cds_rows": 7394,
+      "receipt_sha256": "bd00aff7da6851740b977d869995e3b53585c5cc967c1ed40cda6cd79d09df5f"
+    },
+    {
+      "taxon_id": "F269621",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 105880,
+      "cds_rows": 40715,
+      "receipt_sha256": "4c6a88b71e4b762ae32bfcbf6c60b15cf13a890a06f5957b8661665773b3da64"
+    },
+    {
+      "taxon_id": "F288795",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 103597,
+      "cds_rows": 42643,
+      "receipt_sha256": "e8dbfc599c5f84b8d51c2c873724a318ab01d409343df3396a137c707e1c2631"
+    },
+    {
+      "taxon_id": "F289078",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 128315,
+      "cds_rows": 48241,
+      "receipt_sha256": "1aa1c634b62937b5046b7fa1c13fd9ae77a5bdb5729082971f6d5c41e1b0fbcf"
+    },
+    {
+      "taxon_id": "F796604",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 153756,
+      "cds_rows": 56945,
+      "receipt_sha256": "daea9f1c51f5a209d123e40af9d6057993fe30ab7300f1e730a5ff9c8acb24f2"
+    },
+    {
+      "taxon_id": "F2878321",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 32906,
+      "cds_rows": 13887,
+      "receipt_sha256": "def6b0bbc2ee7804415abce52ae515c8c2154be73048b907e9ffb0c05a456757"
+    },
+    {
+      "taxon_id": "F1569628",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 46883,
+      "cds_rows": 16346,
+      "receipt_sha256": "924a0b7736624f8f9c88a0402dc1cfb9427828e764a3094384901e4684281cb6"
+    },
+    {
+      "taxon_id": "F1684307",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 48158,
+      "cds_rows": 17173,
+      "receipt_sha256": "aeda3137e54f3b3e0e011f038cce8ecc4bed907ae247be3729e2a4464d54c5c2"
+    },
+    {
+      "taxon_id": "F1463510",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 34250,
+      "cds_rows": 14407,
+      "receipt_sha256": "3b5a0a4ce877979131357e4a0a91bb7a9dcf162ea3f5f56fa765d181735be1e8"
+    },
+    {
+      "taxon_id": "F574677",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 35946,
+      "cds_rows": 14717,
+      "receipt_sha256": "5364b8e34d04d9e11c028bf7ba6d9c36ede787ecbc968d15aa31212507897430"
+    },
+    {
+      "taxon_id": "F34349",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 75731,
+      "cds_rows": 30668,
+      "receipt_sha256": "0c80faa41bec920c84ca05b54ab8d2341019d909e641681fb5cad4d2df103980"
+    },
+    {
+      "taxon_id": "F112072",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 130896,
+      "cds_rows": 53941,
+      "receipt_sha256": "e4a5f984fefc4e3f2ece8cefa229b2fdc352eb9febaaf0ef45f382179e2a5bcc"
+    },
+    {
+      "taxon_id": "F1419009",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 80283,
+      "cds_rows": 69417,
+      "receipt_sha256": "3d45c1d9efdb9b89228f6f204f5deb4524db49a465083c4e14e9317422bed50b"
+    },
+    {
+      "taxon_id": "F378194",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 198491,
+      "cds_rows": 84755,
+      "receipt_sha256": "88ead1f5a2ceddb517f2636a47f8fd3f833b99a6ee411ae39257b390d0c09154"
+    },
+    {
+      "taxon_id": "F599839",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 139282,
+      "cds_rows": 59948,
+      "receipt_sha256": "fd2a1076fc1dc86f51bf64eda78bffcb5683ba37ef1969b3f4e1ffa6c1d59e7d"
+    },
+    {
+      "taxon_id": "F5630",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 183159,
+      "cds_rows": 76303,
+      "receipt_sha256": "d6b87b418ff2f8870217961208543450879fc9e3dc4a0fc74dc1016e084b1736"
+    },
+    {
+      "taxon_id": "F5365",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 201962,
+      "cds_rows": 83504,
+      "receipt_sha256": "c41712a7bb38befa7876d0e986b48cb8441eada8efe6a4012a750bca7dabfc23"
+    },
+    {
+      "taxon_id": "F231932",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 174797,
+      "cds_rows": 70655,
+      "receipt_sha256": "bbd69b9ff6a8d460f5895deb034430352b5b6c445c5724c30c80716235762b0b"
+    },
+    {
+      "taxon_id": "F104341",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 181832,
+      "cds_rows": 77525,
+      "receipt_sha256": "f71f044a87f423c2e7a9773d22421955f9ce47e72d1cdd8e94602988e32bc9d0"
+    },
+    {
+      "taxon_id": "F181123",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 849172,
+      "cds_rows": 210947,
+      "receipt_sha256": "7655a77db9b93aee67588e7077d13b12a6e9d85c51aaefbd6b04580ff9a2b229"
+    },
+    {
+      "taxon_id": "F60197",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 148249,
+      "cds_rows": 58482,
+      "receipt_sha256": "ee1e0069bc7764e4ea6c0b77094baa394e26fb3ae4773da50793450da9cb25ff"
+    },
+    {
+      "taxon_id": "F203908",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 192452,
+      "cds_rows": 78950,
+      "receipt_sha256": "99dc76aedd9a11c784362baea6ccbc493d950a1c234ebfaabf3239b881ce1632"
+    },
+    {
+      "taxon_id": "F170000",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 228658,
+      "cds_rows": 87421,
+      "receipt_sha256": "1a9beddee99e977319cd953835003058e9adca775f7e937874b158861f6f7ebb"
+    },
+    {
+      "taxon_id": "F208348",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 150170,
+      "cds_rows": 62340,
+      "receipt_sha256": "5ca9f291617224e234ca356fea39a5c6b9cff9705a2a010c1fded237fce8cfee"
+    },
+    {
+      "taxon_id": "F48021",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 199790,
+      "cds_rows": 82925,
+      "receipt_sha256": "83226333f3d9c3b1af3a3f32c903eabb9a5773aae22abbb8205128df78ce21f8"
+    },
+    {
+      "taxon_id": "F135208",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 142938,
+      "cds_rows": 58695,
+      "receipt_sha256": "c3717076e2cdfc6b814a94af606ff42ebe571faf4cb0a190fcc521d8d3eb2513"
+    },
+    {
+      "taxon_id": "F984962",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 168664,
+      "cds_rows": 70252,
+      "receipt_sha256": "fbe4254268e9dbc2cb210e2472db914bfae2510c06ccb44233c33def139acc43"
+    },
+    {
+      "taxon_id": "F152956",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 174357,
+      "cds_rows": 73976,
+      "receipt_sha256": "e4b20daa034d910f1edf4d16cd7a686cb9892eb1dfcc5196abd93889552a1de5"
+    },
+    {
+      "taxon_id": "F40492",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 209734,
+      "cds_rows": 88648,
+      "receipt_sha256": "50b6dae204b0245337aa0e2dd79c74341278c8405e6a7a01203fdd7af3f99547"
+    },
+    {
+      "taxon_id": "F1314805",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 151669,
+      "cds_rows": 63884,
+      "receipt_sha256": "152713810f83cd4898db2c5168fd5404158aa639296ab1410e185b0450fc8254"
+    },
+    {
+      "taxon_id": "F65672",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 195465,
+      "cds_rows": 59045,
+      "receipt_sha256": "4375c716dcb9bf799650c7f33233d72c7340e41becba9a0f0b221d8ab05fe849"
+    },
+    {
+      "taxon_id": "F2600213",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 140127,
+      "cds_rows": 55386,
+      "receipt_sha256": "8c3e3dbd0a42d304a9350e7dedd89b85b61b8e69b42035364655f3b20a53a491"
+    },
+    {
+      "taxon_id": "F2600215",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 138605,
+      "cds_rows": 55030,
+      "receipt_sha256": "4ca18bc82dcd1910ac677b70ed65671858af8bd184a272a7d423803239b675ad"
+    },
+    {
+      "taxon_id": "F2600216",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 138168,
+      "cds_rows": 54874,
+      "receipt_sha256": "6d7a721ed5559322fc24e7ae50fe50b730b5f671c6468a63af193ba2b961e9e4"
+    },
+    {
+      "taxon_id": "F109899",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 179701,
+      "cds_rows": 73154,
+      "receipt_sha256": "c8abe73f80b3d4dc9db4a0c5266bc4244592de8f42134ea0f0b674c87cb8b96b"
+    },
+    {
+      "taxon_id": "F2834505",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 180557,
+      "cds_rows": 76080,
+      "receipt_sha256": "1a602a5206095b07efd719feee116e679f0320c1aeaf763eb98963450b3948ad"
+    },
+    {
+      "taxon_id": "F467971",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 181781,
+      "cds_rows": 75334,
+      "receipt_sha256": "2f6aaa98676ea54ea755648b23318d43b1e03ef5e9416e0fd41746c3a292a267"
+    },
+    {
+      "taxon_id": "F69979",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 130271,
+      "cds_rows": 55421,
+      "receipt_sha256": "d09ae82974b87a01245c68b9b7150c3411c4ed7f4a696149798c7d17aa5bf2c7"
+    },
+    {
+      "taxon_id": "F100910",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 69620,
+      "cds_rows": 59756,
+      "receipt_sha256": "c9e0ef9d7f81a603e6a6c52513204b6cd4d75ef091b9939de1a9128a8ba1c702"
+    },
+    {
+      "taxon_id": "F29898",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 105106,
+      "cds_rows": 44770,
+      "receipt_sha256": "c24c922b8ff074176f3244c7bf5401f8db5659d3387eb17e9181b67749a1537e"
+    },
+    {
+      "taxon_id": "F5286",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 118509,
+      "cds_rows": 50966,
+      "receipt_sha256": "5aa6bbf15f3bd52fbe74323b1f796efa71da5e24b06bb326fa287aeef8e3069a"
+    },
+    {
+      "taxon_id": "F500713",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 98497,
+      "cds_rows": 42579,
+      "receipt_sha256": "30b9f98ff8b6d3c1ad2c453357bee9a44976a9409af980f88dedb94f4ee9f8c9"
+    },
+    {
+      "taxon_id": "F183962",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 111490,
+      "cds_rows": 47955,
+      "receipt_sha256": "594803f082d9c48929f32773c1afb39d6e97f88c11c557c0b3160d3b507afe75"
+    },
+    {
+      "taxon_id": "F370292",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 156496,
+      "cds_rows": 63758,
+      "receipt_sha256": "1391f5e152ae27adafd510eab4aac261cb16b33815f161d96bc7ff720855af61"
+    },
+    {
+      "taxon_id": "F56493",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 176770,
+      "cds_rows": 73917,
+      "receipt_sha256": "754cbb938ef4841ecfa249e6db14bd4d1b73fe652ba253032bb09ed341448e59"
+    },
+    {
+      "taxon_id": "F13290",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 134828,
+      "cds_rows": 36009,
+      "receipt_sha256": "389176d367732ce312b1c00797b9a9868a316f154bd9b22c272872e440e83632"
+    },
+    {
+      "taxon_id": "F13291",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 159238,
+      "cds_rows": 34951,
+      "receipt_sha256": "3084f88729eddb7f9a99faa32c3f00174aee71e68f92bf525f464e5f1b611744"
+    },
+    {
+      "taxon_id": "F157183",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 162113,
+      "cds_rows": 35521,
+      "receipt_sha256": "0e61fd39f585f81f4f16a24d22c06b071108d1dc02dbb2950967af6ac7cd3cd9"
+    },
+    {
+      "taxon_id": "F1031713",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 96980,
+      "cds_rows": 37983,
+      "receipt_sha256": "161a9128f10458da0a5c0921b65014000c749e2ce8aacb23525d49b304c41a83"
+    },
+    {
+      "taxon_id": "F117179",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 77821,
+      "cds_rows": 30615,
+      "receipt_sha256": "988d089006f44877038f6a1c237b1266a6ad0084b21ee2431c492b79437cdc9b"
+    },
+    {
+      "taxon_id": "F104669",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 137178,
+      "cds_rows": 57810,
+      "receipt_sha256": "8f8307ec531a9d75040285f260e5363d1e34f28d360ce924de5d53337bcac944"
+    },
+    {
+      "taxon_id": "F552467",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 99687,
+      "cds_rows": 42972,
+      "receipt_sha256": "202ca1061e4c9aff6d805f982d00240dfb9437f2892ffad597c3271feeb4d605"
+    },
+    {
+      "taxon_id": "F1859122",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 98778,
+      "cds_rows": 42653,
+      "receipt_sha256": "925a83581eb2c1bd1cefaf1e6890375024828d805f15e6e0b33c8c4ed07131ea"
+    },
+    {
+      "taxon_id": "F40410",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 104479,
+      "cds_rows": 44090,
+      "receipt_sha256": "d686869a3310da9688c54982f4fc157d89ac4f05d271b1d47ff571080fe69907"
+    },
+    {
+      "taxon_id": "F5208",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 89229,
+      "cds_rows": 38097,
+      "receipt_sha256": "4717c16eadd3c7391265302bd9b4de6a119fcf6b40b5bc1cec0a4f23ebeba8ac"
+    },
+    {
+      "taxon_id": "F1859096",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 94603,
+      "cds_rows": 40028,
+      "receipt_sha256": "48e58db9cf709fcf051be78bbc57b787b1f1f31fd49e6bec7877df5cf78c84ac"
+    },
+    {
+      "taxon_id": "F37769",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 92674,
+      "cds_rows": 39659,
+      "receipt_sha256": "93f317fd20b8026b41eaf6582083f06eb34fab40f35a541360341bbd69050080"
+    },
+    {
+      "taxon_id": "F5207",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 127543,
+      "cds_rows": 49075,
+      "receipt_sha256": "1e0abe9b5f446c4fe0a258ff8303e2c9a5c8659ac13ead06cf75314a69f0d5e3"
+    },
+    {
+      "taxon_id": "F1859121",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 99560,
+      "cds_rows": 42885,
+      "receipt_sha256": "5df329e99e176de29d21795d6db71f6e5da6fd3642f9e2f87f69d230dc4e61ca"
+    },
+    {
+      "taxon_id": "F5619",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 104751,
+      "cds_rows": 43906,
+      "receipt_sha256": "bbfa5bd1de767af3738eb28fd8d185772bb36525f9bae0b48ce1f5e8ea03eef0"
+    },
+    {
+      "taxon_id": "F105984",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 100567,
+      "cds_rows": 40256,
+      "receipt_sha256": "42c42b2218e79a1050113ad3917aea992a583d9a9580f17562268ed351b756bb"
+    },
+    {
+      "taxon_id": "F1890679",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 101965,
+      "cds_rows": 43813,
+      "receipt_sha256": "71d7d2e4ca6184ef2d862ad75cf9f33b9b8e3f6f6554887184fb4c4950210cb5"
+    },
+    {
+      "taxon_id": "F279322",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 79378,
+      "cds_rows": 31931,
+      "receipt_sha256": "f22570130ec854455c10089b1897d10369ea0c2908209a4efeafd08f6a70ff98"
+    },
+    {
+      "taxon_id": "F82508",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 70537,
+      "cds_rows": 26134,
+      "receipt_sha256": "241f195f761408ea4ab9b33cde264d8d70b79864926f6a5aca6a59ceaf867716"
+    },
+    {
+      "taxon_id": "F143232",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 110287,
+      "cds_rows": 44258,
+      "receipt_sha256": "43f7561e2b7aee76a44d2d6e58008f0794f9fb85865157e833883f7b1f111d4f"
+    },
+    {
+      "taxon_id": "F1055551",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 94454,
+      "cds_rows": 39579,
+      "receipt_sha256": "84b0e9464ad77b89f8aa1843c19d0419d55e7e8e44d2bcbd022d612645c1b19d"
+    },
+    {
+      "taxon_id": "F1269715",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 55110,
+      "cds_rows": 18162,
+      "receipt_sha256": "191e139e71c6aa36be97ed481369a577bf271490c3515f10ff5ef2bf93457913"
+    },
+    {
+      "taxon_id": "F84753",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 38704,
+      "cds_rows": 12127,
+      "receipt_sha256": "76848455eac153ba3cb23d776db2c09cb579ca5bfe18ff7cea17a90a71c1df35"
+    },
+    {
+      "taxon_id": "F84751",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 52369,
+      "cds_rows": 19288,
+      "receipt_sha256": "40a52d4e85eadf046610ae28dccd8145f68ea437899c06266c669a807038d7da"
+    },
+    {
+      "taxon_id": "F280036",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 32580,
+      "cds_rows": 9662,
+      "receipt_sha256": "01c9511e0523c14d9463092a565adff164e3bd51ce59d9c5fd4e68de38170544"
+    },
+    {
+      "taxon_id": "F1882483",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 38696,
+      "cds_rows": 11990,
+      "receipt_sha256": "49740760f7a36442492b5b7e0afd399ac0d23d492ca085e7e5894c763c42dc22"
+    },
+    {
+      "taxon_id": "F120017",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 39209,
+      "cds_rows": 11752,
+      "receipt_sha256": "ae9e7652e3104bc851ff347fdee8944826f1adcee280dff8bc97117934182c41"
+    },
+    {
+      "taxon_id": "F1673888",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64132,
+      "cds_rows": 22845,
+      "receipt_sha256": "bb6c42760643801a3e1b3918daae9fea8795157dd09405d630c58c4fb5421ef5"
+    },
+    {
+      "taxon_id": "F1708542",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 50046,
+      "cds_rows": 19860,
+      "receipt_sha256": "a0796a126d35373551c3763345a63182d8d36b31e8099db1d9721e03338dd338"
+    },
+    {
+      "taxon_id": "F1540922",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 42407,
+      "cds_rows": 16750,
+      "receipt_sha256": "63ecb1cbac683c719186dce523fdadea8b5fc354674bf97ac301adac7f2b128e"
+    },
+    {
+      "taxon_id": "F245174",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 43433,
+      "cds_rows": 16607,
+      "receipt_sha256": "d07cd488fc5d5c6cd1fb8e232fa86eaa6e528dde0449417a925ba18dd1f13b9d"
+    },
+    {
+      "taxon_id": "F1708541",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 51307,
+      "cds_rows": 19146,
+      "receipt_sha256": "4cd54e41237b383fa5de4eec11a5df1ed2e0e1e2dbc3fdb3e082caefefcbb4da"
+    },
+    {
+      "taxon_id": "F64504",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81540,
+      "cds_rows": 31472,
+      "receipt_sha256": "47c3ac2671e7e13ef080f13171a4c704d12fb6e9db82f563371b0191439cbc2e"
+    },
+    {
+      "taxon_id": "F64505",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 90354,
+      "cds_rows": 34585,
+      "receipt_sha256": "4ecd3d4bd9adabe79ee15f36ed0f932cdd33afafa77c267f0543a193b312e643"
+    },
+    {
+      "taxon_id": "F28583",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 172414,
+      "cds_rows": 65378,
+      "receipt_sha256": "56ed972725900b0053b3ef531d8662c0fd57fa641010d968dc0c9b6a8eb6d1a0"
+    },
+    {
+      "taxon_id": "F64508",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 76147,
+      "cds_rows": 27425,
+      "receipt_sha256": "c1c08b9eca6bf875a7e587e9ccf6b4a83d98851e9c0691f946089529524b5869"
+    },
+    {
+      "taxon_id": "F4808",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 79564,
+      "cds_rows": 29406,
+      "receipt_sha256": "b86232d78051c1858c4f272ad7887e9daa7556d66e852df8c482d77b0114d5ee"
+    },
+    {
+      "taxon_id": "F109876",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 97543,
+      "cds_rows": 34342,
+      "receipt_sha256": "0175a0033377fbcad766a046a8a94c0f0ebc0254df1faf4deff09763d4d9472d"
+    },
+    {
+      "taxon_id": "F945690",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 64383,
+      "cds_rows": 21979,
+      "receipt_sha256": "5821e8f3dbf534fef5950d723502c1b7e1615073c9aacc5cffba7600cc9114fb"
+    },
+    {
+      "taxon_id": "F3075319",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 106729,
+      "cds_rows": 44315,
+      "receipt_sha256": "d0aeeeb43bd4a849b124804217d7bccb59fdaf29b5a72be5f527924ed5213916"
+    },
+    {
+      "taxon_id": "F1500003",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 133200,
+      "cds_rows": 54285,
+      "receipt_sha256": "f5a6dd8d80446211ff2adc1ec1ff3809ae14155325663ad54063f91482b11249"
+    },
+    {
+      "taxon_id": "F911321",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 126208,
+      "cds_rows": 50703,
+      "receipt_sha256": "5005eb8e289952718b3f25c749f2b5964be2a4b12157e7601f60bd82b6f71a4d"
+    },
+    {
+      "taxon_id": "F1555241",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 32764,
+      "cds_rows": 9749,
+      "receipt_sha256": "b4947c5eaf95383957ec4a76a42877ac2440577562921aee8cbe41bb61711a6d"
+    },
+    {
+      "taxon_id": "F1774096",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 128574,
+      "cds_rows": 52110,
+      "receipt_sha256": "aeb9a7f1a34dc9c52077e81d2225b90e541674f5bce82827867a45892dfe9fb9"
+    },
+    {
+      "taxon_id": "F109932",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 106106,
+      "cds_rows": 42267,
+      "receipt_sha256": "4eb7bb8471a999c5efb87ed8041625f7325a39b5c0432e8d6db89b3e10fb6099"
+    },
+    {
+      "taxon_id": "F1604274",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 144876,
+      "cds_rows": 49790,
+      "receipt_sha256": "20657412d40a03d7129bfbba2234ce73de1d41f1101dadb324d50a34502f801e"
+    },
+    {
+      "taxon_id": "F109889",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 148309,
+      "cds_rows": 64272,
+      "receipt_sha256": "ad5bba47afbcae43548fd93ab00b79ed7bef41df9cb0ef1e3d8ab9befb06b4d3"
+    },
+    {
+      "taxon_id": "F110093",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 138696,
+      "cds_rows": 57472,
+      "receipt_sha256": "941509d471547a06d7280de87acaa691033494d45f6f408c9ec9d3a1e9a4bfbb"
+    },
+    {
+      "taxon_id": "F2735257",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 140838,
+      "cds_rows": 56533,
+      "receipt_sha256": "64c0f8eed23a1f1a0697a3e376c3144a3f7137fa803dea5ba0e6b178d4d72cb6"
+    },
+    {
+      "taxon_id": "F64517",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 142743,
+      "cds_rows": 57658,
+      "receipt_sha256": "857890162020eb9641cfd8f619a0d174e8f2f4516718fa0da6b41f8e17bb319a"
+    },
+    {
+      "taxon_id": "F382532",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 129519,
+      "cds_rows": 51663,
+      "receipt_sha256": "8fac25188e7c6e1ddaa343cc165b627430319d68367957ecee8eafb8bda1c260"
+    },
+    {
+      "taxon_id": "F1396493",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 110395,
+      "cds_rows": 44278,
+      "receipt_sha256": "ed44428139e29e8d544fb148cd85508aeb10c1f3237880b23a4286ae91c186c1"
+    },
+    {
+      "taxon_id": "F109760",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 130861,
+      "cds_rows": 55070,
+      "receipt_sha256": "b94ce8a6d6ac2bea4f9827a0b5e961e7f562c770e5dbe0ba2c07d966d49b2f9a"
+    },
+    {
+      "taxon_id": "F1806994",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 111042,
+      "cds_rows": 49130,
+      "receipt_sha256": "332c855cbeb2e21a4e5b2f1c7b3dbf84f19f6f511b5924041ce4cfb09207b27b"
+    },
+    {
+      "taxon_id": "F34488",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 82375,
+      "cds_rows": 28930,
+      "receipt_sha256": "98a422d82579541d571ca76add086343859424dcd38d164627f549a37c20178f"
+    },
+    {
+      "taxon_id": "F34485",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 314963,
+      "cds_rows": 108028,
+      "receipt_sha256": "36efe8bee8d82c2cf3b1de0059453beb37e1824a5e31664ed0d62226f51439c9"
+    },
+    {
+      "taxon_id": "F348617",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 84685,
+      "cds_rows": 23924,
+      "receipt_sha256": "09d06b351eb421f2fac9b9ad9dc900b6bab0e489fd641a92343f89c6c9eb4d5d"
+    },
+    {
+      "taxon_id": "F76012",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 85049,
+      "cds_rows": 32380,
+      "receipt_sha256": "962c3003e7c9f20df36f4a0b88ba185bec77b89bb9dc5162aefac5d44e4a66ef"
+    },
+    {
+      "taxon_id": "F144530",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 238809,
+      "cds_rows": 64022,
+      "receipt_sha256": "e1b695a1a435a6a9984e0847b47eec40d3e108619c43d4d39b05388b3f07f89a"
+    },
+    {
+      "taxon_id": "F144679",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 281914,
+      "cds_rows": 64708,
+      "receipt_sha256": "19d9be64fa72fdde09da84d1e4bf55a82e1a5ccf9fd459ae60faad9aef258f8e"
+    },
+    {
+      "taxon_id": "F50956",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 263881,
+      "cds_rows": 107499,
+      "receipt_sha256": "76256efc2fae666d6e12c435a9cfecb3f394d47b6b5556b7c9be6aa35de96159"
+    },
+    {
+      "taxon_id": "F27376",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 267749,
+      "cds_rows": 54536,
+      "receipt_sha256": "47215e3bf8aebb55b22d84b930c7d7c850f96cead351a1fb7a18601decd05017"
+    },
+    {
+      "taxon_id": "F1348612",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 305765,
+      "cds_rows": 124169,
+      "receipt_sha256": "a2974e25eafa6e60eaa4dd2644d2104abdb78895d684c3b1d6ceb740ad1b6839"
+    },
+    {
+      "taxon_id": "F4874",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 327073,
+      "cds_rows": 131983,
+      "receipt_sha256": "9cad5417a08b9fe4be0698423a488debcfbc014dd0db5360f4fcc333b37f7c61"
+    },
+    {
+      "taxon_id": "F2562287",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 270708,
+      "cds_rows": 79167,
+      "receipt_sha256": "e6e2e49f4f702f80c90c11a157746b1f35043823beb185ce97dfbc892eeda6e1"
+    },
+    {
+      "taxon_id": "F1117311",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 314218,
+      "cds_rows": 82067,
+      "receipt_sha256": "b1e51dd76f2526552a080bd934c46717e507a81680caf4ca97aa59be6542e4c0"
+    },
+    {
+      "taxon_id": "F658196",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 217675,
+      "cds_rows": 85211,
+      "receipt_sha256": "deafeb7d0ea79d56802d719004c6986579f85505ac3a5f4c0c983547df20f440"
+    },
+    {
+      "taxon_id": "F588596",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 309554,
+      "cds_rows": 123358,
+      "receipt_sha256": "415fa6c1d047bbb69aa97a069bf762c75a17e7fb56d32bd6d91a50c6173039c1"
+    },
+    {
+      "taxon_id": "F144538",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 197617,
+      "cds_rows": 55606,
+      "receipt_sha256": "2b17451e3b6c61f65f3b69c07a047dab0296e35b5984d84a75dabc4b30d2a400"
+    },
+    {
+      "taxon_id": "F144539",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 183211,
+      "cds_rows": 50796,
+      "receipt_sha256": "b7309ef1fb712b40aa8aeccd355d8e84497aad41f6524a148df48e16897eef1a"
+    },
+    {
+      "taxon_id": "F215637",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 51209,
+      "cds_rows": 17257,
+      "receipt_sha256": "cd561ce7519b19fca0ddcf4d9b3f0cdefc040ff9a97e0c6a2259c6d0a5ceeb03"
+    },
+    {
+      "taxon_id": "F1520584",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 37637,
+      "cds_rows": 9572,
+      "receipt_sha256": "912a5d83ee72900775a982cff89a6b943da3a049acf8a76f93d6b9f8fe18bdbe"
+    },
+    {
+      "taxon_id": "F78921",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 81274,
+      "cds_rows": 26558,
+      "receipt_sha256": "daed13bfa94c74f59f278fabdc77dd3ae53727026e9db73f8aa9f51009d39516"
+    },
+    {
+      "taxon_id": "F61424",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 61813,
+      "cds_rows": 22479,
+      "receipt_sha256": "6a4338437731416078832b086831eaee2b872fa645fe65d6678c555c04225e43"
+    },
+    {
+      "taxon_id": "F133377",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 62333,
+      "cds_rows": 22699,
+      "receipt_sha256": "b9e4db47fdd49941412c4dafa09bb2312969f522b9d89ca321468a178e15781a"
+    },
+    {
+      "taxon_id": "F133385",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 60791,
+      "cds_rows": 22524,
+      "receipt_sha256": "203f576f30f4b87800f46ccbc586dc81f4a1cf6957142b6e16dc122ebceb3cf2"
+    },
+    {
+      "taxon_id": "F1213189",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 46862,
+      "cds_rows": 14294,
+      "receipt_sha256": "a66b4973b69e3c207e5fc9077ae87cd08276533dc1058827d0525aa63e1795b1"
+    },
+    {
+      "taxon_id": "F2650707",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 30635,
+      "cds_rows": 7893,
+      "receipt_sha256": "5e130782644527551fdd7c7f11fbaa6f25a287b2fe8399deda35b81f5ef433ed"
+    },
+    {
+      "taxon_id": "F4866",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 33407,
+      "cds_rows": 8963,
+      "receipt_sha256": "f22cd315bc83fb7aba880b7ba7b40de3fd32f4b9b19a2073f1a25e373b48886c"
+    },
+    {
+      "taxon_id": "F61397",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 43479,
+      "cds_rows": 13989,
+      "receipt_sha256": "f64c696e2e8bf6d16aed68b0529ef00f5983321fe3d050f20f11de8bd6e43d48"
+    },
+    {
+      "taxon_id": "F61395",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 62596,
+      "cds_rows": 21357,
+      "receipt_sha256": "1f596150512135dbcf00720fd0d92ba1b85ae62c8be0cfc84f8a6a04df23dc81"
+    },
+    {
+      "taxon_id": "F304332",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 46503,
+      "cds_rows": 12919,
+      "receipt_sha256": "f3cd4cea0b9fa5b9461073fefe8f34495e92fa6de293c783aa76de089e2d23ed"
+    },
+    {
+      "taxon_id": "F164912",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 12851,
+      "cds_rows": 2865,
+      "receipt_sha256": "8fdc6cbe682f2b4089c6243cdcc1e043eb19b3cc7f50e1dc64b448391e53bb98"
+    },
+    {
+      "taxon_id": "F70536",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 18449,
+      "cds_rows": 4212,
+      "receipt_sha256": "916d2cc441e1fd9707af67deea0a4654031c23071f27f6a6dcab02526a3e0486"
+    },
+    {
+      "taxon_id": "F6035",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 8743,
+      "cds_rows": 2158,
+      "receipt_sha256": "b9a2cc814d79ec90dec8c5b0b9d341d50e4184605b3b5d148317ee39e7b21c24"
+    },
+    {
+      "taxon_id": "F174680",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 9568,
+      "cds_rows": 2370,
+      "receipt_sha256": "f97d548aac78d773f5235b7cf0bbd840e35cca405d3c3d0752841765a644bccf"
+    },
+    {
+      "taxon_id": "F174688",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 14460,
+      "cds_rows": 3590,
+      "receipt_sha256": "8764c4652cd2bb05fd401b479c5bd4e6bce6456640b64f1a9aaffcd3954bba8b"
+    },
+    {
+      "taxon_id": "F1176355",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 14714,
+      "cds_rows": 3684,
+      "receipt_sha256": "b667097167f6cf066382acc2304d42870bedf10dd5d23048ee0c5a2d049c1969"
+    },
+    {
+      "taxon_id": "F1081669",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 12089,
+      "cds_rows": 2691,
+      "receipt_sha256": "5261a60905a9a2ef6756dcf586a26c593c3dbcb0b25190eec52e5b43bef0baea"
+    },
+    {
+      "taxon_id": "F1300064",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 11888,
+      "cds_rows": 2636,
+      "receipt_sha256": "d060774e52ee19f832edbf4c4f8d5f0741bf41a13c489353f8cab2ce6f1e6a7f"
+    },
+    {
+      "taxon_id": "F3039483",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 7493,
+      "cds_rows": 1832,
+      "receipt_sha256": "ed5bcd932445595ab00e04c56105c002fbdbb9669ee0514627907417b7bc8e38"
+    },
+    {
+      "taxon_id": "F291195",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 13387,
+      "cds_rows": 3021,
+      "receipt_sha256": "bea06b71f79aadc7e210c61a3756b2b32eb442880726b56996e19ef3ad2f9fd1"
+    },
+    {
+      "taxon_id": "F6039",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 14233,
+      "cds_rows": 3788,
+      "receipt_sha256": "b0f4203400ff4d291382961895b1cafdd54a632501944f755e6191ec953f6361"
+    },
+    {
+      "taxon_id": "F103449",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 11635,
+      "cds_rows": 2777,
+      "receipt_sha256": "0e35363927389b0e24472ed57d557ad03ec5ec05059484d91659f2311e5dca25"
+    },
+    {
+      "taxon_id": "F82268",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 136030,
+      "cds_rows": 52084,
+      "receipt_sha256": "8c8756c7faa2b947fc14329d00304faba50366faf1fa2863dcd176b856abffe3"
+    },
+    {
+      "taxon_id": "F1123529",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 180569,
+      "cds_rows": 75259,
+      "receipt_sha256": "b4d3bda3b69877c57b5087b30676af8cb22c4e2649e11ad39d094c9b3fc3b477"
+    },
+    {
+      "taxon_id": "F2725673",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 135626,
+      "cds_rows": 55544,
+      "receipt_sha256": "7e2d5b37c6dfa57470f390826b94131c98e226c704df1bf32fc73dc34b101531"
+    },
+    {
+      "taxon_id": "F1343610",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 91387,
+      "cds_rows": 34526,
+      "receipt_sha256": "d36647e964ee28e173487799570a8c4f82f07feb7754a62cb9cf8e43edc1c088"
+    },
+    {
+      "taxon_id": "F979620",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 119360,
+      "cds_rows": 45177,
+      "receipt_sha256": "22a3f7c44162f38a216d9c18270e0e202dd6ed5a05ede6ab32e3c0e06043675e"
+    },
+    {
+      "taxon_id": "F101097",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 111693,
+      "cds_rows": 42790,
+      "receipt_sha256": "ee368e8a4e4ed3e73a4266fcb1cfff2a4381dc7458dd78d3fedf075f0584c116"
+    },
+    {
+      "taxon_id": "F101098",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 114358,
+      "cds_rows": 44046,
+      "receipt_sha256": "730de0f1f824a6ed2f69d2b86dd74b20534fd4f7faf3f0453a83eea3e11d5b03"
+    },
+    {
+      "taxon_id": "F979690",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 115257,
+      "cds_rows": 43831,
+      "receipt_sha256": "e4a865a73ee8fb92803c51c9b5e6face1473e83f8abd87d58fb056fbc8342364"
+    },
+    {
+      "taxon_id": "F1897645",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 122007,
+      "cds_rows": 42008,
+      "receipt_sha256": "cc0c2c42c09061bcd34aad1f18e4f9a5bcc0d8d676569e13cae595b0c28dda47"
+    },
+    {
+      "taxon_id": "F604196",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 120314,
+      "cds_rows": 45393,
+      "receipt_sha256": "c28a43368584c26321e97b468f522d6d4c84594ae1fbd3c9d18a4a2ecfbdabc8"
+    },
+    {
+      "taxon_id": "F64571",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 114112,
+      "cds_rows": 44560,
+      "receipt_sha256": "a6256d3066126dc4a946d0a4150009e2fa860f4746168d05b6b7f50d96f9d7fe"
+    },
+    {
+      "taxon_id": "F979761",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 107799,
+      "cds_rows": 38544,
+      "receipt_sha256": "40dd043cb539820602867b8c61a97602c40aabb23723d3823d791b88795d58a7"
+    },
+    {
+      "taxon_id": "F1440133",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 119705,
+      "cds_rows": 40496,
+      "receipt_sha256": "301c008f09e41ee733684ffbddcd4dadc1c4aa3a925bdd4e6b8bc9e4491e8b5e"
+    },
+    {
+      "taxon_id": "F1343614",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 104463,
+      "cds_rows": 40774,
+      "receipt_sha256": "ae25f5baabc30a3abb5708e61e95ae4f26db45175e224713dd72c91680d99061"
+    },
+    {
+      "taxon_id": "F64525",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 116231,
+      "cds_rows": 44416,
+      "receipt_sha256": "717771a97a45cc802cb756e1f379dbc962917caa4f2aa2fa4580e5e2ea636004"
+    },
+    {
+      "taxon_id": "F1938954",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 75180,
+      "cds_rows": 31483,
+      "receipt_sha256": "989126bde25dc6b46551fdb0a43be2483b899d33091069ed90be9630c5b97719"
+    },
+    {
+      "taxon_id": "F2340872",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 126741,
+      "cds_rows": 44114,
+      "receipt_sha256": "55543f9429e7c9a31e135a20f50cef845a23f93b1716a9bc82388868f1866dfe"
+    },
+    {
+      "taxon_id": "F994334",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 173918,
+      "cds_rows": 53552,
+      "receipt_sha256": "5343536117b618137cdde458e831c53376dfb81338b4666edf4e317ab216120a"
+    },
+    {
+      "taxon_id": "F708070",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 125999,
+      "cds_rows": 49323,
+      "receipt_sha256": "4346c5a4e89de5281eb3fa48148d31cc8ff8add56503328c3eded8f2b3fb9886"
+    },
+    {
+      "taxon_id": "F64632",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 105196,
+      "cds_rows": 40826,
+      "receipt_sha256": "477019b903b86533a2b672c9be3eca7883e080e6a30c55426fb7380477e63bb1"
+    },
+    {
+      "taxon_id": "F4837",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 183395,
+      "cds_rows": 74289,
+      "receipt_sha256": "97403f3e4d843a0dde70612e3d3c63c4c1ecb1aceeb2c33ee014473d5d5b42ff"
+    },
+    {
+      "taxon_id": "F4840",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 132555,
+      "cds_rows": 55101,
+      "receipt_sha256": "57e65474bc92bd2fff703d02ead4c6a9db11d2af93bd7678e31fcb1832f51d20"
+    },
+    {
+      "taxon_id": "F58291",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 109090,
+      "cds_rows": 43060,
+      "receipt_sha256": "5ccfbebff43804548df6a08cfeda253a9255fb407c37e0bbe6490762f18f3513"
+    },
+    {
+      "taxon_id": "F91625",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 101595,
+      "cds_rows": 41734,
+      "receipt_sha256": "085badef896814f9765f212ffa112f6a18c721df0ef68cf2c192d185c2d78c51"
+    },
+    {
+      "taxon_id": "F64526",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 54893,
+      "cds_rows": 45824,
+      "receipt_sha256": "d0a236ecebb01e429bd4436e8cff9955e403d480930dcd1c31f5c542aa94766d"
+    },
+    {
+      "taxon_id": "F41833",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 113553,
+      "cds_rows": 46010,
+      "receipt_sha256": "16f988a85d206729414f4197d80af103512802c2fa5568b1d5f208c1b1feb646"
+    },
+    {
+      "taxon_id": "F44442",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 108451,
+      "cds_rows": 45676,
+      "receipt_sha256": "01df4989e08b2ded48383f3a6a943399400298959ddcb7c5aacf72f647d05df6"
+    },
+    {
+      "taxon_id": "F1754192",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 146397,
+      "cds_rows": 59050,
+      "receipt_sha256": "e451599876bef9437429a710a5eaddecbb2979a0487aa4b56352933324a31efa"
+    },
+    {
+      "taxon_id": "F1754190",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 215057,
+      "cds_rows": 84344,
+      "receipt_sha256": "246bb7a4230dc49e8bc6bbeed50b6836dd2e2c09f41d65bc57aebbfc2f3264ab"
+    },
+    {
+      "taxon_id": "F2767002",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 320485,
+      "cds_rows": 128043,
+      "receipt_sha256": "2eb04de18945a4ffc38a8e7a002653a7a3feedcb59d6a77c073fb7e38c655676"
+    },
+    {
+      "taxon_id": "F3108450",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 266782,
+      "cds_rows": 107197,
+      "receipt_sha256": "ef457cd3d4247c645c35fbf98430fd7b076f4642fb94ae908e41670b8bed7c74"
+    },
+    {
+      "taxon_id": "F1754191",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 130142,
+      "cds_rows": 52467,
+      "receipt_sha256": "9d393660a99fd1c7461fe73546ebc7c0c2025c03680e3da8ac31f685afa5888b"
+    },
+    {
+      "taxon_id": "F73868",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 121007,
+      "cds_rows": 44997,
+      "receipt_sha256": "252846398549ea98aa5bdff2aaa9b475272369a1fcb13dec426d88c74e43b672"
+    },
+    {
+      "taxon_id": "F278681",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 77489,
+      "cds_rows": 23153,
+      "receipt_sha256": "9437f5c1c3f38dc79a062be489390292fc2a97643154ad2fefb7fa79adc7d128"
+    },
+    {
+      "taxon_id": "F1246581",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 21881,
+      "cds_rows": 7013,
+      "receipt_sha256": "0281875040063c268cef86aa19eff86d4b5a291031899a1740f4a99516ffac75"
+    },
+    {
+      "taxon_id": "F281847",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 67760,
+      "cds_rows": 26973,
+      "receipt_sha256": "a0f88a6c0358147386c7ec21919d87046f77438750be1798f5dbee244db1fa0c"
+    },
+    {
+      "taxon_id": "F1907219",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 36222,
+      "cds_rows": 12953,
+      "receipt_sha256": "17dfd82265010e4254e0b99da89b2d874dbe52b6c0834809d43e3acd0047dda4"
+    },
+    {
+      "taxon_id": "F1286916",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 48677,
+      "cds_rows": 18170,
+      "receipt_sha256": "df9593b2108661c508dabe7a1a0a67793c39c5d7d6cd2de01543d4c21346d9ea"
+    },
+    {
+      "taxon_id": "F1851187",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 109258,
+      "cds_rows": 45019,
+      "receipt_sha256": "7e376d6aacf65a107bc7a8670461ac20351c88f257eae80ddb519e8bdeb10721"
+    },
+    {
+      "taxon_id": "F1851185",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 106349,
+      "cds_rows": 44268,
+      "receipt_sha256": "06ce9b7a905ee134f790f69c8bda4673b9404a945424a0dcb38664f26c553e4a"
+    },
+    {
+      "taxon_id": "F1712513",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 66835,
+      "cds_rows": 25558,
+      "receipt_sha256": "9a292fb87176f2d50dca81df9fbc35c388000777c14bf865ee81a19edf161093"
+    },
+    {
+      "taxon_id": "F78915",
+      "study_role": "ingroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 80331,
+      "cds_rows": 32400,
+      "receipt_sha256": "f14bc027f5dd0c6b9ac5b2e64b83e32c9cd72aa52bcb3932e398abebdea4bbe6"
+    },
+    {
+      "taxon_id": "F2109901",
+      "study_role": "ingroup",
+      "mapping_mode": "verified_orf_coordinates",
+      "anchor_status": "provisional_orf_coordinates_not_gene_anchors",
+      "feature_rows": 0,
+      "cds_rows": 0,
+      "receipt_sha256": "e41d5564cae33c760e3aeff2689230276f08f12cdcc6be95e04c4dfb890e0cc5"
+    },
+    {
+      "taxon_id": "F2020955",
+      "study_role": "ingroup",
+      "mapping_mode": "verified_orf_coordinates",
+      "anchor_status": "provisional_orf_coordinates_not_gene_anchors",
+      "feature_rows": 0,
+      "cds_rows": 0,
+      "receipt_sha256": "7c934c6c0a20d328eb2cbb2fd89cb3e741dac157121da8f4c3cd940ace4eb68a"
+    },
+    {
+      "taxon_id": "O691883",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 74684,
+      "cds_rows": 29901,
+      "receipt_sha256": "06a72a16ee683032ff4cc83d6e0d6de1fad879bfcdaec9fb5e815edd4648855f"
+    },
+    {
+      "taxon_id": "O81824",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 157533,
+      "cds_rows": 69068,
+      "receipt_sha256": "b773adb145c0aa026700d24cc48d43afcd5f9be739635cb6aac761d28de61abd"
+    },
+    {
+      "taxon_id": "O946362",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 223352,
+      "cds_rows": 99008,
+      "receipt_sha256": "ca11286d3bdf0c3e72588eee1b9d513e96a854dfbe7c321b8a63485921115225"
+    },
+    {
+      "taxon_id": "O192875",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 102349,
+      "cds_rows": 41706,
+      "receipt_sha256": "5609ec63f8fcbed6fd27d72cf2e24794ede1d7bce17f4fe140b053af20b5bf69"
+    },
+    {
+      "taxon_id": "O72019",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 189925,
+      "cds_rows": 67616,
+      "receipt_sha256": "0bd88de9cd12dbf2a42b7e0404da00b03e3737b8194eeef585dff53c05818e40"
+    },
+    {
+      "taxon_id": "O529818",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 61921,
+      "cds_rows": 20038,
+      "receipt_sha256": "cbcaed04953dd0827465185edf12fce6d512a02c3bbba0726f0b4ed192f37225"
+    },
+    {
+      "taxon_id": "O5755",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 242522,
+      "cds_rows": 105753,
+      "receipt_sha256": "338815a3fe5e631ef33198478742da508fb761d0e5356e6c9782ae2692865d8e"
+    },
+    {
+      "taxon_id": "O44689",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 88631,
+      "cds_rows": 30141,
+      "receipt_sha256": "82a1dd7e418cab91e547633314008ecd46883ccc772bf3b7e080923cb6a4bc36"
+    },
+    {
+      "taxon_id": "O5786",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 87542,
+      "cds_rows": 30795,
+      "receipt_sha256": "8b6150133433cfd671565aa37f8939a99da8495cd9a7c5f33b3eb581059628b3"
+    },
+    {
+      "taxon_id": "O133409",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 74518,
+      "cds_rows": 26021,
+      "receipt_sha256": "076e15027ad9d958c6e9e63a1dcbe5776f41b4ffb11ed45b46b06ab47f327968"
+    },
+    {
+      "taxon_id": "O1890364",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 361492,
+      "cds_rows": 162656,
+      "receipt_sha256": "90a283d6e17ed0ebbfa235963863f17bea5c2d8b36a2bb05871a4f88753e56ff"
+    },
+    {
+      "taxon_id": "O400682",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 490446,
+      "cds_rows": 190920,
+      "receipt_sha256": "0b2b6168b5c58af6ba08605a4bf3e1cb13466ec48f62c837903a3ad66cc2bfee"
+    },
+    {
+      "taxon_id": "O45351",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 855662,
+      "cds_rows": 354481,
+      "receipt_sha256": "d3c063fe6abb6d812adce1f541af6d1b57b0a2a4c90c09193491a3240fa5af19"
+    },
+    {
+      "taxon_id": "O10228",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 217524,
+      "cds_rows": 96701,
+      "receipt_sha256": "df2bb706c2fdeb2893015b2b311e016907a677bdb023d7c4f0f7b9bdc1517dea"
+    },
+    {
+      "taxon_id": "O27923",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 506749,
+      "cds_rows": 227663,
+      "receipt_sha256": "07e34a04c169176d969a6d99232045044fbfd2f43a420360fa8b3e55f785035a"
+    },
+    {
+      "taxon_id": "O7227",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 414876,
+      "cds_rows": 163319,
+      "receipt_sha256": "230095d8f61327179d59d9451659b5a019ab31224f6424d3134a1e5469b4b2a6"
+    },
+    {
+      "taxon_id": "O6239",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 547615,
+      "cds_rows": 204604,
+      "receipt_sha256": "f762e4c010155f24670eb5984f9d90c5be4c850db557cc619f3f16102f07cdb3"
+    },
+    {
+      "taxon_id": "O283909",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 427843,
+      "cds_rows": 170293,
+      "receipt_sha256": "42259a62c6b4e5d3880c66e256028b1b6a7b90ac3d3023f3f45335cb4c36f80d"
+    },
+    {
+      "taxon_id": "O225164",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 336970,
+      "cds_rows": 141226,
+      "receipt_sha256": "51e413a97284779197003dc34dee59b7c193dc585ae7a5496e01b1a7f18a9498"
+    },
+    {
+      "taxon_id": "O2700040",
+      "study_role": "outgroup",
+      "mapping_mode": "ncbi_protein_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 1549550,
+      "cds_rows": 711977,
+      "receipt_sha256": "a72b4d563bf6370b76dd926795511f362431b1e9ff9eae3862ee474b721138da"
+    },
+    {
+      "taxon_id": "OFS5426470",
+      "study_role": "outgroup",
+      "mapping_mode": "transcript_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 22985,
+      "cds_rows": 7915,
+      "receipt_sha256": "861b6122e5ce9b83c5fe7f9de03eb80942a782d6b014421707de8e3b48d57a0d"
+    },
+    {
+      "taxon_id": "OFS5426494",
+      "study_role": "outgroup",
+      "mapping_mode": "transcript_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 45193,
+      "cds_rows": 20267,
+      "receipt_sha256": "a9457001ad0a5a1d6ece3b1a7b9331727888696e7162bc11c6f594a1044477d0"
+    },
+    {
+      "taxon_id": "OFS5426506",
+      "study_role": "outgroup",
+      "mapping_mode": "transcript_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 104118,
+      "cds_rows": 30224,
+      "receipt_sha256": "2f75dce2ea1835a7f9e8182270dd3e9a5280758f452bd8aae0f2ba9adf193404"
+    },
+    {
+      "taxon_id": "OFS5426458",
+      "study_role": "outgroup",
+      "mapping_mode": "transcript_gff",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 87042,
+      "cds_rows": 26238,
+      "receipt_sha256": "1572042fb306421ab97d5184ebfac8cf85e92687d675e0a8c21890fa6e7b6350"
+    },
+    {
+      "taxon_id": "OFS1403592",
+      "study_role": "outgroup",
+      "mapping_mode": "creolimax_gtf",
+      "anchor_status": "direct_source_product_anchor_available",
+      "feature_rows": 223699,
+      "cds_rows": 65962,
+      "receipt_sha256": "9d1a70e4605b78970442c8cafc1596dad968275e0d6e7c7441ee7eefca8bb198"
+    }
+  ],
+  "source_hashes": {
+    "metadata/analysis_manifest.tsv": "9d65d9e83c356372e607e0094bf539db61c43958d72d5b51d1999bcca64ff1b5",
+    "metadata/full_annotation_coordinate_completed_20261005_v2.json": "034032afcaa99d0572eb3a989a1f0cc8c7d7fc7a4d38195df2e5176ee4ac8cb5"
+  },
+  "script_sha256": "5230641aab5462685f091892bf72ef6aaedd0797ed61c1a675c9bdf85a87bbcf",
+  "interpretation": "Every frozen taxon has one completed registry receipt and its coordinate/anchor mode is explicit. This validates receipt-level availability, not assembly or gene-model correctness, repeat annotation, synteny blocks, orthology, rearrangement events, or structural-evolution associations."
+}

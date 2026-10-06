@@ -30,6 +30,11 @@ repeat annotation. Fragmented assemblies, missing coordinates, unplaced
 scaffolds, FCS-flagged loci, alternative products and uncertain taxon identity
 remain explicit dispositions.
 
+The receipt-level [prerequisite audit](../metadata/genome_architecture_prerequisite_audit_20261006_v1.json)
+confirms one completed registry receipt for each of the 526 manifest taxa and
+records coordinate-anchor modes without reopening the 64-GB registry. Direct
+source-product anchors in that audit are not orthology or synteny anchors.
+
 No family may receive a genome-context score before its gene/protein mapping
 and reconciliation are qualified. No species-tree branch rate may be accepted
 before the taxon/marker/model sensitivity collection is evaluated.
