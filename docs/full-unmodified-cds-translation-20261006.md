@@ -1,6 +1,7 @@
 # Full unmodified CDS translation and code-choice diagnostics
 
-The original-DNA translation audit is running across all **501 fungal entries
+The original-DNA translation audit and its independent full readback have
+completed across all **501 fungal entries
 and 25 outgroups**, **5,923,039 original CDS targets**, **5,927,745 original
 protein products** and **5,815,847 selected representatives**. It prepares
 annotation and genetic-code controls for sequence–structure comparisons and
@@ -64,21 +65,50 @@ Whole wrapper messages, invocation start/end, source hashes and output hashes
 are closed. The independent full reader imports neither Biopython nor the
 producer translation helpers. It has its own FASTA parser and reconstructs
 every translated hash/disposition, every changed codon, every original product
-and every taxon/global aggregate. It is prepared and qualified, **not launched
-or queued**. Actual original producer zero and full source/output/wrapper/
-invocation closure gate its launch.
+and every taxon/global aggregate. It launched only after actual original
+producer zero and full source/output/wrapper/invocation closure, and completed
+the entire corpus with actual original zero and matching aggregate results.
 
 ## Full execution and resources
 
 Complete source preparation under original session **80286** exited zero and
 binds **2,169 files / 7,569,318,023 input bytes**. Its separate closure under
-original session **73628** exited zero. The full producer launched under
-original session **43153**, invocation `ab722831bf4b45589350c040e65cf483`.
-Its first identity-checked checkpoint records 26/526 entries. The 01:45 UTC
-checkpoint records **330/526 entries and 3,624,335 original targets**. These
-are partial progress observations, not full completion.
+original session **73628** exited zero. The full producer completed under original session **43153**, invocation
+`ab722831bf4b45589350c040e65cf483`, with actual original API/native zero and
+whole source/wrapper/invocation closure. Its measured runtime was 16 minutes
+24 seconds. The full reader then completed under original session **54277**,
+invocation `b3387d079fb5433291a344dad930bb9e`, with actual original API/native
+zero and whole source/wrapper/invocation closure. Its measured runtime was
+14 minutes 44 seconds. The final merger checks the independent result and
+publishes every taxon row with **3,769 source/output bindings**.
 
-The full producer and prepared reader each use four CPU workers, a 64 GiB
+Both paths reconstruct **8,023,872,320 original DNA bases** and **7,950,194
+fixed-code codon-difference rows**: 36,681 nuclear-comparison rows and 7,913,513
+mitochondrial-comparison rows. These count predeclared alternatives, not
+observed genetic changes or mitochondrial/nuclear compartment assignments.
+
+| Fixed role | Exact protein match | Protein mismatch | Nontriplet, not translated | No linked protein | Code unspecified, not tested |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Inherited | 5,812,354 | 3,506 | 103,189 | 0 | 3,990 |
+| Snapshot nuclear | 5,799,937 | 15,925 | 104,797 | 2,380 | 0 |
+| Snapshot mitochondrial | 3,393,807 | 2,313,667 | 103,210 | 2,380 | 109,975 |
+
+Each role has the same 5,923,039-target denominator. Missing inherited codes
+are not tested even when the original DNA could be translated. Unlinked
+nontriplet targets retain the nontriplet disposition rather than acquiring an
+invented protein comparison. The independent retranslation confirms all
+5,810,636 targets with an inherited `exact_translation` status. Another 1,718
+original annotation-exception targets translate exactly, but their exceptions
+and original review classifications remain unchanged.
+
+The 20,478 products flagged by code-assignment disagreement do not all have
+changed translations: their CDSs mismatch under the snapshot nuclear choice
+in **1,666 Candida africana, 3,145 Ascoidea rubescens and 7,384 Candida
+viswanathii records**, or 12,195 targets in total. Each of these entries has one
+original target per product; partial targets remain untested. These are
+conditional source comparisons, not proved annotation errors.
+
+The full producer and reader each used four CPU workers, a 64 GiB
 aggregate memory limit, no swap, a 56 GiB per-process address-space bound and
 one BLAS thread. The uncalibrated planning envelope is **0.5–24 hours per
 stage**, with 0.5–32 GiB expected output. The 128 GiB output allowance is a
@@ -86,6 +116,19 @@ planning reserve, not enforced aggregate byte accounting; 16 GiB per-file
 limits are enforced. Seven-day CPU/wall bounds are safety caps, not an ETA.
 The disk-headroom requirement is 256 GiB. No GPU or paid resources are used.
 Source preparation used two CPUs and 16 GiB memory.
+
+## Descriptive figure
+
+![Full fixed-code translation diagnostics](figures/full-unmodified-cds-translation-20261006-v1/fixed_code_diagnostics.png)
+
+The [standalone PDF](figures/full-unmodified-cds-translation-20261006-v1/fixed_code_diagnostics.pdf)
+and [source counts](figures/full-unmodified-cds-translation-20261006-v1/diagnostic_counts.tsv)
+retain all five target dispositions and compare code-assignment flags with
+actual fixed-code mismatches for the three flagged entries. The counts are
+reconstructed from closed full results; these comparisons do not establish
+an error or compartment. All figure/source hashes and original resource-bound
+execution are recorded in the
+[figure receipt](../metadata/full_unmodified_cds_translation_figure_20261006_v1.json).
 
 ## Literature-informed review
 
@@ -112,7 +155,10 @@ Candida viswanathii entries remains to be qualified.
 
 The [frozen full plan](../metadata/full_unmodified_cds_translation_plan_20261006_v1.json),
 [source-preparation transport](../metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json),
-[original launch](../metadata/full_unmodified_cds_translation_launch_20261006_v1.json),
+[original producer launch](../metadata/full_unmodified_cds_translation_launch_20261006_v1.json),
+[original reader launch](../metadata/full_unmodified_cds_translation_readback_launch_20261006_v1.json),
+[completed handoff](../metadata/full_unmodified_cds_translation_completed_20261006_v1.json),
+[all 526 taxon rows](../metadata/full_unmodified_cds_translation_taxon_dispositions_20261006_v1.tsv),
 [latest source checkpoint](../metadata/full_unmodified_cds_translation_checkpoint_20261006_goal_sources_v1.json),
 [exhaustive software validation](../metadata/unmodified_cds_translation_software_validation_20261006_v1.json),
 [writer/reader integration](../metadata/full_unmodified_cds_integration_validation_20261006_v1.json)
@@ -128,12 +174,10 @@ python scripts/build_full_unmodified_cds_translation_v1.py \
   --receipt metadata/full_unmodified_cds_translation_20261006_v1.json
 ```
 
-The closure merger and complete taxon-table writer are also prepared, with
-separate declared resources; they have not run on full results. Both original
-producer and reader completion/closure gate that reporting stage.
-
-The independent reader command below is prepared. Its producer receipt and
-transport are future required artifacts, not existing completion evidence.
+The closure merger and complete taxon-table writer completed after both
+original full stages and their transport closures. The independent reader
+command below records the completed run; preserve these existing artifacts
+and choose fresh source-bound destinations for reproduction.
 
 ```bash
 python scripts/readback_full_unmodified_cds_translation_v1.py \

@@ -1,5 +1,16 @@
 # Decisions and unresolved questions
 
+## October 6 UTC: code-assignment flags and translation mismatches remain distinct
+
+Close every original CDS/product and every fixed-code codon row with the full
+independent reader and actual original execution/source proofs. Preserve
+annotation-exception and genomic-review classifications even when DNA can be
+translated exactly; do not adopt a code, compartment, frame repair or corrected
+protein from agreement. The three flagged entries have20,478code-assignment
+discrepancies but12,195snapshot-nuclear translation mismatches. Publish both
+with complete denominators; neither is an accepted count of annotation errors
+or biological substitutions. [Complete method and source-bound figure](full-unmodified-cds-translation-20261006.md).
+
 ## October 6 UTC: full fixed-code translation retains the original source baseline
 
 Retranslate every original target under its saved code and pinned nuclear/

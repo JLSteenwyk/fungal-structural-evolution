@@ -1,0 +1,53 @@
+{
+  "checked_utc": "2026-10-06T02:26:46.280458+00:00",
+  "previous_goal_turn_classification": "progress",
+  "previous_publication_commit": "fe3dbe59306b274cc059e9c3e48fecfc61a29d7d",
+  "previous_owned_paths": 71,
+  "previous_owned_bytes": 6961195,
+  "current_goal_turn_classification": "progress",
+  "objective_file": "/home/bizon/.codex/attachments/4c549555-8304-4df0-8e92-1d9d90b77a45/pasted-text-1.txt",
+  "objective_sha256": "e17e34f2c90f2e611f82f3c05bdaf629a80d4da6422b7cf0b76009ea47aa3502",
+  "preserved_sampling_entries": 526,
+  "fungal_entries": 501,
+  "outgroup_entries": 25,
+  "source_products": 5927745,
+  "representative_proteins": 5815847,
+  "original_cds_targets": 5923039,
+  "original_dna_bases": 8023872320,
+  "fixed_code_difference_rows": 7950194,
+  "complete_source_bindings": 3769,
+  "original_transports": [
+    {
+      "unit": "fungal-full-unmodified-cds-translation-20261006-v1.service",
+      "invocation_id": "ab722831bf4b45589350c040e65cf483",
+      "original_tool_session_id": 43153,
+      "actual_terminal_exit_code": 0,
+      "whole_original_payloads_verified": true
+    },
+    {
+      "unit": "fungal-full-unmodified-cds-translation-readback-20261006-v1.service",
+      "invocation_id": "b3387d079fb5433291a344dad930bb9e",
+      "original_tool_session_id": 54277,
+      "actual_terminal_exit_code": 0,
+      "whole_original_payloads_verified": true
+    }
+  ],
+  "full_translation_producer_state": "complete_actual_original_zero_source_transport_closed",
+  "full_independent_translation_reader_state": "complete_actual_original_zero_all_records_reconstructed",
+  "current_evidence": [
+    "metadata/full_unmodified_cds_translation_completed_20261006_v1.json",
+    "metadata/full_unmodified_cds_translation_taxon_dispositions_20261006_v1.tsv",
+    "metadata/full_unmodified_cds_translation_figure_20261006_v1.json"
+  ],
+  "intervening_user_status_turn": "Verified structural model counts unchanged since last inventory update; historical retrieval growth documented",
+  "new_predictions": 0,
+  "gpu_prediction_state": "paused",
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "biological_codon_eligibility": false,
+  "posterior_qualified": false,
+  "biological_fit_count": 0,
+  "all_eight_aims_incomplete": true,
+  "goal_complete": false,
+  "scope": "Full original-DNA fixed-code diagnostics and independent all-record replay completed, with full 526-entry table and descriptive figure. These comparisons do not infer evolutionary substitutions, biological code or compartment, or admission to selection analyses. The broader project remains active."
+}

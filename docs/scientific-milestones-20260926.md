@@ -1,5 +1,43 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 6 UTC: full unmodified original-CDS translations independently verified
+
+The full producer and independent reader now close across all 526 entries,
+5,923,039 original targets, 5,927,745 original products and **8,023,872,320 DNA
+bases**. Original sessions 43153 and 54277 have actual API/native zero, complete
+source/output/wrapper/invocation closure and matching global/taxon results.
+Measured runtimes were 16min24s and 14min44s. The compact handoff publishes
+all526taxon rows and3,769bindings without a third translation parser.
+
+Every original product/target and all **7,950,194 fixed-code codon-difference
+rows** have been reconstructed:36,681nuclear and7,913,513mitochondrial comparison
+rows. These are fixed-code diagnostics, not observed biological changes or
+sequence-compartment assignments. All5,810,636prior `exact_translation` target
+statuses agree with independent DNA translation. Another1,718annotation-exception
+targets translate exactly but retain their original review dispositions.
+
+Across the three entries with20,478code-assignment discrepancies, the snapshot
+nuclear choice gives12,195target mismatches:1,666Candida africana,
+3,145Ascoidea rubescens and7,384Candida viswanathii. Source code differences
+and translation differences therefore have different denominators/meanings.
+Neither establishes an annotation error or grants selection eligibility.
+The full526taxon table and source-bound descriptive PNG/PDF/TSV are published.
+All111,898alternatives, no-target and separate-derived cases remain explicit;
+DNA/proteins/frames/phases/boundaries and all original source flags are unchanged.
+
+The previous goal turn made concrete progress with71owned files/6,961,195bytes
+published as fe3dbe59306b274cc059e9c3e48fecfc61a29d7d and exact remote/committed
+bytes verified. This turn completes the full translation/source handoff.
+The current V10 comparison has16/24native-zero outcomes, with full closure
+pending; atlas coordinates, domain extraction, PAE acquisition and weighted
+timing remain live at their exact original identities. Full biological
+weighted fits remain0. Accepted framework/reconciliation/dating, predictor and
+structural-rate calibration, suitable family codon analyses, adequate ancestral
+uncertainty and all eight evolutionary aims remain unfinished. Fungal GPU
+prediction stays paused and this stage adds no structures.
+
+[Full method, complete counts, source evidence and reproduction](full-unmodified-cds-translation-20261006.md).
+
 ## October 6 UTC: full unmodified CDS translations launched
 
 The fixed-code translation audit now runs across all 526 entries, 5,923,039

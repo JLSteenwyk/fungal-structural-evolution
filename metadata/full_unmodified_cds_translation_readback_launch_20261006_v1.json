@@ -1,0 +1,48 @@
+{
+  "unit": "fungal-full-unmodified-cds-translation-readback-20261006-v1.service",
+  "phase": "reader",
+  "pid": 662588,
+  "created": 1791251718.26,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_unmodified_cds_translation_readback_resources_20261006_v1.json",
+    "--execution",
+    "metadata/full_unmodified_cds_translation_readback_execution_20261006_v1.json",
+    "--receipt",
+    "metadata/full_unmodified_cds_translation_readback_20261006_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_unmodified_cds_translation_v1.py",
+    "--plan",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+    "--producer",
+    "metadata/full_unmodified_cds_translation_20261006_v1.json",
+    "--producer-transport",
+    "metadata/full_unmodified_cds_translation_transport_20261006_v1.json",
+    "--receipt",
+    "metadata/full_unmodified_cds_translation_readback_20261006_v1.json"
+  ],
+  "plan": "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+  "plan_sha256": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+  "checked_utc": "2026-10-06T01:56:18.230642+00:00",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "invocation_id": "b3387d079fb5433291a344dad930bb9e",
+  "original_tool_session_id": 54277,
+  "execution_root": "metadata/full_unmodified_cds_translation_readback_execution_20261006_v1",
+  "receipt": "metadata/full_unmodified_cds_translation_readback_20261006_v1.json",
+  "source_hashes": {
+    "metadata/full_unmodified_cds_translation_readback_execution_20261006_v1/configuration.json": "bb49c7150de2433b07cddb656aa55f8617723647641672f80ec0f5c292f59a1f",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+    "metadata/full_unmodified_cds_translation_readback_original_initial_tool_20261006_v1.json": "9817a2dd4d6b0927a2f27573011d59303597ecff021cb51467be31eefa3d4149",
+    "metadata/full_unmodified_cds_translation_transport_20261006_v1.json": "437e30f3bc4d880848a0ffa4cf33cfd811f690e28205ea4cf2a87569bd8ac995",
+    "metadata/full_unmodified_cds_translation_20261006_v1.json": "078325e1ba30575e5bbc9eb4a330e4eb90924b1b9781bb035c691c05d8e0fcad",
+    "metadata/full_unmodified_cds_translation_readback_resources_20261006_v1.json": "2d0f52edc511db6e23a85e34d871543c0c2c4c7978faba300d51bc11a2a7f68a"
+  },
+  "scientific_eligibility": false
+}

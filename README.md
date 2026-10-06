@@ -46,15 +46,16 @@ bindings are published with actual original producer/reader closure.
 These are source discrepancies requiring review, not established annotation errors.
 
 The [full original-CDS translation audit](docs/full-unmodified-cds-translation-20261006.md)
-is now running across all 526 entries and 5,923,039 original targets. It tests
-fixed inherited/nuclear/mitochondrial code choices without changing DNA,
-proteins, frames or boundaries, or choosing a best-matching code. All 111,898
-alternatives and separate derived evidence remain explicit. All 27,000
-ambiguous-codon/code checks, nine helper controls and ten writer/independent-
-reader semantic rejection controls pass. Full source preparation closed with
-2,169 bindings; the qualified full independent reader awaits actual producer
-completion and source/execution closure. These diagnostics prepare codon and
-sequence–structure controls; they do not grant selection eligibility.
+and independent full replay have completed across all 526 entries, 5,923,039
+original targets and 8.02 billion DNA bases. Every target/product and all 7.95
+million fixed-code codon-difference rows have actual original producer/reader
+API/native/source/journal closure. The completed handoff publishes all 526
+taxon rows and 3,769 bindings. All 27,000 ambiguous-codon/code checks, nine
+helper controls and ten integration corruption controls pass. DNA, proteins,
+frames, boundaries, alternatives and separate derived evidence remain unchanged.
+The three entries with 20,478 code-assignment discrepancies have 12,195 targets
+that mismatch under the snapshot nuclear code; neither count proves an
+annotation error or grants codon-selection eligibility.
 
 **The project is not complete.** The scheduled ESMFold prediction batches have
 finished; this does not mean every fungal protein has a structure or that the

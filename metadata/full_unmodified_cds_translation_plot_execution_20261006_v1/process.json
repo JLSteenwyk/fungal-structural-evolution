@@ -1,0 +1,21 @@
+{
+  "pid": 675230,
+  "created": 1791252915.47,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/plot_full_unmodified_cds_translation_v1.py",
+    "--completion",
+    "metadata/full_unmodified_cds_translation_completed_20261006_v1.json",
+    "--producer",
+    "metadata/full_unmodified_cds_translation_20261006_v1.json",
+    "--output",
+    "docs/figures/full-unmodified-cds-translation-20261006-v1",
+    "--receipt",
+    "metadata/full_unmodified_cds_translation_figure_20261006_v1.json"
+  ]
+}

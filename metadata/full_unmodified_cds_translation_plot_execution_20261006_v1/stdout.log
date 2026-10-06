@@ -1,0 +1,67 @@
+{
+  "status": "complete_descriptive_full_fixed_code_translation_figure",
+  "checked_utc": "2026-10-06T02:15:28.817823+00:00",
+  "targets": 5923039,
+  "taxa": 526,
+  "plotted_target_role_status_counts": [
+    [
+      5812354,
+      3506,
+      103189,
+      0,
+      3990
+    ],
+    [
+      5799937,
+      15925,
+      104797,
+      2380,
+      0
+    ],
+    [
+      3393807,
+      2313667,
+      103210,
+      2380,
+      109975
+    ]
+  ],
+  "plotted_roles": [
+    "inherited",
+    "snapshot_nuclear",
+    "snapshot_mitochondrial"
+  ],
+  "plotted_categories": [
+    "translated_exact_match_to_normalized_protein",
+    "translated_mismatch_to_normalized_protein",
+    "not_translated_non_triplet_length",
+    "translated_no_linked_normalized_protein",
+    "unspecified_code_not_tested"
+  ],
+  "flagged_taxa": [
+    "F241526",
+    "F54195",
+    "F5486"
+  ],
+  "inherited_assignment_disagreement_products": [
+    2850,
+    6787,
+    10841
+  ],
+  "snapshot_nuclear_mismatch_targets": [
+    1666,
+    3145,
+    7384
+  ],
+  "figures": [
+    "docs/figures/full-unmodified-cds-translation-20261006-v1/fixed_code_diagnostics.png",
+    "docs/figures/full-unmodified-cds-translation-20261006-v1/fixed_code_diagnostics.pdf"
+  ],
+  "data": "docs/figures/full-unmodified-cds-translation-20261006-v1/diagnostic_counts.tsv",
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "biological_codon_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Source-bound descriptive plot of full independently closed fixed-code target totals and three flagged entry record counts. Original products and CDSs have distinct units, with one-to-one target counts in these three entries. No error, compartment, functional or evolutionary conclusion."
+}

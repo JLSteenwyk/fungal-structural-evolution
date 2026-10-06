@@ -1,0 +1,27 @@
+{
+  "pid": 674205,
+  "created": 1791252815.32,
+  "command": [
+    "/usr/bin/prlimit",
+    "--as=12884901888",
+    "--cpu=7200",
+    "--fsize=268435456",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/assemble_full_unmodified_cds_translation_completed_v1.py",
+    "--plan",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+    "--producer",
+    "metadata/full_unmodified_cds_translation_20261006_v1.json",
+    "--producer-transport",
+    "metadata/full_unmodified_cds_translation_transport_20261006_v1.json",
+    "--reader",
+    "metadata/full_unmodified_cds_translation_readback_20261006_v1.json",
+    "--reader-transport",
+    "metadata/full_unmodified_cds_translation_readback_transport_20261006_v1.json",
+    "--table",
+    "metadata/full_unmodified_cds_translation_taxon_dispositions_20261006_v1.tsv",
+    "--receipt",
+    "metadata/full_unmodified_cds_translation_completed_20261006_v1.json"
+  ]
+}

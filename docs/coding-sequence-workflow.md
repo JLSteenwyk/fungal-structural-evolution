@@ -1,5 +1,16 @@
 # Coding-sequence acquisition and validation
 
+The [full unmodified original-CDS retranslation](full-unmodified-cds-translation-20261006.md)
+and independent codebook/FASTA replay now close across all 526 entries and
+5,923,039 targets/8,023,872,320 DNA bases. Every original product/target and
+7,950,194 fixed-code comparison rows have matching source/output counts and
+actual original producer/reader API/native/invocation closure. All 526 taxon
+rows and 3,769 bindings are published. Genetic-code assignments, compartments,
+annotation/copy/homology, codon alignments/divergence and selection eligibility
+remain distinct requirements. DNA/proteins and all original review flags are
+unchanged; no best code is selected. Earlier checkpoints retain their original
+observation scopes.
+
 The [full genetic-code context audit](full-genetic-code-context-20261006.md)
 has completed all 526 entries, every original target/product and the raw pinned
 taxonomy inheritance, with separate full replay and actual original source/

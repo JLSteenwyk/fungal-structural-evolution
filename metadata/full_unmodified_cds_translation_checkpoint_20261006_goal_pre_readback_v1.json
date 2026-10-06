@@ -1,0 +1,249 @@
+{
+  "status": "verified_original_full_unmodified_cds_translation_runtime",
+  "checked_utc": "2026-10-06T01:51:37.274129+00:00",
+  "phase": "producer",
+  "original_handle": {
+    "unit": "fungal-full-unmodified-cds-translation-20261006-v1.service",
+    "phase": "producer",
+    "pid": 651277,
+    "created": 1791250557.18,
+    "cmdline": [
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/run_weighted_fit_controller_software_stage.py",
+      "--resources",
+      "metadata/full_unmodified_cds_translation_resources_20261006_v1.json",
+      "--execution",
+      "metadata/full_unmodified_cds_translation_execution_20261006_v1.json",
+      "--receipt",
+      "metadata/full_unmodified_cds_translation_20261006_v1.json",
+      "--",
+      "/home/bizon/anaconda3/bin/python",
+      "scripts/build_full_unmodified_cds_translation_v1.py",
+      "--plan",
+      "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+      "--receipt",
+      "metadata/full_unmodified_cds_translation_20261006_v1.json"
+    ],
+    "plan": "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+    "plan_sha256": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+    "checked_utc": "2026-10-06T01:36:55.133350+00:00",
+    "actual_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "invocation_id": "ab722831bf4b45589350c040e65cf483",
+    "original_tool_session_id": 43153,
+    "execution_root": "metadata/full_unmodified_cds_translation_execution_20261006_v1",
+    "receipt": "metadata/full_unmodified_cds_translation_20261006_v1.json",
+    "source_hashes": {
+      "metadata/full_unmodified_cds_translation_execution_20261006_v1/configuration.json": "2a0a1a12bb8719c5206cbc008157c4b04e3a8a16773e5451431239a013b0da55",
+      "metadata/full_unmodified_cds_translation_plan_20261006_v1.json": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+      "metadata/full_unmodified_cds_translation_original_initial_tool_20261006_v1.json": "533f075eff9ac69b455cb3e51df4e27fd51c2eeacdca18d369788685efe3d7a1",
+      "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json": "a1dfa37512e1d911f72d744447a747667ec1bd5eb0ef8cb3674a159e7c5831f2",
+      "metadata/full_unmodified_cds_translation_resources_20261006_v1.json": "2d0f52edc511db6e23a85e34d871543c0c2c4c7978faba300d51bc11a2a7f68a"
+    },
+    "scientific_eligibility": false,
+    "launch": "metadata/full_unmodified_cds_translation_launch_20261006_v1.json",
+    "status": "sleeping",
+    "cpu_seconds_at_observation": 1.37,
+    "children": [
+      {
+        "pid": 651279,
+        "created": 1791250557.58,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "status": "sleeping",
+        "cpu_seconds_at_observation": 12.32
+      },
+      {
+        "pid": 651366,
+        "created": 1791250565.9,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 928.38
+      },
+      {
+        "pid": 651367,
+        "created": 1791250565.91,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 928.1999999999999
+      },
+      {
+        "pid": 651368,
+        "created": 1791250565.91,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 928.0699999999999
+      },
+      {
+        "pid": 651369,
+        "created": 1791250565.91,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "status": "running",
+        "cpu_seconds_at_observation": 928.0799999999999
+      }
+    ],
+    "children_unavailable_during_observation": [],
+    "launch_sha256": "cd5bb0f92065c0d446fe7b32662b1cb3f2b34adecc8dbc8213280a3fe04f3404",
+    "current_cgroup_limits": {
+      "cpu.max": "400000 100000",
+      "memory.max": "68719476736",
+      "memory.swap.max": "0"
+    },
+    "current_cgroup_memory_bytes": {
+      "memory.current": 3769339904,
+      "memory.peak": 3782713344,
+      "memory.swap.current": 0
+    },
+    "current_cgroup_memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "child_resource_observations": [
+      {
+        "pid": 651279,
+        "created": 1791250557.58,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "rss_bytes": 35897344,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 651366,
+        "created": 1791250565.9,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "rss_bytes": 161017856,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 651367,
+        "created": 1791250565.91,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "rss_bytes": 149823488,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 651368,
+        "created": 1791250565.91,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "rss_bytes": 111321088,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      },
+      {
+        "pid": 651369,
+        "created": 1791250565.91,
+        "cmdline": [
+          "/home/bizon/anaconda3/bin/python",
+          "scripts/build_full_unmodified_cds_translation_v1.py",
+          "--plan",
+          "metadata/full_unmodified_cds_translation_plan_20261006_v1.json",
+          "--receipt",
+          "metadata/full_unmodified_cds_translation_20261006_v1.json"
+        ],
+        "rss_bytes": 216993792,
+        "process_limits": "Limit                     Soft Limit           Hard Limit           Units     \nMax cpu time              604800               604800               seconds   \nMax file size             17179869184          17179869184          bytes     \nMax data size             unlimited            unlimited            bytes     \nMax stack size            8388608              unlimited            bytes     \nMax core file size        0                    unlimited            bytes     \nMax resident set          unlimited            unlimited            bytes     \nMax processes             4124178              4124178              processes \nMax open files            1024                 1048576              files     \nMax locked memory         135151468544         135151468544         bytes     \nMax address space         60129542144          60129542144          bytes     \nMax file locks            unlimited            unlimited            locks     \nMax pending signals       4124178              4124178              signals   \nMax msgqueue size         819200               819200               bytes     \nMax nice priority         0                    0                    \nMax realtime priority     0                    0                    \nMax realtime timeout      unlimited            unlimited            us        \n"
+      }
+    ]
+  },
+  "original_tool_session_id": 43153,
+  "expected_taxa": 526,
+  "expected_source_products": 5927745,
+  "expected_target_records": 5923039,
+  "output_root_present": true,
+  "observed_state": {
+    "present": true,
+    "observed_bytes_sha256": "399538a62e5a65512314f7af04ef17ccbef99d585daa1b1d91d24cb0dadb3b12",
+    "value": {
+      "stage": "unmodified_original_cds_fixed_code_translation",
+      "completed_taxa": 515,
+      "expected_taxa": 526,
+      "source_products": 5712376,
+      "target_records": 5714403,
+      "changed_codon_rows": 5662635,
+      "elapsed_seconds": 929.5614676569821
+    }
+  },
+  "final_receipt_present": false,
+  "source_hashes": {
+    "metadata/full_unmodified_cds_translation_execution_20261006_v1/configuration.json": "2a0a1a12bb8719c5206cbc008157c4b04e3a8a16773e5451431239a013b0da55",
+    "metadata/full_unmodified_cds_translation_plan_20261006_v1.json": "c9b546ff129c78774be27623d41e05ef4adade34a1402645063761237300244f",
+    "metadata/full_unmodified_cds_translation_original_initial_tool_20261006_v1.json": "533f075eff9ac69b455cb3e51df4e27fd51c2eeacdca18d369788685efe3d7a1",
+    "metadata/full_unmodified_cds_translation_preparation_transport_20261006_v1.json": "a1dfa37512e1d911f72d744447a747667ec1bd5eb0ef8cb3674a159e7c5831f2",
+    "metadata/full_unmodified_cds_translation_resources_20261006_v1.json": "2d0f52edc511db6e23a85e34d871543c0c2c4c7978faba300d51bc11a2a7f68a",
+    "metadata/full_unmodified_cds_translation_launch_20261006_v1.json": "cd5bb0f92065c0d446fe7b32662b1cb3f2b34adecc8dbc8213280a3fe04f3404",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/record_full_unmodified_cds_translation_checkpoint_v1.py": "3f95e74c8b5aea761fd87503b9c18c575c50285db39ae1a9759c68d69e49f15e"
+  },
+  "scientific_eligibility": false,
+  "genetic_code_admission": false,
+  "biological_codon_eligibility": false,
+  "gpu": false,
+  "new_predictions": 0,
+  "scope": "Exact original API/wrapper/native identity and cgroup; immutable launch/configuration bindings and partial state observations. No actual original API terminal, full independent source/output replay, genetic code/compartment adoption, codon alignment or biological result. Observation never restarts a run or changes its inputs."
+}
