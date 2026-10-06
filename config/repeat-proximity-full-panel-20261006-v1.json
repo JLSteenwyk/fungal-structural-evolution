@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "stage": "full_panel_repeat_instance_and_gene_proximity",
+  "repeatmasker_config": "config/repeatmasker-full-panel-20261006-v1.json",
+  "gene_order_root": "results/genome_architecture/full-gene-order-20261006-v1",
+  "gene_order_readback": "metadata/full_gene_order_readback_20261006_v1.json",
+  "output_root": "results/genome-architecture/repeat-proximity-20261006-v1",
+  "taxa": 526,
+  "maximum_concurrent_taxa": 12,
+  "memory_per_taxon_gb": 32,
+  "launch_gate": "Do not submit before the independent RepeatMasker full-panel audit verifies one completed checksum-valid annotation receipt for each of the 526 manifest taxa.",
+  "scope": "For every manifest taxon, parse all checksum-verified RepeatMasker instances and link them to the independently read-back gene-order table. The stage preserves overlaps and nearest-boundary ties. It yields coordinate covariates only and does not infer repeat-mediated rearrangement, causality, duplication, orthology, or protein structural change."
+}

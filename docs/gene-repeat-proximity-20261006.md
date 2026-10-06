@@ -13,3 +13,12 @@ no repeat because a RepeatMasker `.out` table only lists sequences with calls.
 These are coordinate covariates for later phylogenetic models. They do not
 establish repeat-mediated rearrangement, transposition near a gene, gene
 duplication, or protein structural divergence.
+
+`repeat_proximity_full_panel_20261006_v1.sbatch` is the complete 526-taxon
+array definition. Its worker checks the frozen taxon manifest, the completed
+RepeatMasker receipt and `.out` checksum, and the full-panel gene-order
+readback before parsing or linking a taxon. It is deliberately gated on the
+independent full-panel RepeatMasker audit; it must not be submitted while that
+annotation stage remains incomplete. Each worker refuses to overwrite a prior
+output, retains every parsed call and tied nearest relation, and writes hashes
+for all downstream artifacts in its completion receipt.
