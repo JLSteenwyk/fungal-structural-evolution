@@ -78,6 +78,12 @@ bound, software versions, restart behavior and no-paid-resource confirmation.
 Small synthetic corruption controls may qualify parsing and restart behavior;
 they are not a biological pilot and cannot narrow the full 526-taxon scope.
 
+The [receipt-level resource census](genome-architecture-resource-census-20261006.md)
+now records all-taxon registry scale and matched assembly-statistics availability
+without reopening the large registry. It supplies gene-order and immediate-neighbor
+storage bounds, while explicitly leaving repeat/block software resource bounds,
+execution design and the other launch gates open.
+
 The extension is motivated by fungal genome-organization literature already
 recorded in the [annotated bibliography](bibliography.md), especially the need
 to distinguish transposable-element-rich compartments and structural variation
