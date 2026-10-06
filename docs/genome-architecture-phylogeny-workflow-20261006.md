@@ -114,6 +114,13 @@ not called orthology or synteny: it only preserves the complete coordinate
 universe needed to classify later HOG/reconciliation joins, including absent or
 ambiguous anchors.
 
+The preserved v1 anchor run exposed two taxa in which a selected annotation
+product had more than one source-coordinate anchor. Version 2 retains every
+link with an explicit multiplicity and `multiple_coordinate_anchors` status;
+it does not choose one coordinate or call the product an ortholog. The v2
+configuration supersedes v1 for all downstream use while retaining the v1
+receipts for execution provenance.
+
 The extension is motivated by fungal genome-organization literature already
 recorded in the [annotated bibliography](bibliography.md), especially the need
 to distinguish transposable-element-rich compartments and structural variation

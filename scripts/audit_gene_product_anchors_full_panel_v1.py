@@ -49,7 +49,7 @@ def main() -> None:
                 outputs = [Path(value) for value in result.get("outputs", [])]
                 hashes = result.get("output_sha256", {})
                 expected = source[taxon]
-                valid = (result.get("status") == "completed" and result.get("taxon_id") == taxon
+                valid = (result.get("schema_version") == config["schema_version"] and result.get("status") == "completed" and result.get("taxon_id") == taxon
                          and result.get("study_role") == item["study_role"]
                          and result.get("gene_order_table_sha256") == expected["table_sha256"]
                          and {path.name for path in outputs} == OUTPUT_NAMES and len(outputs) == len(OUTPUT_NAMES)

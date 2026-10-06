@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "stage": "full_panel_selected_product_coordinate_anchors",
+  "analysis_manifest": "metadata/analysis_manifest.tsv",
+  "gene_order_receipt": "metadata/full_gene_order_20261006_v1.json",
+  "gene_order_readback": "metadata/full_gene_order_readback_20261006_v1.json",
+  "output_root": "results/genome-architecture/gene-product-anchors-20261006-v2",
+  "taxa": 526,
+  "maximum_concurrent_taxa": 12,
+  "cpus_per_taxon": 2,
+  "memory_per_taxon_gb": 8,
+  "supersedes": "config/gene-product-anchors-full-panel-20261006-v1.json",
+  "supersession_reason": "v1 rejected selected annotation products linked to multiple coordinate rows. v2 preserves every such link and labels its coordinate-anchor multiplicity.",
+  "scope": "For every frozen manifest taxon, export every immutable gene-coordinate row as a disposition and every selected representative product link as a coordinate anchor. Product links with multiple coordinate anchors remain explicit. These are source annotation mappings, not orthology, HOG membership, synteny, duplication, or evolutionary-event calls."
+}

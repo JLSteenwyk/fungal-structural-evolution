@@ -15,6 +15,7 @@ ANCHOR_FIELDS = [
     "taxon_id", "study_role", "coordinate_status", "seqid", "start", "end", "strand",
     "feature_row_id", "feature_id", "ordinal_on_seqid", "previous_gap_bp", "next_gap_bp",
     "product_id", "selected_product_count", "source_product_count",
+    "product_coordinate_anchor_multiplicity", "product_coordinate_mapping_status",
 ]
 DISPOSITION_FIELDS = [
     "taxon_id", "study_role", "coordinate_status", "seqid", "start", "end", "strand",
@@ -87,17 +88,13 @@ def main() -> None:
         raise FileExistsError("refusing to reuse incomplete temporary gene-product anchor output")
     counts = Counter()
     coordinate_statuses = Counter()
-    anchor_seen = set()
+    product_coordinate_multiplicity = Counter()
     try:
-        with gzip.open(source, "rt", newline="") as source_handle, gzip.open(temporary_anchors, "wt", newline="") as anchor_handle, gzip.open(temporary_dispositions, "wt", newline="") as disposition_handle:
+        with gzip.open(source, "rt", newline="") as source_handle:
             reader = csv.DictReader(source_handle, delimiter="\t")
             required = set(DISPOSITION_FIELDS) - {"study_role"}
             if not reader.fieldnames or not required.issubset(reader.fieldnames):
                 raise ValueError("immutable gene-order table lacks required fields")
-            anchor_writer = csv.DictWriter(anchor_handle, fieldnames=ANCHOR_FIELDS, delimiter="\t")
-            disposition_writer = csv.DictWriter(disposition_handle, fieldnames=DISPOSITION_FIELDS, delimiter="\t")
-            anchor_writer.writeheader()
-            disposition_writer.writeheader()
             for row in reader:
                 if row["taxon_id"] != taxon_id:
                     raise ValueError("gene-order row taxon identity differs from manifest")
@@ -109,6 +106,17 @@ def main() -> None:
                     raise ValueError("product counts differ from immutable product arrays")
                 if len(set(selected)) != len(selected) or any(not isinstance(item, str) or not item for item in selected):
                     raise ValueError("selected product identifiers must be nonempty and unique per coordinate row")
+                product_coordinate_multiplicity.update(selected)
+        with gzip.open(source, "rt", newline="") as source_handle, gzip.open(temporary_anchors, "wt", newline="") as anchor_handle, gzip.open(temporary_dispositions, "wt", newline="") as disposition_handle:
+            reader = csv.DictReader(source_handle, delimiter="\t")
+            anchor_writer = csv.DictWriter(anchor_handle, fieldnames=ANCHOR_FIELDS, delimiter="\t")
+            disposition_writer = csv.DictWriter(disposition_handle, fieldnames=DISPOSITION_FIELDS, delimiter="\t")
+            anchor_writer.writeheader()
+            disposition_writer.writeheader()
+            for row in reader:
+                if row["taxon_id"] != taxon_id:
+                    raise ValueError("gene-order row taxon identity differs from manifest")
+                selected = json.loads(row["selected_product_ids_json"])
                 disposition_writer.writerow({
                     field: (manifest_row["study_role"] if field == "study_role" else row[field])
                     for field in DISPOSITION_FIELDS
@@ -116,10 +124,7 @@ def main() -> None:
                 counts["gene_coordinate_rows"] += 1
                 coordinate_statuses[row["coordinate_status"]] += 1
                 for product_id in selected:
-                    key = (taxon_id, product_id)
-                    if key in anchor_seen:
-                        raise ValueError("selected product maps to more than one immutable coordinate row")
-                    anchor_seen.add(key)
+                    multiplicity = product_coordinate_multiplicity[product_id]
                     anchor_writer.writerow({
                         "taxon_id": taxon_id, "study_role": manifest_row["study_role"],
                         "coordinate_status": row["coordinate_status"], "seqid": row["seqid"],
@@ -128,8 +133,11 @@ def main() -> None:
                         "ordinal_on_seqid": row["ordinal_on_seqid"], "previous_gap_bp": row["previous_gap_bp"],
                         "next_gap_bp": row["next_gap_bp"], "product_id": product_id,
                         "selected_product_count": row["selected_product_count"], "source_product_count": row["source_product_count"],
+                        "product_coordinate_anchor_multiplicity": multiplicity,
+                        "product_coordinate_mapping_status": ("unique_coordinate_anchor" if multiplicity == 1 else "multiple_coordinate_anchors"),
                     })
                     counts["selected_product_anchors"] += 1
+                    counts["unique_coordinate_anchor_rows" if multiplicity == 1 else "multiple_coordinate_anchor_rows"] += 1
         os.replace(temporary_anchors, anchors)
         os.replace(temporary_dispositions, dispositions)
     except Exception:
@@ -138,14 +146,14 @@ def main() -> None:
                 temporary.unlink()
         raise
     receipt = {
-        "schema_version": 1, "status": "completed", "completed_utc": datetime.now(timezone.utc).isoformat(),
+        "schema_version": 2, "status": "completed", "completed_utc": datetime.now(timezone.utc).isoformat(),
         "taxon_id": taxon_id, "study_role": manifest_row["study_role"],
         "gene_order_table": str(source), "gene_order_table_sha256": source_by_taxon[taxon_id]["table_sha256"],
         "gene_order_producer": str(producer_path), "gene_order_readback": str((root / config["gene_order_readback"]).resolve()),
         "outputs": [str(anchors), str(dispositions)],
         "output_sha256": {str(path): sha256(path) for path in (anchors, dispositions)},
         "counts": dict(sorted(counts.items())), "coordinate_status_counts": dict(sorted(coordinate_statuses.items())),
-        "scope": "All immutable coordinate rows and selected source-product links are retained. These links are annotation mappings only, not an orthology, HOG, synteny, duplication, rearrangement, or structural-evolution result."
+        "scope": "All immutable coordinate rows and selected source-product links are retained. A selected product linked to multiple coordinate rows is explicitly retained as multiple_coordinate_anchors rather than arbitrarily selected or discarded. These links are annotation mappings only, not an orthology, HOG, synteny, duplication, rearrangement, or structural-evolution result."
     }
     atomic_json(receipt_path, receipt)
     print(f"completed {taxon_id}: {counts['gene_coordinate_rows']} coordinate rows; {counts['selected_product_anchors']} anchors")
