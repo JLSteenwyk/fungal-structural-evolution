@@ -5,6 +5,9 @@ Comparative structural genomics across approximately **500 fungal species plus
 across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
+The [project tracker](docs/project-tracker.md) links every required deliverable
+and all eight evolutionary aims to current evidence and remaining gates.
+
 ## Current checkpoint — 5–6 October 2026 UTC
 
 The [full annotation-coordinate registry](docs/full-annotation-coordinate-registry-20261005.md)
