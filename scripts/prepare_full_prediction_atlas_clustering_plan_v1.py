@@ -68,6 +68,7 @@ def build_plan(args: argparse.Namespace) -> dict:
     artifacts = database_files(database)
     source_map = args.source_identity_map.resolve()
     identity_receipt = load_object(args.identity_receipt)
+    identity_readback = load_object(args.identity_readback)
     if identity_receipt.get('status') != 'completed_full_atlas_cluster_identity_map':
         raise ValueError('completed identity-map receipt required')
     if Path(identity_receipt.get('output', '')).resolve() != source_map:
@@ -76,6 +77,8 @@ def build_plan(args: argparse.Namespace) -> dict:
         raise ValueError('identity-map receipt hash differs from source map')
     if identity_receipt.get('models') != models:
         raise ValueError('identity-map receipt model count differs from lookup')
+    if identity_readback.get('status') != 'passed_independent_full_atlas_cluster_identity_map_readback' or identity_readback.get('map_sha256') != sha256(source_map) or identity_readback.get('models') != models:
+        raise ValueError('passed identity-map readback required')
     if not source_map.is_file() or source_map.stat().st_size == 0:
         raise ValueError(f'source-identity map absent or empty: {source_map}')
     producer, producer_status = completed_receipt(args.database_receipt)
@@ -98,6 +101,7 @@ def build_plan(args: argparse.Namespace) -> dict:
         str(args.database_readback): sha256(args.database_readback),
         str(args.resource_preflight): sha256(args.resource_preflight),
         str(args.identity_receipt): sha256(args.identity_receipt),
+        str(args.identity_readback): sha256(args.identity_readback),
         str(source_map): sha256(source_map),
     }
     for name, path in (
@@ -128,6 +132,7 @@ def build_plan(args: argparse.Namespace) -> dict:
         'source_identity_map': str(source_map),
         'source_identity_map_sha256': sha256(source_map),
         'source_identity_receipt': {'path': str(args.identity_receipt), 'sha256': sha256(args.identity_receipt)},
+        'source_identity_readback': {'path': str(args.identity_readback), 'sha256': sha256(args.identity_readback)},
         'database_producer_receipt': {'path': str(args.database_receipt), 'sha256': sha256(args.database_receipt),
                                       'status': producer_status},
         'database_readback_receipt': {'path': str(args.database_readback), 'sha256': sha256(args.database_readback)},
@@ -162,8 +167,9 @@ def self_test() -> None:
         resource = receipt('resource.json', 'passed_full_atlas_clustering_resource_preflight',
                            observed_lookup_models=2, database=str(db.resolve()))
         identity = receipt('identity.json', 'completed_full_atlas_cluster_identity_map', output=str(source), output_sha256=sha256(source), models=2)
+        identity_readback = receipt('identity-readback.json', 'passed_independent_full_atlas_cluster_identity_map_readback', map_sha256=sha256(source), models=2)
         args = argparse.Namespace(database=db, database_receipt=producer, database_readback=database_reader,
-            source_identity_map=source, identity_receipt=identity, resource_preflight=resource, coordinate_receipt=coordinate,
+            source_identity_map=source, identity_receipt=identity, identity_readback=identity_readback, resource_preflight=resource, coordinate_receipt=coordinate,
             pae_receipt=pae, pae_readback_receipt=pae_reader, expected_models=2, foldseek=Path('/bin/true'),
             cluster_argument=['--example'], cpu=1, minimum_free_disk_gib=2, emergency_free_disk_gib=1,
             output=root / 'out')
@@ -184,6 +190,7 @@ def main() -> None:
     parser.add_argument('--database-readback', type=Path)
     parser.add_argument('--source-identity-map', type=Path)
     parser.add_argument('--identity-receipt', type=Path)
+    parser.add_argument('--identity-readback', type=Path)
     parser.add_argument('--resource-preflight', type=Path)
     parser.add_argument('--coordinate-receipt', type=Path)
     parser.add_argument('--pae-receipt', type=Path)
@@ -204,7 +211,7 @@ def main() -> None:
                           'checks': ['completed_receipt_binding', 'running_receipt_rejected',
                                      'lookup_identity_count', 'resource_preflight_binding']}, indent=2))
         return
-    needed = ('database', 'database_receipt', 'database_readback', 'source_identity_map', 'identity_receipt', 'resource_preflight',
+    needed = ('database', 'database_receipt', 'database_readback', 'source_identity_map', 'identity_receipt', 'identity_readback', 'resource_preflight',
               'coordinate_receipt', 'pae_receipt', 'pae_readback_receipt', 'foldseek', 'output', 'plan')
     if any(getattr(args, item) is None for item in needed):
         parser.error('all input paths, --output and fresh --plan are required')
