@@ -42,6 +42,12 @@ then bind their hashes in its own plan:
    predictor, and alternative-model relations for every cluster member. No
    source model may be dropped merely because it is an alternative prediction.
 
+The completed [full identity-map receipt](../metadata/full_atlas_cluster_identity_map_20261007_v1.json)
+binds all 2,961,055 database aliases to 3,020,392 preserved source relations
+across all 526 taxa. It retains many-to-one mappings for identical sequence
+models and the documented F87326 alternative-product ESMFold model rather than
+forcing a representative-protein assignment or removing the model.
+
 Use `python3 scripts/report_full_atlas_gate_status_v1.py` from the repository
 root to inspect the three immutable-receipt gates. Its `--require-ready` mode
 exits nonzero until every receipt is present, readable, and has a completed or
