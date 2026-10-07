@@ -12,6 +12,13 @@ DEFAULT_RECEIPTS = (
     Path("metadata/full_atlas_missing_pae_20261005_v2.json"),
     Path("metadata/full_atlas_missing_pae_readback_20261006_v1.json"),
 )
+COORDINATE_STATE = Path(
+    "results/structures/full-atlas-coordinate-profiles-readback-20261006-v1/state.json"
+)
+PAE_STATE = Path(
+    "results/structures/full-atlas-missing-pae-retrieval-20261005-v2/state.json"
+)
+ATLAS_UNION = Path("metadata/full_prediction_atlas_union_completed_20261005_v1.json")
 
 
 def read_receipt(path: Path) -> dict[str, Any]:
@@ -29,6 +36,64 @@ def read_receipt(path: Path) -> dict[str, Any]:
     item["status"] = value.get("status")
     item["scientific_eligibility"] = value.get("scientific_eligibility")
     return item
+
+
+def read_json_object(path: Path) -> dict[str, Any] | None:
+    try:
+        value = json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError):
+        return None
+    return value if isinstance(value, dict) else None
+
+
+def progress_summary() -> dict[str, Any]:
+    """Return advisory progress counters; these never determine gate readiness."""
+    result: dict[str, Any] = {}
+    union = read_json_object(ATLAS_UNION)
+    coordinate = read_json_object(COORDINATE_STATE)
+    pae = read_json_object(PAE_STATE)
+    expected_models = None
+    if union:
+        counts = union.get("model_counts")
+        if isinstance(counts, dict) and all(isinstance(v, int) for v in counts.values()):
+            expected_models = sum(counts.values())
+    if coordinate:
+        counts = coordinate.get("counts")
+        if isinstance(counts, dict):
+            valid = sum(
+                source.get("valid_models", 0)
+                for source in counts.values()
+                if isinstance(source, dict) and isinstance(source.get("valid_models", 0), int)
+            )
+            rejected = sum(
+                source.get("rejected_models", 0)
+                for source in counts.values()
+                if isinstance(source, dict) and isinstance(source.get("rejected_models", 0), int)
+            )
+            item: dict[str, Any] = {
+                "stage": coordinate.get("stage"),
+                "valid_models": valid,
+                "rejected_models": rejected,
+            }
+            if expected_models:
+                item["expected_models"] = expected_models
+                item["valid_fraction"] = valid / expected_models
+            result["coordinate_profiles"] = item
+    if pae:
+        counts = pae.get("counts")
+        expected = pae.get("expected_models")
+        if isinstance(counts, dict) and isinstance(expected, int) and expected > 0:
+            verified = counts.get("verified")
+            failed = counts.get("failed")
+            if isinstance(verified, int) and isinstance(failed, int):
+                result["missing_pae"] = {
+                    "stage": pae.get("stage"),
+                    "verified": verified,
+                    "failed": failed,
+                    "expected_models": expected,
+                    "verified_fraction": verified / expected,
+                }
+    return result
 
 
 def main() -> None:
@@ -50,7 +115,11 @@ def main() -> None:
         and (item["status"].startswith("completed_") or item["status"].startswith("passed_"))
         for item in receipts
     )
-    print(json.dumps({"all_gates_ready": ready, "receipts": receipts}, indent=2, sort_keys=True))
+    print(json.dumps({
+        "all_gates_ready": ready,
+        "receipts": receipts,
+        "progress_advisory_only": progress_summary(),
+    }, indent=2, sort_keys=True))
     if args.require_ready and not ready:
         raise SystemExit(2)
 
