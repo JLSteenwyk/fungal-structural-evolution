@@ -46,6 +46,20 @@ def read_json_object(path: Path) -> dict[str, Any] | None:
     return value if isinstance(value, dict) else None
 
 
+def completed_receipt_status(path: Path) -> str | None:
+    """Return a completed/passed receipt status, if the immutable receipt proves one."""
+    receipt = read_receipt(path)
+    status = receipt.get("status")
+    if (
+        receipt.get("exists")
+        and not receipt.get("read_error")
+        and isinstance(status, str)
+        and (status.startswith("completed_") or status.startswith("passed_"))
+    ):
+        return status
+    return None
+
+
 def progress_summary() -> dict[str, Any]:
     """Return advisory progress counters; these never determine gate readiness."""
     result: dict[str, Any] = {}
@@ -70,8 +84,9 @@ def progress_summary() -> dict[str, Any]:
                 for source in counts.values()
                 if isinstance(source, dict) and isinstance(source.get("rejected_models", 0), int)
             )
+            coordinate_receipt = completed_receipt_status(DEFAULT_RECEIPTS[0])
             item: dict[str, Any] = {
-                "stage": coordinate.get("stage"),
+                "stage": coordinate_receipt or coordinate.get("stage"),
                 "valid_models": valid,
                 "rejected_models": rejected,
             }
