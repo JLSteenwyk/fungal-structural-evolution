@@ -111,9 +111,12 @@ has completed all intervals with four CPU workers, taking 9 h 55 min and
 producing 245.54 GB of tar archives. The original native execution and journal
 confirm success; its unavailable original API terminal remains explicit.
 The [independent full atom reader](docs/completed-domain-atom-readback-20261006.md)
-has started with eight CPU workers and 64 GiB memory. Its completion remains
-pending. The first manifest wrapper reporting failure is preserved;
-the saved manifest passed a separate full independent check without regeneration.
+completed its raw readback across all 977 shards, checking every atom in
+2,454,565 exported intervals. Its outer adapter then failed only because a
+zero-valued `rejected` counter was omitted from a Python `Counter`; the retained
+raw receipt and all 977 shard counts passed a separate, scope-limited review.
+The failed adapter execution remains preserved, and this validation does not
+qualify domain boundaries, PAE, homology, or evolutionary inference.
 
 The [full source coordinate/confidence audit](docs/full-atlas-coordinate-confidence-20261005.md)
 has completed its independent readback across **all 2,961,055 models and 1.165
