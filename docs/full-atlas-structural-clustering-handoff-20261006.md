@@ -26,8 +26,8 @@ A full clustering launch must require all of the following immutable receipts,
 then bind their hashes in its own plan:
 
 1. The completed independent coordinate-profile readback
-   (`metadata/full_atlas_coordinate_profiles_readback_20261006_v1.json`). It is
-   active at this handoff and independently rechecks original coordinate,
+   (`metadata/full_atlas_coordinate_profiles_readback_20261006_v1.json`). It
+   passed every source model, independently rechecking original coordinate,
    residue-confidence, archive, and rejection dispositions.
 2. The completed full missing-AFDB PAE retrieval producer and independent
    reader (`metadata/full_atlas_missing_pae_20261005_v2.json` and
