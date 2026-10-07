@@ -20,7 +20,7 @@ def lookup_members(p):
    if len(x)!=3 or not x[1] or x[1] in out: raise ValueError(f'invalid lookup row {n}')
    out.add(x[1])
  return out
-def build(links, lookup, output):
+def build(links, lookup, output, unlinked=None):
  expected=lookup_members(lookup); seen=set(); counts=Counter(); identity_rows=0; taxa=set()
  output.parent.mkdir(parents=True,exist_ok=True)
  tmp=output.with_suffix(output.suffix+'.tmp')
@@ -36,6 +36,12 @@ def build(links, lookup, output):
      seen.add(current); counts[source]+=1
     identity_rows+=1; taxa.add(row['taxon_id'])
     out.write('\t'.join([current,row['taxon_id'],row['protein_id'],source,mid,ver,row['sequence_sha256'],row['length'],row['availability'],paired])+'\n')
+ if unlinked:
+  for entry in json.loads(unlinked.read_text())['diagnostics']:
+   alias=Path(entry['retained_esmfold_path']).name.removesuffix('.cif')
+   if alias not in expected or alias in seen: raise ValueError('invalid unlinked alternative alias: '+alias)
+   ident=entry['original_marker_identity']; seen.add(alias); counts['ESMFold']+=1; identity_rows+=1; taxa.add(ident['taxon_id'])
+   out.write('\t'.join([alias,ident['taxon_id'],ident['protein_id'],'ESMFold',entry['retained_esmfold_model_id'],'1',ident['sequence_sha256'],'769','unlinked_alternative_product',''])+'\n')
  if seen!=expected:
   missing=sorted(expected-seen)
   extra=sorted(seen-expected)
@@ -52,10 +58,10 @@ def test():
   except ValueError: pass
   else: raise AssertionError('missing lookup alias accepted')
 def main():
- p=argparse.ArgumentParser(description=__doc__); p.add_argument('--links',type=Path);p.add_argument('--lookup',type=Path);p.add_argument('--output',type=Path);p.add_argument('--receipt',type=Path);p.add_argument('--self-test',action='store_true');a=p.parse_args();test()
+ p=argparse.ArgumentParser(description=__doc__); p.add_argument('--links',type=Path);p.add_argument('--lookup',type=Path);p.add_argument('--unlinked',type=Path);p.add_argument('--output',type=Path);p.add_argument('--receipt',type=Path);p.add_argument('--self-test',action='store_true');a=p.parse_args();test()
  if a.self_test: print(json.dumps({'status':'passed_full_atlas_identity_map_controls','checks':['complete_lookup_coverage','missing_alias_rejected']}));return
  if not all((a.links,a.lookup,a.output,a.receipt)): p.error('all paths required')
  if a.output.exists() or a.receipt.exists(): raise FileExistsError('fresh output and receipt required')
- result=build(a.links,a.lookup,a.output); result.update(status='completed_full_atlas_cluster_identity_map',checked_utc=datetime.now(timezone.utc).isoformat(),output=str(a.output),output_sha256=sha(a.output),links=str(a.links),links_sha256=sha(a.links),lookup=str(a.lookup),lookup_sha256=sha(a.lookup),scientific_eligibility=False,scope='Exact full lookup alias to source/taxon/representative-protein map with paired predictor aliases retained; no homology or evolutionary claim.')
+ result=build(a.links,a.lookup,a.output,a.unlinked); result.update(status='completed_full_atlas_cluster_identity_map',checked_utc=datetime.now(timezone.utc).isoformat(),output=str(a.output),output_sha256=sha(a.output),links=str(a.links),links_sha256=sha(a.links),lookup=str(a.lookup),lookup_sha256=sha(a.lookup),scientific_eligibility=False,scope='Exact full lookup alias to source/taxon/representative-protein map with paired predictor aliases retained; no homology or evolutionary claim.')
  a.receipt.parent.mkdir(parents=True,exist_ok=True);a.receipt.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__': main()
