@@ -63,6 +63,16 @@ and requires three times the protected database footprint as free capacity by
 default. It measures resources only; the completed coordinate/PAE receipts,
 launch-specific hashes and later independent cluster readback remain required.
 
+Once all three gates and the fresh preflight pass, use
+[`prepare_full_prediction_atlas_clustering_plan_v1.py`](../scripts/prepare_full_prediction_atlas_clustering_plan_v1.py)
+to write the one immutable plan consumed by the clustering runner. The generator
+requires the completed database producer/readback receipts, all three completed
+coordinate/PAE receipts, the fresh passed preflight, the full source-identity
+map and explicit Foldseek clustering arguments. It hashes every bound input and
+refuses an incomplete/running receipt, a mismatched lookup count or a reused
+plan/output path. The arguments remain an explicit, reviewable analytical
+choice; they must not be supplied implicitly or inherited from an older atlas.
+
 The pending MAFFT reconciliation recovery and 16-condition species-tree
 sensitivity collection are separate requirements for later branch and
 duplication interpretation. They are not substitutes for the coordinate/PAE
