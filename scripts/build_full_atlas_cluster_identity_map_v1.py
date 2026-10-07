@@ -21,7 +21,7 @@ def lookup_members(p):
    out.add(x[1])
  return out
 def build(links, lookup, output):
- expected=lookup_members(lookup); seen=set(); counts=Counter(); taxa=set()
+ expected=lookup_members(lookup); seen=set(); counts=Counter(); identity_rows=0; taxa=set()
  output.parent.mkdir(parents=True,exist_ok=True)
  tmp=output.with_suffix(output.suffix+'.tmp')
  with open(links,newline='') as inp, gzip.open(tmp,'wt',newline='') as out:
@@ -31,12 +31,14 @@ def build(links, lookup, output):
    af, es=alias(row['afdb_model_id'],row['afdb_version']),alias(row['esmfold_model_id'],row['esmfold_version'])
    for source, current, paired, mid, ver in [('AFDB',af,es,row['afdb_model_id'],row['afdb_version']),('ESMFold',es,af,row['esmfold_model_id'],row['esmfold_version'])]:
     if not current: continue
-    if current not in expected or current in seen: raise ValueError('missing or repeated source alias: '+current)
-    seen.add(current); counts[source]+=1; taxa.add(row['taxon_id'])
+    if current not in expected: raise ValueError('source alias absent from lookup: '+current)
+    if current not in seen:
+     seen.add(current); counts[source]+=1
+    identity_rows+=1; taxa.add(row['taxon_id'])
     out.write('\t'.join([current,row['taxon_id'],row['protein_id'],source,mid,ver,row['sequence_sha256'],row['length'],row['availability'],paired])+'\n')
  if seen!=expected: raise ValueError(f'identity map coverage differs: {len(seen)} of {len(expected)}')
  os.replace(tmp,output)
- return dict(models=len(seen),counts_by_source=dict(counts),taxa=len(taxa))
+ return dict(models=len(seen),identity_rows=identity_rows,counts_by_source=dict(counts),taxa=len(taxa))
 def test():
  with tempfile.TemporaryDirectory() as d:
   d=Path(d); l=d/'l'; q=d/'q'; o=d/'o.tsv.gz'
