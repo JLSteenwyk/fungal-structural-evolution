@@ -116,11 +116,12 @@ pending. The first manifest wrapper reporting failure is preserved;
 the saved manifest passed a separate full independent check without regeneration.
 
 The [full source coordinate/confidence audit](docs/full-atlas-coordinate-confidence-20261005.md)
-is also running across **all 2,961,055 models and 1.165 billion inventory
-residue positions**, with eight CPU workers. Literal producer and independent
-reader controls pass; full producer completion and independent readback are
-pending. Original coordinates, predictor identities and every exclusion remain
-explicit. PAE/context qualification and accuracy calibration are still required.
+has completed its independent readback across **all 2,961,055 models and 1.165
+billion inventory residue positions**. Every source model passed the original
+coordinate, residue-confidence, archive, and rejection-disposition checks, with
+zero rejected models and zero missing backbone records. Original coordinates,
+predictor identities and every exclusion remain explicit. PAE/context
+qualification and accuracy calibration are still required.
 
 The [full protein-level structural-search database](docs/full-atlas-foldseek-database-20261006.md)
 has completed across all **2,961,055 AFDB/ESMFold models**, preserving both
@@ -137,8 +138,10 @@ The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now ret
 every source model and independently reconstruct the entire missing queue.
 All **55,959 previously available matrices** pass source/body validation and
 full independent decoding/statistic reconstruction across all 112 jobs. The
-corrected complete-queue downloader has verified **155,000 new PAE matrices**
-at the current October 6 checkpoint, with no failures in that partial checkpoint.
+corrected complete-queue downloader is still running; the preserved October 6
+checkpoint recorded **155,000 new PAE matrices** and zero failures. Its current
+receipt gates and advisory progress are reported by
+[`report_full_atlas_gate_status_v1.py`](scripts/report_full_atlas_gate_status_v1.py).
 Its initial cache-path failure, stopped output and unreceipted bytes are retained
 and excluded. PAE retrieval adds uncertainty data for existing structures;
 it does not add predicted structures or complete scientific atlas qualification.
