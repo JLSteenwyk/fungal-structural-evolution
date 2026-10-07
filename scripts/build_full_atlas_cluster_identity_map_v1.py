@@ -38,10 +38,10 @@ def build(links, lookup, output, unlinked=None):
     out.write('\t'.join([current,row['taxon_id'],row['protein_id'],source,mid,ver,row['sequence_sha256'],row['length'],row['availability'],paired])+'\n')
  if unlinked:
   for entry in json.loads(unlinked.read_text())['diagnostics']:
-   alias=Path(entry['retained_esmfold_path']).name.removesuffix('.cif')
-   if alias not in expected or alias in seen: raise ValueError('invalid unlinked alternative alias: '+alias)
-   ident=entry['original_marker_identity']; seen.add(alias); counts['ESMFold']+=1; identity_rows+=1; taxa.add(ident['taxon_id'])
-   out.write('\t'.join([alias,ident['taxon_id'],ident['protein_id'],'ESMFold',entry['retained_esmfold_model_id'],'1',ident['sequence_sha256'],'769','unlinked_alternative_product',''])+'\n')
+   model_alias=Path(entry['retained_esmfold_path']).name.removesuffix('.cif')
+   if model_alias not in expected or model_alias in seen: raise ValueError('invalid unlinked alternative alias: '+model_alias)
+   ident=entry['original_marker_identity']; seen.add(model_alias); counts['ESMFold']+=1; identity_rows+=1; taxa.add(ident['taxon_id'])
+   out.write('\t'.join([model_alias,ident['taxon_id'],ident['protein_id'],'ESMFold',entry['retained_esmfold_model_id'],'1',ident['sequence_sha256'],'769','unlinked_alternative_product',''])+'\n')
  if seen!=expected:
   missing=sorted(expected-seen)
   extra=sorted(seen-expected)
