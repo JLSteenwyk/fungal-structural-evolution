@@ -1,0 +1,34 @@
+{
+  "status": "passed_systemd_invocation_linked_mafft_producer_completion_validation",
+  "checked_utc": "2026-10-07T00:19:32.556304+00:00",
+  "producer_launch": "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_launch.json",
+  "producer_launch_sha256": "b61323376813fa77244c938669b47f2527688879fa05b967ac948d253aa60dc2",
+  "producer_receipt": "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v2/receipt.json",
+  "producer_receipt_sha256": "de2e5e3bc5b40b25df32349b68feef7bda8d0c41acb8cdb39d9d1c8fd46b8ea3",
+  "terminal_state": {
+    "ActiveState": "inactive",
+    "Result": "success",
+    "ExecMainStatus": "0"
+  },
+  "invocation_id": "a410bf76a9564140b4fab6292b23f2b0",
+  "exact_start_message": "Started fungal-expanded-reconciliation-mafft-recovery-20261006-v2.service - /home/bizon/anaconda3/bin/python scripts/run_expanded_reconciliation_mafft_recovery_v1.py --plan metadata/expanded_reconciliation_mafft_recovery_20261006_v2_plan.json.",
+  "completion_resource_message": "fungal-expanded-reconciliation-mafft-recovery-20261006-v2.service: Consumed 6h 34min 38.886s CPU time, 70.0G memory peak, 0B memory swap peak.",
+  "completion_cpu_usage_nsec": "23678886790000",
+  "native_journal_sha256": "ceb9caf5b5e499cc990919918831814482ba0021475595c6e8f91b3d342971d3",
+  "failed_v2_waiter_preserved": "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_wait_plan.json",
+  "mandatory_artifacts": {
+    "Phylogenetic_Hierarchical_Orthogroups/N0.tsv": "fa3c771e81373e689bb7c22103f5410f622edd82d0c2a9e262fa94bcf0b6280d",
+    "Gene_Duplication_Events/Duplications.tsv": "f6e1745b917266179806263d0e3f59e081276697fac0d3bce694f6a0d44350bf",
+    "Resolved_Gene_Trees/Resolved_Gene_Trees.txt": "46b7e53f32ba496d73356830f57868ddb4b3470f872fd10b7883d768475474b5",
+    "Species_Tree/SpeciesTree_rooted.txt": "4c9e9026ac3898ed0f46bc5b326b4624133c20fe55a8c69269177581f844d69b",
+    "Comparative_Genomics_Statistics/Statistics_Overall.tsv": "aeec9f4d3eceb618cf9724be2bdcd598c19ee61de59111393291cd7e28d87edd"
+  },
+  "scope": "Exact producer invocation ID, start command message, terminal resource message, successful unit state, immutable native receipt and mandatory-artifact hashes checked. The earlier waiter failure is preserved; no producer output is changed and no biological reconciliation conclusion is accepted.",
+  "source_hashes": {
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_launch.json": "b61323376813fa77244c938669b47f2527688879fa05b967ac948d253aa60dc2",
+    "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v2/receipt.json": "de2e5e3bc5b40b25df32349b68feef7bda8d0c41acb8cdb39d9d1c8fd46b8ea3",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_plan.json": "57fcf94ee8ca4e878d3b310dcede1204ad0a6e67cc57ff9b73a48206d7fb21a8",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_wait_plan.json": "8215d84a2492470cc8df1147b7fbd48f01f1b586e7dd1b3b3c8f9b5d5b8e3ba1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/scripts/launch_expanded_reconciliation_mafft_readback_v3.py": "cd76bb80dd92c24fced47f3a1a30201138d6f7dca0fdcdc0285a307cb4555b13"
+  }
+}

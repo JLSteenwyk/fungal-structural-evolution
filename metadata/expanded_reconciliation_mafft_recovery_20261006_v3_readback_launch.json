@@ -1,0 +1,41 @@
+{
+  "status": "launched_bounded_independent_mafft_reconciliation_readback_after_explicit_systemd_validation",
+  "unit": "fungal-expanded-reconciliation-mafft-recovery-readback-20261006-v3.service",
+  "pid": 2357261,
+  "created": 1791332371.87,
+  "cmdline": [
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+    "scripts/readback_expanded_reconciliation_mafft_recovery_v1.py",
+    "--plan",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_plan.json"
+  ],
+  "transport": "metadata/expanded_reconciliation_mafft_recovery_20261006_v3_readback_dependency_transport.json",
+  "transport_sha256": "7299674aa2d43ae2764744b90ff9c2785e9c58db21d0cc3bb51535da7f6939eb",
+  "reader_plan": "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_plan.json",
+  "reader_plan_sha256": "57fcf94ee8ca4e878d3b310dcede1204ad0a6e67cc57ff9b73a48206d7fb21a8",
+  "actual_cgroup_limits": {
+    "cpu.max": "400000 100000",
+    "memory.max": "68719476736",
+    "memory.swap.max": "0"
+  },
+  "systemd_launch_command": [
+    "systemd-run",
+    "--user",
+    "--collect",
+    "--unit=fungal-expanded-reconciliation-mafft-recovery-readback-20261006-v3.service",
+    "--working-directory=/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS",
+    "--property=CPUQuota=400%",
+    "--property=MemoryMax=64G",
+    "--property=MemorySwapMax=0",
+    "--setenv=PYTHONUNBUFFERED=1",
+    "--setenv=OPENBLAS_NUM_THREADS=1",
+    "--setenv=OMP_NUM_THREADS=1",
+    "--setenv=MKL_NUM_THREADS=1",
+    "/mnt/ca1e2e99-718e-417c-9ba6-62421455971a/STRUCTURAL_GENOMICS/.cache/envs/orthofinder/bin/python",
+    "scripts/readback_expanded_reconciliation_mafft_recovery_v1.py",
+    "--plan",
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_plan.json"
+  ],
+  "scientific_eligibility": false,
+  "scope": "Recovery launch for one independent native-output readback. No producer/source mutation, model fitting, structure prediction or biological inference."
+}
