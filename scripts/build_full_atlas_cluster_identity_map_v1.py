@@ -36,7 +36,10 @@ def build(links, lookup, output):
      seen.add(current); counts[source]+=1
     identity_rows+=1; taxa.add(row['taxon_id'])
     out.write('\t'.join([current,row['taxon_id'],row['protein_id'],source,mid,ver,row['sequence_sha256'],row['length'],row['availability'],paired])+'\n')
- if seen!=expected: raise ValueError(f'identity map coverage differs: {len(seen)} of {len(expected)}')
+ if seen!=expected:
+  missing=sorted(expected-seen)
+  extra=sorted(seen-expected)
+  raise ValueError(f'identity map coverage differs: {len(seen)} of {len(expected)}; missing={missing[:10]}; extra={extra[:10]}')
  os.replace(tmp,output)
  return dict(models=len(seen),identity_rows=identity_rows,counts_by_source=dict(counts),taxa=len(taxa))
 def test():
