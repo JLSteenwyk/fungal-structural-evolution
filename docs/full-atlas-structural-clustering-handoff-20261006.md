@@ -47,6 +47,22 @@ root to inspect the three immutable-receipt gates. Its `--require-ready` mode
 exits nonzero until every receipt is present, readable, and has a completed or
 passed status; it is a launch guard, not evidence of biological eligibility.
 
+After that guard passes, create a fresh host measurement immediately before the
+native run; do not reuse a prior measurement:
+
+```bash
+python3 scripts/preflight_full_prediction_atlas_clustering_v1.py \
+  --database results/structural_clusters/full-prediction-atlas-database-20261006-v2 \
+  --output-parent results/structural_clusters \
+  --receipt metadata/full_atlas_clustering_resource_preflight_YYYYMMDD_v1.json
+```
+
+The preflight checks the exact 2,961,055-row lookup, records the protected
+full-database footprint, free filesystem capacity and available host memory,
+and requires three times the protected database footprint as free capacity by
+default. It measures resources only; the completed coordinate/PAE receipts,
+launch-specific hashes and later independent cluster readback remain required.
+
 The pending MAFFT reconciliation recovery and 16-condition species-tree
 sensitivity collection are separate requirements for later branch and
 duplication interpretation. They are not substitutes for the coordinate/PAE
