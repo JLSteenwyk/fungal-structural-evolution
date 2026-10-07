@@ -42,6 +42,11 @@ then bind their hashes in its own plan:
    predictor, and alternative-model relations for every cluster member. No
    source model may be dropped merely because it is an alternative prediction.
 
+Use `python3 scripts/report_full_atlas_gate_status_v1.py` from the repository
+root to inspect the three immutable-receipt gates. Its `--require-ready` mode
+exits nonzero until every receipt is present, readable, and has a completed or
+passed status; it is a launch guard, not evidence of biological eligibility.
+
 The pending MAFFT reconciliation recovery and 16-condition species-tree
 sensitivity collection are separate requirements for later branch and
 duplication interpretation. They are not substitutes for the coordinate/PAE
