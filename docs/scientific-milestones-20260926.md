@@ -1,5 +1,23 @@
 # Open scientific milestones — updated October 6, 2026 UTC
 
+## October 7 UTC: full MAFFT reconciliation recovery independently read back
+
+The fresh isolated MAFFT-guide reconciliation completed for 526 taxa and
+5,815,847 genes. Its independent audit checked every one of the 525
+hierarchical-orthogroup tables against source protein/taxon/family identities
+and species-clade membership: 8,865,648 HOG rows and 78,276,663
+level-specific gene assignments. The original reader completed that audit but
+failed only when writing its outer receipt because it passed a string to a
+path-based hash helper. A separate closure rehashed every HOG table and the
+audit sources before writing the immutable final receipt.
+
+This validates native-output custody and the stated HOG identity constraints.
+It does not establish biological orthology, ancestral HOG completeness,
+duplication-event accuracy, guide robustness, or any structural/evolutionary
+conclusion.
+
+[Independent readback receipt](../metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_completed.json) and [closure record](../metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_closure.json).
+
 ## October 6 UTC: full whole-protein comparison integration independently closed
 
 The frozen 75,070-input, five-tree whole-protein grid now has a complete

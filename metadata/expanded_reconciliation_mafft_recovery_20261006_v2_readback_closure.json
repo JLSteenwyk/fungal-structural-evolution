@@ -1,0 +1,15 @@
+{
+  "status": "passed_post_audit_readback_receipt_closure_after_writer_defect",
+  "readback_receipt_sha256": "0f294fb0f9dd8fe3d85ddb2651f185d2f02c431fff728c7a9081c58defa36a77",
+  "hog_receipt_sha256": "6c5ee3710a97b41d7918a2d4a32d5618d99dd0d2c6fd001bb390039b7327012b",
+  "producer_receipt_sha256": "de2e5e3bc5b40b25df32349b68feef7bda8d0c41acb8cdb39d9d1c8fd46b8ea3",
+  "all_hog_tables_rehashed": 525,
+  "source_hashes": {
+    "metadata/expanded_reconciliation_mafft_recovery_20261006_v2_readback_plan.json": "57fcf94ee8ca4e878d3b310dcede1204ad0a6e67cc57ff9b73a48206d7fb21a8",
+    "results/orthology/expanded-reconciliation-mafft-recovery-20261006-v2/receipt.json": "de2e5e3bc5b40b25df32349b68feef7bda8d0c41acb8cdb39d9d1c8fd46b8ea3",
+    "results/orthology/expanded-reconciliation-mafft-recovery-readback-20261006-v2/hog_identities/receipt.json": "6c5ee3710a97b41d7918a2d4a32d5618d99dd0d2c6fd001bb390039b7327012b",
+    "results/orthology/expanded-reconciliation-mafft-recovery-readback-20261006-v2/hog_identities/node_summary.tsv": "412024d46777b9526bcca6028158e8f9d0a9ed566424ab3cf67152c202b274ad",
+    "scripts/close_expanded_reconciliation_mafft_readback_v1.py": "a1b2990b9af8f1a211cbc8e4236ee9c556b6ac3e3d4e6f7028b50ef8a6332b9f"
+  },
+  "scope": "Closure of a post-audit writer defect; records the independent all-node audit and rehash closure. No producer or HOG-audit artifact is altered."
+}
