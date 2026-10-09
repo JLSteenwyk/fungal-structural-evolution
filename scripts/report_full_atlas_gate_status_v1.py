@@ -98,15 +98,21 @@ def progress_summary() -> dict[str, Any]:
         counts = pae.get("counts")
         expected = pae.get("expected_models")
         if isinstance(counts, dict) and isinstance(expected, int) and expected > 0:
+            attempted = counts.get("attempted")
             verified = counts.get("verified")
             failed = counts.get("failed")
-            if isinstance(verified, int) and isinstance(failed, int):
+            if all(isinstance(value, int) for value in (attempted, verified, failed)):
+                if attempted != verified + failed or attempted > expected:
+                    raise ValueError("PAE state counts are internally inconsistent")
                 result["missing_pae"] = {
                     "stage": pae.get("stage"),
+                    "attempted": attempted,
                     "verified": verified,
                     "failed": failed,
                     "expected_models": expected,
+                    "attempted_fraction": attempted / expected,
                     "verified_fraction": verified / expected,
+                    "failed_fraction_of_attempts": failed / attempted if attempted else 0.0,
                 }
     return result
 
