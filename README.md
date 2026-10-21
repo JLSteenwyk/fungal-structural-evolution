@@ -6,7 +6,10 @@ across the fungal phylogeny, how those changes relate to sequence evolution,
 and their associations with duplication, domain architecture and ecology.
 
 The [project tracker](docs/project-tracker.md) links every required deliverable
-and all eight evolutionary aims to current evidence and remaining gates.
+and all eight evolutionary aims to current evidence and remaining gates. The
+[insect-to-fungal scope note](docs/insect-structural-genomics-to-fungal-scope.md)
+explains how the comparative structural-genomics precedent informs this project
+and which phylogenetic, structural and genomic extensions are required.
 
 ## Current checkpoint — 5–6 October 2026 UTC
 
