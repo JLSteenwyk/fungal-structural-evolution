@@ -29,11 +29,11 @@ then bind their hashes in its own plan:
    (`metadata/full_atlas_coordinate_profiles_readback_20261006_v1.json`). It
    passed every source model, independently rechecking original coordinate,
    residue-confidence, archive, and rejection dispositions.
-2. The completed full missing-AFDB PAE retrieval producer and independent
-   reader (`metadata/full_atlas_missing_pae_20261005_v2.json` and
-   `metadata/full_atlas_missing_pae_readback_20261006_v1.json`). Both the
-   download and reader preserve unsuccessful dispositions; neither success rate
-   nor an available PAE matrix is a confidence-calibration result.
+2. The completed recovery-lineage PAE receipt and independent retry closure
+   (`metadata/full_atlas_pae_recovery_retry_lineage_20261021_v1.json` and
+   `metadata/full_atlas_pae_failure_retry_readback_20261021_v1.json`). These
+   replace the interrupted V2 receipt, preserve unsuccessful dispositions, and
+   do not establish confidence calibration.
 3. A fresh resource preflight that measures available memory, disk, and the
    full-database temporary/output footprint immediately before native execution.
    The older 1,290,278-model clustering resource envelope must not be silently
@@ -48,7 +48,7 @@ across all 526 taxa. It retains many-to-one mappings for identical sequence
 models and the documented F87326 alternative-product ESMFold model rather than
 forcing a representative-protein assignment or removing the model.
 
-Use `python3 scripts/report_full_atlas_gate_status_v1.py` from the repository
+Use `python3 scripts/report_full_atlas_gate_status_v2.py` from the repository
 root to inspect the three immutable-receipt gates. Its `--require-ready` mode
 exits nonzero until every receipt is present, readable, and has a completed or
 passed status; it is a launch guard, not evidence of biological eligibility.
