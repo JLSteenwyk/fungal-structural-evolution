@@ -236,6 +236,10 @@ and its [resource contract](../metadata/full_atlas_missing_pae_recovery_resource
 set two HTTP workers, two CPU equivalents, 16 GiB RAM, no swap and no GPU; a
 read-only preflight passed for all 1,015,993 recovery targets without finding a
 collision with the preserved cache.
+The replacement [independent reader](../scripts/readback_full_atlas_missing_pae_recovery_v2.py)
+has a literal control covering out-of-order records split across preserved and
+recovery manifests; it will run only after the recovery producer writes its
+terminal receipt.
 No PAE coverage, confidence qualification, clustering, or biological result is
 claimed from the interrupted run.
 
