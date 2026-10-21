@@ -68,8 +68,15 @@ def controls():
             pass
         else:
             raise AssertionError('Repeated member accepted')
-        partition.write_text('a\ta\na\tb\nc\tc\n')
-    return ['independent_lookup_parse', 'complete_partition_replay', 'duplicate_member_rejected']
+        partition.write_text('a\tb\nb\tb\nc\tc\n')
+        try:
+            replay_partition(partition, expected)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('Representative without self-membership accepted')
+    return ['independent_lookup_parse', 'complete_partition_replay', 'duplicate_member_rejected',
+            'representative_self_membership_required']
 
 
 def main():
