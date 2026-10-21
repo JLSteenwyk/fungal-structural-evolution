@@ -137,21 +137,21 @@ Existing protein clusters still refer to their older 1.29-million-model database
 The new index does not establish homology, predictor accuracy or evolutionary
 change.
 
-The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) now retain
-every source model and independently reconstruct the entire missing queue.
-All **55,959 previously available matrices** pass source/body validation and
-full independent decoding/statistic reconstruction across all 112 jobs. The
-corrected complete-queue downloader is still running; the preserved October 6
-checkpoint recorded **155,000 new PAE matrices** and zero failures. Its current
-receipt gates and advisory progress are reported by
-[`report_full_atlas_gate_status_v1.py`](scripts/report_full_atlas_gate_status_v1.py).
-Its initial cache-path failure, stopped output and unreceipted bytes are retained
-and excluded. PAE retrieval adds uncertainty data for existing structures;
-it does not add predicted structures or complete scientific atlas qualification.
-Native completion of the available-matrix validation is journal-proven; its
-lost original API terminal remains explicit.
+The [full PAE inventory and validation](docs/full-atlas-pae-20261005.md) retain
+every source model and the preserved dispositions from the interrupted V2 queue.
+The source-bound recovery of its remaining **1,015,993** records is active; its
+recovery reader, serial explicit-failure retry, retry closure, and clustering-gate
+lineage receipt are queued in order. At the latest committed runtime observation,
+2,900 recovery records had been attempted at 1.247 attempts/s; that linear
+estimate is advisory only. Current receipt gates and live progress are reported by
+[`report_full_atlas_gate_status_v2.py`](scripts/report_full_atlas_gate_status_v2.py).
+The earlier cache-path failure, stopped output, retained failures, and all later
+retry dispositions remain explicit. PAE retrieval adds uncertainty data for
+existing structures; it does not add predicted structures or complete scientific
+atlas qualification.
 
-The independent PAE reader has complete original API/native execution closure.
+The available-matrix validation has independent API/native closure. The complete
+recovery lineage still requires its queued independent checks.
 The [full assembly-DNA stage](docs/full-assembly-dna-20261005.md) has completed
 across all 526 taxa with zero acquisition errors: 519 exact NCBI assembly files
 and seven publisher genomes checked in place, containing 26.65 billion bases.
