@@ -101,13 +101,19 @@ def self_test(script):
         model=dict(model_id='M1',version=6,sequence_sha256='abc',length=2,pae_url='https://x/M1')
         queue.write_text(json.dumps(model)+'\n')
         failed=dict(model=model,status='retrieval_failed',error_type='HTTPError',error='429')
-        for path,records in ((old,[failed]),(recovery,[]),(retry_manifest,[failed])):
+        for path,records in ((old,[failed]),(recovery,[])):
             with gzip.open(path,'wt') as h:
                 for row in records:h.write(json.dumps(row)+'\n')
+        raw=json.dumps([dict(predicted_aligned_error=[[0.0,1.0],[1.0,0.0]],max_predicted_aligned_error=1.0)],separators=(',',':')).encode()
+        matrix=root/'matrix.json.gz'; matrix.write_bytes(gzip.compress(raw,mtime=0))
+        receipt_path=root/'matrix.receipt.json'; matrix_receipt=dict(model_id='M1',version=6,sequence_sha256='abc',length=2,status='verified',url=model['pae_url'],path=str(matrix),gzip_sha256=digest(matrix),json_sha256=hashlib.sha256(raw).hexdigest(),compressed_bytes=matrix.stat().st_size,json_bytes=len(raw))
+        receipt_path.write_text(json.dumps(matrix_receipt))
+        success=dict(model=model,status='retrieval_verified',receipt_path=str(receipt_path),receipt_sha256=digest(receipt_path),receipt=matrix_receipt)
+        with gzip.open(retry_manifest,'wt') as h:h.write(json.dumps(success)+'\n')
         base=root/'base.json';base.write_text(json.dumps(dict(status='passed_order_independent_full_atlas_pae_recovery_readback',dispositions=dict(preserved_retrieval_failed=1,recovery_retrieval_failed=0))))
-        producer=root/'producer.json';producer.write_text(json.dumps(dict(status='completed_full_atlas_pae_explicit_failure_retry_pending_independent_readback',retry_manifest_sha256=digest(retry_manifest),expected_models=1,counts=dict(attempted=1,verified=0,failed=1))))
+        producer=root/'producer.json';producer.write_text(json.dumps(dict(status='completed_full_atlas_pae_explicit_failure_retry_pending_independent_readback',retry_manifest_sha256=digest(retry_manifest),expected_models=1,counts=dict(attempted=1,verified=1,failed=0))))
         result=audit(queue,old,recovery,retry_manifest,base,producer,root/'out',root/'receipt.json',script)
-        assert result['final_explicit_failures']==1 and result['retained_base_failures']==1
+        assert result['final_explicit_failures']==0 and result['retained_base_failures']==1 and result['retry_verified_directional_entries']==4
     return 'complete-source-failure-set-reconciliation'
 
 def main():
