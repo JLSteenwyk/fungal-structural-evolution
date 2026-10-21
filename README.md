@@ -142,8 +142,11 @@ every source model and the preserved dispositions from the interrupted V2 queue.
 The source-bound recovery of its remaining **1,015,993** records is active; its
 recovery reader, serial explicit-failure retry, retry closure, and clustering-gate
 lineage receipt are queued in order. At the latest committed runtime observation,
-2,900 recovery records had been attempted at 1.247 attempts/s; that linear
-estimate is advisory only. Current receipt gates and live progress are reported by
+2,900 recovery records had been attempted at 1.247 attempts/s; that archived linear
+estimate is advisory only. The read-only
+[`report_live_pipeline_status_v1.py`](scripts/report_live_pipeline_status_v1.py) reports a
+current, separately labeled queue projection; it is not a completion guarantee. Current
+receipt gates are reported by
 [`report_full_atlas_gate_status_v2.py`](scripts/report_full_atlas_gate_status_v2.py).
 The earlier cache-path failure, stopped output, retained failures, and all later
 retry dispositions remain explicit. PAE retrieval adds uncertainty data for
