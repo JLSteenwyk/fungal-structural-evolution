@@ -248,6 +248,8 @@ claimed from the interrupted run.
 
 A separate serial retry waiter is now queued through its [wait plan](../metadata/full_atlas_pae_failure_retry_wait_plan_20261021_v1.json) and [launch record](../metadata/full_atlas_pae_failure_retry_launch_20261021_v1.json). It begins only after the active recovery exits successfully, builds an ordered queue from the complete preserved and recovery disposition manifests, and retries explicit failures at one HTTP worker. It preserves the existing cache and requires a later combined independent reader; it does not establish PAE coverage or scientific eligibility.
 
+The [combined retry-closure waiter](../metadata/full_atlas_pae_failure_retry_readback_wait_plan_20261021_v1.json) is also queued. It waits for both the original order-independent recovery readback and the serial retry, reconstructs the exact retained-failure identity set from the source manifests, and validates each successful retry matrix before recording the resulting explicit failure count.
+
 Whole-source coordinate auditing and full domain extraction remain running:
 at 20:20 UTC, 562,000 models/214,165,994 residues are audited and 610,020 domain
 intervals exported. Full timing has 1,231 producer checkpoints and 16 actual

@@ -1,0 +1,44 @@
+{
+  "dependencies": [
+    "metadata/full_atlas_missing_pae_recovery_readback_launch_20261021_v1.json",
+    "metadata/full_atlas_pae_failure_retry_launch_20261021_v1.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_atlas_pae_failure_retry_readback_resources_20261021_v1.json",
+    "--execution",
+    "metadata/full_atlas_pae_failure_retry_readback_execution_20261021_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_failure_retry_readback_20261021_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/readback_full_atlas_pae_failure_retry_v1.py",
+    "--queue",
+    "results/structures/full-atlas-pae-inventory-20261005-v1/missing_afdb_models.jsonl",
+    "--preserved-manifest",
+    "results/structures/full-atlas-missing-pae-retrieval-20261005-v2/retrieval_dispositions.jsonl.gz",
+    "--recovery-manifest",
+    "results/structures/full-atlas-missing-pae-recovery-20261021-v1/recovery_dispositions.jsonl.gz",
+    "--retry-manifest",
+    "results/structures/full-atlas-pae-failure-retry-20261021-v1/retry_dispositions.jsonl.gz",
+    "--recovery-readback",
+    "metadata/full_atlas_missing_pae_recovery_readback_20261021_v1.json",
+    "--retry-receipt",
+    "metadata/full_atlas_pae_failure_retry_20261021_v1.json",
+    "--output",
+    "results/structures/full-atlas-pae-failure-retry-readback-20261021-v1",
+    "--receipt",
+    "metadata/full_atlas_pae_failure_retry_readback_20261021_v1.json"
+  ],
+  "pins": {
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "scripts/readback_full_atlas_pae_failure_retry_v1.py": "cf84f1c54949b542f0c6f388bff3f7d0c8072e0e7d37c59ee665a5741119a03d",
+    "metadata/full_atlas_pae_failure_retry_readback_resources_20261021_v1.json": "1b3c95dede74c37ad6343e91fa2cc295702518cd97ec65c237030b66ec41a19c",
+    "metadata/full_atlas_pae_failure_retry_launch_20261021_v1.json": "397844124e502493b7c98d1f71d70bb4f7a8cd5b66a43346847d7d88328f53ad",
+    "metadata/full_atlas_missing_pae_recovery_readback_launch_20261021_v1.json": "406bee29d5a69a887265379925d9e89831ff2087dc20cccf9b01328fb5539b9e"
+  },
+  "scope": "Wait for exact original recovery reader and serial retry invocation successes, then run an independent combined retry closure."
+}
