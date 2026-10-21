@@ -1,0 +1,32 @@
+{
+  "unit": "fungal-full-atlas-missing-pae-recovery-20261021-v1.service",
+  "pid": 154896,
+  "created": 1792620945.38,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_atlas_missing_pae_recovery_resources_20261021_v1.json",
+    "--execution",
+    "metadata/full_atlas_missing_pae_recovery_execution_20261021_v1.json",
+    "--receipt",
+    "metadata/full_atlas_missing_pae_recovery_20261021_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/retrieve_full_atlas_missing_pae_recovery_v1.py",
+    "--plan",
+    "metadata/full_atlas_missing_pae_recovery_plan_20261021_v1.json",
+    "--receipt",
+    "metadata/full_atlas_missing_pae_recovery_20261021_v1.json"
+  ],
+  "plan": "metadata/full_atlas_missing_pae_recovery_plan_20261021_v1.json",
+  "plan_sha256": "811eb9a0bd29a50fae3cb6a131655f1f51e146869e7f4feb835377be53acdbfa",
+  "actual_cgroup_limits": {
+    "CPUQuotaPerSecUSec": "2s",
+    "MemoryMax": "17179869184",
+    "MemorySwapMax": "0"
+  },
+  "invocation_id": "e64bc5cb8ae34455a8d910ce0655bf14",
+  "scientific_eligibility": false,
+  "scope": "Bounded recovery producer for missing full-atlas PAE records; no new structures, GPU use or biological inference."
+}

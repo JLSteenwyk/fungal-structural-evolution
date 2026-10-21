@@ -240,6 +240,9 @@ The replacement [independent reader](../scripts/readback_full_atlas_missing_pae_
 has a literal control covering out-of-order records split across preserved and
 recovery manifests; it will run only after the recovery producer writes its
 terminal receipt.
+Its bounded dependency watcher is recorded in the
+[recovery launch record](../metadata/full_atlas_missing_pae_recovery_launch_20261021_v1.json)
+and [reader wait plan](../metadata/full_atlas_missing_pae_recovery_readback_wait_plan_20261021_v1.json).
 No PAE coverage, confidence qualification, clustering, or biological result is
 claimed from the interrupted run.
 
