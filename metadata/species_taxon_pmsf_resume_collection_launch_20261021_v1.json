@@ -1,0 +1,20 @@
+{
+  "unit": "fungal-species-taxon-pmsf-resume-collection-20261021-v1.service",
+  "pid": 224107,
+  "created": 1792621243.19,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies.py",
+    "--plan",
+    "metadata/species_taxon_pmsf_resume_collection_wait_plan_20261021_v1.json"
+  ],
+  "plan": "metadata/species_taxon_pmsf_resume_collection_wait_plan_20261021_v1.json",
+  "plan_sha256": "49e5371fa4d92379c9a97cf1d1294d5ad6183fce95252a9c6ea6d76df0a8ede1",
+  "actual_cgroup_limits": {
+    "CPUQuotaPerSecUSec": "2s",
+    "MemoryMax": "17179869184",
+    "MemorySwapMax": "0"
+  },
+  "invocation_id": "8bbbf8a1e28a4fa1bd0ce6197ef1de54",
+  "scientific_eligibility": false
+}
