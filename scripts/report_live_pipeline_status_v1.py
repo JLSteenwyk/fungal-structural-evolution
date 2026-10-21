@@ -37,6 +37,7 @@ def main():
             'fungal-full-atlas-missing-pae-recovery-readback-20261021-v1.service',
             'fungal-full-atlas-pae-failure-retry-20261021-v1.service',
             'fungal-full-atlas-pae-failure-retry-readback-20261021-v1.service',
+            'fungal-full-atlas-pae-recovery-lineage-20261021-v2.service',
             'fungal-repeatmodeler-recovery-submit-20261021-v1.service',
             'fungal-repeatmodeler-recovery-audit-20261021-v1.service',
             'fungal-species-taxon-pmsf-resume-20261021-v1.service',

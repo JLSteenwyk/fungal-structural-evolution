@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-full-atlas-pae-recovery-lineage-20261021-v2.service",
+  "pid": 818861,
+  "created": 1792623438.422128,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_atlas_pae_recovery_lineage_wait_plan_20261021_v1.json"
+  ],
+  "plan": "metadata/full_atlas_pae_recovery_lineage_wait_plan_20261021_v1.json",
+  "plan_sha256": "9244b2c0162a0e97efb7b66658b810214b1ed04fcc76c6265ebbd46e7d443fe2",
+  "actual_cgroup_limits": {
+    "CPUQuotaPerSecUSec": "2147483648",
+    "MemoryMax": "0",
+    "MemorySwapMax": "ebc63b3e66a0447fb90144f3e08ca282"
+  },
+  "invocation_id": "500ms",
+  "scientific_eligibility": false,
+  "scope": "Wait for independent PAE retry closure before writing a clustering-gate lineage receipt."
+}

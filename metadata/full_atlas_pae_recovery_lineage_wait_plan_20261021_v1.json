@@ -1,0 +1,28 @@
+{
+  "dependencies": [
+    "metadata/full_atlas_pae_failure_retry_readback_launch_20261021_v1.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/compile_full_atlas_pae_recovery_lineage_v1.py",
+    "--preparation",
+    "metadata/full_atlas_missing_pae_recovery_preparation_20261021_v1.json",
+    "--recovery",
+    "metadata/full_atlas_missing_pae_recovery_20261021_v1.json",
+    "--base-readback",
+    "metadata/full_atlas_missing_pae_recovery_readback_20261021_v1.json",
+    "--retry",
+    "metadata/full_atlas_pae_failure_retry_20261021_v1.json",
+    "--retry-readback",
+    "metadata/full_atlas_pae_failure_retry_readback_20261021_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_recovery_retry_lineage_20261021_v1.json"
+  ],
+  "pins": {
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/compile_full_atlas_pae_recovery_lineage_v1.py": "46481ffb09e5f37d4fae85c3f2b0e821beeb832f375c85132ae11cbeceeec4fb",
+    "metadata/full_atlas_pae_failure_retry_readback_launch_20261021_v1.json": "7fe53cf717144fde6c142d5305a42e73ed94fb6330e80176a3512185e594bdaa",
+    "metadata/full_atlas_missing_pae_recovery_preparation_20261021_v1.json": "de969d3424a2eee0cc50131e1de9d09c0b528b38d5615fbb7bbfe1672637d5bf"
+  },
+  "scope": "Wait for the exact independent PAE retry closure then compile immutable source-bound provenance for the full-atlas clustering gate."
+}
