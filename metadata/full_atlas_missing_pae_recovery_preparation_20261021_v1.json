@@ -1,0 +1,23 @@
+{
+  "status": "prepared_interrupted_full_atlas_pae_recovery_queue",
+  "checked_utc": "2026-10-21T22:10:53.959970+00:00",
+  "source_queue": "results/structures/full-atlas-pae-inventory-20261005-v1/missing_afdb_models.jsonl",
+  "source_queue_sha256": "55cb85ff4998a8eec51a9f23157e22b30ce372158defbe608d2af17ad9c8e302",
+  "retained_manifest": "results/structures/full-atlas-missing-pae-retrieval-20261005-v2/retrieval_dispositions.jsonl.gz",
+  "retained_manifest_sha256": "6d20130fdf422ceeb575817ce469ed74d0e096ac7e26d287a7d0c68cf2879f3c",
+  "expected_models": 2905096,
+  "retained_dispositions": {
+    "retrieval_verified": 1889103,
+    "retrieval_failed": 41797
+  },
+  "source_states": {
+    "failed": 41797,
+    "unattempted": 974196,
+    "verified": 1889103
+  },
+  "recovery_models": 1015993,
+  "recovery_queue": "results/structures/full-atlas-missing-pae-recovery-preparation-20261021-v1/recovery_queue.jsonl",
+  "recovery_queue_sha256": "14a47a8979d06360a7212a0c8d543edc36ba88139e6f3b879dd512d4bf38a20e",
+  "script_sha256": "c64f634e4d1b452cc7cd41a0178aa3d4f0e369c26c0b3bb38856640e049b1da7",
+  "scope": "Ordered recovery inventory only. Complete retained rows are source-bound and duplicate-checked; the queue contains prior failures and unattempted source models. It neither validates retained PAE matrices nor retrieves, deletes, accepts or modifies any PAE file."
+}

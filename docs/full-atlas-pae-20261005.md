@@ -206,6 +206,34 @@ and its [independent reader](../scripts/check_live_missing_pae_prefix_v1.py)
 do not read the changing end of the live gzip stream, accept the remaining
 queue, or replace the required whole-queue post-completion reader.
 
+## Interrupted V2 run and recovery inventory (2026-10-21)
+
+The V2 downloader and its transient dependency waiter disappeared without a
+terminal producer receipt or retained systemd unit. Their preserved V2 state
+contains **1,930,900** complete newline-delimited dispositions: **1,889,103**
+retrieval-verified models and **41,797** retained failures (41,796 `HTTPError`
+and one `URLError`). The gzip member lacks its final trailer but has no partial
+JSON row. Its cache is retained unchanged and is not accepted by this status
+observation.
+
+The downloader writes dispositions in completion order, which differs from the
+source queue order under two HTTP workers. The former whole-queue reader
+assumed source order and therefore cannot be used for the resumed run. The new
+[recovery-queue builder](../scripts/prepare_full_atlas_missing_pae_recovery_v1.py)
+source-binds every retained row, rejects duplicates, and writes an ordered
+queue of the **1,015,993** records that are either unattempted (**974,196**) or
+previously rate-limited/failed (**41,797**). Its immutable
+[preparation receipt](../metadata/full_atlas_missing_pae_recovery_preparation_20261021_v1.json)
+records the queue and retained-manifest hashes. It performs no HTTP requests,
+does not mutate the cache, and does not validate or accept a PAE matrix.
+
+The next execution stage must use a new, reviewable recovery plan and an
+order-independent independent reader that verifies source identity by model
+key. It must preserve all old and new dispositions, validate successful cache
+records independently, and retain any still-unavailable models explicitly.
+No PAE coverage, confidence qualification, clustering, or biological result is
+claimed from the interrupted run.
+
 Whole-source coordinate auditing and full domain extraction remain running:
 at 20:20 UTC, 562,000 models/214,165,994 residues are audited and 610,020 domain
 intervals exported. Full timing has 1,231 producer checkpoints and 16 actual
