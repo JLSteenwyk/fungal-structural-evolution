@@ -107,7 +107,7 @@ def main():
     p.add_argument('--output', type=Path); p.add_argument('--receipt', type=Path); p.add_argument('--self-test', action='store_true')
     a = p.parse_args()
     if a.self_test:
-        print(json.dumps(dict(status='passed_failure_retry_queue_literal_control', check=self_test(Path(__file__)), indent=2))); return
+        print(json.dumps(dict(status='passed_failure_retry_queue_literal_control', check=self_test(Path(__file__))), indent=2)); return
     if not all((a.queue, a.manifest, a.output, a.receipt)):
         p.error('queue, one or more manifests, output and receipt are required')
     print(json.dumps(prepare(a.queue, a.manifest, a.output, a.receipt, Path(__file__)), indent=2))
