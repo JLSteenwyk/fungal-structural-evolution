@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-repeatmodeler-recovery-submit-20261021-v1.service",
+  "pid": 735793,
+  "created": 1792623166.7470932,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/submit_repeatmodeler_recovery_after_scheduler_v1.py",
+    "--plan",
+    "metadata/repeatmodeler_recovery_submission_wait_plan_20261021_v1.json"
+  ],
+  "plan": "metadata/repeatmodeler_recovery_submission_wait_plan_20261021_v1.json",
+  "plan_sha256": "b37f06bba51141e24d84f0b269c8c3e19811b1c2f9a0a74b07d30b49e2481d46",
+  "actual_cgroup_limits": {
+    "CPUQuotaPerSecUSec": "1073741824",
+    "MemoryMax": "0",
+    "MemorySwapMax": "3179e27d79b94a3fb7e0f0f87084584c"
+  },
+  "invocation_id": "200ms",
+  "scientific_eligibility": false,
+  "scope": "Guarded wait for scheduler recovery and terminal original array before RepeatModeler recovery submission."
+}

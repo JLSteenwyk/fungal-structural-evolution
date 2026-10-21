@@ -1,0 +1,17 @@
+{
+  "status": "prepared_repeatmodeler_recovery_submission_waiter",
+  "original_array_job_id": 23002,
+  "task_count": 21,
+  "task_file": "metadata/repeatmodeler_recovery_tasks_20261021_v1.tsv",
+  "sbatch": "workflows/slurm/repeatmodeler_recovery_20261021_v1.sbatch",
+  "poll_seconds": 60,
+  "submission_receipt": "metadata/repeatmodeler_recovery_submission_20261021_v1.json",
+  "pins": {
+    "scripts/submit_repeatmodeler_recovery_after_scheduler_v1.py": "9ce789ed6e0d20b1b85e20c98aafd88efbc15d98b3d61123d610207d412d18ab",
+    "workflows/slurm/repeatmodeler_recovery_20261021_v1.sbatch": "951d22d104e430538062aa56e920defcfce97f68c1b32374161372b9c09b232e",
+    "metadata/repeatmodeler_recovery_tasks_20261021_v1.tsv": "ada66065434acd3d59af6089234a77943d614b01ae383d74279d4a378afd8d3e",
+    "metadata/repeatmodeler_full_panel_progress_audit_20261021_v4.json": "8baf15bfd4d24def80a38ca115fee4120734a10e80a11ae98409cf3bad5b93f5",
+    "config/repeatmodeler-full-panel-20261006-v1.json": "adaf30d13a82ceb63813404dee117a67ac1266d399f81ba64faf81b728199ebe"
+  },
+  "scope": "Wait for Slurm to become live and require no live original job plus terminal sacct states before submitting the source-indexed 21-taxon recovery array. It makes no biological inference."
+}
