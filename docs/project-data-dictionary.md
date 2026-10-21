@@ -62,12 +62,15 @@ homology call, or structural-analysis eligibility.
 The PAE recovery preparation receipt,
 `metadata/full_atlas_missing_pae_recovery_preparation_20261021_v1.json`, binds
 the interrupted source queue and recovery queue with hashes and records
-`expected_models`, retained disposition counts, source-state census, and
-script identity. Its completion receipt is intentionally absent while recovery
-is live. The queued readback, explicit-failure retry, retry readback, and
-lineage composition each produce separate immutable receipts; the full atlas
-cannot enter clustering until the [gate report](../scripts/report_full_atlas_gate_status_v2.py)
-is ready. See [the PAE workflow](full-atlas-pae-20261005.md).
+the full `expected_models` source universe, retained disposition counts,
+source-state census, `recovery_models`, and script identity. The recovery plan
+uses `recovery_models` as its own `expected_models` value; it is the subset of
+previous failures and unattempted records, not the full source universe. Its
+completion receipt is intentionally absent while recovery is live. The queued
+readback, explicit-failure retry, retry readback, and lineage composition each
+produce separate immutable receipts; the full atlas cannot enter clustering
+until the [gate report](../scripts/report_full_atlas_gate_status_v2.py) is
+ready. See [the PAE workflow](full-atlas-pae-20261005.md).
 
 ## Phylogeny plan and model outputs
 
