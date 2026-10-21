@@ -1,0 +1,23 @@
+{
+  "cpus": 1,
+  "memory_gib": 8,
+  "swap_gib": 0,
+  "gpu": false,
+  "http_workers": 1,
+  "future_window": 1,
+  "minimum_free_disk_gib": 1024,
+  "emergency_free_disk_gib": 512,
+  "maximum_new_cache_bytes": 1099511627776,
+  "scope": "Serial retry of explicit retained AlphaFold DB PAE retrieval failures after the current source-bound recovery finishes. Existing verified cache entries are retained; no structures are predicted and no paid resource is used.",
+  "blas_threads": 1,
+  "address_space_gib": 6,
+  "cpu_seconds_per_stage": 2592000,
+  "wall_seconds_per_stage": 2592000,
+  "per_file_limit_mib": 32768,
+  "minimum_available_ram_gib": 8,
+  "output_allowance_gib": 1024,
+  "estimated_wall_days": [0.01, 30],
+  "runtime_is_uncalibrated": true,
+  "new_predictions": 0,
+  "new_cost_usd": 0
+}

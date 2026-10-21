@@ -1,0 +1,48 @@
+{
+  "dependencies": [
+    "metadata/full_atlas_missing_pae_recovery_launch_20261021_v1.json"
+  ],
+  "command": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_weighted_fit_controller_software_stage.py",
+    "--resources",
+    "metadata/full_atlas_pae_failure_retry_resources_20261021_v1.json",
+    "--execution",
+    "metadata/full_atlas_pae_failure_retry_execution_20261021_v1.json",
+    "--receipt",
+    "metadata/full_atlas_pae_failure_retry_20261021_v1.json",
+    "--",
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/retry_full_atlas_pae_failures_v1.py",
+    "--queue",
+    "results/structures/full-atlas-pae-inventory-20261005-v1/missing_afdb_models.jsonl",
+    "--manifest",
+    "results/structures/full-atlas-missing-pae-retrieval-20261005-v2/retrieval_dispositions.jsonl.gz",
+    "--manifest",
+    "results/structures/full-atlas-missing-pae-recovery-20261021-v1/recovery_dispositions.jsonl.gz",
+    "--cache",
+    "data/structures/pae",
+    "--output",
+    "results/structures/full-atlas-pae-failure-retry-20261021-v1",
+    "--receipt",
+    "metadata/full_atlas_pae_failure_retry_20261021_v1.json",
+    "--http-workers",
+    "1",
+    "--future-window",
+    "1",
+    "--emergency-free-gib",
+    "512",
+    "--max-new-cache-bytes",
+    "1099511627776"
+  ],
+  "pins": {
+    "scripts/run_after_verified_dependencies_v2.py": "e8e8378c490e4113bc59c77f96906b00203cdc31e6ad7c2957d9f9c79d627a84",
+    "scripts/run_weighted_fit_controller_software_stage.py": "00627141747d8df282cd792f71570d176a4707c398014239f3e2aae1031664f6",
+    "scripts/retry_full_atlas_pae_failures_v1.py": "8037f791b2c8418cb591668ba1b497f88766d3f31cf4d97e4154a1b548296059",
+    "scripts/prepare_full_atlas_pae_failure_retry_v1.py": "8f774a31b92d604dc6be1e86154bc73b543aada394377fdb8872293ffcca888b",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "metadata/full_atlas_pae_failure_retry_resources_20261021_v1.json": "df5fb1c00269d78e28af66c3f1fa25b4e65d265a90466ebf016e2c2f81076e28",
+    "metadata/full_atlas_missing_pae_recovery_launch_20261021_v1.json": "42d5b5a7087a3c5abd5804e34373bb2b0b3ff9a0b90d67bbd8db353cedd3a89c"
+  },
+  "scope": "Wait for exact successful current PAE recovery, then prepare and serially retry only its explicit retained failures. It does not modify the current recovery or claim combined matrix acceptance."
+}

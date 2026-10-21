@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-full-atlas-pae-failure-retry-20261021-v1.service",
+  "pid": 623965,
+  "created": 1792622796.519107,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/run_after_verified_dependencies_v2.py",
+    "--plan",
+    "metadata/full_atlas_pae_failure_retry_wait_plan_20261021_v1.json"
+  ],
+  "plan": "metadata/full_atlas_pae_failure_retry_wait_plan_20261021_v1.json",
+  "plan_sha256": "4f5dfe5472194c2dfc824ad4d37c798e4eacfe2a85b88b73a8889da4e8143783",
+  "actual_cgroup_limits": {
+    "CPUQuotaPerSecUSec": "1s",
+    "MemoryMax": "8589934592",
+    "MemorySwapMax": "0"
+  },
+  "invocation_id": "f1272aa4be9e467db69f2f67bb473f9a",
+  "scientific_eligibility": false,
+  "scope": "Automatic serial explicit-failure retry waiter. It begins only when the currently running PAE recovery has a verified successful terminal journal and creates an immutable retry receipt."
+}

@@ -35,6 +35,7 @@ def main():
         services=[unit(name) for name in (
             'fungal-full-atlas-missing-pae-recovery-20261021-v1.service',
             'fungal-full-atlas-missing-pae-recovery-readback-20261021-v1.service',
+            'fungal-full-atlas-pae-failure-retry-20261021-v1.service',
             'fungal-species-taxon-pmsf-resume-20261021-v1.service',
             'fungal-species-taxon-pmsf-resume-collection-20261021-v1.service',
             'fungal-species-taxon-pmsf-resume-collection-closure-20261021-v1.service')],
