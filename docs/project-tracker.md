@@ -46,6 +46,9 @@ None of the eight evolutionary aims is complete.
 ## Decision and completion rules
 
 - The [research plan](research-plan.md) defines hypotheses, analysis order and robustness requirements.
+- The [project data dictionary](project-data-dictionary.md) defines project-level
+  manifest fields, atlas availability states and immutable receipt roles; detailed
+  stage dictionaries remain authoritative for their respective output tables.
 - The [decision log and unresolved questions](decisions.md) records choices that must not be silently converted into biological conclusions.
 - The [annotated bibliography](bibliography.md) records the literature basis for methods and focal biological controls.
 - Completion requires evidence for every applicable row above, finalized reproducible outputs, figures/tables/methods, and mechanistic case-study proposals. An unavailable analysis needs an explicit, data-supported applicability determination; it is not silently treated as complete.

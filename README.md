@@ -7,6 +7,8 @@ and their associations with duplication, domain architecture and ecology.
 
 The [project tracker](docs/project-tracker.md) links every required deliverable
 and all eight evolutionary aims to current evidence and remaining gates. The
+[project data dictionary](docs/project-data-dictionary.md) defines the
+project-level manifests, atlas records and immutable receipts. The
 [insect-to-fungal scope note](docs/insect-structural-genomics-to-fungal-scope.md)
 explains how the comparative structural-genomics precedent informs this project
 and which phylogenetic, structural and genomic extensions are required.
