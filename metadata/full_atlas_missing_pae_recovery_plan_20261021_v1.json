@@ -1,0 +1,43 @@
+{
+  "status": "planned_full_atlas_missing_pae_recovery",
+  "recovery_preparation": "metadata/full_atlas_missing_pae_recovery_preparation_20261021_v1.json",
+  "expected_models": 1015993,
+  "output": "results/structures/full-atlas-missing-pae-recovery-20261021-v1",
+  "cache": "data/structures/pae-completed-source-20261005-v2",
+  "future_window": 64,
+  "resources": {
+    "cpus": 2,
+    "memory_gib": 16,
+    "swap_gib": 0,
+    "gpu": false,
+    "http_workers": 2,
+    "minimum_free_disk_gib": 1024,
+    "emergency_free_disk_gib": 512,
+    "maximum_new_cache_bytes": 1099511627776,
+    "estimated_recovery_models": 1015993,
+    "scope": "Restartable recovery of only source-bound missing/failed PAE requests. Existing verified cache is preserved; no structure prediction, GPU, or paid resource is used.",
+    "blas_threads": 1,
+    "address_space_gib": 12,
+    "cpu_seconds_per_stage": 10368000,
+    "wall_seconds_per_stage": 10368000,
+    "per_file_limit_mib": 32768,
+    "minimum_available_ram_gib": 16,
+    "output_allowance_gib": 1024,
+    "estimated_wall_days": [
+      2,
+      90
+    ],
+    "runtime_is_uncalibrated": true,
+    "new_predictions": 0,
+    "new_cost_usd": 0
+  },
+  "pins": {
+    "metadata/full_atlas_missing_pae_recovery_preparation_20261021_v1.json": "de969d3424a2eee0cc50131e1de9d09c0b528b38d5615fbb7bbfe1672637d5bf",
+    "metadata/full_atlas_missing_pae_recovery_resources_20261021_v1.json": "4be7a48607607a756736fd52f59fe266a6da361632ad9cdcef311c65e58b4e2a",
+    "scripts/retrieve_full_atlas_missing_pae_recovery_v1.py": "270e982f8fb6a01f7c8d2d4b4ac56b314b6ae2f9b3c3308f6a9713dd1fcc0795",
+    "scripts/retrieve_marker_pae.py": "c5af113a8beed7fa1810b387153a7f8a7fa8559db3c4d317c1706c32d253d2ea",
+    "scripts/ancestral_chain_attempt.py": "fb19a62a823d5ff3e56c6c3bd56bd281b3a8929262ad5a8d2781bd601f821461",
+    "scripts/reference_measurement_union_sources.py": "ef7a2f5eaf82053c6165d4cf6cd9ce20dec3ad90a64f3320039fa2fb21f43f1e"
+  },
+  "scope": "Fresh output-only retry stage for every unattempted or explicitly failed source model. It retains every new disposition and never rewrites existing verified cache records."
+}

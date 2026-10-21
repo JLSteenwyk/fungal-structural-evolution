@@ -231,6 +231,11 @@ The next execution stage must use a new, reviewable recovery plan and an
 order-independent independent reader that verifies source identity by model
 key. It must preserve all old and new dispositions, validate successful cache
 records independently, and retain any still-unavailable models explicitly.
+[The recovery plan](../metadata/full_atlas_missing_pae_recovery_plan_20261021_v1.json)
+and its [resource contract](../metadata/full_atlas_missing_pae_recovery_resources_20261021_v1.json)
+set two HTTP workers, two CPU equivalents, 16 GiB RAM, no swap and no GPU; a
+read-only preflight passed for all 1,015,993 recovery targets without finding a
+collision with the preserved cache.
 No PAE coverage, confidence qualification, clustering, or biological result is
 claimed from the interrupted run.
 
