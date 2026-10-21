@@ -37,7 +37,7 @@ def require_receipt(spec):
 
 
 def partition_counts(path, expected):
-    assigned, representatives, counts = set(), set(), Counter()
+    assigned, representatives, self_members, counts = set(), set(), set(), Counter()
     with Path(path).open() as handle:
         for number, line in enumerate(handle, 1):
             fields = line.rstrip('\n').split('\t')
@@ -50,11 +50,15 @@ def partition_counts(path, expected):
                 raise ValueError(f'Repeated cluster member at row {number}')
             assigned.add(member)
             representatives.add(representative)
+            if representative == member:
+                self_members.add(representative)
             counts[representative] += 1
     if assigned != expected:
         raise ValueError('Cluster partition does not cover every database model')
     if not representatives.issubset(expected):
         raise ValueError('Unknown cluster representative')
+    if representatives != self_members:
+        raise ValueError('Every cluster representative must have exactly one self-membership row')
     return counts
 
 
@@ -72,7 +76,15 @@ def self_test():
             pass
         else:
             raise AssertionError('Duplicate member accepted')
-    return ['complete_partition_membership', 'duplicate_member_rejected']
+        path.write_text('a\tb\nb\tb\nc\tc\n')
+        try:
+            partition_counts(path, expected)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('Representative without self-membership accepted')
+    return ['complete_partition_membership', 'duplicate_member_rejected',
+            'representative_self_membership_required']
 
 
 def main():
