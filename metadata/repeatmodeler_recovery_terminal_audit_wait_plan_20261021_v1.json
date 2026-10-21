@@ -1,0 +1,21 @@
+{
+  "status": "prepared_repeatmodeler_recovery_terminal_audit_waiter",
+  "submission_receipt": "metadata/repeatmodeler_recovery_submission_20261021_v1.json",
+  "task_file": "metadata/repeatmodeler_recovery_tasks_20261021_v1.tsv",
+  "task_file_sha256": "ada66065434acd3d59af6089234a77943d614b01ae383d74279d4a378afd8d3e",
+  "sbatch": "workflows/slurm/repeatmodeler_recovery_20261021_v1.sbatch",
+  "sbatch_sha256": "951d22d104e430538062aa56e920defcfce97f68c1b32374161372b9c09b232e",
+  "config": "config/repeatmodeler-full-panel-20261006-v1.json",
+  "audit_script": "scripts/audit_repeatmodeler_full_panel_v1.py",
+  "audit_receipt": "metadata/repeatmodeler_full_panel_progress_audit_20261021_v5.json",
+  "poll_seconds": 60,
+  "pins": {
+    "scripts/audit_repeatmodeler_recovery_after_scheduler_v1.py": "d913e04105851c3c3ce682c7cb935cf31fafc09ab05b08584746ce56ab029105",
+    "scripts/audit_repeatmodeler_full_panel_v1.py": "a5c84b8948a1de356f75cf1ac0fec2e3988166394060faeb695a5e21e9f94e24",
+    "config/repeatmodeler-full-panel-20261006-v1.json": "adaf30d13a82ceb63813404dee117a67ac1266d399f81ba64faf81b728199ebe",
+    "metadata/repeatmodeler_recovery_tasks_20261021_v1.tsv": "ada66065434acd3d59af6089234a77943d614b01ae383d74279d4a378afd8d3e",
+    "workflows/slurm/repeatmodeler_recovery_20261021_v1.sbatch": "951d22d104e430538062aa56e920defcfce97f68c1b32374161372b9c09b232e",
+    "metadata/repeatmodeler_recovery_submission_wait_plan_20261021_v1.json": "b37f06bba51141e24d84f0b269c8c3e19811b1c2f9a0a74b07d30b49e2481d46"
+  },
+  "scope": "Wait for a receipt-confirmed RepeatModeler recovery Slurm array to reach terminal accounting state, then run one fresh full-panel independent output audit."
+}

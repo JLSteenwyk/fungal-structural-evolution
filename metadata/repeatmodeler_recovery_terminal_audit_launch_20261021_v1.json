@@ -1,0 +1,21 @@
+{
+  "unit": "fungal-repeatmodeler-recovery-audit-20261021-v1.service",
+  "pid": 752995,
+  "created": 1792623233.4416347,
+  "cmdline": [
+    "/home/bizon/anaconda3/bin/python",
+    "scripts/audit_repeatmodeler_recovery_after_scheduler_v1.py",
+    "--plan",
+    "metadata/repeatmodeler_recovery_terminal_audit_wait_plan_20261021_v1.json"
+  ],
+  "plan": "metadata/repeatmodeler_recovery_terminal_audit_wait_plan_20261021_v1.json",
+  "plan_sha256": "4a6844fd5aa5c5525509b2fe6634208af8496da90abbec1fd8489c2e01969d2e",
+  "actual_cgroup_limits": {
+    "CPUQuotaPerSecUSec": "1073741824",
+    "MemoryMax": "0",
+    "MemorySwapMax": "7ee4916272534f0d80f3ebdf0284222c"
+  },
+  "invocation_id": "200ms",
+  "scientific_eligibility": false,
+  "scope": "Wait for receipt-confirmed RepeatModeler recovery completion before fresh independent output audit."
+}
