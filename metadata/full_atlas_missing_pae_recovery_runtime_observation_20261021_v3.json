@@ -1,0 +1,19 @@
+{
+  "status": "recorded_live_full_atlas_pae_recovery_throughput_observation",
+  "checked_utc": "2026-10-22T00:01:42.499030+00:00",
+  "source_state": "results/structures/full-atlas-missing-pae-recovery-20261021-v1/state.json",
+  "source_state_sha256": "e025c50ad52dcb96abfc865209e78117a0dd25a3eda998dfa29edc3dbc3dbae6",
+  "recovery_plan": "metadata/full_atlas_missing_pae_recovery_plan_20261021_v1.json",
+  "recovery_plan_sha256": "811eb9a0bd29a50fae3cb6a131655f1f51e146869e7f4feb835377be53acdbfa",
+  "attempted": 7400,
+  "verified": 6844,
+  "failed": 556,
+  "elapsed_seconds": 6323.976543643999,
+  "observed_attempts_per_second": 1.1701498177499525,
+  "remaining_models": 1008593,
+  "linear_remaining_seconds": 861934.928930207,
+  "linear_remaining_days": 9.97609871446999,
+  "http_workers": 2,
+  "future_window": 64,
+  "scope": "A read-only single-time throughput observation. The linear extrapolation assumes the observed average rate persists; it is not a completion guarantee, cost estimate, coverage result, or biological inference."
+}
